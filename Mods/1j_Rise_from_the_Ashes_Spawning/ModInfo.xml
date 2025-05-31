@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Rise_From_The_Ashes_Spawning" />
+	<DisplayName value="Rise from the Ashes Spawning" />
+	<Description value="Adds Removes and Updates the spawning xml file" />
+	<Author value="Dayhawk" />
+	<Version value="1.0.0" />
+</xml>
