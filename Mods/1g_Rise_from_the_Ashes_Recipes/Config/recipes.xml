@@ -390,9 +390,7 @@
   <!-- Add tags to the recipe-->
   <setattribute  xpath="/recipes/recipe[@name='candle']" name="tags">learnable,skillChemistry</setattribute>
   <setattribute  xpath="/recipes/recipe[@name='candleTableLightPlayer']" name="tags">learnable,skillChemistry</setattribute>
-  <setattribute  xpath="/recipes/recipe[@name='medicalAloeCream']" name="tags">learnable,skillChemistry</setattribute> 
-  <append xpath="/recipes/recipe[@name='ammoGasCan']/@tags">,skillChemistry</append>
-  <append xpath="/recipes/recipe[@name='ammoGasCanBundle']/@tags">,learnable,skillChemistry</append>
+  <setattribute  xpath="/recipes/recipe[@name='medicalAloeCream']" name="tags">learnable,skillChemistry</setattribute>     
   <append xpath="/recipes/recipe[@name='ammoRocketFrag']/@tags">,learnable,skillChemistry</append>
   <append xpath="/recipes/recipe[@name='ammoRocketHE']/@tags">,learnable,skillChemistry</append>
   <append xpath="/recipes/recipe[@name='drinkJarPureMineralWater']/@tags">,learnable,skillChemistry</append>
@@ -410,8 +408,7 @@
   <append xpath="/recipes/recipe[@name='modGunMeleeRadRemover']/@tags">,learnable,skillChemistry</append>
   <append xpath="/recipes/recipe[@name='modMeleeClubBurningShaft']/@tags">,learnable,skillChemistry</append>
   <append xpath="/recipes/recipe[@name='resourceGlue']/@tags">,learnable,skillChemistry</append>
-  <append xpath="/recipes/recipe[@name='resourceGunPowder']/@tags">,learnable,skillChemistry</append>
-  <append xpath="/recipes/recipe[@name='resourceOil']/@tags">,learnable,skillChemistry</append>
+  <append xpath="/recipes/recipe[@name='resourceGunPowder']/@tags">,learnable,skillChemistry</append>  
   <append xpath="/recipes/recipe[@name='resourcePaint']/@tags">,learnable,skillChemistry</append>
   <append xpath="/recipes/recipe[@name='resourcePaper']/@tags">,learnable,skillChemistry</append>
 
@@ -481,8 +478,9 @@
 
   <set xpath="/recipes/recipe[@name='modMeleeClubBurningShaft']/ingredient[@name='resourceForgedSteel']/@name">resourceClothT3</set>
 
+  <append xpath="/recipes/recipe[@name='ammoGasCanBundle']/@tags">,learnable,skillChemistry</append>
   <set xpath="/recipes/recipe[@name='ammoGasCanBundle']/ingredient[@name='resourceOilShale']/@name">CrudeOil</set>
-  <set xpath="/recipes/recipe[@name='ammoGasCanBundle']/ingredient[@name='CrudeOil' and @count='']/@count">8000</set>
+  <set xpath="/recipes/recipe[@name='ammoGasCanBundle']/ingredient[@name='CrudeOil' and @count='2000']/@count">8000</set>
   <insertAfter xpath="/recipes/recipe[@name='ammoGasCanBundle']/ingredient[@name='CrudeOil']">
     <ingredient name="ReagentT2" count="10"/>
   </insertAfter>
@@ -511,8 +509,8 @@
     <ingredient name="HubcapMineProgram" count="1"/>
   </insertAfter>
 
-  <append xpath="/recipes/recipe[@name='mineCandyTin']/@tags">,learnable,skillChemistry</append>
-  <set xpath="/recipes/recipe[@name='mineCandyTin']/@craft_area">chemistryStation</set>
+  <setattribute  xpath="/recipes/recipe[@name='mineCandyTin']" name="craft_area">chemistryStation</setattribute>
+  <setattribute  xpath="/recipes/recipe[@name='mineCandyTin']" name="tags">learnable,workbenchCrafting,skillChemistry</setattribute>  
   <insertAfter xpath="/recipes/recipe[@name='mineCandyTin']/ingredient[@name='resourceDuctTape']">
     <ingredient name="CandyMineProgram" count="1"/>
   </insertAfter>
@@ -520,6 +518,9 @@
 
   <!-- Electrical Engineer -->
   <!-- Electrical Engineer Tier 1-->
+  <append xpath="/recipes/recipe[@name='modGunFlashlight']/@tags">,learnable,skillElectricalEngineer</append>
+  <set xpath="/recipes/recipe[@name='modGunFlashlight']/ingredient[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>  
+
   <append xpath="/recipes/recipe[@name='thrownTimedCharge']/@tags">,learnable,skillElectricalEngineer</append>
   <append xpath="/recipes/recipe[@name='thrownTimedCharge']">
     <ingredient name="TimedChargeProgram" count="1"/>
@@ -561,8 +562,7 @@
   <append xpath="/recipes/recipe[@name='generatorbank']/@tags">,learnable,skillElectricalEngineer</append>
   <append xpath="/recipes/recipe[@name='meleeToolFlashlight02']/@tags">,learnable,skillElectricalEngineer</append>
   <append xpath="/recipes/recipe[@name='meleeWpnBatonT2StunBaton']/@tags">,learnable,skillElectricalEngineer</append>
-  <append xpath="/recipes/recipe[@name='modArmorHelmetLight']/@tags">,learnable,skillElectricalEngineer</append>
-  <append xpath="/recipes/recipe[@name='modGunFlashlight']/@tags">,learnable,skillElectricalEngineer</append>
+  <append xpath="/recipes/recipe[@name='modArmorHelmetLight']/@tags">,learnable,skillElectricalEngineer</append>  
   <append xpath="/recipes/recipe[@name='modGunLaserSight']/@tags">,learnable,skillElectricalEngineer</append>
   <append xpath="/recipes/recipe[@name='modGunReflexSight']/@tags">,learnable,skillElectricalEngineer</append>
   <append xpath="/recipes/recipe[@name='modMeleeStunBatonRepulsor']/@tags">,learnable,skillElectricalEngineer</append>
@@ -636,24 +636,22 @@
   <append xpath="/recipes/recipe[@name='modGunScopeMedium']/@tags">,learnable,skillMechanicalEngineer</append>
   <append xpath="/recipes/recipe[@name='modGunScopeSmall']/@tags">,learnable,skillMechanicalEngineer</append>
   
-  <append xpath="/recipes/recipe[@name='modGunTriggerGroupAutomatic']/@tags">,learnable,skillMechanicalEngineer</append>
-  <append xpath="/recipes/recipe[@name='modGunTriggerGroupBurst3']/@tags">,learnable,skillMechanicalEngineer</append>
-  <append xpath="/recipes/recipe[@name='modGunTriggerGroupSemi']/@tags">,learnable,skillMechanicalEngineer</append>
   <append xpath="/recipes/recipe[@name='modMeleeStructuralBrace']/@tags">,learnable,skillMechanicalEngineer</append>
   <append xpath="/recipes/recipe[@name='modRoboticDroneCargoMod']/@tags">,learnable,skillMechanicalEngineer</append>
   <append xpath="/recipes/recipe[@name='modRoboticDroneMedicMod']/@tags">,learnable,skillMechanicalEngineer</append>
   
 
-  <!-- Mechanical Engineering T1 -->
+  <!-- Mechanical Engineering T1 -->  
   <set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
-  <set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceLeather']/@name">LeatherSheetT1</set>
   <append xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/@tags">,learnable,skillMechanicalEngineer</append>
+  <set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/effect_group/passive_effect[@name='CraftingIngredientCount']/@tags">resourceDuctTape,LeatherSheetT1,resourceSpring,resourceMetalPipe</set>
 
-  <set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
+  <set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>  
   <set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT1</set>
   <append xpath="/recipes/recipe[@name='vehicleBicycleChassis']/@tags">,learnable,skillMechanicalEngineer</append>
+  <set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/effect_group/passive_effect[@name='CraftingIngredientCount']/@tags">resourceLowQualityWroughtIron,resourceMechanicalPartsT1,resourceDuctTape,LeatherSheetT1,resourceSpring</set>
 
   <set xpath="/recipes/recipe[@name='vehicleBicyclePlaceable']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
   <append xpath="/recipes/recipe[@name='vehicleBicyclePlaceable']/@tags">,learnable,skillMechanicalEngineer</append>
@@ -693,19 +691,17 @@
   </insertAfter>
   <append xpath="/recipes/recipe[@name='gunBotT1JunkSledge']/@tags">,learnable,skillMechanicalEngineer</append>
 
-  <set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
-  <set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
+  <set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>  
   <set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='resourceScrapPolymers']/@name">ShotgunTurretProgram</set>
   <append xpath="/recipes/recipe[@name='shotgunTurret']/@tags">,learnable,skillMechanicalEngineer</append>
-  <insertAfter xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='gunBotRoboticsPartsT3']">
+  <insertAfter xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='gunShotgunT1DoubleBarrelParts']">
     <ingredient name="ShotgunTurretProgram" count="1"/>
   </insertAfter>
 
-  <set xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
-  <set xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
+  <set xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>  
   <set xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='resourceScrapPolymers']/@name">AutoTurretProgram</set>  
   <append xpath="/recipes/recipe[@name='autoTurret']/@tags">,learnable,skillMechanicalEngineer</append>
-  <insertAfter xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='gunBotRoboticsPartsT3']">
+  <insertAfter xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='resourceOil']">
     <ingredient name="AutoTurretProgram" count="1"/>
   </insertAfter>
 
@@ -726,16 +722,18 @@
   <set xpath="/recipes/recipe[@name='modGunCrippleEm']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
 
   <set xpath="/recipes/recipe[@name='modGunTriggerGroupSemi']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
-
-  <set xpath="/recipes/recipe[@name='modGunTriggerGroupBurst3']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
-
-  <set xpath="/recipes/recipe[@name='modGunTriggerGroupAutomatic']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
+  <append xpath="/recipes/recipe[@name='modGunTriggerGroupSemi']/@tags">,learnable,skillMechanicalEngineer</append>  
   
+  <append xpath="/recipes/recipe[@name='modGunTriggerGroupBurst3']/@tags">,learnable,skillMechanicalEngineer</append>
+  <set xpath="/recipes/recipe[@name='modGunTriggerGroupBurst3']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
+    
+  <set xpath="/recipes/recipe[@name='modGunTriggerGroupAutomatic']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
+  <append xpath="/recipes/recipe[@name='modGunTriggerGroupAutomatic']/@tags">,learnable,skillMechanicalEngineer</append>
   
   <!-- Leatherworking -->
-  <set xpath="/recipes/recipe[@name='modGunMeleeTheHunter']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>
-  <set xpath="/recipes/recipe[@name='modGunMeleeTheHunter']/ingredient[@name='resourceMechanicalParts']/@name">LeatherSheetT1</set>
+  <set xpath="/recipes/recipe[@name='modGunMeleeTheHunter']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>  
   <append xpath="/recipes/recipe[@name='modGunMeleeTheHunter']/@tags">,skillLeatherworking</append>
+  <set xpath="/recipes/recipe[@name='modGunMeleeTheHunter']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
   <setattribute  xpath="/recipes/recipe[@name='modGunMeleeTheHunter']" name="craft_area">TailorWorkstation</setattribute>
   
   <append xpath="/recipes/recipe[@name='modArmorPlatingBasic']/@tags">,learnable,skillLeatherworking</append>
@@ -764,12 +762,13 @@
   <append xpath="/recipes/recipe[@name='modArmorInsulatedLiner']/@tags">,learnable,skillTailoring</append>
   <setattribute  xpath="/recipes/recipe[@name='modArmorInsulatedLiner']" name="craft_area">TailorWorkstation</setattribute>
 
-  <set xpath="/recipes/recipe[@name='modArmorCoolingMesh']/ingredient[@name='resourceCloth']/@name">resourceClothT2</set>
+  <set xpath="/recipes/recipe[@name='modArmorCoolingMesh']/ingredient[@name='resourceScrapPolymers']/@name">resourceClothT2</set>
   <append xpath="/recipes/recipe[@name='modArmorCoolingMesh']/@tags">,learnable,skillTailoring</append>
 
   <setattribute  xpath="/recipes/recipe[@name='modArmorCoolingMesh']" name="craft_area">TailorWorkstation</setattribute>
-
-  <set xpath="/recipes/recipe[@name='modArmorImprovedFittings']/ingredient[@name='resourceCloth']/@name">resourceClothT2</set>
+  
+  <set xpath="/recipes/recipe[@name='modArmorImprovedFittings']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
+  <set xpath="/recipes/recipe[@name='modArmorImprovedFittings']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
   <append xpath="/recipes/recipe[@name='modArmorImprovedFittings']/@tags">,learnable,skillTailoring</append>
   <setattribute  xpath="/recipes/recipe[@name='modArmorImprovedFittings']" name="craft_area">TailorWorkstation</setattribute>
 
@@ -777,11 +776,12 @@
   <set xpath="/recipes/recipe[@name='modArmorStoragePocket']/ingredient[@name='resourceLeather']/@name">resourceClothT2</set>
   <append xpath="/recipes/recipe[@name='modArmorStoragePocket']/@tags">,learnable,skillTailoring</append>
   <setattribute  xpath="/recipes/recipe[@name='modArmorStoragePocket']" name="craft_area">TailorWorkstation</setattribute>
-  <remove xpath="/recipes/recipe[@name='modArmorStoragePocket']/ingredient[@name='resourceMechanicalParts']"/>
+  <remove xpath="/recipes/recipe[@name='modArmorStoragePocket']/ingredient[@name='resourceMechanicalParts']"/>  
 
   <!-- T3 Tailoring -->
-  <set xpath="/recipes/recipe[@name='modArmorDoubleStoragePocket']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
+  <set xpath="/recipes/recipe[@name='modArmorDoubleStoragePocket']/ingredient[@name='resourceLeather']/@name">resourceClothT3</set>
   <append xpath="/recipes/recipe[@name='modArmorDoubleStoragePocket']/@tags">,learnable,skillTailoring</append>
+  <set xpath="/recipes/recipe[@name='modArmorDoubleStoragePocket']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
   <setattribute  xpath="/recipes/recipe[@name='modArmorDoubleStoragePocket']" name="craft_area">TailorWorkstation</setattribute>
   
   <set xpath="/recipes/recipe[@name='modArmorTripleStoragePocket']/ingredient[@name='resourceLeather']/@name">resourceClothT4</set>
@@ -797,11 +797,6 @@
 
   <append xpath="/recipes/recipe[@name='meleeWpnKnucklesT0LeatherKnuckles']/@tags">,learnable,skillTailoring</append>
   <append xpath="/recipes/recipe[@name='modArmorBandolier']/@tags">,learnable,skillTailoring</append>
-
-  
-  
-  <append xpath="/recipes/recipe[@name='modArmorStoragePocket']/@tags">,learnable,skillTailoring</append>    
-
 
   <!-- Update Vanilla Recipes -->
   <remove xpath="/recipes/recipe[@name='woodLogPillar100']"/>
@@ -897,9 +892,7 @@
   <set xpath="/recipes/recipe[@name='electricwirerelay']/ingredient[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
   <set xpath="/recipes/recipe[@name='electricwirerelay']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/recipes/recipe[@name='switch']/ingredient[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
-  <set xpath="/recipes/recipe[@name='switch']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>
-  <set xpath="/recipes/recipe[@name='modGunFlashlight']/ingredient[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
-  <set xpath="/recipes/recipe[@name='modGunFlashlight']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/recipes/recipe[@name='switch']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>  
   <set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
   <set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceForgedIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/recipes/recipe[@name='pressureplateLong']/ingredient[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
@@ -974,8 +967,7 @@
   <set xpath="/recipes/recipe[@name='switch']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
   <set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
   <set xpath="/recipes/recipe[@name='officeChair01VariantHelper']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
-  <set xpath="/recipes/recipe[@name='pressureplateLong']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
-  <set xpath="/recipes/recipe[@name='modGunMeleeTheHunter']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
+  <set xpath="/recipes/recipe[@name='pressureplateLong']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>  
 
   <!-- Tier 2 (T2: Levels 15-20) -->
   <set xpath="/recipes/recipe[@name='shuttersSteelBlockVariantHelper']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT2</set>  
@@ -992,8 +984,7 @@
   <set xpath="/recipes/recipe[@name='toiletsBlockVariantHelper']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
   <set xpath="/recipes/recipe[@name='rollUpDoor3x3VariantHelper']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
   <set xpath="/recipes/recipe[@name='resourceLockPickBundle']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
-  <set xpath="/recipes/recipe[@name='modArmorCustomizedFittings']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>  
-  <set xpath="/recipes/recipe[@name='modArmorImprovedFittings']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
+  <set xpath="/recipes/recipe[@name='modArmorCustomizedFittings']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>    
   
   <set xpath="/recipes/recipe[@name='modGunLaserSight']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
   <set xpath="/recipes/recipe[@name='modGunMuzzleBrake']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
@@ -1016,9 +1007,7 @@
   
   <set xpath="/recipes/recipe[@name='modGunBarrelExtender']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>  
   <set xpath="/recipes/recipe[@name='modGunForegrip']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
-  <set xpath="/recipes/recipe[@name='modGunMagazineExtender']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
-  <set xpath="/recipes/recipe[@name='modGunTriggerGroupAutomatic']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
-  <set xpath="/recipes/recipe[@name='modGunTriggerGroupBurst3']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
+  <set xpath="/recipes/recipe[@name='modGunMagazineExtender']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>    
   <set xpath="/recipes/recipe[@name='modMeleeFortifyingGrip']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
   <set xpath="/recipes/recipe[@name='modMeleeErgonomicGrip']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
   <set xpath="/recipes/recipe[@name='modMeleeStructuralBrace']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
@@ -1040,8 +1029,7 @@
   <set xpath="/recipes/recipe[@name='modVehicleSuperCharger']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
   <set xpath="/recipes/recipe[@name='modVehiclePlow']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
   <set xpath="/recipes/recipe[@name='modArmorAdvancedMuffledConnectors']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
-  <set xpath="/recipes/recipe[@name='modArmorStealthBoots']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
-  <set xpath="/recipes/recipe[@name='modArmorDoubleStoragePocket']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
+  <set xpath="/recipes/recipe[@name='modArmorStealthBoots']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>  
   <set xpath="/recipes/recipe[@name='modMeleeDiamondTip']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
   <set xpath="/recipes/recipe[@name='vaultHatch01_Powered']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
   <set xpath="/recipes/recipe[@name='vaultDoor01_Powered']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
@@ -1059,8 +1047,7 @@
   <set xpath="/recipes/recipe[@name='meleeToolSalvageT3ImpactDriver']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
   <set xpath="/recipes/recipe[@name='cellarDoorDoubleSteel']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
   <set xpath="/recipes/recipe[@name='modGunDrumMagazineExtender']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
-  <set xpath="/recipes/recipe[@name='modGunRetractingStock']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>  
-  <set xpath="/recipes/recipe[@name='modGunTriggerGroupSemi']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>
+  <set xpath="/recipes/recipe[@name='modGunRetractingStock']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT4</set>    
 
   <!-- Tier 5 (T5: Levels 65-80) -->
   <set xpath="/recipes/recipe[@name='vehicleGyroCopterAccessories']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT5</set>
@@ -2075,8 +2062,7 @@
   <set xpath="/recipes/recipe[@name='modArmorBandolier']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
   
   <set xpath="/recipes/recipe[@name='modVehicleExpandedSeat']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
-  <set xpath="/recipes/recipe[@name='pictureVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
-  <set xpath="/recipes/recipe[@name='resourceDuctTape']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
+  <set xpath="/recipes/recipe[@name='pictureVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>  
   <set xpath="/recipes/recipe[@name='sectionalPlaidCouchSofaBlockVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
   <set xpath="/recipes/recipe[@name='couchUglySingleBlockVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
   <set xpath="/recipes/recipe[@name='couchUglyLargeBlockVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
@@ -2104,20 +2090,16 @@
   <set xpath="/recipes/recipe[@name='meleeWpnKnucklesT1IronKnuckles']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
   <set xpath="/recipes/recipe[@name='meleeWpnKnucklesT3SteelKnuckles']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
   <set xpath="/recipes/recipe[@name='modArmorBandolier']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
-  <set xpath="/recipes/recipe[@name='modArmorCustomizedFittings']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
-  <set xpath="/recipes/recipe[@name='modArmorImprovedFittings']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>    
+  <set xpath="/recipes/recipe[@name='modArmorCustomizedFittings']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>     
   <set xpath="/recipes/recipe[@name='modArmorQuadStoragePocket']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
   <set xpath="/recipes/recipe[@name='modVehicleExpandedSeat']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
   <set xpath="/recipes/recipe[@name='officeChair01VariantHelper']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
   <set xpath="/recipes/recipe[@name='sectionalLeatherCouchSofaBlockVariantHelper']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
 
-  <set xpath="/recipes/recipe[@name='vehicleTruck4x4Chassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
-  <set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
+  <set xpath="/recipes/recipe[@name='vehicleTruck4x4Chassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>  
   <set xpath="/recipes/recipe[@name='vehicleGyroCopterChassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
 
-  <set xpath="/recipes/recipe[@name='vehicleMotorcycleChassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
-  <set xpath="/recipes/recipe[@name='modArmorDoubleStoragePocket']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
-  <set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
+  <set xpath="/recipes/recipe[@name='vehicleMotorcycleChassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>    
   <set xpath="/recipes/recipe[@name='vehicleMinibikeChassis']/ingredient[@name='resourceLeather']/@name">LeatherSheetT2</set>
 
   <!-- Leather Weapon Scaling -->

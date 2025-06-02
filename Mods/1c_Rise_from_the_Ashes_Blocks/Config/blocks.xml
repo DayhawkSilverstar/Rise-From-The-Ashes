@@ -1450,21 +1450,47 @@
     <property name="DamageEvent" value="forage_seeds"/>
   </append>
   
-  <!-- Rubber from tires -->
-  <set xpath="/blocks/block[@name='decoCarTireSmallFlat']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarTireFlat']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarTirePile']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarTireStack']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarWheelFlat']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarTireSmallFlat02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarTireFlat02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarTirePile02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarTireStack02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarWheelFlat02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarWheelOffset01']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarWheelOffset02']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  <set xpath="/blocks/block[@name='decoCarWheelOffset03']/drop[@event='Destroy' and @name='resourceScrapPolymers']/@name">Rubber</set>
-  
+  <!-- Rubber from tires --> 
+  <append xpath="/blocks/block[@name='decoCarTireSmallFlat']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>    
+  </append>
+  <append xpath="/blocks/block[@name='decoCarTireFlat']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarTirePile']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarTireStack']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarWheelFlat']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarTireSmallFlat02']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarTireFlat02']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarTirePile02']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarTireStack02']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarWheelFlat02']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarWheelOffset01']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarWheelOffset02']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+  <append xpath="/blocks/block[@name='decoCarWheelOffset03']">
+    <drop event="Destroy" name="Rubber" count="3,7"/>
+  </append>
+
   <set xpath="/blocks/block[@name='plantHydroponicAloe']/property[@class='RepairItems']/property[@name='resourceElectricParts']/@name">resourceElectricPartsT3</set>    
     <set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='EconomicValue']/@value">20</set>
     <set xpath="/blocks/block[@name='cropsHarvestableMaster']/property[@name='Tags']/@value">foliage</set>
@@ -3483,7 +3509,6 @@
   <set xpath="/blocks/block[@name='cntSemiTruck01AirRandomHelper']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
   <set xpath="/blocks/block[@name='cntPoliceCar01AirRandomHelper']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
   <set xpath="/blocks/block[@name='cntFireTruck01AirRandomHelper']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
-  <set xpath="/blocks/block[@name='riseVehicleGasPoweredMaster']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
   <set xpath="/blocks/block[@name='cntGasPumpRandomLootHelper']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
   <set xpath="/blocks/block[@name='cntGasPumpFull']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>  
 

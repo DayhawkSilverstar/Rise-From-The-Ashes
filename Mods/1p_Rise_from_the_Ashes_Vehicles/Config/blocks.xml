@@ -43,7 +43,7 @@
 		</block>
 
 		<block name ="riseVehicleGasPoweredMaster">
-			<property name="Class" value="CarExplodeLoot"/>
+			<property name="Class" value="RiseBlockCarExplodeLoot, Rise_From_The_Ashes"/>
 			<property name="Extends" value="riseVehicleMaster"/>
 			<property name="LootList" value="fireTruck"/>
 			<property name="CreativeMode" value="None"/>

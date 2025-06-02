@@ -38,9 +38,11 @@
 	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/property[@name='UnlockedBy']/@value">skillElectricalEngineer</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStunBatonRepulsor']/property[@name='UnlockedBy']/@value">skillElectricalEngineer</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/property[@name='UnlockedBy']/@value">skillElectricalEngineer</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneHeadlampMod']/property[@name='UnlockedBy']/@value">skillElectricalEngineer</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/property[@name='UnlockedBy']/@value">skillElectricalEngineer</set>
-	
+
+  <append xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']">
+    <property name="UnlockedBy" value="skillElectricalEngineer"/>
+  </append>
+  
 	<!-- ***** MECHANICAL ENGINEER ****** -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>	
 	<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>

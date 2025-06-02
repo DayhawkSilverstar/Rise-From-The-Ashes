@@ -56,11 +56,9 @@
 	<remove xpath="/lootcontainers/lootgroup[@name='twitch_T4_Home_Run_Rewards']/item[@group='twitch_Home_Run_Books']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='twitch_T5_Home_Run_Rewards']/item[@group='twitch_Home_Run_Books']"/>
 
-	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@group='modRoboticDroneCargoModSchematic']"/>
-	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@group='modRoboticDroneMedicModSchematic']"/>
-	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@group='modRoboticDroneArmorPlatingModSchematic']"/>
-	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@group='modRoboticDroneArmorPlatingModSchematic']"/>
-
+	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneCargoModSchematic']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneMedicModSchematic']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneArmorPlatingModSchematic']"/>	
   
 
   	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
