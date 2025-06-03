@@ -265,9 +265,9 @@ TraderSuppliesQuestDescT1-3,items,,New,Not Used,(Quest)\nThis list of common med
 TraderSuppliesT1-1,items,,New,Not Used,Raw Resources and Common Items,,,,,,,,,,,,,
 TraderSuppliesDescT1-1,items,,New,Not Used,Contains common items and raw resources. It can be turned in as part of a quest to traders or opened for the resources.,,,,,,,,,,,,,
 TraderSuppliesT1-2,items,,New,Not Used,"Common Foods, Drinks, and Raw Resources",,,,,,,,,,,,,
-TraderSuppliesDescT1-1,items,,New,Not Used,Contains common foods, drinks, and raw resources. It can be turned in as part of a quest to traders or opened for the resources.,,,,,,,,,,,,,
+TraderSuppliesDescT1-2,items,,New,Not Used,"Contains common foods, drinks, and raw resources. It can be turned in as part of a quest to traders or opened for the resources.",,,,,,,,,,,,,
 TraderSuppliesT1-3,items,,New,Not Used,Common medications and raw resources,,,,,,,,,,,,,
-TraderSuppliesDescT1-1,items,,New,Not Used,Contains raw resources and common medical supplies. It can be turned in as part of a quest to traders or opened for the resources.,,,,,,,,,,,,,
+TraderSuppliesDescT1-2,items,,New,Not Used,Contains raw resources and common medical supplies. It can be turned in as part of a quest to traders or opened for the resources.,,,,,,,,,,,,,
 TraderSuppliesCommonItems,items,,New,Not Used,Container of common items,,,,,,,,,,,,,
 TraderSuppliesCommonItemsDesc,items,,New,Not Used,Contains common items. It can be sold to traders as is or be part of a package for trader quests.,,,,,,,,,,,,,
 TraderSuppliesCommonResources,items,,New,Not Used,Raw resources,,,,,,,,,,,,,
@@ -877,11 +877,6 @@ statCharismaLevel029LongDesc,progression,Attribute,,,Dominates the social savann
 statCharismaLevel030,progression,Attribute,,,Peak Peacock,,,,,,,,,,,,,
 statCharismaLevel030LongDesc,progression,Attribute,,,The epitome of charisma leaving a trail of admirers wherever they go.,,,,,,,,,,,,,
 reqGenericPoints00,progression,Attribute,,,NA,,,,,,,,,,,,,
-vehiclesT1-1,progression,Attribute,,,Tier 1: Vehicles,,,,,,,,,,,,,
-vehiclesT2-1,progression,Attribute,,,Tier 2: Vehicles,,,,,,,,,,,,,
-vehiclesT3-1,progression,Attribute,,,Tier 3: Vehicles,,,,,,,,,,,,,
-vehiclesT4-1,progression,Attribute,,,Tier 4: Vehicles,,,,,,,,,,,,,
-vehiclesT5-1,progression,Attribute,,,Tier 5: Vehicles,,,,,,,,,,,,,
 adeptMiningPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from mining.,,,,,,,,,,,
 adeptMiningPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for mining.,,,,,,,,,,,
 adeptMiningPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for mining.,,,,,,,,,,,
@@ -1382,8 +1377,6 @@ woodCuttingPerkLongDescRank2,progression,,Attribute,Not Used,Gains proficiency i
 woodCuttingPerkLongDescRank3,progression,,Attribute,Not Used,Harvests with skill noticeably improving quantity. Increased by 30%.,,,,,,,,,,,
 woodCuttingPerkLongDescRank4,progression,,Attribute,Not Used,Achieves consistent high-quantity harvests with expertise. Increased by 40%.,,,,,,,,,,,
 woodCuttingPerkLongDescRank5,progression,,Attribute,Not Used,Harvests flawlessly achieving the highest quantity yield possible. Increased by 50%.,,,,,,,,,,,
-skillParkourLongDescRank25,progression,,Attribute,Not Used,You no longer suffer from broken a leg.,,,,,,,,,,,
-skillParkourLongDescRank50,progression,,Attribute,Not Used,You no longer can sprain your ankle.,,,,,,,,,,,
 skillParkourDescRank25,progression,,Attribute,Not Used,Skilled Traceur,,,,,,,,,,,
 skillParkourDescRank50,progression,,Attribute,Not Used,Expert Traceur.,,,,,,,,,,,
 skillParkourLongDescRank1,progression,,Attribute,Not Used,Reduce damage from falls 0.2 meters or less.,,,,,,,,,,
@@ -1742,7 +1735,7 @@ plantedPumpkinT2-2,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin (Growing)
 plantedPumpkinT3-2,blocks,Farming,New,Not Used,Moderate Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 6 pumpkins.
 plantedPumpkinT4-2,blocks,Farming,New,Not Used,High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 9 pumpkins.
 plantedPumpkinT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 12 pumpkins.
-plantedPumpkin3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
+plantedPumpkinT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
 plantedAloe3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 1 aloe.
 plantedAloe3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 3 aloe.
 plantedAloe3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 6 aloe.

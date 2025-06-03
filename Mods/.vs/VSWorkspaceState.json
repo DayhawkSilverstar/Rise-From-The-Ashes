@@ -1,12 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\0c_Rise_from_the_Ashes_Loading_Screen",
+    "\\0c_Rise_from_the_Ashes_Loading_Screen\\Config",
+    "\\0c_Rise_from_the_Ashes_Loading_Screen\\Textures",
+    "\\0c_Rise_from_the_Ashes_Loading_Screen\\Textures\\UI",
     "\\1l_Rise_from_the_Ashes_XUi",
     "\\1l_Rise_from_the_Ashes_XUi\\Config",
     "\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi",
-    "\\1p_Rise_from_the_Ashes_Vehicles",
-    "\\1q_Rise_from_the_Ashes_Quests"
+    "\\1z_Rise from_the_Ashes_Windows",
+    "\\1z_Rise from_the_Ashes_Windows\\Config"
   ],
-  "SelectedNode": "\\1l_Rise_from_the_Ashes_XUi",
+  "SelectedNode": "\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
   "PreviewInSolutionExplorer": false
 }
