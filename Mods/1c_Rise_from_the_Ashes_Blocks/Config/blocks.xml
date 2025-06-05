@@ -3555,7 +3555,7 @@
 			<property name="CreativeMode" value="Player" />		
 			<property name="UnlockedBy" value="skillMechanicalEngineer"/>	
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>			
-			<property name="DescriptionKey" value="steelBlockGroupDesc"/>
+			<property name="DescriptionKey" value="Buddy5ProgramDesc"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="Material" value="Mbrass"/>
 			<property name="EconomicValue" value="160"/>

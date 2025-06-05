@@ -1,16 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\0c_Rise_from_the_Ashes_Loading_Screen",
-    "\\0c_Rise_from_the_Ashes_Loading_Screen\\Config",
-    "\\0c_Rise_from_the_Ashes_Loading_Screen\\Textures",
-    "\\0c_Rise_from_the_Ashes_Loading_Screen\\Textures\\UI",
-    "\\1l_Rise_from_the_Ashes_XUi",
-    "\\1l_Rise_from_the_Ashes_XUi\\Config",
-    "\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi",
-    "\\1z_Rise from_the_Ashes_Windows",
-    "\\1z_Rise from_the_Ashes_Windows\\Config"
+    "\\1a_Rise_from_the_Ashes_Progression",
+    "\\1a_Rise_from_the_Ashes_Progression\\Config",
+    "\\1b_Rise_from_the_Ashes_Items",
+    "\\1c_Rise_from_the_Ashes_Blocks",
+    "\\1c_Rise_from_the_Ashes_Blocks\\Config",
+    "\\1f_Rise_from_the_Ashes_Loot",
+    "\\1g_Rise_from_the_Ashes_Recipes",
+    "\\1g_Rise_from_the_Ashes_Recipes\\Config",
+    "\\4_Rise_from_the_Ashes_Localization",
+    "\\4_Rise_from_the_Ashes_Localization\\Config"
   ],
-  "SelectedNode": "\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
+  "SelectedNode": "\\1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
   "PreviewInSolutionExplorer": false
 }

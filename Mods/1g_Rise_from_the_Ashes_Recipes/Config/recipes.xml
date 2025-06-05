@@ -31,6 +31,7 @@
   <remove xpath="/recipes/recipe[@name='cntSteelWritableCrate']"/>
   <remove xpath="/recipes/recipe[@name='ammoGasCan']"/>
   <remove xpath="/recipes/recipe[@name='resourceOil']"/>
+  <remove xpath="/recipes/recipe[@name='gunBotRoboticsParts']"/>
 
   <!-- General Survival Recipe -->
   <set xpath="/recipes/recipe[@name='medicalSplint']/ingredient[@name='resourceCloth']/@name">resourceClothT1</set>
@@ -684,7 +685,7 @@
   <set xpath="/recipes/recipe[@name='modGunBowArrowRest']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
   <set xpath="/recipes/recipe[@name='modGunBowArrowRest']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
   <append xpath="/recipes/recipe[@name='modGunBowArrowRest']/@tags">,learnable,skillMechanicalEngineer</append>
-
+  
   <set xpath="/recipes/recipe[@name='gunBotT1JunkSledge']/ingredient[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
   <insertAfter xpath="/recipes/recipe[@name='gunBotT1JunkSledge']/ingredient[@name='gunBotRoboticsPartsT3']">
     <ingredient name="SledgeTurretProgram" count="1"/>
@@ -2451,7 +2452,7 @@
 
     <recipe name="TailorWorkstation" count="1" craft_time = "90" tags="learnable,skillTailoring">
       <ingredient name="resourceLowQualityWroughtIron" count="30"/>
-      <ingredient name="resourceHide" count="10"/>
+      <ingredient name="resourceLeather" count="10"/>
       <ingredient name="resourceMechanicalPartsT1" count="10"/>
       <ingredient name="resourceNail" count="300"/>
       <ingredient name="resourceWoodT1" count="150"/>
@@ -2572,21 +2573,21 @@
     <!-- Research Start = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
     <!-- Automotive Research -->
-    <recipe name="AutomotiveComponentsT1" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveComponentsT1" count="1" craft_time="15" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceLowQualityWroughtIron" count="1"/>
       <ingredient name="resourceElectricPartsT1" count="1"/>
       <ingredient name="resourceMechanicalPartsT1" count="2"/>
       <ingredient name="resourceScrapPolymers" count="1"/>
     </recipe>
 
-    <recipe name="AutomotiveResearchBundle1" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveResearchBundle1" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceLowQualityWroughtIron" count="5"/>
       <ingredient name="resourceElectricPartsT1" count="5"/>
       <ingredient name="resourceMechanicalPartsT1" count="10"/>
       <ingredient name="resourceScrapPolymers" count="5"/>
     </recipe>
 
-    <recipe name="AutomotiveComponentsT2" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveComponentsT2" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceWroughtIron" count="4"/>
       <ingredient name="AutomotiveComponentsT1" count="1"/>
       <ingredient name="resourceElectricPartsT1" count="2"/>
@@ -2594,7 +2595,7 @@
       <ingredient name="resourceScrapPolymers" count="4"/>
     </recipe>
 
-    <recipe name="AutomotiveResearchBundle2" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveResearchBundle2" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceWroughtIron" count="20"/>
       <ingredient name="AutomotiveComponentsT1" count="5"/>
       <ingredient name="resourceElectricPartsT1" count="10"/>
@@ -2602,7 +2603,7 @@
       <ingredient name="resourceScrapPolymers" count="20"/>
     </recipe>
 
-    <recipe name="AutomotiveComponentsT3" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveComponentsT3" count="1" craft_time="45" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedIron" count="6"/>
       <ingredient name="AutomotiveComponentsT2" count="1"/>
       <ingredient name="resourceElectricPartsT2" count="3"/>
@@ -2610,7 +2611,7 @@
       <ingredient name="resourceScrapPolymers" count="5"/>
     </recipe>
 
-    <recipe name="AutomotiveResearchBundle3" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveResearchBundle3" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedIron" count="30"/>
       <ingredient name="AutomotiveComponentsT2" count="5"/>
       <ingredient name="resourceElectricPartsT2" count="15"/>
@@ -2618,7 +2619,7 @@
       <ingredient name="resourceScrapPolymers" count="25"/>
     </recipe>
 
-    <recipe name="AutomotiveComponentsT4" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveComponentsT4" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedSteel" count="8"/>
       <ingredient name="AutomotiveComponentsT3" count="1"/>
       <ingredient name="resourceElectricPartsT3" count="4"/>
@@ -2626,7 +2627,7 @@
       <ingredient name="resourceScrapPolymers" count="10"/>
     </recipe>
 
-    <recipe name="AutomotiveResearchBundle4" count="1" craft_time="480" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveResearchBundle4" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedSteel" count="40"/>
       <ingredient name="AutomotiveComponentsT3" count="5"/>
       <ingredient name="resourceElectricPartsT3" count="20"/>
@@ -2634,7 +2635,7 @@
       <ingredient name="resourceScrapPolymers" count="50"/>
     </recipe>
 
-    <recipe name="AutomotiveComponentsT5" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveComponentsT5" count="1" craft_time="75" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedStainlessSteel" count="12"/>
       <ingredient name="AutomotiveComponentsT4" count="1"/>
       <ingredient name="resourceElectricPartsT4" count="4"/>
@@ -2642,7 +2643,7 @@
       <ingredient name="resourceScrapPolymers" count="10"/>
     </recipe>
 
-    <recipe name="AutomotiveResearchBundle5" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveResearchBundle5" count="1" craft_time="150" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedStainlessSteel" count="60"/>
       <ingredient name="AutomotiveComponentsT4" count="5"/>
       <ingredient name="resourceElectricPartsT4" count="20"/>
@@ -2650,7 +2651,7 @@
       <ingredient name="resourceScrapPolymers" count="50"/>
     </recipe>
 
-    <recipe name="AutomotiveComponentsT6" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveComponentsT6" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedTungsten" count="12"/>
       <ingredient name="AutomotiveComponentsT5" count="1"/>
       <ingredient name="resourceElectricPartsT5" count="4"/>
@@ -2658,7 +2659,7 @@
       <ingredient name="resourceScrapPolymers" count="14"/>
     </recipe>
 
-    <recipe name="AutomotiveResearchBundle6" count="1" craft_time="1280" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
+    <recipe name="AutomotiveResearchBundle6" count="1" craft_time="180" craft_area="workbench" tags="learnable,workbenchCrafting,skillAutomotive">
       <ingredient name="resourceForgedTungsten" count="80"/>
       <ingredient name="AutomotiveComponentsT5" count="5"/>
       <ingredient name="resourceElectricPartsT5" count="25"/>
@@ -2667,7 +2668,7 @@
     </recipe>
 
     <!-- Blacksmithing Research -->
-    <recipe name="resourceLowQualityWroughtIron" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="learnable,skillBlacksmithing">
+    <recipe name="resourceLowQualityWroughtIron" count="1" craft_time="15" material_based="true" craft_area="forge" is_trackable="false" tags="learnable,skillBlacksmithing">
       <ingredient name="unit_iron" count="2"/>
       <ingredient name="unit_clay" count="1"/>
       <effect_group>
@@ -2675,12 +2676,12 @@
       </effect_group>
     </recipe>
 
-    <recipe name="BlacksmithingResearchBundle1" material_based="true" count="1" craft_time="60" craft_area="forge" tags="learnable,skillBlacksmithing">
+    <recipe name="BlacksmithingResearchBundle1" material_based="true" count="1" craft_time="30" craft_area="forge" tags="learnable,skillBlacksmithing">
       <ingredient name="unit_iron" count="60"/>
       <ingredient name="unit_clay" count="30"/>
     </recipe>
 
-    <recipe name="resourceWroughtIron" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="learnable,skillBlacksmithing">
+    <recipe name="resourceWroughtIron" count="1" craft_time="30" material_based="true" craft_area="forge" is_trackable="false" tags="learnable,skillBlacksmithing">
       <ingredient name="unit_iron" count="5"/>
       <ingredient name="unit_clay" count="2"/>
       <effect_group>
@@ -2688,29 +2689,29 @@
       </effect_group>
     </recipe>
 
-    <recipe name="BlacksmithingResearchBundle2" material_based="true" count="1" craft_time="120" craft_area="forge" tags="learnable,skillBlacksmithing">
+    <recipe name="BlacksmithingResearchBundle2" material_based="true" count="1" craft_time="60" craft_area="forge" tags="learnable,skillBlacksmithing">
       <ingredient name="unit_iron" count="150"/>
       <ingredient name="unit_clay" count="60"/>
     </recipe>
 
-    <recipe name="resourceForgedBrass" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="learnable,skillBlacksmithing">
+    <recipe name="resourceForgedBrass" count="1" craft_time="15" material_based="true" craft_area="forge" is_trackable="false" tags="learnable,skillBlacksmithing">
       <ingredient name="unit_brass" count="10"/>
       <ingredient name="unit_clay" count="5"/>
       <effect_group>
       </effect_group>
     </recipe>
 
-    <recipe name="BlacksmithingResearchBundle3" material_based="true" count="1" craft_time="240" craft_area="forge" tags="learnable,skillBlacksmithing">
+    <recipe name="BlacksmithingResearchBundle3" material_based="true" count="1" craft_time="90" craft_area="forge" tags="learnable,skillBlacksmithing">
       <ingredient name="unit_iron" count="300"/>
       <ingredient name="unit_clay" count="150"/>
     </recipe>
 
-    <recipe name="BlacksmithingResearchBundle4" material_based="true" count="1" craft_time="480" craft_area="forge" tags="learnable,skillBlacksmithing" craft_tool="toolForgeCrucible">
+    <recipe name="BlacksmithingResearchBundle4" material_based="true" count="1" craft_time="120" craft_area="forge" tags="learnable,skillBlacksmithing" craft_tool="toolForgeCrucible">
       <ingredient name="unit_iron" count="900"/>
       <ingredient name="unit_clay" count="300"/>
     </recipe>
 
-    <recipe name="resourceForgedStainlessSteel" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="skillBlacksmithing,learnable" craft_tool="toolForgeCrucible">
+    <recipe name="resourceForgedStainlessSteel" count="1" craft_time="60" material_based="true" craft_area="forge" is_trackable="false" tags="skillBlacksmithing,learnable" craft_tool="toolForgeCrucible">
       <ingredient name="unit_iron" count="40"/>
       <ingredient name="unit_clay" count="15"/>
       <effect_group>
@@ -2718,218 +2719,218 @@
       </effect_group>
     </recipe>
 
-    <recipe name="BlacksmithingResearchBundle5" material_based="true" count="1" craft_time="960" craft_area="forge" tags="learnable,skillBlacksmithing" craft_tool="toolForgeCrucible">
+    <recipe name="BlacksmithingResearchBundle5" material_based="true" count="1" craft_time="150" craft_area="forge" tags="learnable,skillBlacksmithing" craft_tool="toolForgeCrucible">
       <ingredient name="unit_iron" count="1200"/>
       <ingredient name="unit_clay" count="450"/>
     </recipe>
 
-    <recipe name="resourceForgedTungsten" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="skillBlacksmithing,learnable" craft_tool="toolForgeCrucible">
+    <recipe name="resourceForgedTungsten" count="1" craft_time="90" material_based="true" craft_area="forge" is_trackable="false" tags="skillBlacksmithing,learnable" craft_tool="toolForgeCrucible">
       <ingredient name="unit_tungsten" count="30"/>
       <effect_group>
 
       </effect_group>
     </recipe>
 
-    <recipe name="BlacksmithingResearchBundle6" material_based="true" count="1" craft_time="1280" craft_area="forge" tags="learnable,skillBlacksmithing" craft_tool="toolForgeCrucible">
+    <recipe name="BlacksmithingResearchBundle6" material_based="true" count="1" craft_time="180" craft_area="forge" tags="learnable,skillBlacksmithing" craft_tool="toolForgeCrucible">
       <ingredient name="unit_iron" count="1500"/>
       <ingredient name="unit_clay" count="500"/>
     </recipe>
 
     <!-- Carpentry Research -->
-    <recipe name="CarpentryResearchBundle1" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle1" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="woodLogPillar100" count="10"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle2" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle2" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="woodLogPillar100" count="15"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle2" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle2" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="resourceWoodT1" count="200"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle3" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle3" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="woodLogPillar100" count="20"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle3" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle3" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="resourceWoodT2" count="200"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle4" count="1" craft_time="480" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle4" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="woodLogPillar100" count="25"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle4" count="1" craft_time="480" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle4" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="resourceWoodT3" count="200"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle5" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle5" count="1" craft_time="150" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="woodLogPillar100" count="30"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle5" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle5" count="1" craft_time="150" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="resourceWoodT4" count="200"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle6" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle6" count="1" craft_time="180" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="woodLogPillar100" count="35"/>
     </recipe>
 
-    <recipe name="CarpentryResearchBundle6" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+    <recipe name="CarpentryResearchBundle6" count="1" craft_time="180" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="resourceWoodT5" count="200"/>
     </recipe>
 
-    <recipe name="resourceWoodT1" count="20" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT1" count="20" craft_time="15" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="woodLogPillar100" count="1"/>
     </recipe>
 
-    <recipe name="resourceWoodT2" count="10" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT2" count="10" craft_time="30" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="woodLogPillar100" count="1"/>
     </recipe>
 
-    <recipe name="resourceWoodT3" count="5" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT3" count="5" craft_time="45" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="woodLogPillar100" count="1"/>
     </recipe>
 
-    <recipe name="resourceWoodT4" count="5" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT4" count="5" craft_time="60" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="woodLogPillar100" count="2"/>
     </recipe>
 
-    <recipe name="resourceWoodT5" count="5" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT5" count="5" craft_time="75" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="woodLogPillar100" count="3"/>
     </recipe>
 
-    <recipe name="resourceWoodT6" count="5" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT6" count="5" craft_time="90" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="woodLogPillar100" count="4"/>
     </recipe>
 
-    <recipe name="resourceWoodT2" count="10" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT2" count="10" craft_time="30" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="resourceWoodT1" count="20"/>
     </recipe>
 
-    <recipe name="resourceWoodT3" count="10" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT3" count="10" craft_time="45" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="resourceWoodT2" count="20"/>
     </recipe>
 
-    <recipe name="resourceWoodT4" count="10" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT4" count="10" craft_time="60" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="resourceWoodT3" count="20"/>
     </recipe>
 
-    <recipe name="resourceWoodT5" count="10" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT5" count="10" craft_time="75" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="resourceWoodT4" count="20"/>
     </recipe>
 
-    <recipe name="resourceWoodT6" count="10" craft_time="10" craft_area="workbench" tags="learnable,skillCarpentry">
+    <recipe name="resourceWoodT6" count="10" craft_time="90" craft_area="workbench" tags="learnable,skillCarpentry">
       <ingredient name="resourceWoodT5" count="20"/>
     </recipe>
 
     <!-- Chemistry Research -->
-    <recipe name="ReagentT1" count="1" craft_time="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
+    <recipe name="ReagentT1" count="1" craft_time="15" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
       <ingredient name="drinkJarBoiledWater" count="1"/>
       <ingredient name="BakingSoda" count="1"/>
       <ingredient name="DistilledAlcohol" count="1"/>
       <ingredient name="SaltShaker" count="1"/>
     </recipe>
 
-    <recipe name="ReagentT2" count="1" craft_time="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
+    <recipe name="ReagentT2" count="1" craft_time="30" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
       <ingredient name="CalciumCarbonate" count="1"/>
       <ingredient name="PaintRemover" count="1"/>
       <ingredient name="GlassCleaner" count="1"/>
     </recipe>
 
-    <recipe name="ReagentT3" count="1" craft_time="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
+    <recipe name="ReagentT3" count="1" craft_time="45" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
       <ingredient name="DrainCleaner" count="1"/>
       <ingredient name="LaundryDetergent" count="1"/>
       <ingredient name="D-Icer" count="1"/>
     </recipe>
 
-    <recipe name="ReagentT4" count="1" craft_time="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
+    <recipe name="ReagentT4" count="1" craft_time="60" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
       <ingredient name="resourceAcid" count="1"/>
       <ingredient name="Bleach" count="1"/>
     </recipe>
 
-    <recipe name="ReagentT5" count="1" craft_time="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
+    <recipe name="ReagentT5" count="1" craft_time="75" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
       <ingredient name="resourcePotassiumNitratePowder" count="10"/>
       <ingredient name="BurnCream" count="1"/>
     </recipe>
 
-    <recipe name="ReagentT6" count="1" craft_time="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
+    <recipe name="ReagentT6" count="1" craft_time="90" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
       <ingredient name="ReagentT5" count="1"/>
       <ingredient name="HydrofluoricAcid" count="1"/>
       <ingredient name="PotassiumPermanganate" count="1"/>
     </recipe>
 
-    <recipe name="ChemistryResearchBundle1" count="1" craft_time="60" craft_area="chemistryStation" tags="learnable,skillChemistry">
+    <recipe name="ChemistryResearchBundle1" count="1" craft_time="15" craft_area="chemistryStation" tags="learnable,skillChemistry">
       <ingredient name="drinkJarBoiledWater" count="4"/>
       <ingredient name="BakingSoda" count="4"/>
       <ingredient name="DistilledAlcohol" count="4"/>
       <ingredient name="SaltShaker" count="4"/>
     </recipe>
 
-    <recipe name="ChemistryResearchBundle2" count="1" craft_time="120" craft_area="chemistryStation" tags="learnable,skillChemistry">
+    <recipe name="ChemistryResearchBundle2" count="1" craft_time="30" craft_area="chemistryStation" tags="learnable,skillChemistry">
       <ingredient name="ReagentT1" count="4"/>
       <ingredient name="CalciumCarbonate" count="4"/>
       <ingredient name="PaintRemover" count="4"/>
       <ingredient name="GlassCleaner" count="4"/>
     </recipe>
 
-    <recipe name="ChemistryResearchBundle3" count="1" craft_time="240" craft_area="chemistryStation" tags="learnable,skillChemistry">
+    <recipe name="ChemistryResearchBundle3" count="1" craft_time="60" craft_area="chemistryStation" tags="learnable,skillChemistry">
       <ingredient name="ReagentT2" count="4"/>
       <ingredient name="DrainCleaner" count="4"/>
       <ingredient name="LaundryDetergent" count="4"/>
       <ingredient name="D-Icer" count="4"/>
     </recipe>
 
-    <recipe name="ChemistryResearchBundle4" count="1" craft_time="480" craft_area="chemistryStation" tags="learnable,skillChemistry">
+    <recipe name="ChemistryResearchBundle4" count="1" craft_time="90" craft_area="chemistryStation" tags="learnable,skillChemistry">
       <ingredient name="ReagentT3" count="4"/>
       <ingredient name="resourceAcid" count="4"/>
       <ingredient name="Bleach" count="4"/>
     </recipe>
 
-    <recipe name="ChemistryResearchBundle5" count="1" craft_time="960" craft_area="chemistryStation" tags="learnable,skillChemistry">
+    <recipe name="ChemistryResearchBundle5" count="1" craft_time="120" craft_area="chemistryStation" tags="learnable,skillChemistry">
       <ingredient name="ReagentT4" count="4"/>
       <ingredient name="resourcePotassiumNitratePowder" count="50"/>
       <ingredient name="BurnCream" count="4"/>
     </recipe>
 
-    <recipe name="ChemistryResearchBundle6" count="1" craft_time="1280" craft_area="chemistryStation" tags="learnable,skillChemistry">
+    <recipe name="ChemistryResearchBundle6" count="1" craft_time="150" craft_area="chemistryStation" tags="learnable,skillChemistry">
       <ingredient name="ReagentT5" count="4"/>
       <ingredient name="HydrofluoricAcid" count="4"/>
       <ingredient name="PotassiumPermanganate" count="4"/>
     </recipe>
 
     <!-- Civil Engineer Research -->
-    <recipe name="CivilEngineerResearchBundle1" count="1" craft_time="110" tags="learnable,skillCivilEngineer">
+    <recipe name="CivilEngineerResearchBundle1" count="1" craft_time="60" tags="learnable,skillCivilEngineer">
       <ingredient name="resourceClayLump" count="250"/>
       <ingredient name="resourceRockSmall" count="250"/>
     </recipe>
 
-    <recipe name="CivilEngineerResearchBundle2" count="1" material_based="true" craft_time="110" tags="learnable,skillCivilEngineer">
+    <recipe name="CivilEngineerResearchBundle2" count="1" material_based="true" craft_time="90" tags="learnable,skillCivilEngineer">
       <ingredient name="resourceClayLump" count="250"/>
       <ingredient name="resourceCrushedSand" count="250"/>
     </recipe>
 
-    <recipe name="CivilEngineerResearchBundle3" count="1" material_based="true" craft_time="110" craft_area="cementMixer" tags="learnable,skillCivilEngineer">
+    <recipe name="CivilEngineerResearchBundle3" count="1" material_based="true" craft_time="120" craft_area="cementMixer" tags="learnable,skillCivilEngineer">
       <ingredient name="resourceRockSmall" count="250"/>
       <ingredient name="resourceClayLump" count="250"/>
       <ingredient name="resourceCrushedSand" count="100"/>
     </recipe>
 
-    <recipe name="CivilEngineerResearchBundle4" count="1" craft_time="110" craft_area="workbench" tags="learnable,skillCivilEngineer">
+    <recipe name="CivilEngineerResearchBundle4" count="1" craft_time="150" craft_area="workbench" tags="learnable,skillCivilEngineer">
       <ingredient name="resourceForgedIron" count="250"/>
     </recipe>
 
-    <recipe name="CivilEngineerResearchBundle5" count="1" craft_time="110" craft_area="workbench" tags="learnable,workbenchCrafting,skillCivilEngineer">
+    <recipe name="CivilEngineerResearchBundle5" count="1" craft_time="180" craft_area="workbench" tags="learnable,workbenchCrafting,skillCivilEngineer">
       <ingredient name="resourceForgedStainlessSteel" count="50"/>
     </recipe>
 
-    <recipe name="CivilEngineerResearchBundle6" count="1" craft_time="110" craft_area="workbench" tags="learnable,workbenchCrafting,skillCivilEngineer">
+    <recipe name="CivilEngineerResearchBundle6" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,skillCivilEngineer">
       <ingredient name="resourceForgedTungsten" count="50"/>
     </recipe>
 
     <!-- *** Cooking Research -->
-    <recipe name="CookingResearchBundle1" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
+    <recipe name="CookingResearchBundle1" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
       <ingredient name="foodRawMeat" count="15"/>
     </recipe>
 
@@ -2940,12 +2941,12 @@
 		</recipe>
 		-->
 
-    <recipe name="CookingResearchBundle2" count="1" craft_time="120" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
+    <recipe name="CookingResearchBundle2" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
       <ingredient name="foodRawMeat" count="15"/>
       <ingredient name="foodEgg" count="6"/>
     </recipe>
 
-    <recipe name="CookingResearchBundle3" count="1" craft_time="240" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
+    <recipe name="CookingResearchBundle3" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
       <ingredient name="foodRawMeat" count="25"/>
       <ingredient name="foodCropPotato" count="10"/>
       <ingredient name="foodCropCorn" count="10"/>
@@ -2953,21 +2954,21 @@
       <ingredient name="drinkJarBoiledWater" count="5"/>
     </recipe>
 
-    <recipe name="CookingResearchBundle4" count="1" craft_time="480" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
+    <recipe name="CookingResearchBundle4" count="1" craft_time="120" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
       <ingredient name="foodCropPotato" count="10"/>
       <ingredient name="foodCropCorn" count="10"/>
       <ingredient name="foodCropMushrooms" count="10"/>
       <ingredient name="drinkJarBoiledWater" count="5"/>
     </recipe>
 
-    <recipe name="CookingResearchBundle5" count="1" craft_time="960" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
+    <recipe name="CookingResearchBundle5" count="1" craft_time="150" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
       <ingredient name="foodRawMeat" count="25"/>
       <ingredient name="foodCropPotato" count="10"/>
       <ingredient name="foodCropMushrooms" count="10"/>
       <ingredient name="resourceAnimalFat" count="5"/>
     </recipe>
 
-    <recipe name="CookingResearchBundle6" count="1" craft_time="1280" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
+    <recipe name="CookingResearchBundle6" count="1" craft_time="180" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable,skillCooking">
       <ingredient name="foodRawMeat" count="25"/>
       <ingredient name="foodCropPotato" count="10"/>
       <ingredient name="foodCropMushrooms" count="10"/>
@@ -2975,7 +2976,7 @@
     </recipe>
 
     <!-- Electrical Research -->
-    <recipe name="resourceElectricPartsT1" count="1" craft_area="workbench" tags="learnable,skillElectricalEngineer">
+    <recipe name="resourceElectricPartsT1" count="1" craft_time="15" craft_area="workbench" tags="learnable,skillElectricalEngineer">
       <ingredient name="resourceLowQualityWroughtIron" count="1"/>
       <ingredient name="resourceScrapPolymers" count="2"/>
       <effect_group>
@@ -2983,12 +2984,12 @@
       </effect_group>
     </recipe>
 
-    <recipe name="ElectronicsResearchBundle1" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
+    <recipe name="ElectronicsResearchBundle1" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
       <ingredient name="resourceLowQualityWroughtIron" count="15"/>
       <ingredient name="resourceScrapPolymers" count="15"/>
     </recipe>
 
-    <recipe name="resourceElectricPartsT2" count="1" craft_area="workbench" tags="learnable,skillElectricalEngineer">
+    <recipe name="resourceElectricPartsT2" count="1" craft_time="30" craft_area="workbench" tags="learnable,skillElectricalEngineer">
       <ingredient name="resourceWroughtIron" count="1"/>
       <ingredient name="resourceScrapPolymers" count="2"/>
       <effect_group>
@@ -2996,13 +2997,13 @@
       </effect_group>
     </recipe>
 
-    <recipe name="ElectronicsResearchBundle2" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
+    <recipe name="ElectronicsResearchBundle2" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
       <ingredient name="resourceWroughtIron" count="30"/>
       <ingredient name="resourceElectricPartsT1" count="10"/>
       <ingredient name="resourceScrapPolymers" count="30"/>
     </recipe>
 
-    <recipe name="resourceElectricPartsT3" count="1" craft_area="workbench" tags="learnable,skillElectricalEngineer">
+    <recipe name="resourceElectricPartsT3" count="1" craft_time="45" craft_area="workbench" tags="learnable,skillElectricalEngineer">
       <ingredient name="resourceForgedIron" count="1"/>
       <ingredient name="resourceScrapPolymers" count="2"/>
       <effect_group>
@@ -3010,13 +3011,13 @@
       </effect_group>
     </recipe>
 
-    <recipe name="ElectronicsResearchBundle3" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
+    <recipe name="ElectronicsResearchBundle3" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
       <ingredient name="resourceForgedIron" count="30"/>
       <ingredient name="resourceElectricPartsT2" count="10"/>
       <ingredient name="resourceScrapPolymers" count="30"/>
     </recipe>
 
-    <recipe name="resourceElectricPartsT4" count="1" craft_area="workbench" tags="learnable,skillElectricalEngineer">
+    <recipe name="resourceElectricPartsT4" count="1" craft_time="60" craft_area="workbench" tags="learnable,skillElectricalEngineer">
       <ingredient name="resourceForgedSteel" count="1"/>
       <ingredient name="resourceScrapPolymers" count="2"/>
       <effect_group>
@@ -3024,13 +3025,13 @@
       </effect_group>
     </recipe>
 
-    <recipe name="ElectronicsResearchBundle4" count="1" craft_time="480" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
+    <recipe name="ElectronicsResearchBundle4" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
       <ingredient name="resourceForgedSteel" count="30"/>
       <ingredient name="resourceElectricPartsT3" count="10"/>
       <ingredient name="resourceScrapPolymers" count="30"/>
     </recipe>
 
-    <recipe name="resourceElectricPartsT5" count="1" craft_area="workbench" tags="learnable,skillElectricalEngineer">
+    <recipe name="resourceElectricPartsT5" count="1" craft_time="75" craft_area="workbench" tags="learnable,skillElectricalEngineer">
       <ingredient name="resourceForgedStainlessSteel" count="1"/>
       <ingredient name="resourceScrapPolymers" count="2"/>
       <effect_group>
@@ -3038,13 +3039,13 @@
       </effect_group>
     </recipe>
 
-    <recipe name="ElectronicsResearchBundle5" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
+    <recipe name="ElectronicsResearchBundle5" count="1" craft_time="150" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
       <ingredient name="resourceForgedStainlessSteel" count="30"/>
       <ingredient name="resourceElectricPartsT4" count="10"/>
       <ingredient name="resourceScrapPolymers" count="30"/>
     </recipe>
 
-    <recipe name="resourceElectricPartsT6" count="1" craft_area="workbench" tags="learnable,skillElectricalEngineer">
+    <recipe name="resourceElectricPartsT6" count="1" craft_time="90" craft_area="workbench" tags="learnable,skillElectricalEngineer">
       <ingredient name="resourceForgedTungsten" count="1"/>
       <ingredient name="resourceScrapPolymers" count="2"/>
       <effect_group>
@@ -3052,146 +3053,146 @@
       </effect_group>
     </recipe>
 
-    <recipe name="ElectronicsResearchBundle6" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
+    <recipe name="ElectronicsResearchBundle6" count="1" craft_time="180" craft_area="workbench" tags="learnable,workbenchCrafting,skillElectricalEngineer">
       <ingredient name="resourceForgedTungsten" count="30"/>
       <ingredient name="resourceElectricPartsT5" count="10"/>
       <ingredient name="resourceScrapPolymers" count="30"/>
     </recipe>
 
     <!-- Leatherworking Research -->
-    <recipe name="LeatherSheetT1" count="1" craft_area="TailorWorkstation"  craft_time = "60" tags="learnable,skillLeatherworking">
-      <ingredient name="resourceHide" count="1"/>
+    <recipe name="LeatherSheetT1" count="1" craft_area="TailorWorkstation"  craft_time = "15" tags="learnable,skillLeatherworking">
+      <ingredient name="resourceLeather" count="1"/>
       <ingredient name="TanninSolution" count="1"/>
     </recipe>
 
-    <recipe name="LeatherworkingResearchBundle1" count="1" craft_time="180" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
+    <recipe name="LeatherworkingResearchBundle1" count="1" craft_time="30" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
       <ingredient name="bucketRiverWater" count="2"/>
       <ingredient name="BarkChips" count="50"/>
     </recipe>
 
-    <recipe name="LeatherworkingResearchBundle1-2" count="1" craft_time="120" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
+    <recipe name="LeatherworkingResearchBundle1-2" count="1" craft_time="30" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
       <ingredient name="TanninSolution" count="2"/>
-      <ingredient name="resourceHide" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>
     </recipe>
 
-    <recipe name="LeatherSheetT2" count="1" craft_area="TailorWorkstation"  craft_time = "60" tags="learnable,skillLeatherworking">
-      <ingredient name="resourceHide" count="1"/>
+    <recipe name="LeatherSheetT2" count="1" craft_area="TailorWorkstation"  craft_time = "30" tags="learnable,skillLeatherworking">
+      <ingredient name="resourceLeather" count="1"/>
       <ingredient name="TanninSolution" count="1"/>
     </recipe>
 
-    <recipe name="LeatherworkingResearchBundle2" count="1" craft_time="120" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
+    <recipe name="LeatherworkingResearchBundle2" count="1" craft_time="60" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
       <ingredient name="TanninSolution" count="2"/>
-      <ingredient name="resourceHide" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>
     </recipe>
 
-    <recipe name="LeatherSheetT3" count="1" craft_area="TailorWorkstation"  craft_time = "90" tags="learnable,skillLeatherworking">
-      <ingredient name="resourceHide" count="1"/>
+    <recipe name="LeatherSheetT3" count="1" craft_area="TailorWorkstation"  craft_time = "45" tags="learnable,skillLeatherworking">
+      <ingredient name="resourceLeather" count="1"/>
       <ingredient name="TanninSolution" count="1"/>
     </recipe>
 
-    <recipe name="LeatherworkingResearchBundle3" count="1" craft_time="300" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
+    <recipe name="LeatherworkingResearchBundle3" count="1" craft_time="90" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
       <ingredient name="TanninSolution" count="2"/>
-      <ingredient name="resourceHide" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>
     </recipe>
 
-    <recipe name="LeatherSheetT4" count="1" craft_area="TailorWorkstation"  craft_time = "120" tags="learnable,skillLeatherworking">
-      <ingredient name="resourceHide" count="1"/>
+    <recipe name="LeatherSheetT4" count="1" craft_area="TailorWorkstation"  craft_time = "60" tags="learnable,skillLeatherworking">
+      <ingredient name="resourceLeather" count="1"/>
       <ingredient name="TanninSolution" count="1"/>
     </recipe>
 
-    <recipe name="LeatherworkingResearchBundle4" count="1" craft_time="540" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
+    <recipe name="LeatherworkingResearchBundle4" count="1" craft_time="120" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
       <ingredient name="TanninSolution" count="2"/>
-      <ingredient name="resourceHide" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>
     </recipe>
 
-    <recipe name="LeatherSheetT5" count="1" craft_area="TailorWorkstation"  craft_time = "120" tags="learnable,skillLeatherworking">
-      <ingredient name="resourceHide" count="1"/>
+    <recipe name="LeatherSheetT5" count="1" craft_area="TailorWorkstation"  craft_time = "75" tags="learnable,skillLeatherworking">
+      <ingredient name="resourceLeather" count="1"/>
       <ingredient name="TanninSolution" count="1"/>
     </recipe>
 
 
-    <recipe name="LeatherworkingResearchBundle5" count="1" craft_time="960" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
+    <recipe name="LeatherworkingResearchBundle5" count="1" craft_time="150" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
       <ingredient name="TanninSolution" count="2"/>
-      <ingredient name="resourceHide" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>
     </recipe>
 
-    <recipe name="LeatherSheetT6" count="1" craft_area="TailorWorkstation"  craft_time = "180" tags="learnable,skillLeatherworking">
-      <ingredient name="resourceHide" count="2"/>
+    <recipe name="LeatherSheetT6" count="1" craft_area="TailorWorkstation"  craft_time = "90" tags="learnable,skillLeatherworking">
+      <ingredient name="resourceLeather" count="2"/>
       <ingredient name="TanninSolution" count="2"/>
     </recipe>
 
-    <recipe name="LeatherworkingResearchBundle6" count="1" craft_time="1220" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
+    <recipe name="LeatherworkingResearchBundle6" count="1" craft_time="180" craft_area="TailorWorkstation" tags="learnable,skillLeatherworking">
       <ingredient name="TanninSolution" count="2"/>
-      <ingredient name="resourceHide" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>
     </recipe>
 
     <!-- Mechanical Research -->
 
-    <recipe name="resourceMechanicalPartsT1" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="resourceMechanicalPartsT1" count="1" craft_time="15" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceLowQualityWroughtIron" count="3"/>
       <ingredient name="resourceScrapPolymers" count="3"/>
     </recipe>
 
-    <recipe name="MechanicalResearchBundle1" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="MechanicalResearchBundle1" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceLowQualityWroughtIron" count="15"/>
       <ingredient name="resourceScrapPolymers" count="15"/>
     </recipe>
 
-    <recipe name="resourceMechanicalPartsT2" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="resourceMechanicalPartsT2" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceWroughtIron" count="6"/>
       <ingredient name="resourceMechanicalPartsT1" count="2"/>
       <ingredient name="resourceScrapPolymers" count="6"/>
     </recipe>
 
-    <recipe name="MechanicalResearchBundle2" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="MechanicalResearchBundle2" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceWroughtIron" count="30"/>
       <ingredient name="resourceMechanicalPartsT1" count="10"/>
       <ingredient name="resourceScrapPolymers" count="30"/>
     </recipe>
 
-    <recipe name="resourceMechanicalPartsT3" count="1" craft_time="40" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="resourceMechanicalPartsT3" count="1" craft_time="45" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="9"/>
       <ingredient name="resourceMechanicalPartsT2" count="2"/>
       <ingredient name="resourceScrapPolymers" count="9"/>
     </recipe>
 
-    <recipe name="MechanicalResearchBundle3" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="MechanicalResearchBundle3" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="60"/>
       <ingredient name="resourceMechanicalPartsT2" count="10"/>
       <ingredient name="resourceScrapPolymers" count="60"/>
     </recipe>
 
-    <recipe name="resourceMechanicalPartsT4" count="1" craft_time="80" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="resourceMechanicalPartsT4" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="12"/>
       <ingredient name="resourceMechanicalPartsT3" count="2"/>
       <ingredient name="resourceScrapPolymers" count="12"/>
     </recipe>
 
-    <recipe name="MechanicalResearchBundle4" count="1" craft_time="480" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="MechanicalResearchBundle4" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="90"/>
       <ingredient name="resourceMechanicalPartsT3" count="10"/>
       <ingredient name="resourceScrapPolymers" count="90"/>
     </recipe>
 
-    <recipe name="resourceMechanicalPartsT5" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="resourceMechanicalPartsT5" count="1" craft_time="75" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="15"/>
       <ingredient name="resourceMechanicalPartsT4" count="2"/>
       <ingredient name="resourceScrapPolymers" count="15"/>
     </recipe>
 
-    <recipe name="MechanicalResearchBundle5" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="MechanicalResearchBundle5" count="1" craft_time="150" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="120"/>
       <ingredient name="resourceMechanicalPartsT4" count="10"/>
       <ingredient name="resourceScrapPolymers" count="120"/>
     </recipe>
 
-    <recipe name="resourceMechanicalPartsT6" count="1" craft_time="150" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="resourceMechanicalPartsT6" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="18"/>
       <ingredient name="resourceMechanicalPartsT5" count="10"/>
       <ingredient name="resourceScrapPolymers" count="18"/>
     </recipe>
 
-    <recipe name="MechanicalResearchBundle6" count="1" craft_time="960" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+    <recipe name="MechanicalResearchBundle6" count="1" craft_time="180" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
       <ingredient name="resourceForgedIron" count="120"/>
       <ingredient name="resourceMechanicalPartsT5" count="10"/>
       <ingredient name="resourceScrapPolymers" count="120"/>
@@ -3214,116 +3215,116 @@
 
 
     <!-- Software Engineering Research -->
-    <recipe name="SoftwareResearchBundle1" count="1" craft_time="60" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
+    <recipe name="SoftwareResearchBundle1" count="1" craft_time="30" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
       <ingredient name="BlankProgramT1" count="5"/>
     </recipe>
 
-    <recipe name="SoftwareResearchBundle2" count="1" craft_time="120" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
+    <recipe name="SoftwareResearchBundle2" count="1" craft_time="60" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
       <ingredient name="BlankProgramT2" count="5"/>
     </recipe>
 
-    <recipe name="SoftwareResearchBundle3" count="1" craft_time="240" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
+    <recipe name="SoftwareResearchBundle3" count="1" craft_time="90" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
       <ingredient name="BlankProgramT3" count="5"/>
     </recipe>
 
-    <recipe name="SoftwareResearchBundle4" count="1" craft_time="480" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
+    <recipe name="SoftwareResearchBundle4" count="1" craft_time="120" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
       <ingredient name="BlankProgramT4" count="5"/>
     </recipe>
 
-    <recipe name="SoftwareResearchBundle5" count="1" craft_time="960" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
+    <recipe name="SoftwareResearchBundle5" count="1" craft_time="150" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
       <ingredient name="BlankProgramT5" count="5"/>
     </recipe>
 
-    <recipe name="SoftwareResearchBundle6" count="1" craft_time="1280" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
+    <recipe name="SoftwareResearchBundle6" count="1" craft_time="180" craft_area="ComputerStation" tags="learnable,skillSoftwareEngineer">
       <ingredient name="BlankProgramT6" count="5"/>
     </recipe>
 
     <!-- Tailoring Research -->
-    <recipe name="resourceClothT2" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT2" count="1" craft_time="30" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceClothT1" count="5"/>
     </recipe>
 
-    <recipe name="resourceClothT3" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT3" count="1" craft_time="45" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceClothT2" count="5"/>
     </recipe>
 
-    <recipe name="resourceClothT4" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT4" count="1" craft_time="60" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceClothT3" count="5"/>
     </recipe>
 
-    <recipe name="resourceClothT5" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT5" count="1" craft_time="75" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceClothT4" count="5"/>
     </recipe>
 
-    <recipe name="resourceClothT6" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT6" count="1" craft_time="90" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceClothT5" count="5"/>
     </recipe>
 
-    <recipe name="resourceClothT2" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT2" count="1" craft_time="30" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceCropCottonPlant" count="2"/>
       <ingredient name="resourceScrapPolymers" count="5"/>
     </recipe>
 
-    <recipe name="resourceClothT3" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT3" count="1" craft_time="45" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceCropCottonPlant" count="4"/>
       <ingredient name="resourceScrapPolymers" count="10"/>
       <ingredient name="resourceGlue" count="1"/>
     </recipe>
 
-    <recipe name="resourceClothT4" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT4" count="1" craft_time="60" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceCropCottonPlant" count="6"/>
       <ingredient name="resourceScrapIron" count="2"/>
       <ingredient name="resourceScrapPolymers" count="15"/>
       <ingredient name="resourceGlue" count="2"/>
     </recipe>
 
-    <recipe name="resourceClothT5" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT5" count="1" craft_time="75" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceCropCottonPlant" count="8"/>
       <ingredient name="resourceScrapIron" count="5"/>
       <ingredient name="resourceScrapPolymers" count="15"/>
       <ingredient name="resourceGlue" count="4"/>
     </recipe>
 
-    <recipe name="resourceClothT6" count="1" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="resourceClothT6" count="1" craft_time="90" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceCropCottonPlant" count="10"/>
       <ingredient name="resourceScrapIron" count="10"/>
       <ingredient name="resourceScrapPolymers" count="15"/>
       <ingredient name="resourceGlue" count="6"/>
     </recipe>
 
-    <recipe name="TailoringResearchBundle1" count="1" craft_time="60" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="TailoringResearchBundle1" count="1" craft_time="30" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceCropCottonPlant" count="20"/>
     </recipe>
 
-    <recipe name="TailoringResearchBundle2" count="1" craft_time="120" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="TailoringResearchBundle2" count="1" craft_time="60" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceSewingKit" count="2"/>
       <ingredient name="resourceClothT1" count="5"/>
       <ingredient name="resourceScrapPolymers" count="5"/>
       <ingredient name="resourceGlue" count="1"/>
     </recipe>
 
-    <recipe name="TailoringResearchBundle3" count="1" craft_time="240" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="TailoringResearchBundle3" count="1" craft_time="90" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceSewingKit" count="2"/>
       <ingredient name="resourceClothT2" count="5"/>
       <ingredient name="resourceScrapPolymers" count="5"/>
       <ingredient name="resourceGlue" count="1"/>
     </recipe>
 
-    <recipe name="TailoringResearchBundle4" count="1" craft_time="480" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="TailoringResearchBundle4" count="1" craft_time="120" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceSewingKit" count="2"/>
       <ingredient name="resourceClothT3" count="5"/>
       <ingredient name="resourceScrapPolymers" count="5"/>
       <ingredient name="resourceGlue" count="1"/>
     </recipe>
 
-    <recipe name="TailoringResearchBundle5" count="1" craft_time="960" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="TailoringResearchBundle5" count="1" craft_time="150" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceSewingKit" count="2"/>
       <ingredient name="resourceClothT4" count="5"/>
       <ingredient name="resourceScrapPolymers" count="5"/>
       <ingredient name="resourceGlue" count="1"/>
     </recipe>
 
-    <recipe name="TailoringResearchBundle6" count="1" craft_time="960" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
+    <recipe name="TailoringResearchBundle6" count="1" craft_time="180" craft_area="TailorWorkstation" tags="learnable,skillTailoring">
       <ingredient name="resourceSewingKit" count="2"/>
       <ingredient name="resourceClothT5" count="5"/>
       <ingredient name="resourceScrapPolymers" count="5"/>

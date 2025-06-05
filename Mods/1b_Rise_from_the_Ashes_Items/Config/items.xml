@@ -33,8 +33,10 @@
     <remove xpath="/items/item[@name='vehiclesSkillMagazine']/effect_group[@tiered='false']"/>
     <remove xpath="/items/item[@name='resourceWoodBundle']"/>
     <remove xpath="/items/item[@name='resourceWood']"/>
+		<remove xpath="/items/item[@name='gunBotRoboticsParts']"/>
+  
 
-	<!-- Stack Sizes 
+  <!-- Stack Sizes 
 		Tiny = 10000
 		Small = 6000
 		Med = 1000
@@ -3468,7 +3470,7 @@
 			<property name="SellableToTrader" value="false"/>			
 			<property name="ItemWeight" value="30"/>			
 			<property name="CreativeMode" value="Player"/>			
-			<property name="DescriptionKey" value="automotiveResearchBundle"/>
+			<property name="DescriptionKey" value="AutomotiveResearchBundle1Desc"/>
 			<property name="UnlockedBy" value="skillAutomotive"/>
 			<property class="Action0">
 				<property name="Class" value="OpenBundle"/>
@@ -3483,7 +3485,8 @@
 
 		<item name="AutomotiveResearchBundle2">
 			<property name="Extends" value="AutomotiveResearchBundle1"/>	
-			<property name="CustomIcon" value="AutomotiveResearchBundle2"/>	
+			<property name="CustomIcon" value="AutomotiveResearchBundle2"/>
+      <property name="DescriptionKey" value="AutomotiveResearchBundle2Desc"/>
 			<property name="UnlockedBy" value="skillAutomotive"/>
 			<property class="Action0">
 				<property name="Class" value="OpenBundle"/>
@@ -3499,7 +3502,8 @@
 
 		<item name="AutomotiveResearchBundle3">
 			<property name="Extends" value="AutomotiveResearchBundle1"/>
-			<property name="CustomIcon" value="AutomotiveResearchBundle3"/>		
+			<property name="CustomIcon" value="AutomotiveResearchBundle3"/>
+      <property name="DescriptionKey" value="AutomotiveResearchBundle3Desc"/>
 			<property name="UnlockedBy" value="skillAutomotive"/>
 			<property class="Action0">
 				<property name="Class" value="OpenBundle"/>
@@ -3515,6 +3519,7 @@
 		<item name="AutomotiveResearchBundle4">
 			<property name="Extends" value="AutomotiveResearchBundle1"/>		
 			<property name="CustomIcon" value="AutomotiveResearchBundle4"/>
+      <property name="DescriptionKey" value="AutomotiveResearchBundle4Desc"/>
 			<property name="UnlockedBy" value="skillAutomotive"/>
 			<property class="Action0">
 				<property name="Class" value="OpenBundle"/>
@@ -3530,6 +3535,7 @@
 		<item name="AutomotiveResearchBundle5">
 			<property name="Extends" value="AutomotiveResearchBundle1"/>
 			<property name="CustomIcon" value="AutomotiveResearchBundle5"/>
+      <property name="DescriptionKey" value="AutomotiveResearchBundle5Desc"/>
 			<property name="UnlockedBy" value="skillAutomotive"/>	
 			<property class="Action0">
 				<property name="Class" value="OpenBundle"/>
@@ -3545,6 +3551,7 @@
 		<item name="AutomotiveResearchBundle6">
 			<property name="Extends" value="AutomotiveResearchBundle1"/>
 			<property name="CustomIcon" value="AutomotiveResearchBundle6"/>
+      <property name="DescriptionKey" value="AutomotiveResearchBundle6Desc"/>
 			<property name="UnlockedBy" value="skillAutomotive"/>	
 			<property class="Action0">
 				<property name="Class" value="OpenBundle"/>
@@ -3564,7 +3571,7 @@
 			<property name="CustomIcon" value="BlacksmithingResearchBundle1"/>																													
 			<property name="CreativeMode" value="Player"/>		
 			<property name="UnlockedBy" value="skillBlacksmithing"/>	
-			<property name="DescriptionKey" value="BlacksmithResearchBundleDesc"/>
+			<property name="DescriptionKey" value="BlacksmithingResearchBundle1Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="BlacksmithingSkillResearchNotes1"/>
 				<property name="Create_item_count" value="1"/>
@@ -3577,7 +3584,8 @@
 
 		<item name="BlacksmithingResearchBundle2">
 			<property name="Extends" value="BlacksmithingResearchBundle1"/>
-			<property name="CustomIcon" value="BlacksmithingResearchBundle2"/>			
+			<property name="CustomIcon" value="BlacksmithingResearchBundle2"/>
+      <property name="DescriptionKey" value="BlacksmithingResearchBundle2Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="BlacksmithingSkillResearchNotes2"/>
 				<property name="Create_item_count" value="1"/>
@@ -3590,7 +3598,8 @@
 
 		<item name="BlacksmithingResearchBundle3">
 			<property name="Extends" value="BlacksmithingResearchBundle1"/>
-			<property name="CustomIcon" value="BlacksmithingResearchBundle3"/>			
+			<property name="CustomIcon" value="BlacksmithingResearchBundle3"/>
+      <property name="DescriptionKey" value="BlacksmithingResearchBundle3Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="BlacksmithingSkillResearchNotes3"/>
 				<property name="Create_item_count" value="1"/>
@@ -3603,7 +3612,8 @@
 
 		<item name="BlacksmithingResearchBundle4">
 			<property name="Extends" value="BlacksmithingResearchBundle1"/>
-			<property name="CustomIcon" value="BlacksmithingResearchBundle4"/>			
+			<property name="CustomIcon" value="BlacksmithingResearchBundle4"/>
+      <property name="DescriptionKey" value="BlacksmithingResearchBundle4Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="BlacksmithingSkillResearchNotes4"/>
 				<property name="Create_item_count" value="1"/>
@@ -3616,7 +3626,8 @@
 
 		<item name="BlacksmithingResearchBundle5">
 			<property name="Extends" value="BlacksmithingResearchBundle1"/>	
-			<property name="CustomIcon" value="BlacksmithingResearchBundle5"/>			
+			<property name="CustomIcon" value="BlacksmithingResearchBundle5"/>
+      <property name="DescriptionKey" value="BlacksmithingResearchBundle5Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="BlacksmithingSkillResearchNotes5"/>
 				<property name="Create_item_count" value="1"/>
@@ -3629,7 +3640,8 @@
 
 		<item name="BlacksmithingResearchBundle6">
 			<property name="Extends" value="BlacksmithingResearchBundle1"/>	
-			<property name="CustomIcon" value="BlacksmithingResearchBundle6"/>			
+			<property name="CustomIcon" value="BlacksmithingResearchBundle6"/>
+      <property name="DescriptionKey" value="BlacksmithingResearchBundle6Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="BlacksmithingSkillResearchNotes6"/>
 				<property name="Create_item_count" value="1"/>
@@ -3640,7 +3652,7 @@
 			</property>
 		</item>
 
-		<!-- *** Cooking Bundles -->
+		<!-- *** Carpentry Bundles -->
 
 		<item name="CarpentryResearchBundle1">
 			<property name="Extends" value="ResearchBundleMaster"/>
@@ -3661,6 +3673,7 @@
 		<item name="CarpentryResearchBundle2">
 			<property name="Extends" value="CarpentryResearchBundle1"/>
 			<property name="CustomIcon" value="CarpentryResearchBundle2"/>
+      <property name="DescriptionKey" value="CarpentryResearchBundle2Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CarpentrySkillResearchNotes2"/>
 				<property name="Create_item_count" value="1"/>
@@ -3674,6 +3687,7 @@
 		<item name="CarpentryResearchBundle3">
 			<property name="Extends" value="CarpentryResearchBundle1"/>			
 			<property name="CustomIcon" value="CarpentryResearchBundle3"/>
+      <property name="DescriptionKey" value="CarpentryResearchBundle3Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CarpentrySkillResearchNotes3"/>
 				<property name="Create_item_count" value="1"/>
@@ -3687,6 +3701,7 @@
 		<item name="CarpentryResearchBundle4">
 			<property name="Extends" value="CarpentryResearchBundle1"/>
 			<property name="CustomIcon" value="CarpentryResearchBundle4"/>
+      <property name="DescriptionKey" value="CarpentryResearchBundle4Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CarpentrySkillResearchNotes4"/>
 				<property name="Create_item_count" value="1"/>
@@ -3700,6 +3715,7 @@
 		<item name="CarpentryResearchBundle5">
 			<property name="Extends" value="CarpentryResearchBundle1"/>			
 			<property name="CustomIcon" value="CarpentryResearchBundle5"/>
+      <property name="DescriptionKey" value="CarpentryResearchBundle5Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CarpentrySkillResearchNotes5"/>
 				<property name="Create_item_count" value="1"/>
@@ -3713,6 +3729,7 @@
 		<item name="CarpentryResearchBundle6">
 			<property name="Extends" value="CarpentryResearchBundle1"/>			
 			<property name="CustomIcon" value="CarpentryResearchBundle6"/>
+      <property name="DescriptionKey" value="CarpentryResearchBundle6ADesc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CarpentrySkillResearchNotes6"/>
 				<property name="Create_item_count" value="1"/>
@@ -3730,7 +3747,7 @@
 			<property name="CustomIcon" value="ChemistryResearchBundle1"/>			
 			<property name="CreativeMode" value="Player"/>			
 			<property name="UnlockedBy" value="skillChemistry"/>	
-			<property name="DescriptionKey" value="ChemistryResearchBundleDesc"/>
+			<property name="DescriptionKey" value="ChemistryResearchBundle1Desc"/>
 			<property class="Action0">					
 				<property name="Create_item" value="ChemistrySkillResearchNotes1"/>
 				<property name="Create_item_count" value="1"/>
@@ -3744,6 +3761,7 @@
 		<item name="ChemistryResearchBundle2">
 			<property name="Extends" value="ChemistryResearchBundle1"/>
 			<property name="CustomIcon" value="ChemistryResearchBundle2"/>
+      <property name="DescriptionKey" value="ChemistryResearchBundle2Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="ChemistrySkillResearchNotes2"/>
 				<property name="Create_item_count" value="1"/>
@@ -3757,6 +3775,7 @@
 		<item name="ChemistryResearchBundle3">
 			<property name="Extends" value="ChemistryResearchBundle1"/>			
 			<property name="CustomIcon" value="ChemistryResearchBundle3"/>
+      <property name="DescriptionKey" value="ChemistryResearchBundle3Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="ChemistrySkillResearchNotes3"/>
 				<property name="Create_item_count" value="1"/>
@@ -3770,6 +3789,7 @@
 		<item name="ChemistryResearchBundle4">
 			<property name="Extends" value="ChemistryResearchBundle1"/>
 			<property name="CustomIcon" value="ChemistryResearchBundle4"/>
+      <property name="DescriptionKey" value="ChemistryResearchBundle4Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="ChemistrySkillResearchNotes4"/>
 				<property name="Create_item_count" value="1"/>
@@ -3782,7 +3802,8 @@
 
 		<item name="ChemistryResearchBundle5">
 			<property name="Extends" value="ChemistryResearchBundle1"/>		
-			<property name="CustomIcon" value="ChemistryResearchBundle5"/>	
+			<property name="CustomIcon" value="ChemistryResearchBundle5"/>
+      <property name="DescriptionKey" value="ChemistryResearchBundle5Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="ChemistrySkillResearchNotes5"/>
 				<property name="Create_item_count" value="1"/>
@@ -3795,7 +3816,8 @@
 
 		<item name="ChemistryResearchBundle6">
 			<property name="Extends" value="ChemistryResearchBundle1"/>		
-			<property name="CustomIcon" value="ChemistryResearchBundle6"/>	
+			<property name="CustomIcon" value="ChemistryResearchBundle6"/>
+      <property name="DescriptionKey" value="ChemistryResearchBundle6Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="ChemistrySkillResearchNotes6"/>
 				<property name="Create_item_count" value="1"/>
@@ -3805,6 +3827,7 @@
 				<property name="Unique_random_only" value="false"/>
 			</property>
 		</item>
+    
 
 		<!-- *** Civil Engineer Bundles -->		
 		<item name="CivilEngineerResearchBundle1">
@@ -3814,7 +3837,7 @@
 			<property name="UnlockedBy" value="skillCivilEngineer"/>						
 			<property name="ItemWeight" value="30"/>			
 			<property name="CreativeMode" value="Player"/>			
-			<property name="DescriptionKey" value="CivilEngineerResearchBundleDesc"/>
+			<property name="DescriptionKey" value="CivilEngineerResearchBundle1Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CivilengineerSkillResearchNotes1"/>
 				<property name="Create_item_count" value="1"/>
@@ -3828,6 +3851,7 @@
 		<item name="CivilEngineerResearchBundle2">
 			<property name="Extends" value="CivilEngineerResearchBundle1"/>
 			<property name="CustomIcon" value="CivilEngineerResearchBundle2"/>
+      <property name="DescriptionKey" value="CivilEngineerResearchBundle2Desc"/>
 			<property class="Action0">				
 				<property name="Create_item" value="CivilengineerSkillResearchNotes2"/>
 				<property name="Create_item_count" value="1"/>
@@ -3840,7 +3864,8 @@
 
 		<item name="CivilEngineerResearchBundle3">
 			<property name="Extends" value="CivilEngineerResearchBundle1"/>	
-			<property name="CustomIcon" value="CivilEngineerResearchBundle3"/>		
+			<property name="CustomIcon" value="CivilEngineerResearchBundle3"/>
+      <property name="DescriptionKey" value="CivilEngineerResearchBundle3Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CivilengineerSkillResearchNotes3"/>
 				<property name="Create_item_count" value="1"/>
@@ -3854,6 +3879,7 @@
 		<item name="CivilEngineerResearchBundle4">
 			<property name="Extends" value="CivilEngineerResearchBundle1"/>
 			<property name="CustomIcon" value="CivilEngineerResearchBundle4"/>
+      <property name="DescriptionKey" value="CivilEngineerResearchBundle4Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CivilengineerSkillResearchNotes4"/>
 				<property name="Create_item_count" value="1"/>
@@ -3866,7 +3892,8 @@
 
 		<item name="CivilEngineerResearchBundle5">
 			<property name="Extends" value="CivilEngineerResearchBundle1"/>	
-			<property name="CustomIcon" value="CivilEngineerResearchBundle5"/>		
+			<property name="CustomIcon" value="CivilEngineerResearchBundle5"/>
+      <property name="DescriptionKey" value="CivilEngineerResearchBundle5Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CivilengineerSkillResearchNotes5"/>
 				<property name="Create_item_count" value="1"/>
@@ -3879,7 +3906,8 @@
 		
 		<item name="CivilEngineerResearchBundle6">
 			<property name="Extends" value="CivilEngineerResearchBundle1"/>	
-			<property name="CustomIcon" value="CivilEngineerResearchBundle6"/>		
+			<property name="CustomIcon" value="CivilEngineerResearchBundle6"/>
+      <property name="DescriptionKey" value="CivilEngineerResearchBundle6Desc"/>
 			<property class="Action0">
 				<property name="Create_item" value="CivilengineerSkillResearchNotes6"/>
 				<property name="Create_item_count" value="1"/>
@@ -4504,7 +4532,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="AutomotiveResearchNotes"/>
 			<property name="CustomIconTint" value="ffffff"/>
-			<property name="DescriptionKey" value="automotiveSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="AutomotiveSkillResearchNotes1Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$automotiveExpTotal" operation="add" value="@.Automotive_addResearchT1"/>								
@@ -4517,7 +4545,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="AutomotiveResearchNotes"/>
 			<property name="CustomIconTint" value="bda68c"/>
-			<property name="DescriptionKey" value="automotiveSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="AutomotiveSkillResearchNotes2Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$automotiveExpTotal" operation="add" value="@.Automotive_addResearchT2"/>					
@@ -4530,7 +4558,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="AutomotiveResearchNotes"/>
 			<property name="CustomIconTint" value="af7d4a"/>
-			<property name="DescriptionKey" value="automotiveSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="AutomotiveSkillResearchNotes3Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$automotiveExpTotal" operation="add" value="@.Automotive_addResearchT3"/>				
@@ -4543,7 +4571,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="AutomotiveResearchNotes"/>
 			<property name="CustomIconTint" value="e8d99f"/>
-			<property name="DescriptionKey" value="automotiveSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="AutomotiveSkillResearchNotes4Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$automotiveExpTotal" operation="add" value="@.Automotive_addResearchT4"/>				
@@ -4556,7 +4584,7 @@
 			<property name="ItemWeight" value="0.5"/>
 			<property name="CustomIcon" value="AutomotiveResearchNotes"/>
 			<property name="CustomIconTint" value="93a564"/>
-			<property name="DescriptionKey" value="automotiveSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="AutomotiveSkillResearchNotes5Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$automotiveExpTotal" operation="add" value="@.Automotive_addResearchT5"/>					
@@ -4569,7 +4597,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="AutomotiveResearchNotes"/>
 			<property name="CustomIconTint" value="8c8da2"/>
-			<property name="DescriptionKey" value="automotiveSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="AutomotiveSkillResearchNotes6Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$automotiveExpTotal" operation="add" value="@.Automotive_addResearchT6"/>					
@@ -4584,7 +4612,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="BlackSmithingResearchNotes"/>
 			<property name="CustomIconTint" value="ffffff"/>
-			<property name="DescriptionKey" value="blacksmithingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="BlacksmithingSkillResearchNotes1Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$blacksmithingExpTotal" operation="add" value="@.Blacksmithing_addResearchT1"/>				
@@ -4596,8 +4624,8 @@
 			<property name="Extends" value="researchMaster"/>
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="BlackSmithingResearchNotes"/>
-			<property name="CustomIconTint" value="9f44db"/>
-			<property name="DescriptionKey" value="blacksmithingSkillMagazineDesc"/>			
+			<property name="CustomIconTint" value="bda68c"/>
+			<property name="DescriptionKey" value="BlacksmithingSkillResearchNotes2Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$blacksmithingExpTotal" operation="add" value="@.Blacksmithing_addResearchT2"/>				
@@ -4610,7 +4638,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="BlackSmithingResearchNotes"/>
 			<property name="CustomIconTint" value="af7d4a"/>
-			<property name="DescriptionKey" value="blacksmithingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="BlacksmithingSkillResearchNotes3Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$blacksmithingExpTotal" operation="add" value="@.Blacksmithing_addResearchT3"/>					
@@ -4623,7 +4651,7 @@
 			<property name="ItemWeight" value="0.5"/>
 			<property name="CustomIcon" value="BlackSmithingResearchNotes"/>
 			<property name="CustomIconTint" value="e8d99f"/>
-			<property name="DescriptionKey" value="blacksmithingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="BlacksmithingSkillResearchNotes4Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$blacksmithingExpTotal" operation="add" value="@.Blacksmithing_addResearchT4"/>					
@@ -4636,7 +4664,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="BlackSmithingResearchNotes"/>
 			<property name="CustomIconTint" value="93a564"/>
-			<property name="DescriptionKey" value="blacksmithingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="BlacksmithingSkillResearchNotes5Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$blacksmithingExpTotal" operation="add" value="@.Blacksmithing_addResearchT5"/>				
@@ -4649,7 +4677,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="BlackSmithingResearchNotes"/>
 			<property name="CustomIconTint" value="8c8da2"/>
-			<property name="DescriptionKey" value="blacksmithingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="BlacksmithingSkillResearchNotes6Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$blacksmithingExpTotal" operation="add" value="@.Blacksmithing_addResearchT6"/>				
@@ -4663,7 +4691,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CarpentryResearchNotes"/>
 			<property name="CustomIconTint" value="ffffff"/>
-			<property name="DescriptionKey" value="cookingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CarpentrySkillResearchNotes1Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$carpentryExpTotal" operation="add" value="@.Carpentry_addResearchT1"/>				
@@ -4677,7 +4705,7 @@
 			<property name="Tags" value="cookingCSM,csm"/>
 			<property name="CustomIcon" value="CarpentryResearchNotes"/>
 			<property name="CustomIconTint" value="bda68c"/>
-			<property name="DescriptionKey" value="cookingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CarpentrySkillResearchNotes2Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$carpentryExpTotal" operation="add" value="@.Carpentry_addResearchT2"/>				
@@ -4690,7 +4718,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CarpentryResearchNotes"/>
 			<property name="CustomIconTint" value="af7d4a"/>
-			<property name="DescriptionKey" value="cookingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CarpentrySkillResearchNotes3Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$carpentryExpTotal" operation="add" value="@.Carpentry_addResearchT3"/>				
@@ -4703,7 +4731,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CarpentryResearchNotes"/>
 			<property name="CustomIconTint" value="e8d99f"/>
-			<property name="DescriptionKey" value="cookingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CarpentrySkillResearchNotes4Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$carpentryExpTotal" operation="add" value="@.Carpentry_addResearchT4"/>				
@@ -4716,7 +4744,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CarpentryResearchNotes"/>
 			<property name="CustomIconTint" value="93a564"/>
-			<property name="DescriptionKey" value="cookingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CarpentrySkillResearchNotes5Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$carpentryExpTotal" operation="add" value="@.Carpentry_addResearchT5"/>				
@@ -4729,7 +4757,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CarpentryResearchNotes"/>
 			<property name="CustomIconTint" value="8c8da2"/>
-			<property name="DescriptionKey" value="cookingSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CarpentrySkillResearchNotes6Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$carpentryExpTotal" operation="add" value="@.Carpentry_addResearchT6"/>				
@@ -4743,7 +4771,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="ChemistryResearchNotes"/>
 			<property name="CustomIconTint" value="ffffff"/>
-			<property name="DescriptionKey" value="ChemistrySkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="ChemistrySkillResearchNotes1Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$chemistryExpTotal" operation="add" value="@.Chemistry_addResearchT1"/>								
@@ -4756,7 +4784,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="ChemistryResearchNotes"/>
 			<property name="CustomIconTint" value="bda68c"/>
-			<property name="DescriptionKey" value="ChemistrySkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="ChemistrySkillResearchNotes2Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$chemistryExpTotal" operation="add" value="@.Chemistry_addResearchT2"/>				
@@ -4769,7 +4797,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="ChemistryResearchNotes"/>
 			<property name="CustomIconTint" value="af7d4a"/>
-			<property name="DescriptionKey" value="ChemistrySkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="ChemistrySkillResearchNotes3Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$chemistryExpTotal" operation="add" value="@.Chemistry_addResearchT3"/>				
@@ -4782,7 +4810,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="ChemistryResearchNotes"/>
 			<property name="CustomIconTint" value="e8d99f"/>
-			<property name="DescriptionKey" value="ChemistrySkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="ChemistrySkillResearchNotes4Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$chemistryExpTotal" operation="add" value="@.Chemistry_addResearchT4"/>				
@@ -4795,7 +4823,7 @@
 			<property name="ItemWeight" value="0.5"/>		
 			<property name="CustomIcon" value="ChemistryResearchNotes"/>
 			<property name="CustomIconTint" value="93a564"/>
-			<property name="DescriptionKey" value="ChemistrySkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="ChemistrySkillResearchNotes5Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$chemistryExpTotal" operation="add" value="@.Chemistry_addResearchT5"/>				
@@ -4808,7 +4836,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="ChemistryResearchNotes"/>
 			<property name="CustomIconTint" value="8c8da2"/>
-			<property name="DescriptionKey" value="ChemistrySkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="ChemistrySkillResearchNotes6Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$chemistryExpTotal" operation="add" value="@.Chemistry_addResearchT6"/>				
@@ -4823,7 +4851,7 @@
 			<property name="ItemWeight" value="0.5"/>	
 			<property name="CustomIcon" value="CivilEngineerResearchNotes"/>
 			<property name="CustomIconTint" value="ffffff"/>
-			<property name="DescriptionKey" value="civilengineerSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CivilengineerSkillResearchNotes1Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$civilengineerExpTotal" operation="add" value="@.CivilEngineer_addResearchT1"/>				
@@ -4836,7 +4864,7 @@
 			<property name="ItemWeight" value="0.5"/>		
 			<property name="CustomIcon" value="CivilEngineerResearchNotes"/>
 			<property name="CustomIconTint" value="bda68c"/>
-			<property name="DescriptionKey" value="civilengineerSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CivilengineerSkillResearchNotes2Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$civilengineerExpTotal" operation="add" value="@.CivilEngineer_addResearchT2"/>				
@@ -4849,7 +4877,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CivilEngineerResearchNotes"/>
 			<property name="CustomIconTint" value="af7d4a"/>
-			<property name="DescriptionKey" value="civilengineerSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CivilengineerSkillResearchNotes3Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$civilengineerExpTotal" operation="add" value="@.CivilEngineer_addResearchT3"/>				
@@ -4862,7 +4890,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CivilEngineerResearchNotes"/>
 			<property name="CustomIconTint" value="e8d99f"/>
-			<property name="DescriptionKey" value="civilengineerSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CivilengineerSkillResearchNotes4Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$civilengineerExpTotal" operation="add" value="@.CivilEngineer_addResearchT4"/>				
@@ -4875,7 +4903,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CivilEngineerResearchNotes"/>
 			<property name="CustomIconTint" value="93a564"/>
-			<property name="DescriptionKey" value="civilengineerSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CivilengineerSkillResearchNotes5Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$civilengineerExpTotal" operation="add" value="@.CivilEngineer_addResearchT5"/>				
@@ -4888,7 +4916,7 @@
 			<property name="ItemWeight" value="0.5"/>			
 			<property name="CustomIcon" value="CivilEngineerResearchNotes"/>
 			<property name="CustomIconTint" value="8c8da2"/>
-			<property name="DescriptionKey" value="civilengineerSkillMagazineDesc"/>			
+			<property name="DescriptionKey" value="CivilengineerSkillResearchNotes6Desc"/>			
 			
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$civilengineerExpTotal" operation="add" value="@.CivilEngineer_addResearchT6"/>				
@@ -5722,7 +5750,7 @@
 			<property name="UnlockedBy" value="skillElectricalEngineer"/>
 			<property name="EconomicValue" value="150"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="DescriptionKey" value="BlankProgramT1"/>
+			<property name="DescriptionKey" value="BlankProgramT1Desc"/>
 			<property name="CustomIcon" value="BlankProgramT1"/>	
 		</item>
 
@@ -5731,7 +5759,7 @@
 			<property name="UnlockedBy" value="skillElectricalEngineer"/>
 			<property name="EconomicValue" value="150"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="DescriptionKey" value="BlankProgramT2"/>
+			<property name="DescriptionKey" value="BlankProgramT2Desc"/>
 			<property name="CustomIcon" value="BlankProgramT2"/>	
 		</item>
 
@@ -5740,7 +5768,7 @@
 			<property name="UnlockedBy" value="skillElectricalEngineer"/>
 			<property name="EconomicValue" value="150"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="DescriptionKey" value="BlankProgramT3"/>
+			<property name="DescriptionKey" value="BlankProgramT3Desc"/>
 			<property name="CustomIcon" value="BlankProgramT3"/>	
 		</item>
 
@@ -5749,7 +5777,7 @@
 			<property name="UnlockedBy" value="skillElectricalEngineer"/>
 			<property name="EconomicValue" value="150"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="DescriptionKey" value="BlankProgramT4"/>
+			<property name="DescriptionKey" value="BlankProgramT4Desc"/>
 			<property name="CustomIcon" value="BlankProgramT4"/>	
 		</item>
 
@@ -5758,7 +5786,7 @@
 			<property name="UnlockedBy" value="skillElectricalEngineer"/>
 			<property name="EconomicValue" value="150"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="DescriptionKey" value="BlankProgramT5"/>
+			<property name="DescriptionKey" value="BlankProgramT5Desc"/>
 			<property name="CustomIcon" value="BlankProgramT5"/>	
 		</item>
 
@@ -5767,7 +5795,7 @@
 			<property name="UnlockedBy" value="skillElectricalEngineer"/>
 			<property name="EconomicValue" value="150"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="DescriptionKey" value="BlankProgramT6"/>
+			<property name="DescriptionKey" value="BlankProgramT6Desc"/>
 			<property name="CustomIcon" value="BlankProgramT6"/>	
 		</item>
 
@@ -5870,7 +5898,7 @@
 			<property name="CustomIcon" value="LeatherSheetT6"/>
 		</item>
 
-		<item name="resourceHide"> <!-- scrap material -->
+		<item name="resourceLeather"> <!-- scrap material -->
 			<property name="HoldType" value="45"/>
 			<property name="ItemWeight" value="1"/>
 			<property name="CustomIcon" value="resourceLeather"/>		

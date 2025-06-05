@@ -1,125 +1,4 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
-AutomotiveResearchBundle1,items,,New,Not Used,Automotive Bundle Tier 1,,,,,,,,,,,,,
-AutomotiveResearchBundle2,items,,New,Not Used,Automotive Bundle Tier 2,,,,,,,,,,,,,
-AutomotiveResearchBundle3,items,,New,Not Used,Automotive Bundle Tier 3,,,,,,,,,,,,,
-AutomotiveResearchBundle4,items,,New,Not Used,Automotive Bundle Tier 4,,,,,,,,,,,,,
-AutomotiveResearchBundle5,items,,New,Not Used,Automotive Bundle Tier 5,,,,,,,,,,,,,
-BlacksmithingResearchBundle1,items,,New,Not Used,Blacksmithing Bundle Tier 1,,,,,,,,,,,,,
-BlacksmithingResearchBundle2,items,,New,Not Used,Blacksmithing Bundle Tier 2,,,,,,,,,,,,,
-BlacksmithingResearchBundle3,items,,New,Not Used,Blacksmithing Bundle Tier 3,,,,,,,,,,,,,
-BlacksmithingResearchBundle4,items,,New,Not Used,Blacksmithing Bundle Tier 4,,,,,,,,,,,,,
-BlacksmithingResearchBundle5,items,,New,Not Used,Blacksmithing Bundle Tier 5,,,,,,,,,,,,,
-CarpentryResearchBundle1,items,,New,Not Used,Carpentry Bundle Tier 1,,,,,,,,,,,,,
-CarpentryResearchBundle2,items,,New,Not Used,Carpentry Bundle Tier 2,,,,,,,,,,,,,
-CarpentryResearchBundle3,items,,New,Not Used,Carpentry Bundle Tier 3,,,,,,,,,,,,,
-CarpentryResearchBundle4,items,,New,Not Used,Carpentry Bundle Tier 4,,,,,,,,,,,,,
-CarpentryResearchBundle5,items,,New,Not Used,Carpentry Bundle Tier 5,,,,,,,,,,,,,
-ChemistryResearchBundle1,items,,New,Not Used,Chemistry Bundle Tier 1,,,,,,,,,,,,,
-ChemistryResearchBundle2,items,,New,Not Used,Chemistry Bundle Tier 2,,,,,,,,,,,,,
-ChemistryResearchBundle3,items,,New,Not Used,Chemistry Bundle Tier 3,,,,,,,,,,,,,
-ChemistryResearchBundle4,items,,New,Not Used,Chemistry Bundle Tier 4,,,,,,,,,,,,,
-ChemistryResearchBundle5,items,,New,Not Used,Chemistry Bundle Tier 5,,,,,,,,,,,,,
-CivilEngineerResearchBundle1,items,,New,Not Used,Civil Engineering Bundle Tier 1,,,,,,,,,,,,,
-CivilEngineerResearchBundle2,items,,New,Not Used,Civil Engineering Bundle Tier 2,,,,,,,,,,,,,
-CivilEngineerResearchBundle3,items,,New,Not Used,Civil Engineering Bundle Tier 3,,,,,,,,,,,,,
-CivilEngineerResearchBundle4,items,,New,Not Used,Civil Engineering Bundle Tier 4,,,,,,,,,,,,,
-CivilEngineerResearchBundle5,items,,New,Not Used,Civil Engineering Bundle Tier 5,,,,,,,,,,,,,
-CookingResearchBundle1,items,,New,Not Used,Cooking Bundle Tier 1,,,,,,,,,,,,,
-CookingResearchBundle2,items,,New,Not Used,Cooking Bundle Tier 2,,,,,,,,,,,,,
-CookingResearchBundle3,items,,New,Not Used,Cooking Bundle Tier 3,,,,,,,,,,,,,
-CookingResearchBundle4,items,,New,Not Used,Cooking Bundle Tier 4,,,,,,,,,,,,,
-CookingResearchBundle5,items,,New,Not Used,Cooking Bundle Tier 5,,,,,,,,,,,,,
-ElectronicsResearchBundle1,items,,New,Not Used,Electronics Bundle Tier 1,,,,,,,,,,,,,
-ElectronicsResearchBundle2,items,,New,Not Used,Electronics Bundle Tier 2,,,,,,,,,,,,,
-ElectronicsResearchBundle3,items,,New,Not Used,Electronics Bundle Tier 3,,,,,,,,,,,,,
-ElectronicsResearchBundle4,items,,New,Not Used,Electronics Bundle Tier 4,,,,,,,,,,,,,
-ElectronicsResearchBundle5,items,,New,Not Used,Electronics Bundle Tier 5,,,,,,,,,,,,,
-MechanicalResearchBundle1,items,,New,Not Used,Mechanical Bundle Tier 1,,,,,,,,,,,,,
-MechanicalResearchBundle2,items,,New,Not Used,Mechanical Bundle Tier 2,,,,,,,,,,,,,
-MechanicalResearchBundle3,items,,New,Not Used,Mechanical Bundle Tier 3,,,,,,,,,,,,,
-MechanicalResearchBundle4,items,,New,Not Used,Mechanical Bundle Tier 4,,,,,,,,,,,,,
-MechanicalResearchBundle5,items,,New,Not Used,Mechanical Bundle Tier 5,,,,,,,,,,,,,
-LeatherworkingResearchBundle1,items,,New,Not Used,"Leatherworking Bundle Tier 1.\nMakes Tannin solution.",,,,,,,,,,,,,
-LeatherworkingResearchBundle1-2,items,,New,Not Used,"Leatherworking Bundle Tier 1.\nMakes Poor quality leather.",,,,,,,,,,,,,
-LeatherworkingResearchBundle2,items,,New,Not Used,Leatherworking Bundle Tier 2,,,,,,,,,,,,,
-LeatherworkingResearchBundle3,items,,New,Not Used,Leatherworking Bundle Tier 3,,,,,,,,,,,,,
-LeatherworkingResearchBundle4,items,,New,Not Used,Leatherworking Bundle Tier 4,,,,,,,,,,,,,
-LeatherworkingResearchBundle5,items,,New,Not Used,Leatherworking Bundle Tier 5,,,,,,,,,,,,,
-SoftwareResearchBundle1,items,,New,Not Used,Software Bundle Tier 1,,,,,,,,,,,,,
-SoftwareResearchBundle2,items,,New,Not Used,Software Bundle Tier 2,,,,,,,,,,,,,
-SoftwareResearchBundle3,items,,New,Not Used,Software Bundle Tier 3,,,,,,,,,,,,,
-SoftwareResearchBundle4,items,,New,Not Used,Software Bundle Tier 4,,,,,,,,,,,,,
-SoftwareResearchBundle5,items,,New,Not Used,Software Bundle Tier 5,,,,,,,,,,,,,
-TailoringResearchBundle1,items,,New,Not Used,Tailoring Bundle Tier 1,,,,,,,,,,,,,
-TailoringResearchBundle2,items,,New,Not Used,Tailoring Bundle Tier 2,,,,,,,,,,,,,
-TailoringResearchBundle3,items,,New,Not Used,Tailoring Bundle Tier 3,,,,,,,,,,,,,
-TailoringResearchBundle4,items,,New,Not Used,Tailoring Bundle Tier 4,,,,,,,,,,,,,
-TailoringResearchBundle5,items,,New,Not Used,Tailoring Bundle Tier 5,,,,,,,,,,,,,
-AutomotiveSkillResearchNotes1,items,,New,Not Used,Automotive Notes Tier 1,,,,,,,,,,,,,
-AutomotiveSkillResearchNotes2,items,,New,Not Used,Automotive Notes Tier 2,,,,,,,,,,,,,
-AutomotiveSkillResearchNotes3,items,,New,Not Used,Automotive Notes Tier 3,,,,,,,,,,,,,
-AutomotiveSkillResearchNotes4,items,,New,Not Used,Automotive Notes Tier 4,,,,,,,,,,,,,
-AutomotiveSkillResearchNotes5,items,,New,Not Used,Automotive Notes Tier 5,,,,,,,,,,,,,
-BlacksmithingSkillResearchNotes1,items,,New,Not Used,Blacksmithing Notes Tier 1,,,,,,,,,,,,,
-BlacksmithingSkillResearchNotes2,items,,New,Not Used,Blacksmithing Notes Tier 2,,,,,,,,,,,,,
-BlacksmithingSkillResearchNotes3,items,,New,Not Used,Blacksmithing Notes Tier 3,,,,,,,,,,,,,
-BlacksmithingSkillResearchNotes4,items,,New,Not Used,Blacksmithing Notes Tier 4,,,,,,,,,,,,,
-BlacksmithingSkillResearchNotes5,items,,New,Not Used,Blacksmithing Notes Tier 5,,,,,,,,,,,,
-CarpentrySkillResearchNotes1,items,,New,Not Used,Carpentry Notes Tier 1,,,,,,,,,,,,,
-CarpentrySkillResearchNotes2,items,,New,Not Used,Carpentry Notes Tier 2,,,,,,,,,,,,,
-CarpentrySkillResearchNotes3,items,,New,Not Used,Carpentry Notes Tier 3,,,,,,,,,,,,,
-CarpentrySkillResearchNotes4,items,,New,Not Used,Carpentry Notes Tier 4,,,,,,,,,,,,,
-CarpentrySkillResearchNotes5,items,,New,Not Used,Carpentry Notes Tier 5,,,,,,,,,,,,,
-ChemistrySkillResearchNotes1,items,,New,Not Used,Chemistry Notes Tier 1,,,,,,,,,,,,,
-ChemistrySkillResearchNotes2,items,,New,Not Used,Chemistry Notes Tier 2,,,,,,,,,,,,,
-ChemistrySkillResearchNotes3,items,,New,Not Used,Chemistry Notes Tier 3,,,,,,,,,,,,,
-ChemistrySkillResearchNotes4,items,,New,Not Used,Chemistry Notes Tier 4,,,,,,,,,,,,,
-ChemistrySkillResearchNotes5,items,,New,Not Used,Chemistry Notes Tier 5,,,,,,,,,,,,,
-CivilengineerSkillResearchNotes1,items,,New,Not Used,Civil Engineering Notes Tier 1,,,,,,,,,,,,,
-CivilengineerSkillResearchNotes2,items,,New,Not Used,Civil Engineering Notes Tier 2,,,,,,,,,,,,,
-CivilengineerSkillResearchNotes3,items,,New,Not Used,Civil Engineering Notes Tier 3,,,,,,,,,,,,,
-CivilengineerSkillResearchNotes4,items,,New,Not Used,Civil Engineering Notes Tier 4,,,,,,,,,,,,,
-CivilengineerSkillResearchNotes5,items,,New,Not Used,Civil Engineering Notes Tier 5,,,,,,,,,,,,,
-CookingSkillResearchNotes1,items,,New,Not Used,Cooking Notes Tier 1,,,,,,,,,,,,,
-CookingSkillResearchNotes2,items,,New,Not Used,Cooking Notes Tier 2,,,,,,,,,,,,,
-CookingSkillResearchNotes3,items,,New,Not Used,Cooking Notes Tier 3,,,,,,,,,,,,,
-CookingSkillResearchNotes4,items,,New,Not Used,Cooking Notes Tier 4,,,,,,,,,,,,,
-CookingSkillResearchNotes5,items,,New,Not Used,Cooking Notes Tier 5,,,,,,,,,,,,,
-DemolitionsSkillResearchNotes1,items,,New,Not Used,Demolitions Notes Tier 1,,,,,,,,,,,,,
-DemolitionsSkillResearchNotes2,items,,New,Not Used,Demolitions Notes Tier 2,,,,,,,,,,,,,
-DemolitionsSkillResearchNotes3,items,,New,Not Used,Demolitions Notes Tier 3,,,,,,,,,,,,,
-DemolitionsSkillResearchNotes4,items,,New,Not Used,Demolitions Notes Tier 4,,,,,,,,,,,,,
-DemolitionsSkillResearchNotes5,items,,New,Not Used,Demolitions Notes Tier 5,,,,,,,,,,,,,
-ElectricianSkillResearchNotes1,items,,New,Not Used,Electrical Notes Tier 1,,,,,,,,,,,,,
-ElectricianSkillResearchNotes2,items,,New,Not Used,Electrical Notes Tier 2,,,,,,,,,,,,,
-ElectricianSkillResearchNotes3,items,,New,Not Used,Electrical Notes Tier 3,,,,,,,,,,,,,
-ElectricianSkillResearchNotes4,items,,New,Not Used,Electrical Notes Tier 4,,,,,,,,,,,,,
-ElectricianSkillResearchNotes5,items,,New,Not Used,Electrical Notes Tier 5,,,,,,,,,,,,,
-LeatherworkingSkillResearchNotes1,items,,New,Not Used,Leatherworking Notes Tier 1,,,,,,,,,,,,,
-LeatherworkingSkillResearchNotes2,items,,New,Not Used,Leatherworking Notes Tier 2,,,,,,,,,,,,,
-LeatherworkingSkillResearchNotes3,items,,New,Not Used,Leatherworking Notes Tier 3,,,,,,,,,,,,,
-LeatherworkingSkillResearchNotes4,items,,New,Not Used,Leatherworking Notes Tier 4,,,,,,,,,,,,,
-LeatherworkingSkillResearchNotes5,items,,New,Not Used,Leatherworking Notes Tier 5,,,,,,,,,,,,,
-MechanicalSkillResearchNotes1,items,,New,Not Used,Mechanical Notes Tier 1,,,,,,,,,,,,,
-MechanicalSkillResearchNotes2,items,,New,Not Used,Mechanical Notes Tier 2,,,,,,,,,,,,,
-MechanicalSkillResearchNotes3,items,,New,Not Used,Mechanical Notes Tier 3,,,,,,,,,,,,,
-MechanicalSkillResearchNotes4,items,,New,Not Used,Mechanical Notes Tier 4,,,,,,,,,,,,,
-MechanicalSkillResearchNotes5,items,,New,Not Used,Mechanical Notes Tier 5,,,,,,,,,,,,,
-MedcialSkillResearchNotes1,items,,New,Not Used,Medical Notes Tier 1,,,,,,,,,,,,,
-MedcialSkillResearchNotes2,items,,New,Not Used,Medical Notes Tier 2,,,,,,,,,,,,,
-MedcialSkillResearchNotes3,items,,New,Not Used,Medical Notes Tier 3,,,,,,,,,,,,,
-MedcialSkillResearchNotes4,items,,New,Not Used,Medical Notes Tier 4,,,,,,,,,,,,,
-MedcialSkillResearchNotes5,items,,New,Not Used,Medical Notes Tier 5,,,,,,,,,,,,,
-SoftwareSkillResearchNotes1,items,,New,Not Used,Software Notes Tier 1,,,,,,,,,,,,,
-SoftwareSkillResearchNotes2,items,,New,Not Used,Software Notes Tier 2,,,,,,,,,,,,,
-SoftwareSkillResearchNotes3,items,,New,Not Used,Software Notes Tier 3,,,,,,,,,,,,,
-SoftwareSkillResearchNotes4,items,,New,Not Used,Software Notes Tier 4,,,,,,,,,,,,,
-SoftwareSkillResearchNotes5,items,,New,Not Used,Software Notes Tier 5,,,,,,,,,,,,,
-TailoringSkillResearchNotes1,items,,New,Not Used,Tailoring Notes Tier 1,,,,,,,,,,,,,
-TailoringSkillResearchNotes2,items,,New,Not Used,Tailoring Notes Tier 2,,,,,,,,,,,,,
-TailoringSkillResearchNotes3,items,,New,Not Used,Tailoring Notes Tier 3,,,,,,,,,,,,,
-TailoringSkillResearchNotes4,items,,New,Not Used,Tailoring Notes Tier 4,,,,,,,,,,,,,
-TailoringSkillResearchNotes5,items,,New,Not Used,Tailoring Notes Tier 5,,,,,,,,,,,,,
 resourceWoodRepairParts,items,,New,Not Used,Wood Planks and nails for upgrading frames.,,,,,,,,,,,,,
 CarBatteryDead,items,,New,Not Used,Dead Car Battery,,,,,,,,,,,,,
 smallEngineBroken,items,,New,Not Used,Broken Small Engine,,,,,,,,,,,,,
@@ -151,10 +30,12 @@ MotionCameraProgram,items,,New,Not Used,Motion Camera Firmware,,,,,,,,,,,,,
 NightVisionProgram,items,,New,Not Used,Nightvision Firmware,,,,,,,,,,,,,
 ShotgunTurretProgram,items,,New,Not Used,Shotgun Turret Firmware,,,,,,,,,,,,,
 SledgeTurretProgram,items,,New,Not Used,Sledge Turret Firmware,,,,,,,,,,,,,
-SolarBankProgram,items,,New,Not Used,Solar Bank Firmware,,,,,,,,,,,,,
+resourceLeather,items,,New,Not Used,Animal Hide,,,,,,,,,,,,,
 StunRepulsorProgram,items,,New,Not Used,Stun Repulsor Software Upgrade,,,,,,,,,,,,,
 TimedChargeProgram,items,,New,Not Used,Timed Charge Firmware,,,,,,,,,,,,,
 BlankProgram,items,,New,Not Used,Blank Firmware Chip,,,,,,,,,,,,,
+Buddy5Program,items,,New,Not Used,Buddy-5 Companion Program,,,,,,,,,,,,,
+Buddy5ProgramDesc,items,,New,Not Used,Firmware package containing advanced behavioral algorithms for the Buddy-5 service droid. Upload to unlock companion functions such as follow, guard, and fetch.,,,,,,,,,,,,,
 resourceLeather,items,,New,Not Used,Leather,,,,,,,,,,,,,
 BarkChips,items,,New,Not Used,Bark Chips,,,,,,,,,,,,,
 TanninSolution,items,,New,Not Used,Tannin Solution,,,,,,,,,,,,,
@@ -176,72 +57,6 @@ vehicle4x4TruckAccessoriesExhaust,items,,New,Not Used,4x4 Truck Exhaust Accessor
 vehicle4x4TruckAccessoryFront,items,,New,Not Used,4x4 Truck Front Accessories,,,,,,,,,,,,,
 vehicle4x4TruckChassisBackend,items,,New,Not Used,4x4 Truck Chassis Backend,,,,,,,,,,,,,
 vehicle4x4TruckChassisFront,items,,New,Not Used,4x4 Truck Chassis Front,,,,,,,,,,,,,
-professionArchitect,items,,New,Not Used,Architect and Civil Engineer,,,,,,,,,,,,,
-professionArchitectDesc,items,,New,Not Used,Profession bonus to Civil Engineer.\nProfession bonus to Construction.\nCivil Engineering level 15.\nConstruction level 15.\nStarting Items:\n-Claw Hammer-Cement Mixer-Grave Digger Mod-Iron Sledge Hammer,,,,,,,,,,,,,
-hobbyArchitect,items,,New,Not Used,Home Improvement Enthusiast,,,,,,,,,,,,,
-hobbyArchitectDesc,items,,New,Not Used,Hobby bonus to Civil Engineer.\nCivil Engineering level 5.\nStarting Items:\n-Claw Hammer,,,,,,,,,,,,,
-professionAutomotivemechanic,items,,New,Not Used,Automotive Mechanic,,,,,,,,,,,,,
-professionAutomotivemechanicDesc,items,,New,Not Used,Profession bonus to Automotive.\nAutomotive level 15.\nStarting Items:\nWrench-Repair Kit x20-Fuel Saver Schematic-Vehicle Reserve Fuel Tank Schematic,,,,,,,,,,,,,
-hobbyAutomotivemechanic,items,,New,Not Used,Automotive Enthusiast,,,,,,,,,,,,,
-hobbyAutomotivemechanicDesc,items,,New,Not Used,Hobby bonus to Automotive.\nAutomotive level 5.\nStarting Items:\n-Repair Kit x20,,,,,,,,,,,,,
-professionBlacksmith,items,,New,Not Used,Blacksmith,,,,,,,,,,,,,
-professionBlacksmithDesc,items,,New,Not Used,Profession bonus to Blacksmithing.\nBlacksmithing level 15.\nStarting Items:\nAnvil-Wrought Iron x75-Leather x5-Sledge Hammer,,,,,,,,,,,,,
-hobbyBlacksmith,items,,New,Not Used,Blacksmithing Hobbiest,,,,,,,,,,,,,
-hobbyBlacksmithDesc,items,,New,Not Used,Hobby bonus to Blacksmithing.\nBlacksmithing level 5.\nStarting Items:\n-Wrought Iron 25,,,,,,,,,,,,,
-professionBurglar,items,,New,Not Used,Burglar,,,,,,,,,,,,,
-professionBurglarDesc,items,,New,Not Used,"Profession bonus to Lockpicking.\nHobby bonus to Parkour.\nHobby bonus to Running.\nHobby bonus to Scavenging.\nHobby bonus to Stealth.\nLevel 15 in Scavenging,Lockpicking,Backpacking,Stealth.\nLevel 5 in Running,Parkour,Blade.\nStarting Items:\nLockpicks x20,Night Vision Goggles,Impact Brace,Cloth Boots,ZU Lettermans Jacket",,,,,,,,,,,,,
-hobbyBurglar,items,,New,Not Used,Miscreant,,,,,,,,,,,,,
-hobbyBurglarDesc,items,,New,Not Used,"Hobby bonus to Lockpicking.\nLevel 5 in Lockpicking,Running,Scavenging.\nStarting Items:\n-Lockpicks 10",,,,,,,,,,,,,
-professionCarpenter,items,,New,Not Used,Carpenter,,,,,,,,,,,,,
-professionCarpenterDesc,items,,New,Not Used,"Profession bonus to Carpentry.\nLevel 15 in Caprentry.\nStarting Items:\nNails x2000,Wood Splitter Mod,Simple Mechanical Parts x10,Low Quality Wood x100",,,,,,,,,,,,,
-hobbyCarpenter,items,,New,Not Used,Wood Tinkerer,,,,,,,,,,,,,
-hobbyCarpenterDesc,items,,New,Not Used,"Hobby bonus to Carpentry.\Carpentry level 5.\nStarting Items:\nWood Splitter Mod",,,,,,,,,,,,,
-professionChemist,items,,New,Not Used,Chemist,,,,,,,,,,,,,
-professionChemistDesc,items,,New,Not Used,"Profession bonus to Chemistry.\nChemistry level 15.\nStarting Items:\nSteroids x5,Painkillers x5,Acid x10,Glue x15,Pipebomb x10,Beaker,Cooking Pot x2",,,,,,,,,,,,,
-hobbyChemist,items,,New,Not Used,Home Chemist,,,,,,,,,,,,,
-hobbyChemistDesc,items,,New,Not Used,"Hobby bonus to Chemistry.\Chemistry level 5.\nStarting Items:\nAcid x5",,,,,,,,,,,,,
-professionCook,items,,New,Not Used,Cook,,,,,,,,,,,,,
-professionCookDesc,items,,New,Not Used,"Profession bonus to Cooking.\nCooking level 15.\nStarting Items:\nGolden Rod Tea x5,Red Tea x5,Cooking Pot,Grill,Pumpkin Cheese Cake x5",,,,,,,,,,,,,
-hobbyCook,items,,New,Not Used,Foodie,,,,,,,,,,,,,
-hobbyCookDesc,items,,New,Not Used,"Hobby bonus to Cooking.\nCooking level 5.\nStarting Items:\nCooking Pot",,,,,,,,,,,,,
-professionElectricalEngineer,items,,New,Not Used,Electrical Engineer,,,,,,,,,,,,,
-professionElectricalEngineerDesc,items,,New,Not Used,"Profession bonus to Electrical Engineer.\nElectrical Engineer level 15.\nStarting Items:\nGenerator Bank,Wire Tool,Light Bulb x3,Small Engine,Simple Electronic Parts x20,Junk Turret,Junk Turret Ammo x500",,,,,,,,,,,,,
-hobbyElectricalEngineer,items,,New,Not Used,Electrical Hobbiest,,,,,,,,,,,,,
-hobbyElectricalEngineerDesc,items,,New,Not Used,"Hobby bonus to Electrical Engineer.\nElectrical Engineer level 5.\nStarting Items:\nSimple Electronic Parts x10",,,,,,,,,,,,,
-professionFarmer,items,,New,Not Used,Farmer,,,,,,,,,,,,,
-professionFarmerDesc,items,,New,Not Used,"Profession bonus to Farmer.\nHobby bonus to Foraging.\nFarmer level 15.\nForaging level 5.\nStarting Items:\nCowboy Hat,Farm Plot x6,Empty Farm Plot x6, Stone Spear,Iron Shovel,Repair Kit x10",,,,,,,,,,,,,
-hobbyFarmer,items,,New,Not Used,Home Grower,,,,,,,,,,,,,
-hobbyFarmerDesc,items,,New,Not Used,"Hobby bonus to Farmer.\nFarmer level 5.\nStarting Items:\nEmpty Farm Plot x6",,,,,,,,,,,,,
-professionGeneralist,items,,New,Not Used,Generalist,,,,,,,,,,,,,
-professionGeneralistDesc,items,,New,Not Used,"As a Generalist you moved from job to job. Get 5 additional hobby tokens instead of a profession.\nStarting Items:\nhobby tokens x5,Repair Kit x5,Claw Hammer,Duct Tape x10,Cooking Pot,Low Quality Wood x50,Dukes x500",,,,,,,,,,,,,
-professionLeatherworker,items,,New,Not Used,Leatherworker,,,,,,,,,,,,,
-professionLeatherworkerDesc,items,,New,Not Used,"Profession bonus to Leatherworking.\nHobby bonus to Tailoring and Tanning.\nLeatherworking level 15.\nTailoring and Tanning level 5.\nStarting Items:\nLow Quality Wrought Iron x25,Simple Mechanical Parts x5,Simple Electronic Parts x5,Leather Duster,Leather Knuckles,Leather Boots,Leather Gloves,Leather Chest,Improved Fittings x3",,,,,,,,,,,,,
-hobbyLeatherworker,items,,New,Not Used,Leather Enthusiast,,,,,,,,,,,,,
-hobbyLeatherworkerDesc,items,,New,Not Used,"Hobby bonus to Leatherworking.\nLeatherworking level 5.\nStarting Items:\nLeather Duster",,,,,,,,,,,,,
-professionMartialArtist,items,,New,Not Used,Martial Arts Teacher,,,,,,,,,,,,,
-professionMartialArtistDesc,items,,New,Not Used,"Profession bonus to Fist and Running.\nHobby Bonus to Parkour, Blade, Club, Bow, Improvised.\nFist and Running level 15.\nParkour, Blade, Club, Bow, Improvised level 5.\nStarting Items:\nIron Knuckles, Wooden Bow, Wooden Club, Structural Brace Mod, Iron Arrows x5, Repair Kit x2",,,,,,,,,,,,,
-hobbyMartialArtist,items,,New,Not Used,Self Defense Student,,,,,,,,,,,,,
-hobbyMartialArtistDesc,items,,New,Not Used,"Hobby bonus to Fist.\Fist and Runnng level 5.\nStarting Items:\nIron Knuckles",,,,,,,,,,,,,
-professionMechanicalEngineer,items,,New,Not Used,Mechanical Engineer,,,,,,,,,,,,,
-professionMechanicalEngineerDesc,items,,New,Not Used,"Profession bonus to Mechanical Engineer.\nMechanical Engineer level 15.\nStarting Items:\nWrench,Simple Mechanical Parts x20,Leather 5,Bicycle",,,,,,,,,,,,,
-hobbyMechanicalEngineer,items,,New,Not Used,Mr Fixit,,,,,,,,,,,,,
-hobbyMechanicalEngineerDesc,items,,New,Not Used,Hobby bonus to Mechanical Engineer.\nMechanical Engineer level 5.\nStarting Items:\nSimple Mechanical Parts x10,,,,,,,,,,,,,
-professionPoliceOfficer,items,,New,Not Used,Police Officer,,,,,,,,,,,,,
-professionPoliceOfficerDesc,items,,New,Not Used,"Profession bonus to Pistol and Club.\nPistol and Club level 15.\nStarting Items:\nPipe Baton, Shades (cosmetic), Pistol, 9mm ammo x100",,,,,,,,,,,,,
-hobbyPoliceOfficer,items,,New,Not Used,Crime Chaser,,,,,,,,,,,,,
-hobbyPoliceOfficerDesc,items,,New,Not Used,Hobby bonus to Pistol.\nPistol level 5.\nStarting Items:\nPipe Baton,,,,,,,,,,,,,
-professionSoftwareEngineer,items,,New,Not Used,Software Engineer,,,,,,,,,,,,,
-professionSoftwareEngineerDesc,items,,New,Not Used,"Profession bonus to Software Engineer.\nSoftware Engineer level 15.\nStarting Items:\nLaptop, Blank Program x20, Simple Electronic Parts x5, Low Quality Wrought Iron x25, Mega Crush x3, Junk Sledge",,,,,,,,,,,,,
-hobbySoftwareEngineer,items,,New,Not Used,Script Kiddy,,,,,,,,,,,,,
-hobbySoftwareEngineerDesc,items,,New,Not Used,"Hobby bonus to Software Engineer.\nSoftware Engineer level 5.\nStarting Items:\nBlank Program x10",,,,,,,,,,,,,
-professionSoldier,items,,New,Not Used,Soldier,,,,,,,,,,,,,
-professionSoldierDesc,items,,New,Not Used,"Profession bonus to Machinegun.\nDemolitions, Rifle, Machinegun level 15.\nStarting Items:\nAK-47, Army Pants, Army Shirt, 7.62mm ammo x200, Night Vision Goggles",,,,,,,,,,,,,
-hobbySoldier,items,,New,Not Used,Weekend Warrior,,,,,,,,,,,,,
-hobbySoldierDesc,items,,New,Not Used,"Hobby bonus to Rifle.\nRifle level 5.\nStarting Items:\nArmy Pants, Army Shirt",,,,,,,,,,,,,
-professionTailor,items,,New,Not Used,Tailor,,,,,,,,,,,,,
-professionTailorDesc,items,,New,Not Used,"Profession bonus to Tailoring.\nTailoring level 15.\nLeatherworking level 5.\nStarting Items:\nSewing Kit x10, Lettermans Jacket, Flannel Shirt, Low Quality Wrought Iron x20, Simple Mechanical Parts x5, Simple Electrical Parts x5, Clothing Pocket Mod x3, Duct Tape x10",,,,,,,,,,,,,
-hobbyTailor,items,,New,Not Used,Fabric Fanatic,,,,,,,,,,,,,
-hobbyTailorDesc,items,,New,Not Used,"Hobby bonus to Tailoring.\nTailoring level 5.\nStarting Items:\Sewing Kit x5",,,,,,,,,,,,,
 noteDuke01,items,,New,Not Used,Objectives,,,,,,,,,,,,,
 noteDuke01Desc,items,,New,Not Used,"1) First and foremost you need to survive.\n2) Find survivors and escort them to traders.\n3) Scout the desert biome for Element A.\n4) Find Element B in the snow biome.\n5) Brave the wasteland for advanced tech.",,,,,,,,,,,,,
 LeatherSheetT1,items,,New,Not Used,Poor Quality Leather Sheet,,,,,,,,,,,,,
@@ -276,6 +91,15 @@ TraderSuppliesCommonFoodAndDrink,items,,New,Not Used,Common food and drink,,,,,,
 TraderSuppliesCommonFoodAndDrinkDesc,items,,New,Not Used,This container has food and drink inside. It can be sold to traders as is or be part of a package for trader quests.,,,,,,,,,,,,,
 TraderSuppliesCommonMedicalSupplies,items,,New,Not Used,Common medications,,,,,,,,,,,,,
 TraderSuppliesCommonMedicalSuppliesDesc,items,,New,Not Used,This container has medical supplies inside. It can be sold to traders as is or be part of a package for trader quests.,,,,,,,,,,,,,
+quest_StartingQuest,Quest,Quest Info,,,"Rise From The Ashes",,,,,,,,,,,,
+quest_StartingQuestTip1_title,Quest,Quest Info,,,"Prepared",,,,,,,,,,,,
+quest_StartingQuestTip1,Quest,Quest Info,,,"Make a bedroll, find food and shelter. We trained you in tracking small animals so get close to the ground and find their tracks. In your pack you will find your survival gear. Open it up and put on the armor and ready your weapon.",,,,,,,,,,,,
+quest_StartingQuest_description,Quest,Quest Info,,,"Line 1",,,,,,,,,,,,
+quest_GoToTrader_description,Quest,Quest Info,,,"Line 2",,,,,,,,,,,,
+quest_GoToTrader_description3,Quest,Quest Info,,,"We've taken measures to assist you in your mission. Traders have been contacted and are willing to engage in trade with you. They possess resources within their compound that they're reluctantly willing to donate to aid in your survival.\n\nShould you encounter any other survivors during your journey, please ensure their safety and bring them to the trader's compound. They will be provided with shelter, provisions, and, most importantly, a safe passage out of the infested area.",,,,,,,,,,,,
+quest_GoToTrader_description4,Quest,Quest Info,,,"Line 5",,,,,,,,,,,,
+quest_StartingQuestTip1_title,Journal Tip,,,,Message from the Safe Zone,,,,,,,,,,,,
+quest_GoToTrader_description3_title,Quest,Quest Info,,,"Head to the trader",,,,,,,,,,,,
 resourceWoodT1,items,,New,Not Used,Poor Quality Wood,,,,,,,,,,,,,
 resourceWoodT2,items,,New,Not Used,Standard Quality Wood,,,,,,,,,,,,,
 resourceWoodT3,items,,New,Not Used,Good Quality Wood,,,,,,,,,,,,,
@@ -288,29 +112,17 @@ resourceWoodT3Desc,items,,New,Not Used,These good quality wood planks are straig
 resourceWoodT4Desc,items,,New,Not Used,These high quality wood planks very well made and can be used for fine wooden products.,,,,,,,,,,,,,
 resourceWoodT5Desc,items,,New,Not Used,These excellent quality wood planks are flawless.,,,,,,,,,,,,,
 resourceWoodT6Desc,items,,New,Not Used,These mastercrafted wood panks are of unparalleled quality.,,,,,,,,,,,,,
-AutomotiveComponentsT1,items,,New,Not Used,Poor Quality Automotive Parts,,,,,,,,,,,,,
-AutomotiveComponentsT2,items,,New,Not Used,Standard Quality Automotive Parts,,,,,,,,,,,,,
-AutomotiveComponentsT3,items,,New,Not Used,Good Quality Automotive Parts,,,,,,,,,,,,,
-AutomotiveComponentsT4,items,,New,Not Used,High Quality Automotive Parts,,,,,,,,,,,,,
-AutomotiveComponentsT5,items,,New,Not Used,Excellent Quality Automotive Parts,,,,,,,,,,,,,
-AutomotiveComponentsT6,items,,New,Not Used,Mastercrafted Automotive Parts,,,,,,,,,,,,,
-AutomotiveComponentsT1Desc,items,,New,Not Used,Slightly warped with many imperfections. Poor quality for automotive use.,,,,,,,,,,,,
-AutomotiveComponentsT2Desc,items,,New,Not Used,Few imperfections. Standard quality for automotive use.,,,,,,,,,,,,
-AutomotiveComponentsT3Desc,items,,New,Not Used,Well-made, Good quality for automotive use.,,,,,,,,,,,,
-AutomotiveComponentsT4Desc,items,,New,Not Used,Very well-made, suitable for demanding automotive applications. High quality for automotive use.,,,,,,,,,,,,
-AutomotiveComponentsT5Desc,items,,New,Not Used,Flawless. Excellent quality for automotive use.,,,,,,,,,,,,
-AutomotiveComponentsT6Desc,items,,New,Not Used,Unparalleled quality, mastercrafted for precision and durability in automotive applications.,,,,,,,,,,,,
 resourceLowQualityWroughtIron,items,,New,Not Used,Low Quality Wrought Iron,,,,,,,,,,,,,
 resourceWroughtIron,items,,New,Not Used,Wrought Iron,,,,,,,,,,,,,
 resourceForgedIron,items,,New,Not Used,Forged Iron,,,,,,,,,,,,,
 resourceForgedSteel,items,,New,Not Used,Forged Steel,,,,,,,,,,,,,
-resourceForgedStainlessSteel,items,,New,Not Used,Forged Stainless Steel,,,,,,,,,,,,,
+resourceForgedStainlessSteel,items,,New,Not Used,Stainless Steel,,,,,,,,,,,,,
 resourceForgedTungsten,items,,New,Not Used,Forged Tungsten,,,,,,,,,,,,,
 resourceLowQualityWroughtIronDesc,items,,New,Not Used,"Low quality wrought iron, suitable for basic applications.",,,,,,,,,,,
 resourceWroughtIronDesc,items,,New,Not Used,"Standard quality wrought iron, suitable for general purposes.",,,,,,,,,,,
 resourceForgedIronDesc,items,,New,Not Used,"Well-crafted forged iron, offering durability and strength for various uses.",,,,,,,,,,,
 resourceForgedSteelDesc,items,,New,Not Used,"High-quality forged steel, known for its robustness and versatility in industrial applications.",,,,,,,,,,,
-resourceForgedStainlessSteelDesc,items,,New,Not Used,"Premium-grade forged stainless steel, prized for its corrosion resistance and longevity.",,,,,,,,,,,
+resourceForgedStainlessSteelDesc,items,,New,Not Used,"Premium-grade stainless steel, prized for its corrosion resistance and longevity.",,,,,,,,,,,
 resourceForgedTungstenDesc,items,,New,Not Used,"Top-tier forged tungsten, renowned for its exceptional hardness and resilience in demanding environments.",,,,,,,,,,,
 resourceElectricPartsT1,items,,New,Not Used,Poor Quality Electric Parts,,,,,,,,,,,,,
 resourceElectricPartsT2,items,,New,Not Used,Standard Quality Electric Parts,,,,,,,,,,,,,
@@ -360,6 +172,727 @@ resourceMechanicalPartsT3Desc,items,,New,Not Used,"Good-quality mechanical parts
 resourceMechanicalPartsT4Desc,items,,New,Not Used,"High-quality mechanical parts, known for their superior performance and longevity in demanding conditions.",,,,,,,,,,,
 resourceMechanicalPartsT5Desc,items,,New,Not Used,"Excellent-quality mechanical parts, virtually flawless and providing top-tier performance and reliability.",,,,,,,,,,,
 resourceMechanicalPartsT6Desc,items,,New,Not Used,"Mastercrafted mechanical parts, meticulously crafted to perfection for unparalleled performance and durability.",,,,,,,,,,,
+plantedAloeT1-1,blocks,Farming,New,Not Used,Poor Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 1 aloe.
+plantedAloeT2-1,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 3 aloe.
+plantedAloeT3-1,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 6 aloe.
+plantedAloeT4-1,blocks,Farming,New,Not Used,High Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 9 aloe.
+plantedAloeT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 12 aloe.
+plantedAloeT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
+plantedBlueberryT1-1,blocks,Farming,New,Not Used,Poor Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 1 blueberry.
+plantedBlueberryT2-1,blocks,Farming,New,Not Used,Low Yield Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 3 blueberries.
+plantedBlueberryT3-1,blocks,Farming,New,Not Used,Moderate Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 6 blueberries.
+plantedBlueberryT4-1,blocks,Farming,New,Not Used,High Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 9 blueberries.
+plantedBlueberryT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 12 blueberries.
+plantedBlueberryT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
+plantedMushroomT1-1,blocks,Farming,New,Not Used,Poor Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 1 mushroom.
+plantedMushroomT2-1,blocks,Farming,New,Not Used,Low Yield Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 3 mushrooms.
+plantedMushroomT3-1,blocks,Farming,New,Not Used,Moderate Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 6 mushrooms.
+plantedMushroomT4-1,blocks,Farming,New,Not Used,High Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 9 mushrooms.
+plantedMushroomT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 12 mushrooms.
+plantedMushroomT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
+plantedYuccaT1-1,blocks,Farming,New,Not Used,Poor Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 1 yucca.
+plantedYuccaT2-1,blocks,Farming,New,Not Used,Low Yield Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 3 yuccas.
+plantedYuccaT3-1,blocks,Farming,New,Not Used,Moderate Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 6 yuccas.
+plantedYuccaT4-1,blocks,Farming,New,Not Used,High Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 9 yuccas.
+plantedYuccaT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 12 yuccas.
+plantedYuccaT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
+plantedCottonT1-1,blocks,Farming,New,Not Used,Poor Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 1 cotton.
+plantedCottonT2-1,blocks,Farming,New,Not Used,Low Yield Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 3 cottons.
+plantedCottonT3-1,blocks,Farming,New,Not Used,Moderate Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 6 cottons.
+plantedCottonT4-1,blocks,Farming,New,Not Used,High Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 9 cottons.
+plantedCottonT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 12 cottons.
+plantedCottonT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
+plantedCoffeeT1-1,blocks,Farming,New,Not Used,Poor Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 1 coffee bean.
+plantedCoffeeT2-1,blocks,Farming,New,Not Used,Low Yield Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 3 coffee beans.
+plantedCoffeeT3-1,blocks,Farming,New,Not Used,Moderate Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 6 coffee beans.
+plantedCoffeeT4-1,blocks,Farming,New,Not Used,High Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 9 coffee beans.
+plantedCoffeeT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 12 coffee beans.
+plantedCoffeeT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
+plantedGoldenrodT1-1,blocks,Farming,New,Not Used,Poor Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
+plantedGoldenrodT2-1,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
+plantedGoldenrodT3-1,blocks,Farming,New,Not Used,Moderate Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
+plantedGoldenrodT4-1,blocks,Farming,New,Not Used,High Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
+plantedGoldenrodT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
+plantedGoldenrodT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
+plantedPotatoT1-1,blocks,Farming,New,Not Used,Poor Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 1 potato.
+plantedPotatoT2-1,blocks,Farming,New,Not Used,Low Yield Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 3 potatoes.
+plantedPotatoT3-1,blocks,Farming,New,Not Used,Moderate Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 6 potatoes.
+plantedPotatoT4-1,blocks,Farming,New,Not Used,High Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 9 potatoes.
+plantedPotatoT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 12 potatoes.
+plantedPotatoT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
+plantedChrysanthemumT1-1,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
+plantedChrysanthemumT2-1,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
+plantedChrysanthemumT3-1,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
+plantedChrysanthemumT4-1,blocks,Farming,New,Not Used,High Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
+plantedChrysanthemumT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
+plantedChrysanthemumT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
+plantedCornT1-1,blocks,Farming,New,Not Used,Poor Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 1 ear of corn.
+plantedCornT2-1,blocks,Farming,New,Not Used,Low Yield Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 3 ears of corn.
+plantedCornT3-1,blocks,Farming,New,Not Used,Moderate Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 6 ears of corn.
+plantedCornT4-1,blocks,Farming,New,Not Used,High Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 9 ears of corn.
+plantedCornT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 12 ears of corn.
+plantedCornT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
+plantedGraceCornT1-1,blocks,Farming,New,Not Used,Poor Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 1 Super Corn.
+plantedGraceCornT2-1,blocks,Farming,New,Not Used,Low Yield Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 3 Super Corn.
+plantedGraceCornT3-1,blocks,Farming,New,Not Used,Moderate Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 6 Super Corn.
+plantedGraceCornT4-1,blocks,Farming,New,Not Used,High Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 9 Super Corn.
+plantedGraceCornT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 12 Super Corn.
+plantedGraceCornT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
+plantedHopsT1-1,blocks,Farming,New,Not Used,Poor Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 1 hop cone.
+plantedHopsT2-1,blocks,Farming,New,Not Used,Low Yield Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 3 hop cones.
+plantedHopsT3-1,blocks,Farming,New,Not Used,Moderate Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 6 hop cones.
+plantedHopsT4-1,blocks,Farming,New,Not Used,High Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 9 hop cones.
+plantedHopsT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 12 hop cones.
+plantedHopsT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
+plantedPumpkinT1-1,blocks,Farming,New,Not Used,Poor Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 1 pumpkin.
+plantedPumpkinT2-1,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 3 pumpkins.
+plantedPumpkinT3-1,blocks,Farming,New,Not Used,Moderate Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 6 pumpkins.
+plantedPumpkinT4-1,blocks,Farming,New,Not Used,High Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 9 pumpkins.
+plantedPumpkinT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 12 pumpkins.
+plantedPumpkinT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
+plantedAloeT1-2,blocks,Farming,New,Not Used,Poor Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 1 aloe.
+plantedAloeT2-2,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 3 aloe.
+plantedAloeT3-2,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 6 aloe.
+plantedAloeT4-2,blocks,Farming,New,Not Used,High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 9 aloe.
+plantedAloeT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 12 aloe.
+plantedAloeT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
+plantedBlueberryT1-2,blocks,Farming,New,Not Used,Poor Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 1 blueberry.
+plantedBlueberryT2-2,blocks,Farming,New,Not Used,Low Yield Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 3 blueberries.
+plantedBlueberryT3-2,blocks,Farming,New,Not Used,Moderate Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 6 blueberries.
+plantedBlueberryT4-2,blocks,Farming,New,Not Used,High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 9 blueberries.
+plantedBlueberryT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 12 blueberries.
+plantedBlueberryT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
+plantedMushroomT1-2,blocks,Farming,New,Not Used,Poor Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 1 mushroom.
+plantedMushroomT2-2,blocks,Farming,New,Not Used,Low Yield Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 3 mushrooms.
+plantedMushroomT3-2,blocks,Farming,New,Not Used,Moderate Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 6 mushrooms.
+plantedMushroomT4-2,blocks,Farming,New,Not Used,High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 9 mushrooms.
+plantedMushroomT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 12 mushrooms.
+plantedMushroomT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
+plantedYuccaT1-2,blocks,Farming,New,Not Used,Poor Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 1 yucca.
+plantedYuccaT2-2,blocks,Farming,New,Not Used,Low Yield Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 3 yuccas.
+plantedYuccaT3-2,blocks,Farming,New,Not Used,Moderate Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 6 yuccas.
+plantedYuccaT4-2,blocks,Farming,New,Not Used,High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 9 yuccas.
+plantedYuccaT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 12 yuccas.
+plantedYuccaT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
+plantedCottonT1-2,blocks,Farming,New,Not Used,Poor Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 1 cotton.
+plantedCottonT2-2,blocks,Farming,New,Not Used,Low Yield Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 3 cottons.
+plantedCottonT3-2,blocks,Farming,New,Not Used,Moderate Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 6 cottons.
+plantedCottonT4-2,blocks,Farming,New,Not Used,High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 9 cottons.
+plantedCottonT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 12 cottons.
+plantedCottonT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
+plantedCoffeeT1-2,blocks,Farming,New,Not Used,Poor Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 1 coffee bean.
+plantedCoffeeT2-2,blocks,Farming,New,Not Used,Low Yield Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 3 coffee beans.
+plantedCoffeeT3-2,blocks,Farming,New,Not Used,Moderate Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 6 coffee beans.
+plantedCoffeeT4-2,blocks,Farming,New,Not Used,High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 9 coffee beans.
+plantedCoffeeT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 12 coffee beans.
+plantedCoffeeT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
+plantedGoldenrodT1-2,blocks,Farming,New,Not Used,Poor Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
+plantedGoldenrodT2-2,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
+plantedGoldenrodT3-2,blocks,Farming,New,Not Used,Moderate Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
+plantedGoldenrodT4-2,blocks,Farming,New,Not Used,High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
+plantedGoldenrodT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
+plantedGoldenrodT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
+plantedPotatoT1-2,blocks,Farming,New,Not Used,Poor Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 1 potato.
+plantedPotatoT2-2,blocks,Farming,New,Not Used,Low Yield Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 3 potatoes.
+plantedPotatoT3-2,blocks,Farming,New,Not Used,Moderate Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 6 potatoes.
+plantedPotatoT4-2,blocks,Farming,New,Not Used,High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 9 potatoes.
+plantedPotatoT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 12 potatoes.
+plantedPotatoT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
+plantedChrysanthemumT1-2,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
+plantedChrysanthemumT2-2,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
+plantedChrysanthemumT3-2,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
+plantedChrysanthemumT4-2,blocks,Farming,New,Not Used,High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
+plantedChrysanthemumT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
+plantedChrysanthemumT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
+plantedCornT1-2,blocks,Farming,New,Not Used,Poor Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 1 ear of corn.
+plantedCornT2-2,blocks,Farming,New,Not Used,Low Yield Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 3 ears of corn.
+plantedCornT3-2,blocks,Farming,New,Not Used,Moderate Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 6 ears of corn.
+plantedCornT4-2,blocks,Farming,New,Not Used,High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 9 ears of corn.
+plantedCornT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 12 ears of corn.
+plantedCornT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
+plantedGraceCornT1-2,blocks,Farming,New,Not Used,Poor Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 1 Super Corn.
+plantedGraceCornT2-2,blocks,Farming,New,Not Used,Low Yield Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 3 Super Corn.
+plantedGraceCornT3-2,blocks,Farming,New,Not Used,Moderate Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 6 Super Corn.
+plantedGraceCornT4-2,blocks,Farming,New,Not Used,High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 9 Super Corn.
+plantedGraceCornT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 12 Super Corn.
+plantedGraceCornT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
+plantedHopT1-2,blocks,Farming,New,Not Used,Poor Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 1 hop cone.
+plantedHopT2-2,blocks,Farming,New,Not Used,Low Yield Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 3 hop cones.
+plantedHopT3-2,blocks,Farming,New,Not Used,Moderate Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 6 hop cones.
+plantedHopT4-2,blocks,Farming,New,Not Used,High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 9 hop cones.
+plantedHopT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 12 hop cones.
+plantedHopT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
+plantedPumpkinT1-2,blocks,Farming,New,Not Used,Poor Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 1 pumpkin.
+plantedPumpkinT2-2,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 3 pumpkins.
+plantedPumpkinT3-2,blocks,Farming,New,Not Used,Moderate Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 6 pumpkins.
+plantedPumpkinT4-2,blocks,Farming,New,Not Used,High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 9 pumpkins.
+plantedPumpkinT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 12 pumpkins.
+plantedPumpkinT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
+plantedAloe3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 1 aloe.
+plantedAloe3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 3 aloe.
+plantedAloe3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 6 aloe.
+plantedAloe3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 9 aloe.
+plantedAloe3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 12 aloe.
+plantedAloe3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
+plantedBlueberry3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 1 blueberry.
+plantedBlueberry3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 3 blueberries.
+plantedBlueberry3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 6 blueberries.
+plantedBlueberry3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 9 blueberries.
+plantedBlueberry3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 12 blueberries.
+plantedBlueberry3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
+plantedMushroom3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 1 mushroom.
+plantedMushroom3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 3 mushrooms.
+plantedMushroom3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 6 mushrooms.
+plantedMushroom3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 9 mushrooms.
+plantedMushroom3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 12 mushrooms.
+plantedMushroom3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
+plantedYucca3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 1 yucca.
+plantedYucca3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 3 yuccas.
+plantedYucca3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 6 yuccas.
+plantedYucca3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 9 yuccas.
+plantedYucca3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 12 yuccas.
+plantedYucca3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
+plantedCotton3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 1 cotton.
+plantedCotton3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 3 cottons.
+plantedCotton3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 6 cottons.
+plantedCotton3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 9 cottons.
+plantedCotton3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 12 cottons.
+plantedCotton3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
+plantedCoffee3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 1 coffee bean.
+plantedCoffee3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 3 coffee beans.
+plantedCoffee3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 6 coffee beans.
+plantedCoffee3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 9 coffee beans.
+plantedCoffee3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 12 coffee beans.
+plantedCoffee3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
+plantedGoldenrod3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
+plantedGoldenrod3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
+plantedGoldenrod3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
+plantedGoldenrod3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
+plantedGoldenrod3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
+plantedGoldenrod3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
+plantedPotato3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 1 potato.
+plantedPotato3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 3 potatoes.
+plantedPotato3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 6 potatoes.
+plantedPotato3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 9 potatoes.
+plantedPotato3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 12 potatoes.
+plantedPotato3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
+plantedChrysanthemum3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
+plantedChrysanthemum3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
+plantedChrysanthemum3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
+plantedChrysanthemum3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
+plantedChrysanthemum3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
+plantedChrysanthemum3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
+plantedCorn3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 1 ear of corn.
+plantedCorn3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 3 ears of corn.
+plantedCorn3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 6 ears of corn.
+plantedCorn3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 9 ears of corn.
+plantedCorn3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 12 ears of corn.
+plantedCorn3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
+plantedGraceCorn3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 1 Super Corn.
+plantedGraceCorn3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 3 Super Corn.
+plantedGraceCorn3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 6 Super Corn.
+plantedGraceCorn3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 9 Super Corn.
+plantedGraceCorn3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 12 Super Corn.
+plantedGraceCorn3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
+plantedHopT1-1,blocks,Farming,New,Not Used,Poor Yield Hop Plant (Seed),,,,,,,,,,,,,
+plantedHopT2-1,blocks,Farming,New,Not Used,Low Yield Hop (Seed),,,,,,,,,,,,,
+plantedHopT3-1,blocks,Farming,New,Not Used,Moderate Yield Hop (Seed),,,,,,,,,,,,,
+plantedHopT4-1,blocks,Farming,New,Not Used,High Yield Hop (Seed),,,,,,,,,,,,,
+plantedHopT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Hop (Seed),,,,,,,,,,,,,
+plantedHopT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Hop (Seed),,,,,,,,,,,,,
+plantedHops3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 1 hop cone.
+plantedHops3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 3 hop cones.
+plantedHops3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 6 hop cones.
+plantedHops3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 9 hop cones.
+plantedHops3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 12 hop cones.
+plantedHops3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
+plantedPumpkin3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 1 pumpkin.
+plantedPumpkin3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 3 pumpkins.
+plantedPumpkin3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 6 pumpkins.
+plantedPumpkin3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 9 pumpkins.
+plantedPumpkin3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 12 pumpkins.
+plantedPumpkin3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
+plantedAloe3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 1 aloe.
+plantedAloe3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 3 aloe.
+plantedAloe3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 6 aloe.
+plantedAloe3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 9 aloe.
+plantedAloe3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 12 aloe.
+plantedAloe3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
+plantedBlueberry3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Blueberry,,,,,,,,,,Produces 1 seed and 1 blueberry.
+plantedBlueberry3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Blueberry,,,,,,,,,,Produces 1 seed and 3 blueberries.
+plantedBlueberry3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Blueberry,,,,,,,,,,Produces 1 seed and 6 blueberries.
+plantedBlueberry3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Blueberry,,,,,,,,,,Produces 1 seed and 9 blueberries.
+plantedBlueberry3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry,,,,,,,,,,Produces 1 seed and 12 blueberries.
+plantedBlueberry3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry,,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
+plantedMushroom3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Mushrooms,,,,,,,,,,Produces 1 spore and 1 mushroom.
+plantedMushroom3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Mushroom,,,,,,,,,,Produces 1 spore and 3 mushrooms.
+plantedMushroom3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Mushroom,,,,,,,,,,Produces 1 spore and 6 mushrooms.
+plantedMushroom3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Mushroom,,,,,,,,,,Produces 1 spore and 9 mushrooms.
+plantedMushroom3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom,,,,,,,,,,Produces 1 spore and 12 mushrooms.
+plantedMushroom3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom,,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
+plantedYucca3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Yucca,,,,,,,,,,Produces 1 seed and 1 yucca.
+plantedYucca3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Yucca,,,,,,,,,,Produces 1 seed and 3 yuccas.
+plantedYucca3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Yucca,,,,,,,,,,Produces 1 seed and 6 yuccas.
+plantedYucca3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Yucca,,,,,,,,,,Produces 1 seed and 9 yuccas.
+plantedYucca3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca,,,,,,,,,,Produces 1 seed and 12 yuccas.
+plantedYucca3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Yucca,,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
+plantedCotton3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Cotton,,,,,,,,,,Produces 1 seed and 1 cotton.
+plantedCotton3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Cotton,,,,,,,,,,Produces 1 seed and 3 cottons.
+plantedCotton3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Cotton,,,,,,,,,,Produces 1 seed and 6 cottons.
+plantedCotton3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Cotton,,,,,,,,,,Produces 1 seed and 9 cottons.
+plantedCotton3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton,,,,,,,,,,Produces 1 seed and 12 cottons.
+plantedCotton3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Cotton,,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
+plantedCoffee3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Coffee,,,,,,,,,,Produces 1 seed and 1 coffee bean.
+plantedCoffee3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Coffee,,,,,,,,,,Produces 1 seed and 3 coffee beans.
+plantedCoffee3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Coffee,,,,,,,,,,Produces 1 seed and 6 coffee beans.
+plantedCoffee3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Coffee,,,,,,,,,,Produces 1 seed and 9 coffee beans.
+plantedCoffee3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee,,,,,,,,,,Produces 1 seed and 12 coffee beans.
+plantedCoffee3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Coffee,,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
+plantedGoldenrod3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Goldenrod,,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
+plantedGoldenrod3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod,,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
+plantedGoldenrod3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Goldenrod,,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
+plantedGoldenrod3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Goldenrod,,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
+plantedGoldenrod3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod,,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
+plantedGoldenrod3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod,,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
+plantedPotato3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Potato,,,,,,,,,,Produces 1 seed and 1 potato.
+plantedPotato3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Potato,,,,,,,,,,Produces 1 seed and 3 potatoes.
+plantedPotato3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Potato,,,,,,,,,,Produces 1 seed and 6 potatoes.
+plantedPotato3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Potato,,,,,,,,,,Produces 1 seed and 9 potatoes.
+plantedPotato3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Potato,,,,,,,,,,Produces 1 seed and 12 potatoes.
+plantedPotato3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Potato,,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
+plantedChrysanthemum3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
+plantedChrysanthemum3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
+plantedChrysanthemum3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
+plantedChrysanthemum3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
+plantedChrysanthemum3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
+plantedChrysanthemum3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
+plantedCorn3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Corn,,,,,,,,,,Produces 1 seed and 1 ear of corn.
+plantedCorn3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Corn,,,,,,,,,,Produces 1 seed and 3 ears of corn.
+plantedCorn3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Corn,,,,,,,,,,Produces 1 seed and 6 ears of corn.
+plantedCorn3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Corn,,,,,,,,,,Produces 1 seed and 9 ears of corn.
+plantedCorn3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Corn,,,,,,,,,,Produces 1 seed and 12 ears of corn.
+plantedCorn3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Corn,,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
+plantedGraceCorn3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Super Corn,,,,,,,,,,Produces 1 seed and 1 Super Corn.
+plantedGraceCorn3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Super Corn,,,,,,,,,,Produces 1 seed and 3 Super Corn.
+plantedGraceCorn3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Super Corn,,,,,,,,,,Produces 1 seed and 6 Super Corn.
+plantedGraceCorn3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Super Corn,,,,,,,,,,Produces 1 seed and 9 Super Corn.
+plantedGraceCorn3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn,,,,,,,,,,Produces 1 seed and 12 Super Corn.
+plantedGraceCorn3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn,,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
+plantedHop3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Hops,,,,,,,,,,Produces 1 seed and 1 hop cone.
+plantedHop3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Hops,,,,,,,,,,Produces 1 seed and 3 hop cones.
+plantedHop3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Hops,,,,,,,,,,Produces 1 seed and 6 hop cones.
+plantedHop3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Hops,,,,,,,,,,Produces 1 seed and 9 hop cones.
+plantedHop3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Hops,,,,,,,,,,Produces 1 seed and 12 hop cones.
+plantedHop3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Hops,,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
+plantedPumpkin3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Pumpkin,,,,,,,,,,Produces 1 seed and 1 pumpkin.
+plantedPumpkin3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin,,,,,,,,,,Produces 1 seed and 3 pumpkins.
+plantedPumpkin3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Pumpkin,,,,,,,,,,Produces 1 seed and 6 pumpkins.
+plantedPumpkin3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Pumpkin,,,,,,,,,,Produces 1 seed and 9 pumpkins.
+plantedPumpkin3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin,,,,,,,,,,Produces 1 seed and 12 pumpkins.
+plantedPumpkin3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin,,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
+cntBirdnestWithEggs,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
+cntBirdnest,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
+cntBirdnestWithEggsDesc,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
+cntBirdnestDesc,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
+professionBurglar,items,,New,Not Used,Burglar,,,,,,,,,,,,,
+professionBurglarDesc,items,,New,Not Used,"Profession bonus to Lockpicking.\nHobby bonus to Parkour.\nHobby bonus to Running.\nHobby bonus to Scavenging.\nHobby bonus to Stealth.\nLevel 15 in Scavenging,Lockpicking,Backpacking,Stealth.\nLevel 5 in Running,Parkour,Blade.\nStarting Items:\nLockpicks x20,Night Vision Goggles,Impact Brace,Cloth Boots,ZU Lettermans Jacket",,,,,,,,,,,,,
+hobbyBurglar,items,,New,Not Used,Miscreant,,,,,,,,,,,,,
+hobbyBurglarDesc,items,,New,Not Used,"Hobby bonus to Lockpicking.\nLevel 5 in Lockpicking,Running,Scavenging.\nStarting Items:\n-Lockpicks 10",,,,,,,,,,,,,
+professionAutomotivemechanic,items,,New,Not Used,Automotive Mechanic,,,,,,,,,,,,,
+professionAutomotivemechanicDesc,items,,New,Not Used,Profession bonus to Automotive.\nAutomotive level 15.\nStarting Items:\nWrench-Repair Kit x20-Fuel Saver Schematic-Vehicle Reserve Fuel Tank Schematic,,,,,,,,,,,,,
+hobbyAutomotivemechanic,items,,New,Not Used,Automotive Enthusiast,,,,,,,,,,,,,
+hobbyAutomotivemechanicDesc,items,,New,Not Used,Hobby bonus to Automotive.\nAutomotive level 5.\nStarting Items:\n-Repair Kit x20,,,,,,,,,,,,,
+AutomotiveResearchBundle1,items,,New,Not Used,Novice Automotive Research Bundle (Tier 1),,,,,,,,,,,,,
+AutomotiveResearchBundle2,items,,New,Not Used,Apprentice Automotive Research Bundle (Tier 2),,,,,,,,,,,,,
+AutomotiveResearchBundle3,items,,New,Not Used,Journeyman Automotive Research Bundle (Tier 3),,,,,,,,,,,,,
+AutomotiveResearchBundle4,items,,New,Not Used,Expert Automotive Research Bundle (Tier 4),,,,,,,,,,,,,
+AutomotiveResearchBundle5,items,,New,Not Used,Artisan Automotive Research Bundle (Tier 5),,,,,,,,,,,,,
+AutomotiveResearchBundle6,items,,New,Not Used,Master Automotive Research Bundle (Tier 6),,,,,,,,,,,,,
+AutomotiveResearchBundle1Desc,items,,New,Not Used,"Novice-level. \nCreates Novice research automotive notes. \nCrafts 3 Poor Quality Automotive Parts.",,,,,,,,,,,,,
+AutomotiveResearchBundle2Desc,items,,New,Not Used,"Apprentice-level. \nCreates Apprentice research automotive notes. \nCrafts 3 Standard Quality Automotive Parts.",,,,,,,,,,,,,
+AutomotiveResearchBundle3Desc,items,,New,Not Used,"Journeyman-level. \nCreates Journeyman research automotive notes. \nCrafts 3 Good Quality Automotive Parts.",,,,,,,,,,,,,
+AutomotiveResearchBundle4Desc,items,,New,Not Used,"Expert-level. \nCreates Expert research automotive notes. \nCrafts 3 High Quality Automotive Parts.",,,,,,,,,,,,,
+AutomotiveResearchBundle5Desc,items,,New,Not Used,"Artisan-level. \nCreates Artisan research automotive notes. \nCrafts 3 Excellent Quality Automotive Parts.",,,,,,,,,,,,,
+AutomotiveResearchBundle6Desc,items,,New,Not Used,"Master-level. \nCreates Master research automotive notes. \nCrafts 3 Mastercrafted Automotive Parts.",,,,,,,,,,,,,
+AutomotiveSkillResearchNotes1,items,,New,Not Used,Novice Automotive Notes (Tier 1),,,,,,,,,,,,,
+AutomotiveSkillResearchNotes2,items,,New,Not Used,Apprentice Automotive Notes (Tier 2),,,,,,,,,,,,,
+AutomotiveSkillResearchNotes3,items,,New,Not Used,Journeyman Automotive Notes (Tier 3),,,,,,,,,,,,,
+AutomotiveSkillResearchNotes4,items,,New,Not Used,Expert Automotive Notes (Tier 4),,,,,,,,,,,,,
+AutomotiveSkillResearchNotes5,items,,New,Not Used,Artisan Automotive Notes (Tier 5),,,,,,,,,,,,,
+AutomotiveSkillResearchNotes6,items,,New,Not Used,Master Automotive Notes Tier 6,,,,,,,,,,,,,
+AutomotiveSkillResearchNotes1Desc,items,,New,Not Used,These notes provide Tier 1 exp towards your crafting skill.,,,,,,,,,,,,,
+AutomotiveSkillResearchNotes2Desc,items,,New,Not Used,These notes provide Tier 2 exp towards your crafting skill.,,,,,,,,,,,,,
+AutomotiveSkillResearchNotes3Desc,items,,New,Not Used,These notes provide Tier 3 exp towards your crafting skill.,,,,,,,,,,,,,
+AutomotiveSkillResearchNotes4Desc,items,,New,Not Used,These notes provide Tier 4 exp towards your crafting skill.,,,,,,,,,,,,,
+AutomotiveSkillResearchNotes5Desc,items,,New,Not Used,These notes provide Tier 5 exp towards your crafting skill.,,,,,,,,,,,,,
+AutomotiveSkillResearchNotes6Desc,items,,New,Not Used,These notes provide Tier 6 exp towards your crafting skill.,,,,,,,,,,,,,
+AutomotiveComponentsT1,items,,New,Not Used,Poor Quality Automotive Parts,,,,,,,,,,,,,
+AutomotiveComponentsT2,items,,New,Not Used,Standard Quality Automotive Parts,,,,,,,,,,,,,
+AutomotiveComponentsT3,items,,New,Not Used,Good Quality Automotive Parts,,,,,,,,,,,,,
+AutomotiveComponentsT4,items,,New,Not Used,High Quality Automotive Parts,,,,,,,,,,,,,
+AutomotiveComponentsT5,items,,New,Not Used,Excellent Quality Automotive Parts,,,,,,,,,,,,,
+AutomotiveComponentsT6,items,,New,Not Used,Mastercrafted Automotive Parts,,,,,,,,,,,,,
+AutomotiveComponentsT1Desc,items,,New,Not Used,Slightly warped with many imperfections. Poor quality for automotive use.,,,,,,,,,,,,
+AutomotiveComponentsT2Desc,items,,New,Not Used,Few imperfections. Standard quality for automotive use.,,,,,,,,,,,,
+AutomotiveComponentsT3Desc,items,,New,Not Used,Well-made, Good quality for automotive use.,,,,,,,,,,,,
+AutomotiveComponentsT4Desc,items,,New,Not Used,Very well-made, suitable for demanding automotive applications. High quality for automotive use.,,,,,,,,,,,,
+AutomotiveComponentsT5Desc,items,,New,Not Used,Flawless. Excellent quality for automotive use.,,,,,,,,,,,,
+AutomotiveComponentsT6Desc,items,,New,Not Used,Unparalleled quality, mastercrafted for precision and durability in automotive applications.,,,,,,,,,,,,
+adeptAutomotivePerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from automotive tasks.,,,,,,,,,,,
+adeptAutomotivePerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for automotive tasks.,,,,,,,,,,,
+adeptAutomotivePerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for automotive tasks.,,,,,,,,,,,
+adeptAutomotivePerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for automotive tasks.,,,,,,,,,,,
+adeptAutomotivePerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for automotive tasks.,,,,,,,,,,,
+adeptAutomotivePerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
+adeptAutomotivePerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
+adeptAutomotivePerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
+adeptAutomotivePerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
+adeptAutomotivePerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
+adeptAutomotivePerkName,progression,,New,Not Used,Gifted Mechanic,,,,,,,,,,,,,
+adeptAutomotivePerkDesc,progression,,New,Not Used,Naturally skilled in repairing and maintaining vehicles and machinery.,,,,,,,,,,,
+professionBlacksmithDesc,items,,New,Not Used,Profession bonus to Blacksmithing.\nBlacksmithing level 15.\nStarting Items:\nAnvil-Wrought Iron x75-Leather x5-Sledge Hammer,,,,,,,,,,,,,
+hobbyBlacksmith,items,,New,Not Used,Blacksmithing Hobbiest,,,,,,,,,,,,,
+hobbyBlacksmithDesc,items,,New,Not Used,Hobby bonus to Blacksmithing.\nBlacksmithing level 5.\nStarting Items:\n-Wrought Iron 25,,,,,,,,,,,,,
+skillBlacksmithing,progression,,New,Not Used,Blacksmithing,,,,,,,,,,,,,
+skillBlacksmithingDesc,progression,,New,Not Used,Current Exp {cvar($blacksmithingExpTotal:0)}\nExp Next Level {cvar($blacksmithingExpToNextLevel:0)}\nBase Exp award per use {cvar($BlacksmithingExp:0)},,,,,,,,,,,,,
+skillBlacksmithingName,progression,,New,Not Used,Blacksmithing,,,,,,,,,,,,,
+adeptBlacksmithingPerkName,progression,,New,Not Used,Gifted Blacksmith,,,,,,,,,,,,,
+adeptBlacksmithingPerkDesc,progression,,New,Not Used,Naturally adept at forging and shaping metal into useful items.,,,,,,,,,,,
+adeptBlacksmithingPerkDescRank1,progression,Attribute,,,Apprentice: Rank 1,,,,,,,,,,,,,
+adeptBlacksmithingPerkDescRank2,progression,Attribute,,,Journeyman: Rank 2,,,,,,,,,,,,,
+adeptBlacksmithingPerkDescRank3,progression,Attribute,,,Expert: Rank 3,,,,,,,,,,,,,
+adeptBlacksmithingPerkDescRank4,progression,Attribute,,,Artisan: Rank 4,,,,,,,,,,,,,
+adeptBlacksmithingPerkDescRank5,progression,Attribute,,,Master: Rank 5,,,,,,,,,,,, 
+adeptBlacksmithingPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from blacksmithing.,,,,,,,,,,,
+adeptBlacksmithingPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for blacksmithing.,,,,,,,,,,,
+adeptBlacksmithingPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for blacksmithing.,,,,,,,,,,,
+adeptBlacksmithingPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for blacksmithing.,,,,,,,,,,,
+adeptBlacksmithingPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for blacksmithing.,,,,,,,,,,,
+blacksmithingT1-1,progression,,Attribute,Not Used,Novice Blacksmithing,,,,,,,,,,
+blacksmithingT1-2,progression,,Attribute,Not Used,Novice Iron Tools,,,,,,,,,,
+blacksmithingT2-1,progression,,Attribute,Not Used,Apprentice Blacksmithing,,,,,,,,,,
+blacksmithingT2-2,progression,,Attribute,Not Used,Apprentice Iron Tools,,,,,,,,,,
+blacksmithingT3-1,progression,,Attribute,Not Used,Journeyman Blacksmith,,,,,,,,,,
+blacksmithingT3-2,progression,,Attribute,Not Used,Journeyman Weapons,,,,,,,,,,
+blacksmithingT3-3,progression,,Attribute,Not Used,Journeyman Chest And Leg Armor,,,,,,,,,,
+blacksmithingT3-4,progression,,Attribute,Not Used,Journeyman Head And Foot Armor,,,,,,,,,,
+blacksmithingT4-1,progression,,Attribute,Not Used,Expert Hand Armor,,,,,,,,,,
+blacksmithingT4-2,progression,,Attribute,Not Used,Expert Blacksmith,,,,,,,,,,
+blacksmithingT5-1,progression,,Attribute,Not Used,Artisan Blacksmith,,,,,,,,,,
+blacksmithingT6-1,progression,,Attribute,Not Used,Master Blacksmith,,,,,,,,,,
+BlacksmithingSkillResearchNotes1,items,,New,Not Used,Novice Blacksmithing Notes (Tier 1),,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes2,items,,New,Not Used,Apprentice Blacksmithing Notes (Tier 2),,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes3,items,,New,Not Used,Journeyman Blacksmithing Notes (Tier 3),,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes4,items,,New,Not Used,Expert Blacksmithing Notes (Tier 4),,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes5,items,,New,Not Used,Artisan Blacksmithing Notes (Tier 5),,,,,,,,,,,,
+BlacksmithingSkillResearchNotes6,items,,New,Not Used,Master Blacksmithing Notes (Tier 6),,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes1Desc,items,,New,Not Used,These notes provide Tier 1 exp towards your crafting skill.,,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes2Desc,items,,New,Not Used,These notes provide Tier 2 exp towards your crafting skill.,,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes3Desc,items,,New,Not Used,These notes provide Tier 3 exp towards your crafting skill.,,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes4Desc,items,,New,Not Used,These notes provide Tier 4 exp towards your crafting skill.,,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes5Desc,items,,New,Not Used,These notes provide Tier 5 exp towards your crafting skill.,,,,,,,,,,,,
+BlacksmithingSkillResearchNotes6Desc,items,,New,Not Used,These notes provide Tier 6 exp towards your crafting skill.,,,,,,,,,,,,,
+BlacksmithingResearchBundle1,items,,New,Not Used,Novice-Level Blacksmithing Research Bundle (Tier 1),,,,,,,,,,,,,
+BlacksmithingResearchBundle2,items,,New,Not Used,Apprentice-level Blacksmithing Research Bundle (Tier 2),,,,,,,,,,,,,
+BlacksmithingResearchBundle3,items,,New,Not Used,Journeyman-level Blacksmithing Research Bundle (Tier 3),,,,,,,,,,,,,
+BlacksmithingResearchBundle4,items,,New,Not Used,Expert-level Blacksmithing Research Bundle (Tier 4),,,,,,,,,,,,,
+BlacksmithingResearchBundle5,items,,New,Not Used,Artisan-level Blacksmithing Research Bundle (Tier 5),,,,,,,,,,,,,
+BlacksmithingResearchBundle6,items,,New,Not Used,Master-level Blacksmithing Research Bundle (Tier 6),,,,,,,,,,,,,,
+BlacksmithingResearchBundle1Desc,items,,New,Not Used,"Novice-level. \nCreates Novice research blacksmithing notes. \nCrafts 20 Low Quality Wrought Iron Ingots.",,,,,,,,,,,,,
+BlacksmithingResearchBundle2Desc,items,,New,Not Used,"Apprentice-level. \nCreates Apprentice research blacksmithing notes. \nCrafts 20 Wrought Iron Ingots.",,,,,,,,,,,,,
+BlacksmithingResearchBundle3Desc,items,,New,Not Used,"Journeyman-level. \nCreates Journeyman research blacksmithing notes. \nCrafts 20 Forged Iron Ingots.",,,,,,,,,,,,,
+BlacksmithingResearchBundle4Desc,items,,New,Not Used,"Expert-level. \nCreates Expert research blacksmithing notes. \nCrafts 20 Forged Steel Ingots.",,,,,,,,,,,,,
+BlacksmithingResearchBundle5Desc,items,,New,Not Used,"Artisan-level. \nCreates Artisan research blacksmithing notes. \nCrafts 20 Stainless Steel Ingots.",,,,,,,,,,,,,
+BlacksmithingResearchBundle6Desc,items,,New,Not Used,"Master-level. \nCreates Master research blacksmithing notes. \nCrafts 20 Forged Tungsten Ingots.",,,,,,,,,,,,,
+CarpentryResearchBundle1,items,,New,Not Used,Novice Carpentry Bundle (Tier 1),,,,,,,,,,,,,
+CarpentryResearchBundle2,items,,New,Not Used,Apprentice Carpentry Bundle (Tier 2),,,,,,,,,,,,,
+CarpentryResearchBundle3,items,,New,Not Used,Journeyman Carpentry Bundle (Tier 3),,,,,,,,,,,,,
+CarpentryResearchBundle4,items,,New,Not Used,Expert Carpentry Bundle (Tier 4),,,,,,,,,,,,,
+CarpentryResearchBundle5,items,,New,Not Used,Artisan Carpentry Bundle (Tier 5),,,,,,,,,,,,,
+CarpentryResearchBundle6,items,,New,Not Used,Master Carpentry Bundle (Tier 6),,,,,,,,,,,,,
+CarpentrySkillResearchNotes1,items,,New,Not Used,Novice Carpentry Notes (Tier 1),,,,,,,,,,,,,
+CarpentrySkillResearchNotes2,items,,New,Not Used,Apprentice Carpentry Notes (Tier 2),,,,,,,,,,,,,
+CarpentrySkillResearchNotes3,items,,New,Not Used,Journeyman Carpentry Notes (Tier 3),,,,,,,,,,,,,
+CarpentrySkillResearchNotes4,items,,New,Not Used,Expert Carpentry Notes (Tier 4),,,,,,,,,,,,,
+CarpentrySkillResearchNotes5,items,,New,Not Used,Artisan Carpentry Notes (Tier 5),,,,,,,,,,,,,
+CarpentrySkillResearchNotes6,items,,New,Not Used,Master Carpentry Notes (Tier 6),,,,,,,,,,,,,
+CarpentrySkillResearchNotes1Desc,items,,New,Not Used,These notes provide Tier 1 exp towards your crafting skill.,,,,,,,,,,,,,
+CarpentrySkillResearchNotes2Desc,items,,New,Not Used,These notes provide Tier 2 exp towards your crafting skill.,,,,,,,,,,,,,
+CarpentrySkillResearchNotes3Desc,items,,New,Not Used,These notes provide Tier 3 exp towards your crafting skill.,,,,,,,,,,,,,
+CarpentrySkillResearchNotes4Desc,items,,New,Not Used,These notes provide Tier 4 exp towards your crafting skill.,,,,,,,,,,,,,
+CarpentrySkillResearchNotes5Desc,items,,New,Not Used,These notes provide Tier 5 exp towards your crafting skill.,,,,,,,,,,,,,
+CarpentrySkillResearchNotes6Desc,items,,New,Not Used,These notes provide Tier 6 exp towards your crafting skill.,,,,,,,,,,,,,
+professionCarpenter,items,,New,Not Used,Carpenter,,,,,,,,,,,,,
+professionCarpenterDesc,items,,New,Not Used,"Profession bonus to Carpentry.\nLevel 15 in Caprentry.\nStarting Items:\nNails x2000,Wood Splitter Mod,Simple Mechanical Parts x10,Low Quality Wood x100",,,,,,,,,,,,,
+hobbyCarpenter,items,,New,Not Used,Wood Tinkerer,,,,,,,,,,,,,
+hobbyCarpenterDesc,items,,New,Not Used,"Hobby bonus to Carpentry.\Carpentry level 5.\nStarting Items:\nWood Splitter Mod",,,,,,,,,,,,,
+skillCarpentry,progression,,New,Not Used,Carpentry,,,,,,,,,,,,,
+skillCarpentryDesc,progression,,New,Not Used,Current Exp {cvar($carpentryExpTotal:0)}\nExp Next Level {cvar($carpentryExpToNextLevel:0)}\nBase Exp award per use {cvar($CarpentryExp:0)},,,,,,,,,,,,,
+skillCarpentryName,progression,,New,Not Used,Carpentry,,,,,,,,,,,,,
+adeptCarpentryPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from carpentry.,,,,,,,,,,,
+adeptCarpentryPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for carpentry.,,,,,,,,,,,
+adeptCarpentryPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for carpentry.,,,,,,,,,,,
+adeptCarpentryPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for carpentry.,,,,,,,,,,,
+adeptCarpentryPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for carpentry.,,,,,,,,,,,
+adeptCarpentryPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
+adeptCarpentryPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
+adeptCarpentryPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
+adeptCarpentryPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
+adeptCarpentryPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
+adeptCarpentryPerkName,progression,,New,Not Used,Gifted Carpenter,,,,,,,,,,,,,
+carpentryT0-1,progression,,Attribute,Not Used,Survivor Trained Carpenter,,,,,,,,,,
+carpentryT1-1,progression,,Attribute,Not Used,Novice Trained Carpenter,,,,,,,,,,
+carpentryT1-2,progression,,Attribute,Not Used,Novice Wooden Weapons,,,,,,,,,,
+carpentryT2-1,progression,,Attribute,Not Used,Journeyman Carpenter,,,,,,,,,,
+carpentryT3-1,progression,,Attribute,Not Used,Practitioner Carpenter,,,,,,,,,,
+carpentryT3-2,progression,,Attribute,Not Used,Practitioner Wooden Weapons,,,,,,,,,,
+carpentryT4-1,progression,,Attribute,Not Used,Expert Carpenter,,,,,,,,,,
+carpentryT5-1,progression,,Attribute,Not Used,Specialist Carpenter,,,,,,,,,,
+carpentryT6-1,progression,,Attribute,Not Used,Master Carpenter,,,,,,,,,,
+CarpentryResearchBundle1Desc,items,,New,Not Used,"Novice-level. \nCreates Novice research carpentry notes. \nCrafts 140 Poor Quality Wood.",,,,,,,,,,,,,
+CarpentryResearchBundle2Desc,items,,New,Not Used,"Apprentice-level. \nCreates Apprentice research carpentry notes. \nCrafts 140 Standard Quality Wood.",,,,,,,,,,,,,
+CarpentryResearchBundle3Desc,items,,New,Not Used,"Journeyman-level. \nCreates Journeyman research carpentry notes. \nCrafts 140 Good Quality Wood.",,,,,,,,,,,,,
+CarpentryResearchBundle4Desc,items,,New,Not Used,"Expert-level. \nCreates Expert research carpentry notes. \nCrafts 140 High Quality Wood.",,,,,,,,,,,,,
+CarpentryResearchBundle5Desc,items,,New,Not Used,"Artisan-level. \nCreates Artisan research carpentry notes. \nCrafts 140 Excellent Quality Wood.",,,,,,,,,,,,,
+CarpentryResearchBundle6Desc,items,,New,Not Used,"Master-level. \nCreates Master research carpentry notes. \nCrafts 140 Mastercrafted Wood.",,,,,,,,,,,,,
+skillChemistry,progression,,New,Not Used,Chemistry,,,,,,,,,,,,,
+skillChemistryDesc,progression,,New,Not Used,Current Exp {cvar($chemistryExpTotal:0)}\nExp Next Level {cvar($chemistryExpToNextLevel:0)}\nBase Exp award per use {cvar($ChemistryExp:0)},,,,,,,,,,,,,
+skillChemistryName,progression,,New,Not Used,Chemistry,,,,,,,,,,,,,
+professionChemist,items,,New,Not Used,Chemist,,,,,,,,,,,,,
+professionChemistDesc,items,,New,Not Used,"Profession bonus to Chemistry.\nChemistry level 15.\nStarting Items:\nSteroids x5,Painkillers x5,Acid x10,Glue x15,Pipebomb x10,Beaker,Cooking Pot x2",,,,,,,,,,,,,
+hobbyChemist,items,,New,Not Used,Home Chemist,,,,,,,,,,,,,
+hobbyChemistDesc,items,,New,Not Used,"Hobby bonus to Chemistry.\Chemistry level 5.\nStarting Items:\nAcid x5",,,,,,,,,,,,,
+adeptChemistryPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 to the base experience earned from chemistry tasks.,,,,,,,,,,,
+adeptChemistryPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 to the base experience earned from chemistry tasks.,,,,,,,,,,,
+adeptChemistryPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 to the base experience earned from chemistry tasks.,,,,,,,,,,,
+adeptChemistryPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 to the base experience earned from chemistry tasks.,,,,,,,,,,,
+adeptChemistryPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 to the base experience earned from chemistry tasks.,,,,,,,,,,,
+adeptChemistryPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
+adeptChemistryPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
+adeptChemistryPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
+adeptChemistryPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
+adeptChemistryPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
+adeptChemistryPerkName,progression,,New,Not Used,Gifted Chemist,,,,,,,,,,,,,
+adeptChemistryPerkDesc,progression,,New,Not Used,Naturally skilled in chemical reactions and laboratory techniques.,,,,,,,,,,,
+chemistryT0-1,progression,,Attribute,Not Used,Survivor Trained Chemist,,,,,,,,,,
+chemistryT1-1,progression,,Attribute,Not Used,Novice Chemist,,,,,,,,,,
+chemistryT2-1,progression,,Attribute,Not Used,Journeyman Chemist,,,,,,,,,,
+chemistryT3-1,progression,,Attribute,Not Used,Practitioner Chemist,,,,,,,,,,
+chemistryT4-1,progression,,Attribute,Not Used,Expert Chemist,,,,,,,,,,
+chemistryT5-1,progression,,Attribute,Not Used,Specialist Chemist,,,,,,,,,,
+chemistryT6-1,progression,,Attribute,Not Used,Master Chemist,,,,,,,,,,
+ChemistryResearchBundle1,items,,New,Not Used,Chemistry Research Bundle (Tier 1),,,,,,,,,,,,,
+ChemistryResearchBundle2,items,,New,Not Used,Chemistry Research Bundle (Tier 2),,,,,,,,,,,,,
+ChemistryResearchBundle3,items,,New,Not Used,Chemistry Research Bundle (Tier 3),,,,,,,,,,,,,
+ChemistryResearchBundle4,items,,New,Not Used,Chemistry Research Bundle (Tier 4),,,,,,,,,,,,,
+ChemistryResearchBundle5,items,,New,Not Used,Chemistry Research Bundle (Tier 5),,,,,,,,,,,,,
+ChemistryResearchBundle6,items,,New,Not Used,Chemistry Research Bundle (Tier 6),,,,,,,,,,,,,
+ChemistryResearchBundle1Desc,items,,New,Not Used,"Novice-level. \nCreates Novice research chemistry notes. \nCrafts 3 Poor Quality Reagents.",,,,,,,,,,,,,
+ChemistryResearchBundle2Desc,items,,New,Not Used,"Apprentice-level. \nCreates Apprentice research chemistry notes. \nCrafts 3 Standard Quality Reagents.",,,,,,,,,,,,,
+ChemistryResearchBundle3Desc,items,,New,Not Used,"Journeyman-level. \nCreates Journeyman research chemistry notes. \nCrafts 3 Good Quality Reagents.",,,,,,,,,,,,,
+ChemistryResearchBundle4Desc,items,,New,Not Used,"Expert-level. \nCreates Expert research chemistry notes. \nCrafts 3 High Quality Reagent.",,,,,,,,,,,,,
+ChemistryResearchBundle5Desc,items,,New,Not Used,"Artisan-level. \nCreates Artisan research chemistry notes. \nCrafts 3 Excellent Quality Reagent.",,,,,,,,,,,,,
+ChemistryResearchBundle6Desc,items,,New,Not Used,"Master-level. \nCreates Master research chemistry notes. \nCrafts 3 Mastercrafted Quality Reagent.",,,,,,,,,,,,,
+ChemistrySkillResearchNotes1,items,,New,Not Used,Chemistry Notes (Tier 1),,,,,,,,,,,,,
+ChemistrySkillResearchNotes2,items,,New,Not Used,Chemistry Notes (Tier 2),,,,,,,,,,,,,
+ChemistrySkillResearchNotes3,items,,New,Not Used,Chemistry Notes (Tier 3),,,,,,,,,,,,,
+ChemistrySkillResearchNotes4,items,,New,Not Used,Chemistry Notes (Tier 4),,,,,,,,,,,,,
+ChemistrySkillResearchNotes5,items,,New,Not Used,Chemistry Notes (Tier 5),,,,,,,,,,,,,
+ChemistrySkillResearchNotes6,items,,New,Not Used,Chemistry Notes (Tier 6),,,,,,,,,,,,,
+ChemistrySkillResearchNotes1Desc,items,,New,Not Used,These notes provide Tier 1 exp towards your crafting skill.,,,,,,,,,,,,,
+ChemistrySkillResearchNotes2Desc,items,,New,Not Used,These notes provide Tier 2 exp towards your crafting skill.,,,,,,,,,,,,,
+ChemistrySkillResearchNotes3Desc,items,,New,Not Used,These notes provide Tier 3 exp towards your crafting skill.,,,,,,,,,,,,,
+ChemistrySkillResearchNotes4Desc,items,,New,Not Used,These notes provide Tier 4 exp towards your crafting skill.,,,,,,,,,,,,,
+ChemistrySkillResearchNotes5Desc,items,,New,Not Used,These notes provide Tier 5 exp towards your crafting skill.,,,,,,,,,,,,,
+ChemistrySkillResearchNotes6Desc,items,,New,Not Used,These notes provide Tier 6 exp towards your crafting skill.,,,,,,,,,,,,,
+adeptCivilEngineerPerkName,progression,,New,Not Used,Gifted Civil Engineer,,,,,,,,,,,,,
+adeptCivilEngineerPerkDesc,progression,,New,Not Used,Naturally talented in planning and designing infrastructure projects.,,,,,,,,,,,
+adeptCivilEngineerPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
+adeptCivilEngineerPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
+adeptCivilEngineerPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
+adeptCivilEngineerPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
+adeptCivilEngineerPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
+adeptCivilEngineerPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
+adeptCivilEngineerPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
+adeptCivilEngineerPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
+adeptCivilEngineerPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
+adeptCivilEngineerPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
+skillCivilEngineer,progression,,New,Not Used,Civil Engineer,,,,,,,,,,,,,
+skillCivilEngineerDesc,progression,,New,Not Used,Current Exp {cvar($civilengineerExpTotal:0)}\nExp Next Level {cvar($civilengineerExpToNextLevel:0)}\nBase Exp award per use {cvar($CivilEngineerExp:0)},,,,,,,,,,,,,
+skillCivilEngineerName,progression,,New,Not Used,Civil Engineer,,,,,,,,,,,,,
+CivilEngineerResearchBundle1,items,,New,Not Used,Civil Engineering Research Bundle (Tier 1),,,,,,,,,,,,,
+CivilEngineerResearchBundle2,items,,New,Not Used,Civil Engineering Research Bundle (Tier 2),,,,,,,,,,,,,
+CivilEngineerResearchBundle3,items,,New,Not Used,Civil Engineering Research Bundle (Tier 3),,,,,,,,,,,,,
+CivilEngineerResearchBundle4,items,,New,Not Used,Civil Engineering Research Bundle (Tier 4),,,,,,,,,,,,,
+CivilEngineerResearchBundle5,items,,New,Not Used,Civil Engineering Research Bundle (Tier 5),,,,,,,,,,,,,
+CivilEngineerResearchBundle6,items,,New,Not Used,Civil Engineering Research Bundle (Tier 6),,,,,,,,,,,,,
+CivilEngineerResearchBundle1Desc,items,,New,Not Used,"Novice-level. \nCreates Novice research civil engineer notes. \nCrafts 50 cobblestone blocks.",,,,,,,,,,,,,
+CivilEngineerResearchBundle2Desc,items,,New,Not Used,"Apprentice-level. \nCreates Apprentice research civil engineer notes. \nCrafts 50 brick blocks.",,,,,,,,,,,,,
+CivilEngineerResearchBundle3Desc,items,,New,Not Used,"Journeyman-level. \nCreates Journeyman research civil engineer notes. \nCrafts 50 concrete blocks.",,,,,,,,,,,,,
+CivilEngineerResearchBundle4Desc,items,,New,Not Used,"Expert-level. \nCreates Expert research civil engineer notes. \nCrafts 50 Iron blocks.",,,,,,,,,,,,,
+CivilEngineerResearchBundle5Desc,items,,New,Not Used,"Artisan-level. \nCreates Artisan research civil engineer notes. \nCrafts 50 stainless steel blocks.",,,,,,,,,,,,,
+CivilEngineerResearchBundle6Desc,items,,New,Not Used,"Master-level. \nCreates Master research civil engineer notes. \nCrafts 50 tungsten blocks.",,,,,,,,,,,,,
+CivilengineerSkillResearchNotes1,items,,New,Not Used,Civil Engineering Notes (Tier 1),,,,,,,,,,,,,
+CivilengineerSkillResearchNotes2,items,,New,Not Used,Civil Engineering Notes (Tier 2),,,,,,,,,,,,,
+CivilengineerSkillResearchNotes3,items,,New,Not Used,Civil Engineering Notes (Tier 3),,,,,,,,,,,,,
+CivilengineerSkillResearchNotes4,items,,New,Not Used,Civil Engineering Notes (Tier 4),,,,,,,,,,,,,
+CivilengineerSkillResearchNotes5,items,,New,Not Used,Civil Engineering Notes (Tier 5),,,,,,,,,,,,,
+CivilengineerSkillResearchNotes6,items,,New,Not Used,Civil Engineering Notes (Tier 6),,,,,,,,,,,,,
+CivilengineerSkillResearchNotes1Desc,items,,New,Not Used,These notes provide Tier 1 exp towards your crafting skill.,,,,,,,,,,,,,
+CivilengineerSkillResearchNotes2Desc,items,,New,Not Used,These notes provide Tier 2 exp towards your crafting skill.,,,,,,,,,,,,,
+CivilengineerSkillResearchNotes3Desc,items,,New,Not Used,These notes provide Tier 3 exp towards your crafting skill.,,,,,,,,,,,,,
+CivilengineerSkillResearchNotes4Desc,items,,New,Not Used,These notes provide Tier 4 exp towards your crafting skill.,,,,,,,,,,,,,
+CivilengineerSkillResearchNotes5Desc,items,,New,Not Used,These notes provide Tier 5 exp towards your crafting skill.,,,,,,,,,,,,,
+CivilengineerSkillResearchNotes6Desc,items,,New,Not Used,These notes provide Tier 6 exp towards your crafting skill.,,,,,,,,,,,,,
+civilEngineerT0-1,progression,,Attribute,Not Used,Survivor Trained Civil Engineeer,,,,,,,,,,
+civilEngineerT1-1,progression,,Attribute,Not Used,Novice Civil Engineeer,,,,,,,,,,
+civilEngineerT2-1,progression,,Attribute,Not Used,Journeyman Civil Engineeer,,,,,,,,,,
+civilEngineerT3-1,progression,,Attribute,Not Used,Practitioner Civil Engineeer,,,,,,,,,,
+civilEngineerT4-1,progression,,Attribute,Not Used,Expert Civil Engineeer,,,,,,,,,,
+civilEngineerT5-1,progression,,Attribute,Not Used,Specialist Civil Engineeer,,,,,,,,,,
+civilEngineerT6-1,progression,,Attribute,Not Used,Master Civil Engineeer,,,,,,,,,,
+adeptCookingPerkName,progression,,New,Not Used,Gifted Cook,,,,,,,,,,,,,
+adeptCookingPerkDesc,progression,,New,Not Used,Naturally skilled in preparing delicious and nutritious meals.,,,,,,,,,,,
+skillCooking,progression,,New,Not Used,Cooking,,,,,,,,,,,,,
+skillCookingDesc,progression,,New,Not Used,Current Exp {cvar($cookingExpTotal:0)}\nExp Next Level {cvar($cookingExpToNextLevel:0)}\nBase Exp award per use {cvar($CookingExp:0)},,,,,,,,,,,,,
+skillCookingName,progression,,New,Not Used,Cooking,,,,,,,,,,,,,
+professionCookDesc,items,,New,Not Used,"Profession bonus to Cooking.\nCooking level 15.\nStarting Items:\nGolden Rod Tea x5,Red Tea x5,Cooking Pot,Grill,Pumpkin Cheese Cake x5",,,,,,,,,,,,,
+hobbyCook,items,,New,Not Used,Foodie,,,,,,,,,,,,,
+hobbyCookDesc,items,,New,Not Used,"Hobby bonus to Cooking.\nCooking level 5.\nStarting Items:\nCooking Pot",,,,,,,,,,,,,
+adeptCookingPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from cooking.,,,,,,,,,,,
+adeptCookingPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for cooking.,,,,,,,,,,,
+adeptCookingPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for cooking.,,,,,,,,,,,
+adeptCookingPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for cooking.,,,,,,,,,,,
+adeptCookingPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for cooking.,,,,,,,,,,,
+adeptCookingPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
+adeptCookingPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
+adeptCookingPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
+adeptCookingPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
+adeptCookingPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
+CookingResearchBundle1,items,,New,Not Used,Cooking Bundle Tier 1,,,,,,,,,,,,,
+CookingResearchBundle2,items,,New,Not Used,Cooking Bundle Tier 2,,,,,,,,,,,,,
+CookingResearchBundle3,items,,New,Not Used,Cooking Bundle Tier 3,,,,,,,,,,,,,
+CookingResearchBundle4,items,,New,Not Used,Cooking Bundle Tier 4,,,,,,,,,,,,,
+CookingResearchBundle5,items,,New,Not Used,Cooking Bundle Tier 5,,,,,,,,,,,,,
+CookingResearchBundle6,items,,New,Not Used,Cooking Research Bundle (Tier 6),,,,,,,,,,,,,,
+CookingResearchBundle6Desc,items,,New,Not Used,Gourmet recipes, culinary science notes, and exotic ingredient lists for crafting exquisite meals.,,,,,,,,,,,,,
+CookingSkillResearchNotes1,items,,New,Not Used,Cooking Notes Tier 1,,,,,,,,,,,,,
+CookingSkillResearchNotes2,items,,New,Not Used,Cooking Notes Tier 2,,,,,,,,,,,,,
+CookingSkillResearchNotes3,items,,New,Not Used,Cooking Notes Tier 3,,,,,,,,,,,,,
+CookingSkillResearchNotes4,items,,New,Not Used,Cooking Notes Tier 4,,,,,,,,,,,,,
+CookingSkillResearchNotes5,items,,New,Not Used,Cooking Notes Tier 5,,,,,,,,,,,,,
+cookingT0-1,progression,,Attribute,Not Used,Survivor Trained Cook,,,,,,,,,,
+cookingT1-1,progression,,Attribute,Not Used,Novice Cook,,,,,,,,,,
+cookingT2-1,progression,,Attribute,Not Used,Journeyman Cook,,,,,,,,,,
+cookingT3-1,progression,,Attribute,Not Used,Practitioner Cook,,,,,,,,,,
+cookingT4-1,progression,,Attribute,Not Used,Expert Cook,,,,,,,,,,
+cookingT5-1,progression,,Attribute,Not Used,Specialist Cook,,,,,,,,,,
+cookingT6-1,progression,,Attribute,Not Used,Master Cook,,,,,,,,,,
+ElectronicsResearchBundle1,items,,New,Not Used,Electronics Bundle Tier 1,,,,,,,,,,,,,
+ElectronicsResearchBundle2,items,,New,Not Used,Electronics Bundle Tier 2,,,,,,,,,,,,,
+ElectronicsResearchBundle3,items,,New,Not Used,Electronics Bundle Tier 3,,,,,,,,,,,,,
+ElectronicsResearchBundle4,items,,New,Not Used,Electronics Bundle Tier 4,,,,,,,,,,,,,
+ElectronicsResearchBundle5,items,,New,Not Used,Electronics Bundle Tier 5,,,,,,,,,,,,,
+MechanicalResearchBundle1,items,,New,Not Used,Mechanical Bundle Tier 1,,,,,,,,,,,,,
+MechanicalResearchBundle2,items,,New,Not Used,Mechanical Bundle Tier 2,,,,,,,,,,,,,
+MechanicalResearchBundle3,items,,New,Not Used,Mechanical Bundle Tier 3,,,,,,,,,,,,,
+MechanicalResearchBundle4,items,,New,Not Used,Mechanical Bundle Tier 4,,,,,,,,,,,,,
+MechanicalResearchBundle5,items,,New,Not Used,Mechanical Bundle Tier 5,,,,,,,,,,,,,
+LeatherworkingResearchBundle1,items,,New,Not Used,"Leatherworking Bundle Tier 1.\nMakes Tannin solution.",,,,,,,,,,,,,
+LeatherworkingResearchBundle1-2,items,,New,Not Used,"Leatherworking Bundle Tier 1.\nMakes Poor quality leather.",,,,,,,,,,,,,
+LeatherworkingResearchBundle2,items,,New,Not Used,Leatherworking Bundle Tier 2,,,,,,,,,,,,,
+LeatherworkingResearchBundle3,items,,New,Not Used,Leatherworking Bundle Tier 3,,,,,,,,,,,,,
+LeatherworkingResearchBundle4,items,,New,Not Used,Leatherworking Bundle Tier 4,,,,,,,,,,,,,
+LeatherworkingResearchBundle5,items,,New,Not Used,Leatherworking Bundle Tier 5,,,,,,,,,,,,,
+SoftwareResearchBundle1,items,,New,Not Used,Software Bundle Tier 1,,,,,,,,,,,,,
+SoftwareResearchBundle2,items,,New,Not Used,Software Bundle Tier 2,,,,,,,,,,,,,
+SoftwareResearchBundle3,items,,New,Not Used,Software Bundle Tier 3,,,,,,,,,,,,,
+SoftwareResearchBundle4,items,,New,Not Used,Software Bundle Tier 4,,,,,,,,,,,,,
+SoftwareResearchBundle5,items,,New,Not Used,Software Bundle Tier 5,,,,,,,,,,,,,
+TailoringResearchBundle1,items,,New,Not Used,Tailoring Bundle Tier 1,,,,,,,,,,,,,
+TailoringResearchBundle2,items,,New,Not Used,Tailoring Bundle Tier 2,,,,,,,,,,,,,
+TailoringResearchBundle3,items,,New,Not Used,Tailoring Bundle Tier 3,,,,,,,,,,,,,
+TailoringResearchBundle4,items,,New,Not Used,Tailoring Bundle Tier 4,,,,,,,,,,,,,
+TailoringResearchBundle5,items,,New,Not Used,Tailoring Bundle Tier 5,,,,,,,,,,,,,
+DemolitionsSkillResearchNotes1,items,,New,Not Used,Demolitions Notes Tier 1,,,,,,,,,,,,,
+DemolitionsSkillResearchNotes2,items,,New,Not Used,Demolitions Notes Tier 2,,,,,,,,,,,,,
+DemolitionsSkillResearchNotes3,items,,New,Not Used,Demolitions Notes Tier 3,,,,,,,,,,,,,
+DemolitionsSkillResearchNotes4,items,,New,Not Used,Demolitions Notes Tier 4,,,,,,,,,,,,,
+DemolitionsSkillResearchNotes5,items,,New,Not Used,Demolitions Notes Tier 5,,,,,,,,,,,,,
+ElectricianSkillResearchNotes1,items,,New,Not Used,Electrical Notes Tier 1,,,,,,,,,,,,,
+ElectricianSkillResearchNotes2,items,,New,Not Used,Electrical Notes Tier 2,,,,,,,,,,,,,
+ElectricianSkillResearchNotes3,items,,New,Not Used,Electrical Notes Tier 3,,,,,,,,,,,,,
+ElectricianSkillResearchNotes4,items,,New,Not Used,Electrical Notes Tier 4,,,,,,,,,,,,,
+ElectricianSkillResearchNotes5,items,,New,Not Used,Electrical Notes Tier 5,,,,,,,,,,,,,
+LeatherworkingSkillResearchNotes1,items,,New,Not Used,Leatherworking Notes Tier 1,,,,,,,,,,,,,
+LeatherworkingSkillResearchNotes2,items,,New,Not Used,Leatherworking Notes Tier 2,,,,,,,,,,,,,
+LeatherworkingSkillResearchNotes3,items,,New,Not Used,Leatherworking Notes Tier 3,,,,,,,,,,,,,
+LeatherworkingSkillResearchNotes4,items,,New,Not Used,Leatherworking Notes Tier 4,,,,,,,,,,,,,
+LeatherworkingSkillResearchNotes5,items,,New,Not Used,Leatherworking Notes Tier 5,,,,,,,,,,,,,
+MechanicalSkillResearchNotes1,items,,New,Not Used,Mechanical Notes Tier 1,,,,,,,,,,,,,
+MechanicalSkillResearchNotes2,items,,New,Not Used,Mechanical Notes Tier 2,,,,,,,,,,,,,
+MechanicalSkillResearchNotes3,items,,New,Not Used,Mechanical Notes Tier 3,,,,,,,,,,,,,
+MechanicalSkillResearchNotes4,items,,New,Not Used,Mechanical Notes Tier 4,,,,,,,,,,,,,
+MechanicalSkillResearchNotes5,items,,New,Not Used,Mechanical Notes Tier 5,,,,,,,,,,,,,
+MedcialSkillResearchNotes1,items,,New,Not Used,Medical Notes Tier 1,,,,,,,,,,,,,
+MedcialSkillResearchNotes2,items,,New,Not Used,Medical Notes Tier 2,,,,,,,,,,,,,
+MedcialSkillResearchNotes3,items,,New,Not Used,Medical Notes Tier 3,,,,,,,,,,,,,
+MedcialSkillResearchNotes4,items,,New,Not Used,Medical Notes Tier 4,,,,,,,,,,,,,
+MedcialSkillResearchNotes5,items,,New,Not Used,Medical Notes Tier 5,,,,,,,,,,,,,
+SoftwareSkillResearchNotes1,items,,New,Not Used,Software Notes Tier 1,,,,,,,,,,,,,
+SoftwareSkillResearchNotes2,items,,New,Not Used,Software Notes Tier 2,,,,,,,,,,,,,
+SoftwareSkillResearchNotes3,items,,New,Not Used,Software Notes Tier 3,,,,,,,,,,,,,
+SoftwareSkillResearchNotes4,items,,New,Not Used,Software Notes Tier 4,,,,,,,,,,,,,
+SoftwareSkillResearchNotes5,items,,New,Not Used,Software Notes Tier 5,,,,,,,,,,,,,
+TailoringSkillResearchNotes1,items,,New,Not Used,Tailoring Notes Tier 1,,,,,,,,,,,,,
+TailoringSkillResearchNotes2,items,,New,Not Used,Tailoring Notes Tier 2,,,,,,,,,,,,,
+TailoringSkillResearchNotes3,items,,New,Not Used,Tailoring Notes Tier 3,,,,,,,,,,,,,
+TailoringSkillResearchNotes4,items,,New,Not Used,Tailoring Notes Tier 4,,,,,,,,,,,,,
+TailoringSkillResearchNotes5,items,,New,Not Used,Tailoring Notes Tier 5,,,,,,,,,,,,,
+professionArchitect,items,,New,Not Used,Architect and Civil Engineer,,,,,,,,,,,,,
+professionArchitectDesc,items,,New,Not Used,Profession bonus to Civil Engineer.\nProfession bonus to Construction.\nCivil Engineering level 15.\nConstruction level 15.\nStarting Items:\n-Claw Hammer-Cement Mixer-Grave Digger Mod-Iron Sledge Hammer,,,,,,,,,,,,,
+hobbyArchitect,items,,New,Not Used,Home Improvement Enthusiast,,,,,,,,,,,,,
+hobbyArchitectDesc,items,,New,Not Used,Hobby bonus to Civil Engineer.\nCivil Engineering level 5.\nStarting Items:\n-Claw Hammer,,,,,,,,,,,,,
+professionBlacksmith,items,,New,Not Used,Blacksmith,,,,,,,,,,,,,
+professionCook,items,,New,Not Used,Cook,,,,,,,,,,,,,
+professionElectricalEngineer,items,,New,Not Used,Electrical Engineer,,,,,,,,,,,,,
+professionElectricalEngineerDesc,items,,New,Not Used,"Profession bonus to Electrical Engineer.\nElectrical Engineer level 15.\nStarting Items:\nGenerator Bank,Wire Tool,Light Bulb x3,Small Engine,Simple Electronic Parts x20,Junk Turret,Junk Turret Ammo x500",,,,,,,,,,,,,
+hobbyElectricalEngineer,items,,New,Not Used,Electrical Hobbiest,,,,,,,,,,,,,
+hobbyElectricalEngineerDesc,items,,New,Not Used,"Hobby bonus to Electrical Engineer.\nElectrical Engineer level 5.\nStarting Items:\nSimple Electronic Parts x10",,,,,,,,,,,,,
+professionFarmer,items,,New,Not Used,Farmer,,,,,,,,,,,,,
+professionFarmerDesc,items,,New,Not Used,"Profession bonus to Farmer.\nHobby bonus to Foraging.\nFarmer level 15.\nForaging level 5.\nStarting Items:\nCowboy Hat,Farm Plot x6,Empty Farm Plot x6, Stone Spear,Iron Shovel,Repair Kit x10",,,,,,,,,,,,,
+hobbyFarmer,items,,New,Not Used,Home Grower,,,,,,,,,,,,,
+hobbyFarmerDesc,items,,New,Not Used,"Hobby bonus to Farmer.\nFarmer level 5.\nStarting Items:\nEmpty Farm Plot x6",,,,,,,,,,,,,
+professionGeneralist,items,,New,Not Used,Generalist,,,,,,,,,,,,,
+professionGeneralistDesc,items,,New,Not Used,"As a Generalist you moved from job to job. Get 5 additional hobby tokens instead of a profession.\nStarting Items:\nhobby tokens x5,Repair Kit x5,Claw Hammer,Duct Tape x10,Cooking Pot,Low Quality Wood x50,Dukes x500",,,,,,,,,,,,,
+professionLeatherworker,items,,New,Not Used,Leatherworker,,,,,,,,,,,,,
+professionLeatherworkerDesc,items,,New,Not Used,"Profession bonus to Leatherworking.\nHobby bonus to Tailoring and Tanning.\nLeatherworking level 15.\nTailoring and Tanning level 5.\nStarting Items:\nLow Quality Wrought Iron x25,Simple Mechanical Parts x5,Simple Electronic Parts x5,Leather Duster,Leather Knuckles,Leather Boots,Leather Gloves,Leather Chest,Improved Fittings x3",,,,,,,,,,,,,
+hobbyLeatherworker,items,,New,Not Used,Leather Enthusiast,,,,,,,,,,,,,
+hobbyLeatherworkerDesc,items,,New,Not Used,"Hobby bonus to Leatherworking.\nLeatherworking level 5.\nStarting Items:\nLeather Duster",,,,,,,,,,,,,
+professionMartialArtist,items,,New,Not Used,Martial Arts Teacher,,,,,,,,,,,,,
+professionMartialArtistDesc,items,,New,Not Used,"Profession bonus to Fist and Running.\nHobby Bonus to Parkour, Blade, Club, Bow, Improvised.\nFist and Running level 15.\nParkour, Blade, Club, Bow, Improvised level 5.\nStarting Items:\nIron Knuckles, Wooden Bow, Wooden Club, Structural Brace Mod, Iron Arrows x5, Repair Kit x2",,,,,,,,,,,,,
+hobbyMartialArtist,items,,New,Not Used,Self Defense Student,,,,,,,,,,,,,
+hobbyMartialArtistDesc,items,,New,Not Used,"Hobby bonus to Fist.\Fist and Runnng level 5.\nStarting Items:\nIron Knuckles",,,,,,,,,,,,,
+professionMechanicalEngineer,items,,New,Not Used,Mechanical Engineer,,,,,,,,,,,,,
+professionMechanicalEngineerDesc,items,,New,Not Used,"Profession bonus to Mechanical Engineer.\nMechanical Engineer level 15.\nStarting Items:\nWrench,Simple Mechanical Parts x20,Leather 5,Bicycle",,,,,,,,,,,,,
+hobbyMechanicalEngineer,items,,New,Not Used,Mr Fixit,,,,,,,,,,,,,
+hobbyMechanicalEngineerDesc,items,,New,Not Used,Hobby bonus to Mechanical Engineer.\nMechanical Engineer level 5.\nStarting Items:\nSimple Mechanical Parts x10,,,,,,,,,,,,,
+professionPoliceOfficer,items,,New,Not Used,Police Officer,,,,,,,,,,,,,
+professionPoliceOfficerDesc,items,,New,Not Used,"Profession bonus to Pistol and Club.\nPistol and Club level 15.\nStarting Items:\nPipe Baton, Shades (cosmetic), Pistol, 9mm ammo x100",,,,,,,,,,,,,
+hobbyPoliceOfficer,items,,New,Not Used,Crime Chaser,,,,,,,,,,,,,
+hobbyPoliceOfficerDesc,items,,New,Not Used,Hobby bonus to Pistol.\nPistol level 5.\nStarting Items:\nPipe Baton,,,,,,,,,,,,,
+professionSoftwareEngineer,items,,New,Not Used,Software Engineer,,,,,,,,,,,,,
+professionSoftwareEngineerDesc,items,,New,Not Used,"Profession bonus to Software Engineer.\nSoftware Engineer level 15.\nStarting Items:\nLaptop, Blank Program x20, Simple Electronic Parts x5, Low Quality Wrought Iron x25, Mega Crush x3, Junk Sledge",,,,,,,,,,,,,
+hobbySoftwareEngineer,items,,New,Not Used,Script Kiddy,,,,,,,,,,,,,
+hobbySoftwareEngineerDesc,items,,New,Not Used,"Hobby bonus to Software Engineer.\nSoftware Engineer level 5.\nStarting Items:\nBlank Program x10",,,,,,,,,,,,,
+professionSoldier,items,,New,Not Used,Soldier,,,,,,,,,,,,,
+professionSoldierDesc,items,,New,Not Used,"Profession bonus to Machinegun.\nDemolitions, Rifle, Machinegun level 15.\nStarting Items:\nAK-47, 7.62mm ammo x200, Night Vision Goggles",,,,,,,,,,,,,
+hobbySoldier,items,,New,Not Used,Weekend Warrior,,,,,,,,,,,,,
+hobbySoldierDesc,items,,New,Not Used,"Hobby bonus to Rifle.\nRifle level 5.\nStarting Items:\n",,,,,,,,,,,,,
+professionTailor,items,,New,Not Used,Tailor,,,,,,,,,,,,,
+professionTailorDesc,items,,New,Not Used,"Profession bonus to Tailoring.\nTailoring level 15.\nLeatherworking level 5.\nStarting Items:\nSewing Kit x10, Low Quality Wrought Iron x20, Simple Mechanical Parts x5, Simple Electrical Parts x5, Clothing Pocket Mod x3, Duct Tape x10",,,,,,,,,,,,,
+hobbyTailor,items,,New,Not Used,Hobbiest Tailor,,,,,,,,,,,,,
+hobbyTailorDesc,items,,New,Not Used,"Hobby bonus to Tailoring.\nTailoring level 5.\nStarting Items:\Sewing Kit x5",,,,,,,,,,,,,
 academicSkillsDesc,progression,,New,Not Used,Academic Skills,,,,,,,,,,,,,
 academicSkillsTab,progression,,New,Not Used,Academic Skills,,,,,,,,,,,,,
 academicSkillsTabName,progression,,New,Not Used,Academic Skills,,,,,,,,,,,,,
@@ -393,36 +926,18 @@ rangedRiflesDesc,progression,,New,Not Used,Current Exp {cvar($rifleExpTotal:0)}\
 rangedRiflesName,progression,,New,Not Used,Rifles,,,,,,,,,,,,,
 rangedShotgunsDesc,progression,,New,Not Used,Current Exp {cvar($shotgunExpTotal:0)}\nExp Next Level {cvar($shotgunExpToNextLevel:0)}\nBase Exp award per use {cvar($ShotgunExp:0)},,,,,,,,,,,,,
 rangedShotgunsName,progression,,New,Not Used,Shotguns,,,,,,,,,,,,,
-skillAutomotive,progression,,New,Not Used,Automotive,,,,,,,,,,,,,
-skillAutomotiveDesc,progression,,New,Not Used,Current Exp {cvar($automotiveExpTotal:0)}\nExp Next Level {cvar($automotiveExpToNextLevel:0)}\nBase Exp award per use {cvar($AutomotiveExp:0)},,,,,,,,,,,,,
-skillAutomotiveName,progression,,New,Not Used,Automotive,,,,,,,,,,,,,
 skillBackpacking,progression,,New,Not Used,Backpacking,,,,,,,,,,,,,
 skillBackpackingDesc,progression,,New,Not Used,Current Exp {cvar($backpackingExpTotal:0)}\nExp Next Level {cvar($backpackingExpToNextLevel:0)}\nBase Exp award per use {cvar($BackpackingExp:0)},,,,,,,,,,,,,
 skillBackpackingName,progression,,New,Not Used,Backpacking,,,,,,,,,,,,,
 skillBarter,progression,,New,Not Used,Barter,,,,,,,,,,,,,
 skillBarterDesc,progression,,New,Not Used,Current Exp {cvar($barterExpTotal:0)}\nExp Next Level {cvar($barterExpToNextLevel:0)}\nBase Exp award per use {cvar($BarterExp:0)},,,,,,,,,,,,,
 skillBarterName,progression,,New,Not Used,Barter,,,,,,,,,,,,,
-skillBlacksmithing,progression,,New,Not Used,Blacksmithing,,,,,,,,,,,,,
-skillBlacksmithingDesc,progression,,New,Not Used,Current Exp {cvar($blacksmithingExpTotal:0)}\nExp Next Level {cvar($blacksmithingExpToNextLevel:0)}\nBase Exp award per use {cvar($BlacksmithingExp:0)},,,,,,,,,,,,,
-skillBlacksmithingName,progression,,New,Not Used,Blacksmithing,,,,,,,,,,,,,
 skillButchering,progression,,New,Not Used,Butchering,,,,,,,,,,,,,
 skillButcheringDesc,progression,,New,Not Used,Current Exp {cvar($butcheringExpTotal:0)}\nExp Next Level {cvar($butcheringExpToNextLevel:0)}\nBase Exp award per use {cvar($ButcheringExp:0)},,,,,,,,,,,,,
 skillButcheringName,progression,,New,Not Used,Butchering,,,,,,,,,,,,,
-skillChemistry,progression,,New,Not Used,Chemistry,,,,,,,,,,,,,
-skillChemistryDesc,progression,,New,Not Used,Current Exp {cvar($chemistryExpTotal:0)}\nExp Next Level {cvar($chemistryExpToNextLevel:0)}\nBase Exp award per use {cvar($ChemistryExp:0)},,,,,,,,,,,,,
-skillChemistryName,progression,,New,Not Used,Chemistry,,,,,,,,,,,,,
-skillCivilEngineer,progression,,New,Not Used,Civil Engineer,,,,,,,,,,,,,
-skillCivilEngineerDesc,progression,,New,Not Used,Current Exp {cvar($civilengineerExpTotal:0)}\nExp Next Level {cvar($civilengineerExpToNextLevel:0)}\nBase Exp award per use {cvar($CivilEngineerExp:0)},,,,,,,,,,,,,
-skillCivilEngineerName,progression,,New,Not Used,Civil Engineer,,,,,,,,,,,,,
 skillConstruction,progression,,New,Not Used,Construction,,,,,,,,,,,,,
 skillConstructionDesc,progression,,New,Not Used,Current Exp {cvar($constructionExpTotal:0)}\nExp Next Level {cvar($constructionExpToNextLevel:0)}\nBase Exp award per use {cvar($ConstructionExp:0)},,,,,,,,,,,,,
 skillConstructionName,progression,,New,Not Used,Construction,,,,,,,,,,,,,
-skillCarpentry,progression,,New,Not Used,Carpentry,,,,,,,,,,,,,
-skillCarpentryDesc,progression,,New,Not Used,Current Exp {cvar($carpentryExpTotal:0)}\nExp Next Level {cvar($carpentryExpToNextLevel:0)}\nBase Exp award per use {cvar($CarpentryExp:0)},,,,,,,,,,,,,
-skillCarpentryName,progression,,New,Not Used,Carpentry,,,,,,,,,,,,,
-skillCooking,progression,,New,Not Used,Cooking,,,,,,,,,,,,,
-skillCookingDesc,progression,,New,Not Used,Current Exp {cvar($cookingExpTotal:0)}\nExp Next Level {cvar($cookingExpToNextLevel:0)}\nBase Exp award per use {cvar($CookingExp:0)},,,,,,,,,,,,,
-skillCookingName,progression,,New,Not Used,Cooking,,,,,,,,,,,,,
 skillDemolitions,progression,,New,Not Used,Demolitions,,,,,,,,,,,,,
 skillDemolitionsDesc,progression,,New,Not Used,Current Exp {cvar($demolitionsExpTotal:0)}\nExp Next Level {cvar($demolitionsExpToNextLevel:0)}\nBase Exp award per KILL {cvar($DemolitionsExp:0)},,,,,,,,,,,,,
 skillDemolitionsName,progression,,New,Not Used,Demolitions,,,,,,,,,,,,,
@@ -907,26 +1422,6 @@ adeptConstructionPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 point
 adeptConstructionPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for construction.,,,,,,,,,,,
 adeptConstructionPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for construction.,,,,,,,,,,,
 adeptConstructionPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for construction.,,,,,,,,,,,
-adeptCookingPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from cooking.,,,,,,,,,,,
-adeptCookingPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for cooking.,,,,,,,,,,,
-adeptCookingPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for cooking.,,,,,,,,,,,
-adeptCookingPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for cooking.,,,,,,,,,,,
-adeptCookingPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for cooking.,,,,,,,,,,,
-adeptCarpentryPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from carpentry.,,,,,,,,,,,
-adeptCarpentryPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for carpentry.,,,,,,,,,,,
-adeptCarpentryPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for carpentry.,,,,,,,,,,,
-adeptCarpentryPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for carpentry.,,,,,,,,,,,
-adeptCarpentryPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for carpentry.,,,,,,,,,,,
-adeptBlacksmithingPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from blacksmithing.,,,,,,,,,,,
-adeptBlacksmithingPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for blacksmithing.,,,,,,,,,,,
-adeptBlacksmithingPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for blacksmithing.,,,,,,,,,,,
-adeptBlacksmithingPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for blacksmithing.,,,,,,,,,,,
-adeptBlacksmithingPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for blacksmithing.,,,,,,,,,,,
-adeptAutomotivePerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from automotive tasks.,,,,,,,,,,,
-adeptAutomotivePerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for automotive tasks.,,,,,,,,,,,
-adeptAutomotivePerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for automotive tasks.,,,,,,,,,,,
-adeptAutomotivePerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for automotive tasks.,,,,,,,,,,,
-adeptAutomotivePerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for automotive tasks.,,,,,,,,,,,
 adeptSoftwareEngineerPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 exp to the base experience earned from software engineering tasks.,,,,,,,,,,,
 adeptSoftwareEngineerPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 points to the base experience for software engineering tasks.,,,,,,,,,,,
 adeptSoftwareEngineerPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for software engineering tasks.,,,,,,,,,,,
@@ -942,16 +1437,6 @@ adeptElectricalEngineerPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25
 adeptElectricalEngineerPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 points to the base experience for electrical engineering tasks.,,,,,,,,,,,
 adeptElectricalEngineerPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 points to the base experience for electrical engineering tasks.,,,,,,,,,,,
 adeptElectricalEngineerPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 points to the base experience for electrical engineering tasks.,,,,,,,,,,,
-adeptCivilEngineerPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
-adeptCivilEngineerPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
-adeptCivilEngineerPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
-adeptCivilEngineerPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
-adeptCivilEngineerPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 to the base experience earned from civil engineering tasks.,,,,,,,,,,,
-adeptChemistryPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 to the base experience earned from chemistry tasks.,,,,,,,,,,,
-adeptChemistryPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 to the base experience earned from chemistry tasks.,,,,,,,,,,,
-adeptChemistryPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 to the base experience earned from chemistry tasks.,,,,,,,,,,,
-adeptChemistryPerkLongDescRank4,progression,Attribute,,,Epic: Adds 70 to the base experience earned from chemistry tasks.,,,,,,,,,,,
-adeptChemistryPerkLongDescRank5,progression,Attribute,,,Legendary: Adds 100 to the base experience earned from chemistry tasks.,,,,,,,,,,,
 adeptWoodcuttingPerkLongDescRank1,progression,Attribute,,,Adept: Adds 10 to the base experience earned from woodcutting tasks.,,,,,,,,,,,
 adeptWoodcuttingPerkLongDescRank2,progression,Attribute,,,Expert: Adds 25 to the base experience earned from woodcutting tasks.,,,,,,,,,,,
 adeptWoodcuttingPerkLongDescRank3,progression,Attribute,,,Master: Adds 45 to the base experience earned from woodcutting tasks.,,,,,,,,,,,
@@ -1187,16 +1672,6 @@ adeptWoodCuttingPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,
 adeptWoodCuttingPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
 adeptWoodCuttingPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
 adeptWoodCuttingPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
-adeptChemistryPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
-adeptChemistryPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
-adeptChemistryPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
-adeptChemistryPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
-adeptChemistryPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
-adeptCivilEngineerPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
-adeptCivilEngineerPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
-adeptCivilEngineerPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
-adeptCivilEngineerPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
-adeptCivilEngineerPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
 adeptElectricalEngineerPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
 adeptElectricalEngineerPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
 adeptElectricalEngineerPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
@@ -1212,26 +1687,6 @@ adeptSoftwareEngineerPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,
 adeptSoftwareEngineerPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
 adeptSoftwareEngineerPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
 adeptSoftwareEngineerPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
-adeptAutomotivePerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
-adeptAutomotivePerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
-adeptAutomotivePerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
-adeptAutomotivePerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
-adeptAutomotivePerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
-adeptBlacksmithingPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
-adeptBlacksmithingPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
-adeptBlacksmithingPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
-adeptBlacksmithingPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
-adeptBlacksmithingPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
-adeptCarpentryPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
-adeptCarpentryPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
-adeptCarpentryPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
-adeptCarpentryPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
-adeptCarpentryPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
-adeptCookingPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
-adeptCookingPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
-adeptCookingPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
-adeptCookingPerkDescRank4,progression,Attribute,,,Epic: Rank 4,,,,,,,,,,,,,
-adeptCookingPerkDescRank5,progression,Attribute,,,Legendary: Rank 5,,,,,,,,,,,, 
 adeptConstructionPerkDescRank1,progression,Attribute,,,Adept: Rank 1,,,,,,,,,,,,,
 adeptConstructionPerkDescRank2,progression,Attribute,,,Expert: Rank 2,,,,,,,,,,,,,
 adeptConstructionPerkDescRank3,progression,Attribute,,,Master: Rank 3,,,,,,,,,,,,,
@@ -1273,15 +1728,9 @@ adeptLeatherworkingPerkName,progression,,New,Not Used,Gifted Leatherworker,,,,,,
 adeptFarmingPerkName,progression,,New,Not Used,Gifted Farmer,,,,,,,,,,,,,
 adeptDemolitionsPerkName,progression,,New,Not Used,Gifted Demolition Expert,,,,,,,,,,,,,
 adeptConstructionPerkName,progression,,New,Not Used,Gifted Builder,,,,,,,,,,,,,
-adeptCookingPerkName,progression,,New,Not Used,Gifted Cook,,,,,,,,,,,,,
-adeptBlacksmithingPerkName,progression,,New,Not Used,Gifted Blacksmith,,,,,,,,,,,,,
-adeptAutomotivePerkName,progression,,New,Not Used,Gifted Mechanic,,,,,,,,,,,,,
 adeptSoftwareEngineerPerkName,progression,,New,Not Used,Gifted Software Engineer,,,,,,,,,,,,,
 adeptMechanicalEngineerPerkName,progression,,New,Not Used,Gifted Mechanical Engineer,,,,,,,,,,,,,
 adeptElectricalEngineerPerkName,progression,,New,Not Used,Gifted Electrical Engineer,,,,,,,,,,,,,
-adeptCivilEngineerPerkName,progression,,New,Not Used,Gifted Civil Engineer,,,,,,,,,,,,,
-adeptChemistryPerkName,progression,,New,Not Used,Gifted Chemist,,,,,,,,,,,,,
-adeptCarpentryPerkName,progression,,New,Not Used,Gifted Carpenter,,,,,,,,,,,,,
 adeptWoodCuttingPerkName,progression,,New,Not Used,Gifted Lumberjack,,,,,,,,,,,,,
 adeptTrackingPerkName,progression,,New,Not Used,Gifted Tracker,,,,,,,,,,,,,
 adeptStealthPerkName,progression,,New,Not Used,Gifted Sneak,,,,,,,,,,,,,
@@ -1321,14 +1770,9 @@ adeptLeatherworkingPerkDesc,progression,,New,Not Used,Naturally proficient in cr
 adeptFarmingPerkDesc,progression,,New,Not Used,Naturally talented in cultivating crops and managing livestock.,,,,,,,,,,,
 adeptDemolitionsPerkDesc,progression,,New,Not Used,Naturally gifted in controlled destruction of structures.,,,,,,,,,,,
 adeptConstructionPerkDesc,progression,,New,Not Used,Naturally skilled in building and repairing structures.,,,,,,,,,,,
-adeptCookingPerkDesc,progression,,New,Not Used,Naturally skilled in preparing delicious and nutritious meals.,,,,,,,,,,,
-adeptBlacksmithingPerkDesc,progression,,New,Not Used,Naturally adept at forging and shaping metal into useful items.,,,,,,,,,,,
-adeptAutomotivePerkDesc,progression,,New,Not Used,Naturally skilled in repairing and maintaining vehicles and machinery.,,,,,,,,,,,
 adeptSoftwareEngineerPerkDesc,progression,,New,Not Used,Naturally gifted in designing and developing software applications.,,,,,,,,,,,
 adeptMechanicalEngineerPerkDesc,progression,,New,Not Used,Naturally adept in designing and building mechanical systems.,,,,,,,,,,,
 adeptElectricalEngineerPerkDesc,progression,,New,Not Used,Naturally proficient in working with electrical systems and circuits.,,,,,,,,,,,
-adeptCivilEngineerPerkDesc,progression,,New,Not Used,Naturally talented in planning and designing infrastructure projects.,,,,,,,,,,,
-adeptChemistryPerkDesc,progression,,New,Not Used,Naturally skilled in chemical reactions and laboratory techniques.,,,,,,,,,,,
 adeptWoodCuttingPerkDesc,progression,,New,Not Used,Naturally skilled in felling trees and processing timber.,,,,,,,,,,,
 adeptTrackingPerkDesc,progression,,New,Not Used,Naturally skilled in tracking and hunting animals.,,,,,,,,,,,
 adeptStealthPerkDesc,progression,,New,Not Used,Naturally gifted at remaining unseen and unheard.,,,,,,,,,,,
@@ -1485,48 +1929,6 @@ vehiclesT3-1,progression,,Attribute,Not Used,Motorcycles,,,,,,,,,,
 vehiclesT4-1,progression,,Attribute,Not Used,Off Road Vehicles,,,,,,,,,,
 vehiclesT5-1,progression,,Attribute,Not Used,Transport Vehicles,,,,,,,,,,
 vehiclesT6-1,progression,,Attribute,Not Used,Military Vehicles,,,,,,,,,,
-blacksmithingT1-1,progression,,Attribute,Not Used,Novice Blacksmithing,,,,,,,,,,
-blacksmithingT1-2,progression,,Attribute,Not Used,Novice Iron Tools,,,,,,,,,,
-blacksmithingT2-1,progression,,Attribute,Not Used,Journeyman Blacksmithing,,,,,,,,,,
-blacksmithingT2-2,progression,,Attribute,Not Used,Journeyman Iron Tools,,,,,,,,,,
-blacksmithingT3-1,progression,,Attribute,Not Used,Practitioner Blacksmith,,,,,,,,,,
-blacksmithingT3-2,progression,,Attribute,Not Used,Practitioner Weapons,,,,,,,,,,
-blacksmithingT3-3,progression,,Attribute,Not Used,Practitioner Chest And Leg Armor,,,,,,,,,,
-blacksmithingT3-4,progression,,Attribute,Not Used,Practitioner Head And Foot Armor,,,,,,,,,,
-blacksmithingT4-1,progression,,Attribute,Not Used,Expert Hand Armor,,,,,,,,,,
-blacksmithingT4-2,progression,,Attribute,Not Used,Expert Blacksmith,,,,,,,,,,
-blacksmithingT5-1,progression,,Attribute,Not Used,Specialist Blacksmith,,,,,,,,,,
-blacksmithingT6-1,progression,,Attribute,Not Used,Master Blacksmith,,,,,,,,,,
-carpentryT0-1,progression,,Attribute,Not Used,Survivor Trained Carpenter,,,,,,,,,,
-carpentryT1-1,progression,,Attribute,Not Used,Novice Trained Carpenter,,,,,,,,,,
-carpentryT1-2,progression,,Attribute,Not Used,Novice Wooden Weapons,,,,,,,,,,
-carpentryT2-1,progression,,Attribute,Not Used,Journeyman Carpenter,,,,,,,,,,
-carpentryT3-1,progression,,Attribute,Not Used,Practitioner Carpenter,,,,,,,,,,
-carpentryT3-2,progression,,Attribute,Not Used,Practitioner Wooden Weapons,,,,,,,,,,
-carpentryT4-1,progression,,Attribute,Not Used,Expert Carpenter,,,,,,,,,,
-carpentryT5-1,progression,,Attribute,Not Used,Specialist Carpenter,,,,,,,,,,
-carpentryT6-1,progression,,Attribute,Not Used,Master Carpenter,,,,,,,,,,
-chemistryT0-1,progression,,Attribute,Not Used,Survivor Trained Chemist,,,,,,,,,,
-chemistryT1-1,progression,,Attribute,Not Used,Novice Chemist,,,,,,,,,,
-chemistryT2-1,progression,,Attribute,Not Used,Journeyman Chemist,,,,,,,,,,
-chemistryT3-1,progression,,Attribute,Not Used,Practitioner Chemist,,,,,,,,,,
-chemistryT4-1,progression,,Attribute,Not Used,Expert Chemist,,,,,,,,,,
-chemistryT5-1,progression,,Attribute,Not Used,Specialist Chemist,,,,,,,,,,
-chemistryT6-1,progression,,Attribute,Not Used,Master Chemist,,,,,,,,,,
-civilEngineerT0-1,progression,,Attribute,Not Used,Survivor Trained Civil Engineeer,,,,,,,,,,
-civilEngineerT1-1,progression,,Attribute,Not Used,Novice Civil Engineeer,,,,,,,,,,
-civilEngineerT2-1,progression,,Attribute,Not Used,Journeyman Civil Engineeer,,,,,,,,,,
-civilEngineerT3-1,progression,,Attribute,Not Used,Practitioner Civil Engineeer,,,,,,,,,,
-civilEngineerT4-1,progression,,Attribute,Not Used,Expert Civil Engineeer,,,,,,,,,,
-civilEngineerT5-1,progression,,Attribute,Not Used,Specialist Civil Engineeer,,,,,,,,,,
-civilEngineerT6-1,progression,,Attribute,Not Used,Master Civil Engineeer,,,,,,,,,,
-cookingT0-1,progression,,Attribute,Not Used,Survivor Trained Cook,,,,,,,,,,
-cookingT1-1,progression,,Attribute,Not Used,Novice Cook,,,,,,,,,,
-cookingT2-1,progression,,Attribute,Not Used,Journeyman Cook,,,,,,,,,,
-cookingT3-1,progression,,Attribute,Not Used,Practitioner Cook,,,,,,,,,,
-cookingT4-1,progression,,Attribute,Not Used,Expert Cook,,,,,,,,,,
-cookingT5-1,progression,,Attribute,Not Used,Specialist Cook,,,,,,,,,,
-cookingT6-1,progression,,Attribute,Not Used,Master Cook,,,,,,,,,,
 electricalT0-1,progression,,Attribute,Not Used,Survivor Trained Electrical Engineer,,,,,,,,,,
 electricalT1-1,progression,,Attribute,Not Used,Novice Electrical Engineer,,,,,,,,,,
 electricalT2-1,progression,,Attribute,Not Used,Journeyman Electrical Engineer,,,,,,,,,,
@@ -1571,328 +1973,25 @@ tailoringT4-1,progression,,Attribute,Not Used,Expert Tailor,,,,,,,,,,
 tailoringT5-1,progression,,Attribute,Not Used,Specialist Tailor,,,,,,,,,,
 tailoringT6-1,progression,,Attribute,Not Used,Master Tailor,,,,,,,,,,
 StrengthMod,ui_display,Item stat,,,"Strength Modifier {cvar(playerStrengthMod)}","{cvar(playerStrengthMod)}"
-quest_StartingQuest,Quest,Quest Info,,,"Rise From The Ashes",,,,,,,,,,,,
-quest_StartingQuestTip1_title,Quest,Quest Info,,,"Prepared",,,,,,,,,,,,
-quest_StartingQuestTip1,Quest,Quest Info,,,"Make a bedroll, find food and shelter. We trained you in tracking small animals so get close to the ground and find their tracks. In your pack you will find your survival gear. Open it up and put on the armor and ready your weapon.",,,,,,,,,,,,
-quest_StartingQuest_description,Quest,Quest Info,,,"Line 1",,,,,,,,,,,,
-quest_GoToTrader_description,Quest,Quest Info,,,"Line 2",,,,,,,,,,,,
-quest_GoToTrader_description3,Quest,Quest Info,,,"We've taken measures to assist you in your mission. Traders have been contacted and are willing to engage in trade with you. They possess resources within their compound that they're reluctantly willing to donate to aid in your survival.\n\nShould you encounter any other survivors during your journey, please ensure their safety and bring them to the trader's compound. They will be provided with shelter, provisions, and, most importantly, a safe passage out of the infested area.",,,,,,,,,,,,
-quest_GoToTrader_description4,Quest,Quest Info,,,"Line 5",,,,,,,,,,,,
-quest_StartingQuestTip1_title,Journal Tip,,,,Message from the Safe Zone,,,,,,,,,,,,
-quest_GoToTrader_description3_title,Quest,Quest Info,,,"Head to the trader",,,,,,,,,,,,
-plantedAloeT1-1,blocks,Farming,New,Not Used,Poor Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 1 aloe.
-plantedAloeT2-1,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 3 aloe.
-plantedAloeT3-1,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 6 aloe.
-plantedAloeT4-1,blocks,Farming,New,Not Used,High Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 9 aloe.
-plantedAloeT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 12 aloe.
-plantedAloeT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera (Seed),,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
-plantedBlueberryT1-1,blocks,Farming,New,Not Used,Poor Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 1 blueberry.
-plantedBlueberryT2-1,blocks,Farming,New,Not Used,Low Yield Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 3 blueberries.
-plantedBlueberryT3-1,blocks,Farming,New,Not Used,Moderate Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 6 blueberries.
-plantedBlueberryT4-1,blocks,Farming,New,Not Used,High Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 9 blueberries.
-plantedBlueberryT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 12 blueberries.
-plantedBlueberryT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry (Seed),,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
-plantedMushroomT1-1,blocks,Farming,New,Not Used,Poor Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 1 mushroom.
-plantedMushroomT2-1,blocks,Farming,New,Not Used,Low Yield Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 3 mushrooms.
-plantedMushroomT3-1,blocks,Farming,New,Not Used,Moderate Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 6 mushrooms.
-plantedMushroomT4-1,blocks,Farming,New,Not Used,High Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 9 mushrooms.
-plantedMushroomT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 12 mushrooms.
-plantedMushroomT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom (Seed),,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
-plantedYuccaT1-1,blocks,Farming,New,Not Used,Poor Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 1 yucca.
-plantedYuccaT2-1,blocks,Farming,New,Not Used,Low Yield Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 3 yuccas.
-plantedYuccaT3-1,blocks,Farming,New,Not Used,Moderate Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 6 yuccas.
-plantedYuccaT4-1,blocks,Farming,New,Not Used,High Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 9 yuccas.
-plantedYuccaT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 12 yuccas.
-plantedYuccaT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Yucca (Seed),,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
-plantedCottonT1-1,blocks,Farming,New,Not Used,Poor Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 1 cotton.
-plantedCottonT2-1,blocks,Farming,New,Not Used,Low Yield Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 3 cottons.
-plantedCottonT3-1,blocks,Farming,New,Not Used,Moderate Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 6 cottons.
-plantedCottonT4-1,blocks,Farming,New,Not Used,High Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 9 cottons.
-plantedCottonT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 12 cottons.
-plantedCottonT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Cotton (Seed),,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
-plantedCoffeeT1-1,blocks,Farming,New,Not Used,Poor Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 1 coffee bean.
-plantedCoffeeT2-1,blocks,Farming,New,Not Used,Low Yield Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 3 coffee beans.
-plantedCoffeeT3-1,blocks,Farming,New,Not Used,Moderate Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 6 coffee beans.
-plantedCoffeeT4-1,blocks,Farming,New,Not Used,High Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 9 coffee beans.
-plantedCoffeeT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 12 coffee beans.
-plantedCoffeeT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Coffee (Seed),,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
-plantedGoldenrodT1-1,blocks,Farming,New,Not Used,Poor Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
-plantedGoldenrodT2-1,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
-plantedGoldenrodT3-1,blocks,Farming,New,Not Used,Moderate Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
-plantedGoldenrodT4-1,blocks,Farming,New,Not Used,High Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
-plantedGoldenrodT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
-plantedGoldenrodT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod (Seed),,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
-plantedPotatoT1-1,blocks,Farming,New,Not Used,Poor Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 1 potato.
-plantedPotatoT2-1,blocks,Farming,New,Not Used,Low Yield Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 3 potatoes.
-plantedPotatoT3-1,blocks,Farming,New,Not Used,Moderate Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 6 potatoes.
-plantedPotatoT4-1,blocks,Farming,New,Not Used,High Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 9 potatoes.
-plantedPotatoT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 12 potatoes.
-plantedPotatoT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Potato (Seed),,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
-plantedChrysanthemumT1-1,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
-plantedChrysanthemumT2-1,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
-plantedChrysanthemumT3-1,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
-plantedChrysanthemumT4-1,blocks,Farming,New,Not Used,High Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
-plantedChrysanthemumT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
-plantedChrysanthemumT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum (Seed),,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
-plantedCornT1-1,blocks,Farming,New,Not Used,Poor Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 1 ear of corn.
-plantedCornT2-1,blocks,Farming,New,Not Used,Low Yield Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 3 ears of corn.
-plantedCornT3-1,blocks,Farming,New,Not Used,Moderate Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 6 ears of corn.
-plantedCornT4-1,blocks,Farming,New,Not Used,High Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 9 ears of corn.
-plantedCornT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 12 ears of corn.
-plantedCornT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Corn (Seed),,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
-plantedGraceCornT1-1,blocks,Farming,New,Not Used,Poor Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 1 Super Corn.
-plantedGraceCornT2-1,blocks,Farming,New,Not Used,Low Yield Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 3 Super Corn.
-plantedGraceCornT3-1,blocks,Farming,New,Not Used,Moderate Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 6 Super Corn.
-plantedGraceCornT4-1,blocks,Farming,New,Not Used,High Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 9 Super Corn.
-plantedGraceCornT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 12 Super Corn.
-plantedGraceCornT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn (Seed),,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
-plantedHopsT1-1,blocks,Farming,New,Not Used,Poor Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 1 hop cone.
-plantedHopsT2-1,blocks,Farming,New,Not Used,Low Yield Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 3 hop cones.
-plantedHopsT3-1,blocks,Farming,New,Not Used,Moderate Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 6 hop cones.
-plantedHopsT4-1,blocks,Farming,New,Not Used,High Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 9 hop cones.
-plantedHopsT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 12 hop cones.
-plantedHopsT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Hops (Seed),,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
-plantedPumpkinT1-1,blocks,Farming,New,Not Used,Poor Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 1 pumpkin.
-plantedPumpkinT2-1,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 3 pumpkins.
-plantedPumpkinT3-1,blocks,Farming,New,Not Used,Moderate Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 6 pumpkins.
-plantedPumpkinT4-1,blocks,Farming,New,Not Used,High Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 9 pumpkins.
-plantedPumpkinT5-1,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 12 pumpkins.
-plantedPumpkinT6-1,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Seed),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
-plantedAloeT1-2,blocks,Farming,New,Not Used,Poor Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 1 aloe.
-plantedAloeT2-2,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 3 aloe.
-plantedAloeT3-2,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 6 aloe.
-plantedAloeT4-2,blocks,Farming,New,Not Used,High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 9 aloe.
-plantedAloeT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 12 aloe.
-plantedAloeT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
-plantedBlueberryT1-2,blocks,Farming,New,Not Used,Poor Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 1 blueberry.
-plantedBlueberryT2-2,blocks,Farming,New,Not Used,Low Yield Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 3 blueberries.
-plantedBlueberryT3-2,blocks,Farming,New,Not Used,Moderate Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 6 blueberries.
-plantedBlueberryT4-2,blocks,Farming,New,Not Used,High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 9 blueberries.
-plantedBlueberryT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 12 blueberries.
-plantedBlueberryT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
-plantedMushroomT1-2,blocks,Farming,New,Not Used,Poor Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 1 mushroom.
-plantedMushroomT2-2,blocks,Farming,New,Not Used,Low Yield Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 3 mushrooms.
-plantedMushroomT3-2,blocks,Farming,New,Not Used,Moderate Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 6 mushrooms.
-plantedMushroomT4-2,blocks,Farming,New,Not Used,High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 9 mushrooms.
-plantedMushroomT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 12 mushrooms.
-plantedMushroomT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
-plantedYuccaT1-2,blocks,Farming,New,Not Used,Poor Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 1 yucca.
-plantedYuccaT2-2,blocks,Farming,New,Not Used,Low Yield Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 3 yuccas.
-plantedYuccaT3-2,blocks,Farming,New,Not Used,Moderate Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 6 yuccas.
-plantedYuccaT4-2,blocks,Farming,New,Not Used,High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 9 yuccas.
-plantedYuccaT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 12 yuccas.
-plantedYuccaT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
-plantedCottonT1-2,blocks,Farming,New,Not Used,Poor Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 1 cotton.
-plantedCottonT2-2,blocks,Farming,New,Not Used,Low Yield Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 3 cottons.
-plantedCottonT3-2,blocks,Farming,New,Not Used,Moderate Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 6 cottons.
-plantedCottonT4-2,blocks,Farming,New,Not Used,High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 9 cottons.
-plantedCottonT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 12 cottons.
-plantedCottonT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
-plantedCoffeeT1-2,blocks,Farming,New,Not Used,Poor Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 1 coffee bean.
-plantedCoffeeT2-2,blocks,Farming,New,Not Used,Low Yield Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 3 coffee beans.
-plantedCoffeeT3-2,blocks,Farming,New,Not Used,Moderate Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 6 coffee beans.
-plantedCoffeeT4-2,blocks,Farming,New,Not Used,High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 9 coffee beans.
-plantedCoffeeT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 12 coffee beans.
-plantedCoffeeT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
-plantedGoldenrodT1-2,blocks,Farming,New,Not Used,Poor Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
-plantedGoldenrodT2-2,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
-plantedGoldenrodT3-2,blocks,Farming,New,Not Used,Moderate Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
-plantedGoldenrodT4-2,blocks,Farming,New,Not Used,High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
-plantedGoldenrodT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
-plantedGoldenrodT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
-plantedPotatoT1-2,blocks,Farming,New,Not Used,Poor Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 1 potato.
-plantedPotatoT2-2,blocks,Farming,New,Not Used,Low Yield Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 3 potatoes.
-plantedPotatoT3-2,blocks,Farming,New,Not Used,Moderate Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 6 potatoes.
-plantedPotatoT4-2,blocks,Farming,New,Not Used,High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 9 potatoes.
-plantedPotatoT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 12 potatoes.
-plantedPotatoT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
-plantedChrysanthemumT1-2,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
-plantedChrysanthemumT2-2,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
-plantedChrysanthemumT3-2,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
-plantedChrysanthemumT4-2,blocks,Farming,New,Not Used,High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
-plantedChrysanthemumT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
-plantedChrysanthemumT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
-plantedCornT1-2,blocks,Farming,New,Not Used,Poor Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 1 ear of corn.
-plantedCornT2-2,blocks,Farming,New,Not Used,Low Yield Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 3 ears of corn.
-plantedCornT3-2,blocks,Farming,New,Not Used,Moderate Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 6 ears of corn.
-plantedCornT4-2,blocks,Farming,New,Not Used,High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 9 ears of corn.
-plantedCornT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 12 ears of corn.
-plantedCornT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
-plantedGraceCornT1-2,blocks,Farming,New,Not Used,Poor Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 1 Super Corn.
-plantedGraceCornT2-2,blocks,Farming,New,Not Used,Low Yield Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 3 Super Corn.
-plantedGraceCornT3-2,blocks,Farming,New,Not Used,Moderate Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 6 Super Corn.
-plantedGraceCornT4-2,blocks,Farming,New,Not Used,High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 9 Super Corn.
-plantedGraceCornT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 12 Super Corn.
-plantedGraceCornT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
-plantedHopT1-2,blocks,Farming,New,Not Used,Poor Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 1 hop cone.
-plantedHopT2-2,blocks,Farming,New,Not Used,Low Yield Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 3 hop cones.
-plantedHopT3-2,blocks,Farming,New,Not Used,Moderate Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 6 hop cones.
-plantedHopT4-2,blocks,Farming,New,Not Used,High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 9 hop cones.
-plantedHopT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 12 hop cones.
-plantedHopT6-2,blocks,Farming,New,Not Used,Incredibly High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
-plantedPumpkinT1-2,blocks,Farming,New,Not Used,Poor Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 1 pumpkin.
-plantedPumpkinT2-2,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 3 pumpkins.
-plantedPumpkinT3-2,blocks,Farming,New,Not Used,Moderate Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 6 pumpkins.
-plantedPumpkinT4-2,blocks,Farming,New,Not Used,High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 9 pumpkins.
-plantedPumpkinT5-2,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 12 pumpkins.
-plantedPumpkinT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
-plantedAloe3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 1 aloe.
-plantedAloe3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 3 aloe.
-plantedAloe3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 6 aloe.
-plantedAloe3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 9 aloe.
-plantedAloe3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 12 aloe.
-plantedAloe3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera (Growing),,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
-plantedBlueberry3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 1 blueberry.
-plantedBlueberry3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 3 blueberries.
-plantedBlueberry3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 6 blueberries.
-plantedBlueberry3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 9 blueberries.
-plantedBlueberry3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 12 blueberries.
-plantedBlueberry3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry (Growing),,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
-plantedMushroom3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 1 mushroom.
-plantedMushroom3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 3 mushrooms.
-plantedMushroom3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 6 mushrooms.
-plantedMushroom3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 9 mushrooms.
-plantedMushroom3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 12 mushrooms.
-plantedMushroom3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom (Growing),,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
-plantedYucca3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 1 yucca.
-plantedYucca3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 3 yuccas.
-plantedYucca3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 6 yuccas.
-plantedYucca3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 9 yuccas.
-plantedYucca3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 12 yuccas.
-plantedYucca3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Yucca (Growing),,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
-plantedCotton3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 1 cotton.
-plantedCotton3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 3 cottons.
-plantedCotton3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 6 cottons.
-plantedCotton3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 9 cottons.
-plantedCotton3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 12 cottons.
-plantedCotton3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Cotton (Growing),,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
-plantedCoffee3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 1 coffee bean.
-plantedCoffee3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 3 coffee beans.
-plantedCoffee3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 6 coffee beans.
-plantedCoffee3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 9 coffee beans.
-plantedCoffee3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 12 coffee beans.
-plantedCoffee3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Coffee (Growing),,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
-plantedGoldenrod3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
-plantedGoldenrod3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
-plantedGoldenrod3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
-plantedGoldenrod3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
-plantedGoldenrod3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
-plantedGoldenrod3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod (Growing),,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
-plantedPotato3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 1 potato.
-plantedPotato3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 3 potatoes.
-plantedPotato3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 6 potatoes.
-plantedPotato3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 9 potatoes.
-plantedPotato3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 12 potatoes.
-plantedPotato3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Potato (Growing),,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
-plantedChrysanthemum3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
-plantedChrysanthemum3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
-plantedChrysanthemum3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
-plantedChrysanthemum3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
-plantedChrysanthemum3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
-plantedChrysanthemum3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum (Growing),,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
-plantedCorn3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 1 ear of corn.
-plantedCorn3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 3 ears of corn.
-plantedCorn3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 6 ears of corn.
-plantedCorn3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 9 ears of corn.
-plantedCorn3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 12 ears of corn.
-plantedCorn3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Corn (Growing),,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
-plantedGraceCorn3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 1 Super Corn.
-plantedGraceCorn3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 3 Super Corn.
-plantedGraceCorn3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 6 Super Corn.
-plantedGraceCorn3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 9 Super Corn.
-plantedGraceCorn3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 12 Super Corn.
-plantedGraceCorn3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn (Growing),,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
-plantedHops3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 1 hop cone.
-plantedHops3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 3 hop cones.
-plantedHops3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 6 hop cones.
-plantedHops3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 9 hop cones.
-plantedHops3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 12 hop cones.
-plantedHops3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Hops (Growing),,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
-plantedPumpkin3HarvestPlayerT1,blocks,Farming,New,Not Used,Poor Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 1 pumpkin.
-plantedPumpkin3HarvestPlayerT2,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 3 pumpkins.
-plantedPumpkin3HarvestPlayerT3,blocks,Farming,New,Not Used,Moderate Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 6 pumpkins.
-plantedPumpkin3HarvestPlayerT4,blocks,Farming,New,Not Used,High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 9 pumpkins.
-plantedPumpkin3HarvestPlayerT5,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 12 pumpkins.
-plantedPumpkin3HarvestPlayerT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin (Growing),,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
-plantedAloe3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 1 aloe.
-plantedAloe3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 3 aloe.
-plantedAloe3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 6 aloe.
-plantedAloe3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 9 aloe.
-plantedAloe3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 12 aloe.
-plantedAloe3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Aloe Vera,,,,,,,,,,Produces 1 seed and 15 aloe. Uses radiation instead of light to grow.
-plantedBlueberry3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Blueberry,,,,,,,,,,Produces 1 seed and 1 blueberry.
-plantedBlueberry3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Blueberry,,,,,,,,,,Produces 1 seed and 3 blueberries.
-plantedBlueberry3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Blueberry,,,,,,,,,,Produces 1 seed and 6 blueberries.
-plantedBlueberry3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Blueberry,,,,,,,,,,Produces 1 seed and 9 blueberries.
-plantedBlueberry3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Blueberry,,,,,,,,,,Produces 1 seed and 12 blueberries.
-plantedBlueberry3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Blueberry,,,,,,,,,,Produces 1 seed and 15 blueberries. Uses radiation instead of light to grow.
-plantedMushroom3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Mushrooms,,,,,,,,,,Produces 1 spore and 1 mushroom.
-plantedMushroom3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Mushroom,,,,,,,,,,Produces 1 spore and 3 mushrooms.
-plantedMushroom3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Mushroom,,,,,,,,,,Produces 1 spore and 6 mushrooms.
-plantedMushroom3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Mushroom,,,,,,,,,,Produces 1 spore and 9 mushrooms.
-plantedMushroom3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Mushroom,,,,,,,,,,Produces 1 spore and 12 mushrooms.
-plantedMushroom3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Mushroom,,,,,,,,,,Produces 1 spore and 15 mushrooms. Requires radiation to grow.
-plantedYucca3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Yucca,,,,,,,,,,Produces 1 seed and 1 yucca.
-plantedYucca3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Yucca,,,,,,,,,,Produces 1 seed and 3 yuccas.
-plantedYucca3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Yucca,,,,,,,,,,Produces 1 seed and 6 yuccas.
-plantedYucca3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Yucca,,,,,,,,,,Produces 1 seed and 9 yuccas.
-plantedYucca3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Yucca,,,,,,,,,,Produces 1 seed and 12 yuccas.
-plantedYucca3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Yucca,,,,,,,,,,Produces 1 seed and 15 yuccas. Uses radiation instead of light to grow.
-plantedCotton3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Cotton,,,,,,,,,,Produces 1 seed and 1 cotton.
-plantedCotton3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Cotton,,,,,,,,,,Produces 1 seed and 3 cottons.
-plantedCotton3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Cotton,,,,,,,,,,Produces 1 seed and 6 cottons.
-plantedCotton3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Cotton,,,,,,,,,,Produces 1 seed and 9 cottons.
-plantedCotton3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Cotton,,,,,,,,,,Produces 1 seed and 12 cottons.
-plantedCotton3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Cotton,,,,,,,,,,Produces 1 seed and 15 cottons. Uses radiation instead of light to grow.
-plantedCoffee3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Coffee,,,,,,,,,,Produces 1 seed and 1 coffee bean.
-plantedCoffee3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Coffee,,,,,,,,,,Produces 1 seed and 3 coffee beans.
-plantedCoffee3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Coffee,,,,,,,,,,Produces 1 seed and 6 coffee beans.
-plantedCoffee3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Coffee,,,,,,,,,,Produces 1 seed and 9 coffee beans.
-plantedCoffee3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Coffee,,,,,,,,,,Produces 1 seed and 12 coffee beans.
-plantedCoffee3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Coffee,,,,,,,,,,Produces 1 seed and 15 coffee beans. Uses radiation instead of light to grow.
-plantedGoldenrod3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Goldenrod,,,,,,,,,,Produces 1 seed and 1 goldenrod flower.
-plantedGoldenrod3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Goldenrod,,,,,,,,,,Produces 1 seed and 3 goldenrod flowers.
-plantedGoldenrod3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Goldenrod,,,,,,,,,,Produces 1 seed and 6 goldenrod flowers.
-plantedGoldenrod3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Goldenrod,,,,,,,,,,Produces 1 seed and 9 goldenrod flowers.
-plantedGoldenrod3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Goldenrod,,,,,,,,,,Produces 1 seed and 12 goldenrod flowers.
-plantedGoldenrod3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Goldenrod,,,,,,,,,,Produces 1 seed and 15 goldenrod flowers. Uses radiation instead of light to grow.
-plantedPotato3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Potato,,,,,,,,,,Produces 1 seed and 1 potato.
-plantedPotato3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Potato,,,,,,,,,,Produces 1 seed and 3 potatoes.
-plantedPotato3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Potato,,,,,,,,,,Produces 1 seed and 6 potatoes.
-plantedPotato3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Potato,,,,,,,,,,Produces 1 seed and 9 potatoes.
-plantedPotato3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Potato,,,,,,,,,,Produces 1 seed and 12 potatoes.
-plantedPotato3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Potato,,,,,,,,,,Produces 1 seed and 15 potatoes. Uses radiation instead of light to grow.
-plantedChrysanthemum3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 1 chrysanthemum.
-plantedChrysanthemum3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 3 chrysanthemums.
-plantedChrysanthemum3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 6 chrysanthemums.
-plantedChrysanthemum3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 9 chrysanthemums.
-plantedChrysanthemum3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 12 chrysanthemums.
-plantedChrysanthemum3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Chrysanthemum,,,,,,,,,,Produces 1 seed and 15 chrysanthemums. Uses radiation instead of light to grow.
-plantedCorn3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Corn,,,,,,,,,,Produces 1 seed and 1 ear of corn.
-plantedCorn3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Corn,,,,,,,,,,Produces 1 seed and 3 ears of corn.
-plantedCorn3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Corn,,,,,,,,,,Produces 1 seed and 6 ears of corn.
-plantedCorn3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Corn,,,,,,,,,,Produces 1 seed and 9 ears of corn.
-plantedCorn3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Corn,,,,,,,,,,Produces 1 seed and 12 ears of corn.
-plantedCorn3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Corn,,,,,,,,,,Produces 1 seed and 15 ears of corn. Uses radiation instead of light to grow.
-plantedGraceCorn3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Super Corn,,,,,,,,,,Produces 1 seed and 1 Super Corn.
-plantedGraceCorn3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Super Corn,,,,,,,,,,Produces 1 seed and 3 Super Corn.
-plantedGraceCorn3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Super Corn,,,,,,,,,,Produces 1 seed and 6 Super Corn.
-plantedGraceCorn3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Super Corn,,,,,,,,,,Produces 1 seed and 9 Super Corn.
-plantedGraceCorn3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Super Corn,,,,,,,,,,Produces 1 seed and 12 Super Corn.
-plantedGraceCorn3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Super Corn,,,,,,,,,,Produces 1 seed and 15 Super Corn. Uses radiation instead of light to grow.
-plantedHop3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Hops,,,,,,,,,,Produces 1 seed and 1 hop cone.
-plantedHop3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Hops,,,,,,,,,,Produces 1 seed and 3 hop cones.
-plantedHop3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Hops,,,,,,,,,,Produces 1 seed and 6 hop cones.
-plantedHop3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Hops,,,,,,,,,,Produces 1 seed and 9 hop cones.
-plantedHop3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Hops,,,,,,,,,,Produces 1 seed and 12 hop cones.
-plantedHop3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Hops,,,,,,,,,,Produces 1 seed and 15 hop cones. Uses radiation instead of light to grow.
-plantedPumpkin3HarvestDescT1,blocks,Farming,New,Not Used,Poor Yield Pumpkin,,,,,,,,,,Produces 1 seed and 1 pumpkin.
-plantedPumpkin3HarvestDescT2,blocks,Farming,New,Not Used,Low Yield Yield Pumpkin,,,,,,,,,,Produces 1 seed and 3 pumpkins.
-plantedPumpkin3HarvestDescT3,blocks,Farming,New,Not Used,Moderate Yield Pumpkin,,,,,,,,,,Produces 1 seed and 6 pumpkins.
-plantedPumpkin3HarvestDescT4,blocks,Farming,New,Not Used,High Yield Pumpkin,,,,,,,,,,Produces 1 seed and 9 pumpkins.
-plantedPumpkin3HarvestDescT5,blocks,Farming,New,Not Used,Exceptionally High Yield Pumpkin,,,,,,,,,,Produces 1 seed and 12 pumpkins.
-plantedPumpkin3HarvestDescT6,blocks,Farming,New,Not Used,Incredibly High Yield Pumpkin,,,,,,,,,,Produces 1 seed and 15 pumpkins. Uses radiation instead of light to grow.
-cntBirdnestWithEggs,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
-cntBirdnest,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
-cntBirdnestWithEggsDesc,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
-cntBirdnestDesc,blocks,Farming,New,Not Used,Bird Nest,,,,,,,,,,A wild birds nest
+BlankProgramT1,items,,New,Not Used,Basic Processor,,,,,,,,,,,,,
+BlankProgramT2,items,,New,Not Used,Improved Processor,,,,,,,,,,,,,
+BlankProgramT3,items,,New,Not Used,Advanced Processor,,,,,,,,,,,,,
+BlankProgramT4,items,,New,Not Used,High Performance Processor,,,,,,,,,,,,,
+BlankProgramT5,items,,New,Not Used,Nano Processor,,,,,,,,,,,,,
+BlankProgramT6,items,,New,Not Used,Quantum Processor,,,,,,,,,,,,,
+BlankProgramT1Desc,items,,New,Not Used,Basic computing core capable of handling simple automation and everyday control tasks.,,,,,,,,,,,,,
+BlankProgramT2Desc,items,,New,Not Used,Improved processor offering faster clocks and better efficiency for moderate workloads.,,,,,,,,,,,,,
+BlankProgramT3Desc,items,,New,Not Used,Advanced multicore design that powers complex systems and smooth parallel operations.,,,,,,,,,,,,,
+BlankProgramT4Desc,items,,New,Not Used,High-performance silicon engineered for demanding real-time calculations and data crunching.,,,,,,,,,,,,,
+BlankProgramT5Desc,items,,New,Not Used,Nanoscale circuitry delivers exceptional throughput with minimal latency for intricate simulations.,,,,,,,,,,,,,
+BlankProgramT6Desc,items,,New,Not Used,Quantum architecture enables near-instant solutions to ultra-complex problems at unparalleled speed.,,,,,,,,,,,,,
+ElectronicsResearchBundle6,items,,New,Not Used,Electronics Research Bundle (Tier 6),,,,,,,,,,,,,,
+ElectronicsResearchBundle6Desc,items,,New,Not Used,High-density circuit layouts, micro-controller firmware, and troubleshooting guides for expert electronics projects.,,,,,,,,,,,,,
+IronClawHammerHead,items,,New,Not Used,Iron Claw Hammer Head,,,,,,,,,,,,,
+IronClawHammerHeadDesc,items,,New,Not Used,Forged dual-claw iron hammer head. Combine with a sturdy handle to craft a durable claw hammer for construction and salvage.,,,,,,,,,,,,,
+LeatherworkingResearchBundle6,items,,New,Not Used,Leatherworking Research Bundle (Tier 6),,,,,,,,,,,,,,
+LeatherworkingResearchBundle6Desc,items,,New,Not Used,Elite tanning recipes, advanced stitching patterns, and flexible armor designs for premium leather goods.,,,,,,,,,,,,,
+MechanicalResearchBundle6,items,,New,Not Used,Mechanical Engineering Research Bundle (Tier 6),,,,,,,,,,,,,,
+MechanicalResearchBundle6Desc,items,,New,Not Used,For advanced machinery development.,,,,,,,,,,,,,
+SoftwareResearchBundle6,items,,New,Not Used,Software Research Bundle (Tier 6),,,,,,,,,,,,,,
+SoftwareResearchBundle6Desc,items,,New,Not Used,Stacks of algorithms, optimization manuals, and next-generation software design.,,,,,,,,,,,,,

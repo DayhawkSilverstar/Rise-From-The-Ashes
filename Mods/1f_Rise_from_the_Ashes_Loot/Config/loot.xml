@@ -166,6 +166,9 @@
   
 	<!-- Robotic Parts-->
 	<set xpath="/lootcontainers/lootgroup[@name='groupWeapons_RangedParts']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
+  <set xpath="/lootcontainers/lootgroup[@name='weaponParts']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupRobotics']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupDrone']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT4</set>
 
   	<!-- SEED -->
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedPotato1']/@name">plantedPotatoT1-1</set>	

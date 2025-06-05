@@ -2340,11 +2340,11 @@
 
 			<perk name="adeptCookingPerk" min_level="0" max_level="5" base_skill_point_cost="1"  parent="adeptCraftingPerk" name_key="adeptCookingPerkName" desc_key="adeptCookingPerkDesc"   icon="ui_game_symbol_mining">
 				<effect_group>
-					<effect_description level="1" desc_key="adeptConstructionPerkDescRank1" long_desc_key="adeptConstructionPerkLongDescRank1"/>
-					<effect_description level="2" desc_key="adeptConstructionPerkDescRank2" long_desc_key="adeptConstructionPerkLongDescRank2"/>
-					<effect_description level="3" desc_key="adeptConstructionPerkDescRank3" long_desc_key="adeptConstructionPerkLongDescRank3"/>
-					<effect_description level="4" desc_key="adeptConstructionPerkDescRank4" long_desc_key="adeptConstructionPerkLongDescRank4"/>
-					<effect_description level="5" desc_key="adeptConstructionPerkDescRank5" long_desc_key="adeptConstructionPerkLongDescRank5"/>
+					<effect_description level="1" desc_key="adeptCookingPerkDescRank1" long_desc_key="adeptCookingPerkLongDescRank1"/>
+					<effect_description level="2" desc_key="adeptCookingPerkDescRank2" long_desc_key="adeptCookingPerkLongDescRank2"/>
+					<effect_description level="3" desc_key="adeptCookingPerkDescRank3" long_desc_key="adeptCookingPerkLongDescRank3"/>
+					<effect_description level="4" desc_key="adeptCookingPerkDescRank4" long_desc_key="adeptCookingPerkLongDescRank4"/>
+					<effect_description level="5" desc_key="adeptCookingPerkDescRank5" long_desc_key="adeptCookingPerkLongDescRank5"/>
 				</effect_group>
 			</perk>
 
