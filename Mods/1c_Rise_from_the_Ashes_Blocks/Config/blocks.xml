@@ -3514,6 +3514,30 @@
   
   <!-- Harvest Block fixes -->
   <set xpath="/blocks/block[@name='brickShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@name">resourceBrick</set>
+  <set xpath="//block/drop[@event='Harvest' and @name='resourceForgedIron']/@name">resourceWroughtIron</set>
+  <set xpath="//block/drop[@event='Harvest' and @name='resourceForgedSteel']/@name">resourceForgedIron</set>
+
+  <set xpath="/blocks/block[@name='ironBarsCentered']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='ironWroughtFence_01']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='chainlinkGateDoubleWide']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntRetroFridgeVer1Closed']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='escalatorBottom']/drop[@event='Harvest' and @name='resourceScrapIron']/@count">8</set>
+  <set xpath="/blocks/block[@name='escalatorBottom']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  
+  <set xpath="/blocks/block[@name='cntwallOvenEmptyWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>  
+  <set xpath="/blocks/block[@name='cntGasGrillRandomLootHelper']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntCharcoalGrillRandomLootHelper']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntDishwasherFullWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntDishwasherWhiteRandomLootHelper']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntWasherOpen']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='bunkBedFrame']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntToolBoxOpenWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntShoppingCartEmptyWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntShoppingCartTippedWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+
+  
+  <set xpath="/blocks/block[@name='cntWallSafe']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceForgedIron</set>
+
 
   <append xpath="/blocks" >			
 		<block name="GoldIngotStack">
