@@ -3511,6 +3511,9 @@
   <set xpath="/blocks/block[@name='cntFireTruck01AirRandomHelper']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
   <set xpath="/blocks/block[@name='cntGasPumpRandomLootHelper']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
   <set xpath="/blocks/block[@name='cntGasPumpFull']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>  
+  
+  <!-- Harvest Block fixes -->
+  <set xpath="/blocks/block[@name='brickShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@name">resourceBrick</set>
 
   <append xpath="/blocks" >			
 		<block name="GoldIngotStack">

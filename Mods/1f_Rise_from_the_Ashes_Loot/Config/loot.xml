@@ -58,17 +58,83 @@
 
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneCargoModSchematic']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneMedicModSchematic']"/>
-	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneArmorPlatingModSchematic']"/>	
-  
+	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneArmorPlatingModSchematic']"/>
 
-  	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='skillMagazines']/item[@name='clubsSkillMagazine']">
+    <item name="sewWonderfulSkillMagazine" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='skillMagazines']/item[@name='workstationSkillMagazine']">
+    <item name="carpentrySkillMagazine" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='skillMagazines']/item[@name='trapsSkillMagazine']">
+    <item name="chemistryTodaySkillMagazine" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestRewardSkillMagazinesAll01']/item[@name='trapsSkillMagazine']">
+    <item name="sewWonderfulSkillMagazine" count="2" />
+    <item name="carpentrySkillMagazine" count="2" />
+    <item name="chemistryTodaySkillMagazine" count="2" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupChallengeRewardSkillMagazinesAll01']/item[@name='trapsSkillMagazine']">
+    <item name="sewWonderfulSkillMagazine" count="2" />
+    <item name="carpentrySkillMagazine" count="2" />
+    <item name="chemistryTodaySkillMagazine" count="2" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffs01']/item[@name='workstationSkillMagazine']">
+    <item name="carpentrySkillMagazine" loot_prob_template="high" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot04']/item[@name='workstationSkillMagazine']">
+    <item name="carpentrySkillMagazine" loot_prob_template="high" />    
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupCementMixerLoot']/item[@name='workstationSkillMagazine']">
+    <item name="repairToolsSkillMagazine" loot_prob_template="high" />    
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupCementMixerLoot']/item[@name='workstationSkillMagazine']">
+    <item name="repairToolsSkillMagazine" loot_prob_template="high" />  
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot03']/item[@name='workstationSkillMagazine']">
+    <item name="chemistryTodaySkillMagazine" loot_prob_template="high" force_prob="true"/>
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupLootChestBonusItems']/item[@name='workstationSkillMagazine']">
+    <item name="sewWonderfulSkillMagazine" count="1" loot_prob_template="med" />
+    <item name="carpentrySkillMagazine" count="1" loot_prob_template="med" />
+    <item name="chemistryTodaySkillMagazine" count="1" loot_prob_template="med" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupConstructionCrate02']/item[@name='workstationSkillMagazine']">
+    <item name="carpentrySkillMagazine" loot_prob_template="high" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupAirDrop03']/item[@group='groupModAllScaled']">
+    <item group="skillMagazines" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupAirDropT1Bundles']/item[@group='groupQuestWoodShapes']">
+    <item group="skillMagazines" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='groupAirDropT1Bundles']/item[@group='groupQuestWoodShapes']">
+    <item group="skillMagazines" />
+  </insertAfter>
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="groupWorkingStiffsBooks">
 			<item name="harvestingToolsSkillMagazine"/>
 			<item name="repairToolsSkillMagazine"/>
 			<item name="salvageToolsSkillMagazine"/>
 			<item name="sledgehammersSkillMagazine"/>
 			<item name="workstationSkillMagazine"/>
-		</lootgroup>
+      <item name="carpentrySkillMagazine"/>      
+    </lootgroup>
 
 		<lootgroup name="groupShotgunMessiahBooks">
 			<item name="handgunsSkillMagazine" />
@@ -79,44 +145,185 @@
 		  </lootgroup>
 
 		  <lootgroup name="groupSavageCountryBooks">
-			<item name="armorSkillMagazine" />
-			<item name="bowsSkillMagazine" />
-			<item name="spearsSkillMagazine" />
-			<item name="bladesSkillMagazine" />
-			<item name="clubsSkillMagazine" />
+				<item name="armorSkillMagazine" />
+				<item name="bowsSkillMagazine" />
+				<item name="spearsSkillMagazine" />
+				<item name="bladesSkillMagazine" />
+				<item name="clubsSkillMagazine" />
+        <item name="knucklesSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
 		  </lootgroup>
 
 		  <lootgroup name="groupPopNPillsBooks">
-			<item name="medicalSkillMagazine" />
-			<item name="knucklesSkillMagazine" />
+				<item name="medicalSkillMagazine" />
+        <item name="chemistryTodaySkillMagazine" />
 		  </lootgroup>
 
 		  <lootgroup name="perkBooks">
-			<item name="harvestingToolsSkillMagazine"/>
+        <item name="harvestingToolsSkillMagazine" />
+        <item name="repairToolsSkillMagazine" />
+        <item name="salvageToolsSkillMagazine" />
+        <item name="sledgehammersSkillMagazine" />
+        <item name="workstationSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Hugh_Magazines -->
+        <item name="bowsSkillMagazine" />
+        <item name="spearsSkillMagazine" />
+        <item name="bladesSkillMagazine" />
+        <item name="clubsSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
+        <!-- Shotgun_Messiah_AND_Trader_Hugh_Magazines -->
+        <item name="handgunsSkillMagazine" />
+        <item name="shotgunsSkillMagazine" />
+        <item name="riflesSkillMagazine" />
+        <item name="machineGunsSkillMagazine" />
+        <item name="explosivesSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Joel_Magazines -->
+        <item name="armorSkillMagazine" />
+        <!-- Pop-N-Pills_AND_Trader_Jen_Magazines -->
+        <item name="medicalSkillMagazine" />
+        <item name="knucklesSkillMagazine" />
+        <!-- Shamway_AND_Trader_Rekt_Magazines -->
+        <item name="foodSkillMagazine" />
+        <item name="seedSkillMagazine" />
+        <!-- Mo_Power_AND_Trader_Bob_Magazines -->        
+        <item name="roboticsSkillMagazine" />
+        <item name="vehiclesSkillMagazine" />
+        <item name="electricianSkillMagazine" />
+        <item name="trapsSkillMagazine" />
+        <item name="chemistryTodaySkillMagazine" />
 		  </lootgroup>
 
 		  <lootgroup name="groupSafeBooks">
-			<item name="harvestingToolsSkillMagazine"/>
-		  </lootgroup>
+				<item name="harvestingToolsSkillMagazine"/>
+				<item name="carpentrySkillMagazine"/>
+				<item name="handgunsSkillMagazine" />
+				<item name="shotgunsSkillMagazine" />
+				<item name="riflesSkillMagazine" />
+				<item name="machineGunsSkillMagazine" />
+				<item name="explosivesSkillMagazine" />
+        <item name="armorSkillMagazine" />
+        <item name="bowsSkillMagazine" />
+        <item name="spearsSkillMagazine" />
+        <item name="bladesSkillMagazine" />
+        <item name="clubsSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
+      </lootgroup>
 
 		  <lootgroup name="groupMilitaryBooks">
-			<item name="harvestingToolsSkillMagazine"/>
+        <item name="handgunsSkillMagazine" />
+        <item name="shotgunsSkillMagazine" />
+        <item name="riflesSkillMagazine" />
+        <item name="machineGunsSkillMagazine" />
+        <item name="explosivesSkillMagazine" />
 		  </lootgroup>
 
 		  <lootgroup name="groupTechJunkieBooks">
-			<item name="harvestingToolsSkillMagazine"/>
+				<item name="harvestingToolsSkillMagazine"/>
+				<item name="roboticsSkillMagazine" />
+				<item name="vehiclesSkillMagazine" />
+				<item name="electricianSkillMagazine" />
+				<item name="trapsSkillMagazine" />
 		  </lootgroup>
 
 		  <lootgroup name="twitch_books1">
-			<item name="harvestingToolsSkillMagazine"/>
+        <item name="harvestingToolsSkillMagazine" />
+        <item name="repairToolsSkillMagazine" />
+        <item name="salvageToolsSkillMagazine" />
+        <item name="sledgehammersSkillMagazine" />
+        <item name="workstationSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Hugh_Magazines -->
+        <item name="bowsSkillMagazine" />
+        <item name="spearsSkillMagazine" />
+        <item name="bladesSkillMagazine" />
+        <item name="clubsSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
+        <!-- Shotgun_Messiah_AND_Trader_Hugh_Magazines -->
+        <item name="handgunsSkillMagazine" />
+        <item name="shotgunsSkillMagazine" />
+        <item name="riflesSkillMagazine" />
+        <item name="machineGunsSkillMagazine" />
+        <item name="explosivesSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Joel_Magazines -->
+        <item name="armorSkillMagazine" />
+        <!-- Pop-N-Pills_AND_Trader_Jen_Magazines -->
+        <item name="medicalSkillMagazine" />
+        <item name="knucklesSkillMagazine" />
+        <!-- Shamway_AND_Trader_Rekt_Magazines -->
+        <item name="foodSkillMagazine" />
+        <item name="seedSkillMagazine" />
+        <!-- Mo_Power_AND_Trader_Bob_Magazines -->
+        <item name="roboticsSkillMagazine" />
+        <item name="vehiclesSkillMagazine" />
+        <item name="electricianSkillMagazine" />
+        <item name="trapsSkillMagazine" />
 		  </lootgroup>
 
 		  <lootgroup name="twitch_books2">
-			<item name="harvestingToolsSkillMagazine"/>
+        <item name="harvestingToolsSkillMagazine" />
+        <item name="repairToolsSkillMagazine" />
+        <item name="salvageToolsSkillMagazine" />
+        <item name="sledgehammersSkillMagazine" />
+        <item name="workstationSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Hugh_Magazines -->
+        <item name="bowsSkillMagazine" />
+        <item name="spearsSkillMagazine" />
+        <item name="bladesSkillMagazine" />
+        <item name="clubsSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
+        <!-- Shotgun_Messiah_AND_Trader_Hugh_Magazines -->
+        <item name="handgunsSkillMagazine" />
+        <item name="shotgunsSkillMagazine" />
+        <item name="riflesSkillMagazine" />
+        <item name="machineGunsSkillMagazine" />
+        <item name="explosivesSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Joel_Magazines -->
+        <item name="armorSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
+        <!-- Pop-N-Pills_AND_Trader_Jen_Magazines -->
+        <item name="medicalSkillMagazine" />
+        <item name="knucklesSkillMagazine" />
+        <!-- Shamway_AND_Trader_Rekt_Magazines -->
+        <item name="foodSkillMagazine" />
+        <item name="seedSkillMagazine" />
+        <!-- Mo_Power_AND_Trader_Bob_Magazines -->
+        <item name="roboticsSkillMagazine" />
+        <item name="vehiclesSkillMagazine" />
+        <item name="electricianSkillMagazine" />
+        <item name="trapsSkillMagazine" />
 		  </lootgroup>
 
 		  <lootgroup name="twitch_books3">
-			<item name="harvestingToolsSkillMagazine"/>
+        <item name="harvestingToolsSkillMagazine" />
+        <item name="repairToolsSkillMagazine" />
+        <item name="salvageToolsSkillMagazine" />
+        <item name="sledgehammersSkillMagazine" />
+        <item name="workstationSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Hugh_Magazines -->
+        <item name="bowsSkillMagazine" />
+        <item name="spearsSkillMagazine" />
+        <item name="bladesSkillMagazine" />
+        <item name="clubsSkillMagazine" />
+        <item name="sewWonderfulSkillMagazine" />
+        <!-- Shotgun_Messiah_AND_Trader_Hugh_Magazines -->
+        <item name="handgunsSkillMagazine" />
+        <item name="shotgunsSkillMagazine" />
+        <item name="riflesSkillMagazine" />
+        <item name="machineGunsSkillMagazine" />
+        <item name="explosivesSkillMagazine" />
+        <!-- Savage_Country_AND_Trader_Joel_Magazines -->
+        <item name="armorSkillMagazine" />
+        <!-- Pop-N-Pills_AND_Trader_Jen_Magazines -->
+        <item name="medicalSkillMagazine" />
+        <item name="knucklesSkillMagazine" />
+        <!-- Shamway_AND_Trader_Rekt_Magazines -->
+        <item name="foodSkillMagazine" />
+        <item name="seedSkillMagazine" />
+        <!-- Mo_Power_AND_Trader_Bob_Magazines -->
+        <item name="roboticsSkillMagazine" />
+        <item name="vehiclesSkillMagazine" />
+        <item name="electricianSkillMagazine" />
+        <item name="trapsSkillMagazine" />
 		  </lootgroup>
 
 		<lootgroup name="groupBirdNest01" count="all">
