@@ -464,6 +464,6 @@
 		<!-- *** Player Footlocker -->
 		<lootcontainer name="playerStorageExtraLarge" count="0" size="8,6" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
 			<item name="cobweb"/>
-		</lootcontainer>	
+		</lootcontainer>	   
 	</append>
 </configs>

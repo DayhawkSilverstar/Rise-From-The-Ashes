@@ -6,8 +6,7 @@
 	<!-- *********** Changes ************ 
 		1) Zombies can be tracked with the tracking skill
 		2) Zombies attack all living animals
-	-->
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">45</set>
+	-->	
 
 	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
 		<effect_group name="Snow Biome">
@@ -225,4 +224,7 @@
 	<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITarget-3']/@data">class=EntityPlayer,14,9,EntityBandit,0,-8,EntityAnimalStag,0,0,EntityZombie,0,-5,EntityAnimal,0,0</set>
 	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITarget-3']/@data">class=EntityPlayer,18,13,EntityBandit,0,-8,EntityAnimalStag,0,0,EntityAnimal,0,0</set>
 	<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITarget-3']/@data">class=EntityPlayer,18,13,EntityBandit,0,-8,EntityAnimalStag,0,0,EntityAnimal,0,0,EntityZombie,0,0</set>
+
+  <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">90</set>
+  
 </configs>

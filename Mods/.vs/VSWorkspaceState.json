@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\1a_Rise_from_the_Ashes_Progression",
     "\\1a_Rise_from_the_Ashes_Progression\\Config",
-    "\\1b_Rise_from_the_Ashes_Items",
-    "\\1c_Rise_from_the_Ashes_Blocks",
     "\\1c_Rise_from_the_Ashes_Blocks\\Config",
-    "\\1f_Rise_from_the_Ashes_Loot",
-    "\\1g_Rise_from_the_Ashes_Recipes",
+    "\\1f_Rise_from_the_Ashes_Loot\\Config",
     "\\1g_Rise_from_the_Ashes_Recipes\\Config",
-    "\\4_Rise_from_the_Ashes_Localization",
+    "\\1l_Rise_from_the_Ashes_XUi",
+    "\\1l_Rise_from_the_Ashes_XUi\\Config",
+    "\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi",
+    "\\4_Rise_from_the_Ashes_Entityclasses\\Config",
     "\\4_Rise_from_the_Ashes_Localization\\Config"
   ],
-  "SelectedNode": "\\1c_Rise_from_the_Ashes_Blocks\\Config\\blocks.xml",
+  "SelectedNode": "\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
   "PreviewInSolutionExplorer": false
 }

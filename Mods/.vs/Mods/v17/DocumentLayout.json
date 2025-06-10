@@ -3,6 +3,45 @@
   "WorkspaceRootPath": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\Rise_from_the_Ashes_Healthbar\\Config\\XUi\\windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Rise_from_the_Ashes_Healthbar\\Config\\XUi\\windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1b_Rise_from_the_Ashes_Items\\Config\\items.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1b_Rise_from_the_Ashes_Items\\Config\\items.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Data\\Config\\XUi\\controls.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\controls.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\controls.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\xui.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\xui.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1z_Rise from_the_Ashes_Windows\\Config\\windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1z_Rise from_the_Ashes_Windows\\Config\\windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1n_Rise_from_the_Ashes_Traders\\Config\\traders.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1n_Rise_from_the_Ashes_Traders\\Config\\traders.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
@@ -15,32 +54,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1g_Rise_from_the_Ashes_Recipes\\Config\\recipes.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1b_Rise_from_the_Ashes_Items\\Config\\items.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1b_Rise_from_the_Ashes_Items\\Config\\items.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\4_Rise_from_the_Ashes_Localization\\Config\\localization.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:4_Rise_from_the_Ashes_Localization\\Config\\localization.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1z_Rise from_the_Ashes_Windows\\Config\\windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1z_Rise from_the_Ashes_Windows\\Config\\windows.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1i_Rise from_the_Ashes_Controls\\Config\\controls.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1i_Rise from_the_Ashes_Controls\\Config\\controls.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,6 +67,19 @@
           "DockedHeight": 200,
           "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "windows.xml",
+              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\Rise_from_the_Ashes_Healthbar\\Config\\XUi\\windows.xml",
+              "RelativeDocumentMoniker": "Rise_from_the_Ashes_Healthbar\\Config\\XUi\\windows.xml",
+              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\Rise_from_the_Ashes_Healthbar\\Config\\XUi\\windows.xml",
+              "RelativeToolTip": "Rise_from_the_Ashes_Healthbar\\Config\\XUi\\windows.xml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAQAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-10T18:24:11.572Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -66,32 +94,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Windows.xml",
+              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
+              "RelativeDocumentMoniker": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
+              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
+              "RelativeToolTip": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-09T21:22:56.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "controls.xml",
+              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Data\\Config\\XUi\\controls.xml",
+              "RelativeDocumentMoniker": "..\\Data\\Config\\XUi\\controls.xml",
+              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Data\\Config\\XUi\\controls.xml",
+              "RelativeToolTip": "..\\Data\\Config\\XUi\\controls.xml",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAAKIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-09T18:12:11.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "controls.xml",
+              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\controls.xml",
+              "RelativeDocumentMoniker": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\controls.xml",
+              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\controls.xml",
+              "RelativeToolTip": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\controls.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-09T18:11:15.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "xui.xml",
+              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\xui.xml",
+              "RelativeDocumentMoniker": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\xui.xml",
+              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\xui.xml",
+              "RelativeToolTip": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\xui.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-09T18:06:59.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "entityclasses.xml",
+              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "RelativeDocumentMoniker": "4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "RelativeToolTip": "4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAmwOAAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-09T17:21:19.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "progression.xml",
               "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml",
               "RelativeDocumentMoniker": "1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml",
               "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml",
               "RelativeToolTip": "1a_Rise_from_the_Ashes_Progression\\Config\\progression.xml",
-              "ViewState": "AQIAAAwJAAAAAAAAAAAowCgJAAB0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-06-03T15:29:12.649Z"
+              "WhenOpened": "2025-06-03T15:29:12.649Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "traders.xml",
               "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1n_Rise_from_the_Ashes_Traders\\Config\\traders.xml",
               "RelativeDocumentMoniker": "1n_Rise_from_the_Ashes_Traders\\Config\\traders.xml",
               "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1n_Rise_from_the_Ashes_Traders\\Config\\traders.xml",
               "RelativeToolTip": "1n_Rise_from_the_Ashes_Traders\\Config\\traders.xml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwCkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-06-03T14:02:42.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "recipes.xml",
               "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1g_Rise_from_the_Ashes_Recipes\\Config\\recipes.xml",
               "RelativeDocumentMoniker": "1g_Rise_from_the_Ashes_Recipes\\Config\\recipes.xml",
@@ -104,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "blocks.xml",
               "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1c_Rise_from_the_Ashes_Blocks\\Config\\blocks.xml",
               "RelativeDocumentMoniker": "1c_Rise_from_the_Ashes_Blocks\\Config\\blocks.xml",
@@ -117,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "localization.txt",
               "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\4_Rise_from_the_Ashes_Localization\\Config\\localization.txt",
               "RelativeDocumentMoniker": "4_Rise_from_the_Ashes_Localization\\Config\\localization.txt",
@@ -125,7 +219,8 @@
               "RelativeToolTip": "4_Rise_from_the_Ashes_Localization\\Config\\localization.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-06-03T15:07:27.235Z"
+              "WhenOpened": "2025-06-03T15:07:27.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,38 +230,27 @@
               "RelativeDocumentMoniker": "1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
               "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
               "RelativeToolTip": "1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
-              "ViewState": "AQIAAOcNAAAAAAAAAAAowPkNAABFAAAA",
+              "ViewState": "AQIAAOQNAAAAAAAAAAAmwPkNAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-06-01T19:49:41.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "loot.xml",
               "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml",
               "RelativeDocumentMoniker": "1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml",
               "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml",
               "RelativeToolTip": "1f_Rise_from_the_Ashes_Loot\\Config\\loot.xml",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAowGMAAABGAAAA",
+              "ViewState": "AQIAALQBAAAAAAAAAAAAANQBAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-06-02T16:43:27.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Windows.xml",
-              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
-              "RelativeDocumentMoniker": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
-              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
-              "RelativeToolTip": "1l_Rise_from_the_Ashes_XUi\\Config\\XUi\\Windows.xml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-05-31T06:42:11.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "windows.xml",
               "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1z_Rise from_the_Ashes_Windows\\Config\\windows.xml",
               "RelativeDocumentMoniker": "1z_Rise from_the_Ashes_Windows\\Config\\windows.xml",
@@ -174,19 +258,8 @@
               "RelativeToolTip": "1z_Rise from_the_Ashes_Windows\\Config\\windows.xml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-06-03T05:45:25.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "controls.xml",
-              "DocumentMoniker": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1i_Rise from_the_Ashes_Controls\\Config\\controls.xml",
-              "RelativeDocumentMoniker": "1i_Rise from_the_Ashes_Controls\\Config\\controls.xml",
-              "ToolTip": "E:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\1i_Rise from_the_Ashes_Controls\\Config\\controls.xml",
-              "RelativeToolTip": "1i_Rise from_the_Ashes_Controls\\Config\\controls.xml",
-              "ViewState": "AQIAANkAAAAAAAAAAAAMwOsAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-05-31T06:41:57.983Z"
+              "WhenOpened": "2025-06-03T05:45:25.326Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
