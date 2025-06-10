@@ -6,7 +6,9 @@
 
   <!-- Turn on the target window -->
   <set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@name='windowName']/@pos">3,-6</set>  
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@name='windowName']/@pos">3,-6</set>
+  <set xpath="/windows/window[@name='windowLooting']/rect/grid/@rows">10</set>
+  <set xpath="/windows/window[@name='windowLooting']/rect/grid/@cols">10</set>
 
   <insertafter xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']">
     <!-- pos is x, y -->

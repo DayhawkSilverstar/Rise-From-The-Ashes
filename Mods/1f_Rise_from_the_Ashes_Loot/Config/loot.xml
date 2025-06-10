@@ -411,6 +411,10 @@
 	<set xpath="/lootcontainers/lootgroup[@name='twitch_natresources1']/item[@name='resourceWood']/@name">resourceWoodT1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='twitch_builder_box1']/item[@name='resourceWood']/@name">resourceWoodT1</set>
 
+	<!-- Update backpacks for the larger player backpack size-->
+  <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,10</set>
+  <set xpath="/lootcontainers/lootcontainer[@id='2']/@size">10,10</set>
+
 	<!-- Point to the new progression file -->
 	<append xpath="/lootcontainers">		
 	
