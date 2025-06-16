@@ -1995,3 +1995,204 @@ MechanicalResearchBundle6,items,,New,Not Used,Mechanical Engineering Research Bu
 MechanicalResearchBundle6Desc,items,,New,Not Used,For advanced machinery development.,,,,,,,,,,,,,
 SoftwareResearchBundle6,items,,New,Not Used,Software Research Bundle (Tier 6),,,,,,,,,,,,,,
 SoftwareResearchBundle6Desc,items,,New,Not Used,Stacks of algorithms, optimization manuals, and next-generation software design.,,,,,,,,,,,,,
+skillMedicalDesc1,skills,,,Healing item effectiveness increased by 1%.
+skillMedicalDesc2,skills,,,Healing item effectiveness increased by 2%.
+skillMedicalDesc3,skills,,,Healing item effectiveness increased by 3%.
+skillMedicalDesc4,skills,,,Healing item effectiveness increased by 4%.
+skillMedicalDesc5,skills,,,Healing item effectiveness increased by 5%.
+skillMedicalDesc6,skills,,,Healing item effectiveness increased by 6%.
+skillMedicalDesc7,skills,,,Healing item effectiveness increased by 7%.
+skillMedicalDesc8,skills,,,Healing item effectiveness increased by 8%.
+skillMedicalDesc9,skills,,,Healing item effectiveness increased by 9%.
+skillMedicalDesc10,skills,,,Healing item effectiveness increased by 10%.
+skillMedicalDesc11,skills,,,Healing item effectiveness increased by 11%.
+skillMedicalDesc12,skills,,,Healing item effectiveness increased by 12%.
+skillMedicalDesc13,skills,,,Healing item effectiveness increased by 13%.
+skillMedicalDesc14,skills,,,Healing item effectiveness increased by 14%.
+skillMedicalDesc15,skills,,,Healing item effectiveness increased by 15%.
+skillMedicalDesc16,skills,,,Healing item effectiveness increased by 16%.
+skillMedicalDesc17,skills,,,Healing item effectiveness increased by 17%.
+skillMedicalDesc18,skills,,,Healing item effectiveness increased by 18%.
+skillMedicalDesc19,skills,,,Healing item effectiveness increased by 19%.
+skillMedicalDesc20,skills,,,Healing item effectiveness increased by 20%.
+skillMedicalDesc21,skills,,,Healing item effectiveness increased by 21%.
+skillMedicalDesc22,skills,,,Healing item effectiveness increased by 22%.
+skillMedicalDesc23,skills,,,Healing item effectiveness increased by 23%.
+skillMedicalDesc24,skills,,,Healing item effectiveness increased by 24%.
+skillMedicalDesc25,skills,,,Healing item effectiveness increased by 25%.
+skillMedicalDesc26,skills,,,Healing item effectiveness increased by 26%.
+skillMedicalDesc27,skills,,,Healing item effectiveness increased by 27%.
+skillMedicalDesc28,skills,,,Healing item effectiveness increased by 28%.
+skillMedicalDesc29,skills,,,Healing item effectiveness increased by 29%.
+skillMedicalDesc30,skills,,,Healing item effectiveness increased by 30%.
+skillMedicalDesc31,skills,,,Healing item effectiveness increased by 31%.
+skillMedicalDesc32,skills,,,Healing item effectiveness increased by 32%.
+skillMedicalDesc33,skills,,,Healing item effectiveness increased by 33%.
+skillMedicalDesc34,skills,,,Healing item effectiveness increased by 34%.
+skillMedicalDesc35,skills,,,Healing item effectiveness increased by 35%.
+skillMedicalDesc36,skills,,,Healing item effectiveness increased by 36%.
+skillMedicalDesc37,skills,,,Healing item effectiveness increased by 37%.
+skillMedicalDesc38,skills,,,Healing item effectiveness increased by 38%.
+skillMedicalDesc39,skills,,,Healing item effectiveness increased by 39%.
+skillMedicalDesc40,skills,,,Healing item effectiveness increased by 40%.
+skillMedicalDesc41,skills,,,Healing item effectiveness increased by 41%.
+skillMedicalDesc42,skills,,,Healing item effectiveness increased by 42%.
+skillMedicalDesc43,skills,,,Healing item effectiveness increased by 43%.
+skillMedicalDesc44,skills,,,Healing item effectiveness increased by 44%.
+skillMedicalDesc45,skills,,,Healing item effectiveness increased by 45%.
+skillMedicalDesc46,skills,,,Healing item effectiveness increased by 46%.
+skillMedicalDesc47,skills,,,Healing item effectiveness increased by 47%.
+skillMedicalDesc48,skills,,,Healing item effectiveness increased by 48%.
+skillMedicalDesc49,skills,,,Healing item effectiveness increased by 49%.
+skillMedicalDesc50,skills,,,Healing item effectiveness increased by 50%.
+skillMedicalDesc51,skills,,,Healing item effectiveness increased by 51%.
+skillMedicalDesc52,skills,,,Healing item effectiveness increased by 52%.
+skillMedicalDesc53,skills,,,Healing item effectiveness increased by 53%.
+skillMedicalDesc54,skills,,,Healing item effectiveness increased by 54%.
+skillMedicalDesc55,skills,,,Healing item effectiveness increased by 55%.
+skillMedicalDesc56,skills,,,Healing item effectiveness increased by 56%.
+skillMedicalDesc57,skills,,,Healing item effectiveness increased by 57%.
+skillMedicalDesc58,skills,,,Healing item effectiveness increased by 58%.
+skillMedicalDesc59,skills,,,Healing item effectiveness increased by 59%.
+skillMedicalDesc60,skills,,,Healing item effectiveness increased by 60%.
+skillMedicalDesc61,skills,,,Healing item effectiveness increased by 61%.
+skillMedicalDesc62,skills,,,Healing item effectiveness increased by 62%.
+skillMedicalDesc63,skills,,,Healing item effectiveness increased by 63%.
+skillMedicalDesc64,skills,,,Healing item effectiveness increased by 64%.
+skillMedicalDesc65,skills,,,Healing item effectiveness increased by 65%.
+skillMedicalDesc66,skills,,,Healing item effectiveness increased by 66%.
+skillMedicalDesc67,skills,,,Healing item effectiveness increased by 67%.
+skillMedicalDesc68,skills,,,Healing item effectiveness increased by 68%.
+skillMedicalDesc69,skills,,,Healing item effectiveness increased by 69%.
+skillMedicalDesc70,skills,,,Healing item effectiveness increased by 70%.
+skillMedicalDesc71,skills,,,Healing item effectiveness increased by 71%.
+skillMedicalDesc72,skills,,,Healing item effectiveness increased by 72%.
+skillMedicalDesc73,skills,,,Healing item effectiveness increased by 73%.
+skillMedicalDesc74,skills,,,Healing item effectiveness increased by 74%.
+skillMedicalDesc75,skills,,,Healing item effectiveness increased by 75%.
+skillMedicalDesc76,skills,,,Healing item effectiveness increased by 76%.
+skillMedicalDesc77,skills,,,Healing item effectiveness increased by 77%.
+skillMedicalDesc78,skills,,,Healing item effectiveness increased by 78%.
+skillMedicalDesc79,skills,,,Healing item effectiveness increased by 79%.
+skillMedicalDesc80,skills,,,Healing item effectiveness increased by 80%.
+skillMedicalDesc81,skills,,,Healing item effectiveness increased by 81%.
+skillMedicalDesc82,skills,,,Healing item effectiveness increased by 82%.
+skillMedicalDesc83,skills,,,Healing item effectiveness increased by 83%.
+skillMedicalDesc84,skills,,,Healing item effectiveness increased by 84%.
+skillMedicalDesc85,skills,,,Healing item effectiveness increased by 85%.
+skillMedicalDesc86,skills,,,Healing item effectiveness increased by 86%.
+skillMedicalDesc87,skills,,,Healing item effectiveness increased by 87%.
+skillMedicalDesc88,skills,,,Healing item effectiveness increased by 88%.
+skillMedicalDesc89,skills,,,Healing item effectiveness increased by 89%.
+skillMedicalDesc90,skills,,,Healing item effectiveness increased by 90%.
+skillMedicalDesc91,skills,,,Healing item effectiveness increased by 91%.
+skillMedicalDesc92,skills,,,Healing item effectiveness increased by 92%.
+skillMedicalDesc93,skills,,,Healing item effectiveness increased by 93%.
+skillMedicalDesc94,skills,,,Healing item effectiveness increased by 94%.
+skillMedicalDesc95,skills,,,Healing item effectiveness increased by 95%.
+skillMedicalDesc96,skills,,,Healing item effectiveness increased by 96%.
+skillMedicalDesc97,skills,,,Healing item effectiveness increased by 97%.
+skillMedicalDesc98,skills,,,Healing item effectiveness increased by 98%.
+skillMedicalDesc99,skills,,,Healing item effectiveness increased by 99%.
+skillMedicalDesc100,skills,,,Healing item effectiveness increased by 100%.
+skillMedicalLongDesc1,skills,,,Healing items now restore health 1% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc2,skills,,,Healing items now restore health 2% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc3,skills,,,Healing items now restore health 3% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc4,skills,,,Healing items now restore health 4% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc5,skills,,,Healing items now restore health 5% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc6,skills,,,Healing items now restore health 6% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc7,skills,,,Healing items now restore health 7% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc8,skills,,,Healing items now restore health 8% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc9,skills,,,Healing items now restore health 9% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc10,skills,,,Healing items now restore health 10% faster. You can now use Splints and Casts on sprains. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc11,skills,,,Healing items now restore health 11% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc12,skills,,,Healing items now restore health 12% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc13,skills,,,Healing items now restore health 13% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc14,skills,,,Healing items now restore health 14% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc15,skills,,,Healing items now restore health 15% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc16,skills,,,Healing items now restore health 16% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc17,skills,,,Healing items now restore health 17% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc18,skills,,,Healing items now restore health 18% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc19,skills,,,Healing items now restore health 19% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc20,skills,,,Healing items now restore health 20% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc21,skills,,,Healing items now restore health 21% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc22,skills,,,Healing items now restore health 22% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc23,skills,,,Healing items now restore health 23% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc24,skills,,,Healing items now restore health 24% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc25,skills,,,Healing items now restore health 25% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc26,skills,,,Healing items now restore health 26% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc27,skills,,,Healing items now restore health 27% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc28,skills,,,Healing items now restore health 28% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc29,skills,,,Healing items now restore health 29% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc30,skills,,,Healing items now restore health 30% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc31,skills,,,Healing items now restore health 31% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc32,skills,,,Healing items now restore health 32% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc33,skills,,,Healing items now restore health 33% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc34,skills,,,Healing items now restore health 34% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc35,skills,,,Healing items now restore health 35% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc36,skills,,,Healing items now restore health 36% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc37,skills,,,Healing items now restore health 37% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc38,skills,,,Healing items now restore health 38% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc39,skills,,,Healing items now restore health 39% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc40,skills,,,Healing items now restore health 40% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc41,skills,,,Healing items now restore health 41% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc42,skills,,,Healing items now restore health 42% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc43,skills,,,Healing items now restore health 43% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc44,skills,,,Healing items now restore health 44% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc45,skills,,,Healing items now restore health 45% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc46,skills,,,Healing items now restore health 46% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc47,skills,,,Healing items now restore health 47% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc48,skills,,,Healing items now restore health 48% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc49,skills,,,Healing items now restore health 49% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc50,skills,,,Healing items now restore health 50% faster. Treated wounds now heal 50% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc51,skills,,,Healing items now restore health 51% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc52,skills,,,Healing items now restore health 52% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc53,skills,,,Healing items now restore health 53% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc54,skills,,,Healing items now restore health 54% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc55,skills,,,Healing items now restore health 55% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc56,skills,,,Healing items now restore health 56% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc57,skills,,,Healing items now restore health 57% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc58,skills,,,Healing items now restore health 58% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc59,skills,,,Healing items now restore health 59% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc60,skills,,,Healing items now restore health 60% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc61,skills,,,Healing items now restore health 61% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc62,skills,,,Healing items now restore health 62% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc63,skills,,,Healing items now restore health 63% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc64,skills,,,Healing items now restore health 64% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc65,skills,,,Healing items now restore health 65% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc66,skills,,,Healing items now restore health 66% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc67,skills,,,Healing items now restore health 67% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc68,skills,,,Healing items now restore health 68% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc69,skills,,,Healing items now restore health 69% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc70,skills,,,Healing items now restore health 70% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc71,skills,,,Healing items now restore health 71% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc72,skills,,,Healing items now restore health 72% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc73,skills,,,Healing items now restore health 73% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc74,skills,,,Healing items now restore health 74% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc75,skills,,,Healing items now restore health 75% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc76,skills,,,Healing items now restore health 76% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc77,skills,,,Healing items now restore health 77% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc78,skills,,,Healing items now restore health 78% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc79,skills,,,Healing items now restore health 79% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc80,skills,,,Healing items now restore health 80% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc81,skills,,,Healing items now restore health 81% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc82,skills,,,Healing items now restore health 82% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc83,skills,,,Healing items now restore health 83% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc84,skills,,,Healing items now restore health 84% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc85,skills,,,Healing items now restore health 85% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc86,skills,,,Healing items now restore health 86% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc87,skills,,,Healing items now restore health 87% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc88,skills,,,Healing items now restore health 88% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc89,skills,,,Healing items now restore health 89% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc90,skills,,,Healing items now restore health 90% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc91,skills,,,Healing items now restore health 91% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc92,skills,,,Healing items now restore health 92% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc93,skills,,,Healing items now restore health 93% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc94,skills,,,Healing items now restore health 94% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc95,skills,,,Healing items now restore health 95% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc96,skills,,,Healing items now restore health 96% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc97,skills,,,Healing items now restore health 97% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc98,skills,,,Healing items now restore health 98% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc99,skills,,,Healing items now restore health 99% faster. Gain experience toward this skill by using medical items on yourself or others.
+skillMedicalLongDesc100,skills,,,Healing items now restore health 100% faster. Gain experience toward this skill by using medical items on yourself or others.
+

@@ -3528,7 +3528,12 @@
   <set xpath="/blocks/block[@name='cntGasGrillRandomLootHelper']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntCharcoalGrillRandomLootHelper']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntDishwasherFullWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
-  <set xpath="/blocks/block[@name='cntDishwasherWhiteRandomLootHelper']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntRetroFridgeVer2Open']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntFridgeStainlessSteelVer2Open']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntFridgeStainlessSteel']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntFridgeStainlessSteel_Player']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
+  <set xpath="/blocks/block[@name='cntStoveOldVer2Open']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>  
+  <set xpath="/blocks/block[@name='cntStoveModernVer1Closed_Player']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>    
   <set xpath="/blocks/block[@name='cntWasherOpen']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='bunkBedFrame']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntToolBoxOpenWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>

@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\1f_Rise_from_the_Ashes_Loot",
+    "\\1f_Rise_from_the_Ashes_Loot\\Config",
+    "\\3l_Rise_from_the_Ashes_Biome",
+    "\\3l_Rise_from_the_Ashes_Biome\\Config",
+    "\\4_Rise_from_the_Ashes_Entityclasses",
+    "\\4_Rise_from_the_Ashes_Entityclasses\\Config",
+    "\\4_Rise_from_the_Ashes_Localization",
+    "\\4_Rise_from_the_Ashes_Localization\\Config"
   ],
-  "SelectedNode": "\\1m_Rise_from_the_Ashes_Materials",
+  "SelectedNode": "\\4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
   "PreviewInSolutionExplorer": false
 }

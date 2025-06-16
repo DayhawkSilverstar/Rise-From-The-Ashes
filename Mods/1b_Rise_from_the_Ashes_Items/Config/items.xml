@@ -80,8 +80,7 @@
 	<set xpath="/items/item[@name='ammoDartIron']/property[@name='Stacknumber']/@value">6000</set>
 	<set xpath="/items/item[@name='partsMaster']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='vehicleMinibikePlaceable']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='medicalAloeCream']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='vehicleMinibikePlaceable']/property[@name='Stacknumber']/@value">1000</set>	
 	<set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">1000</set>
@@ -1958,6 +1957,8 @@
   <append xpath="/items/item[@name='vehicleGyrocopterPlaceable']"><property name="ItemWeight" value="400"/></append>
   <set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/property[@name='EconomicValue']/@value">50000</set>
   <set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/property[@name='Tags']/@value">vehicle,vengine,vfuel,canHaveCosmetic</set>
+  
+  <set xpath="/items/item[@name='medicalAloeCream']/property[@name='Stacknumber']/@value">1000</set>
   <append xpath="/items/item[@name='medicalAloeCream']"><property name="ItemWeight" value="0.0625"/></append>
   <set xpath="/items/item[@name='medicalAloeCream']/property[@name='EconomicValue']/@value">10</set>
   <set xpath="/items/item[@name='medicalAloeCream']/property[@name='Tags']/@value">medical,medicalSkill</set>
@@ -1968,7 +1969,42 @@
           <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$medicalExpTotal" operation="add" value="@$MedicalExp">						                
           </triggered_effect>            
       </effect_group>
-  </append>					  
+  </append>
+
+  <!-- Fixing skillMedical for triggered effects when operation is GTE -->
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='0']/@operation">GTE</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='0']/@value">1</set>  
+
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='1']/@value">10</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='10']/@progression_name">skillMedical</set>
+
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='3']/@value">30</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='30']/@progression_name">skillMedical</set>
+
+  <!-- Fixing skillMedical for triggered effects when operation equals -->  
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='1']/@value">10</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='10']/@operation">GTE</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='10']/@progression_name">skillMedical</set>
+
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='2']/@value">20</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='20']/@operation">GTE</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='20']/@progression_name">skillMedical</set>
+
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='3']/@value">30</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='30']/@operation">GTE</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='30']/@progression_name">skillMedical</set>
+
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='4']/@value">40</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='40']/@operation">GTE</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='40']/@progression_name">skillMedical</set>
+
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='5']/@value">50</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='50']/@operation">GTE</set>
+  <set xpath="//item/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='50']/@progression_name">skillMedical</set>  
+
+  <!-- Fixing skillMedical for effect groups when operation is GTE -->
+  <set xpath="//item/effect_group/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='1']/@value">10</set>  
+  <set xpath="//item/effect_group/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='10']/@progression_name">skillMedical</set>
 
   <set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='UnlockedBy']/@value">skillChemistry</set>
   <append xpath="/items/item[@name='medicalFirstAidBandage']"><property name="ItemWeight" value="0.0001"/></append>
@@ -2104,6 +2140,10 @@
           </triggered_effect>            
       </effect_group>
   </append>
+  
+  <append xpath="/items/item[@name='foodEgg']"><property name="ItemWeight" value="0.15"/></append>
+  <set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">8</set>
+  <set xpath="/items/item[@name='foodEgg']/property[@name='Tags']/@value">food,foodSkill,repairTool</set>
 
   <append xpath="/items/item[@name='drugAtomJunkies']"><property name="ItemWeight" value="0.5"/></append>
   <set xpath="/items/item[@name='drugAtomJunkies']/property[@name='EconomicValue']/@value">100</set>
@@ -2242,10 +2282,7 @@
   <set xpath="/items/item[@name='foodRawMeat']/property[@name='Tags']/@value">food,foodSkill</set>
   <append xpath="/items/item[@name='foodRottingFlesh']"><property name="ItemWeight" value="0.5"/></append>
   <set xpath="/items/item[@name='foodRottingFlesh']/property[@name='EconomicValue']/@value">5</set>
-  <set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Tags']/@value">food,foodSkill</set>
-  <append xpath="/items/item[@name='foodEgg']"><property name="ItemWeight" value="0.15"/></append>
-  <set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">8</set>
-  <set xpath="/items/item[@name='foodEgg']/property[@name='Tags']/@value">food,foodSkill,repairTool</set>
+  <set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Tags']/@value">food,foodSkill</set>  
   <append xpath="/items/item[@name='foodCornMeal']"><property name="UnlockedBy" value="skillCooking"/></append>
   <append xpath="/items/item[@name='foodCornMeal']"><property name="ItemWeight" value="0.4"/></append>
   <set xpath="/items/item[@name='foodCornMeal']/property[@name='EconomicValue']/@value">10</set>
@@ -3330,7 +3367,7 @@
 		
 		<item name="diceD20"> <!-- scrap material -->
 			<property name="HoldType" value="40"/>
-			<property name="Meshfile" value="#@modfolder:Resources/Dice_d20.unity3d?Dice_d20"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Items.unity3d?Dice_d20_item"/>
 			<property name="DropScale" value="6"/>
 			<property name="ItemWeight" value="0.1"/>
 			<property name="CustomIcon" value="Dice_d20"/>
@@ -3354,6 +3391,95 @@
 			<property name="Group" value="Resources"/>
 			<property name="CraftingIngredientTime" value=".2"/>
 		</item>
+
+    <item name="farmingTools">
+      <property name="Tags" value="melee,light,tool,repairTool,repairToolInspect,longshaft,statStrength,miningPerk,perkMotherLode,canHaveCosmetic,repairingTools,improvised">
+      </property>
+      <property name="DisplayType" value="meleeRepairTool" />
+      <property name="HoldType" value="36" />
+      <property name="Meshfile" value="#@modfolder:Resources/Items.unity3d?farm_spade_tool" />
+      <property name="CustomIcon" value="FarmTool"/>
+      <property name="Material" value="Mmetal" />      
+      <property name="ScrapTimeOverride" value="10.0" />
+      <property name="RepairTools" value="resourceRepairKit" />
+      <property name="DegradationBreaksAfter" value="false" />
+      <property name="SoundJammed" value="ItemNeedsRepair" />
+      <property name="SoundDestroy" value="wooddestroy1" />
+      <property name="EconomicValue" value="200">
+      </property>
+      <property name="TraderStageTemplate" value="baseTier1" />
+      <property name="UnlockedBy" value="skillCarpentry">
+      </property>
+      <property name="ShowQuality" value="true" />
+      <property name="Group" value="Tools/Traps" />
+      <property name="RepairExpMultiplier" value="5.5" />
+      <property name="SoundUnholster" value="weapon_unholster" />
+      <property name="SoundHolster" value="weapon_holster" />
+      <property name="SoundPickup" value="hammer_claw_grab" />
+      <property name="SoundPlace" value="hammer_claw_place" />
+      <property class="Action0">
+        <property name="Class" value="DynamicMelee" />
+        <property name="Sphere" value=".1" />
+        <property name="Sound_start" value="hammer_small_swinglight" />
+        <property name="ToolCategory.harvestingTools" value="1" param1="1" />
+        <property name="GrazeStart" value=".12" />
+        <property name="GrazeEnd" value=".3" />
+        <property name="SwingDegrees" value="45" />
+        <property name="SwingAngle" value="135" />
+        <property name="UseGrazingHits" value="true" />
+      </property>
+      <property class="Action1">
+        <property name="Class" value="Repair" />
+        <property name="Delay" value=".64" />
+        <property name="Repair_amount" value="300,450" tag="skillFarming">
+        </property>
+        <property name="Upgrade_hit_offset" value="-2" />
+        <property name="Sound_start" value="repair_block" />
+        <property name="Allowed_upgrade_items" value="foodEgg,foodChickenFeed">
+        </property>
+        <property name="UsePowerAttackAnimation" value="false" />
+      </property>
+      <effect_group name="meleeToolRepairT1FarmingTool">
+        <passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="StaminaLoss" operation="base_set" value="17.1" tags="primary" />
+        <passive_effect name="DegradationMax" operation="base_set" value="300,1000" tier="1,6" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="MaxRange" operation="base_set" value="2.2" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="BlockRange" operation="base_set" value="3" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6" />
+        <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage" />
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue" />
+        <passive_effect name="EntityDamage" operation="base_set" value="12" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="BlockDamage" operation="base_set" value="22" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="statStrength">
+        </passive_effect>
+        <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="statStrength">
+        </passive_effect>
+        <display_value name="dBlockRepairAmount" value="300,450" tag="skillFarming">
+        </display_value>
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood" />
+        <passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="earth" />
+      </effect_group>
+      <property name="ItemWeight" value="1.5">
+      </property>
+      <effect_group name="Strength Mod Bonus">
+        <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" />
+        <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" />
+        <passive_effect name="StaminaLoss" operation="perc_subtract" value="@$playerStrengthStamLoss" />
+        <passive_effect name="AttacksPerMinute" operation="base_add" value="@$playerDexterityMod" />
+      </effect_group>
+    </item>
     
     
 

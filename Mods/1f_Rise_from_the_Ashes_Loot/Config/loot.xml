@@ -384,11 +384,11 @@
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedBlueberry1']/@name">plantedBlueberryT1-1</set>	
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedGoldenrod1']/@name">plantedGoldenrodT1-1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedAloe1']/@name">plantedAloeT1-1</set>	
-    <set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedMushroom1']/@name">plantedMushroomT1-1</set>	
+  <set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedMushroom1']/@name">plantedMushroomT1-1</set>	
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedYucca1']/@name">plantedYuccaT1-1</set>	
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedHop1']/@name">plantedHopT1-1</set>	
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedChrysanthemum1']/@name">plantedChrysanthemumT1-1</set>	
-    <set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedPumpkin1']/@name">plantedPumpkinT1-1</set>	
+  <set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedPumpkin1']/@name">plantedPumpkinT1-1</set>	
 
 	<set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedPotato1']/@name">plantedPotatoT1-1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedCoffee1']/@name">plantedCoffeeT1-1</set>
@@ -412,8 +412,7 @@
 	<set xpath="/lootcontainers/lootgroup[@name='twitch_builder_box1']/item[@name='resourceWood']/@name">resourceWoodT1</set>
 
 	<!-- Update backpacks for the larger player backpack size-->
-  <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,10</set>
-  <set xpath="/lootcontainers/lootcontainer[@id='2']/@size">10,10</set>
+  <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,10</set>  
 
 	<!-- Point to the new progression file -->
 	<append xpath="/lootcontainers">		

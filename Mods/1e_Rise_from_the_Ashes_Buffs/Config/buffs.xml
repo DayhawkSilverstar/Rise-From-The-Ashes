@@ -345,7 +345,55 @@
 	</append>
 	<set xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/requirement[@name='ProgressionLevel' and @progression_name='perkParkour' and @value='3']/@value">25</set>
 	<set xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/requirement[@name='ProgressionLevel' and @progression_name='perkParkour' and @value='25']/@progression_name">skillParkour</set>
-	
+
+  <!-- skillMedical healing -->  
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='LT' and @value='1']/@value">5</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='LT' and @value='5']/@progression_name">skillMedical</set>
+  
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='1']/@value">10</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='10']/@operation">GTE</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='10']/@progression_name">skillMedical</set>
+
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='2']/@value">20</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='20']/@operation">GTE</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='20']/@progression_name">skillMedical</set>
+
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='3']/@value">30</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='30']/@operation">GTE</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='30']/@progression_name">skillMedical</set>
+
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='4']/@value">40</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='40']/@operation">GTE</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='40']/@progression_name">skillMedical</set>
+
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='5']/@value">50</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='Equals' and @value='50']/@operation">GTE</set>
+  <set xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='50']/@progression_name">skillMedical</set>
+
+  <set xpath="/buffs/buff[@name='buffLegSprained']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='1']/@value">10</set>
+  <set xpath="/buffs/buff[@name='buffLegSprained']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='10']/@progression_name">skillMedical</set>
+    
+  <set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='3']/@value">30</set>
+  <set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='30']/@progression_name">skillMedical</set>
+  
+  <set xpath="/buffs/buff[@name='buffLegSplinted']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='3']/@value">30</set>
+  <set xpath="/buffs/buff[@name='buffLegSplinted']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='30']/@progression_name">skillMedical</set>
+  
+  <set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='1']/@value">10</set>
+  <set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='10']/@progression_name">skillMedical</set>
+      
+  <set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='3']/@value">30</set>
+  <set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='30']/@progression_name">skillMedical</set>
+  
+  <set xpath="/buffs/buff[@name='buffArmSplinted']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='3']/@value">30</set>
+  <set xpath="/buffs/buff[@name='buffArmSplinted']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='30']/@progression_name">skillMedical</set>
+
+  <set xpath="/buffs/buff[@name='buffBrokenLimbStatus']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='LTE' and @value='0']/@value">1</set>
+  <set xpath="/buffs/buff[@name='buffBrokenLimbStatus']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='LTE' and @value='1']/@progression_name">skillMedical</set>
+  
+  <set xpath="/buffs/buff[@name='buffBrokenLimbStatus']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='1']/@value">10</set>
+  <set xpath="/buffs/buff[@name='buffBrokenLimbStatus']/effect_group/triggered_effect/requirement[@progression_name='perkPhysician' and @operation='GTE' and @value='10']/@progression_name">skillMedical</set>
+  
 	<append xpath="/buffs">		
 						
 		<!-- Constantly updates skills and levels them to 100 to make sure things unlock as they should -->
@@ -560,7 +608,7 @@
         <effect_group name="ForestGS">
 						<requirement name="InBiome" biome="3"/>
             <requirement name="PlayerLevel" operation="GTE" value="15" />
-						<passive_effect name="GameStage" operation="base_set" value="25"/>
+						<passive_effect name="GameStage" operation="base_set" value="35"/>
         </effect_group>
 
         <effect_group name="BurntGS">          
