@@ -412,9 +412,63 @@
 	<set xpath="/lootcontainers/lootgroup[@name='twitch_builder_box1']/item[@name='resourceWood']/@name">resourceWoodT1</set>
 
 	<!-- Update backpacks for the larger player backpack size-->
-  <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,10</set>  
+  <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,10</set>
 
-	<!-- Point to the new progression file -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupChem01']/item[@name='toolBeaker']">
+		<item name="BakingSoda" count="3,6" loot_prob_template="high"/>
+		<item name="SaltShaker" count="3,6" loot_prob_template="high"/>
+		<item name="SalicylicAcid" count="3,6" loot_prob_template="med"/>		
+		<item name="DistilledAlcohol" count="2,4" loot_prob_template="high"/>
+		<item name="DrainCleaner" count="2,4" loot_prob_template="high"/>
+		<item name="CalciumCarbonate" count="2,4" loot_prob_template="high"/>
+		<item name="BurnCream" count="2,4" loot_prob_template="med"/>
+		<item name="PaintRemover" count="2,4" loot_prob_template="high"/>
+		<item name="GlassCleaner" count="2,4" loot_prob_template="high"/>		
+		<item name="LaundryDetergent" count="2,4" loot_prob_template="med"/>		
+		<item name="D-Icer" count="2,4" loot_prob_template="med"/>
+		<item name="Bleach" count="2,4" loot_prob_template="med"/>		
+		<item name="HydrofluoricAcid" count="1,2" loot_prob_template="low"/>
+		<item name="PotassiumPermanganate" count="1,2" loot_prob_template="veryLow"/>
+	</insertAfter>
+
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupSinks01']/item[@group='groupFoodTrashCommon']">
+		<item name="PaintRemover" count="2,4" loot_prob_template="low"/>
+		<item name="GlassCleaner" count="2,4" loot_prob_template="low"/>
+		<item name="SalicylicAcid" count="3,6" loot_prob_template="med"/>
+	</insertAfter>
+
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupSinks02']/item[@group='groupCraftingCommon']">
+		<item name="PaintRemover" count="2,4" loot_prob_template="med"/>
+		<item name="GlassCleaner" count="2,4" loot_prob_template="med"/>
+		<item name="SalicylicAcid" count="3,6" loot_prob_template="med"/>
+	</insertAfter>
+
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupSinks03']/item[@name='meleeWpnBladeT1HuntingKnife']">
+		<item name="DrainCleaner" count="2,4" loot_prob_template="high"/>
+		<item name="CalciumCarbonate" count="2,4" loot_prob_template="high"/>
+		<item name="PaintRemover" count="2,4" loot_prob_template="high"/>
+		<item name="GlassCleaner" count="2,4" loot_prob_template="high"/>
+		<item name="D-Icer" count="2,4" loot_prob_template="med"/>
+		<item name="Bleach" count="2,4" loot_prob_template="med"/>
+		<item name="SalicylicAcid" count="3,6" loot_prob_template="med"/>
+	</insertAfter>
+
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupUtilityCart']/item[@name='resourceAcid']">
+		<item name="DrainCleaner" count="2,4" loot_prob_template="high"/>
+		<item name="GlassCleaner" count="2,4" loot_prob_template="high"/>
+		<item name="Bleach" count="2,4" loot_prob_template="med"/>		
+		<item name="HydrofluoricAcid" count="2,4" loot_prob_template="low"/>
+		<item name="PotassiumPermanganate" count="2,4" loot_prob_template="veryLow"/>
+	</insertAfter>
+
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupCraftingUncommon']/item[@name='resourceMechanicalPartsT1']">
+		<item name="PaintRemover" count="2,4" loot_prob_template="med"/>
+		<item name="GlassCleaner" count="2,4" loot_prob_template="med"/>
+		<item name="SalicylicAcid" count="3,6" loot_prob_template="med"/>
+	</insertAfter>
+
+
+		<!-- Point to the new progression file -->
 	<append xpath="/lootcontainers">		
 	
 		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
@@ -424,6 +478,28 @@
 		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 		<!-- *** 					Rise From the Ashes					  -->
 		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+		<lootgroup name="groupRandomBoxes">
+			<item group="groupScrapCommon" />
+			<item group="groupCraftingCommon" />
+			<item group="groupBuildingCommon" />
+			<item group="groupDumpsterFood" />
+			<item group="seeds" />
+			<item name="BakingSoda" count="3,6" loot_prob_template="high"/>
+			<item name="SaltShaker" count="3,6" loot_prob_template="high"/>
+			<item name="SalicylicAcid" count="3,6" loot_prob_template="med"/>
+			<item name="DistilledAlcohol" count="2,4" loot_prob_template="high"/>
+			<item name="DrainCleaner" count="2,4" loot_prob_template="high"/>
+			<item name="CalciumCarbonate" count="2,4" loot_prob_template="high"/>
+			<item name="BurnCream" count="2,4" loot_prob_template="med"/>
+			<item name="PaintRemover" count="2,4" loot_prob_template="high"/>
+			<item name="GlassCleaner" count="2,4" loot_prob_template="high"/>
+			<item name="LaundryDetergent" count="2,4" loot_prob_template="med"/>
+			<item name="D-Icer" count="2,4" loot_prob_template="med"/>
+			<item name="Bleach" count="2,4" loot_prob_template="med"/>
+			<item name="HydrofluoricAcid" count="1,2" loot_prob_template="low"/>
+			<item name="PotassiumPermanganate" count="1,2" loot_prob_template="veryLow"/>
+		</lootgroup>
 
 		<!-- ScrapTruck -->
 		<lootcontainer name="ScrapTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
@@ -467,6 +543,10 @@
 		<!-- *** Player Footlocker -->
 		<lootcontainer name="playerStorageExtraLarge" count="0" size="8,6" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
 			<item name="cobweb"/>
-		</lootcontainer>	   
+		</lootcontainer>
+
+		<lootcontainer name="palletBrownBoxesBase" size="8,8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" loot_quality_template="qualPlus1Template" destroy_on_close="empty" ignore_loot_abundance="true">
+			<item group="groupRandomBoxes"/>
+		</lootcontainer>
 	</append>
 </configs>

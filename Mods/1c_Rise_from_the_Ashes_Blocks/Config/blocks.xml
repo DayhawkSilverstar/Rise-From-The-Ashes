@@ -43,14 +43,15 @@
       <property name="AllowPickup" value="1"/>          
       <property name="CanPickUp" value="true"/>      
       <property name="TakeDelay" value="5"/>      
-    </append>   
+    </append>
 
     <append xpath="/blocks/block[@name='palletBrownBoxesBase']">
-      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="Class" value="RiseBlockLoot, Rise_From_The_Ashes"/>
       <property name="CanPickUp" value="true" />
       <property name="AllowPickup" value="1"/>          
       <property name="CanPickUp" value="true"/>      
-      <property name="TakeDelay" value="5"/>      
+      <property name="TakeDelay" value="5"/>
+	  <property name="LootList" value="palletBrownBoxesBase" />
     </append>
 
     <set xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">50</set>
@@ -3539,11 +3540,13 @@
   <set xpath="/blocks/block[@name='cntToolBoxOpenWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntShoppingCartEmptyWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntShoppingCartTippedWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
-
   
   <set xpath="/blocks/block[@name='cntWallSafe']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceForgedIron</set>
 
+	<!-- Update loot containers -->	
 
+	
+	
   <append xpath="/blocks" >			
 		<block name="GoldIngotStack">
 			<property name="Shape" value="ModelEntity" />
