@@ -5,8 +5,16 @@
 	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceElectricParts']" />
 	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceMechanicalParts']" />
 	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceLeather']" />
+  
+  <!-- Remove books -->
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='perkBooks']"/>
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='commonBooks']/item[@group='perkBooks']" />
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='books']/item[@group='perkBooks']" />
+  <remove xpath="//trader_items/item[@group='perkBooks']" />
+  
 
   <set xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsGunParts']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
+  <set xpath="/traders/trader_item_groups/trader_item_group[@name='traderRobotics']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
 	
 	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='medicine']">
 		<trader_item_group name="seeds">

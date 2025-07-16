@@ -351,8 +351,7 @@
   <set xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper2']/ingredient[@name='resourceWood']/@name">resourceWoodT4</set>
   <setattribute  xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper2']" name="tags">workbenchCrafting,learnable,skillCarpentry</setattribute>
   <setattribute  xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper2']" name="craft_area">workbench</setattribute>
-
-  <setattribute  xpath="/recipes/recipe[@name='bed02']" name="tags">workbenchCrafting,learnable,skillCarpentry</setattribute>
+  
   <setattribute  xpath="/recipes/recipe[@name='cellarDoorDoubleWood']" name="tags">workbenchCrafting,learnable,skillCarpentry</setattribute>
   <setattribute  xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']" name="tags">workbenchCrafting,learnable,skillCarpentry</setattribute>
 
@@ -750,6 +749,7 @@
   <!-- Tailoring -->
   <set xpath="/recipes/recipe[@name='resourceDuctTape']/ingredient[@name='resourceCloth']/@name">resourceClothT1</set>
   
+  
   <!-- Add tags to the recipe-->
   <setattribute  xpath="/recipes/recipe[@name='flagThick44BlockVariantHelper']" name="tags">learnable,skillTailoring</setattribute>
   <setattribute  xpath="/recipes/recipe[@name='flagThick44BlockVariantHelper']" name="craft_area">TailorWorkstation</setattribute>
@@ -759,14 +759,8 @@
   <setattribute  xpath="/recipes/recipe[@name='medicalBandage']" name="tags">learnable,skillTailoring</setattribute>
   <setattribute  xpath="/recipes/recipe[@name='medicalBandage']" name="craft_area">TailorWorkstation</setattribute>
 
-  <set xpath="/recipes/recipe[@name='modArmorInsulatedLiner']/ingredient[@name='resourceCloth']/@name">resourceClothT2</set>
-  <append xpath="/recipes/recipe[@name='modArmorInsulatedLiner']/@tags">,learnable,skillTailoring</append>
-  <setattribute  xpath="/recipes/recipe[@name='modArmorInsulatedLiner']" name="craft_area">TailorWorkstation</setattribute>
-
-  <set xpath="/recipes/recipe[@name='modArmorCoolingMesh']/ingredient[@name='resourceScrapPolymers']/@name">resourceClothT2</set>
-  <append xpath="/recipes/recipe[@name='modArmorCoolingMesh']/@tags">,learnable,skillTailoring</append>
-
-  <setattribute  xpath="/recipes/recipe[@name='modArmorCoolingMesh']" name="craft_area">TailorWorkstation</setattribute>
+  <set xpath="/recipes/recipe[@name='bed02BlockVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT2</set>
+  <set xpath="/recipes/recipe[@name='bed02BlockVariantHelper']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
   
   <set xpath="/recipes/recipe[@name='modArmorImprovedFittings']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT3</set>
   <set xpath="/recipes/recipe[@name='modArmorImprovedFittings']/ingredient[@name='resourceLeather']/@name">LeatherSheetT3</set>
@@ -822,8 +816,7 @@
   <set xpath="/recipes/recipe[@name='armorPrimitiveHelmet']/ingredient[@name='resourceWood']/@name">resourceTwig</set>
   <set xpath="/recipes/recipe[@name='armorPrimitiveGloves']/ingredient[@name='resourceWood']/@name">resourceTwig</set>
   <set xpath="/recipes/recipe[@name='armorPrimitiveBoots']/ingredient[@name='resourceWood']/@name">resourceTwig</set>
-  <set xpath="/recipes/recipe[@name='barbedFence']/ingredient[@name='resourceWood']/@name">resourceWoodT1</set>
-  <set xpath="/recipes/recipe[@name='bed02']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
+  <set xpath="/recipes/recipe[@name='barbedFence']/ingredient[@name='resourceWood']/@name">resourceWoodT1</set>  
   <set xpath="/recipes/recipe[@name='burningBarrelPlayer']/ingredient[@name='resourceWood']/@name">resourceWoodT1</set>
   <set xpath="/recipes/recipe[@name='cellarDoorDoubleWood']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
   <set xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
@@ -963,8 +956,7 @@
 
 
   <!-- Update resourceMechanicalParts -->
-  <!-- Tier 1 (T1: Levels 5-10) -->
-  <set xpath="/recipes/recipe[@name='modArmorCoolingMesh']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
+  <!-- Tier 1 (T1: Levels 5-10) -->  
   <set xpath="/recipes/recipe[@name='switch']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
   <set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
   <set xpath="/recipes/recipe[@name='officeChair01VariantHelper']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
@@ -2053,8 +2045,7 @@
   <set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
   <set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
   <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
-
-  <set xpath="/recipes/recipe[@name='bed02']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
+  
   <set xpath="/recipes/recipe[@name='lanternOldBlockVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
   <set xpath="/recipes/recipe[@name='flagThick44BlockVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT3</set>
 

@@ -29,6 +29,7 @@
 					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar=".healingMultiplier" operation="set" value="1.05"/>
 					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="MaxEncumbranceBase" operation="set" value="2000"/>				
 					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1"/>
+          <triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$blockDamageDone" operation="set" value="1"/>
 				</effect_group>
 
 				<effect_group name="PerkValueCVars">								
@@ -3274,7 +3275,7 @@
         </display_entry>
 
 				<display_entry icon="TailoringResearchBundle2" name_key="tailoringT2-1" has_quality="false" unlock_level="15,20" >					
-					<unlock_entry item="TailoringResearchBundle2,resourceClothT2,modArmorCoolingMesh,modArmorInsulatedLiner,resourceSewingKit" unlock_tier="1" />
+					<unlock_entry item="TailoringResearchBundle2,resourceClothT2,resourceSewingKit" unlock_tier="1" />
 					<unlock_entry item="modArmorStoragePocket" unlock_tier="2" />					
 				</display_entry>
 
@@ -3313,7 +3314,7 @@
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="armorRogueHelmet,armorRogueOutfit,armorRogueGloves,armorRogueBoots"/>
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="armorAthleticHelmet,armorAthleticOutfit,armorAthleticGloves,armorAthleticBoots"/>
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="armorEnforcerHelmet,armorEnforcerOutfit,armorEnforcerGloves,armorEnforcerBoots"/>
-          <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="TailoringResearchBundle2,resourceClothT2,modArmorCoolingMesh,modArmorInsulatedLiner,modClothingStoragePocket,modArmorImprovedFittings,resourceSewingKit"/>
+          <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="TailoringResearchBundle2,resourceClothT2,modClothingStoragePocket,modArmorImprovedFittings,resourceSewingKit"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="modArmorStoragePocket"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="TailoringResearchBundle3,resourceClothT3,flagThick44BlockVariantHelper"/>				
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="modArmorDoubleStoragePocket"/>          

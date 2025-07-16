@@ -1,5 +1,5 @@
 <configs>
-	<!-- Point to the new progression file -->
+	<!-- Point to the new progression file -->  
 
 	<set xpath="//item/effect_group/passive_effect[@tags='perkMiner69r']/@tags">statStrength</set>
 	<set xpath="//item/effect_group/passive_effect[@tags='perkMiner69r,axe']/@tags">statStrength</set>
@@ -33,10 +33,163 @@
     <remove xpath="/items/item[@name='vehiclesSkillMagazine']/effect_group[@tiered='false']"/>
     <remove xpath="/items/item[@name='resourceWoodBundle']"/>
     <remove xpath="/items/item[@name='resourceWood']"/>
+		<remove xpath="/items/item[@name='resourceCloth']"/>
 		<remove xpath="/items/item[@name='gunBotRoboticsParts']"/>
-  
 
-  <!-- Stack Sizes 
+		<!-- Remove the books -->
+		<remove xpath="/items/item[@name='bookFiremansAlmanacHeat']"/>
+    <remove xpath="/items/item[@name='bookFiremansAlmanacAxes']"/>
+    <remove xpath="/items/item[@name='bookFiremansAlmanacSpeed']"/>
+    <remove xpath="/items/item[@name='bookFiremansAlmanacMolotov']"/>
+    <remove xpath="/items/item[@name='bookFiremansAlmanacPrevention']"/>
+    <remove xpath="/items/item[@name='bookFiremansAlmanacHarvest']"/>
+    <remove xpath="/items/item[@name='bookFiremansAlmanacEquipment']"/>
+
+    <remove xpath="/items/item[@name='bookNightStalkerStealthDamage']"/>
+    <remove xpath="/items/item[@name='bookNightStalkerSilentNight']"/>
+    <remove xpath="/items/item[@name='bookNightStalkerBlades']"/>
+    <remove xpath="/items/item[@name='bookNightStalkerThiefAdrenaline']"/>
+    <remove xpath="/items/item[@name='bookNightStalkerArchery']"/>
+    <remove xpath="/items/item[@name='bookNightStalkerTwilightThief']"/>
+    <remove xpath="/items/item[@name='bookNightStalkerSlumberParty']"/>
+
+    <remove xpath="/items/item[@name='bookLuckyLooterDukes']"/>
+    <remove xpath="/items/item[@name='bookLuckyLooterAmmunition']"/>
+    <remove xpath="/items/item[@name='bookLuckyLooterBrass']"/>
+    <remove xpath="/items/item[@name='bookLuckyLooterLead']"/>
+    <remove xpath="/items/item[@name='bookLuckyLooterBooks']"/>
+    <remove xpath="/items/item[@name='bookLuckyLooterFood']"/>
+    <remove xpath="/items/item[@name='bookLuckyLooterMedical']"/>
+
+    <remove xpath="/items/item[@name='bookEnforcerDamage']"/>
+    <remove xpath="/items/item[@name='bookEnforcerApparel']"/>
+    <remove xpath="/items/item[@name='bookEnforcerPunks']"/>
+    <remove xpath="/items/item[@name='bookEnforcerIntimidation']"/>
+    <remove xpath="/items/item[@name='bookEnforcerAPAmmo']"/>
+    <remove xpath="/items/item[@name='bookEnforcerHPAmmo']"/>
+    <remove xpath="/items/item[@name='bookEnforcerCriminalPursuit']"/>
+
+		<remove xpath="/items/item[@name='bookBatterUpBigHits']"/>
+		<remove xpath="/items/item[@name='bookBatterUpStealingBases']"/>
+		<remove xpath="/items/item[@name='bookBatterUpSlowPitch']"/>
+		<remove xpath="/items/item[@name='bookBatterUpKnockdown']"/>
+		<remove xpath="/items/item[@name='bookBatterUpMaintenance']"/>
+		<remove xpath="/items/item[@name='bookBatterUpFoulBalls']"/>
+		<remove xpath="/items/item[@name='bookBatterUpMetalChain']"/>
+
+    <remove xpath="/items/item[@name='bookSledgeSagaKnockdown']"/>
+    <remove xpath="/items/item[@name='bookSledgeSagaDegradation']"/>
+    <remove xpath="/items/item[@name='bookSledgeSagaCrippledMorale']"/>
+    <remove xpath="/items/item[@name='bookSledgeSagaPulverizingFinishers']"/>
+    <remove xpath="/items/item[@name='bookSledgeSagaSavageReaper']"/>
+    <remove xpath="/items/item[@name='bookSledgeSagaConcussiveStrike']"/>
+    <remove xpath="/items/item[@name='bookSledgeSagaArmorCrusher']"/>
+
+    <remove xpath="/items/item[@name='bookGreatHeistSafes']"/>
+    <remove xpath="/items/item[@name='bookGreatHeistGems']"/>
+    <remove xpath="/items/item[@name='bookGreatHeistGoldRush']"/>
+    <remove xpath="/items/item[@name='bookGreatHeistClaimed']"/>
+    <remove xpath="/items/item[@name='bookGreatHeistAdrenalineFall']"/>
+    <remove xpath="/items/item[@name='bookGreatHeistSprintSneak']"/>
+    <remove xpath="/items/item[@name='bookGreatHeistMotionDetection']"/>
+
+    <remove xpath="/items/item[@name='bookWasteTreasuresHoney']"/>
+    <remove xpath="/items/item[@name='bookWasteTreasuresCoffins']"/>
+    <remove xpath="/items/item[@name='bookWasteTreasuresAcid']"/>
+    <remove xpath="/items/item[@name='bookWasteTreasuresWater']"/>
+    <remove xpath="/items/item[@name='bookWasteTreasuresDoors']"/>
+    <remove xpath="/items/item[@name='bookWasteTreasuresCloth']"/>
+    <remove xpath="/items/item[@name='bookWasteTreasuresSinks']"/>
+
+    <remove xpath="/items/item[@name='bookHuntingJournalBears']"/>
+    <remove xpath="/items/item[@name='bookHuntingJournalWolves']"/>
+    <remove xpath="/items/item[@name='bookHuntingJournalCoyotes']"/>
+    <remove xpath="/items/item[@name='bookHuntingJournalMountainLions']"/>
+    <remove xpath="/items/item[@name='bookHuntingJournalDeer']"/>
+    <remove xpath="/items/item[@name='bookHuntingJournalVultures']"/>
+    <remove xpath="/items/item[@name='bookHuntingJournalSelfDefense']"/>
+
+    <remove xpath="/items/item[@name='bookArtOfMiningLuckyStrike']"/>
+    <remove xpath="/items/item[@name='bookArtOfMiningDiamondTools']"/>
+    <remove xpath="/items/item[@name='bookArtOfMiningCoffee']"/>
+    <remove xpath="/items/item[@name='bookArtOfMiningBlackStrap']"/>
+    <remove xpath="/items/item[@name='bookArtOfMiningPallets']"/>
+    <remove xpath="/items/item[@name='bookArtOfMiningAvalanche']"/>
+    <remove xpath="/items/item[@name='bookArtOfMiningDamage']"/>
+
+    <remove xpath="/items/item[@name='bookRangersArrowRecovery']"/>
+    <remove xpath="/items/item[@name='bookRangersExplodingBolts']"/>
+    <remove xpath="/items/item[@name='bookRangersCripplingShot']"/>
+    <remove xpath="/items/item[@name='bookRangersAPAmmo']"/>
+    <remove xpath="/items/item[@name='bookRangersFlamingArrows']"/>
+    <remove xpath="/items/item[@name='bookRangersForestGuide']"/>
+    <remove xpath="/items/item[@name='bookRangersKnockdown']"/>
+
+    <remove xpath="/items/item[@name='bookPistolPeteTakeAim']"/>
+    <remove xpath="/items/item[@name='bookPistolPeteSwissKnees']"/>
+    <remove xpath="/items/item[@name='bookPistolPeteSteadyHand']"/>
+    <remove xpath="/items/item[@name='bookPistolPeteMaintenance']"/>
+    <remove xpath="/items/item[@name='bookPistolPeteHPAmmo']"/>
+    <remove xpath="/items/item[@name='bookPistolPeteAPAmmo']"/>
+    <remove xpath="/items/item[@name='bookPistolPeteDamage']"/>
+
+    <remove xpath="/items/item[@name='bookShotgunMessiahDamage']"/>
+    <remove xpath="/items/item[@name='bookShotgunMessiahBreachingSlugs']"/>
+    <remove xpath="/items/item[@name='bookShotgunMessiahLimbShot']"/>
+    <remove xpath="/items/item[@name='bookShotgunMessiahSlugs']"/>
+    <remove xpath="/items/item[@name='bookShotgunMessiahMaintenance']"/>
+    <remove xpath="/items/item[@name='bookShotgunMessiahMagazine']"/>
+    <remove xpath="/items/item[@name='bookShotgunMessiahPartyStarter']"/>
+
+		<remove xpath="/items/item[@name='bookSniperDamage']"/>
+		<remove xpath="/items/item[@name='bookSniperCripplingShot']"/>
+		<remove xpath="/items/item[@name='bookSniperHeadShot']"/>
+		<remove xpath="/items/item[@name='bookSniperReload']"/>
+		<remove xpath="/items/item[@name='bookSniperControlledBreathing']"/>
+		<remove xpath="/items/item[@name='bookSniperAPAmmo']"/>
+		<remove xpath="/items/item[@name='bookSniperHPAmmo']"/>
+
+		<remove xpath="/items/item[@name='bookAutoWeaponsDamage']"/>
+		<remove xpath="/items/item[@name='bookAutoWeaponsUncontrolledBurst']"/>
+		<remove xpath="/items/item[@name='bookAutoWeaponsMaintenance']"/>
+		<remove xpath="/items/item[@name='bookAutoWeaponsDrumMag']"/>
+		<remove xpath="/items/item[@name='bookAutoWeaponsRecoil']"/>
+		<remove xpath="/items/item[@name='bookAutoWeaponsRagdoll']"/>
+		<remove xpath="/items/item[@name='bookAutoWeaponsMachineGuns']"/>
+
+		<remove xpath="/items/item[@name='bookUrbanCombatLanding']"/>
+		<remove xpath="/items/item[@name='bookUrbanCombatCigar']"/>
+		<remove xpath="/items/item[@name='bookUrbanCombatSneaking']"/>
+		<remove xpath="/items/item[@name='bookUrbanCombatJumping']"/>
+		<remove xpath="/items/item[@name='bookUrbanCombatLandMines']"/>
+		<remove xpath="/items/item[@name='bookUrbanCombatAdrenalineRush']"/>
+		<remove xpath="/items/item[@name='bookUrbanCombatRoomClearing']"/>
+
+		<remove xpath="/items/item[@name='bookTechJunkie1Damage']"/>
+		<remove xpath="/items/item[@name='bookTechJunkie2Maintenance']"/>
+		<remove xpath="/items/item[@name='bookTechJunkie3APAmmo']"/>
+		<remove xpath="/items/item[@name='bookTechJunkie4Shells']"/>
+		<remove xpath="/items/item[@name='bookTechJunkie5Repulsor']"/>
+		<remove xpath="/items/item[@name='bookTechJunkie6BatonCharge']"/>
+		<remove xpath="/items/item[@name='bookTechJunkie7Hydraulics']"/>
+
+		<remove xpath="/items/item[@name='bookBarBrawling1BasicMoves']"/>
+		<remove xpath="/items/item[@name='bookBarBrawling2DropABomb']"/>
+		<remove xpath="/items/item[@name='bookBarBrawling3KillerInstinct']"/>
+		<remove xpath="/items/item[@name='bookBarBrawling4FinishingMoves']"/>
+		<remove xpath="/items/item[@name='bookBarBrawling5AdrenalineHealing']"/>
+		<remove xpath="/items/item[@name='bookBarBrawling6RageMode']"/>
+		<remove xpath="/items/item[@name='bookBarBrawling7BoozedUp']"/>
+
+		<remove xpath="/items/item[@name='bookSpearHunter1Damage']"/>
+		<remove xpath="/items/item[@name='bookSpearHunter2Maintenance']"/>
+		<remove xpath="/items/item[@name='bookSpearHunter3Bleed']"/>
+		<remove xpath="/items/item[@name='bookSpearHunter4KillMove']"/>
+		<remove xpath="/items/item[@name='bookSpearHunter5RapidStrike']"/>
+		<remove xpath="/items/item[@name='bookSpearHunter6PenetratingShaft']"/>
+		<remove xpath="/items/item[@name='bookSpearHunter7QuickStrike']"/>
+      
+      <!-- Stack Sizes 
 		Tiny = 10000
 		Small = 6000
 		Med = 1000
@@ -61,8 +214,7 @@
 	<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">10000</set>
 	<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">1000</set>	
 	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='ammoBundleMaster']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
@@ -71,7 +223,10 @@
 	<set xpath="/items/item[@name='ammoBundle44MagnumBulletBall']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='ammoBundle44MagnumBulletHP']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='ammoBundle44MagnumBulletAP']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Stacknumber']/@value">100</set>
+	
+  <set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Stacknumber']/@value">100</set>
+  <set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='UnlockedBy']/@value">skillCivilEngineer</set>
+  
 	<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Stacknumber']/@value">1000</set>
@@ -175,8 +330,7 @@
 	<set xpath="/items/item[@name='resourceClayLump']/property[@name='Stacknumber']/@value">6000</set>
 	<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">6000</set>
 	<set xpath="/items/item[@name='resourceCement']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">1000</set>	
 	<set xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']/@value">6000</set>
 	<set xpath="/items/item[@name='resourceElectricParts']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='resourceHeadlight']/property[@name='Stacknumber']/@value">1000</set>
@@ -227,8 +381,7 @@
 	<set xpath="/items/item[@name='unit_iron']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='questItem']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='resourceLockPick']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="/items/item[@name='resourceLockPickBundle']/property[@name='Stacknumber']/@value">100</set>
-	<set xpath="/items/item[@name='bookFiremansAlmanacHeat']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='resourceLockPickBundle']/property[@name='Stacknumber']/@value">100</set>	
 	<set xpath="/items/item[@name='masterSkillMagazine']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='questRewardBundleMaster']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='twitchTurd']/property[@name='Stacknumber']/@value">1000</set>
@@ -1020,6 +1173,7 @@
     <append xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']"><property name="UnlockedBy" value="skillLeatherworking"/></append>
     <append xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='EconomicValue']/@value">45</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='RepairTools']/@value">LeatherSheetT1</set>
     <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill</set>
     <append xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']">
         <effect_group name="Dexterity Mod Bonus">									
@@ -1630,12 +1784,14 @@
     <set xpath="//item[@name='ammoArrowFlaming']/effect_group/passive_effect[@tags='perkArchery']/@tags">rangedBows</set>
     <append xpath="/items/item[@name='ammoArrowFlaming']"><property name="ItemWeight" value="0.2"/></append>
     <set xpath="/items/item[@name='ammoArrowFlaming']/property[@name='EconomicValue']/@value">44</set>
+		<set xpath="/items/item[@name='ammoArrowFlaming']/property[@name='UnlockedBy']/@value">skillChemistry</set>
 
     <!-- EXPLODING ARROWS -->
     <set xpath="//item[@name='ammoArrowExploding']/effect_group/passive_effect[@tags='perkArchery']/@tags">rangedBows</set>
     <set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Tags']/@value">ammo,ranged,attAgility,rangedBows,perkPenetrator,skillDemolitions</set>
     <append xpath="/items/item[@name='ammoArrowExploding']"><property name="ItemWeight" value="0.25"/></append>
     <set xpath="/items/item[@name='ammoArrowExploding']/property[@name='EconomicValue']/@value">65</set>
+		<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='UnlockedBy']/@value">skillChemistry</set>
 
     <!-- STONE CROSSBOW BOLTS -->
     <set xpath="//item[@name='ammoCrossbowBoltStone']/effect_group/passive_effect[@tags='perkArchery']/@tags">rangedBows</set>
@@ -1644,26 +1800,30 @@
     <set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='EconomicValue']/@value">12</set>
 
     <!-- IRON CROSSBOW BOLTS -->
+		<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">1000</set>
     <set xpath="//item[@name='ammoCrossbowBoltIron']/effect_group/passive_effect[@tags='perkArchery']/@tags">rangedBows</set>
     <append xpath="/items/item[@name='ammoCrossbowBoltIron']"><property name="ItemWeight" value="0.04"/></append>
     <set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='EconomicValue']/@value">25</set>
-    <set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Tags']/@value">ammo,ranged,attAgility,rangedBows,perkPenetrator</set>
+    <set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Tags']/@value">ammo,ranged,attAgility,rangedBows,perkPenetrator</set>		
 
     <!-- STEEL CROSSBOW BOLTS -->
     <set xpath="//item[@name='ammoCrossbowBoltSteelAP']/effect_group/passive_effect[@tags='perkArchery']/@tags">rangedBows</set>
     <append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']"><property name="ItemWeight" value="0.04"/></append>
     <set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/property[@name='EconomicValue']/@value">57</set>
+		<set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
 
-    <!-- FLAMING CROSSBOW BOLTS -->
+  <!-- FLAMING CROSSBOW BOLTS -->
     <set xpath="//item[@name='ammoCrossbowBoltFlaming']/effect_group/passive_effect[@tags='perkArchery']/@tags">rangedBows</set>
     <append xpath="/items/item[@name='ammoCrossbowBoltFlaming']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/property[@name='EconomicValue']/@value">44</set>
+		<set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/property[@name='UnlockedBy']/@value">skillChemistry</set>
 
     <!-- EXPLODING CROSSBOW BOLTS -->
     <set xpath="//item[@name='ammoCrossbowBoltExploding']/effect_group/passive_effect[@tags='perkArchery']/@tags">rangedBows</set>
     <append xpath="/items/item[@name='ammoCrossbowBoltExploding']"><property name="ItemWeight" value="0.75"/></append>
     <set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='EconomicValue']/@value">80</set>
     <set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Tags']/@value">ammo,ranged,attAgility,rangedBows</set>
+		<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='UnlockedBy']/@value">skillChemistry</set>  
 
     <!-- Blacksmithing -->
     <append xpath="/items/item[@name='resourceForgedIron']">   
@@ -2345,6 +2505,10 @@
   <set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/property[@name='EconomicValue']/@value">200</set>
   <set xpath="/items/item[@name='drinkJarBeer']/property[@name='UnlockedBy']/@value">skillChemistry</set>
   <append xpath="/items/item[@name='drinkJarBeer']"><property name="ItemWeight" value="0.75"/></append>
+  <append xpath="/items/item[@name='drinkJarBeer']/effect_group[@name='Drink Tier 3']">
+    <display_value name="dWater" value="5"/>
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
+  </append>  
   <set xpath="/items/item[@name='drinkJarBeer']/property[@name='EconomicValue']/@value">100</set>
   <set xpath="/items/item[@name='drinkJarBeer']/property[@name='Tags']/@value">drinks,foodSkill</set>
   <set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@name='UnlockedBy']/@value">skillChemistry</set>
@@ -2391,10 +2555,7 @@
   <append xpath="/items/item[@name='modGunBowPolymerStringSchematic']"><property name="ItemWeight" value="0.04"/></append>
   <append xpath="/items/item[@name='modGunBowArrowRestSchematic']"><property name="ItemWeight" value="0.04"/></append>
   <append xpath="/items/item[@name='modGunMeleeTheHunterSchematic']"><property name="ItemWeight" value="0.04"/></append>
-  <append xpath="/items/item[@name='modGunMeleeRadRemoverSchematic']"><property name="ItemWeight" value="0.04"/></append>
-    
-  <append xpath="/items/item[@name='modArmorInsulatedLinerSchematic']"><property name="ItemWeight" value="0.04"/></append>
-  <append xpath="/items/item[@name='modArmorCoolingMeshSchematic']"><property name="ItemWeight" value="0.04"/></append>
+  <append xpath="/items/item[@name='modGunMeleeRadRemoverSchematic']"><property name="ItemWeight" value="0.04"/></append>  
   <append xpath="/items/item[@name='modArmorImprovedFittingsSchematic']"><property name="ItemWeight" value="0.04"/></append>
   <append xpath="/items/item[@name='modArmorCustomizedFittingsSchematic']"><property name="ItemWeight" value="0.04"/></append>
   <append xpath="/items/item[@name='modArmorPlatingBasicSchematic']"><property name="ItemWeight" value="0.04"/></append>
@@ -2803,7 +2964,8 @@
   <append xpath="/items/item[@name='unit_stone']"><property name="ItemWeight" value="1"/></append>
   <append xpath="/items/item[@name='unit_clay']"><property name="ItemWeight" value="1"/></append>
   <append xpath="/items/item[@name='questItem']"><property name="ItemWeight" value="1"/></append>
-    
+
+  <set xpath="/items/item[@name='resourceGunPowderBundle']/property[@name='UnlockedBy']/@value">skillChemistry</set>
     
   <set xpath="/items/item[@name='resourceLockPick']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>
   <append xpath="/items/item[@name='resourceLockPick']"><property name="ItemWeight" value="0.011"/></append>
@@ -2937,7 +3099,11 @@
   <set xpath="/items/item[@name='adminSkillMagazine']/property[@name='Tags']/@value">admin</set>
   <set xpath="/items/item[@name='adminModSchematic']/property[@name='Tags']/@value">admin</set>
   <set xpath="/items/item[@name='TEST_ITEM_02']/property[@name='Tags']/@value">ammo</set>
-  <set xpath="/items/item[@name='TEST_ITEM_03']/property[@name='Tags']/@value">ammo</set>	
+  <set xpath="/items/item[@name='TEST_ITEM_03']/property[@name='Tags']/@value">ammo</set>
+
+  <set xpath="/items/item[@name='toolDewGatherer']/property[@name='UnlockedBy']/@value">skillTailoring</set>
+  <set xpath="/items/item[@name='toolDewTarp']/property[@name='UnlockedBy']/@value">skillTailoring</set>
+  <set xpath="/items/item[@name='toolDewFilter']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>  
 
 	<append xpath="/items">
 		<!-- Stack Sizes 
@@ -2975,25 +3141,6 @@
 			</property>
 		</item>
 
-		<item name="resourceTemplateBundle">
-			<property name="CustomIcon" value="resourceRockSmall"/><property name="ItemTypeIcon" value="treasure"/>
-			<property name="HoldType" value="45"/>			
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="UnlockedBy" value="perkArtOfMiningPallets"/> <!-- BOOK_PERK -->
-			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="100"/> <!-- Huge -->
-			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Resources"/>
-			<property class="Action0">
-				<property name="Class" value="OpenBundle"/>
-				<property name="Delay" value="0"/>
-				<property name="Sound_start" value="close_garbage"/>
-				<property name="Create_item" value="resourceRockSmall"/>
-				<property name="Create_item_count" value="6000"/>
-			</property>
-		</item>
-
 		<item name="researchMaster">
 			<property name="Extends" value="schematicRiseMaster"/>
 			<property name="ItemWeight" value="0.5"/>
@@ -3012,43 +3159,82 @@
 			</effect_group>
 		</item>
 
-		<item name="foodRiseMaster">			
-			<property name="Tags" value="food"/>
-			<property name="HoldType" value="31"/>
-			<property name="ItemWeight" value="0.0625"/>
-			<property name="DisplayType" value="foodRaw"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>			
-			<property name="Material" value="Morganic"/>
-			<property name="EconomicValue" value="2"/>			
-			<property name="Stacknumber" value="6000"/> <!-- Small -->
-			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-			<property class="Action0">
-				<property name="Class" value="Eat"/>
-				<property name="Delay" value="1.0"/>
-				<property name="Sound_start" value="player_eating"/>				
-			</property>		
-		</item>		
+    <item name="foodRiseMaster">
+      <property name="Tags"              value="food,foodSkill,farmerFoodBonus"/>
+      <property name="DisplayType"       value="food"/>
+      <!-- show the green food bar -->
+      <property name="CustomIcon"        value="foodPlaceholder"/>
+      <!-- child items usually override -->
+      <property name="HoldType"          value="31"/>
+      <property name="Meshfile"          value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+      <property name="DropMeshfile"      value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+
+      <property name="Material"          value="Morganic"/>
+      <property name="ItemWeight"        value="0.0625"/>
+      <!-- 1 / 16th lb each -->
+      <property name="Stacknumber"       value="6000"/>
+      <!-- ultralight bulk ingredients -->
+      <property name="EconomicValue"     value="2"/>
+
+      <property name="SellableToTrader"  value="false"/>
+      <!-- change per item if needed -->
+      <property name="Group"             value="Food/Cooking,CFFood/Cooking"/>
+
+      <property class="Action0">
+        <property name="Class"        value="Eat"/>
+        <property name="Delay"        value="0.8"/>
+        <!-- a bit snappier than 1 s -->
+        <property name="Sound_start"  value="player_eating"/>
+      </property>
+
+      <effect_group tiered="false" name="Food Base Template">
+        <!-- Example placeholders so tooltips don’t look empty if child forgets to add values -->
+        <display_value name="foodAmountAdd"     value="0"/>
+        <display_value name="dStress"           value="0"/>
+        <display_value name="dDysenteryRisk"    value="0"/>
+      </effect_group>
+    </item>
 
 		<!-- *** FOOD -->
 
-		<item name="foodGrub">
-			<property name="Extends" value="foodRiseMaster"/>
-			<property name="CustomIcon" value="grub"/> 						
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="2"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="10"/>
-				<display_value name="dDysenteryRisk" value=".10"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
-					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
+    <!-- =====  GRUB  ===== -->
+    <item name="foodGrub">
+      <property name="Extends"      value="foodRiseMaster"/>
+      <property name="DisplayType"  value="foodRaw"/>
+      <!-- still raw & wriggly -->
+      <property name="CustomIcon"   value="grub"/>
 
-		<item name="foodChickenFeed">
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="1"/>
+
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
+
+        <!-- Dysentery risk (10 %, mitigated by Metabolism) -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar=".DiseaseRoll"
+                          operation="set" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar=".DiseaseRoll"
+                          operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffDysenteryCatchDrink">
+          <requirement name="RandomRoll" seed_type="Random"
+                       min_max="1,100" operation="LTE"
+                       value="@.DiseaseRoll"/>
+        </triggered_effect>
+
+        <!-- Tooltip values -->
+        <display_value name="foodAmountAdd"   value="1"/>
+        <display_value name="dDysenteryRisk"  value=".10"/>
+      </effect_group>
+    </item>
+
+    <item name="foodChickenFeed">
       <property name="Tags" value="junk"/>
       <property name="DescriptionKey" value="chickenFeedDesc" />
       <property name="HoldType" value="31" />
@@ -3072,97 +3258,188 @@
 			</effect_group>
 		</item>
 
-		<item name="foodCookedGrub">
-			<property name="DisplayType" value="food"/>
-			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>	
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="grub"/>
-			<property name="CustomIconTint" value="91703a"/>						
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+    <!-- =====  COOKED GRUB  ===== -->
+    <item name="foodCookedGrub">
+      <property name="Extends"           value="foodRiseMaster"/>
+      <property name="DisplayType"       value="food"/>
+      <!-- green food bar -->
+      <property name="CustomIcon"        value="grub"/>
+      <property name="CustomIconTint"    value="91703a"/>
+      <!-- browned tint -->
+      <property name="Group"             value="Food/Cooking,CFFood/Cooking"/>
 
-		<item name="foodBread">
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="bread"/>			
-			<property name="UnlockedBy" value="skillCooking"/>
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="2"/>
 
-		<item name="foodFries">
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="fries"/>			
-			<property name="UnlockedBy" value="skillCooking"/>					
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
 
-		<item name="foodPancakes">
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="Pancakes"/>	
-			<property name="UnlockedBy" value="skillCooking"/>							
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+        <!-- Tooltip values -->
+        <display_value name="foodAmountAdd" value="2"/>
+      </effect_group>
+    </item>
 
-		<item name="foodHerbChickenDinner">
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="HerbChickenDinner"/>	
-			<property name="UnlockedBy" value="skillCooking"/>							
-			<effect_group tiered="false" name="Food Tier 6">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+    <!-- =====  BREAD  ===== -->
+    <item name="foodBread">
+      <property name="Extends"      value="foodRiseMaster"/>
+      <property name="CustomIcon"   value="bread"/>
+      <property name="UnlockedBy"   value="skillCooking"/>
 
-		<item name="foodCornOil">
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="cornOil"/>	
-			<property name="UnlockedBy" value="skillCooking"/>							
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="12"/>
 
-		<item name="foodMapleSyrup">
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="MapleSyrup"/>	
-			<property name="UnlockedBy" value="skillCooking"/>							
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
 
-		<item name="foodBoneBroth">
-			<property name="Extends" value="foodRiseMaster"/>	
-			<property name="CustomIcon" value="BoneBroth"/>		
-			<property name="UnlockedBy" value="skillCooking"/>						
-			<effect_group tiered="false" name="Food Tier 0">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
-			</effect_group>
-		</item>
+        <!-- Tooltip -->
+        <display_value name="foodAmountAdd" value="12"/>
+      </effect_group>
+    </item>
 
-		<item name="TestingResourceful">
+    <!-- =====  FRIES  ===== -->
+    <item name="foodFries">
+      <property name="Extends"    value="foodRiseMaster"/>
+      <property name="CustomIcon" value="fries"/>
+      <property name="UnlockedBy" value="skillCooking"/>
+
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="12"/>
+
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
+
+        <!-- Tooltip -->
+        <display_value name="foodAmountAdd" value="12"/>
+      </effect_group>
+    </item>
+
+
+    <!-- =====  PANCAKES  ===== -->
+    <item name="foodPancakes">
+      <property name="Extends"      value="foodRiseMaster"/>
+      <property name="CustomIcon"   value="Pancakes"/>
+      <property name="UnlockedBy"   value="skillCooking"/>
+
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="12"/>
+
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
+
+        <!-- Tooltip -->
+        <display_value name="foodAmountAdd" value="12"/>
+      </effect_group>
+    </item>
+
+    <!-- =====  HERB-CHICKEN DINNER  ===== -->
+    <item name="foodHerbChickenDinner">
+      <property name="Extends"      value="foodRiseMaster"/>
+      <property name="CustomIcon"   value="HerbChickenDinner"/>
+      <property name="UnlockedBy"   value="skillCooking"/>
+
+      <!-- Hearty entrée: comparable to chili dog / chowder -->
+      <effect_group tiered="false" name="Food Tier 6">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="53"/>
+
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
+
+        <!-- Tooltip -->
+        <display_value name="foodAmountAdd" value="53"/>
+      </effect_group>
+    </item>
+
+
+    <!-- =====  CORN OIL  ===== -->
+    <item name="foodCornOil">
+      <property name="Extends"      value="foodRiseMaster"/>
+      <property name="CustomIcon"   value="cornOil"/>
+      <property name="UnlockedBy"   value="skillCooking"/>
+
+      <!-- Light, ingredient-grade calorie boost -->
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="5"/>
+
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
+
+        <!-- Tooltip -->
+        <display_value name="foodAmountAdd" value="5"/>
+      </effect_group>
+    </item>
+
+
+    <!-- =====  MAPLE SYRUP  ===== -->
+    <item name="foodMapleSyrup">
+      <property name="Extends"      value="foodRiseMaster"/>
+      <property name="CustomIcon"   value="MapleSyrup"/>
+      <property name="UnlockedBy"   value="skillCooking"/>
+
+      <!-- Sweet but light calorie boost -->
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="5"/>
+
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
+
+        <!-- Tooltip -->
+        <display_value name="foodAmountAdd" value="5"/>
+      </effect_group>
+    </item>
+
+
+    <!-- =====  BONE BROTH  ===== -->
+    <item name="foodBoneBroth">
+      <property name="Extends"      value="foodRiseMaster"/>
+      <property name="CustomIcon"   value="BoneBroth"/>
+      <property name="UnlockedBy"   value="skillCooking"/>
+
+      <!-- Nourishing, mid-tier soup -->
+      <effect_group tiered="false" name="Food Tier 0">
+        <!-- Hunger restored -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="ModifyCVar" cvar="$foodAmountAdd"
+                          operation="add" value="12"/>
+
+        <!-- Standard consumable processing -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd"
+                          action="AddBuff" buff="buffProcessConsumables"/>
+
+        <!-- Tooltip -->
+        <display_value name="foodAmountAdd" value="12"/>
+      </effect_group>
+    </item>
+
+
+    <item name="TestingResourceful">
 		<property name="Extends" value="foodRiseMaster"/>
 		<property name="CustomIcon" value="questMaster"/>
 		<property name="CustomIconTint" value="4287f5"/>

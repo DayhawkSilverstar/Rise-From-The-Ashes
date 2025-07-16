@@ -1,8 +1,7 @@
 <configs>
 	<!-- ***** AUTOMOTIVE ****** -->
 	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']/property[@name='UnlockedBy']/@value">skillAutomotive</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']/property[@name='UnlockedBy']/@value">skillAutomotive</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modVehicleMega']/property[@name='UnlockedBy']/@value">skillAutomotive</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']/property[@name='UnlockedBy']/@value">skillAutomotive</set>	
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']/property[@name='UnlockedBy']/@value">skillAutomotive</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleOffRoadHeadlights']/property[@name='UnlockedBy']/@value">skillAutomotive</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/property[@name='UnlockedBy']/@value">skillAutomotive</set>
@@ -67,9 +66,7 @@
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorAdvancedMuffledConnectors']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorWaterPurifier']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneCargoMod']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneWeaponMod']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneStunWeaponMod']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']/property[@name='UnlockedBy']/@value">skillMechanicalEngineer</set>		
 
   <!-- ***** Leatherworking ****** -->
   <set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/property[@name='UnlockedBy']/@value">skillLeatherworking</set>
@@ -79,13 +76,12 @@
   <!-- ***** TAILORING ****** -->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeTheHunter']/property[@name='UnlockedBy']/@value">skillTailoring</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorBandolier']/property[@name='UnlockedBy']/@value">skillTailoring</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLiner']/property[@name='UnlockedBy']/@value">skillTailoring</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorCoolingMesh']/property[@name='UnlockedBy']/@value">skillTailoring</set>	
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']/property[@name='UnlockedBy']/@value">skillTailoring</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']/property[@name='UnlockedBy']/@value">skillTailoring</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']/property[@name='UnlockedBy']/@value">skillTailoring</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMoraleBoosterMod']/property[@name='UnlockedBy']/@value">skillTailoring</set>
   <set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/property[@name='UnlockedBy']/@value">skillTailoring</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/property[@name='Material']/@value">Mcloth</set>    
-
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/property[@name='Material']/@value">Mcloth</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorStealthBoots']/property[@name='UnlockedBy']/@value">skillTailoring</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/property[@name='UnlockedBy']/@value">skillChemistry</set>
 </configs>

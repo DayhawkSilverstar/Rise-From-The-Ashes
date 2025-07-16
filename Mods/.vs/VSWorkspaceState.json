@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\1f_Rise_from_the_Ashes_Loot",
-    "\\1f_Rise_from_the_Ashes_Loot\\Config",
-    "\\3l_Rise_from_the_Ashes_Biome",
-    "\\3l_Rise_from_the_Ashes_Biome\\Config",
+    "\\1c_Rise_from_the_Ashes_Blocks",
+    "\\1c_Rise_from_the_Ashes_Blocks\\Config",
+    "\\1e_Rise_from_the_Ashes_Buffs",
+    "\\1e_Rise_from_the_Ashes_Buffs\\Config",
+    "\\1j_Rise_from_the_Ashes_Spawning",
+    "\\1j_Rise_from_the_Ashes_Spawning\\Config",
     "\\4_Rise_from_the_Ashes_Entityclasses",
     "\\4_Rise_from_the_Ashes_Entityclasses\\Config",
     "\\4_Rise_from_the_Ashes_Localization",

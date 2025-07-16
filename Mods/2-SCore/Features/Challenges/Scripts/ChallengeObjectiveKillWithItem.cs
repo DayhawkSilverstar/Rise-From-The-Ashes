@@ -41,6 +41,8 @@ namespace Challenges {
         public string LocalizationKey = "";
         public bool GenerateDescription;
         private string _descriptionOverride;
+        public string biome;
+
         public override void Init() {
             if ( string.IsNullOrEmpty(entityTag))
                 entityTag = "zombie";
@@ -83,18 +85,33 @@ namespace Challenges {
         }
 
         public override void HandleAddHooks() {
-            EventOnClientKill.OnClientKillEvent += Check_EntityKill;
+            EventOnClientKill.OnClientKillEvent += KillEntity;
         }
 
         public override void HandleRemoveHooks() {
-            EventOnClientKill.OnClientKillEvent -= Check_EntityKill;
+            EventOnClientKill.OnClientKillEvent -= KillEntity;
         }
 
+        private bool KillEntity(DamageResponse _dmresponse, EntityAlive entitydamaged)
+        {
+            var result = Check_EntityKill(_dmresponse, entitydamaged);
+            if (result)
+            {
+                Current++;
+                CheckObjectiveComplete();
+            }
+            return result;
+        }
+
+    
         public virtual bool HasPrerequisiteCondition(DamageResponse dmgResponse) {
             if (!dmgResponse.Fatal) return false;
             if (StealthCheck)
             {
                 if (dmgResponse.Source.BonusDamageType != EnumDamageBonusType.Sneak) return false;
+                
+                // Sneaking is true, but there's no other checks, so let's just end it.
+                if (string.IsNullOrEmpty(ItemClass) && string.IsNullOrEmpty(ItemTag)) return true;
             }
 
             if (SCoreChallengeUtils.IsKilledByTrap(dmgResponse, ItemClass)) return true;
@@ -108,9 +125,42 @@ namespace Challenges {
         protected virtual bool Check_EntityKill(DamageResponse dmgResponse, EntityAlive killedEntity) {
             if (!HasPrerequisiteCondition(dmgResponse)) return false;
             var player = GameManager.Instance.World.GetPrimaryPlayer();
-            Current_EntityKill(player, killedEntity);
-           return true;
+            return CheckAdditionalCondition(player, killedEntity);
         }
+
+        private bool CheckAdditionalCondition(EntityAlive killedBy, EntityAlive killedEntity)
+        {
+            if (!string.IsNullOrEmpty(entityTag) && !this.entityTags.Test_AnySet(killedEntity.EntityClass.Tags))
+            {
+                return false;
+            }
+            if (this.biome != "" && this.Owner.Owner.Player.biomeStandingOn.m_sBiomeName != this.biome)
+            {
+                return false;
+            }
+            if (this.isTwitchSpawn > -1)
+            {
+                if (this.isTwitchSpawn == 0 && killedEntity.spawnById != -1)
+                {
+                    return false;
+                }
+                if (this.isTwitchSpawn == 1 && killedEntity.spawnById == -1)
+                {
+                    return false;
+                }
+            }
+            if (!this.killerHasBuffTag.IsEmpty && !killedBy.Buffs.HasBuffByTag(this.killerHasBuffTag))
+            {
+                return false;
+            }
+            if (!this.killedHasBuffTag.IsEmpty && !killedEntity.Buffs.HasBuffByTag(this.killedHasBuffTag))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
 
         public override void ParseElement(XElement e) {
             base.ParseElement(e);
@@ -140,6 +190,10 @@ namespace Challenges {
 
             }
 
+            if (e.HasAttribute("biome"))
+            {
+                biome = e.GetAttribute("biome");
+            }
             if (e.HasAttribute("target_name_key"))
                 targetName = Localization.Get(e.GetAttribute("target_name_key"));
             if (e.HasAttribute("description_override"))

@@ -4419,22 +4419,26 @@
 					<triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar="$constructionExpTotal" operation="add" value="@$ConstructionExp">						
 						<requirement name="TriggerHasTags" tags="construction"/>
 						<requirement name="HoldingItemHasTags" tags="tool"/>
-					</triggered_effect>														
+            <requirement name="CVarCompare" cvar="$blockDamageDone" operation="GTE" value="1"/>            
+          </triggered_effect>														
 					<triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar="$constructionExpTotal" operation="add" value="@.Construction_addExpDoubleNormal">						
 						<requirement name="TriggerHasTags" tags="construction"/>
 						<requirement name="HoldingItemHasTags" tags="tool"/>
-					</triggered_effect>			
+            <requirement name="CVarCompare" cvar="$blockDamageDone" operation="GTE" value="1"/>
+          </triggered_effect>			
 					
 					<triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar="$constructionExpTotal" operation="add" value="@$ConstructionExp">						
 						<requirement name="TriggerHasTags" tags="construction"/>
 						<requirement name="HoldingItemHasTags" tags="tool"/>
 						<requirement name="CVarCompare" cvar="$constructionProfessionBonus" operation="Equals" value="1"/>
-					</triggered_effect>		
+            <requirement name="CVarCompare" cvar="$blockDamageDone" operation="GTE" value="1"/>
+          </triggered_effect>		
 					<triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar="$constructionExpTotal" operation="add" value="@.Construction_addExpDoubleNormal">						
 						<requirement name="TriggerHasTags" tags="construction"/>
 						<requirement name="HoldingItemHasTags" tags="tool"/>
 						<requirement name="CVarCompare" cvar="$constructionProfessionBonus" operation="Equals" value="1"/>
-					</triggered_effect>							
+            <requirement name="CVarCompare" cvar="$blockDamageDone" operation="GTE" value="1"/>
+          </triggered_effect>							
 				</effect_group>
 
 				<!-- Demolitions Skill -->

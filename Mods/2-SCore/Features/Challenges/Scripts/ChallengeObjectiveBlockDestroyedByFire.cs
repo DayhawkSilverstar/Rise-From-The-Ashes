@@ -20,16 +20,16 @@ namespace Challenges {
 
         
         public override void HandleAddHooks() {
-            FireManager.Instance.OnDestroyed += Check_Block;
+            FireManager.Instance.Events.OnBlockDestroyedCount += Check_Block;
         }
 
         
         public override void HandleRemoveHooks() {
-            FireManager.Instance.OnDestroyed -= Check_Block;
+            FireManager.Instance.Events.OnBlockDestroyedCount -= Check_Block;
         }
 
-        private void Check_Block() {
-            Current++;
+        private void Check_Block(int count) {
+            Current += count;
             CheckObjectiveComplete();
         }
 

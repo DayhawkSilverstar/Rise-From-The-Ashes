@@ -1,53 +1,5 @@
 <configs>
-	<remove xpath="/windows/window[@name='windowToolbelt']/rect/rect[@pos='0,-77']"></remove>
-	<remove xpath="/windows/window[@name='windowToolbelt']/rect/rect[@pos='376,-77']"></remove>
-	<remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@text='{currencyamount}']"/>
-	<remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@sprite='ui_game_symbol_coin']"/>
-  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']"/>
-  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@name='windowIcon']"/>
-	
-	<set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
 
-  <!-- Turn on the target window -->
-  <set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
-  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@name='windowName']/@pos">3,-6</set>
-  <set xpath="/windows/window[@name='windowLooting']/rect/grid/@rows">10</set>
-  <set xpath="/windows/window[@name='windowLooting']/rect/grid/@cols">10</set>
-
-  <insertafter xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']">
-    <!-- pos is x, y -->
-    <rect controller="TabSelector" pos="0,45" size="606, 0" depth="15">
-      <panel name="backpackSelection" pos="0,0" width="100%" depth="0" disableautobackground="true">
-        <sprite depth="4" pos="130,0" name="bag1" sprite="ui_game_symbol_backpack" size="35,35" color="[beige]" foregroundlayer="true"/>
-        <sprite depth="4" pos="170,0" name="bag2" sprite="ui_game_symbol_backpack" size="35,35" color="[beige]" foregroundlayer="true"/>
-        <rect depth="10" pos="0,0" controller="Backpack">
-          <rect name="tabsContents" pos="3,-46">
-            <rect tab_key="" pos="0,0" backgroundColor="255,255,255,255">
-              <grid rows="5" cols="9" cell_width="67" cell_height="67" repeat_content="true">
-                <rect pos="0,0" depth="1">
-                  <backpack_item_stack name="0"/>
-                </rect>
-              </grid>
-            </rect>
-            <rect tab_key="" pos="0,0" backgroundColor="255,255,255,255">
-              <grid rows="5" cols="9" cell_width="67" cell_height="67" repeat_content="true">
-                <rect pos="0,0" depth="1">
-                  <backpack_item_stack name="0"/>
-                </rect>
-              </grid>
-            </rect>
-          </rect>
-        </rect>
-      </panel>
-      <rect name="tabsHeader" height="40" pos="120,0">
-        <grid name="tabButtons" rows="1" cols="2" pos="10,0" cell_width="40" cell_height="35" repeat_content="true" arrangement="horizontal">
-          <rect width="40" height="40">
-            <simplebutton depth="1" name="bags" width="35" height="35" font_size="26"/>
-          </rect>
-        </grid>
-      </rect>
-    </rect>
-  </insertafter>
 	
 	<!-- Reposition the Health bar -->
 	<set xpath ="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud' and @pos='9,156']/@rows">4</set>

@@ -106,7 +106,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
     private List<string> _startedThisFrame;
 
     // Default name
-    private string _strMyName = "Bob";
+    private string _strMyName = string.Empty;
     private string _strTitle;
 
     private TileEntityTrader _tileEntityTrader;
@@ -132,7 +132,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
     public override string EntityName {
         get {
             // No configured name? return the default.
-            if (_strMyName == "Bob")
+            if (string.IsNullOrEmpty(_strMyName))
                 return entityName;
 
             if (string.IsNullOrEmpty(_strTitle))
@@ -208,16 +208,14 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
     }
 
     public override float GetEyeHeight() {
-        if (this.walkType == 4)
+        if (this.walkType == 21)
         {
             return 0.15f;
         }
-
-        if (this.walkType == 8)
+        if (this.walkType == 22)
         {
             return 0.6f;
         }
-
         if (!this.IsCrouching)
         {
             return base.height * 0.8f;
@@ -253,6 +251,10 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
             var index = UnityEngine.Random.Range(0, names.Length);
             _strMyName = names[index];
         }
+
+        DialogWindow = "dialog";
+        if (_entityClass.Properties.Values.ContainsKey("dialogWindow"))
+            DialogWindow = _entityClass.Properties.Values["dialogWindow"];
 
         if (_entityClass.Properties.Values.ContainsKey("CanCollideWithLeader"))
             canCollideWithLeader =
@@ -330,6 +332,8 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
             }
         }
     }
+
+    public string DialogWindow { get; set; }
 
     public override float getNextStepSoundDistance() {
         return !IsRunning ? 0.5f : 0.25f;
@@ -534,7 +538,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
                 if (this.activeQuests == null)
                 {
                     this.activeQuests = this.PopulateActiveQuests(entityFocusing as EntityPlayer, -1);
-                    QuestEventManager.Current.SetupQuestList(this.entityId, entityFocusing.entityId, this.activeQuests);
+                    QuestEventManager.Current.SetupQuestList(this, entityFocusing.entityId, this.activeQuests);
                 }
             }
         }
@@ -567,8 +571,9 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
             uiforPlayer.xui.Dialog.Respondent = this;
             if (nextCompletedQuest == null)
             {
+                
                 uiforPlayer.windowManager.CloseAllOpenWindows(null, false);
-                uiforPlayer.windowManager.Open("dialog", true, false, true);
+                uiforPlayer.windowManager.Open(DialogWindow, true, false, true);
                 return false;
             }
 
@@ -1020,19 +1025,25 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
                 }
             }
 
-            float num5 = _direction.magnitude;
-            num5 = Mathf.Max(num5, 1f);
-            float num6 = num3 / num5;
+            float magnitude = _direction.magnitude;
+            if (magnitude > 1f)
+            {
+                num3 /= magnitude;
+            }
+            float num5 = _direction.z * num3;
             if (this.lerpForwardSpeed)
             {
-                this.speedForwardTarget = _direction.z * num6;
+                if (Utils.FastAbs(this.speedForwardTarget - num5) > 0.05f)
+                {
+                    this.speedForwardTargetStep = Utils.FastAbs(num5 - this.speedForward) / 0.18f;
+                }
+                this.speedForwardTarget = num5;
             }
             else
             {
-                this.speedForward = _direction.z * num6;
+                this.speedForward = num5;
             }
-
-            this.speedStrafe = _direction.x * num6;
+            this.speedStrafe = _direction.x * num3;
             this.SetMovementState();
             base.ReplicateSpeeds();
         }
@@ -1104,7 +1115,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
         if (leader == null)
         {
             Owner = null;
-            IsEntityUpdatedInUnloadedChunk = false;
+            //IsEntityUpdatedInUnloadedChunk = false;
             bWillRespawn = false;
             return;
         }
@@ -1165,7 +1176,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
                 }
 
                 // This needs to be set for the entities to be still alive, so the player can teleport them
-                IsEntityUpdatedInUnloadedChunk = true;
+            //    IsEntityUpdatedInUnloadedChunk = true;
                 bWillRespawn =
                     true; // this needs to be off for entities to despawn after being killed. Handled via SetDead()
 
@@ -1195,7 +1206,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
             case EntityUtilities.Orders.Wander:
             default:
                 // This needs to be set for the entities to be still alive, so the player can teleport them
-                IsEntityUpdatedInUnloadedChunk = false;
+          //      IsEntityUpdatedInUnloadedChunk = false;
                 bWillRespawn =
                     false; // this needs to be off for entities to despawn after being killed. Handled via SetDead()
                 if (player)
@@ -1236,6 +1247,10 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
         try
         {
             base.OnUpdateLive();
+            if (GetWalkType() == 8 && bodyDamage.CurrentStun == EnumEntityStunType.Getup) 
+            {
+                SetHeight(this.physicsBaseHeight);
+            }
         }
         catch (Exception ex)
         {
@@ -1251,6 +1266,8 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
             }
         }
 
+    
+        
         // Allow EntityAliveSDX to get buffs from blocks
        // if (!isEntityRemote && !SingletonMonoBehaviour<ConnectionManager>.Instance.IsServer)
        if (!isEntityRemote)
@@ -1277,6 +1294,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
         var avatarController = this.emodel.avatarController;
         if (!avatarController) return;
 
+     
         var flag = this.onGround || this.isSwimming || this.bInElevator;
         if (flag)
         {
@@ -1847,11 +1865,11 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
     //
     // }
 
-    public override void playStepSound(string stepSound) {
+    public override void PlayStepSound(string stepSound, float volume) {
         if (IsOnMission()) return;
         if (HasAnyTags(FastTags<TagGroup.Global>.Parse("floating"))) return;
 
-        base.playStepSound(stepSound);
+        base.PlayStepSound(stepSound, volume);
     }
 
     public void CheckNoise() {
@@ -2240,7 +2258,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
     }
 
     public override void PlayOneShot(string clipName, bool sound_in_head = false, bool netsync = true,
-        bool isUnique = false) {
+        bool isUnique = false, AnimationEvent _animEvent = null) {
         if (IsOnMission()) return;
         base.PlayOneShot(clipName, sound_in_head);
     }
@@ -2336,11 +2354,11 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
         return vector3I;
     }
 
-    public override void updateStepSound(float distX, float distZ) {
+    public override void updateStepSound(float distX, float distZ, float rotDelta) {
         var leader = EntityUtilities.GetLeaderOrOwner(entityId) as EntityAlive;
         if (leader == null)
         {
-            base.updateStepSound(distX, distZ);
+            base.updateStepSound(distX, distZ, rotDelta);
             return;
         }
 
@@ -2350,7 +2368,7 @@ public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX {
         // Mute the foot steps when crouching.
         if (IsCrouching) return;
 
-        base.updateStepSound(distX, distZ);
+        base.updateStepSound(distX, distZ, rotDelta);
     }
 
     private bool ShouldPushOutOfBlock(int _x, int _y, int _z, bool pushOutOfTerrain) {

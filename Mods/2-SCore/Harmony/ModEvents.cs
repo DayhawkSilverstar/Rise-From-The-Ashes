@@ -14,14 +14,18 @@ public class SCoreModEvents {
         ModletChecks();
         ModEvents.GameStartDone.RegisterHandler(CheckExternalParticles);
         ModEvents.GameStartDone.RegisterHandler(EntityPool);
-        
+
+        VersionCheck.LoadConfig();
+        ModEvents.GameStartDone.RegisterHandler(VersionCheck.OnGameStartDone);
+
         ModEvents.PlayerSpawnedInWorld.RegisterHandler(CheckGraphicSettings);      
+        
         // When player starts a game
         // ModEvents.GameShutdown.RegisterHandler(new Action(FireManager.Instance.CleanUp));
         //  ModEvents.PlayerSpawnedInWorld.RegisterHandler(new Action<ClientInfo, RespawnType, Vector3i>(FireManager.Instance.Init));
     }
 
-    private static void CheckGraphicSettings(ClientInfo arg1, RespawnType arg2, Vector3i arg3) {
+    private static void CheckGraphicSettings(ref ModEvents.SPlayerSpawnedInWorldData data) {
         ProcessSCoreOptions.ProcessCVars("$SCoreUtils_MemoryBudget");
         ProcessSCoreOptions.ProcessCVars("$SCoreUtils_PPEnable");
     }
@@ -35,7 +39,7 @@ public class SCoreModEvents {
         return _defaultShader;
     }
 
-    private static void EntityPool() {
+    private static void EntityPool(ref ModEvents.SGameStartDoneData data) {
         //     GameManager.Instance.gameObject.GetOrAddComponent<EntityFactoryPool>();
     }
 
@@ -97,7 +101,7 @@ public class SCoreModEvents {
     }
 
     // Read's the SCore's ExternalParticles from the ConfigFeatureBlock for external particles
-    private static void CheckExternalParticles() {
+    private static void CheckExternalParticles(ref ModEvents.SGameStartDoneData data) {
         const string particleClass = "ExternalParticles";
         var configurationFeatureBlock = Block.GetBlockValue("ConfigFeatureBlock");
         if (configurationFeatureBlock.type == 0)

@@ -20,7 +20,7 @@
 
 	<!-- **************** BURNT_FOREST_SPAWNS -->
 	<!-- ALL AREAS NOT IN A CITY -->
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest' and @respawndelay='2.7']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest' and @respawndelay='0.9']/@maxcount">3</set>
 	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight' and @respawndelay='2.3']/@maxcount">3</set>
 
 	<!-- COMERCIAL AND INDUSTRIAL -->
@@ -57,7 +57,7 @@
 
 	<!-- ***************** SNOW_SPAWNS -->
 	<!-- ALL AREAS NOT IN A CITY -->
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies' and @notags='downtown']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesSnow' and @notags='downtown']/@maxcount">3</set>
 	
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight' and @notags='commercial,industrial,downtown']/@maxcount">3</set>
 
@@ -81,7 +81,7 @@
 	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight' and @notags='commercial,industrial,downtown']/@maxcount">3</set>
 
 	<!-- COMERCIAL AND INDUSTRIAL -->
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWasteland' and @tags='commercial,industrial']/@maxcount">6</set>
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAllWasteland' and @tags='commercial,industrial']/@maxcount">6</set>
 	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight' and @tags='commercial,industrial']/@maxcount">6</set>
 
 	<!-- DOWNTOWN -->

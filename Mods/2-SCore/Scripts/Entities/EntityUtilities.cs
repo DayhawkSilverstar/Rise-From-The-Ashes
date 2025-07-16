@@ -218,8 +218,8 @@ public static class EntityUtilities
         myEntity.inventory.SetHoldingItemIdxNoHolsterTime(index);
 
         // Forcing the show items
-        myEntity.inventory.ShowHeldItem(false, 0f);
-        myEntity.inventory.ShowHeldItem(true);
+        myEntity.inventory.ShowHeldItem(0f,false);
+        myEntity.inventory.ShowHeldItem(0f,true);
 
         //myEntity.inventory.SetHoldingItemIdx(index);
         myEntity.inventory.ForceHoldingItemUpdate();
@@ -1761,23 +1761,32 @@ public static class EntityUtilities
 
             if (flag)
             {
-                ((XUiC_LootWindowGroup) ((XUiWindowGroup) _playerUI.windowManager.GetWindow("looting")).Controller)
-                    .SetTileEntityChest(lootContainerName, _te);
-                _playerUI.windowManager.Open("looting", true);
+               GameManager.Instance.lootContainerOpened(_te, _playerUI, _playerUI.entityPlayer.entityId);
+                //var controller = (XUiC_LootWindowGroup) ((XUiWindowGroup) _playerUI.windowManager.GetWindow("looting")).Controller;
+                //controller.SetTileEntityChest(lootContainerName, _te);
+                //_playerUI.windowManager.Open("looting", true);
             }
-
-            var lootContainer = LootContainer.GetLootContainer(_te.lootListName);
-            if (lootContainer != null && _playerUI.entityPlayer != null)
-                lootContainer.ExecuteBuffActions(_te.entityId, _playerUI.entityPlayer);
+            //
+            // var lootContainer = LootContainer.GetLootContainer(_te.lootListName);
+            // if (lootContainer != null && _playerUI.entityPlayer != null)
+            //     lootContainer.ExecuteBuffActions(_te.entityId, _playerUI.entityPlayer);
         }
-
-        if (!SingletonMonoBehaviour<ConnectionManager>.Instance.IsServer) return;
-        GameManager.Instance.lootManager.LootContainerOpened(_te, _entityIdThatOpenedIt, new FastTags<TagGroup.Global>());
-        _te.bTouched = true;
-
-        _te.SetModified();
+        //
+        // if (!SingletonMonoBehaviour<ConnectionManager>.Instance.IsServer) return;
+        // GameManager.Instance.lootManager.LootContainerOpened(_te, _entityIdThatOpenedIt, new FastTags<TagGroup.Global>());
+        // _te.bTouched = true;
+        //
+        // _te.SetModified();
     }
 
+    public static void OpenContainer(EntityPlayerLocal playerLocal, TileEntityLootContainer _te)
+    {
+        LocalPlayerUI uiforPlayer = LocalPlayerUI.GetUIForPlayer(playerLocal);
+        uiforPlayer.windowManager.CloseAllOpenWindows(null, false);
+        GUIWindow window = uiforPlayer.windowManager.GetWindow("looting");
+        ((XUiC_LootWindowGroup)((XUiWindowGroup)window).Controller).SetTileEntityChest(_te.lootListName, _te);
+        uiforPlayer.windowManager.Open("looting", true, false, true);
+    }
     public static bool CheckFaction(int EntityID, EntityAlive entity)
     {
         var result = false;

@@ -6,6 +6,25 @@
   <remove xpath="/blocks/block[@name='cntBirdnestCorner']" />
   <remove xpath="/blocks/block[@name='torchWallHolder']" />
 
+  <remove xpath="/blocks/block[@name='plantedMushroom1']" />
+  <remove xpath="/blocks/block[@name='plantedMushroom2']" />
+  <remove xpath="/blocks/block[@name='plantedYucca1']" />
+  <remove xpath="/blocks/block[@name='plantedYucca2']" />
+  <remove xpath="/blocks/block[@name='plantedCotton1']" />
+  <remove xpath="/blocks/block[@name='plantedCoffee1']" />
+  <remove xpath="/blocks/block[@name='plantedGoldenrod1']" />
+  <remove xpath="/blocks/block[@name='plantedAloe1']" />
+  <remove xpath="/blocks/block[@name='plantedAloe2']" />
+  <remove xpath="/blocks/block[@name='plantedBlueberry1']" />
+  <remove xpath="/blocks/block[@name='plantedPotato1']" />
+  <remove xpath="/blocks/block[@name='plantedChrysanthemum1']" />
+  <remove xpath="/blocks/block[@name='plantedCorn1']" />
+  <remove xpath="/blocks/block[@name='plantedCorn2']" />
+  <remove xpath="/blocks/block[@name='plantedHop1']" />
+  <remove xpath="/blocks/block[@name='plantedSnowberry1']" />
+  <remove xpath="/blocks/block[@name='plantedPumpkin1']" />  
+  <remove xpath="/blocks/block[@name='plantedPumpkin2']" />
+
   <remove xpath="//block/property[@name='TakeDelay' and @value='-1']"/>
   <remove xpath="//block[@name='candleWallLight']/property[@name='Class']"/>
   <remove xpath="//block[@name='wallTorchLight']/property[@name='Class']"/>
@@ -542,6 +561,7 @@
   <!-- Update all light classes to use the RisePoweredLight -->
     <set xpath="//block/property[@name='Class' and @value='PoweredLight']/@value">RisePoweredLight, Rise_From_The_Ashes</set>
     <set xpath="//block/property[@name='Class' and @value='Light']/@value">RisePoweredLight, Rise_From_The_Ashes</set>
+		<set xpath="//block/property[@name='Class' and @value='CarExplodeLoot']/@value">RiseBlockExplosiveLoot, Rise_From_The_Ashes</set>
     <append xpath="//block/property[@name='Class' and @value='RisePoweredLight, Rise_From_The_Ashes']">
       <property name="CanPickUp" value="true" />
       <property name="AllowPickup" value="1"/>          
@@ -1492,7 +1512,7 @@
     <drop event="Destroy" name="Rubber" count="3,7"/>
   </append>
 
-  <set xpath="/blocks/block[@name='plantHydroponicAloe']/property[@class='RepairItems']/property[@name='resourceElectricParts']/@name">resourceElectricPartsT3</set>    
+		<set xpath="/blocks/block[@name='plantHydroponicAloe']/property[@class='RepairItems']/property[@name='resourceElectricParts']/@name">resourceElectricPartsT3</set>    
     <set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='EconomicValue']/@value">20</set>
     <set xpath="/blocks/block[@name='cropsHarvestableMaster']/property[@name='Tags']/@value">foliage</set>
     <set xpath="/blocks/block[@name='treeGrassMaster']/property[@name='Tags']/@value">twitchReplace,foliage</set>
@@ -2013,9 +2033,23 @@
     <set xpath="/blocks/block[@name='decoTreadmill']/property[@name='Tags']/@value">electricianSkill,mechanicalSkill</set>
     <set xpath="/blocks/block[@name='bedroll']/property[@name='EconomicValue']/@value">10</set>
     <set xpath="/blocks/block[@name='bedrollPOI']/property[@name='EconomicValue']/@value">10</set>
-    <append xpath="/blocks/block[@name='bed02']"><property name="UnlockedBy" value="skillCarpentry"/></append>
+    
+		<append xpath="/blocks/block[@name='bed02']"><property name="UnlockedBy" value="skillCarpentry"/></append>
     <set xpath="/blocks/block[@name='bed02']/property[@name='EconomicValue']/@value">2600</set>
-    <set xpath="/blocks/block[@name='bunkBedMade']/property[@name='EconomicValue']/@value">1330</set>
+		<set xpath="/blocks/block[@name='bed02']/drop[@name='resourceCloth']/@name">resourceClothT1</set>
+		
+		<set xpath="/blocks/block[@name='bed02']/drop[@name='resourceWood']/@name">resourceWoodT1</set>
+		
+		<set xpath="/blocks/block[@name='bedMadeNoFrameWhite']/property[@class='RepairItems']/property[@name='resourceCloth']/@name">resourceClothT1</set>
+    <set xpath="/blocks/block[@name='bedMadeNoFrameWhite']/drop[@name='resourceCloth']/@name">resourceClothT1</set>
+
+		<set xpath="/blocks/block[@name='bedMessyNoFrameWhite']/property[@class='RepairItems']/property[@name='resourceCloth']/@name">resourceClothT1</set>
+	  <set xpath="/blocks/block[@name='bedMessyNoFrameWhite']/drop[@name='resourceCloth']/@name">resourceClothT1</set>
+		
+		<set xpath="/blocks/block[@name='treeWinterEverGreenLarge']/drop[@name='resourceWood']/@name">resourceWoodT1</set>
+		<set xpath="/blocks/block[@name='treeBurntMaple04']/drop[@name='resourceWood']/@name">resourceWoodT1</set>
+
+		<set xpath="/blocks/block[@name='bunkBedMade']/property[@name='EconomicValue']/@value">1330</set>
     <set xpath="/blocks/block[@name='mattressFlatThin']/property[@name='EconomicValue']/@value">60</set>
     <set xpath="/blocks/block[@name='gurneyBed']/property[@name='EconomicValue']/@value">1330</set>
     <set xpath="/blocks/block[@name='hospitalBed']/property[@name='Tags']/@value">electricianSkill,mechanicalSkill</set>
@@ -2645,8 +2679,7 @@
     <set xpath="/blocks/block[@name='semiFlatbedFront']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>    
     <set xpath="/blocks/block[@name='traderShelvesWoodFullA']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>       
     <set xpath="/blocks/block[@name='semiFlatbedMiddle']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
-    <set xpath="/blocks/block[@name='cntTrashBinCommercialWhite']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
-    <set xpath="/blocks/block[@name='bed02']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
+    <set xpath="/blocks/block[@name='cntTrashBinCommercialWhite']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>    
     <set xpath="/blocks/block[@name='corpseHangingLog1White']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
     <set xpath="/blocks/block[@name='cntCollapsedWorkbenchEmpty']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>    
     <set xpath="/blocks/block[@name='woodenGarageDoor4x3_PoweredWhite']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
@@ -3135,8 +3168,7 @@
      <set xpath="/blocks/block[@name='cntClothesPileFloor01']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
      <set xpath="/blocks/block[@name='screenCurtainDividerWhite']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
      <set xpath="/blocks/block[@name='mattressFlatThin']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
-     <set xpath="/blocks/block[@name='bunkBedMade']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
-     <set xpath="/blocks/block[@name='bed02']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
+     <set xpath="/blocks/block[@name='bunkBedMade']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>     
      <set xpath="/blocks/block[@name='chairCampingWhite']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
      <set xpath="/blocks/block[@name='decoWildWestWagon']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
      <set xpath="/blocks/block[@name='sandbagStraight01']/drop[@event='Harvest' and @name='resourceCloth']/@name">resourceClothT1</set>
@@ -3550,7 +3582,7 @@
   <append xpath="/blocks" >			
 		<block name="GoldIngotStack">
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="#@modfolder:Resources/GoldIngotStack.unity3d?GoldStackPrefab"/>
+			<property name="Model" value="#@modfolder:Resources/GoldIngotStack.unity3d?GoldStackPrefab.prefab"/>
 			<property name="CustomIcon" value="GoldStack" />
 			<property name="CreativeMode" value="Player" />			
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
@@ -3743,7 +3775,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="#@modfolder:Resources/torch_wallUnlitPrefab.unity3d?torch_wallUnlitPrefab"/>
+			<property name="Model" value="#@modfolder:Resources/torch_wallUnlitPrefab.unity3d?torch_wallUnlitPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="StabilitySupport" value="false"/>
@@ -4102,7 +4134,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe1_Prefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedAloeT1-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
@@ -4116,7 +4148,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedAloe3HarvestPlayerT1"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/Plants/plant_aloe2_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe2_Prefab.prefab"/>
 			<drop event="Destroy" name="plantedAloeT1-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
 			<property name="SortOrder2" value="0001"/>
@@ -4128,7 +4160,7 @@
 			<property name="CreativeMode" value="None"/>			
 			<property name="DescriptionKey" value="plantedAloe3HarvestDescT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="resourceCropAloeLeaf" count="1" tag="cropHarvest"/>
 			<drop event="Destroy" name="plantedAloeT1-1" count="1"/>			
 			<property name="SortOrder1" value="B956"/>
@@ -4144,7 +4176,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="BlueberryT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedBlueberryT1-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -4158,7 +4190,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedBlueberry3HarvestPlayerT1"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_growthPrefab"/>
 			<drop event="Destroy" name="plantedBlueberryT1-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
 			<property name="SortOrder2" value="0001"/>
@@ -4170,7 +4202,7 @@
 			<property name="CreativeMode" value="None"/>			
 			<property name="DescriptionKey" value="plantedBlueberry3HarvestDescT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropBlueberries" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedBlueberryT1-1" count="1"/>			
 			<property name="SortOrder1" value="B957"/>
@@ -4190,7 +4222,7 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="Material" value="Mmushrooms"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomSproutPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomSproutPrefab.prefab"/>
 			<property name="LightOpacity" value="0"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="Collide" value="melee"/>
@@ -4209,7 +4241,7 @@
 			<property name="PlantGrowing.LightLevelGrow" value="0"/>
 			<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayerT1"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomGrowthPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedMushroomT1-1" count="1"/>
 			<property name="Collide" value="melee"/>
 			<property name="SortOrder1" value="B951"/>
@@ -4226,7 +4258,7 @@
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="DisplayInfo" value="Description"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="melee"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -4235,7 +4267,7 @@
 			<property name="CreativeMode" value="None"/>			
 			<property name="DescriptionKey" value="plantedMushroom3HarvestDescT1"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropMushrooms" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedMushroomT1-1" count="1"/>			
 			<property name="SortOrder1" value="B951"/>
@@ -4252,7 +4284,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedYuccaT1-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -4267,7 +4299,7 @@
 			<property name="PlantGrowing.Next" value="plantedYucca3HarvestPlayerT1"/>
 			<property name="CustomIcon" value="plantedYucca1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedYuccaT1-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
 			<property name="SortOrder2" value="0001"/>
@@ -4280,7 +4312,7 @@
 			<property name="CustomIcon" value="plantedYucca1"/>
 			<property name="DescriptionKey" value="plantedYucca3HarvestDescT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedYuccaT1-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -4297,7 +4329,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Texture" value="392"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonSproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedCottonT1-1" count="1"/>
 			<property name="SortOrder1" value="B953"/>
@@ -4310,7 +4342,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonGrowthPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCotton3HarvestPlayerT1"/>
 			<property name="CustomIcon" value="plantedCottonT1-1"/>
 			<property name="Texture" value="20"/>
@@ -4325,7 +4357,7 @@
 			<property name="Texture" value="363"/>
 			<property name="CreativeMode" value="None"/>	
 			<property name="Shape" value="ModelEntity" />		
-			<property name="Model" value="Entities/Plants/plantCottonHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonHarvestPrefab.prefab"/>
 			<property name="DescriptionKey" value="plantedCotton3HarvestDescT1"/>
 			<drop event="Harvest" name="resourceCropCottonPlant" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCottonT1-1" count="1"/>			
@@ -4342,7 +4374,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="CoffeeT1"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_SproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_SproutPrefab.prefab"/>
 			<property name="Texture" value="393"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="CraftingIngredientTime" value="5"/>
@@ -4357,7 +4389,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_GrowingPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_GrowingPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffee3HarvestPlayerT1"/>			
 			<property name="Texture" value="394"/>
 			<drop event="Destroy" name="plantedCoffeeT1-1" count="1"/>
@@ -4371,7 +4403,7 @@
 			<property name="Texture" value="395"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffeePlant_Prefab"/>	
+			<property name="Model" value="@:Entities/Plants/plantCoffeePlant_Prefab.prefab"/>	
 			<property name="DescriptionKey" value="plantedCoffee3HarvestDescT1"/>
 			<drop event="Harvest" name="resourceCropCoffeeBeans" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCoffeeT1-1" count="1"/>			
@@ -4428,7 +4460,7 @@
 			<property name="CustomIcon" value="PotatoT1"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPotatoT1-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -4442,7 +4474,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPotato3HarvestPlayerT1"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPotatoT1-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
 			<property name="SortOrder2" value="0001"/>
@@ -4454,7 +4486,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPotato3HarvestDescT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPotato" count="1" tag="cropHarvest"/>		
 			<drop event="Destroy" name="plantedPotatoT1-1" count="1"/>			
 			<property name="SortOrder1" value="B958"/>
@@ -4511,7 +4543,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="CustomIcon" value="CornT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -4529,7 +4561,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedCorn3HarvestPlayerT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenMediumPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedCornT1-1" count="1"/>
@@ -4544,7 +4576,7 @@
 			<property name="DescriptionKey" value="plantedCorn3HarvestDescT1"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropCorn" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCornT1-1" count="1"/>			
 			<property name="SortOrder1" value="B960"/>
@@ -4564,7 +4596,7 @@
 			<property name="EconomicValue" value="20"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -4583,7 +4615,7 @@
 			<property name="PlantGrowing.Next" value="plantedGraceCorn3HarvestPlayerT1"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperMediumPrefab.prefab"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedGraceCornT1-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -4598,7 +4630,7 @@
 			<property name="DescriptionKey" value="plantedGraceCorn3HarvestDescT1"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropGraceCorn" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedGraceCornT1-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -4654,7 +4686,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="CustomIcon" value="PumpkinT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinSproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPumpkinT1-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -4669,7 +4701,7 @@
 			<property name="PlantGrowing.Next" value="plantedPumpkin3HarvestPlayerT1"/>
 			<property name="CustomIcon" value="plantedPumpkinT1-1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPumpkinT1-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
 			<property name="SortOrder2" value="0001"/>
@@ -4682,7 +4714,7 @@
 			<property name="CustomIcon" value="plantedPumpkinT1-1"/>
 			<property name="DescriptionKey" value="plantedPumpkin3HarvestDescT1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPumpkin" count="1" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedPumpkinT1-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -4707,7 +4739,7 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="Material" value="Mmushrooms"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomSproutPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomSproutPrefab.prefab"/>
 			<property name="LightOpacity" value="0"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="Collide" value="melee"/>
@@ -4726,7 +4758,7 @@
 			<property name="PlantGrowing.LightLevelGrow" value="0"/>
 			<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayerT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomGrowthPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomGrowthPrefab.prefab"/>
 			<property name="Collide" value="melee"/>
 			<drop event="Destroy" name="plantedMushroomT2-1" count="1"/>
 			<property name="SortOrder1" value="B951"/>
@@ -4743,7 +4775,7 @@
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="DisplayInfo" value="Description"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="melee"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -4752,7 +4784,7 @@
 			<property name="CreativeMode" value="Player"/>									
 			<property name="DescriptionKey" value="plantedMushroom3HarvestDescT2"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropMushrooms" count="3" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedMushroomT2-1" count="1"/>
 			<property name="SortOrder1" value="B951"/>
@@ -4769,7 +4801,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedYuccaT2-1" count="1"/>
 			<property name="EconomicValue" value="60"/>
@@ -4784,7 +4816,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedYucca3HarvestPlayerT2"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/Plants/plant_yucca_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedYuccaT2-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
 			<property name="SortOrder2" value="0001"/>
@@ -4796,7 +4828,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedYucca3HarvestDescT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropYuccaFruit" count="3" tag="cropHarvest"/>
 			<drop event="Destroy" name="plantedYuccaT2-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -4809,7 +4841,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonSproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCottonT2-2"/>
 			<property name="CustomIcon" value="CottonT2"/>
 			<property name="UnlockedBy" value="skillFarming"/>
@@ -4827,7 +4859,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonGrowthPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCotton3HarvestPlayerT1"/>			
 			<property name="Texture" value="20"/>
 			<drop event="Destroy" name="plantedCottonT2-1" count="1"/>			
@@ -4840,7 +4872,7 @@
 			<property name="Extends" value="cropsHarvestableMaster"/>
 			<property name="Texture" value="363"/>
 			<property name="Shape" value="ModelEntity" />		
-			<property name="Model" value="Entities/Plants/plantCottonHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonHarvestPrefab.prefab"/>
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedCotton3HarvestDescT2"/>
 			<drop event="Harvest" name="resourceCropCottonPlant" count="3" tag="cropHarvest"/>			
@@ -4855,7 +4887,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_SproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_SproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffeeT2-2"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="CoffeeT2"/>
@@ -4874,7 +4906,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_GrowingPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_GrowingPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffee3HarvestPlayerT2"/>			
 			<property name="Texture" value="394"/>
 			<drop event="Destroy" name="plantedCoffeeT2-1" count="1"/>
@@ -4888,7 +4920,7 @@
 			<property name="Texture" value="395"/>
 			<property name="CreativeMode" value="Player"/>		
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffeePlant_Prefab"/>		
+			<property name="Model" value="@:Entities/Plants/plantCoffeePlant_Prefab.prefab"/>		
 			<property name="DescriptionKey" value="plantedCoffee3HarvestDescT2"/>
 			<drop event="Harvest" name="resourceCropCoffeeBeans" count="3" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCoffeeT2-1" count="1"/>			
@@ -4947,7 +4979,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="EconomicValue" value="60"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe1_Prefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedAloeT2-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
@@ -4961,7 +4993,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedAloe3HarvestPlayerT2"/>
 			<property name="Shape" value="ModelEntity"/>			
-			<property name="Model" value="Entities/Plants/plant_aloe2_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe2_Prefab.prefab"/>
 			<drop event="Destroy" name="plantedAloeT2-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
 			<property name="SortOrder2" value="0001"/>
@@ -4973,7 +5005,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedAloe3HarvestDescT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="resourceCropAloeLeaf" count="3" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedAloeT2-1" count="1"/>			
 			<property name="SortOrder1" value="B956"/>
@@ -4990,7 +5022,7 @@
 			<property name="CustomIcon" value="BlueberryT2"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="60"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedBlueberryT2-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -5004,7 +5036,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedBlueberry3HarvestPlayerT2"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedBlueberryT2-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
 			<property name="SortOrder2" value="0001"/>
@@ -5016,7 +5048,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedBlueberry3HarvestDescT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropBlueberries" count="3" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedBlueberryT2-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -5034,7 +5066,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="60"/>
-			<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPotatoT2-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -5048,7 +5080,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPotato3HarvestPlayerT2"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPotatoT2-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
 			<property name="SortOrder2" value="0001"/>
@@ -5060,7 +5092,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPotato3HarvestDescT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPotato" count="3" tag="cropHarvest"/>		
 			<drop event="Destroy" name="plantedPotatoT2-1" count="1"/>			
 			<property name="SortOrder1" value="B958"/>
@@ -5119,7 +5151,7 @@
 			<property name="EconomicValue" value="60"/>
 			<property name="CustomIcon" value="CornT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -5137,7 +5169,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedCorn3HarvestPlayerT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenMediumPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedCornT2-1" count="1"/>
@@ -5152,7 +5184,7 @@
 			<property name="DescriptionKey" value="plantedCorn3HarvestDescT2"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropCorn" count="3" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCornT2-1" count="1"/>			
 			<property name="SortOrder1" value="B960"/>
@@ -5171,7 +5203,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="EconomicValue" value="60"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -5190,7 +5222,7 @@
 			<property name="PlantGrowing.Next" value="plantedGraceCorn3HarvestPlayerT2"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperMediumPrefab.prefab"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedGraceCornT1-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -5205,7 +5237,7 @@
 			<property name="DescriptionKey" value="plantedGraceCorn3HarvestDescT2"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropGraceCorn" count="3" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedGraceCornT1-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -5264,7 +5296,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="PumpkinT2"/>
 			<property name="EconomicValue" value="60"/>
-			<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>			
+			<property name="Model" value="@:Entities/Plants/pumpkinSproutPrefab.prefab"/>			
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPumpkinT2-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -5278,7 +5310,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPumpkin3HarvestPlayerT2"/>		
 			<property name="Shape" value="ModelEntity"/>	
-			<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPumpkinT2-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
 			<property name="SortOrder2" value="0001"/>
@@ -5290,7 +5322,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPumpkin3HarvestDescT2"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPumpkin" count="3" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedPumpkinT2-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -5315,7 +5347,7 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="Material" value="Mmushrooms"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomSproutPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomSproutPrefab.prefab"/>
 			<property name="LightOpacity" value="0"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="Collide" value="melee"/>
@@ -5334,7 +5366,7 @@
 			<property name="PlantGrowing.LightLevelGrow" value="0"/>
 			<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayerT3"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomGrowthPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomGrowthPrefab.prefab"/>
 			<property name="Collide" value="melee"/>
 			<drop event="Destroy" name="plantedMushroomT3-1" count="1"/>
 			<property name="SortOrder1" value="B951"/>
@@ -5351,7 +5383,7 @@
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="DisplayInfo" value="Description"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="melee"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -5360,7 +5392,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedMushroom3HarvestDescT3"/>		
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>	
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>	
 			<drop event="Harvest" name="foodCropMushrooms" count="6" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedMushroomT3-1" count="1"/>
 			<property name="SortOrder1" value="B951"/>
@@ -5378,7 +5410,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="120"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedYuccaT3-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -5392,7 +5424,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedYucca3HarvestPlayerT3"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/Plants/plant_yucca_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedYuccaT3-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
 			<property name="SortOrder2" value="0001"/>
@@ -5404,7 +5436,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedYucca3HarvestDescT3"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropYuccaFruit" count="6" tag="cropHarvest"/>
 			<drop event="Destroy" name="plantedYuccaT3-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -5417,7 +5449,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonSproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCottonT3-2"/>
 			<property name="CustomIcon" value="CottonT3"/>
 			<property name="UnlockedBy" value="skillFarming"/>
@@ -5435,7 +5467,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonGrowthPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCotton3HarvestPlayerT3"/>			
 			<property name="Texture" value="20"/>
 			<drop event="Destroy" name="plantedCottonT3-1" count="1"/>			
@@ -5448,7 +5480,7 @@
 			<property name="Extends" value="cropsHarvestableMaster"/>
 			<property name="Texture" value="363"/>
 			<property name="Shape" value="ModelEntity" />		
-			<property name="Model" value="Entities/Plants/plantCottonHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonHarvestPrefab.prefab"/>
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedCotton3HarvestDescT3"/>
 			<drop event="Harvest" name="resourceCropCottonPlant" count="6" tag="cropHarvest"/>			
@@ -5463,7 +5495,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_SproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_SproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffeeT3-2"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="CoffeeT3"/>
@@ -5482,7 +5514,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_GrowingPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_GrowingPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffee3HarvestPlayerT3"/>			
 			<property name="Texture" value="394"/>
 			<drop event="Destroy" name="plantedCoffeeT3-1" count="1"/>
@@ -5496,7 +5528,7 @@
 			<property name="Texture" value="395"/>
 			<property name="CreativeMode" value="Player"/>	
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffeePlant_Prefab"/>			
+			<property name="Model" value="@:Entities/Plants/plantCoffeePlant_Prefab.prefab"/>			
 			<property name="DescriptionKey" value="plantedCoffee3HarvestDescT3"/>
 			<drop event="Harvest" name="resourceCropCoffeeBeans" count="6" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCoffeeT3-1" count="1"/>			
@@ -5555,7 +5587,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="EconomicValue" value="120"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe1_Prefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedAloeT3-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
@@ -5569,7 +5601,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedAloe3HarvestPlayerT3"/>		
 			<property name="Shape" value="ModelEntity"/>	
-			<property name="Model" value="Entities/Plants/plant_aloe2_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe2_Prefab.prefab"/>
 			<drop event="Destroy" name="plantedAloeT3-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
 			<property name="SortOrder2" value="0001"/>
@@ -5581,7 +5613,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedAloe3HarvestDescT3"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="resourceCropAloeLeaf" count="6" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedAloeT3-1" count="1"/>			
 			<property name="SortOrder1" value="B956"/>
@@ -5598,7 +5630,7 @@
 			<property name="CustomIcon" value="BlueberryT3"/>
 			<property name="EconomicValue" value="120"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedBlueberryT3-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -5612,7 +5644,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedBlueberry3HarvestPlayerT3"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedBlueberryT3-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
 			<property name="SortOrder2" value="0001"/>
@@ -5624,7 +5656,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedBlueberry3HarvestDescT3"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropBlueberries" count="6" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedBlueberryT3-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -5641,7 +5673,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="120"/>
-			<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPotatoT3-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -5655,7 +5687,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPotato3HarvestPlayerT3"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPotatoT3-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
 			<property name="SortOrder2" value="0001"/>
@@ -5667,7 +5699,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPotato3HarvestDescT3"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPotato" count="6" tag="cropHarvest"/>		
 			<drop event="Destroy" name="plantedPotatoT3-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -5727,7 +5759,7 @@
 			<property name="CustomIcon" value="CornT3"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="120"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -5745,7 +5777,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedCorn3HarvestPlayerT3"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenMediumPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedCornT2-1" count="1"/>
@@ -5760,7 +5792,7 @@
 			<property name="DescriptionKey" value="plantedCorn3HarvestDescT3"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropCorn" count="6" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCornT3-1" count="1"/>			
 			<property name="SortOrder1" value="B960"/>
@@ -5779,7 +5811,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="120"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -5798,7 +5830,7 @@
 			<property name="PlantGrowing.Next" value="plantedGraceCorn3HarvestPlayerT3"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperMediumPrefab.prefab"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedGraceCornT3-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -5813,7 +5845,7 @@
 			<property name="DescriptionKey" value="plantedGraceCorn3HarvestDescT3"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropGraceCorn" count="6" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedGraceCornT1-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -5871,7 +5903,7 @@
 				<property name="EconomicValue" value="120"/>
 				<property name="CustomIcon" value="PumpkinT3"/>
 				<property name="Shape" value="ModelEntity"/>
-				<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
+				<property name="Model" value="@:Entities/Plants/pumpkinSproutPrefab.prefab"/>
 				<property name="PlaceAsRandomRotation" value="true"/>
 				<drop event="Destroy" name="plantedPumpkinT3-1" count="1"/>
 				<property name="SortOrder1" value="B964"/>
@@ -5885,7 +5917,7 @@
 				<property name="CreativeMode" value="None"/>
 				<property name="PlantGrowing.Next" value="plantedPumpkin3HarvestPlayerT3"/>		
 				<property name="Shape" value="ModelEntity"/>		
-				<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
+				<property name="Model" value="@:Entities/Plants/pumpkinGrowthPrefab.prefab"/>
 				<drop event="Destroy" name="plantedPumpkinT3-1" count="1"/>
 				<property name="SortOrder1" value="B964"/>
 				<property name="SortOrder2" value="0001"/>
@@ -5897,7 +5929,7 @@
 				<property name="CreativeMode" value="Player"/>				
 				<property name="DescriptionKey" value="plantedPumpkin3HarvestDescT3"/>
 				<property name="Shape" value="ModelEntity"/>
-				<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
+				<property name="Model" value="@:Entities/Plants/pumpkinHarvestPrefab.prefab"/>
 				<drop event="Harvest" name="foodCropPumpkin" count="6" tag="cropHarvest"/>			
 				<drop event="Destroy" name="plantedPumpkinT3-1" count="1"/>
 				<property name="SortOrder1" value="B964"/>
@@ -5922,7 +5954,7 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="Material" value="Mmushrooms"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomSproutPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomSproutPrefab.prefab"/>
 			<property name="LightOpacity" value="0"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="Collide" value="melee"/>
@@ -5941,7 +5973,7 @@
 			<property name="PlantGrowing.LightLevelGrow" value="0"/>
 			<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayerT4"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomGrowthPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedMushroomT4-1" count="1"/>
 			<property name="Collide" value="melee"/>
 			<property name="SortOrder1" value="B951"/>
@@ -5958,7 +5990,7 @@
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="DisplayInfo" value="Description"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="melee"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -5967,7 +5999,7 @@
 			<property name="CreativeMode" value="Player"/>								
 			<property name="DescriptionKey" value="plantedMushroom3HarvestDescT4"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropMushrooms" count="9" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedMushroomT4-1" count="1"/>			
 			<property name="SortOrder1" value="B951"/>
@@ -5986,7 +6018,7 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="240"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedYuccaT4-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -6000,7 +6032,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedYucca3HarvestPlayerT4"/>		
 			<property name="Shape" value="ModelEntity"/>	
-			<property name="Model" value="Entities/Plants/plant_yucca_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedYuccaT4-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6012,7 +6044,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedYucca3HarvestDescT4"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropYuccaFruit" count="9" tag="cropHarvest"/>
 			<drop event="Destroy" name="plantedYuccaT4-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -6025,7 +6057,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonSproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCottonT4-2"/>
 			<property name="CustomIcon" value="CottonT4"/>
 			<property name="EconomicValue" value="240"/>
@@ -6043,7 +6075,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonGrowthPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCotton3HarvestPlayerT4"/>			
 			<property name="Texture" value="20"/>
 			<drop event="Destroy" name="plantedCottonT4-1" count="1"/>			
@@ -6056,7 +6088,7 @@
 			<property name="Extends" value="cropsHarvestableMaster"/>
 			<property name="Texture" value="363"/>
 			<property name="Shape" value="ModelEntity" />		
-			<property name="Model" value="Entities/Plants/plantCottonHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonHarvestPrefab.prefab"/>
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedCotton3HarvestDescT4"/>
 			<drop event="Harvest" name="resourceCropCottonPlant" count="9" tag="cropHarvest"/>			
@@ -6071,7 +6103,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_SproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_SproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffeeT4-2"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="CoffeeT4"/>
@@ -6090,7 +6122,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_GrowingPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_GrowingPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffee3HarvestPlayerT4"/>			
 			<property name="Texture" value="394"/>
 			<drop event="Destroy" name="plantedCoffeeT4-1" count="1"/>
@@ -6104,7 +6136,7 @@
 			<property name="Texture" value="395"/>
 			<property name="CreativeMode" value="Player"/>	
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffeePlant_Prefab"/>			
+			<property name="Model" value="@:Entities/Plants/plantCoffeePlant_Prefab.prefab"/>			
 			<property name="DescriptionKey" value="plantedCoffee3HarvestDescT4"/>
 			<drop event="Harvest" name="resourceCropCoffeeBeans" count="9" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCoffeeT4-1" count="1"/>			
@@ -6163,7 +6195,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe1_Prefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedAloeT4-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
@@ -6177,7 +6209,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedAloe3HarvestPlayerT4"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/Plants/plant_aloe2_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe2_Prefab.prefab"/>
 			<drop event="Destroy" name="plantedAloeT4-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6189,7 +6221,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedAloe3HarvestDescT4"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="resourceCropAloeLeaf" count="9" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedAloeT4-1" count="1"/>			
 			<property name="SortOrder1" value="B956"/>
@@ -6207,7 +6239,7 @@
 			<property name="CustomIcon" value="BlueberryT4"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="EconomicValue" value="240"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedBlueberryT4-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -6221,7 +6253,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedBlueberry3HarvestPlayerT4"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedBlueberryT4-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6233,7 +6265,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedBlueberry3HarvestDescT4"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropBlueberries" count="9" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedBlueberryT4-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -6250,7 +6282,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="EconomicValue" value="240"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPotatoT4-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -6264,7 +6296,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPotato3HarvestPlayerT4"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPotatoT4-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6276,7 +6308,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPotato3HarvestDescT4"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPotato" count="9" tag="cropHarvest"/>		
 			<drop event="Destroy" name="plantedPotatoT4-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -6336,7 +6368,7 @@
 			<property name="CustomIcon" value="CornT4"/>
 			<property name="EconomicValue" value="240"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -6354,7 +6386,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedCorn3HarvestPlayerT4"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenMediumPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedCornT2-1" count="1"/>
@@ -6369,7 +6401,7 @@
 			<property name="DescriptionKey" value="plantedCorn3HarvestDescT4"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropCorn" count="9" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCornT4-1" count="1"/>			
 			<property name="SortOrder1" value="B960"/>
@@ -6388,7 +6420,7 @@
 			<property name="EconomicValue" value="240"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -6407,7 +6439,7 @@
 			<property name="PlantGrowing.Next" value="plantedGraceCorn3HarvestPlayerT4"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperMediumPrefab.prefab"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedGraceCornT4-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -6422,7 +6454,7 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="DescriptionKey" value="plantedGraceCorn3HarvestDescT4"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropGraceCorn" count="9" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedGraceCornT4-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -6481,7 +6513,7 @@
 			<property name="CustomIcon" value="PumpkinT4"/>
 			<property name="EconomicValue" value="240"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinSproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPumpkinT4-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -6494,7 +6526,7 @@
 			<property name="Extends" value="plantedPumpkinT4-1"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPumpkin3HarvestPlayerT4"/>			
-			<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPumpkinT4-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6506,7 +6538,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPumpkin3HarvestDescT4"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPumpkin" count="9" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedPumpkinT4-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -6528,7 +6560,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe1_Prefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedAloeT5-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
@@ -6542,7 +6574,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedAloe3HarvestPlayerT5"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/Plants/plant_aloe2_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe2_Prefab.prefab"/>
 			<drop event="Destroy" name="plantedAloeT5-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6554,7 +6586,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedAloe3HarvestDescT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="resourceCropAloeLeaf" count="12" tag="cropHarvest"/>
 			<drop event="Destroy" name="plantedAloeT5-1" count="1"/>			
 			<property name="SortOrder1" value="B956"/>
@@ -6570,7 +6602,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="BlueberryT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedBlueberryT5-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -6584,7 +6616,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedBlueberry3HarvestPlayerT5"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedBlueberryT5-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6596,7 +6628,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedBlueberry3HarvestDescT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropBlueberries" count="12" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedBlueberryT5-1" count="1"/>			
 			<property name="SortOrder1" value="B957"/>
@@ -6616,7 +6648,7 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="Material" value="Mmushrooms"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomSproutPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomSproutPrefab.prefab"/>
 			<property name="LightOpacity" value="0"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="Collide" value="melee"/>
@@ -6635,7 +6667,7 @@
 			<property name="PlantGrowing.LightLevelGrow" value="0"/>
 			<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayerT5"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomGrowthPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedMushroomT5-1" count="1"/>
 			<property name="Collide" value="melee"/>
 			<property name="SortOrder1" value="B951"/>
@@ -6652,7 +6684,7 @@
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="DisplayInfo" value="Description"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="melee"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -6661,7 +6693,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedMushroom3HarvestDescT5"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropMushrooms" count="12" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedMushroomT5-1" count="1"/>			
 			<property name="SortOrder1" value="B951"/>
@@ -6678,7 +6710,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedYuccaT5-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -6693,7 +6725,7 @@
 			<property name="PlantGrowing.Next" value="plantedYucca3HarvestPlayerT5"/>
 			<property name="CustomIcon" value="plantedYucca1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedYuccaT5-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6706,7 +6738,7 @@
 			<property name="CustomIcon" value="plantedYucca1"/>
 			<property name="DescriptionKey" value="plantedYucca3HarvestDescT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropYuccaFruit" count="12" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedYuccaT5-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -6719,7 +6751,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonSproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCottonT5-2"/>
 			<property name="CustomIcon" value="CottonT5"/>
 			<property name="UnlockedBy" value="skillFarming"/>
@@ -6736,7 +6768,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonGrowthPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCotton3HarvestPlayerT5"/>
 			<property name="CustomIcon" value="plantedCottonT5-1"/>
 			<property name="Texture" value="20"/>
@@ -6750,7 +6782,7 @@
 			<property name="Extends" value="cropsHarvestableMaster"/>
 			<property name="Texture" value="363"/>
 			<property name="Shape" value="ModelEntity" />		
-			<property name="Model" value="Entities/Plants/plantCottonHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonHarvestPrefab.prefab"/>
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedCotton3HarvestDescT5"/>
 			<drop event="Harvest" name="resourceCropCottonPlant" count="12" tag="cropHarvest"/>			
@@ -6765,7 +6797,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_SproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_SproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffeeT5-2"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="CoffeeT5"/>
@@ -6783,7 +6815,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_GrowingPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_GrowingPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffee3HarvestPlayerT5"/>			
 			<property name="Texture" value="394"/>
 			<drop event="Destroy" name="plantedCoffeeT5-1" count="1"/>
@@ -6797,7 +6829,7 @@
 			<property name="Texture" value="395"/>
 			<property name="CreativeMode" value="Player"/>	
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffeePlant_Prefab"/>			
+			<property name="Model" value="@:Entities/Plants/plantCoffeePlant_Prefab.prefab"/>			
 			<property name="DescriptionKey" value="plantedCoffee3HarvestDescT5"/>
 			<drop event="Harvest" name="resourceCropCoffeeBeans" count="12" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCoffeeT5-1" count="1"/>			
@@ -6854,7 +6886,7 @@
 			<property name="CustomIcon" value="PotatoT5"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPotatoT5-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -6868,7 +6900,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPotato3HarvestPlayerT5"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPotatoT5-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
 			<property name="SortOrder2" value="0001"/>
@@ -6880,7 +6912,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPotato3HarvestDescT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPotato" count="12" tag="cropHarvest"/>		
 			<drop event="Destroy" name="plantedPotatoT5-1" count="1"/>			
 			<property name="SortOrder1" value="B958"/>
@@ -6937,7 +6969,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="CustomIcon" value="CornT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -6955,7 +6987,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedCorn3HarvestPlayerT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenMediumPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedCornT5-1" count="1"/>
@@ -6970,7 +7002,7 @@
 			<property name="DescriptionKey" value="plantedCorn3HarvestDescT5"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropCorn" count="12" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCornT5-1" count="1"/>			
 			<property name="SortOrder1" value="B960"/>
@@ -6990,7 +7022,7 @@
 			<property name="EconomicValue" value="20"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -7009,7 +7041,7 @@
 			<property name="PlantGrowing.Next" value="plantedGraceCorn3HarvestPlayerT5"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperMediumPrefab.prefab"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedGraceCornT5-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -7024,7 +7056,7 @@
 			<property name="DescriptionKey" value="plantedGraceCorn3HarvestDescT5"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropGraceCorn" count="12" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedGraceCornT5-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -7080,7 +7112,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="CustomIcon" value="PumpkinT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinSproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPumpkinT5-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -7095,7 +7127,7 @@
 			<property name="PlantGrowing.Next" value="plantedPumpkin3HarvestPlayerT5"/>
 			<property name="CustomIcon" value="plantedPumpkinT5-1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPumpkinT5-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
 			<property name="SortOrder2" value="0001"/>
@@ -7108,7 +7140,7 @@
 			<property name="CustomIcon" value="plantedPumpkinT5-1"/>
 			<property name="DescriptionKey" value="plantedPumpkin3HarvestDescT5"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPumpkin" count="12" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedPumpkinT5-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -7130,7 +7162,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe1_Prefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedAloeT6-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
@@ -7144,7 +7176,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedAloe3HarvestPlayerT6"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/Plants/plant_aloe2_Prefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe2_Prefab.prefab"/>
 			<drop event="Destroy" name="plantedAloeT6-1" count="1"/>
 			<property name="SortOrder1" value="B956"/>
 			<property name="SortOrder2" value="0001"/>
@@ -7156,7 +7188,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedAloe3HarvestDescT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_aloe_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="resourceCropAloeLeaf" count="15" tag="cropHarvest"/>
 			<drop event="Destroy" name="plantedAloeT6-1" count="1"/>			
 			<property name="SortOrder1" value="B956"/>
@@ -7172,7 +7204,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="BlueberryT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedBlueberryT6-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
@@ -7186,7 +7218,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedBlueberry3HarvestPlayerT6"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedBlueberryT6-1" count="1"/>
 			<property name="SortOrder1" value="B957"/>
 			<property name="SortOrder2" value="0001"/>
@@ -7198,7 +7230,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedBlueberry3HarvestDescT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/blueberry_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropBlueberries" count="15" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedBlueberryT6-1" count="1"/>			
 			<property name="SortOrder1" value="B957"/>
@@ -7218,7 +7250,7 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="Material" value="Mmushrooms"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomSproutPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomSproutPrefab.prefab"/>
 			<property name="LightOpacity" value="0"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="Collide" value="melee"/>
@@ -7237,7 +7269,7 @@
 			<property name="PlantGrowing.LightLevelGrow" value="0"/>
 			<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayerT6"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomGrowthPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedMushroomT6-1" count="1"/>
 			<property name="Collide" value="melee"/>
 			<property name="SortOrder1" value="B951"/>
@@ -7254,7 +7286,7 @@
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="DisplayInfo" value="Description"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="melee"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -7263,7 +7295,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedMushroom3HarvestDescT6"/>	
 			<property name="Shape" value="ModelEntity"/>		
-			<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/mushroomHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropMushrooms" count="15" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedMushroomT6-1" count="1"/>			
 			<property name="SortOrder1" value="B951"/>
@@ -7280,7 +7312,7 @@
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Material" value="Mcorn"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedYuccaT6-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -7295,7 +7327,7 @@
 			<property name="PlantGrowing.Next" value="plantedYucca3HarvestPlayerT6"/>
 			<property name="CustomIcon" value="plantedYucca1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedYuccaT6-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
 			<property name="SortOrder2" value="0001"/>
@@ -7308,7 +7340,7 @@
 			<property name="CustomIcon" value="plantedYucca1"/>
 			<property name="DescriptionKey" value="plantedYucca3HarvestDescT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plant_yucca_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropYuccaFruit" count="15" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedYuccaT6-1" count="1"/>
 			<property name="SortOrder1" value="B952"/>
@@ -7321,7 +7353,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonSproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCottonT6-2"/>
 			<property name="CustomIcon" value="CottonT6"/>
 			<property name="UnlockedBy" value="skillFarming"/>
@@ -7338,7 +7370,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCottonGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonGrowthPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCotton3HarvestPlayerT6"/>
 			<property name="CustomIcon" value="plantedCottonT6-1"/>
 			<property name="Texture" value="20"/>
@@ -7352,7 +7384,7 @@
 			<property name="Extends" value="cropsHarvestableMaster"/>
 			<property name="Texture" value="363"/>
 			<property name="Shape" value="ModelEntity" />		
-			<property name="Model" value="Entities/Plants/plantCottonHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCottonHarvestPrefab.prefab"/>
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedCotton3HarvestDescT6"/>
 			<drop event="Harvest" name="resourceCropCottonPlant" count="15" tag="cropHarvest"/>			
@@ -7367,7 +7399,7 @@
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_SproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_SproutPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffeeT6-2"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="CustomIcon" value="CoffeeT6"/>
@@ -7385,7 +7417,7 @@
 			<property name="Extends" value="cropsGrowingMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffee_GrowingPrefab"/>
+			<property name="Model" value="@:Entities/Plants/plantCoffee_GrowingPrefab.prefab"/>
 			<property name="PlantGrowing.Next" value="plantedCoffee3HarvestPlayerT6"/>			
 			<property name="Texture" value="394"/>
 			<drop event="Destroy" name="plantedCoffeeT6-1" count="1"/>
@@ -7399,7 +7431,7 @@
 			<property name="Texture" value="395"/>
 			<property name="CreativeMode" value="Player"/>		
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Plants/plantCoffeePlant_Prefab"/>		
+			<property name="Model" value="@:Entities/Plants/plantCoffeePlant_Prefab.prefab"/>		
 			<property name="DescriptionKey" value="plantedCoffee3HarvestDescT6"/>
 			<drop event="Harvest" name="resourceCropCoffeeBeans" count="15" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCoffeeT6-1" count="1"/>			
@@ -7456,7 +7488,7 @@
 			<property name="CustomIcon" value="PotatoT6"/>
 			<property name="UnlockedBy" value="skillFarming"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_sproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPotatoT6-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
@@ -7470,7 +7502,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedPotato3HarvestPlayerT6"/>			
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_growthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_growthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPotatoT6-1" count="1"/>
 			<property name="SortOrder1" value="B958"/>
 			<property name="SortOrder2" value="0001"/>
@@ -7482,7 +7514,7 @@
 			<property name="CreativeMode" value="Player"/>			
 			<property name="DescriptionKey" value="plantedPotato3HarvestDescT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/potato_plant_harvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPotato" count="15" tag="cropHarvest"/>		
 			<drop event="Destroy" name="plantedPotatoT6-1" count="1"/>			
 			<property name="SortOrder1" value="B958"/>
@@ -7539,7 +7571,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="CustomIcon" value="CornT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -7557,7 +7589,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property name="PlantGrowing.Next" value="plantedCorn3HarvestPlayerT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenMediumPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedCornT6-1" count="1"/>
@@ -7572,7 +7604,7 @@
 			<property name="DescriptionKey" value="plantedCorn3HarvestDescT6"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkGreenPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkGreenPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropCorn" count="15" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedCornT6-1" count="1"/>			
 			<property name="SortOrder1" value="B960"/>
@@ -7592,7 +7624,7 @@
 			<property name="EconomicValue" value="20"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperSmallPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperSmallPrefab.prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<property name="Place" value="Door"/>
@@ -7611,7 +7643,7 @@
 			<property name="PlantGrowing.Next" value="plantedGraceCorn3HarvestPlayerT6"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="ModelOffset" value="0,0,0"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperMediumPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperMediumPrefab.prefab"/>
 			<property name="MultiBlockDim" value="1,3,1"/>
 			<drop event="Destroy" name="plantedGraceCornT6-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -7626,7 +7658,7 @@
 			<property name="DescriptionKey" value="plantedGraceCorn3HarvestDescT6"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/OutdoorDecor/cornStalkSuperPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/cornStalkSuperPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropGraceCorn" count="15" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedGraceCornT6-1" count="1"/>
 			<property name="SortOrder1" value="B961"/>
@@ -7682,7 +7714,7 @@
 			<property name="Material" value="Mcorn"/>
 			<property name="CustomIcon" value="PumpkinT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinSproutPrefab.prefab"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<drop event="Destroy" name="plantedPumpkinT6-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -7697,7 +7729,7 @@
 			<property name="PlantGrowing.Next" value="plantedPumpkin3HarvestPlayerT6"/>
 			<property name="CustomIcon" value="plantedPumpkinT6-1"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinGrowthPrefab.prefab"/>
 			<drop event="Destroy" name="plantedPumpkinT6-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
 			<property name="SortOrder2" value="0001"/>
@@ -7710,7 +7742,7 @@
 			<property name="CustomIcon" value="plantedPumpkinT6-1"/>
 			<property name="DescriptionKey" value="plantedPumpkin3HarvestDescT6"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
+			<property name="Model" value="@:Entities/Plants/pumpkinHarvestPrefab.prefab"/>
 			<drop event="Harvest" name="foodCropPumpkin" count="15" tag="cropHarvest"/>			
 			<drop event="Destroy" name="plantedPumpkinT6-1" count="1"/>
 			<property name="SortOrder1" value="B964"/>
@@ -7967,7 +7999,7 @@
 			<property name="Material" value="Mwood"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="CustomIcon" value="keyRackWood01"/>			
-			<property name="Model" value="Entities/Commercial/keyRackWood_01Prefab"/>
+			<property name="Model" value="@:Entities/Commercial/keyRackWood_01Prefab"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Stacknumber" value="1000"/> <!-- Med -->
 			<property name="EconomicValue" value="30"/>
@@ -7997,7 +8029,7 @@
 			<!-- **************************************** -->
 			<property name="CanMobsSpawnOn" value="false"/>
 			<property name="Shape" value="New"/>			
-			<property name="Model" value="counter_hollow_top"/>
+			<property name="Model" value="@:Shapes/counter_hollow_top.fbx"/>
 			<property name="Texture" value="241"/>
 			<property name="UiBackgroundTexture" value="241"/>
 			<property name="FuelValue" value="500"/>
@@ -8141,7 +8173,7 @@
       <property name="Stacknumber" value="1" />
       <property name="Material" value="Mmetal_medium" />
       <property name="Shape" value="ModelEntity" />
-      <property name="Model" value="Entities/Electrical/bigGeneratorPrefab" />
+      <property name="Model" value="@:Entities/Electrical/bigGeneratorPrefab" />
       <property name="MultiBlockDim" value="3,2,2" />
       <property name="ImposterDontBlock" value="true" />
       <property name="WaterFlow" value="permitted" />

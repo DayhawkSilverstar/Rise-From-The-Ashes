@@ -11,15 +11,407 @@ new features are enabled for modders and players to use.
 |Features | Features will contain all the code necessary for a particular feature, grouping the code so it can be easily found and extracted. |
 
 ### Direct Downloads
-Direct Download to the 0-SCore.zip available on gitlab mirror: https://github.com/SphereII/SphereII.Mods/releases/latest
-
-### TODO
-	- Fix random sounds from NPC, like stamina exhaustion
-	- Fix an issue with remote crafting where all ingredients are not in the same storage box
+Direct Download to the 0-SCore.zip https://github.com/SphereII/SphereII.Mods/releases/latest
 
 ### Change Logs
+Summary for 2.0 Update:
+This release of 0-SCore introduces significant enhancements across several core systems, with a strong emphasis on **Shared Reading**, **NPC behaviors (including farming and combat)**, **block placement controls within POIs**, and **performance optimizations**.
+**Key Highlights:**
+
+* Shared Reading System: A major new feature allowing party members to share unlocked content from books and items. This includes new localization entries and fixes for server and client-side issues.
+* Improved NPC AI and Behaviors:
+	* Farming: Reworked Utility AI for farming tasks, making farmers more reliable, preventing task locks and accidental destruction of farm blocks, and keeping them closer to their farms. Sprinklers can now be individually controlled and detect water sources more effectively, and can even extinguish fires.
+	* Combat/General: Fixed issues with NPC bandit weapon handling, enabled patrol points for EntityEnemySDX, and exposed more configuration options for NPC movement (e.g., `BlockTimeToJump`, `BlockedTime`).
+	* Dialog: Patches for improved dialog functionality, including displaying statements in the subtitle window for EntityAliveSDX and allowing dialogs to inherit and combine from multiple sources using an "extends" property.
+* POI Building Restrictions: Introduced a new patch and configuration options to prevent players from placing blocks within specific POI bounds, based on prefab names or tags. This aims to maintain the integrity of designed POIs.
+* Performance and Refactoring:
+	* Fire Manager V2 & Food Spoilage V2: Both systems underwent significant AI-assisted refactoring to improve performance, breaking down classes into helper classes and cleaning up code.
+* Localization Enhancements: Added a new localization method to ensure localized entries are always retrieved, even if the direct key is missing (checking for `Name` or `Desc` suffixes). Also added support for `<include>` tags in Localization files, allowing for better organization.
+* Bug Fixes and Stability: Addressed various null reference errors, spamming issues with spoiled items, durability bar disappearing, and general migration/refactoring for broken references and changed parameters.
+
 
 [ Change Log ]
+Version: 2.0.14.1511
+	[ Block ]
+		- Updated block Model reference to support new format.
+
+	[ Fire Manager ]
+		- Cleaned up an error when game is exiting and fire manager is not enabled.
+
+	[ Trader Currency ]
+		- Added a check to see if the trader was already in the dictionary.
+		- Added a check to store the original currency, and use in place of casinoCoin
+
+	[ NPC Core ]
+		- Fixed an issue where NPCs would get stuck in a crouch after stun
+		- Updated code in EntityAliveSDX and EntityBanditSDX for GetEyeHeight() checks
+
+
+Version: 2.0.12.1509
+	[ Disable Trader Protection ]
+		- When DisableWallVolume is enabled, the invisible wall volumes will be removed.
+		- New property under AdvancedPrefabFeature to enable it:
+			<!-- Disables the invisible wall behind traders -->
+			<property name="DisableWallVolume" value="false" />
+
+	[ Fire Manager ]
+		- Fixed an issue where a POI reset would cause it to fill with extinguished smoke.
+		- Updated reference to the SCoreMedium loop for sounds.
+
+	[ Trader Currency ]
+		- Added the ability to change a particular trader's currency, using the alt_currency attribute.
+				<trader_info id="8" reset_interval="3" open_time="4:05" close_time="21:50" alt_currency="oldCash">
+		- When a player talks with a trader, with the alt_currency, it will update the backpack's currency display to use that value.
+
+	[ SphereII Peace of Mind ]
+		- Replaced a few new hanging corpses with empty pillar
+		- Fixed issue here zombiePartyGirlCharged was throwing warnings
+
+
+ Version: 2.0.11.824
+	[ Shared Reading ]
+		- Removed "Learned" from the Tooltip
+		- Added a new Localization method to try to always get a localized entry
+			- In some cases, there's no Localization directly from the key
+			- Example:  
+				craftingRifles
+				- In those cases, it'll check for craftingRiflesName, craftingRiflesDesc, and finally craftingRiflesLongDesc
+
+	[ SCoreLocalizationHelper ]
+		- Wrote a static helper class to cycle through various Localization attempts.
+		- This was added to make the sharedReading code a bit cleaner.
+
+Version: 2.0.10.1059 - PreRelease
+	[ Farming ]
+		- Converted RequireWater and WaterRange to be Auto properties, allowing them to be changed.
+
+	[ Shared Reading ]
+		- Fixed an issue where shared reading wasn't working properly on dedicated servers
+
+Version: 2.0.8.920 - Prerelease
+	
+	[ Blocks ]
+		- Added a new patch that allows blocking placing blocks without POI bounds.
+			- This does not affect repairing or upgrading.
+		- New Config block entry under AdvancedPrefabFeatures
+			<!-- Property to check if the prefab name has a no building flag on it. Goes by prefab name. -->
+			<!-- Comma delimited -->
+			<property name="PrefabName_NoBuilding" value="" />
+
+			<!-- Property to check if a Prefab has this tag on its XML. Comma delimited. -->
+			<property name="PrefabTag_NoBuilding" value="NoBuild" />
+
+		- A prefab that has any of these conditions will block placing any blocks within its bounds:
+			- If a Prefab has a Tags set to the PrefabTag_NoBuilding
+			- If a prefab has a Localized Name, or filename that patches PrefabName_NoBuilding.
+				- This is a contains() check, so be explicit unless you want to cover multiple POIs.
+
+	[ Shared Reading ]
+		- Fixed a null reference when a client was reading a book.
+		
+Version: 2.0.7.1008 - Prerelease
+	[ Replace Material ]
+		- Added a Debug log for ReplaceMaterial to print out the materials on the entity spawned.
+		- This will print a log entry if the Debug "Show Tasks" is enabled for showing EAI information.
+
+	[ Shared Reading ]
+		- Added new Feature under Advanced Player Feature for Shared Reading
+		- Default is False.
+		- Any item read with the property "Unlocks" will share the event with all online party members.
+		- If an item has the property "NoSharedReading", it will not share it with party members.
+		- New Localization.txt entries:
+			sharedReading,"Learned"
+			sharedReadingDesc,"Shared Reading from"
+			sharedReadingSourceDesc,"Sharing To Party Members"
+		- All Party members will see  "Shared Reading from sphereii : Learned <Unlocks Value>"
+		- The reader will see "Sharing to Party Members : Learned <Unlocks Value>"
+
+	[ Food Spoilage ]
+		- Fixed an issue where spoiled items would get spammed
+		- Fixed an issue where spoilage counter would be reset
+		- Fixed an issue where the durability bar would disappear.
+	
+	[ SCoreConstants ]
+		- Fixed typo in SCoreConstants
+
+Version: 2.x Initial
+	[ Migration ]
+		- Updated broken references. 
+		- Renamed changed parameters in blocks
+		- General refactoring.
+
+	[ EntityPlayerLocal ]
+		- Added SharedReading, defaulted to false the blocks.xml
+			- If enabled, all items with the property "Unlocks" is shared with party members.
+
+	[ EntityEnemySDX ]
+		- Uncommented Read and Write methods to allow patrol points to be used
+
+	[ Patches ]
+		- Added Patch for Dynamic Music, triggering a null reference if NPCs are within trader areas
+		- Added a patch to prevent null references if a loot list name isn't set for NPCs
+			- This triggered Null ref when trying to open up an NPC's death bag.
+
+	[ NPCs ] 
+		- Fixed an issue where EntityNPCBandit did not have any weapons in their hand.
+		- The dialog window has changed, and is missing a property we relied on for NPCs to speak.
+			- A new dialog window will have to be written in the future.
+			- Currently using the Subtitle dialog window for this.
+
+	[ Fire Manager V2 ]
+		- Major AI assisted refactoring to improve performance.
+		- Broke the class into several helper classes and cleaned up the code.
+		- New code is in FireV2. Old code is still there, but not included into the build.
+		- Added a check to see if there's sprinklers around to extinguish the fire.
+
+	[ Food Spoilage ]
+		- Major AI assisted refactoring code to improve performance.
+		- New code is in FoodSpoilageV2. Old code is still there, but not included into the build.
+
+	[ Config Blocks ]
+		- Exposed The BlockTimeToJump value to XML. 
+			- This determines how long an NPC should be blocked before allowing them to jump.
+		- Exposed the BlockedTime value to XML. 
+			- This determines how long an NPC should be blocked before considering they are blocked and need to do something else.
+
+	[ EntityAlive SDX ]
+		- Added new property to change the default window group being opened for dialog.
+            <property name="dialogWindow" value="dialog" />
+
+	[ SCore Constants ]
+		- Created a new class that can be used to centralize some variables to be used elsewhere.
+
+	[ Utility AI ]
+		- Adjusted all the block time checks to use the SCoreConstants class.
+		- Added NotHasHomePosition as an inverse check
+		- Added new TerritorialSDX task that wanders within the home range.
+		- Integrated https://github.com/SphereII/SphereII.Mods/issues/83
+                    // If the weight of this action is lower than the current high score, then even More actions
+                    // the highest consideration score of 1 can't make this the winning action.
+		
+
+		[ UAI Farming Task ]
+			- Modified Consideration HasHomePosition as a simple if its set or not.
+			- Re-factored UAIFarming Task to handle new piping, and restructuring.
+			- Fixed an issue where the farmer would get task locked
+			- Fixed an issue where the farmer would destroy random farm blocks.
+			- Modified the Bloom's Utility AI with new considerations and default tasks
+				- The default tasks will be used when NPC Core is not loaded
+			- Added Territorial to default, keeping the farmer close to the farm while still wandering about it.
+
+	[ Farming Systems ]
+		- Adjusted BlockWaterSourceSDX to better detect when water is available to the sprinkler
+		- Added the ability to interact with it to turn off individual sprinklers.
+		- Added the ability for water to extinguish nearby fires
+		- Added the ability for sprinklers to rescan when a pipe is removed or added.
+
+	[ Dialog ]
+		- Added patch to allow EntityAliveSDX to display dialog statements in the Subtitle window
+		- Added a patch to enable extends on dialogs, to inheirt and combine multiple dialogs.
+		- The extends is a comma delimited list of other dialogs to merge.
+        	<dialog id="FrankieFarmerDialog" startstatementid="start" extends="trader,GenericZombieLoreDialog">
+
+	[ Localization ]
+		- Added a patch to support <include for Localization files
+		- The <include could be added any place in the Localization.txt file.
+		- Each included localization file needs to have a header.
+			Key,english
+			<include filename="Dialogs/Farmer/Localization.txt"/>
+			<include filename="Dialogs/General/ZombiesDialog.txt"/>
+			<include filename="Dialogs/General/TraderSurvival.txt"/>
+	
+
+Version: 1.3.24.1230
+	[ NPCs ]
+		- Added support for the Auto-Stach buttons to work with NPCs.
+
+	[ AdvancedItemsFeatures ]
+		- Added a new property to the AdvancedItemsFeature in the blocks.xml
+	        <property name="DisableScrapFallback" value="false"/>
+		- This feature is only enabled AdvancedItemRepair is set to true.
+		- If this feature is enabled, but RepairItems / ScrapItems is not defined, then the item will scrap using vanilla.
+		- Current behaviour allows an item to be scrapped using a reduced recipe based on its ingredients, without defining RepairItems / ScrapItems.
+
+		- Added ScrapItems support for blocks.
+
+	[ Version Checker ]
+		- Received donated Code from Yakov that allows modders to add a versioncheck.xml file to their overhauls
+		- This versioncheck.xml file can be anywhere in the Mods folder
+		- This versioncheck.xml file contains the expected game version, along with optional messages to display.
+		- If this versioncheck.xml file is found in the Mods folder,
+			- Reads the current game version, and compares it to the expected game version.
+			- If the version matches, the main menu loads normally.
+			- If the version mismatches, a message box is shown to the players, saying the version does not match.
+			- The message box has a Quit and Continue button, allowing the user to keep going if they really want too.
+		- Example file can be found under Features/VersionCheck/versioncheck.example
+		- Added localization support.
+
+
+Version: 1.3.7.1037
+	[ Challenges ]
+		- Added multi-option to the loot_list= for the Gather Challenge. This is a comma-delimited list.
+	
+	[ Craft From Containers ]
+		- Added new Config option in Blocks.xml to check if a container is within Landclaim bounds, rather than distance.
+		    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='LandClaimContainersOnly']/@value">true</set>
+		- Default is false, do not restrict to landclaim, but rely on distance.
+
+		- Added new Config option in Blocks.xml to check if the player is within landclaim bounds.
+		    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='LandClaimPlayerOnly']/@value">true</set>
+		- Default is false, do not restrict player from being within a landclaim bounds.
+
+	[ Dynamic Bone ]
+		- Added test code for a new dynamic bone system.
+
+Version: 1.3.2.1535
+	- No Code changes. Rebuilt against Game Version 1.3.
+
+Version: 1.2.68.1007
+	[ Material Modifier ]
+		- With approval from Zilox, consumed the Material Modifier mod into 0-SCore to take over maintenance going forward.
+			<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" 
+				target_material_name="HD_Arlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+	
+	[ Challenges ]
+		- Added an item_tags to the CraftWithIngredient Challenge to check the tag for an ingredient
+			<objective type="CraftWithIngredient, SCore" count="2" item_tags="tag"/>
+			- This can work with ingredient= as well, and mix and match.
+			- Tag is checked first, then ingredient name.
+			- If tag is found, then it counts towards the challenge, but does not again check the ingredient name.
+
+		- Added a PlaceBlockByTag objective that checks for block tag when a block is placed.
+			<objective type="BlockPlaceByTag, SCore" count="2" block_tags="myTag"/>
+
+		- Added a loot_list attribute to GatherTags. It varies that the loot container is opened, with the loot_list name, before counting.
+			- This will not be 100% accurate, as it counts the items you have, and not necessarily how many you are grabbing from the loot container itself
+	            <objective type="GatherTags, SCore" loot_list="garbage"  item_tags="junk" count="10"/>
+
+
+
+
+Version: 1.2.61.2007
+	[ Fire Manager ]
+		- Fixed a potential threading issue with fire particles.
+
+Version: 1.2.59.838
+	[ Fire Manager ]
+		- Fixed a net package setup that was causing bad performance
+		- Adjusted how the netpackages are sent to the clients and recieved by the clients
+		- Reduced the information distributed via net packages
+
+Version: 1.2.57.733
+	[ On Block Added ]
+		- Fixed a null reference in onBlockAdded patch when loading prefab editor.
+
+Version:1.2.56.900
+	[ NPCs ]
+		- Fixed a few issues with null references when adding NPCs to storage.
+		
+
+Version: 1.2.54.1354
+	[ NPCs ]
+		- Fixed an issue where NPCs could be quick stacked into Drop box and other storage units
+
+	[ Challenges ]
+		- Fixed an issue where Stealth Kills would trigger twice, resulting in credit of 2 for 1 kill.
+
+Version: 1.2.53.1812
+	[ Challenges ]
+		- Added in a missing block tag check on the BlockUpgrade challenge
+
+Version: 1.2.52.1518
+
+	[ Challenges ]
+		- Fixed various issues with counting killed entities towards challenges
+		- Refactored the SCore base class a bit to handle the bugs
+		- Stealth kills should be working as expected now.
+		- Decaptation challenges should be working better.
+		- KillWithItem challenges should be working better.
+		- Fixed issues where Fire-related challenges was not running for clients connecting to servers.
+
+	[ Goto POI SDX ]
+		- Fixed an issue where the POI's name was not being localized.
+
+	[ Requirements ]
+		- Fixed an issue with the IsBloodMoon requirement check
+
+	[ Auto Redeem Challenges ]
+		- Fixed a potential null reference.
+			- Probably just a timing issue, but better safe then sorry.
+
+	[ UAI ]
+		- Applied fixes to the UAI Farming Task
+			- Changed how the Entity determines its looking at the target plot
+			- Changed the distance check kto determine if its close enough to the target plot.
+
+	[ Fire Manager ]
+		- Changed FireManager from a polling method to a Monobehaviour, attached to the GameManager's transform.
+			- This should reduce it spinning on Updates every frame.
+		- Fixed a few issues with netpackages, and distributions. Maybe.
+		- Refactored a few calls to make them easier to call from other scripts.
+		- Added in a new property, called "FirePersists". 
+			- If this is set to true, fire will be saved.
+			- Default is not saved when the game is unloaded / loaded.
+
+		- Added new patch to OnBlockAdded to check for property to start a block on fire.
+		- When this property is on a block, and is set to true, it'll automatically catch fire.
+			<property name="RegisterToFireManager" value="true" />
+
+		- Changed how a block picks its Fire Particle.
+		- A Fire Particle can be defined on a block's material, a block, or in the global block configuration, using this syntax:
+			<property name="FireParticle" value="@modfolder:..." />
+
+		- Fire particle that will be used on any given block will now be determined by in this order of priority: 
+			- A block's material
+			- A block
+			- Default fire particle defined in global block configuration.
+				- If Random Fire Particle is set to true, a random fire particle will be used instead of the global block configuration.
+			
+
+
+Version: 1.2.37.1146
+	[ NPCs ]
+		- Reverted a patch that was causing null ref on player death.
+		- This patch was meant to block people stashing NPCs.
+
+Version: 1.2.36.1142
+	[ NPCs ]
+		- Fixed an issue where a null reference would happen in a harmony patch for the Stash All.
+
+	[ Cave Spawning ]
+		- Fixed an issue where cave spawning was too sensitive.
+
+Version: 1.2.35.852
+	[ NPCs ]
+		- Fixed an issue where NPCs could be added to a storage box using the Stash All button.
+
+	[ Path Finding ]
+		- Accidentally reverted the sign for path finding.
+		- Intentionally restored the change.
+
+	[ Entity Factory Patch ]
+		- Added a patch to EntityFactory to catch "GetEntityType slow lookup for" for SCore-related classes
+
+
+Version: 1.2.29.952
+	[ Fire Mod ]
+		- Additional performance fixes when playing on servers
+
+	[ Caves ]
+		- Fixed issues with decorations being too few
+		- Cleaned up old staglamites which do not exist anymore
+		- Fixed cave spawning issues, and refactored the class
+
+	[ EntityAliveSDX ]
+		- Changed the default name of Bob to empty string.
+
+	[ Error Handling ]
+		- Added a ConfigBlock entry for a null reference in BlockEntityData.GetRenderers()
+			- This error would be thrown sometimes when a POI was being reset
+			- This feature must be set to true to guard against the null check. Default is false.
+				<property name="BlockEntityDataGetRenderers" value="true" />
+
+
 Version: 1.2.8.1136
 	[ NPCs ]
 		- Fixed an issue where NPCs could be added to Drone
