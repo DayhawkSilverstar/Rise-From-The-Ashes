@@ -15,6 +15,9 @@
 
   <set xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsGunParts']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
   <set xpath="/traders/trader_item_groups/trader_item_group[@name='traderRobotics']/item[@name='gunBotRoboticsParts']/@name">gunBotRoboticsPartsT3</set>
+
+  <!-- Trader info -->
+  <set xpath="/traders/trader_info[@id='8']/trader_items/item[@name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
 	
 	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='medicine']">
 		<trader_item_group name="seeds">

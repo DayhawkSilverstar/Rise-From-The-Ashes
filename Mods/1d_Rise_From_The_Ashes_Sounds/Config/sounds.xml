@@ -1,5 +1,15 @@
 <config>
 	<append xpath="/Sounds">
-
-    </append>
+    <SoundDataNode name="DrLeonFrostTape1_Clip">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_VO_TraderRekt.prefab"/>      
+      <AudioClip ClipName="#@modfolder:Resources/WhisperClipAudio.unity3d?DrLeonFrostTape1"/>
+      <Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.01"/>
+    </SoundDataNode>
+  </append>
 </config>

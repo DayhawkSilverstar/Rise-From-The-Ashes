@@ -3871,8 +3871,7 @@
 			<property name="Material" value="Mmetal"/>
 			<property name="Stacknumber" value="1000"/>			
 			<property name="SellableToTrader" value="false"/>			
-			<property name="ItemWeight" value="30"/>			
-			<property name="CreativeMode" value="Player"/>			
+			<property name="ItemWeight" value="30"/>									
 			<property name="DescriptionKey" value="AutomotiveResearchBundle1Desc"/>
 			<property name="UnlockedBy" value="skillAutomotive"/>
 			<property class="Action0">
@@ -9165,6 +9164,61 @@
 			<property name="Candrop" value="false"/>
 			<property name="IsQuestItem" value="true" />
 		</item>
+
+    <item name="whisperClipMaster">
+      <property name="HoldType" value="45"/>
+      <property name="Tags" value="quest"/>
+      <property name="ItemWeight" value="1"/>
+      <property name="DescriptionKey" value="whisperClipMasterDesc"/>
+      <property name="Meshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
+      <property name="DropMeshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
+      <property name="CustomIcon" value="WhisperClip"/>      
+      <property name="Material" value="Msteel"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="SellableToTrader" value="true"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Resources"/>
+      <property name="Candrop" value="true"/>
+      <property class="Action0">
+        <property name="Class" value="Eat" />
+        <property name="Consume" value="false" />
+        <property name="Delay" value="1.0" />
+        <property name="UseAnimation" value="true" />
+        <property name="Sound_start" value="DrLeonFrostTape1_Clip" />
+        <property name="Sound_in_head" value="false" />
+      </property>
+      <!--
+      <effect_group>
+        <requirement name="CVarCompare" cvar=".dialog" operation="LT" value="1" />
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".dialog" operation="add" value="1"/> 
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player#DrLeonFrostTape1_Clip">          
+      </effect_group>      
+      -->
+    </item>
+
+    <item name="whisperClipDrLeonFrostClip1">
+      <property name="Extends" value="whisperClipMaster"/>
+      <property name="DescriptionKey" value="whisperClipDrLeonFrostClip1Desc"/>
+      <property name="Meshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
+      <property name="DropMeshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
+      <property class="Action0">
+        <property name="Class" value="Eat" />
+        <property name="Consume" value="false" />
+        <property name="Delay" value="1.0" />
+        <property name="UseAnimation" value="true" />
+        <property name="Sound_start" value="DrLeonFrostTape1_Clip" />
+        <property name="Sound_in_head" value="false" />
+      </property>
+      <!--
+      <effect_group>
+        <requirement name="CVarCompare" cvar=".dialog" operation="LT" value="1" />
+        <triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".dialog" operation="add" value="1"/> 
+        </triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player#DrLeonFrostTape1_Clip">          
+      </effect_group>      
+      -->
+    </item>
 
 		<!-- *** Chemistry_Skill_Magazine -->
 		<item name="chemistryTodaySkillMagazine">

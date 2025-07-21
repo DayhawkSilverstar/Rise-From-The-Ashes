@@ -2195,4 +2195,7 @@ skillMedicalLongDesc97,skills,,,Healing items now restore health 97% faster. Gai
 skillMedicalLongDesc98,skills,,,Healing items now restore health 98% faster. Gain experience toward this skill by using medical items on yourself or others.
 skillMedicalLongDesc99,skills,,,Healing items now restore health 99% faster. Gain experience toward this skill by using medical items on yourself or others.
 skillMedicalLongDesc100,skills,,,Healing items now restore health 100% faster. Gain experience toward this skill by using medical items on yourself or others.
+whisperClipDrLeonFrostClip1,items,,New,Not Used,Whisper Clip: Dr Leon Frost Clip 1,,,,,,,,,,,,,
+whisperClipDrLeonFrostClip1Desc,items,,New,Not Used,"Ive performed an unauthorised self injection of Cryo-Serum 34B 2mL, in the basal vein. Formulation combines the Solara mutated honey lysate with our chilled viral attenuator. Core temp dropped from 37.1C to 35.0C in forty minutes. Heart rate is steady at 62 beats per minute. No tremor, no dysphoria. hmm, Initial hypothesis stands. Low temp physiology plus honey peptides may suppress Veil replication and enhance adrenal output. Ill keep this off the official record until I have repeatable data."
+
 

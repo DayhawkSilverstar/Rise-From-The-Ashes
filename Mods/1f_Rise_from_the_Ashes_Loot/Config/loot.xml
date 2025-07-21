@@ -404,7 +404,7 @@
 			<item name="resourceFeather" count="1,4"/>
 		</lootgroup>
 		
-		<lootgroup name="groupBirdNest02">
+		<lootgroup name="groupBirdNest02" count="all">
 			<item name="foodEgg" count="1,2" />
 			<item name="resourceFeather" count="1,4" />
 		</lootgroup>
@@ -462,9 +462,13 @@
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedYucca1']/@name">plantedYuccaT1-1</set>	
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedHop1']/@name">plantedHopT1-1</set>	
 	<set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedChrysanthemum1']/@name">plantedChrysanthemumT1-1</set>	
-  <set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedPumpkin1']/@name">plantedPumpkinT1-1</set>	
+  <set xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedPumpkin1']/@name">plantedPumpkinT1-1</set>
+  
+  <set xpath="/lootcontainers/lootgroup[@name='groupSuperCornFootlocker']/item[@name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
+  <set xpath="/lootcontainers/lootgroup[@name='groupZpackBoss01']/item[@name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
 
-	<set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedPotato1']/@name">plantedPotatoT1-1</set>
+
+  <set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedPotato1']/@name">plantedPotatoT1-1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedCoffee1']/@name">plantedCoffeeT1-1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedCorn1']/@name">plantedCornT1-1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedBlueberry1']/@name">plantedBlueberryT1-1</set>	
@@ -475,6 +479,7 @@
 	<set xpath="/lootcontainers/lootgroup[@name='seedsNoFlowers']/item[@name='plantedPumpkin1']/@name">plantedPumpkinT1-1</set>
 
   <set xpath="/lootcontainers/lootgroup[@name='groupToilet02']/item[@name='plantedCorn1']/@name">plantedCornT1-1</set>
+
 
 	<!-- WOOD -->
 	<set xpath="/lootcontainers/lootgroup[@name='groupBuildingCommon']/item[@name='resourceWood']/@name">resourceWoodT1</set>
@@ -590,12 +595,12 @@
 		</lootcontainer>
 		
 		<!-- Chicken Coops loot -->
-		<lootcontainer name="chickenCoopWithEggs" count="1" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+		<lootcontainer name="chickenCoopWithEggs" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
 			<item group="groupBirdNest02"/>
 		</lootcontainer>	
 
 		<!-- birds nest-->
-		<lootcontainer name="birdNestWithEggs" count="1" size="6,2" sound_open="UseActions/nest_open" sound_close="UseActions/nest_shut" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+		<lootcontainer name="birdNestWithEggs" size="6,2" sound_open="UseActions/nest_open" sound_close="UseActions/nest_shut" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
 			<item group="groupBirdNest02"/>
 		</lootcontainer>
 

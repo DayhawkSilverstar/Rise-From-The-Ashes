@@ -20,10 +20,13 @@
   <remove xpath="/blocks/block[@name='plantedChrysanthemum1']" />
   <remove xpath="/blocks/block[@name='plantedCorn1']" />
   <remove xpath="/blocks/block[@name='plantedCorn2']" />
-  <remove xpath="/blocks/block[@name='plantedHop1']" />
+  <remove xpath="/blocks/block[@name='plantedHop1']" />  
   <remove xpath="/blocks/block[@name='plantedSnowberry1']" />
   <remove xpath="/blocks/block[@name='plantedPumpkin1']" />  
   <remove xpath="/blocks/block[@name='plantedPumpkin2']" />
+  <remove xpath="/blocks/block[@name='plantedGraceCorn1']" />
+  <remove xpath="/blocks/block[@name='plantedGraceCorn2']" />
+  
 
   <remove xpath="//block/property[@name='TakeDelay' and @value='-1']"/>
   <remove xpath="//block[@name='candleWallLight']/property[@name='Class']"/>
@@ -75,6 +78,10 @@
 
     <set xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">50</set>
     <set xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@name">resourceBrick</set>
+
+		<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Harvest' and @name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
+		<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Destroy' and @name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
+  
     <append xpath="/blocks/block[@name='palletBricksBase']">
       <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
       <property name="CanPickUp" value="true" />
@@ -2478,8 +2485,17 @@
     <insertAfter xpath="/blocks/block[@name='treeJuniper4m']/drop[@event='Harvest' and @name='resourceWood']">
       <drop event="Harvest" name="BarkChips" count="3,7" tag="oreWoodHarvest,skillWoodCutting"/>
       <drop event="Harvest" name="treeSap" count="1,2" tag="oreWoodHarvest,skillWoodCutting"/>
-    </insertAfter>   
-    
+    </insertAfter>
+
+		<insertAfter xpath="/blocks/block[@name='modularFireWoodStackA']/property[@name='Material']">
+			<property name="FuelValue" value="400" />
+    </insertAfter>
+
+  <insertAfter xpath="/blocks/block[@name='modularFireWoodStackC']/property[@name='Material']">
+    <property name="FuelValue" value="400" />
+  </insertAfter>
+
+
     <!-- HARVEST TWIGS -->  
     <set xpath="/blocks/block[@name='driftwood']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceTwig</set>
     <set xpath="/blocks/block[@name='driftwood']/drop[@event='Harvest' and @name='resourceTwig']/@count">5,10</set>
@@ -2684,10 +2700,18 @@
     <set xpath="/blocks/block[@name='cntCollapsedWorkbenchEmpty']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>    
     <set xpath="/blocks/block[@name='woodenGarageDoor4x3_PoweredWhite']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
     <set xpath="/blocks/block[@name='cntArmoireDoorsWhite']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
-    <set xpath="/blocks/block[@name='cntModularClosetClosed']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>
-    
-    
-    <!-- DROP DESTROY EVENT T1 -->
+    <set xpath="/blocks/block[@name='cntModularClosetClosed']/drop[@event='Harvest' and @name='resourceWood']/@name">resourceWoodT1</set>  
+  
+		<set xpath="/blocks/block[@name='palletBagCowFeedBaseMed']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+		<set xpath="/blocks/block[@name='palletBagCowFeedTile']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+		<set xpath="/blocks/block[@name='palletBagCowFeedSingleBent']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+		<set xpath="/blocks/block[@name='palletBagCowFeedBaseFull']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+		<set xpath="/blocks/block[@name='palletBagCowFeedCapSml']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+		<set xpath="/blocks/block[@name='palletBagCowFeedCapMed']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+		<set xpath="/blocks/block[@name='palletBagCowFeedSingleFlat']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+		<set xpath="/blocks/block[@name='palletBagCowFeedSingleFlat']/drop[@event='Harvest' and @name='plantedCorn1']/@name">plantedCornT1-1</set>
+  
+  <!-- DROP DESTROY EVENT T1 -->
     <set xpath="/blocks/block[@name='cntStoreProduceBasketEmpty1']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
     <set xpath="/blocks/block[@name='woodWeakNoUpgradeMaster']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
     <set xpath="/blocks/block[@name='decoEntityWoodMaster']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
@@ -2703,7 +2727,7 @@
     <set xpath="/blocks/block[@name='emberPileDeco3']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>    
     <set xpath="/blocks/block[@name='emberPileDeco1']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
     <set xpath="/blocks/block[@name='emberPileLightPOI1']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
-    <set xpath="/blocks/block[@name='palletBagCowFeedBaseFull']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
+    <set xpath="/blocks/block[@name='palletBagCowFeedBaseFull']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>		  
     <set xpath="/blocks/block[@name='palletBagCowFeedBaseMed']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
     <set xpath="/blocks/block[@name='palletBagFlourBaseMed']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
     <set xpath="/blocks/block[@name='palletBagSandBaseMed']/drop[@event='Destroy' and @name='resourceWood']/@name">resourceWoodT1</set>
@@ -3261,10 +3285,10 @@
     <set xpath="/blocks/block[@name='restaurantBooth']/property[@class='RepairItems']/property[@name='resourceLeather']/@name">LeatherSheetT1</set>
 
      <!-- DESTROY LEATHER T1 -->  
-     <set xpath="/blocks/block[@name='sectionalLeatherCouchSofaArm']/drop[@event='Destroy' and @name='resourceLeather']/@name">resourceClothT1</set>
-     <set xpath="/blocks/block[@name='rugBear']/drop[@event='Destroy' and @name='resourceLeather']/@name">resourceClothT1</set>
-     <set xpath="/blocks/block[@name='cntLootChestHeroInsecureT2']/drop[@event='Destroy' and @name='resourceLeather']/@name">resourceClothT1</set>     
-     <set xpath="/blocks/block[@name='cntShoesPileSandals']/drop[@event='Destroy' and @name='resourceLeather']/@name">resourceClothT1</set>    
+     <set xpath="/blocks/block[@name='sectionalLeatherCouchSofaArm']/drop[@event='Destroy' and @name='resourceLeather']/@name">LeatherSheetT1</set>
+     <set xpath="/blocks/block[@name='rugBear']/drop[@event='Destroy' and @name='resourceLeather']/@name">LeatherSheetT1</set>
+     <set xpath="/blocks/block[@name='cntLootChestHeroInsecureT2']/drop[@event='Destroy' and @name='resourceLeather']/@name">LeatherSheetT1</set>     
+     <set xpath="/blocks/block[@name='cntShoesPileSandals']/drop[@event='Destroy' and @name='resourceLeather']/@name">LeatherSheetT1</set>    
 
     <!-- ************** ELECTRICAL PARTS **************** -->
     <!-- HARVEST ELECTRICAL PARTS T1 -->  
@@ -3575,7 +3599,10 @@
   
   <set xpath="/blocks/block[@name='cntWallSafe']/drop[@event='Harvest' and @name='resourceScrapIron']/@name">resourceForgedIron</set>
 
-	<!-- Update loot containers -->	
+	
+  
+  
+  <!-- Update loot containers -->	
 
 	
 	
