@@ -15,9 +15,13 @@
 	<set xpath="/buffs/buff[@name='buffDrugSkullCrushers']/effect_group/passive_effect[@name='EntityDamage' and @value='.5']/@tags">meleeBlades,meleeClubs,meleeFists,meleeImprovised,meleeSpears,admin</set>	
 
 	<!-- Update buffDrugHackers -->
-	<set xpath="/buffs/buff[@name='buffDrugHackers']/effect_group/requirement[@name='HoldingItemHasTags' and @tags='perkSalvageOperations']/@tags">skillAutomotive,skillElectricalEngineer,skillMechanicalEngineer</set>	
+	<set xpath="/buffs/buff[@name='buffDrugHackers']/effect_group/requirement[@name='HoldingItemHasTags' and @tags='perkSalvageOperations']/@tags">skillAutomotive,skillElectricalEngineer,skillMechanicalEngineer</set>
 
-	<!-- *********** DEBUFFS ***************-->
+  <!-- Update buffDrugSteroids -->
+  <set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">84</set>
+
+
+  <!-- *********** DEBUFFS ***************-->
 	<!-- Update weapon handling for sprains -->
 	<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/passive_effect[@name='WeaponHandling']/@tags">rangedBows,rangedMachineguns,rangedPistols,rangedRifles,rangedShotguns,admin</set>
 	<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@tags">rangedBows,rangedMachineguns,rangedPistols,rangedRifles,rangedShotguns,admin</set>

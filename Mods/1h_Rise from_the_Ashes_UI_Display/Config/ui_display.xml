@@ -39,32 +39,33 @@
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']/display_entry[@name='DegradationMax']/@tags">rangedBows,admin</set>
 
 	<!-- ******************** MELEE ******************* -->
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='AttacksPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='EntityDamage' and @title_key='statEntityDamageMelee']/@tags">melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='EntityDamage' and @title_key='statPowerAttack']/@tags">secondary,melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='BlockDamage']/@tags">melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='DegradationMax']/@tags">melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']/display_entry[@name='AttacksPerMinute']/@tags">melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 
 	<!-- ******************** MELEE SPEAR ******************* -->
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeSpear']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeSpear']/display_entry[@name='EntityDamage' and @title_key='statEntityDamageMelee']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeSpear']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeSpear']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeSpear']/display_entry[@name='AttacksPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 
 
 	<!-- ******************** MELEE HEAVY ******************* -->
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeHeavy']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeHeavy']/display_entry[@name='EntityDamage' and @title_key='statEntityDamageMelee']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeHeavy']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeHeavy']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeHeavy']/display_entry[@name='AttacksPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 
 	<!-- ******************** MELEE KNIFE ******************* -->
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='AttacksPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='EntityDamage' and @title_key='statEntityDamageMelee']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='BlockDamage']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='DegradationMax']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='AttacksPerMinute']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 
 	<!-- ******************** Melee Repair Tool ******************* -->
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeRepairTool']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeRepairTool']/display_entry[@name='EntityDamage' and @title_key='statEntityDamageMelee']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeRepairTool']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeRepairTool']/display_entry[@name='AttacksPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeRepairTool']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
@@ -75,8 +76,100 @@
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedRepairTool']/display_entry[@name='DamageFalloffRange']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedRepairTool']/display_entry[@name='RoundsPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedRepairTool']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
-	
-	<remove xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='workbench']/crafting_category[@name='Clothing']" />
+
+  <!-- ******************** Motor Tool ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='MagazineSize']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='RoundsPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+
+  <!-- ******************** Simple Tool ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='simpleTool']/display_entry[@name='EntityDamage']/@tags">melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>      
+
+  <!-- ******************** MeleeTorch ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeTorch']/display_entry[@name='EntityDamage']/@tags">melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+
+  <!-- ******************** AmmoBullet ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBullet']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBullet']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>  
+
+  <!-- ******************** ammoBulletAP ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletAP']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletAP']/display_entry[@name='dTargetArmor']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletAP']/display_entry[@name='dTargetPenetration']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletAP']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoBulletHP ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletHP']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>  
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletHP']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoShotgun ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgun']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgun']/display_entry[@name='RoundRayCount']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgun']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgun']/display_entry[@name='DamageFalloffRange']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoShotgunSlug ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']/display_entry[@name='RoundRayCount']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']/display_entry[@name='dTargetArmor']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']/display_entry[@name='dTargetPenetration']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']/display_entry[@name='DamageFalloffRange']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoShotgunBreaching ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunBreaching']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunBreaching']/display_entry[@name='RoundRayCount']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunBreaching']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunBreaching']/display_entry[@name='dDamageDoor']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunBreaching']/display_entry[@name='DamageFalloffRange']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoJunkTurretRegular ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretRegular']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretRegular']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretRegular']/display_entry[@name='DamageFalloffRange']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoJunkTurretAP ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretAP']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretAP']/display_entry[@name='dTargetArmor']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretAP']/display_entry[@name='dTargetPenetration']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretAP']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretAP']/display_entry[@name='DamageFalloffRange']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoArrow ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrow']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>  
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrow']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrow']/display_entry[@name='ProjectileVelocity']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoArrowAP ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowAP']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowAP']/display_entry[@name='dTargetArmor']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowAP']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowAP']/display_entry[@name='ProjectileVelocity']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoArrowFlaming ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowFlaming']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>  
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowFlaming']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowFlaming']/display_entry[@name='ProjectileVelocity']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoArrowExploding ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowExploding']/display_entry[@name='dExEntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowExploding']/display_entry[@name='dExBlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowExploding']/display_entry[@name='ProjectileVelocity']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowExploding']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowExploding']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+
+  <!-- ******************** ammoDart ******************* -->
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoDart']/display_entry[@name='EntityDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoDart']/display_entry[@name='BlockDamage']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoDart']/display_entry[@name='ProjectileVelocity']/@tags">revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>  
+
+
+
+  
+  
+  <remove xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='workbench']/crafting_category[@name='Clothing']" />
 	
 	<append xpath="/ui_display_info/crafting_category_display">
 			<crafting_category_list display_type="ComputerStation">			

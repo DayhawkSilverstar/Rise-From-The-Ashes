@@ -30,7 +30,255 @@ This release of 0-SCore introduces significant enhancements across several core 
 * Bug Fixes and Stability: Addressed various null reference errors, spamming issues with spoiled items, durability bar disappearing, and general migration/refactoring for broken references and changed parameters.
 
 
+
 [ Change Log ]
+Version: 2.1.8.1723
+	[ Fire Manager ]
+		- Move sending blocks to clients more regularly, rather than waiting until all fire blocks were processed.
+			- Previously, this was only sent when all blocks were processed, which could be 10 seconds or so for larger fires.
+		- Added an additional Stop Sound in case there was a fire sound playing, but no fires left (ie, from tree falling down)
+
+	[ Challenges ]
+		- Fixed a potential null check on biome check in KillWithItem
+
+	[ Triggered Effects Hooks ]
+		- Cleaned up various trigger calls to unhooked up vanilla triggers under Features\PassiveEffectHooks
+		- Added onSelfHarvestOther
+		- Added onSelfHarvestBlock
+		- Added onSelfItemCraft
+		- Added onSelfItemRepaired
+		- Added onSelfPrimaryActionMiss
+
+	[ BlockSpawnCube2SDX ]
+		- Fixed an issue where ec= parameter was being improperly read
+
+	[ Buff Requirements ]
+		- Added new Buff Requirements
+			- <requirement name="RequirementBlockHasHarvestTags, SCore" tags="salvageHarvest" />
+				- True if the block you are harvesting has any Harvest Drop events with the tag of SalvageHarvest
+
+			- <requirement name="RequirementIsProgressionLocked, SCore" progression_name="attPerception" />
+				- True if attPerception is currently locked to the player.
+
+			- <requirement name="RequirementIsTargetBlock, SCore" tags="air"/>
+				- True if the target block is air.
+			- <requirement name="RequirementQuestObjective, SCore" objective="ObjectiveTreasureChest" />
+				- True if any quest is currently in <objective type="TreasureChest"
+
+	[ MinEvent Action Change Faction SDX ]
+		- Added clearing of the RevengeTarget
+
+	[ SphereII Learn By Doing ]
+		- Experimental modlet designed to bring back Learn by Doing without touching progressions.xml or items.xml.
+		- Don't use this unless you are intentionally and knowingly testing it.
+		
+
+
+
+Version: 2.1.4.1248
+
+	[ AIDirector Scout Chance ]
+        - Configurable Scout Spawns: We've introduced a new patch to the AIDirectorChunkEventComponent that allows for precise adjustment of the scout zombie spawn chance.
+        - Vanilla Behavior: In the base game, there is typically a 20% chance to spawn a scout when all other conditions for a spawn event are met.
+        - Previous Versions: In earlier versions of this mod, there was no percentage check; if all other conditions were valid, a scout would always spawn.
+
+        New Control: You can now customize this probability via the ScoutSpawnChance setting under AdvancedZombieFeatures.
+        ```xml
+        <property class="AdvancedZombieFeatures">
+            <!-- -1 disables this patch, reverting to default game behavior. -->
+            <!-- A value of 0.2 will result in a 20% chance to spawn. -->
+            <!-- A value of 1 will result in a 100% chance to spawn. -->
+            <property name="ScoutSpawnChance" value="-1" />
+        </property>
+        ```
+
+    [ ConfigurationFeatureBlock ]
+        - Added ScoutSpawnChance to AdvancedZombieFeatures
+        - Fixed typo in property for EnemyActiveMax setting.
+
+    [ NPCs ]
+        - Fixed an issue where NPCs would jump erratically, enthusastically, and without regard for public moral standards.
+        - Fixed an issue where the NPC's AK47 would shoot a few times, then stop.
+
+Version: 2.1.3.1505
+
+	[ Fire Manager ]
+		- Fixed an issue where fire sounds were heard by every player, regardless of proxmity of fire.
+		- Updated the logic on how each player hears to allow it to fade correctly.
+		- Modified the processing logic to ensure all blocks on fire will be processed accurately.
+		- Added a Fire Particple Optimizer that enables culling based on the size of the fire.
+			- A Small fire will have a particle on each block.
+			- A medium size fire will a particle on it, however, neighborly blocks will not.
+			- A larger size fire will further reduce the concentration of particles.
+
+Version: 2.1.2.1825
+
+	[ Audio Patch ]
+		- Fixed an issue with score running against 2.1
+
+	[ ItemActionLauncherSDX ]
+		- Fixed an issue where the NPC's with rocket launchers was not shooting past 1 or 2 rockets.
+
+	[ UAITaskAttackTargetEntitySDX ]
+		- Fixed an issue where the NPC's IsReloading() was being incorrectly checked. That functionality does not work on NPCs.
+
+	[ Particles On Blocks ]
+		- Fixed an issue where biomeProvider was null.
+
+	[ Documentation ]
+		- Restructed XPath and Conditionals documentation.
+
+	[ onSelfItemRepaired ]
+		- Added a Harmony patch to trigger the minevent effects on an item being repaired.
+			- Patched via the QuestManager's event.
+
+	[ MinEvent Action ]
+		- Added a new MinEventAction that handles modifying the quality of items.
+				<triggered_effect trigger="onSelfItemRepaired" action="ModifyItem, SCore" >
+		- Added new Requirement to check against the quality of an item.
+			<requirement name="CompareItemProperty, SCore" property="Quality" operation="Equals" value="1"/>
+
+		[ See More ](Features/ItemRepairDegradation/ReadMe.md)
+
+
+Version: 2.0.24.1245
+	[ Spawn Cube ]
+		- Cleaned up SpawnCube2SDX
+		- Added new BlockSpawnCubeRepeater, that will tick and spawn entities over time.
+	        <block name="DeamonPortal2">
+    	        <property name="Extends" value="DeamonPortal"/>
+        	    <property name="Class" value="SpawnCubeRepeater, SCore"/>
+	            <property name="Model" value="@:Entities/Vehicles/TraderVehicles/traderMountainBikeStaticPrefab.prefab"/>
+	            <property name="ModelOffset" value="0,0,0"/>
+	            <property name="MaxDamage" value="250"/>
+
+	            <property name="EntityGroup" value="ZombiesAll"/>
+	            <property name="SpawnRadius" value="5"/>
+	            <property name="SpawnArea" value="15"/>
+	            <!-- Spawn 2 each tick -->
+	            <property name="NumberToSpawn" value="2"/>
+	            <!-- Total number of ticksbefore the block self-destructs -->
+	            <property name="MaxSpawned" value="10"/>
+
+	            <!-- How many ticks between the spawn times-->
+	            <!-- NumberToSpawn spawns each time it block ticks. -->
+	            <property name="TickRate" value="10"/>
+	        </block>
+
+	[ Documentation ]
+		- Added new Examples documentation that shows examples on how to accomplish 0-SCore features.
+
+Version: 2.0.23.1213
+	[ EntityMoveHelper ]
+		- Removed old StartJump block based on BlockedTime, which caused NPCs not to jump.
+
+	[ MinEventActionChangeFactionSDX ]
+		- Added code to reset attack target, removing temporarily the aggro switch.
+
+	- Added documentation 
+		
+Version: 2.0.22.1718
+
+	[ Recipes ]
+		- Added support for generateing a MinEvenParams package, which allows more MinEvents to be used on the onSelfItemCrafted.
+		- These seem to only trigger when looking in a workstation and an item is creted.
+		- Now will respect requirements.
+		Examples:
+
+		<effect_group name="Sphere Testing">
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceYuccaFibers" count="2"/>
+
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="ammoRocketHE" count="2">
+			    <requirement name="HasBuff" buff="god"/>
+		    </triggered_effect>
+
+		    <triggered_effect trigger="onSelfItemCrafted" action="PlaySound" sound="player#painsm">
+			    <requirement name="!HasBuff" buff="god"/>
+		    </triggered_effect>
+		    
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddBuff" buff="buffDrugEyeKandy"/>
+
+	[ EntityAliveSDX ]
+		- Changed a walk type from 4 to 21 for crawler.
+
+Version: 2.0.21.1719
+	[ Fire Manager ]
+		- Fixed a Crash To Desktop ( CTD ) when adding fire particles off main thread.
+		- Added support for random fire particles, using "," as a delimiter.
+
+	[ Drop Box ]
+		- Fixed another 2 issues with Drop Box eating items when nearby storage was opened.
+
+	[ A Better Life ]
+		- Fixed entityclasse references for Fish
+
+	[ Recipes ]
+		- Added a new feature to trigger multiple outputs when crafting a recipe.
+		- Example: in addition to ammo45ACPCase, this will also produce grass fibres and duct tape.
+    <recipe name="ammo45ACPCase" count="30" craft_time="5" craft_area="MillingMachine" tags="workbenchCrafting,PerkHOHMachineGuns">
+        <ingredient name="resourceBrassIngot" count="5"/>
+        <effect_group name="Additional Output">
+			<triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceYuccaFibers" count="2"/>
+			<triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceDuctTape" count="1"/>
+		</effect_group>
+    </recipe>
+
+		- Note: The AddAdditionalOutput MinEvent is only usable by this recipes hook. It will do nothing in any other context.
+		
+Version: 2.0.20.1639
+	[ ItemAction Repair ]
+		- Fixed multiple null references when attempting to repair an item while the player was wearing it. 
+
+	[ Challenges ]
+		- Fixed an issue with the StartFire challenge when there was no fire manager.
+		- Fixed an issue with ExtinguishFire
+
+	[ Drop Box ]
+		- Fixed an issue where the DropBox was distributing items to containers that was opened by another player, and disappearing.
+
+	[ Trader Currency ]
+		- Fixed an issue where the currency wouldn't refresh.
+
+	[ ItemActionMelee ]
+		- Added two events for when a zombie misses its hit.
+			onSelfPrimaryActionEnd
+			onSelfPrimaryActionMissEntity
+
+
+Version: 2.0.19.1555
+	[ Blocks.xml ]
+		- Updated a reference to a vanilla block for a mesh
+
+	[ Shared Reading ]
+		- Fixed an issue where a connecting player would not share their reading with a player that is hosting.
+
+	[ Blooms Family Farm ]
+		- Added conditional for NPC farm to only be available if NPC Core is loaded.
+
+	[ Blood Moon Tweak ]
+		- Added new property to AdvancedZombieFeatures configuration block that allows you to increase the default enemy active during blood moons
+		- Previously, it was fixed to max out at 30.
+                <!-- Vanilla is default to 30. -1 disables this patch. -->
+                <propert name="EnemyActiveMax" value="-1" />
+
+	[ SCoreLocalization Helper ]
+		- Fixed a dumb implementation in a less dumb way.
+
+EnemyActiveMax
+
+Version: 2.0.17.1140
+	[ TileEntity IsAlwaysActive ]
+		- Fixed an issue where isAlwaysActive was blocking regular tile entities from showing they are Active.
+
+Version: 2.0.16.2016
+	[ Fire Manager ]
+		- Fixed an issue where Challenge Objectives related to Fire would null ref if used.
+
+Version: 2.0.15.1644
+	[ EntityAliveSDX , EntityNPCBandit ]
+		- Removed the Walk Type 8 filter from the Crouch after stun reset.
+		- Fixed an issue where the NPC wouldn't use the right/left hand as they were supposed too for the various weapons.
+
 Version: 2.0.14.1511
 	[ Block ]
 		- Updated block Model reference to support new format.

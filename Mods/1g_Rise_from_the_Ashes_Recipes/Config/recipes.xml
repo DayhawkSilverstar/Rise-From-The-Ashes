@@ -748,9 +748,12 @@
 
   <!-- Tailoring -->
   <set xpath="/recipes/recipe[@name='resourceDuctTape']/ingredient[@name='resourceCloth']/@name">resourceClothT1</set>
-  
+  <set xpath="/recipes/recipe[@name='curtainVariantHelper']/ingredient[@name='resourceCloth']/@name">resourceClothT2</set>
   
   <!-- Add tags to the recipe-->
+  <setattribute  xpath="/recipes/recipe[@name='curtainVariantHelper']" name="tags">learnable,skillTailoring</setattribute>
+  <setattribute  xpath="/recipes/recipe[@name='curtainVariantHelper']" name="craft_area">TailorWorkstation</setattribute>
+  
   <setattribute  xpath="/recipes/recipe[@name='flagThick44BlockVariantHelper']" name="tags">learnable,skillTailoring</setattribute>
   <setattribute  xpath="/recipes/recipe[@name='flagThick44BlockVariantHelper']" name="craft_area">TailorWorkstation</setattribute>
   

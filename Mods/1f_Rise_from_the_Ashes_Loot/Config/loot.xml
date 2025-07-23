@@ -493,7 +493,7 @@
 	<set xpath="/lootcontainers/lootgroup[@name='twitch_builder_box1']/item[@name='resourceWood']/@name">resourceWoodT1</set>
 
 	<!-- Update backpacks for the larger player backpack size-->
-  <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,10</set>
+  <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">7,12</set>
 
   <set xpath="//item[@group='booksAllScaled']/@group">skillMagazines</set>
 

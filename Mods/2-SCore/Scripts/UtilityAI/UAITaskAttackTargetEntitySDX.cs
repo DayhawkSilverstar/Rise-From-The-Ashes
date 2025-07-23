@@ -29,7 +29,7 @@ namespace UAI
             var entityAlive = UAIUtils.ConvertToEntityAlive(_context.ActionData.Target);
             if (entityAlive != null)
             {
-                _context.Self.SetLookPosition( entityAlive.getHeadPosition());
+                _context.Self.SetLookPosition(entityAlive.getHeadPosition());
                 var targetPosition = entityAlive.getHeadPosition();
                 _context.Self.RotateTo(targetPosition.x, targetPosition.y, targetPosition.y, 30f, 30f);
                 _context.Self.SleeperSupressLivingSounds = false;
@@ -41,7 +41,7 @@ namespace UAI
                 // Center the vector so its looking directly at the middle.
                 vector = EntityUtilities.CenterPosition(vector);
                 _context.Self.IsBreakingBlocks = true;
-                _context.Self.SetLookPosition(vector );
+                _context.Self.SetLookPosition(vector);
                 _context.Self.RotateTo(vector.x, vector.y, vector.z, 45f, 45f);
                 EntityUtilities.Stop(_context.Self.entityId);
             }
@@ -59,7 +59,6 @@ namespace UAI
 
         public override void Update(Context _context)
         {
-
             if (!_context.Self.onGround || _context.Self.Climbing || _context.Self.Jumping)
                 return;
 
@@ -87,7 +86,7 @@ namespace UAI
                 _context.Self.SetLookPosition(entityAlive.getHeadPosition());
                 position = entityAlive.getBellyPosition();
 
-                _context.Self.RotateTo(position.x, position.y, position.z, 45f,30f);
+                _context.Self.RotateTo(position.x, position.y, position.z, 45f, 30f);
                 if (!_context.Self.IsInViewCone(position))
                 {
                     attackTimeout = 5;
@@ -115,7 +114,7 @@ namespace UAI
                 //     return;
                 // }
                 //
-           
+
                 // They may be in our viewcone, but the view cone may be huge, so let's check our angles.
                 // var headPosition = _context.Self.getHeadPosition();
                 // var dir = position - headPosition;
@@ -145,47 +144,34 @@ namespace UAI
             // Reloading
             if (_context.Self.Buffs.HasBuff(_buffThrottle))
             {
-              //  Debug.Log($"Not Attacking:  Buff Throttle: {_buffThrottle}");
+                //  Debug.Log($"Not Attacking:  Buff Throttle: {_buffThrottle}");
                 return;
             }
 
             //var num = UAIUtils.DistanceSqr(_context.Self.position, position);
             var entityAliveSdx = _context.Self as EntityAliveSDX;
-    
+
             // Check the range on the item action
             ItemActionRanged.ItemActionDataRanged itemActionData = null;
             var itemAction = _context.Self.inventory.holdingItem.Actions[_actionIndex];
-            //var distance = ((itemAction != null) ? Utils.FastMax(0.8f, itemAction.Range) : 1.095f);
             if (itemAction is ItemActionRanged itemActionRanged)
             {
-                itemActionData = _context.Self.inventory.holdingItemData.actionData[_actionIndex] as ItemActionRanged.ItemActionDataRanged;
-                if (itemActionData != null)
+                if (itemActionRanged is not ItemActionLauncherSDX itemActionLauncherSDX)
                 {
-                    //var range = itemActionRanged.GetRange(itemActionData);
-                    //distance = Utils.FastMax(0.8f, range);
-                    
-                    // Check if we are already running.
-                    if (itemAction.IsActionRunning(itemActionData))
-                        return;
+                    itemActionData = _context.Self.inventory.holdingItemData.actionData[_actionIndex] as ItemActionRanged.ItemActionDataRanged;
+                    if (itemActionData != null)
+                    {
+                        // Check if we are already running.
+                        if (itemAction.IsActionRunning(itemActionData))
+                            return;
+                    }
                 }
             }
-            //var minDistance = distance * distance;
-            //var a = position - _context.Self.position;
-
-            //not within range ?
-            // if (a.sqrMagnitude > minDistance)
-            // {
-            //     // If we are out of range, it's probably a very small amount, so this will step forward, but not if we are staying.
-            //     if (EntityUtilities.GetCurrentOrder(_context.Self.entityId) != EntityUtilities.Orders.Stay)
-            //         _context.Self.moveHelper.SetMoveTo(position, true);
-            //     Stop(_context);
-            // }
 
             attackTimeout--;
             if (attackTimeout > 0)
                 return;
 
-    
             this.attackTimeout = _context.Self.GetAttackTimeoutTicks();
 
             // Action Index = 1 is Use, 0 is Attack.
@@ -200,7 +186,7 @@ namespace UAI
                     // use, much like attack, goes through a few additional checks that can return false, including making sure that the 
                     // entity can attack / use. Conditions like if they are stunned, electrocuted, or its already running, will return false.
                     // Normally the Use fails briefly, but we likely don't want to trigger the event needlessly, just to cancel it.
-                    if (!_context.Self.UseHoldingItem(_actionIndex,false))
+                    if (!_context.Self.UseHoldingItem(_actionIndex, false))
                     {
                         //_context.Self.emodel.avatarController.CancelEvent("WeaponFire");
                         return;
@@ -212,7 +198,7 @@ namespace UAI
                         _context.Self.emodel.avatarController.TriggerEvent("WeaponFire");
                     }
 
-                    _context.Self.UseHoldingItem(_actionIndex,true);
+                    _context.Self.UseHoldingItem(_actionIndex, true);
                     break;
                 default:
                     if (entityAliveSdx)
@@ -220,10 +206,11 @@ namespace UAI
                         if (!entityAliveSdx.ExecuteAction(false, _actionIndex)) return;
                         entityAliveSdx.ExecuteAction(true, _actionIndex);
                     }
+
                     break;
             }
 
-           // Stop(_context);
+            // Stop(_context);
         }
     }
 }

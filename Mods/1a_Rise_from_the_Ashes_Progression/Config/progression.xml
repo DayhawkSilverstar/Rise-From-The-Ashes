@@ -3251,7 +3251,7 @@
 			<crafting_skill name="skillTailoring" parent="technicalTab" name_key="skillTailoringName" desc_key="skillTailoringDesc" base_skill_point_cost="0" icon="ui_game_symbol_tailoring"><effect_group/>				
 				<display_entry icon="TailoringResearchBundle1" name_key="tailoringT1-1" has_quality="false" unlock_level="5,10" >
 					<unlock_entry item="TailoringResearchBundle1,TailorWorkstation,resourceClothT1,sandbagBlockVariantHelper,medicalBandage" unlock_tier="1" />
-					<unlock_entry item="apparelBandana,apparelTShirtPlain,apparelTShirtZU,apparelTankTop" unlock_tier="2" />					
+					<unlock_entry item="curtainVariantHelper" unlock_tier="2" />					
 				</display_entry>
 
         <display_entry icon="armorLumberjackOutfit" name_key="tailoringT2-2" has_quality="true" unlock_level="15,25,35,45,55,65" >
@@ -3309,6 +3309,7 @@
           <passive_effect name="CraftingTier" operation="base_add" level="15,25,35,45,55,65,100" value="0,1,2,3,4,5,5" tags="armorEnforcerHelmet,armorEnforcerOutfit,armorEnforcerGloves,armorEnforcerBoots"/>
           
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="TailoringResearchBundle1,TailorWorkstation,resourceClothT1,sandbagBlockVariantHelper,medicalBandage"/>
+          <passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="curtainVariantHelper"/>
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="armorLumberjackHelmet,armorLumberjackOutfit,armorLumberjackGloves,armorLumberjackBoots"/>
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="armorPreacherHelmet,armorPreacherOutfit,armorPreacherGloves,armorPreacherBoots"/>
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="armorRogueHelmet,armorRogueOutfit,armorRogueGloves,armorRogueBoots"/>
