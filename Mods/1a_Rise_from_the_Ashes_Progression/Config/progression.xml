@@ -679,14 +679,6 @@
 					<effect_description level="29" desc_key="statDexterityLevel029" long_desc_key="statDexterityLevel029LongDesc"/>
 					<effect_description level="30" desc_key="statDexterityLevel030" long_desc_key="statDexterityLevel030LongDesc"/>				
 				</effect_group>
-				<effect_group>
-					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add"  value="-.25,0" tier="1,7" tags="gun"/> 
-					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add"  value="0.05,0.5" tier="8,20" tags="gun"/> 
-					<passive_effect name="ReloadSpeedMultiplier" operation="perc_add"  value="0.6,0.85" tier="21,30" tags="gun"/> 
-					<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.25,0" level="1,7" tags="rangedBows"/>
-					<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.05,0.5" level="8,20" tags="rangedBows"/>
-					<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.6,0.85" level="21,30" tags="rangedBows"/>
-				</effect_group>
 				<effect_group name="AdjustDexterityStatMods">			
 					<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" target="self" cvar="$playerDexterityMod" operation="set" value="-7"/>
 					<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" target="self" cvar="$playerDexterityMod" operation="set" value="-5">
@@ -773,8 +765,18 @@
 						<requirement name="ProgressionLevel" progression_name="statDexterity" operation="GTE" value="30"/>						
 					</triggered_effect>
 				</effect_group>
-				<effect_group>				
-				
+        <effect_group>
+          <passive_effect name="ReloadSpeedMultiplier" operation="perc_add"  value="-.25,0" tier="1,7" tags="gun"/>
+          <passive_effect name="ReloadSpeedMultiplier" operation="perc_add"  value="0.05,0.5" tier="8,20" tags="gun"/>
+          <passive_effect name="ReloadSpeedMultiplier" operation="perc_add"  value="0.6,0.85" tier="21,30" tags="gun"/>
+          <passive_effect name="RoundsPerMinute" operation="perc_add" value="-.25,0" level="1,7" tags="rangedBows"/>
+          <passive_effect name="RoundsPerMinute" operation="perc_add" value="0.05,0.5" level="8,20" tags="rangedBows"/>
+          <passive_effect name="RoundsPerMinute" operation="perc_add" value="0.6,0.85" level="21,30" tags="rangedBows"/>
+        </effect_group>
+        <effect_group>
+          <passive_effect name="ScavengingTime" operation="perc_subtract" value="0,0.20" level="1,100" tags="skillScavenging"/>
+        </effect_group>
+				<effect_group>								
 					<passive_effect name="PlayerExpGain" operation="perc_add" level="1,30" value="-.1,-.4" tags="Harvesting">
 						<requirement name="HoldingItemHasTags" tags="salvageTool"/>
 					</passive_effect>				
@@ -2018,8 +2020,14 @@
 			</perk>								
 			<perk name="skillScavenging" parent="survivalTab" name_key="skillScavengingName" desc_key="skillScavengingDesc" base_skill_point_cost="0" icon="ui_game_symbol_lock">
 				<effect_group>
-					<passive_effect name="ScavengingTime" operation="perc_subtract" value="0,0.90" level="1,100" tags="skillScavenging"/>							
+					<passive_effect name="ScavengingTime" operation="perc_subtract" value="0,0.60" level="1,100" tags="skillScavenging"/>							
 				</effect_group>
+        <effect_group>
+          <passive_effect name="HarvestCount" operation="base_add" value="0,1" level="1,20" tags="skillScavenging" />
+          <passive_effect name="HarvestCount" operation="base_add" value="1,1.5" level="20,40" tags="skillScavenging" />
+          <passive_effect name="HarvestCount" operation="base_add" value="1.5,2" level="40,80" tags="skillScavenging" />
+          <passive_effect name="HarvestCount" operation="base_add" value="2,2.5" level="80,100" tags="skillScavenging" />
+        </effect_group>
 			</perk>			
 			<perk name="skillStealth" parent="survivalTab" name_key="skillStealthName" desc_key="skillStealthDesc" base_skill_point_cost="0" icon="ui_game_symbol_stealth2">
 				<effect_group>				

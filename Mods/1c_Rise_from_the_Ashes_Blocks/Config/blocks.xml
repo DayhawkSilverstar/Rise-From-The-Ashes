@@ -8236,5 +8236,84 @@
       </property>
       <property name="FilterTags" value="MC_playerBlocks,SC_electrical" />
     </block>
-	</append>
+
+    <block name="radioDishLarge">      
+      <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
+      <property name="DescriptionKey" value="radioDishLargeDesc"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="RadioDish" />
+      <property name="TintColor" value="808080"/>
+      <property name="UiBackgroundTexture" value="267"/>
+      <property name="EconomicValue" value="160"/>
+      <property name="DamageResist" value="33"/>
+      <property name="DisplayType" value="blockMulti"/>
+      <property name="StabilitySupport" value="true" />
+      <property name="Material" value="Mbridge_metal"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/RiseBlocksElectronics.unity3d?RadioDisk"/>
+      <property name="ModelOffset" value="-1,0.5,0"/>
+      <property name="MultiBlockDim" value="1,1,1"/>
+      <property name="WaterFlow" value="permitted"/>
+      <property name="SortOrder1" value="S040"/>
+      <property name="SortOrder2" value="0702"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="BigDecorationRadius" value="5"/>
+      <property name="CanDecorateOnSlopes" value="true"/>
+      <property name="UpgradeSound" value="place_block_metal"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <property name="Group" value="Building,advBuilding,Science,TCScience"/>
+      <property name="FilterTags" value="MC_Shapes"/>
+      <property name="AllowAllRotations" value="true" />
+      <property name="Tags" value="electricianSkill,construction,skillConstruction"/>
+      <property class="RepairItems">
+        <property name="resourceElectricPartsT3" value="8"/>
+      </property>
+      <drop event="Harvest" name="CarBatteryDead" count="0,1" prob=".4" tag="salvageHarvest"/>
+      <drop event="Harvest" name="Alternator" count="0,1" prob=".2" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceAcid" count="1" prob=".15" tag="WasteTreasuresAcidHarvest"/>
+      <drop event="Harvest" name="resourceRadiator" count="0,1" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricPartsT2" count="1,5" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceHeadlight" count="1,2" tag="salvageHarvest"/>
+      <drop event="Harvest" name="ammoGasCan" count="50,200" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceOil" count="0,3" tag="salvageHarvest"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    </block>
+
+    <!-- Harper Lanes File Cabinet -->
+    <block name="cntFileCabinetHarperLane1">
+      <property name="Extends" value="cntFileCabinetShortClosed" />
+      <property name="CustomIcon" value="cntFileCabinetShortClosed" />
+      <property name="CreativeMode" value="Dev" />
+      <property name="LootList" value="harperLaneFileCabinet" />      
+      <property name="DescriptionKey" value="cntFileCabinetHarperLane1Desc" />            
+      <property name="DisplayInfo" value="Name" />
+      <property name="SortOrder2" value="0001" />
+    </block>
+
+    <!-- Harper Lanes Desk -->
+    <block name="cntDeskMetalWhiteHarperLane">
+      <property name="Extends" value="cntDeskMetalFullWhite" />
+      <property name="CreativeMode" value="Dev" />
+      <property name="CustomIcon" value="cntDeskMetalFullWhite" />
+      <property name="LootList" value="harperLaneMetalDesk" />
+      <property name="CustomIconTint" value="A09F94" />
+      <property name="TintColor" value="A09F94" />
+      <property name="DescriptionKey" value="cntDeskMetalWhiteHarperLaneDesc" />
+      <property name="DisplayInfo" value="Name" />
+      <property name="Group" value="Decor/Miscellaneous" />
+      <property name="SortOrder2" value="0200" />
+    </block>
+
+    <block name="cntWallSafeHarperLane">
+      <property name="Extends" value="cntWallSafe" />
+      <property name="CustomIcon" value="cntWallSafe" />
+      <property name="CreativeMode" value="Dev" />    
+      <property name="LootList" value="harperLaneSmallSafe" />
+      <property name="DescriptionKey" value="cntWallSafeHarperLaneDesc" />      
+      <property name="SortOrder2" value="0000" />
+      <property name="Group" value="Building,advBuilding" />
+      <property name="FilterTags" value="MC_building,SC_loot" />
+    </block>
+
+  </append>
 </configs>

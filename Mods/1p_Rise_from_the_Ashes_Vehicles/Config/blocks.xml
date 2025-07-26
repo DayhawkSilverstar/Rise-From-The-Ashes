@@ -89,7 +89,7 @@
 		
 		<block name="ctnMotorcycle1">
 			<property name="Extends" value="riseVehicleGasPoweredMaster"/>
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="Player"/>
 			<property name="TintColor" value="808080"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal"/>
@@ -109,7 +109,7 @@
 
 		<block name="ctnMotorcycle2">
 			<property name="Extends" value="riseVehicleGasPoweredMaster"/>
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="Player"/>
 			<property name="TintColor" value="808080"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal"/>
@@ -129,7 +129,7 @@
 
 		<block name="ctnMotorcycle3">
 			<property name="Extends" value="riseVehicleGasPoweredMaster"/>
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="Player"/>
 			<property name="TintColor" value="808080"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal"/>
@@ -146,6 +146,62 @@
 			<property name="IsTerrainDecoration" value="true"/>
 			<drop event="Harvest" name="MotorCycleEngineBroken" count="0,1" prob=".4" tag="salvageHarvest"/>
 		</block>
+
+    <block name="ctnHelicopterWhiteBasic">
+      <property name="Extends" value="riseVehicleGasPoweredMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="TintColor" value="808080"/>
+      <property name="CustomIcon" value="HelicopterWhiteBasic" />
+      <property name="DisplayType" value="blockMulti"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Helicopters.unity3d?HelicopterWhiteBasic"/>
+      <property name="ModelOffset" value="0,0,0"/>
+      <property name="MultiBlockDim" value="5,3,5"/>
+      <property name="WaterFlow" value="permitted"/>
+      <property name="SortOrder1" value="LD04"/>
+      <property name="SortOrder2" value="0702"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="BigDecorationRadius" value="5"/>
+      <property name="CanDecorateOnSlopes" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <drop event="Harvest" name="CarBatteryDead" count="0,1" prob=".4" tag="salvageHarvest"/>
+      <drop event="Harvest" name="Alternator" count="0,1" prob=".2" tag="salvageHarvest"/> 
+      <drop event="Harvest" name="resourceAcid" count="1" prob=".15" tag="WasteTreasuresAcidHarvest"/>
+      <drop event="Harvest" name="resourceRadiator" count="0,1" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricPartsT3" count="1,5" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceHeadlight" count="1,2" tag="salvageHarvest"/>
+      <drop event="Harvest" name="ammoGasCan" count="50,200" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceOil" count="0,3" tag="salvageHarvest"/>
+    </block>
+
+    <block name="ctnHelicopterBlueBasic">
+      <property name="Extends" value="riseVehicleGasPoweredMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="TintColor" value="808080"/>
+      <property name="CustomIcon" value="HelicopterBlueBasic" />
+      <property name="DisplayType" value="blockMulti"/>
+      <property name="Material" value="Mmetal"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Helicopters.unity3d?HelicopterBlueBasic"/>
+      <property name="ModelOffset" value="0,0,0"/>
+      <property name="MultiBlockDim" value="5,3,5"/>
+      <property name="WaterFlow" value="permitted"/>
+      <property name="SortOrder1" value="LD04"/>
+      <property name="SortOrder2" value="0702"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="BigDecorationRadius" value="5"/>
+      <property name="CanDecorateOnSlopes" value="true"/>
+      <property name="IsTerrainDecoration" value="true"/>
+      <drop event="Harvest" name="CarBatteryDead" count="0,1" prob=".4" tag="salvageHarvest"/>
+      <drop event="Harvest" name="Alternator" count="0,1" prob=".2" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceAcid" count="1" prob=".15" tag="WasteTreasuresAcidHarvest"/>
+      <drop event="Harvest" name="resourceRadiator" count="0,1" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricPartsT3" count="1,5" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceHeadlight" count="1,2" tag="salvageHarvest"/>
+      <drop event="Harvest" name="ammoGasCan" count="50,200" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceOil" count="0,3" tag="salvageHarvest"/>
+    </block>
 		
 	</append>
 </configs>

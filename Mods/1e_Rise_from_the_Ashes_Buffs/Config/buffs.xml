@@ -11,7 +11,7 @@
 	<!-- Update buffDrugRecog -->
 	<set xpath="/buffs/buff[@name='buffDrugRecog']/effect_group/passive_effect[@name='EntityDamage' and @value='.5']/@tags">rangedBows,rangedMachineguns,rangedPistols,rangedRifles,rangedShotguns,admin</set>
 	
-	<!-- Update buffDrugRecog -->
+	<!-- Update buffDrugSkullCrushers -->
 	<set xpath="/buffs/buff[@name='buffDrugSkullCrushers']/effect_group/passive_effect[@name='EntityDamage' and @value='.5']/@tags">meleeBlades,meleeClubs,meleeFists,meleeImprovised,meleeSpears,admin</set>	
 
 	<!-- Update buffDrugHackers -->

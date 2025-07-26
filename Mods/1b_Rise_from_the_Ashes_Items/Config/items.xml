@@ -447,7 +447,7 @@
     <remove xpath ="//effect_group[@name='meleeToolSalvageT1Wrench']"/>    
     <append xpath="/items/item[@name='meleeToolSalvageT1Wrench']">
         <effect_group name="meleeToolSalvageT1Wrench">
-            <passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+            <passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="statDexterity"/>
             <passive_effect name="AttacksPerMinute" operation="base_add" value="@$playerDexterityMod"/>
             <passive_effect name="StaminaLoss" operation="base_set" value="18.3" tags="primary"/>
             
@@ -956,9 +956,22 @@
     <append xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']"><property name="UnlockedBy" value="skillCooking"/></append>
     <append xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/property[@name='EconomicValue']/@value">175</set>
-    <set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>
-		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='BlockDamage']/@tags">perkDeepCuts,knife</set>
-		<append xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']">
+    <set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,weapon,meleeWeapon,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>	
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='AttacksPerMinute']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='MaxRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='BlockRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='EntityDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='BlockDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='DegradationMax']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='DegradationPerUse']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+		
+  	<append xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod / 2" tags="statDexterity"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerDexterityMod / 2" tags="statDexterity"/>        
@@ -974,9 +987,22 @@
     <set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']"><property name="ItemWeight" value="1"/></append>
     <set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='EconomicValue']/@value">350</set>
-    <set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>
-		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='BlockDamage']/@tags">perkDeepCuts,knife</set>
-    <append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']">
+    <set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,weapon,meleeWeapon,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>		
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='AttacksPerMinute']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='MaxRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='BlockRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='EntityDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='BlockDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='DegradationMax']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='DegradationPerUse']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod / 2" tags="statDexterity"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerDexterityMod / 2" tags="statDexterity"/>        
@@ -992,8 +1018,21 @@
     
     <append xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']"><property name="ItemWeight" value="1.5"/></append>
     <set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/property[@name='EconomicValue']/@value">350</set>
-    <set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>
-		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='BlockDamage']/@tags">perkDeepCuts,knife</set>
+    <set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,weapon,meleeWeapon,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='AttacksPerMinute']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='MaxRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='BlockRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='EntityDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='BlockDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='DegradationMax']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='meleeWpnBladeT1CandyKnife']/passive_effect[@name='DegradationPerUse']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+  
     <append xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod / 2" tags="statDexterity"/>
@@ -1011,9 +1050,22 @@
     <set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnBladeT3Machete']"><property name="ItemWeight" value="1.5"/></append>
     <set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='EconomicValue']/@value">700</set>
-    <set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='Tags']/@value">machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>
-		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='BlockDamage']/@tags">perkDeepCuts,knife</set>
-    <append xpath="/items/item[@name='meleeWpnBladeT3Machete']">
+    <set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='Tags']/@value">machete,melee,grunting,light,longShaft,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='AttacksPerMinute']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='MaxRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='BlockRange']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='EntityDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='BlockDamage']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='DegradationMax']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='DegradationPerUse']/@tags">knife</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnBladeT3Machete']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod / 2" tags="statDexterity"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerDexterityMod / 2" tags="statDexterity"/>
@@ -1030,8 +1082,22 @@
     <append xpath="/items/item[@name='meleeWpnClubT0WoodenClub']"><property name="UnlockedBy" value="skillCarpentry"/></append>
     <append xpath="/items/item[@name='meleeWpnClubT0WoodenClub']"><property name="ItemWeight" value="4"/></append>
     <set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='EconomicValue']/@value">175</set>
-    <set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
-    <set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='RepairTools']/@value">resourceTwig</set>
+    <set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='AttacksPerMinute']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='MaxRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='BlockRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='EntityDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='BlockDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='DegradationMax']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='DegradationPerUse']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='RepairTools']/@value">resourceTwig</set>
     <append xpath="/items/item[@name='meleeWpnClubT0WoodenClub']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1044,7 +1110,21 @@
     <set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='UnlockedBy']/@value">skillCarpentry</set>
     <append xpath="/items/item[@name='meleeWpnClubT1BaseballBat']"><property name="ItemWeight" value="3"/></append>
     <set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='EconomicValue']/@value">350</set>
-    <set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
+    <set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='AttacksPerMinute']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='MaxRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='BlockRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='EntityDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='BlockDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='DegradationMax']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='DegradationPerUse']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+  
     <append xpath="/items/item[@name='meleeWpnClubT1BaseballBat']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1056,8 +1136,22 @@
     
     <append xpath="/items/item[@name='meleeWpnClubT1CandyClub']"><property name="ItemWeight" value="5"/></append>
     <set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/property[@name='EconomicValue']/@value">350</set>
-    <set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
-    <append xpath="/items/item[@name='meleeWpnClubT1CandyClub']">
+    <set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='AttacksPerMinute']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='MaxRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='BlockRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='EntityDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='BlockDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='DegradationMax']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='meleeWpnClubT1CandyClub']/passive_effect[@name='DegradationPerUse']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnClubT1CandyClub']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1069,7 +1163,21 @@
     <set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnClubT3SteelClub']"><property name="ItemWeight" value="10"/></append>
     <set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='EconomicValue']/@value">700</set>
-    <set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
+    <set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,statStrength,meleeClubs,canHaveCosmetic,clubSkill</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='AttacksPerMinute']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='MaxRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='BlockRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='EntityDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='BlockDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='DegradationMax']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='DegradationPerUse']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+  
     <append xpath="/items/item[@name='meleeWpnClubT3SteelClub']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1082,8 +1190,22 @@
     <append xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']"><property name="UnlockedBy" value="skillMechanicalEngineer"/></append>
     <append xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']"><property name="ItemWeight" value="2.5"/></append>
     <set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/property[@name='EconomicValue']/@value">100</set>
-    <set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/property[@name='Tags']/@value">melee,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,noStunEffect,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,club</set>
-     <append xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']">
+    <set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/property[@name='Tags']/@value">melee,club,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,noStunEffect,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,club</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='AttacksPerMinute']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='MaxRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='BlockRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='EntityDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='BlockDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='DegradationMax']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='DegradationPerUse']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']">
        <effect_group name="Strength Mod Bonus">
          <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
          <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1096,7 +1218,21 @@
     <append xpath="/items/item[@name='meleeWpnBatonT2StunBaton']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='EconomicValue']/@value">350</set>
     <set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='Tags']/@value">melee,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,stunBaton,club</set>
-    <append xpath="/items/item[@name='meleeWpnBatonT2StunBaton']">
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='AttacksPerMinute']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='MaxRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='BlockRange']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='EntityDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='BlockDamage']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='DegradationMax']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='DegradationPerUse']/@tags">club</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnBatonT2StunBaton']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1109,6 +1245,20 @@
     <append xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']"><property name="ItemWeight" value="6"/></append>
     <set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='EconomicValue']/@value">175</set>
     <set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='Tags']/@value">melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='AttacksPerMinute']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='MaxRange']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='BlockRange']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='EntityDamage']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='BlockDamage']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='DegradationMax']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='DegradationPerUse']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+  
     <append xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1120,8 +1270,23 @@
 
     <set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']"><property name="ItemWeight" value="6"/></append>
-    <set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='EconomicValue']/@value">350</set>    
-    <append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']">
+    <set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='EconomicValue']/@value">350</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='Tags']/@value">spearSkill,melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='AttacksPerMinute']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='MaxRange']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='BlockRange']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='EntityDamage']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='BlockDamage']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='DegradationMax']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='DegradationPerUse']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1132,8 +1297,23 @@
     
     <set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']"><property name="ItemWeight" value="6"/></append>
-    <set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='EconomicValue']/@value">700</set>    
-    <append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']">
+    <set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='EconomicValue']/@value">700</set>
+	  <set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='Tags']/@value">spearSkill,melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill</set>
+  
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='AttacksPerMinute']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='MaxRange']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='BlockRange']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='EntityDamage']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='BlockDamage']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='DegradationMax']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='DegradationPerUse']/@tags">spearSkill</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1145,8 +1325,22 @@
     <append xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']"><property name="UnlockedBy" value="skillCarpentry"/></append>
     <append xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']"><property name="ItemWeight" value="10"/></append>
     <set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='EconomicValue']/@value">175</set>
-    <set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,statStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,improvised</set>
-    <append xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']">
+    <set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='Tags']/@value">blunt,improvised,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,statStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,improvised</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='AttacksPerMinute']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='MaxRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='BlockRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='EntityDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='BlockDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='DegradationMax']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='DegradationPerUse']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1158,7 +1352,21 @@
     <set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']"><property name="ItemWeight" value="15"/></append>
     <set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='EconomicValue']/@value">350</set>
-    <set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,statStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,improvised</set>
+    <set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='Tags']/@value">blunt,improvised,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,statStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,improvised</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='AttacksPerMinute']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='MaxRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='BlockRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='EntityDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='BlockDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='DegradationMax']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='DegradationPerUse']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+  
     <append xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1171,8 +1379,22 @@
     <set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']"><property name="ItemWeight" value="20"/></append>
     <set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='EconomicValue']/@value">700</set>
-    <set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,statStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,improvised</set>
-    <append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']">
+    <set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='Tags']/@value">blunt,improvised,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,statStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,improvised</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='AttacksPerMinute']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='MaxRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='BlockRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='EntityDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='BlockDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='DegradationMax']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='DegradationPerUse']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']">
       <effect_group name="Strength Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerStrengthMod" tags="statStrength"/>
@@ -1185,7 +1407,9 @@
     <append xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='EconomicValue']/@value">45</set>
 		<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='RepairTools']/@value">LeatherSheetT1</set>
-    <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill</set>
+    <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,weapon,noBlades,canHaveCosmetic,knuckleSkill</set>
+
+		<!-- Update the tags for the weapons damage -->
 		<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='AttacksPerMinute']/@tags">knuckleSkill</set>
 		<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='MaxRange']/@tags">knuckleSkill</set>
 		<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='BlockRange']/@tags">knuckleSkill</set>
@@ -1210,7 +1434,22 @@
     <append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='EconomicValue']/@value">350</set>
     <set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill</set>
-    <append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']">
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='AttacksPerMinute']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='MaxRange']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='BlockRange']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='EntityDamage']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='BlockDamage']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='DegradationMax']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='DegradationPerUse']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+		
+
+  <append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
@@ -1221,7 +1460,21 @@
     <set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,canHaveCosmetic,knuckleSkill,corpseRemoval</set>
-    <append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']">
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='AttacksPerMinute']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='MaxRange']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='BlockRange']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='EntityDamage']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='BlockDamage']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='DegradationMax']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='DegradationPerUse']/@tags">knuckleSkill</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
@@ -1233,6 +1486,21 @@
     <append xpath="/items/item[@name='meleeToolFlashlight02']"><property name="ItemWeight" value="2"/></append>
     <set xpath="/items/item[@name='meleeToolFlashlight02']/property[@name='EconomicValue']/@value">200</set>
     <set xpath="/items/item[@name='meleeToolFlashlight02']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,noMods,improvised</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='AttacksPerMinute']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='MaxRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='BlockRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='EntityDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='BlockDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='DegradationMax']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='meleeToolFlashlight02']/passive_effect[@name='DegradationPerUse']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeToolFlashlight02']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  
     <append xpath="/items/item[@name='meleeToolFlashlight02']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
@@ -1244,7 +1512,21 @@
     <append xpath="/items/item[@name='meleeToolTorch']"><property name="ItemWeight" value="3"/></append>
     <set xpath="/items/item[@name='meleeToolTorch']/property[@name='EconomicValue']/@value">10</set>
     <set xpath="/items/item[@name='meleeToolTorch']/property[@name='Tags']/@value">blunt,melee,tool,weapon,meleeWeapon,heldTorch,noMods,improvised</set>
-    <append xpath="/items/item[@name='meleeToolTorch']">
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='AttacksPerMinute']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='MaxRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='BlockRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='EntityDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='BlockDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='DegradationMax']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='meleeToolTorch']/passive_effect[@name='DegradationPerUse']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeToolTorch']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+
+  <append xpath="/items/item[@name='meleeToolTorch']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
         <passive_effect name="BlockDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
@@ -1255,7 +1537,22 @@
     <append xpath="/items/item[@name='meleeToolWireTool']"><property name="UnlockedBy" value="skillMechanicalEngineer"/></append>
     <append xpath="/items/item[@name='meleeToolWireTool']"><property name="ItemWeight" value="0.5"/></append>
     <set xpath="/items/item[@name='meleeToolWireTool']/property[@name='EconomicValue']/@value">200</set>
-    <set xpath="/items/item[@name='meleeToolWireTool']/property[@name='Tags']/@value">tool,noMods,electricianSkill</set>
+    <set xpath="/items/item[@name='meleeToolWireTool']/property[@name='Tags']/@value">tool,noMods,electricianSkill,improvised</set>
+
+		<!-- Update the tags for the weapons damage -->
+		<remove xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='EntityDamage' and @operation='perc_add']"/>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='AttacksPerMinute']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='MaxRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='BlockRange']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='EntityDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='BlockDamage']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='DegradationMax']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='DegradationPerUse']/@tags">improvised</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='Power Attack']/passive_effect[@name='BlockDamage']/@tags">secondary</set>
+		<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='Power Attack']/passive_effect[@name='StaminaLoss']/@tags">secondary</set>
+  
+  
     <append xpath="/items/item[@name='meleeToolWireTool']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
@@ -1273,8 +1570,15 @@
     <append xpath="/items/item[@name='gunHandgunT0PipePistol']"><property name="UnlockedBy" value="skillMechanicalEngineer"/></append>
     <append xpath="/items/item[@name='gunHandgunT0PipePistol']"><property name="ItemWeight" value="2"/></append>
     <set xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@name='EconomicValue']/@value">100</set>
-    <set xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,rangedPistols,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill</set>
-    <append xpath="/items/item[@name='gunHandgunT0PipePistol']">
+    <set xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@name='Tags']/@value">weapon,rangedPistols,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill</set>
+
+		<!-- Update the tags for the weapons damage -->		
+		<set xpath="/items/item[@name='gunHandgunT0PipePistol']/effect_group[@name='gunHandgunT0PipePistol']/passive_effect[@name='MaxRange']/@tags">rangedPistols</set>
+		<set xpath="/items/item[@name='gunHandgunT0PipePistol']/effect_group[@name='gunHandgunT0PipePistol']/passive_effect[@name='DamageFalloffRange']/@tags">rangedPistols</set>
+		<set xpath="/items/item[@name='gunHandgunT0PipePistol']/effect_group[@name='gunHandgunT0PipePistol']/passive_effect[@name='IncrementalSpreadMultiplier']/@tags">rangedPistols</set>
+
+
+  <append xpath="/items/item[@name='gunHandgunT0PipePistol']">
       <effect_group name="Dexterity Mod Bonus">
         <passive_effect name="EntityDamage" operation="base_add" value="@$playerDexterityMod" tags="statDexterity"/>
       </effect_group>
@@ -1564,12 +1868,14 @@
 
     <!-- 9mm -->
     <set xpath="//item[@name='ammo9mmBulletBall']/effect_group/passive_effect[@tags='perkGunslinger']/@tags">rangedPistols</set>
+  1	<set xpath="//item[@name='ammo9mmBulletBall']/effect_group/passive_effect[@tags='perkGunslinger,9mmGun']/@tags">rangedPistols,9mmGun</set>
     <append xpath="/items/item[@name='ammo9mmBulletBall']"><property name="ItemWeight" value="0.025"/></append>
     <set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='EconomicValue']/@value">9</set>
     <set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Tags']/@value">ammo,ammo9mm,rangedPistols</set>
 
     <!-- 9mm HP -->
     <set xpath="//item[@name='ammo9mmBulletHP']/effect_group/passive_effect[@tags='perkGunslinger']/@tags">rangedPistols</set>
+  1	<set xpath="//item[@name='ammo9mmBulletHP']/effect_group/passive_effect[@tags='perkGunslinger,9mmGun']/@tags">rangedPistols,9mmGun</set>
     <set xpath="/items/item[@name='ammo9mmBulletHP']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='ammo9mmBulletHP']"><property name="ItemWeight" value="0.025"/></append>
     <set xpath="/items/item[@name='ammo9mmBulletHP']/property[@name='EconomicValue']/@value">14</set>
@@ -1577,6 +1883,7 @@
 
     <!-- 9mm AP -->
     <set xpath="//item[@name='ammo9mmBulletAP']/effect_group/passive_effect[@tags='perkGunslinger']/@tags">rangedPistols</set>
+  1	<set xpath="//item[@name='ammo9mmBulletAP']/effect_group/passive_effect[@tags='perkGunslinger,9mmGun']/@tags">rangedPistols,9mmGun</set>
     <set xpath="/items/item[@name='ammo9mmBulletAP']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='ammo9mmBulletAP']"><property name="ItemWeight" value="0.025"/></append>
     <set xpath="/items/item[@name='ammo9mmBulletAP']/property[@name='EconomicValue']/@value">14</set>
@@ -1584,12 +1891,14 @@
 
     <!-- 44 CAL -->
     <set xpath="//item[@name='ammo44MagnumBulletBall']/effect_group/passive_effect[@tags='perkGunslinger']/@tags">rangedPistols</set>
+    <set xpath="//item[@name='ammo44MagnumBulletBall']/effect_group/passive_effect[@tags='perkGunslinger,revolver']/@tags">rangedPistols,revolver</set>
     <append xpath="/items/item[@name='ammo44MagnumBulletBall']"><property name="ItemWeight" value="0.038"/></append>
     <set xpath="/items/item[@name='ammo44MagnumBulletBall']/property[@name='EconomicValue']/@value">10</set>
     <set xpath="/items/item[@name='ammo44MagnumBulletBall']/property[@name='Tags']/@value">ammo44Mag,rangedPistols</set>
 
     <!-- 44 CAL HP-->
     <set xpath="//item[@name='ammo44MagnumBulletHP']/effect_group/passive_effect[@tags='perkGunslinger']/@tags">rangedPistols</set>
+    <set xpath="//item[@name='ammo44MagnumBulletBall']/effect_group/passive_effect[@tags='perkGunslinger,revolver']/@tags">rangedPistols,revolver</set>
     <set xpath="/items/item[@name='ammo44MagnumBulletHP']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='ammo44MagnumBulletHP']"><property name="ItemWeight" value="0.038"/></append>
     <set xpath="/items/item[@name='ammo44MagnumBulletHP']/property[@name='EconomicValue']/@value">15</set>
@@ -1597,6 +1906,7 @@
 
     <!-- 44 CAL AP -->
     <set xpath="//item[@name='ammo44MagnumBulletAP']/effect_group/passive_effect[@tags='perkGunslinger']/@tags">rangedPistols</set>
+    <set xpath="//item[@name='ammo44MagnumBulletBall']/effect_group/passive_effect[@tags='perkGunslinger,revolver']/@tags">rangedPistols,revolver</set>
     <set xpath="/items/item[@name='ammo44MagnumBulletAP']/property[@name='UnlockedBy']/@value">skillBlacksmithing</set>
     <append xpath="/items/item[@name='ammo44MagnumBulletAP']"><property name="ItemWeight" value="0.038"/></append>
     <set xpath="/items/item[@name='ammo44MagnumBulletAP']/property[@name='EconomicValue']/@value">15</set>
