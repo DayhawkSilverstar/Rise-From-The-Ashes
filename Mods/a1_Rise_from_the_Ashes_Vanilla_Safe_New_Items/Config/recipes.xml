@@ -1,0 +1,10 @@
+<configs>
+  <append xpath="/recipes">
+    <recipe name="whisperHarperLaneClip1" count="1" craft_area="ComputerDecrytionStation">
+      <ingredient name="whisperHarperLaneClip1Encrypted" count="1"/>      
+    </recipe>
+    <recipe name="whisperHarperLaneClip1" count="1" craft_area="ComputerStation">
+      <ingredient name="whisperHarperLaneClip1Encrypted" count="1"/>
+    </recipe>
+  </append>
+</configs>

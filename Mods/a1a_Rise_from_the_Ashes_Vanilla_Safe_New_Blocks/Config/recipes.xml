@@ -1,0 +1,48 @@
+<configs>
+  <append xpath="/recipes">
+    <recipe name="brickShapes:VariantHelper" count="1"  craft_area="workbench" craft_time="20" tags="">      
+      <ingredient name="resourceBrick" count="10"/>
+    </recipe>
+
+    <recipe name="ironShapes:VariantHelper" count="1"  craft_area="workbench" craft_time="30" tags="">
+      <ingredient name="resourceForgedIron" count="10"/>
+    </recipe>
+
+    <recipe name="corrugatedMetalShapes:VariantHelper" material_based="true" count="1" craft_area="forge" craft_time="25" tags="">
+      <ingredient name="unit_iron" count="20"/>
+      <ingredient name="unit_clay" count="10"/>
+    </recipe>
+
+    <recipe name="stainLessSteelShapes:VariantHelper" count="1"  craft_area="workbench" craft_time="40" tags="">
+      <ingredient name="resourceForgedStainlessSteel" count="10"/>
+    </recipe>
+
+    <recipe name="tungstenShapes:VariantHelper" count="1"  craft_area="workbench" craft_time="40" tags="">
+      <ingredient name="resourceForgedTungsten" count="10"/>
+    </recipe>
+
+    <recipe name="resourceBrick" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="">
+      <ingredient name="unit_clay" count="2"/>
+      <ingredient name="unit_glass" count="1"/>
+    </recipe>
+
+    <recipe name="EmptyFarmPlot" count="1" craft_time="20" craft_area="workbench" tags="">
+      <ingredient name="resourceWood" count="10"/>
+      <ingredient name="resourceNail" count="30"/>
+    </recipe>
+
+    <recipe name="TailorWorkstation" count="1" craft_time = "90" tags="">      
+      <ingredient name="resourceLeather" count="10"/>
+      <ingredient name="resourceMechanicalParts" count="10"/>
+      <ingredient name="resourceNail" count="300"/>
+      <ingredient name="resourceWood" count="150"/>
+    </recipe>
+
+    <recipe name="ComputerStation" count="1" craft_time = "90" tags="">      
+      <ingredient name="resourceElectricParts" count="10"/>
+      <ingredient name="resourceNail" count="300"/>
+      <ingredient name="resourceWood" count="150"/>
+      <ingredient name="decoLaptop" count="1"/>
+    </recipe>
+  </append>
+</configs>
