@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+  <append xpath="/blocks/block[@name='ComputerStation']">
+    <property name="UnlockedBy" value="skillSoftwareEngineer"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='TailorWorkstation']">
+    <property name="UnlockedBy" value="skillTailoring"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='EmptyFarmPlot']">
+    <property name="DamageResist" value="5"/>
+    <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+    <property name="AllowPickup" value="1"/>
+    <property name="CanPickUp" value="true"/>
+    <property name="TakeDelay" value="10" />
+    <property name="DamageResist" value="5"/>
+    <property name="UnlockedBy" value="skillCarpentry"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='stainLessSteelShapes']">
+    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
+    <property name="DamageResist" value="52"/>
+    <property name="UnlockedBy" value="skillCivilEngineer"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='tungstenShapes']">
+    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
+    <property name="DamageResist" value="65"/>
+    <property name="UnlockedBy" value="skillCivilEngineer"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='ironShapes']">
+    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
+    <property name="DamageResist" value="33"/>
+    <property name="UnlockedBy" value="skillCivilEngineer"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='ironShapes']">
+    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
+    <property name="DamageResist" value="33"/>
+    <property name="UnlockedBy" value="skillCivilEngineer"/>
+  </append>
+</configs>

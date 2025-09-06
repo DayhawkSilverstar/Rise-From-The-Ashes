@@ -1,0 +1,17 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+whisperClipMaster,items,Item,New,Not Used,Whisper Clip
+whisperClipMasterDesc,items,Item,New,Not Used,A master audio clip used to derive story whispers.
+whisperClipDrLeonFrostClip1,items,Item,New,Not Used,Dr. Leon Frost’s Whisper
+whisperClipDrLeonFrostClip1Desc,items,Item,New,Not Used,An encrypted whisper from Dr. Leon Frost.
+whisperHarperLaneClip1,items,Item,New,Not Used,Harper Lane Whisper
+whisperHarperLaneClip1Desc,items,Item,New,Not Used,A decrypted whisper recovered from Harper Lane.
+whisperHarperLaneClip1Encrypted,items,Item,New,Not Used,Encrypted Harper Lane Whisper
+whisperHarperLaneClip1EncryptedDesc,items,Item,New,Not Used,An encrypted whisper that needs decryption.
+resourceBrick,items,Item,New,Not Used,Brick
+resourceBrickDesc,items,Item,New,Not Used,Hard?baked clay for masonry and shapes.
+resourceForgedStainlessSteel,items,Item,New,Not Used,Forged Stainless Steel
+resourceForgedStainlessSteelDesc,items,Item,New,Not Used,Refined stainless suitable for heavy?duty shapes.
+resourceForgedTungsten,items,Item,New,Not Used,Forged Tungsten
+resourceForgedTungstenDesc,items,Item,New,Not Used,Extremely dense metal for top?tier shapes.
+resourceScrapTungsten,items,Item,New,Not Used,Tungsten Scrap
+resourceScrapTungstenDesc,items,Item,New,Not Used,Recovered tungsten fragments from salvage and loot.

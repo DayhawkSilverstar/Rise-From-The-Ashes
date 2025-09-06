@@ -631,18 +631,5 @@
 		<lootcontainer name="palletBrownBoxesBase" size="8,8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
 			<item group="groupRandomBoxes"/>
 		</lootcontainer>
-
-    <lootcontainer name="harperLaneFileCabinet" size="8,8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
-      <item group="groupRandomBoxes"/>
-    </lootcontainer>
-
-    <lootcontainer name="harperLaneSmallSafe" size="8,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
-      <item group="groupSmallSafeLoot" />
-    </lootcontainer>
-
-    <lootcontainer name="harperLaneMetalDesk" count="1" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate">
-      <item group="groupDesks" />
-    </lootcontainer>
-
   </append>
 </configs>

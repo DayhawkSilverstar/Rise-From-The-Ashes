@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Name value="Rise_From_The_Ashes_Nav_objects" />
+	<Name value="z1y_Rise_from_the_Ashes_Nav_object" />
 	<DisplayName value="Rise from the Ashes Nav Objects" />
 	<Description value="Adds Removes and Updates the nav_objects xml file" />
 	<Author value="Dayhawk" />

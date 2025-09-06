@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Name value="Rise_From_The_Ashes_ui_Display" />
+	<Name value="z1h_Rise_from_the_Ashes_UI_Display" />
 	<DisplayName value="Rise from the Ashes UI Display" />
 	<Description value="Adds Removes and Updates the ui_display xml file" />
 	<Author value="Dayhawk" />

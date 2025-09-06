@@ -2,8 +2,7 @@
 	<append xpath="/items">
     <item name="whisperClipMaster">
       <property name="HoldType" value="45"/>
-      <property name="Tags" value="quest"/>
-      <property name="ItemWeight" value="1"/>
+      <property name="Tags" value="quest"/>      
       <property name="DescriptionKey" value="whisperClipMasterDesc"/>
       <property name="Meshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
       <property name="DropMeshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
@@ -44,7 +43,7 @@
     <item name="whisperHarperLaneClip1">
       <property name="Extends" value="whisperClipMaster"/>
       <property name="CustomIcon" value="WhisperClip"/>
-      <property name="DescriptionKey" value="whisperClipDrLeonFrostClip1Desc"/>
+      <property name="DescriptionKey" value="whisperHarperLaneClip1Desc"/>
       <property name="Meshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
       <property name="DropMeshfile" value="#@modfolder:Resources/WhisperClipPrefab.unity3d?WhisperClipPrefab.prefab"/>
       <property class="Action0">
@@ -86,6 +85,9 @@
       <property name="Material" value="MresourceForgedSteel"/>
       <property name="CraftingIngredientTime" value="15"/>
       <property name="RepairTime" value="1"/>
+      <property name="Group" value="Resources"/>
+      <property name="Tags" value="resource,metal,forged"/>
+      <property name="TraderStageTemplate" value="baseTier1"/>
     </item>
 
     <item name="resourceForgedTungsten">
@@ -95,6 +97,9 @@
       <property name="Material" value="MresourceForgedSteel"/>
       <property name="CraftingIngredientTime" value="15"/>
       <property name="RepairTime" value="1"/>
+      <property name="Group" value="Resources"/>
+      <property name="Tags" value="resource,metal,forged"/>
+      <property name="TraderStageTemplate" value="baseTier2"/>
     </item>
 
     <item name="resourceScrapTungsten">
@@ -104,6 +109,8 @@
       <property name="Material" value="MresourceForgedSteel"/>
       <property name="CraftingIngredientTime" value="15"/>
       <property name="RepairTime" value="1"/>
+      <property name="Group" value="Resources"/>
+      <property name="Tags" value="resource,metal,scrap"/>
     </item>
 	</append>
 </configs>

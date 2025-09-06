@@ -1,0 +1,158 @@
+  <configs>
+
+  <!-- 
+    Rise from the Ashes UI Customization File
+    This file modifies the game's UI elements to provide a better experience:
+    - Improves visibility of status bars and target information
+    - Repositions HUD elements for better layout
+    - Expands inventory capacity and improves organization
+    - Adds quality-of-life features like currency display and encumbrance meter
+  -->
+
+  <!-- === HUD VISIBILITY SETTINGS === -->
+  <!-- Makes the target information window always visible instead of conditional -->
+  <set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
+  <!-- Adjusts position of backpack window title for better alignment -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@name='windowName']/@pos">3,-6</set>
+
+  <!-- === STAT BARS POSITIONING === -->
+  <!-- Modifies the health bar to show 4 rows of information instead of default -->
+  <set xpath ="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud' and @pos='9,156']/@rows">4</set>
+  <!-- Moves the health status display down to position 9,256 (lower on screen) -->
+  <set xpath ="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud' and @pos='9,156']/@pos">9,256</set>
+
+  <!-- Moves the stamina bar to align with the repositioned health bar -->
+  <set xpath ="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud' and @pos='90,132']/@pos">90,233</set>
+
+  <!-- === ADDITIONAL STATUS BARS === -->
+  <!-- Adds custom Food and Water bars after the Health status indicator -->
+  <insertAfter xpath="/windows/window[@name='HUDLeftStatBars']/rect[1]/rect[@stat_type='Health']">
+
+    <!-- Creates a Food status bar with green color scheme -->
+    <rect width="171" height="46" pos="0,-150" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+      <!-- Multiple layers of sprites create depth and styling effects -->
+      <sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+      <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+      <filledsprite depth="3" name="background" color="110,110,110,128" width="169" type="filled" fill="{statmodifiedmax}" />
+
+      <!-- The actual food level indicator with green coloring -->
+      <filledsprite depth="5" name="BarContent" color="66,233,67,128" width="169" type="filled" fill="0" />
+      <!-- Food icon that appears on the bar -->
+      <sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="26,-24" pivot="center" foregroundlayer="true"/>
+      <!-- Text showing current/max food values -->
+      <label depth="7" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="125" height="35"/>
+
+      <!-- Border elements to frame the bar -->
+      <sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+      <filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      <filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+    </rect>
+
+    <!-- Creates a Water status bar with blue color scheme - similar structure to Food bar -->
+    <rect width="171" height="46" pos="0,-200" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+      <sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+      <sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+      <filledsprite depth="3" name="background" color="110,110,110,128" width="169" type="filled" fill="{statmodifiedmax}" />
+
+      <!-- Water level indicator with blue coloring -->
+      <filledsprite depth="5" name="BarContent" color="36,197,230,128" width="169" type="filled" fill="0" />
+      <sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="26,-24" pivot="center" foregroundlayer="true"/>
+      <label depth="7" name="TextContent" pos="44,-23" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="125" height="35"/>
+
+      <sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+      <filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+      <filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+    </rect>
+  </insertAfter >
+
+  <!-- === INVENTORY BUTTON REPOSITIONING === -->
+  <!-- These settings move various inventory control buttons to create a better layout -->
+  
+  <!-- Moves the lock/unlock toggle button to the left side -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/button[@name='btnToggleLockMode' and @pos='0, -22']/@pos">-80, -22</set>
+
+  <!-- Moves the clear inventory button further left for better spacing -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/button[@name='btnClearInventory' and @pos='-45, -22']/@pos">-120, -22</set>
+
+  <!-- Repositions sort buttons across different container windows -->
+  <set xpath ="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnSort' and @pos='194, -22']/@pos">144, -22</set>
+  <set xpath ="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/button[@name='btnSort' and @pos='50, -22']/@pos">-40, -22</set>
+  <set xpath ="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnSort' and @pos='194, -22']/@pos">144, -22</set>
+
+  <!-- Repositions the "fill" buttons that move items intelligently between containers -->
+  <set xpath ="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnMoveFillAndSmart' and @pos='234, -22']/@pos">184, -22</set>
+  <set xpath ="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/rect/button[@name='btnMoveFillAndSmart' and @pos='100, -22']/@pos">10, -22</set>
+  <set xpath ="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnMoveFillAndSmart' and @pos='234, -22']/@pos">184, -22</set>
+
+  <!-- Repositions the "move all" buttons that transfer all items between containers -->
+  <set xpath ="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnMoveAll' and @pos='274, -22']/@pos">224, -22</set>
+  <set xpath ="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/rect/button[@name='btnMoveAll' and @pos='150, -22']/@pos">50, -22</set>
+  <set xpath ="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnMoveAll' and @pos='274, -22']/@pos">224, -22</set>
+
+  <!-- === INVENTORY SIZE EXPANSION === -->
+  <!-- Increases the backpack window width to 604px -->
+  <set xpath="/windows/window[@name='windowBackpack']/@width">604</set>
+  <!-- Increases the backpack window height to 350px (adds one extra row of items) -->
+  <set xpath="/windows/window[@name='windowBackpack']/@height">350</set>
+  
+  <!-- Makes the content panel match the new window height -->
+  <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">350</set>
+
+  <!-- === INVENTORY GRID CUSTOMIZATION === -->
+  <!-- Changes inventory grid to 7 rows (vanilla is typically 6) -->
+  <set xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /grid[@name='inventory']/@rows">7</set>
+
+  <!-- Changes inventory grid to 12 columns (vanilla is typically 9) for 84 total slots -->
+  <set xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /grid[@name='inventory']/@cols">12</set>
+
+  <!-- Sets the height of each inventory cell to 50px -->
+  <set xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /grid[@name='inventory']/@cell_height">50</set>
+
+  <!-- Sets the width of each inventory cell to 50px -->
+  <set xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /grid[@name='inventory']/@cell_width">50</set>
+
+  <!-- === BACKGROUND RESIZING === -->
+  <!-- Adjusts the background sprite width to match the expanded inventory -->
+  <set xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /sprite[@name='backgroundMain']/@width">601</set>
+
+  <!-- Adjusts the background sprite height to match the expanded inventory -->
+  <set xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /sprite[@name='backgroundMain']/@height">350</set>
+  
+  <!-- === CUSTOM ITEM STACKING SYSTEM === -->
+  <!-- Removes the vanilla item stacking system -->
+  <remove xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /grid[@name='inventory']/backpack_item_stack"/>
+
+  <!-- Replaces with the Rise from the Ashes custom stacking system -->
+  <append xpath="/windows/window[@name='windowBackpack']
+               /panel[@name='content']
+               /grid[@name='inventory']">
+    <rfta_stack name="0"/>
+  </append>
+
+  <!-- === ADDITIONAL UI ELEMENTS === -->
+  <!-- Adds currency display and encumbrance meter to inventory header -->
+  <insertAfter xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']">
+    <!-- Displays the coin icon and currency amount -->
+    <sprite depth="4" pos="410,-10" name="costIcon" sprite="ui_game_symbol_coin" size="24,24"  color="[white]" foregroundlayer="true" />
+    <label depth="2" pos="410,-8" width="100" height="28" text="{currencyamount}" justify="right" />
+    
+    <!-- Displays the encumbrance icon, percentage and % symbol -->
+    <sprite depth="4" pos="520,-10"  ame="muleIcon" sprite="ui_game_symbol_pack_mule" size="24,24" color="[white]" foregroundlayer="true" />
+    <label depth="2" pos="480,-8" width="100" height="28" text="{cvar(.encumbrancePercent:0)}" justify="right" />
+    <label depth="2" pos="575,-8" width="25" height="28" text="%" justify="right" />
+  </insertAfter>
+</configs>

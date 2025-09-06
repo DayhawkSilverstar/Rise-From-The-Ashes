@@ -16,6 +16,7 @@ public class RequirementBlockHasHarvestTags : TargetedCompareRequirementBase
             return false;
         }
         
+        
         if (!invert)
         {
             return IsValidBlock(_params);
@@ -26,11 +27,13 @@ public class RequirementBlockHasHarvestTags : TargetedCompareRequirementBase
     public virtual bool IsValidBlock(MinEventParams _params)
     {
         var isValid = false;
+        if (_params.BlockValue.isair) return false;
+        
         if (!_params.BlockValue.Block.HasItemsToDropForEvent(EnumDropEvent.Harvest)) return false;
 
         foreach (var itemDrop in _params.BlockValue.Block.itemsToDrop[EnumDropEvent.Harvest])
         {
-            var itemTag = FastTags<TagGroup.Global>.GetTag(itemDrop.tag);
+            var itemTag = FastTags<TagGroup.Global>.Parse(itemDrop.tag);
             if (itemTag.Test_AnySet(tags))
             {
                 return true;

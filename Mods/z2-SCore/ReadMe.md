@@ -32,6 +32,431 @@ This release of 0-SCore introduces significant enhancements across several core 
 
 
 [ Change Log ]
+Version: 2.2.17.929
+	[ Challenges ]
+		- Added ObjectiveCVarV2 for better localization support and buff requirement hooks
+			<objective type="CVarV2, SCore" cvar="player_m_desert" count="5000" cvar_override="xuiCVar" description_key="xuiTravel"/>
+		- Further added coded to HarvestV2 to actually do stuff, rather than auto-commit.
+
+	[ Buff requirements ]
+		- Modified the new ItemPercentUsed requirement to support an optional tracked_item attribute
+		- This tracked_item is the unlocalized name of the item, and will help in troubleshooting.
+		- This attribute controls *logging*, and has no function beyond that.
+		- If this attribute exists, and if the item being checked is the same, then a printout in the log appear
+            Log.Out($"ItemValue: {_params.ItemValue.ItemClass.GetItemName()} :: {_params.ItemValue.UseTimes} / {_params.ItemValue.MaxUseTimes}");
+
+
+Version: 2.2.15.160 
+
+	[ Challenges ]
+		- Added support for the <requirements for ClearSleepers challenge
+
+	[ Item Degradation ]
+		- In continuation for item degradation, more hooks have been added.
+		- ItemDegradationHelpers provides a few methods such as CanDegrade, IsDegraded, and CheckModification, which handles item degradation
+		- Added hooks to allow Item Mods to degrade and stop being effective
+		- Added patches to DewCollector, Workstation UpdateTick to degrade mods, if they are set to degrade.
+		- See SphereII Item Mod Degradation for details.
+
+	[ Triggered Events ]
+		- Added onSelfItemDegrade trigger on an ItemValue.
+		- Added OnSelfRoutineUpdate to trigger on an ItemValue
+		- Updated OnSelfItemRepaired to also repair attached Mods, if applicable.
+		
+	[ Requirements ]
+		- Added a new ItemPercentUsed requirement, which checks the Used Times vs Max Times.
+			<requirement name="ItemPercentUsed, SCore" operation="LTE" value="0.5"/>
+
+	[ MinEvent Action ]
+		- Aded a new RoutineUpdate action. This will cycle through all the passed in slots to trigger any onSelfRoutineUpdate triggers on each item.
+			<!-- Will run on player's equipment, backpack, and tool belt -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RoutineUpdate, SCore" slots="bag,inventory,equipment"/>
+
+	[ SphereII Learn By Doing ]
+		- Refactored Master Perk for each attribute to not be so dumb, and avoids the Red Checkmarks.
+
+	[ SphereII Item Mod Degradation ] - New Mod
+		- Created new modlet to show support for Item Mod Degradation.
+		- This is not balanced, and not really meant to be used as-is.
+		- Enables Item Mod degradation for all items in armour, items, and workstations.
+		- Some mods degrade over time, such as the Dew Collector, while others are more active, such as Forge and Campfire.
+		- A Completely degraded item will have:
+			- it's item colour tinted with the BrokenTint property on the item class.
+			- It's passive effects will be disabled, through a requimrent for ItemPercentUsed
+			- A sound will play from it being broken.
+		- An item being repaired will also repair all mods using the same repair item.
+		- Individual item mods can be repaired with resourceRepairKit
+		- Item Mods also have quality with a range of durability.
+
+		- A buff is placed on the player when they enter the game, "buffRoutineUpdateTrigger".
+		- This buff is an example buff that will do an update_rate of 100 by default.
+		- Each time the buff updates, it'll trigger a RoutineUpdate call on bag, inventory, and equipment items.
+		- Any time with the onSelfRoutineUpdate trigger event will fire.
+
+		- Some items, such as the water purifier, will degrade as you drink murky water.
+
+		- This modlet is not complete. It isn't even really good. But it shows all the xml necessary to pull off.
+
+
+Version: 2.2.12.1420
+	[ Requirements ]
+		- Added new CanPurchasePerk requirement to replace RequirementIsProgressionLocked.
+		- This seems to fire more accurately than the old one.
+			<requirement name="CanPurchasePerk, SCore" progression_name="attPerception" />
+
+	[ SphereII Learn By Doing ]
+		- Reordered Strength for logging to work
+		- Replace RequirementIsProgressionLocked with CanPurchasePerk
+			( Note: SCore version MUST be above 2.2.12 for this to work )
+
+	[ Shared Reading ]
+		- Fixed an issue where SharedReading gave more books than necessary. Maybe.
+
+Version: 2.2.11.825
+	[ Quest ]
+		- Fixed an issue with the ObjectiveFetchByTags not propagating Tags properly.
+			- Literally its only point, and it couldn't even do that.
+	
+	[ DegradeItemValue ]
+		- Added null check to itemvalue.
+
+	[ SphereII Learn By Doing ]
+		- Fixed a PackMule issue where the triggers were doubled up.
+		
+
+	[ SphereII Item Mod Degradation ]
+		- Added a testing modlet for item mod degradation
+		- Added special degradation for Helmet Light
+		- Added special degradation for Water Purifier
+
+	[ SphereII A Round World ]
+		- Moved Item Mod Degradation out into it's own modlet.
+
+Version: 2.2.10.953
+	[ Item Degradation ]
+		- Fixed an issue where a sound would play constantly.
+		- Added a patch to ItemValue's FireEvent, to cascade events through item mods, allow item_modifers to have events.
+	
+Version: 2.2.9.1016
+	[ Learn By Doing ]
+		- Fixed an issue with the IsProgressionLocked Requirement  
+			- This bug caused red checkmarks
+
+	[ SphereII Learn By Doing ]
+		- Fixed an issue with RuleOneCardio not using the proper cvars
+		- Changed all the open loot container triggers to onSelfCloseLootContainer for dedi-compliant.
+			- The others do not trigger on dedi
+			- This affected LuckyLooter, Decay, Perception, The Infiltrator, and Treasure Hunter
+
+	[ SphereII A Round World ]
+		- Added example item_modifers and buff for degradation.
+		- Removed food loot remove.
+
+Version: 2.2.8.1701
+	[ Item Degradation ]
+		- Added a patch for fun-sies to degrade item modifications.
+		- If an item_modifier has Quality, then a patch will trigger to degrade the durability of the item_modifier
+		- It works by looping around each modification, degrading it per its passive_effect.
+		- Once the degradation is complete, an item will either break, or its passive effects will be disabled.
+		- You can use the new ItemModDurability requirement in item_modifications to control it
+		- See Documentation/Examples/ItemDegradation.md
+		
+	[ Passive Effect Hooks ]
+		- Fixed a bug that triggered a crash when repairing a vehicle, then picking it up.
+
+	[ Buff requirements ]
+		- Made a buff requirement that checks mod durability.
+			<requirement name="ItemModDurability, SCore" operation="GTE" value="0.1"/>
+ 
+	[ Challenges ]
+		- Added patch to base CheckBaseRequirements() to support requirements. This works for all challenges.
+			- This works on the same principles as the buff requirements.
+		- Restructured the Requirement Checks to include the Player's MinEventContext.
+
+		- Created two new simplified Challenges for testing. 
+			- You would need to define the localization entry for each one.
+			<challenge name="Kill01" title_key="KillWithDeepCuts" icon="ui_game_symbol_wood" >
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				<requirement name="HitLocation" body_parts="Head" />
+				<objective type="KillV2, SCore" count="200" />
+			</challenge>
+
+        	<challenge name="Harvesting02" title_key="Harvesting" icon="ui_game_symbol_wood" >
+            	<requirement name="RequirementBlockHasHarvestTags, SCore" tags="allHarvest,oreWoodHarvest"/>
+            	<requirement name="HoldingItemHasTags" tags="miningTool,shovel"/>
+            	<objective type="HarvestV2, SCore" count="200" />
+        	</challenge>
+
+Version: 2.2.7.1936
+	[ Challenges ]
+		- Fixed an issue in the KillByItem challenge which was automatically failing its biome check,
+			even if a biome check wasn't there.
+
+Version: 2.2.7.1848
+	[ Challenges ]
+		- Added preliminary support for <Requirements in challenges
+		- Added to the following Challenges:
+			EnterPOI, SCore
+			KillWithItem, SCore
+			StealthKillStreak, SCore
+
+		- Example:		
+		       <challenge name="enterPOI4" title_key="EnterPOI3" icon="ui_game_symbol_wood" group="ScoreTest" short_description_key="challengeGathererWoodShort" description_key="challengeGathererWoodDesc" reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+    		        <objective type="EnterPOI, SCore" prefab="abandoned_house_04" count="10"/>
+            		<requirement name="IsDay" />
+               </challenge>
+
+			   <challenge name="enterPOI5" title_key="EnterPOI5 Night" icon="ui_game_symbol_wood" group="ScoreTest" short_description_key="challengeGathererWoodShort" description_key="challengeGathererWoodDesc" reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+            	 	<objective type="EnterPOI, SCore" prefab="abandoned_house_04" count="10"/>
+        	    	<requirement name="!IsDay" />
+		       </challenge>
+
+	[ SphereII Learn By Doing ]
+		- Removed invalid Decay on Miner69er and RuleOneCardio
+		- Added xp gain for turrets beind held
+		- Removed invalid Decay on RepairTools
+		- Cleaned up misaligned Miner69 requirements, which was causing it to fire more often then it needed too.
+
+Version: 2.2.6.1649 Pre-Release
+
+	[ Triggered Events ]
+		- Added more support for OnSelfItemBought, and OnSelfItemSold
+		- onSelfItemSold supports the following cvars:
+			_totalSold:  The number of items sold at once
+			_sellPrice:  The total value of the sale.
+		- onSelfItemBought supports the following cvars:
+			_totalBought : The number of items bought at once
+			_buyPrice: The total value of the buy.
+
+        <requirement name="CVarCompare" cvar="_sellPrice" operation="GT" value="20"/>
+
+	[ Explosions ]
+		- Added in a patch to EntityAlive.FireEvent for onSelfExplosionDamagedOther, and onSelfExplosionAttackedOther
+		- These were only firing when the entity was local, so they did not fire when executed on a dedicated server.
+		- These triggers will work now on dedi.
+		- This also fixes the Demolitions' Perk in the Learn by Doing
+
+	[ Turrets ]
+		- Similarly, attacks from a place turret would not give credit to the player for Learn by Doing.
+		- This has been fixed.
+
+	[ Learn By Doing ]
+		- Updated Better Barter to work with the new event hooks
+		- Updated Demolition perk to work with the new event hooks
+		- Updated Turrets to work with the new event hooks
+		- Uncommented the Decay component in General perk.
+
+Version: 2.2.5.1216 Pre-Release
+
+	[ Challenges ]
+		- Added new Clear Sleeper Volume Challenge
+			<objective type="ClearSleepers, SCore" biome="pine_forest" count="200" />
+	
+	[ Fire Manager ]
+		- Many tweaks and performance updates to handle particles
+		- Added a new FireBlockData to help manage data a bit better
+		- Adjusted CheckInterval rate so the interval will include the time it takes to process.
+			- Example:  If CheckInterval is 20 seconds, but it takes 10 seconds process all the fires, 
+				the CheckInterval will be 30 seconds since the start of the previous one. 
+		- Fixed an issue with Random Fire Particles
+		- Added a default RandomFireParticle
+
+Version: 2.2.2.1139 Pre-Release
+	[ Documentation ]
+		- Fixed conditional example for the xpath() format
+		- Fixed Challenge Objective PlaceBlockByTag's documentation
+			- Previously, it was referenced as BlocKPlaceByTag.
+
+	[ 2.2 Update ]
+		- Updated to build and work against 2.2
+		- Fixed Updated rainfall / snowfall call to weather manager.
+			- Plant and FireV2 updated.
+		- Updated the AIDIrectorChunkEventComponentScout patch
+
+	[ SphereII Learn By Doing ]
+		- Refactored Crafting Skills to remove Decay from the main xml files
+		- Added a Crafting_Decay.xml that handles all decaying properly
+			- This fixes an issue where a crafting book may have to be read multiple times to work
+		- Updated DeepCuts, RuleOneCardio, Electrocutioner for fixes on power attack.
+
+Version: 2.1.20.931
+
+	[ Quests ]
+		- Added FetchByTags, which triggers when the item with the specified tag is added to the inventory.
+           <objective type="FetchByTags, SCore" value="5" phase="1">
+                <property name="tags" value="ore" />
+            </objective>
+
+	[ Localization ]
+		- Added German and Russia as a localization option.
+
+	[ SphereII Learn By Doing ]
+		- Fixed many issues as reported by arramus
+		- Added more Secondary Attacks
+		- Note: Some problems exists on the dedi that do not allow the flow of learn by doing, including turrets and explosions.
+
+Version: 2.1.18.1319
+	[ Triggered Event Hooks Up ]
+		- Added OnSelfItemScrap support
+			<triggered_effect trigger="onSelfScrapItem" action="LogMessage" message="LBD DEBUG: Crafting Harvesting ">
+				<requirement name="ItemHasTags" tags="miningTool,toolAxe,toolShovel"/>
+			</triggered_effect>
+
+		- Renamed onRecipeCrafted to onSelfCraftedRecipe
+			- This is the same as OnRecipeCrafted, but just named better.
+
+		- Added to the onSelfItemRepair to include two Meta data's "DamageAmount" and "PercentDamaged". 
+			This is how much the item was used before the repair was started.
+
+		- Added two cvars for OnSelfItemBought / onSelfItemSold that tracks the current value and the previous value.
+			_item_value is the current value sold
+			_last_item_value is the previous value sold.
+
+	[ OnRecipeCrafted ]
+		- Fixed an issue when the craft area was empty.
+
+	[ Buffs ]
+		- New Requirements: ( shaking up the format )
+		- ItemHasProperty
+			<!-- Returns true if the item has a property called UnlockedBy, with a value of craftingHarvestingTools" -->
+			<requirement name="ItemHasProperty, SCore" property="UnlockedBy" prop_value="craftingHarvestingTools" />
+
+			<!-- Returns true if the item has a property called UnlockedBy, regradless of value. -->
+			<requirement name="ItemHasProperty, SCore" property="UnlockedBy" />
+
+		- ItemHasQuality
+			<requirement name="ItemHasQuality, SCore" operation="Equals" value="4"/>
+	
+		- ItemPercentDamaged
+			<!-- Returns true if the usage is greater than 50% -->
+			<requirement name="ItemPercentDamaged, SCore" operation="GTE" value="0.5"/>
+
+		- BlockHasDestroyTags
+			<!-- returns true if the active block is called plantedGraceCorn1 -->
+			<!-- This supports comma delimited values, and *'s -->
+			<requirement name="BlockHasDestroyName, SCore" block_name="plantedGraceCorn1" />
+			<requirement name="BlockHasDestroyName, SCore" block_name="planted*,blockTree*" />
+	
+		- BlockHasName
+			<!-- true if the active block is called one of these things. -->
+ 			<requirement name="BlockHasName, SCore" block_name="DewCollector*,Workbench*,ChemistryStation*,CementMixer*" />
+
+		- RecipeHasIngredients
+			<!-- true if the ingredients match any of the current recipe -->
+  			<requirement name="RecipeHasIngredients, SCore" ingredients="planted*" />
+			<requirement name="RecipeHasIngredients, SCore" ingredients="plantedCotton1,plantedCoffee*" />
+
+	[ Quests ]
+		- ObjectiveRandomPOIGotoSDX 
+			- Fixed an issue where if multiple POIs were found, it would just take you somewhere random.
+
+	[ Fire Manager ]
+		- Removed the particle optimizer to see if ghost fires will disappear.
+
+	[ Blocks.xml ]
+		- Added missing .prefab for model for PathingBlocks
+	
+	[ SphereII Learn By Doing ]
+		- Completed CraftingSkills Learn by Doing.
+		- No balancing yet.
+		- Fixed a null reference
+
+Version: 2.1.13.1557
+	[ EntityAlive ]
+		- Added a Harmony patch to print all the Events being triggered on an EntityAlive.
+		- To activate, open console and type in:
+			setcvar $fireeventtracker <entityId>
+
+			setcvar $fireeventtracker 172
+
+		- To deactivate, setcvar $fireeventtracker 0
+	
+	[ Triggered Event Hook Ups ]
+		- Added the ability to add custom triggers in SCore. (Features/PassiveEffectHooks/)
+		- Added the following to the triggered events to support Learn by doing.
+			- onSelfLockpickSuccess
+				<!-- Also works with Locks modlet -->
+				<triggered_effect trigger="onSelfLockpickSuccess" action="LogMessage" message="Lock Pick successful">
+			- onSelfItemBought
+				<triggered_effect trigger="onSelfItemBought" action="LogMessage" message="Bought Something" />
+			- onSelfItemSold
+				<triggered_effect trigger="onSelfItemSold" action="LogMessage" message="Sold Something" />
+			- onSelfQuestComplete
+				<triggered_effect trigger="onSelfQuestComplete" action="LogMessage" message="Ques Complete" />
+			- onSelfItemCrafted
+				<!-- 
+					This will fire each time an item completes crafting. In the case of workstation,
+					it will fire when the player opens the workstation.
+				-->
+					
+				<triggered_effect trigger="onSelfItemCrafted" action="LogMessage" message="Item Was Crafted" />
+			- onSelfCraftedRecipe
+				<!-- Sets the CraftArea meta field to be used with the   RequirementRecipeCraftArea below -->
+				<!-- This will only fire if you have the workstation open -->
+				<triggered_effect trigger="onRecipeCrafted" action="LogMessage" message="Recipe Was Crafted" />
+			- onSelfItemRepaired
+				<triggered_effect trigger="onSelfItemRepaired" action="LogMessage" message="Item Was Repaired" />
+
+	[ Buff Requirements ]
+		- Added the following requirements for onSelfItemCrafted:
+			- RequirementRecipeCraftArea
+				<!-- The recipe has to come from one of these work stations -->
+				<requirement name="RequirementRecipeCraftArea, SCore" craft_area="forge,workstation,chemistryStation" />
+			
+	            <triggered_effect trigger="onRecipeCrafted" action="ModifyCVar" cvar="$attintellect_lbd_xp" operation="add" value="@($lbd_xp_attribute_synergy_base)">
+    	            <requirement name="RequirementRecipeCraftArea, SCore" craft_area="forge,workstation,chemistryStation"/>
+        	        <requirement name="NotHasBuff" buff="buffLBD_attIntellect_XPCoolDown"/>
+	            </triggered_effect>
+
+			- RequirementRecipeHasLongCraftTime
+				<!-- The crafting time must be longer than 100 seconds -->
+				 <requirement name="RequirementRecipeHasLongCraftTime, SCore" operation="GTE" value="100" />
+
+		        <triggered_effect trigger="onSelfItemCrafted" action="ModifyCVar" cvar="$perkmasterchef_lbd_xp" operation="add" value="@$lbd_xp_masterchef_longcraft_bonus">
+        	        <requirement name="RequirementRecipeHasLongCraftTime, SCore" operation="GTE" value="60" />
+            	    <requirement name="NotHasBuff" buff="buffLBD_perkMasterChef_XPCoolDown"/>
+            	</triggered_effect>
+
+			- RequirementRecipeHasTags
+				<requirement name="RequirementRecipeHasTags, SCore" tags="perkGreaseMonkey" />
+           		<triggered_effect trigger="onSelfItemCrafted" action="ModifyCVar" cvar="$attintellect_lbd_xp" operation="add" value="@($lbd_xp_attribute_synergy_base)">
+                	<requirement name="RequirementRecipeHasTags, SCore" tags="perkGreaseMonkey"/>
+                	<requirement name="NotHasBuff" buff="buffLBD_attIntellect_XPCoolDown"/>
+            	</triggered_effect>
+
+	[ SphereII Learn By Doing ]
+		- Completed initial work on adding learn by doing for each attribute / perk.
+		- Added documentation for Learn by Doing
+		- Added Decay mechanic, where skills will decay if you don't use them.
+
+Version: 2.1.9.1904
+	[ Requirements ]
+		- Fixed an issue where BlockhasHarvestTags was not working
+
+	[ SphereII Learn By Doing ]
+		- XML fixes, tweaks, and adding IsAlive to various checks.
+
+Version: 2.1.9.1708
+	[ MinEventActionCreateItem ]	
+		- Added a new attribute to be read from XML to set the actual loot list.
+			<triggered_effect trigger="onSelfBuffRemove" action="CreateItemSDX, SCore" lootgroup2="LootList" count="1" />
+		- The original lootgroup="" actually refers to the loot container id. This is unchanged for backward compatibility.
+	
+	[ MinEventAction Set investigation position ]
+		- New triggered effect that will set the Investigation position of all surrounding entities.		
+			<triggered_effect trigger="onSelfBuffUpdate" action="SetInvestigationPosition, SCore" target="positionAOE" range="10" ticks="100" />
+
+	[ MinEventActionShowPerkLevelUp ]
+		- Added a new MinEventActionShowPerkLevelUp. Designed to be used by Learn By Doing.
+			<triggered_effect trigger="onSelfBuffStart" action="ShowPerkLevelUp, SCore" perk="perkPummelPete"  sound="read_skillbook_final" />
+	[ XUiC ]
+		- Added a new patch for SkillEntry, to include a progress bar.
+
+ 	[ SphereII Learn By Doing ]
+		- Restructured the Perception Perks
+		- Added Strength Perks
+		
+
 Version: 2.1.8.1723
 	[ Fire Manager ]
 		- Move sending blocks to clients more regularly, rather than waiting until all fire blocks were processed.

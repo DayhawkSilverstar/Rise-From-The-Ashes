@@ -91,4 +91,87 @@
 		<item name="resourceWoodT3" count="200,1000"/>
 	</append>
 
+    <!-- Ensure resourceWoodT4 exists in traderAlways with correct count -->
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceWoodT4'])]">
+      <item name="resourceWoodT4" count="100,500" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceWoodT4']" name="count">100,500</setattribute>
+
+    <!-- Ensure resourceWoodT5 exists in traderAlways with correct count -->
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceWoodT5'])]">
+      <item name="resourceWoodT5" count="100,500" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceWoodT5']" name="count">100,500</setattribute>
+
+    <!-- Ensure resourceWoodT6 exists in traderAlways with correct count -->
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceWoodT6'])]">
+      <item name="resourceWoodT6" count="100,500" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceWoodT6']" name="count">100,500</setattribute>
+
+    <!-- Mechanical Parts T4 - T6) -->
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceMechanicalPartsT4'])]">
+      <item name="resourceMechanicalPartsT4" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceMechanicalPartsT4']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceMechanicalPartsT5'])]">
+      <item name="resourceMechanicalPartsT5" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceMechanicalPartsT5']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceMechanicalPartsT6'])]">
+      <item name="resourceMechanicalPartsT6" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceMechanicalPartsT6']" name="count">50,100</setattribute>
+
+    <!-- Electrical Parts T4 - T6 -->
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceElectricPartsT4'])]">
+      <item name="resourceElectricPartsT4" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceElectricPartsT4']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceElectricPartsT5'])]">
+      <item name="resourceElectricPartsT5" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceElectricPartsT5']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceElectricPartsT6'])]">
+      <item name="resourceElectricPartsT6" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceElectricPartsT6']" name="count">50,100</setattribute>
+
+    <!-- Electrical Parts T4 - T6 -->
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceClothT4'])]">
+      <item name="resourceClothT4" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceClothT4']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceClothT5'])]">
+      <item name="resourceClothT5" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceClothT5']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='resourceClothT6'])]">
+      <item name="resourceClothT6" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='resourceClothT6']" name="count">50,100</setattribute>
+
+    <!-- Reagents T4 - T6 -->
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='ReagentT4'])]">
+      <item name="ReagentT4" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='ReagentT4']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='ReagentT5'])]">
+      <item name="ReagentT5" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='ReagentT5']" name="count">50,100</setattribute>
+
+    <append xpath="/traders/trader_item_group[@name='traderAlways'][not(item[@name='ReagentT6'])]">
+      <item name="ReagentT6" count="50,100" />
+    </append>
+    <setattribute xpath="/traders/trader_item_group[@name='traderAlways']/item[@name='ReagentT6']" name="count">50,100</setattribute>
+
+
 </configs>

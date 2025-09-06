@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <set xpath="//recipe/ingredient[@name='resourceWood']/@name"> resourceWoodT1 </set>
+
+  <!-- Electrical Parts -> T3 -->
+  <set xpath="/recipes/recipe[ingredient[@name='resourceElectricalParts' or @name='resourceElectricPartsT3']]
+                 /ingredient[@name='resourceElectricalParts' or @name='resourceElectricPartsT3']/@name">
+    resourceElectricPartsT3
+  </set>
+
+  <!-- Cloth -> T1 -->
+  <set xpath="/recipes/recipe[ingredient[@name='resourceCloth' or @name='resourceClothT1']]
+                 /ingredient[@name='resourceCloth' or @name='resourceClothT1']/@name">
+    resourceClothT1
+  </set>
+
+  <!-- Wood -> T1 -->
+  <set xpath="/recipes/recipe[ingredient[@name='resourceWood' or @name='resourceWoodT1']]
+                 /ingredient[@name='resourceWood' or @name='resourceWoodT1']/@name">
+    resourceWoodT1
+  </set>
+
+  <set xpath="/recipes/recipe[@name='brickShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
+  <set xpath="/recipes/recipe[@name='ironShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
+  <set xpath="/recipes/recipe[@name='corrugatedMetalShapes:VariantHelper']/@tags">learnable,skillBlacksmithing</set>
+  <set xpath="/recipes/recipe[@name='stainLessSteelShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
+  <set xpath="/recipes/recipe[@name='tungstenShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
+  <set xpath="/recipes/recipe[@name='resourceBrick']/@tags">learnable,skillCivilEngineer</set>
+  <set xpath="/recipes/recipe[@name='EmptyFarmPlot']/@tags">learnable,skillCarpentry</set>
+  <set xpath="/recipes/recipe[@name='TailorWorkstation']/@tags">learnable,skillTailoring</set>
+  <set xpath="/recipes/recipe[@name='ComputerStation']/@tags">learnable,skillSoftwareEngineer</set>
+
+</configs>

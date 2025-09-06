@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Name value="1b_Rise_From_The_Ashes_Entityclasses" />
+	<Name value="z4_Rise_from_the_Ashes_Entityclasses" />
 	<DisplayName value="Rise from the Ashes EntityClasses" />
 	<Description value="Adds Removes and Updates the entityclasses xml file" />
 	<Author value="Dayhawk" />

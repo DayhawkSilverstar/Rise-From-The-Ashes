@@ -16,10 +16,6 @@
 
     <lootcontainer name="harperLaneMetalDesk" count="1" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate">
       <item group="groupDesks" />
-    </lootcontainer>
-    
-    <lootgroup name="groupRandomBoxes">      
-      <item name="whisperHarperLaneClip1Encrypted" count="1"/>
-    </lootgroup>
+    </lootcontainer>         
   </append>
 </configs>

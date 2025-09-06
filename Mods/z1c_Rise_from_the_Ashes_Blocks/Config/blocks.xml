@@ -3590,80 +3590,213 @@
   <set xpath="/blocks/block[@name='cntToolBoxOpenWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntShoppingCartEmptyWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntShoppingCartTippedWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
-
-  <append xpath="/blocks/block[@name='ComputerStation']">
-    <property name="UnlockedBy" value="skillSoftwareEngineer"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='TailorWorkstation']">
-    <property name="UnlockedBy" value="skillTailoring"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='EmptyFarmPlot']">
-    <property name="DamageResist" value="5"/>
-    <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
-    <property name="AllowPickup" value="1"/>
-    <property name="CanPickUp" value="true"/>
-    <property name="TakeDelay" value="10" />
-    <property name="DamageResist" value="5"/>
-    <property name="UnlockedBy" value="skillCarpentry"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='stainLessSteelShapes']">
-    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
-    <property name="DamageResist" value="52"/>
-    <property name="UnlockedBy" value="skillCivilEngineer"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='tungstenShapes']">
-    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
-    <property name="DamageResist" value="65"/>
-    <property name="UnlockedBy" value="skillCivilEngineer"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='ironShapes']">
-    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
-    <property name="DamageResist" value="33"/>
-    <property name="UnlockedBy" value="skillCivilEngineer"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='ironShapes']">
-    <property name="Class" value="RiseBuilding, Rise_From_The_Ashes"/>
-    <property name="DamageResist" value="33"/>
-    <property name="UnlockedBy" value="skillCivilEngineer"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='chickenCoopNoEggs']">
-    <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
-    <property name="AllowPickup" value="1"/>
-    <property name="CanPickUp" value="true"/>
-    <property name="TakeDelay" value="10" />
-    <property name="UnlockedBy" value="skillCarpentry"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='chickenCoopEmpty']">
-    <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
-    <property name="AllowPickup" value="1"/>
-    <property name="CanPickUp" value="true"/>
-    <property name="TakeDelay" value="10" />
-    <property name="UnlockedBy" value="skillCarpentry"/>
-  </append>
-
-  <append xpath="/blocks/block[@name='chickenCoopWithEggs']">
-    <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
-    <property name="AllowPickup" value="1"/>
-    <property name="CanPickUp" value="true"/>
-    <property name="TakeDelay" value="10" />
-    <property name="UnlockedBy" value="skillCarpentry"/>
-  </append>
-
   
   <!-- Update loot containers -->	
+	
+  <append xpath="/blocks" >
 
-	
-	
-  <append xpath="/blocks" >			
-		<block name="GoldIngotStack">
+    <block name="chickenCoopNoEggs">
+      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="AllowPickup" value="1"/>
+      <property name="CanPickUp" value="true"/>
+      <property name="TakeDelay" value="10" />
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/RiseChickenCoop.unity3d?ChickenCoopNoEggs"/>
+      <!-- X pos moves to the left. Z pos moves it forward -->
+      <property name="ModelOffset" value="0,0,1.9"/>
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="CustomIcon" value="ChickenCoop" />
+      <property name="CreativeMode" value="Player" />
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="EconomicValue" value="160"/>
+      <property name="DowngradeBlock" value="chickenCoopEmpty"/>
+      <property name="DowngradedToEvent" value="action_block_DowngradedTo"/>
+      <property class="RepairItems">
+        <property name="resourceWoodT2" value="0"/>
+      </property>
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="chickenCoopNesting"/>
+        <property name="Item" value="foodChickenFeed"/>
+        <property name="ItemCount" value="1"/>
+        <property name="UpgradeHitCount" value="1"/>
+      </property>
+      <property name="Material" value="Morganic"/>
+      <drop event="Destroy" name="resourceBone" count="5,10" tag="skillButchering"/>
+      <drop event="Destroy" name="foodRawMeat" count="15" tag="skillButchering"/>
+      <property name="UpgradeSound" value="place_block_metal"/>
+      <property name="SortOrder1" value="S040"/>
+      <!-- SortOrder2 is assigned in code to keep all of the shapes in the same order for each material -->
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <block name="chickenCoopHatching">
+      <property name="Class" value="PlantGrowing"/>
+      <property name="PlantGrowing.Next" value="chickenCoopChicks"/>
+      <property name="PlantGrowing.GrowthRate" value="63.0"/>
+      <!-- Default is 63.0. For testing, this rate (in minutes) should be set no lower than 2 -->
+      <property name="PlantGrowing.FertileLevel" value="0"/>
+      <property name="PlantGrowing.IsRandom" value="false"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/RiseChickenCoop.unity3d?ChickenCoopHatching"/>
+      <!-- X pos moves to the left. Z pos moves it forward -->
+      <property name="ModelOffset" value="0,0,1.9"/>
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="CustomIcon" value="ChickenCoop" />
+      <property name="CreativeMode" value="Player" />
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="EconomicValue" value="160"/>
+      <property name="DowngradeBlock" value="chickenCoopEmpty"/>
+      <property name="DowngradedToEvent" value="action_block_DowngradedTo"/>
+      <property class="RepairItems">
+        <property name="resourceWoodT2" value="8"/>
+      </property>
+      <property name="Material" value="Mwood"/>
+      <drop event="Destroy" name="foodEgg" count="6"/>
+      <property name="UpgradeSound" value="place_block_metal"/>
+      <property name="SortOrder1" value="S040"/>
+      <!-- SortOrder2 is assigned in code to keep all of the shapes in the same order for each material -->
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <block name="chickenCoopChicks">
+      <property name="Class" value="PlantGrowing"/>
+      <property name="PlantGrowing.Next" value="chickenCoopNoEggs"/>
+      <property name="PlantGrowing.GrowthRate" value="63.0"/>
+      <!-- Default is 63.0. For testing, this rate (in minutes) should be set no lower than 2 -->
+      <property name="PlantGrowing.FertileLevel" value="0"/>
+      <property name="PlantGrowing.IsRandom" value="false"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/RiseChickenCoop.unity3d?ChickenCoopChicks"/>
+      <!-- X pos moves to the left. Z pos moves it forward -->
+      <property name="ModelOffset" value="0,0,1.9"/>
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="CustomIcon" value="ChickenCoop" />
+      <property name="CreativeMode" value="Player" />
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="EconomicValue" value="160"/>
+      <property name="DowngradeBlock" value="chickenCoopEmpty"/>
+      <property name="DowngradedToEvent" value="action_block_DowngradedTo"/>
+      <property class="RepairItems">
+        <property name="resourceWoodT2" value="8"/>
+      </property>
+      <property name="Material" value="Mwood"/>
+      <property name="UpgradeSound" value="place_block_metal"/>
+      <drop event="Harvest" name="resourceWoodT2" count="15" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <property name="SortOrder1" value="S040"/>
+      <!-- SortOrder2 is assigned in code to keep all of the shapes in the same order for each material -->
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <block name="chickenCoopEmpty">
+      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="AllowPickup" value="1"/>
+      <property name="CanPickUp" value="true"/>
+      <property name="TakeDelay" value="10" />
+      <property name="Shape" value="ModelEntity" />
+      <property name="UnlockedBy" value="skillCarpentry"/>
+      <property name="Model" value="#@modfolder:Resources/RiseChickenCoop.unity3d?ChickenCoop"/>
+      <!-- X pos moves to the left. Z pos moves it forward -->
+      <property name="ModelOffset" value="0,0,1.9"/>
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="CustomIcon" value="ChickenCoop" />
+      <property name="CreativeMode" value="Player" />
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="Material" value="Mwood"/>
+      <property name="EconomicValue" value="160"/>
+      <property class="RepairItems">
+        <property name="resourceWoodT2" value="8"/>
+      </property>
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="chickenCoopHatching"/>
+        <property name="Item" value="foodEgg"/>
+        <property name="ItemCount" value="6"/>
+        <property name="UpgradeHitCount" value="2"/>
+      </property>
+      <drop event="Harvest" name="resourceWoodT2" count="15" tag="allHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <property name="UpgradeSound" value="place_block_metal"/>
+      <property name="SortOrder1" value="S040"/>
+      <!-- SortOrder2 is assigned in code to keep all of the shapes in the same order for each material -->
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <block name="chickenCoopNesting">
+      <property name="Class" value="PlantGrowing"/>
+      <property name="PlantGrowing.Next" value="chickenCoopWithEggs"/>
+      <property name="PlantGrowing.GrowthRate" value="63.0"/>
+      <!-- Default is 63.0. For testing, this rate (in minutes) should be set no lower than 2 -->
+      <property name="PlantGrowing.FertileLevel" value="0"/>
+      <property name="PlantGrowing.IsRandom" value="false"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/RiseChickenCoop.unity3d?ChickenCoopNesting"/>
+      <!-- X pos moves to the left. Z pos moves it forward -->
+      <property name="ModelOffset" value="0,0,1.9"/>
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="CustomIcon" value="ChickenCoop" />
+      <property name="CreativeMode" value="Player" />
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="EconomicValue" value="160"/>
+      <property class="RepairItems">
+        <property name="resourceWoodT2" value="8"/>
+      </property>
+      <property name="DowngradeBlock" value="chickenCoopEmpty"/>
+      <property name="DowngradedToEvent" value="action_block_DowngradedTo"/>
+      <property name="Material" value="Morganic"/>
+      <drop event="Destroy" name="resourceBone" count="5,10" tag="skillButchering"/>
+      <drop event="Destroy" name="foodRawMeat" count="15" tag="skillButchering"/>
+      <property name="UpgradeSound" value="place_block_metal"/>
+      <property name="SortOrder1" value="S040"/>
+      <!-- SortOrder2 is assigned in code to keep all of the shapes in the same order for each material -->
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <block name="chickenCoopWithEggs">
+      <property name="Class" value="RiseBlockLoot, Rise_From_The_Ashes"/>
+      <property name="LootList" value="chickenCoopWithEggs"/>
+      <property name="Shape" value="ModelEntity" />
+      <property name="Model" value="#@modfolder:Resources/RiseChickenCoop.unity3d?ChickenCoopWithEggs"/>
+      <!-- X pos moves to the left. Z pos moves it forward -->
+      <property name="ModelOffset" value="0,0,1.9"/>
+      <property name="MultiBlockDim" value="2,3,2"/>
+      <property name="CustomIcon" value="ChickenCoop" />
+      <property name="CreativeMode" value="Player" />
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="EconomicValue" value="160"/>
+      <property class="RepairItems">
+        <property name="resourceWoodT2" value="8"/>
+      </property>
+      <property name="DowngradeBlock" value="chickenCoopNoEggs"/>
+      <property name="DowngradedToEvent" value="action_block_DowngradedTo"/>
+      <property name="Material" value="Mwood"/>
+      <drop event="Destroy" name="resourceBone" count="5,10" tag="skillButchering"/>
+      <drop event="Destroy" name="foodRawMeat" count="15" tag="skillButchering"/>
+      <property name="UpgradeSound" value="place_block_metal"/>
+      <property name="SortOrder1" value="S040"/>
+      <!-- SortOrder2 is assigned in code to keep all of the shapes in the same order for each material -->
+      <property name="Group" value="Building,advBuilding"/>
+      <property name="FilterTags" value="MC_Shapes"/>
+    </block>
+
+    <block name="GoldIngotStack">
 			<property name="Shape" value="ModelEntity" />
 			<property name="Model" value="#@modfolder:Resources/GoldIngotStack.unity3d?GoldStackPrefab.prefab"/>
 			<property name="CustomIcon" value="GoldStack" />

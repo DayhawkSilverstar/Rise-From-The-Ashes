@@ -29,13 +29,15 @@
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedShotgunNoMag']/display_entry[@name='DegradationMax']/@tags">statDexterity,revolver,rangedShotguns,perkTurrets,rangedBows,rangedMachineguns,rangedPistols,rangedRifles,admin</set>
 
 	<!-- ******************** RANGED LAUNCHER ******************* -->	
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']/display_entry[@name='MagazineSize']/@tags">statDexterity,admin</set>	
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']/display_entry[@name='DamageFalloffRange']/@tags">statDexterity,admin</set>
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']/display_entry[@name='DegradationMax']/@tags">statDexterity,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']/display_entry[@name='MagazineSize']/@tags">statDexterity,admin,skillDemolitions</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']/display_entry[@name='ProjectileVelocity']/@tags">statDexterity,skillDemolitions,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']/display_entry[@name='DamageFalloffRange']/@tags">statDexterity,admin,skillDemolitions</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']/display_entry[@name='DegradationMax']/@tags">statDexterity,admin,skillDemolitions</set>
 
 	<!-- ******************** RANGED BOW ******************* -->
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']/display_entry[@name='EntityDamage']/@tags">statDexterity,rangedBows,admin</set>		
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']/display_entry[@name='DamageFalloffRange']/@tags">statDexterity,rangedBows,admin</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']/display_entry[@name='EntityDamage']/@tags">statDexterity,rangedBows,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']/display_entry[@name='ProjectileVelocity']/@tags">statDexterity,rangedBows,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']/display_entry[@name='DamageFalloffRange']/@tags">statDexterity,rangedBows,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']/display_entry[@name='DegradationMax']/@tags">statDexterity,rangedBows,admin</set>
 
 	<!-- ******************** MELEE ******************* -->
@@ -59,8 +61,9 @@
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeHeavy']/display_entry[@name='AttacksPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 
 	<!-- ******************** MELEE KNIFE ******************* -->
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='EntityDamage' and @title_key='statEntityDamageMelee']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
-	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='BlockDamage']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='EntityDamage' and @title_key='statEntityDamageMelee']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='EntityDamage' and @title_key='statPowerAttack']/@tags">secondary,knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='BlockDamage']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>	
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='DegradationMax']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='AttacksPerMinute']/@tags">knife,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 
@@ -78,11 +81,11 @@
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedRepairTool']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
 
   <!-- ******************** Motor Tool ******************* -->
-  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
-  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
-  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='MagazineSize']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
-  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='RoundsPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
-  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='EntityDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin,motorTool,miningTool</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='BlockDamage']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin,motorTool,miningTool</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='MagazineSize']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin,motorTool,miningTool</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='RoundsPerMinute']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin,motorTool,miningTool</set>
+  <set xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']/display_entry[@name='DegradationMax']/@tags">statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin,motorTool,miningTool</set>
 
   <!-- ******************** Simple Tool ******************* -->
   <set xpath="/ui_display_info/item_display/item_display_info[@display_type='simpleTool']/display_entry[@name='EntityDamage']/@tags">melee,statDexterity,statStrength,skillMining,perkSalvageOperations,perkElectrocutioner,spearSkill,club,fists,knuckleSkill,improvised,admin</set>      

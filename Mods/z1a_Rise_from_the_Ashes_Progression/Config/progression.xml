@@ -2682,7 +2682,7 @@
         </display_entry>
         
         <display_entry icon="CarpentryResearchBundle1" name_key="carpentryT1-building1" has_quality="false" unlock_level="5" >
-          <unlock_entry item="CarpentryResearchBundle1,workbench,resourceWoodT1,cntFootlockerVariantHelper,EmptyFarmPlot,ladderWood,looseBoardsTrapBlock1x1,looseBoardsTrapBlock3x3,looseBoardsTrapPlate1x1" unlock_tier="1" />          " />
+          <unlock_entry item="CarpentryResearchBundle1,workbench,resourceWoodT1,EmptyFarmPlot,ladderWood,looseBoardsTrapBlock1x1,looseBoardsTrapBlock3x3,looseBoardsTrapPlate1x1" unlock_tier="1" />          " />
         </display_entry>               
 
         <display_entry icon="CarpentryResearchBundle1" name_key="carpentryT1-building2" has_quality="false" unlock_level="10" >          
@@ -2740,7 +2740,7 @@
 					
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="frameShapes:VariantHelper,woodShapes:VariantHelper,meleeWpnClubT0WoodenClub,gunBowT0PrimitiveBow,meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel,meleeWpnSpearT0StoneSpear,meleeWpnSledgeT0StoneSledgehammer"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="armorPrimitiveOutfit,armorPrimitiveHelmet,armorPrimitiveGloves,armorPrimitiveBoots"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="CarpentryResearchBundle1,workbench,resourceWoodT1,cntFootlockerVariantHelper,EmptyFarmPlot,ladderWood,looseBoardsTrapBlock1x1,looseBoardsTrapBlock3x3,looseBoardsTrapPlate1x1"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="CarpentryResearchBundle1,workbench,resourceWoodT1,EmptyFarmPlot,ladderWood,looseBoardsTrapBlock1x1,looseBoardsTrapBlock3x3,looseBoardsTrapPlate1x1"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="oldWoodDoor,sectionalPlaidCouchSofaBlockVariantHelper,sectionalLeatherCouchSofaBlockVariantHelper,oldWoodDoorDouble,cellarDoorDoubleWood,woodHatch,palletEmpty,woodShapes:VariantHelper,WoodenHandle,trapSpikesWoodDmg0,cntWoodWritableCrate"/>
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="armorPrimitiveHelmet,armorPrimitiveOutfit,armorPrimitiveGloves,armorPrimitiveBoots"/>
           <passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="CarpentryResearchBundle2,resourceWoodT2,barbedFence,woodSignBlockVariantHelper,shuttersWoodBlockVariantHelper,chickenCoopEmpty"/>

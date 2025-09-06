@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\1c_Rise_from_the_Ashes_Blocks",
-    "\\1c_Rise_from_the_Ashes_Blocks\\Config",
-    "\\1e_Rise_from_the_Ashes_Buffs",
-    "\\1e_Rise_from_the_Ashes_Buffs\\Config",
-    "\\1j_Rise_from_the_Ashes_Spawning",
-    "\\1j_Rise_from_the_Ashes_Spawning\\Config",
-    "\\4_Rise_from_the_Ashes_Entityclasses",
-    "\\4_Rise_from_the_Ashes_Entityclasses\\Config",
-    "\\4_Rise_from_the_Ashes_Localization",
-    "\\4_Rise_from_the_Ashes_Localization\\Config"
+    "\\a1a_Rise_from_the_Ashes_Vanilla_Safe_New_Blocks",
+    "\\z1k_Rise_from_the_Ashes_XU_Menu",
+    "\\z1k_Rise_from_the_Ashes_XU_Menu\\Config",
+    "\\z1k_Rise_from_the_Ashes_XU_Menu\\Config\\XUi_Menu",
+    "\\z1z_Rise from_the_Ashes_Windows",
+    "\\z1z_Rise from_the_Ashes_Windows\\Config",
+    "\\z2-SCore",
+    "\\z2-SCore\\Scripts",
+    "\\z2-SCore\\Scripts\\EAI"
   ],
+  "SelectedNode": "\\z2-SCore\\Scripts\\EAI\\EAIMaslowLevel1SDX.cs",
   "PreviewInSolutionExplorer": false
 }

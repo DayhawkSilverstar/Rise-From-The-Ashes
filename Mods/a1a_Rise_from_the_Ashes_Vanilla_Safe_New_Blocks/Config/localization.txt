@@ -1,5 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
-cntHardenedChestSecureBooks,blocks,Loot,New,Not Used,Book Archive,,,,,,,,,,Locked
-cntHardenedChestSecureBooksDesc,blocks,Loot,New,Not Used,Book Archive,,,,,,,,,,Locked
-
-

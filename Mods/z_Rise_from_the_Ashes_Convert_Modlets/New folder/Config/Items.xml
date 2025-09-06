@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <set xpath="//item/property[@name='UnlockedBy' and @value='craftingElectrician']/@value"> skillElectricalEngineer </set>
+
+  <!-- Add UnlockedBy if the item exists and lacks it -->
+  <append xpath="/items/item[@name='resourceBrick'][not(property[@name='UnlockedBy'])]">
+    <property name="UnlockedBy" value="skillCivilEngineer"/>
+  </append>
+
+  <set xpath="/items//property[@name='UnlockedBy' and @value='craftingVehicles']/@value">
+    skillAutomotive
+  </set>
+
+  <!-- Retarget old vehicles skill hooks to the new Automotive skill -->
+  <!-- 1) vehiclesSkillMagazine: Unlocks -> skillAutomotive -->
+  <set xpath="/items//property[@name='Unlocks' and @value='craftingVehicles']/@value">skillAutomotive</set>
+
+  <!-- 2) Any triggered_effect that still grants 'craftingVehicles' levels -> skillAutomotive -->
+  <set xpath="/items//triggered_effect[@progression_name='craftingVehicles']/@progression_name">skillAutomotive</set>
+</configs>

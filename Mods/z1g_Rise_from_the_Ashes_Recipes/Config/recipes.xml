@@ -33,6 +33,36 @@
   <remove xpath="/recipes/recipe[@name='resourceOil']"/>
   <remove xpath="/recipes/recipe[@name='gunBotRoboticsParts']"/>
 
+  <!-- EmptyFarmPlot: resourceWood -> resourceWoodT2 -->
+  <set xpath="/recipes/recipe[@name='EmptyFarmPlot']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
+
+  <!-- TailorWorkstation: resourceWood -> resourceWoodT2 -->
+  <set xpath="/recipes/recipe[@name='TailorWorkstation']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
+
+  <!-- ComputerStation: resourceWood -> resourceWoodT2 -->
+  <set xpath="/recipes/recipe[@name='ComputerStation']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
+
+  <!-- Pipe Rifle: ".5,2.5" perc_add on MetalPipe/Glue/Wood -> drop Wood -->
+  <setattribute
+      xpath="/recipes/recipe[@name='gunRifleT0PipeRifle']//passive_effect[@name='CraftingIngredientCount' and @level='2,6' and @operation='perc_add' and @value='.5,2.5']"
+      name="tags">resourceMetalPipe,resourceGlue</setattribute>
+
+  <!-- Iron Sledgehammer: ".5,2.5" perc_add on ForgedIron/Wood/Leather/DuctTape -> drop Wood -->
+  <setattribute
+      xpath="/recipes/recipe[@name='meleeWpnSledgeT1IronSledgehammer']//passive_effect[@name='CraftingIngredientCount' and @level='2,6' and @operation='perc_add' and @value='.5,2.5']"
+      name="tags">resourceForgedIron,resourceLeather,resourceDuctTape</setattribute>
+
+  <!-- Baseball Bat: ".5,2.5" perc_add on ForgedIron/Wood/Leather/DuctTape -> drop Wood -->
+  <setattribute
+      xpath="/recipes/recipe[@name='meleeWpnClubT1BaseballBat']//passive_effect[@name='CraftingIngredientCount' and @level='2,6' and @operation='perc_add' and @value='.5,2.5']"
+      name="tags">resourceForgedIron,resourceLeather,resourceDuctTape</setattribute>
+
+  <!-- Metal Reinforced Wood Drawbridge (powered): drop Wood from the 5-token list -->
+  <setattribute
+      xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridgePowered']//passive_effect[@name='CraftingIngredientCount' and @operation='perc_add' and @level='0,1,2,3,4' and contains(@tags,'resourceWood')]"
+      name="tags">resourceForgedIron,resourceSpring,resourceMechanicalParts,resourceElectricParts</setattribute>
+  
+
   <!-- General Survival Recipe -->
   <set xpath="/recipes/recipe[@name='medicalSplint']/ingredient[@name='resourceCloth']/@name">resourceClothT1</set>
   <set xpath="/recipes/recipe[@name='medicalSplint']/ingredient[@name='resourceWood']/@name">Stick</set>
@@ -2105,10 +2135,6 @@
   <set xpath="/recipes/recipe[@name='frameShapes:VariantHelper']/ingredient[@name='resourceWood']/@name">resourceWoodT1</set>
   <set xpath="/recipes/recipe[@name='woodShapes:VariantHelper']/ingredient[@name='resourceWood']/@name">resourceWoodT1</set>
 
-  <insertAfter xpath="/recipes/recipe[@name='woodShapes:VariantHelper']/ingredient[@name='resourceWoodT1']">
-    <ingredient name="resourceNail" count="4"/>
-  </insertAfter>
-
   <set xpath="/recipes/recipe[@name='modVehicleExpandedSeat']/ingredient[@name='resourceForgedSteel']/@name">resourceForgedIron</set>
 
   <!-- Armor Updates -->
@@ -2117,19 +2143,6 @@
   <set xpath="/recipes/recipe[@name='armorPrimitiveOutfit']/effect_group/passive_effect[@tags='resourceYuccaFibers,resourceWood']/@tags">resourceYuccaFibers,resourceTwig</set>
 
   <set xpath="/recipes/recipe[@name='vehicleMotorcyclePlaceable']/ingredient[@name='smallEngine']/@name">MotorCycleEngine</set>
-
-  <set xpath="/recipes/recipe[@name='brickShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
-  <set xpath="/recipes/recipe[@name='ironShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
-  <set xpath="/recipes/recipe[@name='corrugatedMetalShapes:VariantHelper']/@tags">learnable,skillBlacksmithing</set>
-  <set xpath="/recipes/recipe[@name='stainLessSteelShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
-  <set xpath="/recipes/recipe[@name='tungstenShapes:VariantHelper']/@tags">learnable,skillCivilEngineer</set>
-  <set xpath="/recipes/recipe[@name='resourceBrick']/@tags">learnable,skillCivilEngineer</set>
-  <set xpath="/recipes/recipe[@name='chickenCoopEmpty']/@tags">learnable,skillCarpentry</set>
-  <set xpath="/recipes/recipe[@name='EmptyFarmPlot']/@tags">learnable,skillCarpentry</set>
-  <set xpath="/recipes/recipe[@name='TailorWorkstation']/@tags">learnable,skillTailoring</set>
-  <set xpath="/recipes/recipe[@name='ComputerStation']/@tags">learnable,skillSoftwareEngineer</set>
-  
-
   <append xpath="/recipes">
     <!-- ***************************************** Rise from the Ashes Recipies *********************************************** -->
 
@@ -2163,12 +2176,6 @@
 
     <recipe name="wineBarrelPlayerSecure" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
       <ingredient name="resourceWoodT4" count="10"/>
-    </recipe>
-
-    <recipe name="cntFootlockerVariantHelper" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
-      <ingredient name="resourceWoodT1" count="10"/>
-      <ingredient name="LeatherSheetT1" count="2"/>
-      <ingredient name="resourceScrapBrass" count="10"/>
     </recipe>
 
     <recipe name="gunBowT1WoodenBowParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
