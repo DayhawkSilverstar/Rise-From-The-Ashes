@@ -1,7 +1,5 @@
   <configs>
     <append xpath="/controls">
-
-      <!-- 50-px item stack for the 10 × 9 backpack grid -->
       <rfta_stack controller="ItemStack"
                   on_scroll="false" allow_dropping="true"
                   prefix_id="false" show_favorites="false">
@@ -107,4 +105,13 @@
         </rect>
       </rfta_stack>
     </append>
+
+    <!-- FIX: Prevent fallback red X on empty slots -->
+    <setattribute xpath="/controls/rfta_stack/rect/sprite[@name='itemIcon']"
+                  name="visible">{# defined('itemicon') and itemicon != '' }</setattribute>
+
+    <!-- Hardening: only show the red 'cancel' X if hovered, locked, and there is an item -->
+    <setattribute xpath="/controls/rfta_stack/rect/sprite[@name='cancel']"
+                  name="visible">{# ishovered and islocked and defined('itemicon') and itemicon != '' }</setattribute>
+    
   </configs>

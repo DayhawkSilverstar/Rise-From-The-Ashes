@@ -1,6 +1,6 @@
 <configs>
-  <insertAfter xpath="/xui/ruleset/window_group[@name='messageBox']">
-    <window_group name="workstation_ComputerStation" controller="WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+  <insertAfter xpath="/xui/ruleset[@name='default']/window_group[@name='messageBox']">
+    <window_group name="workstation_ComputerStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="windowCraftingQueue"/>
@@ -9,7 +9,7 @@
       <window name="windowNonPagingHeader"/>
     </window_group>
 
-    <window_group name="workstation_TailorWorkstation" controller="WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+    <window_group name="workstation_TailorWorkstation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
       <window name="windowCraftingList"/>
       <window name="craftingInfoPanel"/>
       <window name="windowCraftingQueue"/>
