@@ -84,4 +84,6 @@
   <set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/property[@name='Material']/@value">Mcloth</set>
   <set xpath="/item_modifiers/item_modifier[@name='modArmorStealthBoots']/property[@name='UnlockedBy']/@value">skillTailoring</set>
   <set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/property[@name='UnlockedBy']/@value">skillChemistry</set>
+
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBowPolymerString']/@installable_tags">bow,rangedBows</set>
 </configs>

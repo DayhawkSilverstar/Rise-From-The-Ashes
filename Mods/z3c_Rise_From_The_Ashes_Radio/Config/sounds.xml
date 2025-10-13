@@ -1,0 +1,157 @@
+<config>
+	<append xpath="/Sounds">
+        <SoundDataNode name="Blood_Moon_Rising"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="120"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Blood_Moon_Rising"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Chasing_Slumber"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="120"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Chasing_Slumber"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode>         
+        <SoundDataNode name="Break_Through_The_Night"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Break_Through_The_Night"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Dreaming_of_Showers"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Dreaming_of_Showers"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Fist_Fighting"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Fist_Fighting"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="FlamingShaft"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?FlamingShaft"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Gotta_keep_moving"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Gotta_keep_moving"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Horde_Base"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Horde_Base"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Machete_Betty"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Machete_Betty"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Night_of_the_undead"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Night_of_the_undead"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Restock_my_heart"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Restock_my_heart"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Rise"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Rise"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Shadows_of_the_apocalypse"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Shadows_of_the_apocalypse"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Soggy_Bottom_Zombois"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Soggy_Bottom_Zombois"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Survival_by_pages"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Survival_by_pages"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Survivors_Now"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Survivors_Now"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode> 
+        <SoundDataNode name="Zombie_Beatdown"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Amb_Med.prefab"/>
+            <Noise ID="3" noise="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+            <AudioClip ClipName="#@modfolder:Resources/riseRadio.unity3d?Zombie_Beatdown.mp4"/>
+            <LocalCrouchVolumeScale value="0.5"/>
+            <CrouchNoiseScale value="0.5"/>
+            <NoiseScale value="1"/>
+            <MaxVoices value="10"/>
+            <MaxRepeatRate value="0.01"/>
+        </SoundDataNode>         
+    </append>
+</config>

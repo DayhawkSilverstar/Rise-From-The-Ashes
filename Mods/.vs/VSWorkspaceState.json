@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\a1a_Rise_from_the_Ashes_Vanilla_Safe_New_Blocks",
-    "\\z1k_Rise_from_the_Ashes_XU_Menu",
-    "\\z1k_Rise_from_the_Ashes_XU_Menu\\Config",
-    "\\z1k_Rise_from_the_Ashes_XU_Menu\\Config\\XUi_Menu",
-    "\\z1z_Rise from_the_Ashes_Windows",
-    "\\z1z_Rise from_the_Ashes_Windows\\Config",
-    "\\z2-SCore",
-    "\\z2-SCore\\Scripts",
-    "\\z2-SCore\\Scripts\\EAI"
+    "\\z1c_Rise_from_the_Ashes_Blocks",
+    "\\z1c_Rise_from_the_Ashes_Blocks\\Config",
+    "\\z1n_Rise_from_the_Ashes_EntityGroups",
+    "\\z1n_Rise_from_the_Ashes_EntityGroups\\Config",
+    "\\z3c_Rise_From_The_Ashes_Radio",
+    "\\z3c_Rise_From_The_Ashes_Radio\\Config",
+    "\\z4_Rise_from_the_Ashes_Entityclasses",
+    "\\z4_Rise_from_the_Ashes_Entityclasses\\Config"
   ],
-  "SelectedNode": "\\z2-SCore\\Scripts\\EAI\\EAIMaslowLevel1SDX.cs",
+  "SelectedNode": "\\z1c_Rise_from_the_Ashes_Blocks\\Config\\blocks.xml",
   "PreviewInSolutionExplorer": false
 }

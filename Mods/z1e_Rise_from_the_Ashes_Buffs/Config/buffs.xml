@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <configs>
 	<!-- Remove buffs -->
 	<remove xpath="/buffs/buff[@name='buffLegCast']"/>
@@ -54,89 +55,89 @@
 	<remove xpath="/buffs/buff[@name='buffReloadMovementPenalty']"/>
 	<append xpath="/buffs">
 		<buff name="buffLegCast" name_key="buffLegCastName" description_key="buffLegCastDesc" icon="ui_game_symbol_splint">
-			<duration value="0" />
-			<display_value value=".legHurtDurationDisplay" />
-			<display_value_format value="time" />
+			<duration value="0"/>
+			<display_value value=".legHurtDurationDisplay"/>
+			<display_value_format value="time"/>
 			<effect_group>
 			<!-- Setup legTreatedCritHealing -->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legTreatedCritHealing" operation="set" value="1" />			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legTreatedCritHealing" operation="set" value="1" />			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legTreatedCritHealing" operation="set" value="1"/>			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legTreatedCritHealing" operation="set" value="1"/>			
 			<!-- Reset -->
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$legTreatedCritHealing,$legHurtCounter,.LegHurtHealthBlockage">
-				<requirement name="!HasBuff" buff="buffLegBroken" />
+				<requirement name="!HasBuff" buff="buffLegBroken"/>
 			</triggered_effect>
 			</effect_group>
 			<effect_group>
 			<!-- Handlers for other leg buffs -->
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegBroken" />
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegSplinted" />
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegBroken"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegSplinted"/>
 			<!-- Start/Update total healing -->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".legTotalHealingRate" operation="set" value="@$critHitNaturalHealingRate" />
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".legTotalHealingRate" operation="add" value="3.7" />
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".legTotalHealingRate" operation="multiply" value="@$treatedCritHealing" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legTotalHealingRate" operation="set" value="@$critHitNaturalHealingRate" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legTotalHealingRate" operation="add" value="3.7" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legTotalHealingRate" operation="multiply" value="@$treatedCritHealing" />
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".legTotalHealingRate" operation="set" value="@$critHitNaturalHealingRate"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".legTotalHealingRate" operation="add" value="3.7"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".legTotalHealingRate" operation="multiply" value="@$treatedCritHealing"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legTotalHealingRate" operation="set" value="@$critHitNaturalHealingRate"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legTotalHealingRate" operation="add" value="3.7"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legTotalHealingRate" operation="multiply" value="@$treatedCritHealing"/>
 			<!-- If not running, decrease counter with natural healing -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="subtract" value="@.legTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running" />
+				<requirement name="!EntityHasMovementTag" tags="running"/>
 			</triggered_effect>
 			</effect_group>
 			<effect_group name="DisplayDuration">
 			<!-- Handlers for the display -->
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legHurtDurationDisplay" operation="set" value="@$legHurtCounter" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legHurtDurationDisplay" operation="divide" value="@.legTotalHealingRate" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legHurtDurationDisplay" operation="multiply" value="@$legTreatedCritHealing" />
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".legHurtDurationDisplay" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legHurtDurationDisplay" operation="set" value="@$legHurtCounter"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legHurtDurationDisplay" operation="divide" value="@.legTotalHealingRate"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".legHurtDurationDisplay" operation="multiply" value="@$legTreatedCritHealing"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".legHurtDurationDisplay"/>
 			</effect_group>
 			<effect_group name="activity makes damaged legs worse">
 			<!-- If not consuming steroids... -->
-			<requirement name="!HasBuff" buff="buffDrugSteroids" />
+			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
 			<!-- Jumping makes it worse -->
-			<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="subtract" value="1" />
-			<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="12" />
-			<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffLegGetsWorse" />
+			<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="subtract" value="1"/>
+			<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="12"/>
+			<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffLegGetsWorse"/>
 			<!-- Falling makes it worse -->
 			<triggered_effect trigger="onSelfFallImpact" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="12">
-				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07" />
+				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfFallImpact" action="AddBuff" buff="buffLegGetsWorse">
-				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07" />
+				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".07"/>
 			</triggered_effect>
 			<!-- If running, make it worse -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="add" value="2">
-				<requirement name="EntityHasMovementTag" tags="running" />
+				<requirement name="EntityHasMovementTag" tags="running"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLegGetsWorse">
-				<requirement name="EntityHasMovementTag" tags="running" />
+				<requirement name="EntityHasMovementTag" tags="running"/>
 			</triggered_effect>
 			<!-- Clamp counter -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="7208">
-				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="7208" />
+				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="7208"/>
 			</triggered_effect>
 			</effect_group>
 			<effect_group>
-			<requirement name="CVarCompare" cvar=".legHurtDurationDisplay" operation="LTE" value="0" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter" />
+			<requirement name="CVarCompare" cvar=".legHurtDurationDisplay" operation="LTE" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter"/>
 			</effect_group>
 			<effect_group>
 			<!-- If counter LTE 0, reset counters, health blockage, and remove buff -->
-			<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LTE" value="0" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter,.legTotalHealingRate,.LegHurtHealthBlockage" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLegCast" />
+			<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LTE" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar="$legHurtCounter,.legTotalHealingRate,.LegHurtHealthBlockage"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLegCast"/>
 			</effect_group>
 			<effect_group>
 			<!-- Setup the max health blockage based on the remaining counter -->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter" />
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="480" />
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="480"/>
 			<!-- 15 @ 120m -->
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="480" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="set" value="@$legHurtCounter"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="480"/>
 			<!-- 15 @ 120m -->
-			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage" />
+			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 			<!-- Slow movement and reduce jump strength -->
-			<passive_effect name="Mobility" operation="base_add" value="-.1" />
-			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.09" />
+			<passive_effect name="Mobility" operation="base_add" value="-.1"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.09"/>
 			</effect_group>
 		</buff>
 
@@ -318,7 +319,7 @@
 		<!-- *** buffLegSprainedCHTrigger -->
 		<!-- TRIGGERED_BY: Items = Various entity hands -->
 		<!-- Resets hurt leg counter or starts a sprained leg -->
-		<buff name="buffLegSprainedCHTrigger" name_key="buffLegSprainedFallTrigger"  icon="ui_game_symbol_critical" icon_color="255,0,0" hidden="true">
+		<buff name="buffLegSprainedCHTrigger" name_key="buffLegSprainedFallTrigger" icon="ui_game_symbol_critical" icon_color="255,0,0" hidden="true">
 			<stack_type value="ignore"/>
 			<duration value="0.1"/>
 
@@ -611,25 +612,25 @@
 
         <effect_group name="ForestGS">
 						<requirement name="InBiome" biome="3"/>
-            <requirement name="PlayerLevel" operation="GTE" value="15" />
+            <requirement name="PlayerLevel" operation="GTE" value="15"/>
 						<passive_effect name="GameStage" operation="base_set" value="35"/>
         </effect_group>
 
         <effect_group name="BurntGS">          
           <requirement name="InBiome" biome="5"/>
-          <requirement name="PlayerLevel" operation="GTE" value="30" />
+          <requirement name="PlayerLevel" operation="GTE" value="30"/>
 						<passive_effect name="GameStage" operation="base_set" value="100"/>
         </effect_group>
 
         <effect_group name="DesertGS">
           <requirement name="InBiome" biome="5"/>
-          <requirement name="PlayerLevel" operation="GTE" value="45" />
+          <requirement name="PlayerLevel" operation="GTE" value="45"/>
 						<passive_effect name="GameStage" operation="base_set" value="150"/>
         </effect_group>
 
         <effect_group name="SnowGS">
           <requirement name="InBiome" biome="1"/>
-          <requirement name="PlayerLevel" operation="GTE" value="60" />
+          <requirement name="PlayerLevel" operation="GTE" value="60"/>
 						<passive_effect name="GameStage" operation="base_set" value="200"/>
         </effect_group>
         
@@ -4081,7 +4082,10 @@
 
 		<buff name="riseFromTheAshes2-Give_EXP" remove_on_death="false">
 				<stack_type value="ignore"/>
-				<update_rate value="1"/>			
+				<update_rate value="1"/>		
+      
+				<!-- NOTE: The difference between the learnbydoing buff and this one is that buff polls cvar values while this uses trigger events. 
+        The update rate on the learnbydoing is much faster and thus I want to keep that smaller. -->
 
 				<!-- ********************* MELEE WEAPONS ********************** -->
 				<!-- Blade Skill -->
@@ -4304,8 +4308,8 @@
 				<!-- ************ PHYSICAL SKILLS*************** -->								
 				<!-- Parkour Skill -->
 				<effect_group name="GiveParkourExp">
-					<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$parkourExpTotal" operation="add" value="@.Parkour_addExpHalfNormal"></triggered_effect>
-					<triggered_effect trigger="onSelfFallImpact" action="ModifyCVar" cvar="$parkourExpTotal" operation="add" value="@.Parkour_addExpHalfNormal"></triggered_effect>
+					<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$parkourExpTotal" operation="add" value="@.Parkour_addExpHalfNormal"/>
+					<triggered_effect trigger="onSelfFallImpact" action="ModifyCVar" cvar="$parkourExpTotal" operation="add" value="@.Parkour_addExpHalfNormal"/>
 				</effect_group>
 
 				<!-- Running Skill -->
@@ -4486,6 +4490,15 @@
 					<requirement name="!TriggerHasTags" tags="foliage"/>	
 						<triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar="$farmingExpTotal" operation="add" value="@.Farming_addExpSexdecupleNormal"/>				
 				</effect_group>
+
+				<effect_group name="GiveFarmingExpWild">
+					<!-- This tag is present on the Harvest drops of wild crop blocks in your ConfigsDump -->
+					<requirement name="TriggerHasTags" tags="wildCropsHarvest"/>
+					<!-- Keep level cap behavior consistent with your other Farming XP groups -->
+					<requirement name="ProgressionLevel" progression_name="skillFarming" operation="LTE" value="100"/>
+					<!-- Use the already-defined CVar variant for half-normal exp -->
+					<triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" target="self" cvar="$farmingExpTotal" operation="add" value="@.Farming_addExpHalfNormal"/>
+				</effect_group>
 				
 				<!-- Mining Skill -->
 				<effect_group name="GiveMiningExp">
@@ -4515,6 +4528,7 @@
 			<buff name="riseFromTheAshes-Level_Skills" remove_on_death="false">
 				<stack_type value="ignore"/>
 				<update_rate value="0.5"/>
+        
 				<!-- Level up Blades -->
 				<effect_group name="LevelBladeSkill">										
 					<requirement name="CVarCompare" cvar="$bladeExpTotal" operation="GTE" value="@$bladeExpToNextLevel"/>
@@ -5003,13 +5017,6 @@
 			<buff name="riseFromTheAshes-StateUpdate" remove_on_death="false">
 				<stack_type value="ignore"/>
 				<update_rate value="1"/>
-												
-				<!-- 
-				<effect_group>					
-					<requirement name="PlayerItemCount" item_name="vehicleMinibikePlaceable" operation="equals" value="0"/>
-
-				</effect_group>            					
-				-->    
 				
 				<!-- Healing over time based upon Fortitude-->
 				<effect_group>
@@ -5105,12 +5112,12 @@
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar=".tempEncumberance" operation="add" value="@.ModsEncumberance"/>
 
 					
-					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar"  cvar="MaxEncumbrance" operation="set" value="@.tempEncumberance"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="set" value="@.tempEncumberance"/>
 					
 				</effect_group>
 				<effect_group>
 					<!-- adds 5000 thanks to Steroids. Its fixed as being stronger doesn't help in this case. -->
-					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar"  cvar="MaxEncumbrance" operation="add" value="5000">
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="5000">
 						<requirement name="HasBuff" buff="buffDrugSteroids"/>
 					</triggered_effect>					
 				</effect_group>
@@ -5118,8 +5125,8 @@
 				<effect_group name="check for encumberance warning">
 					<requirement name="CVarCompare" cvar="EncumbranceCVar" operation="GT" value="0.75"/>					
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffEncumberedWarning">
-						<requirement name="!HasBuff" buff="buffEncumberedWarning" />
-						<requirement name="!HasBuff" buff="buffEncumberedActive" />
+						<requirement name="!HasBuff" buff="buffEncumberedWarning"/>
+						<requirement name="!HasBuff" buff="buffEncumberedActive"/>
 					</triggered_effect>
 				</effect_group>				
 			</buff>
@@ -5139,7 +5146,7 @@
 					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffEncumberedActive">
 						<requirement name="CVarCompare" cvar="EncumbranceCVar" operation="GTE" value="1"/>
-						<requirement name="!HasBuff" buff="buffEncumberedActive" />
+						<requirement name="!HasBuff" buff="buffEncumberedActive"/>
 					</triggered_effect>
 				</effect_group>
 			</buff>
@@ -5350,23 +5357,23 @@
 					<!-- If conditions true, reset terminator flag -->
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 						<requirement name="ProgressionLevel" progression_name="skillTracking" operation="GTE" value="0"/>
-						<requirement name="HasTrackedEntity" tags="perkAT01" />
+						<requirement name="HasTrackedEntity" tags="perkAT01"/>
 					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 						<requirement name="ProgressionLevel" progression_name="skillTracking" operation="GTE" value="20"/>
-						<requirement name="HasTrackedEntity" tags="perkAT02" />
+						<requirement name="HasTrackedEntity" tags="perkAT02"/>
 					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 						<requirement name="ProgressionLevel" progression_name="skillTracking" operation="GTE" value="40"/>
-						<requirement name="HasTrackedEntity" tags="perkAT03" />
+						<requirement name="HasTrackedEntity" tags="perkAT03"/>
 					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 						<requirement name="ProgressionLevel" progression_name="skillTracking" operation="GTE" value="60"/>
-						<requirement name="HasTrackedEntity" tags="perkAT04" />
+						<requirement name="HasTrackedEntity" tags="perkAT04"/>
 					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0">
 						<requirement name="ProgressionLevel" progression_name="skillTracking" operation="GTE" value="80"/>
-						<requirement name="HasTrackedEntity" tags="perkAT05" />
+						<requirement name="HasTrackedEntity" tags="perkAT05"/>
 					</triggered_effect>
 				</effect_group>
 
@@ -5400,5 +5407,1128 @@
 					</triggered_effect>
 				</effect_group>
 			</buff>
-		</append>
+
+			<!--  CORE: Sanity (holds/initializes CVars, UI text only in Phase 1) -->  
+      <!-- Sanity Core: persistent holder for rfaSanity CVar -->
+      <buff name="rfaSanityCore" name_key="rfaSanity_name" description_key="rfaSanity_desc" icon_color="200,150,255" hidden="true" show_in_ui="false" show_on_hud="false">
+        <!-- Long-running sentinel buff; no automatic expiry -->
+        <duration value="999999"/>
+        <stack_type value="ignore"/>
+                   
+
+        <effect_group>
+          <!-- Initialize CVars safely on first start; no net change afterward -->
+          <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="rfaSanity" operation="set" value="0"/>
+          <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="rfaMorale" operation="set" value="0"/>
+        </effect_group>
+      </buff>
+
+      <!-- Threshold states (not auto-applied in Phase 1) -->
+      <buff name="rfaSanityLow" name_key="rfaSanityLow_name" description_key="rfaSanityLow_desc" icon_color="255,120,120" hidden="true" show_in_ui="false" show_on_hud="false">
+        <duration value="60"/>
+        <stack_type value="replace"/>
+        <effect_group>
+          <!-- Visual/feel hooks added in later phases -->
+          <!-- Example (Phase 3/5): accuracy/stealth penalties, audio/visual cues -->
+        </effect_group>
+      </buff>
+
+      <buff name="rfaSanityMid" name_key="rfaSanityMid_name" description_key="rfaSanityMid_desc" icon_color="200,200,255" hidden="true" show_in_ui="false" show_on_hud="false">
+        <duration value="60"/>
+        <stack_type value="replace"/>
+        <effect_group>
+          <!-- Mid state can be neutral or small bonuses (later phases) -->
+        </effect_group>
+      </buff>
+
+      <buff name="rfaSanityHigh" name_key="rfaSanityHigh_name" description_key="rfaSanityHigh_desc" icon_color="140,255,140" hidden="true" show_in_ui="false" show_on_hud="false">
+        <duration value="60"/>
+        <stack_type value="replace"/>
+        <effect_group>
+          <!-- Later: XP/loot/stamina regen bonuses, resist sanity loss -->
+        </effect_group>
+      </buff>
+
+      <!--  CORE: Morale (separate, short-lived event buff system) -->
+      <buff name="rfaMoraleCore" name_key="rfaMorale_name" description_key="rfaMorale_desc" icon_color="255,220,120" hidden="true" show_in_ui="false" show_on_hud="false">
+        <duration value="999999"/>
+        <stack_type value="ignore"/>
+        <display_value_key value="Morale"/>
+        <display_value value="0"/>
+        <effect_group>
+          <!-- Holds current morale score; event hooks arrive in Phase 5 -->
+          <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="rfaMorale" operation="set" value="0"/>
+        </effect_group>
+      </buff>
+
+      <!-- Event-intensity placeholders (wired in Phase 5) -->
+      <buff name="rfaMoraleMinor" name_key="rfaMoraleMinor_name" description_key="rfaMoraleMinor_desc" icon_color="220,255,120" hidden="true" show_in_ui="false" show_on_hud="false">
+        <duration value="120"/>
+        <stack_type value="replace"/>
+        <effect_group>
+          <!-- Later: small XP gain buff -->
+        </effect_group>
+      </buff>
+
+      <buff name="rfaMoraleModerate" name_key="rfaMoraleModerate_name" description_key="rfaMoraleModerate_desc" icon_color="255,255,120" hidden="true" show_in_ui="false" show_on_hud="false">
+        <duration value="180"/>
+        <stack_type value="replace"/>
+        <effect_group>
+          <!-- Later: medium XP gain buff -->
+        </effect_group>
+      </buff>
+
+      <buff name="rfaMoraleStrong" name_key="rfaMoraleStrong_name" description_key="rfaMoraleStrong_desc" icon_color="255,255,160" hidden="true" show_in_ui="false" show_on_hud="false">
+        <duration value="240"/>
+        <stack_type value="replace"/>
+        <effect_group>
+          <!-- Later: strong XP gain buff -->
+        </effect_group>
+      </buff>
+
+    <buff name="rfaSanityEnv" icon="ui_game_symbol_focus" icon_color="180,160,255" hidden="true" show_in_ui="false" show_on_hud="false">
+      <duration value="999999"/>
+      <stack_type value="ignore"/>
+
+      <effect_group>
+        <!-- =========================
+             Day/Night baseline drift
+             ========================= -->
+
+        <!-- Daytime: gentle regeneration (+0.02 per update), clamp to < 200 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+          <requirement name="IsDay"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+
+        <!-- Nighttime: steady drain (-0.03 per update), clamp to > -200 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.03">
+          <requirement name="IsNight"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Night + Indoors (low-light proxy): extra drain (-0.02) -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.02">
+          <requirement name="IsNight"/>
+          <requirement name="IsIndoors"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- =========================
+             Biome adjustments
+             IDs inferred from vanilla comments in buffs.xml:
+               wasteland = 8, burnt_forest = 9, snow = 1
+             ========================= -->
+
+        <!-- Wasteland: heavy drain (-0.06) -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
+          <requirement name="InBiome" biome="8"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Burnt Forest: significant drain (-0.04) -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.04">
+          <requirement name="InBiome" biome="9"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Snow: mild restore (+0.02) -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+          <requirement name="InBiome" biome="1"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSanityHitCD" show_in_ui="false" show_on_hud="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <effect_group>
+        <!-- purely a timer buff -->
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSanityPlayerHooks" icon="ui_game_symbol_focus" icon_color="160,200,255" hidden="true" show_in_ui="false" show_on_hud="false">
+      <duration value="999999"/>
+      <stack_type value="ignore"/>
+
+      <effect_group>
+        <!-- =========================
+             HUNGER: Food% tiers drain
+             (Uses vanilla requirement: StatComparePercCurrentToMax stat="Food")
+             ========================= -->
+
+        <!-- Mild hunger: 50%..25% -> -0.02 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.02">
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="LTE" value=".5"/>
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="GT" value=".25"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Moderate hunger: 25%..10% -> -0.04 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.04">
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="LTE" value=".25"/>
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="GT" value=".10"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Severe hunger: <=10% -> -0.06 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="LTE" value=".10"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- =========================
+             COLD: _coretemp tiers drain
+             (Values inferred from vanilla comments)
+             ========================= -->
+
+        <!-- Cold: -30 < coretemp <= -10 -> -0.03 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.03">
+          <requirement name="CVarCompare" cvar="_coretemp" operation="LTE" value="-10"/>
+          <requirement name="CVarCompare" cvar="_coretemp" operation="GT" value="-30"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Freezing: coretemp <= -30 -> -0.06 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
+          <requirement name="CVarCompare" cvar="_coretemp" operation="LTE" value="-30"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- =========================
+             CRIMSON VEIL / RADIATION ZONES: heavy drain
+             (Uses vanilla radiation CVar as proxy: _biomeradiation)
+             ========================= -->
+
+        <!-- Heavy CV/radiation: _biomeradiation > 2.5 -> -0.10 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.10">
+          <requirement name="CVarCompare" cvar="_biomeradiation" operation="GT" value="2.5"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- =========================
+             ON-DAMAGE sanity drop (one-shot with cooldown)
+             ========================= -->
+        <triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-1">
+          <requirement name="!HasBuff" buff="rfaSanityHitCD"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="rfaSanityHitCD">
+          <requirement name="!HasBuff" buff="rfaSanityHitCD"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Bed comfort -->
+    <buff name="rfaComfortBedAOE" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <!-- Avoid flicker by proxying a visible effect buff -->
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaComfortBedEffect"/>
+      </effect_group>
+    </buff>
+    <buff name="rfaComfortBedEffect" name_key="rfaComfortBed_name" description_key="rfaComfortBed_desc" icon="ui_game_symbol_bed" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Rested Near Bed"/><effect_group>
+        <!-- +sanity while near bed; soft clamp -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.04">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Land-claim safe zone -->
+    <buff name="rfaComfortClaimAOE" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaComfortClaimEffect"/>
+      </effect_group>
+    </buff>
+    <buff name="rfaComfortClaimEffect" name_key="rfaComfortClaim_name" description_key="rfaComfortClaim_desc" icon="ui_game_symbol_home" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Home Zone"/><effect_group>
+        <!-- +sanity while in land-claim radius -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.03">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Light-based comfort (campfire/torch/electric) -->
+    <buff name="rfaComfortLightAOE" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaComfortLightEffect"/>
+      </effect_group>
+    </buff>
+    <buff name="rfaComfortLightEffect" name_key="rfaComfortLight_name" description_key="rfaComfortLight_desc" icon="ui_game_symbol_campfire" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Comforting Light"/><effect_group>
+        <!-- +sanity while near warm/bright light -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Social proximity (ally/pet) emitters wired in Phase 5 -->
+    <buff name="rfaSocialAllyAOE" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaSocialAllyEffect"/>
+      </effect_group>
+    </buff>
+    <buff name="rfaSocialAllyEffect" name_key="rfaSocialAlly_name" description_key="rfaSocialAlly_desc" icon="ui_game_symbol_party" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Allies Nearby"/><effect_group>
+        <!-- Base per-ally comfort; stacking implemented by multiple distinct emitters -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSocialPetAOE" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaSocialPetEffect"/>
+      </effect_group>
+    </buff>
+    <buff name="rfaSocialPetEffect" name_key="rfaSocialPet_name" description_key="rfaSocialPet_desc" icon="ui_game_symbol_animal" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Companion Nearby"/><effect_group>
+        <!-- Base per-pet comfort -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Comfort food: brief regen on consume -->
+    <buff name="rfaFoodComfort" name_key="rfaFoodComfort_name" description_key="rfaFoodComfort_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+      <duration value="90"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Comfort Food"/><effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.05">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Alcohol buffers: enforce sanity floor while active -->
+    <!-- Beer-tier buffer: floor at -20 for 3 minutes -->
+    <buff name="rfaAlcoholBufferBeer" name_key="rfaAlcoholBufferBeer_name" description_key="rfaAlcoholBufferBeer_desc" icon="ui_game_symbol_beer" show_on_hud="false" show_in_ui="false">
+      <duration value="180"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Tipsy (Sanity Buffer)"/><effect_group>
+        <!-- If sanity dips below -20, bump it up to -20 instantly -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="set" value="-20">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-20"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!-- Strong buffer (Grandpa’s, Moonshine): floor at -60 for 5 minutes -->
+    <buff name="rfaAlcoholBufferStrong" name_key="rfaAlcoholBufferStrong_name" description_key="rfaAlcoholBufferStrong_desc" icon="ui_game_symbol_beer" show_on_hud="false" show_in_ui="false">
+      <duration value="300"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Buzzed (Sanity Buffer)"/><effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="set" value="-60">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-60"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Decor: tiered effects that only work in your claim zone
+         Gated by requiring the Phase 4 claim aura effect on the player -->
+    <buff name="rfaDecorAOE_T1" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaDecorEffect_T1"/>
+      </effect_group>
+    </buff>
+    <buff name="rfaDecorAOE_T2" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaDecorEffect_T2"/>
+      </effect_group>
+    </buff>
+    <buff name="rfaDecorAOE_T3" hidden="true">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaDecorEffect_T3"/>
+      </effect_group>
+    </buff>
+
+    <!-- Tiered caps: T1 only helps up to sanity 50, T2 up to 100, T3 up to 150 -->
+    <buff name="rfaDecorEffect_T1" name_key="rfaDecorT1_name" description_key="rfaDecorT1_desc" icon="ui_game_symbol_home" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Pleasant Decor I"/><effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.01">
+          <requirement name="HasBuff" buff="rfaComfortClaimEffect"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="50"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaDecorEffect_T2" name_key="rfaDecorT2_name" description_key="rfaDecorT2_desc" icon="ui_game_symbol_home" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Pleasant Decor II"/><effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.01">
+          <requirement name="HasBuff" buff="rfaComfortClaimEffect"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="100"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaDecorEffect_T3" name_key="rfaDecorT3_name" description_key="rfaDecorT3_desc" icon="ui_game_symbol_home" show_on_hud="false" show_in_ui="false">
+      <duration value="2"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Pleasant Decor III"/><effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.01">
+          <requirement name="HasBuff" buff="rfaComfortClaimEffect"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="150"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!--  Morale: auto-award the morning after Blood Moon -->
+    <buff name="rfaMoraleHordeAuto" show_in_ui="false" show_on_hud="false">
+      <duration value="999999"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <!-- Mark that a Blood Moon occurred -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaWasBloodMoon" operation="set" value="1">
+          <requirement name="IsBloodMoon"/>
+        </triggered_effect>
+
+        <!-- After Blood Moon ends and it’s morning (>= 0600), award morale once -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaMorale" operation="add" value="10">
+          <requirement name="!IsBloodMoon"/>
+          <requirement name="CVarCompare" cvar="rfaWasBloodMoon" operation="Equals" value="1"/>
+          <requirement name="TimeOfDay" operation="GTE" value="0600"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaMoraleModerate">
+          <requirement name="!IsBloodMoon"/>
+          <requirement name="CVarCompare" cvar="rfaWasBloodMoon" operation="Equals" value="1"/>
+          <requirement name="TimeOfDay" operation="GTE" value="0600"/>
+        </triggered_effect>
+        <!-- Reset the marker so it won't re-trigger -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaWasBloodMoon" operation="set" value="0">
+          <requirement name="!IsBloodMoon"/>
+          <requirement name="CVarCompare" cvar="rfaWasBloodMoon" operation="Equals" value="1"/>
+          <requirement name="TimeOfDay" operation="GTE" value="0600"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>       
+
+    <buff name="rfaSanityGrantOnLogin">
+      <duration value="1"/>
+      <stack_type value="ignore"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="rfaSanityCore"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="rfaMoraleCore"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="rfaSanityEnv"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="rfaSanityPlayerHooks"/>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="rfaMoraleHordeAuto"/>
+      </effect_group>
+    </buff>
+  </append>
+
+  <!-- === RFA Sanity HUD + Scare (test cadence 5–10s, bands < -51 = Yellow/Red) === -->
+  <append xpath="/buffs">
+    <!-- Controller selects one visible indicator; persistent, no flicker -->
+    <buff name="buffRfaSanityIndicatorCtl" hidden="true">
+      <stack_type value="ignore"/>
+      <duration value="-1"/>
+      <update_rate value="1"/>
+              <effect_group name="SanityHUD_Green">
+          <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRfaSanityIndicator_Green">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="100"/>
+          <requirement name="!HasBuff" buff="buffRfaSanityIndicator_Green"/>
+          </triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightGreen">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="100"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightGreen"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="100"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_White"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="100"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightYellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="100"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Yellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="100"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Red"/></triggered_effect>
+        </effect_group>
+        <effect_group name="SanityHUD_LightGreen">
+          <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRfaSanityIndicator_LightGreen">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="21"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="99"/>
+          <requirement name="!HasBuff" buff="buffRfaSanityIndicator_LightGreen"/>
+          </triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Green">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="21"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="99"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Green"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="21"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="99"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_White"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="21"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="99"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightYellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="21"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="99"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Yellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="21"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="99"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Red"/></triggered_effect>
+        </effect_group>
+        <effect_group name="SanityHUD_White">
+          <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRfaSanityIndicator_White">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-20"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="20"/>
+          <requirement name="!HasBuff" buff="buffRfaSanityIndicator_White"/>
+          </triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Green">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-20"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="20"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Green"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightGreen">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-20"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="20"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightGreen"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-20"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="20"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightYellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-20"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="20"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Yellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-20"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="20"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Red"/></triggered_effect>
+        </effect_group>
+        <effect_group name="SanityHUD_LightYellow">
+          <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRfaSanityIndicator_LightYellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-50"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-21"/>
+          <requirement name="!HasBuff" buff="buffRfaSanityIndicator_LightYellow"/>
+          </triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Green">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-50"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-21"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Green"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightGreen">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-50"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-21"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightGreen"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-50"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-21"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_White"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-50"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-21"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Yellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-50"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-21"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Red"/></triggered_effect>
+        </effect_group>
+        <effect_group name="SanityHUD_Yellow">
+          <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRfaSanityIndicator_Yellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-130"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-51"/>
+          <requirement name="!HasBuff" buff="buffRfaSanityIndicator_Yellow"/>
+          </triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Green">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-130"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-51"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Green"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightGreen">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-130"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-51"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightGreen"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-130"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-51"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_White"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-130"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-51"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightYellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-130"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-51"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Red"/></triggered_effect>
+        </effect_group>
+        <effect_group name="SanityHUD_Red">
+          <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRfaSanityIndicator_Red">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-130"/>
+          <requirement name="!HasBuff" buff="buffRfaSanityIndicator_Red"/>
+          </triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Green">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-130"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Green"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightGreen">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-130"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightGreen"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-130"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_White"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-130"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_LightYellow"/></triggered_effect>
+          <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-130"/>
+          <requirement name="HasBuff" buff="buffRfaSanityIndicator_Yellow"/></triggered_effect>
+        </effect_group>
+    </buff>
+
+    <!-- Indicator buffs (always visible; only color differs) -->
+    <buff name="buffRfaSanityIndicator_Green" icon="ui_game_symbol_intellect" icon_color="80,255,120" show_in_ui="true">
+      <stack_type value="replace"/><duration value="-1"/><update_rate value="1"/>
+      <effect_group>
+        <passive_effect name="LootStage" operation="perc_add" value=".20"/>
+        <passive_effect name="LootProb" operation="perc_add" value="20"/>
+      </effect_group>
+    </buff>
+    
+    <buff name="buffRfaSanityIndicator_LightGreen" icon="ui_game_symbol_intellect" icon_color="170,255,170" show_in_ui="true">
+      <stack_type value="replace"/><duration value="-1"/><update_rate value="1"/>
+      <effect_group>
+        <passive_effect name="LootStage" operation="perc_add" value=".10"/>
+        <passive_effect name="LootProb" operation="perc_add" value="10"/>
+      </effect_group>
+    </buff>
+    
+    <buff name="buffRfaSanityIndicator_White" icon="ui_game_symbol_intellect" icon_color="255,255,255" show_in_ui="true">
+      <stack_type value="replace"/><duration value="-1"/><update_rate value="1"/>
+			<effect_group name="SanityIndicator_Exclusivity">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_Red"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red"/>
+			</effect_group>
+		</buff>
+    
+    <!-- LIGHT YELLOW: add 1–2s test scare -->
+    <buff name="buffRfaSanityIndicator_LightYellow" icon="ui_game_symbol_intellect" icon_color="255,255,160" show_in_ui="true">
+      <stack_type value="replace"/><duration value="-1"/><update_rate value="1"/>
+      <effect_group name="SanityScare_Init">
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".rfaScareTimer" operation="set" value="0"/>
+      </effect_group>
+      <effect_group name="SanityScare_Tick">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaScareTimer" operation="add" value="1"/>
+      </effect_group>
+      <effect_group name="SanityScare_Window">
+        <!-- Active window: t >= 60s; per-second roll; cap at 300s (5 min) -->
+        <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="GTE" value="60"/>
+        <!-- Per-second chance while 60 <= t < 300 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_jumpscare">
+          <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="LT" value="300"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+        </triggered_effect>
+        <!-- Hard cap: guaranteed scare at 300s -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_jumpscare">
+          <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="GTE" value="300"/>
+        </triggered_effect>
+        <!-- Reset timer after any scare once the window is open -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaScareTimer" operation="set" value="0"/>
+      </effect_group>
+			<effect_group name="SanityIndicator_Exclusivity">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_White"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_Red"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red"/>
+			</effect_group>
+      
+      <effect_group>
+        <!-- +5% noise -->
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".05"/>
+      </effect_group>
+		</buff>
+
+    <!-- YELLOW: add 5–10s test scare -->
+    <buff name="buffRfaSanityIndicator_Yellow" icon="ui_game_symbol_intellect" icon_color="255,235,120" show_in_ui="true">
+      <stack_type value="replace"/><duration value="-1"/><update_rate value="1"/>
+      <!-- Window 5s..10s: 50% per second; >=10s: guaranteed -->
+
+      <effect_group name="SanityScare_Init">
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".rfaScareTimer" operation="set" value="0"/>
+      </effect_group>
+      <effect_group name="SanityScare_Tick">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaScareTimer" operation="add" value="1"/>
+      </effect_group>
+      <effect_group name="SanityScare_Window">
+        <!-- Active window: t >= 60s; per-second roll; cap at 300s (5 min) -->
+        <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="GTE" value="60"/>
+        <!-- Per-second chance while 60 <= t < 300 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_jumpscare">
+          <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="LT" value="300"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+        </triggered_effect>
+        <!-- Hard cap: guaranteed scare at 300s -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_jumpscare">
+          <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="GTE" value="300"/>
+        </triggered_effect>
+        <!-- Reset timer after any scare once the window is open -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaScareTimer" operation="set" value="0"/>
+      </effect_group>
+			<effect_group name="SanityIndicator_Exclusivity">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_White"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_Red"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Red"/>
+			</effect_group>
+
+      <effect_group>
+        <!-- +15% noise -->
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".15"/>
+      </effect_group>
+		</buff>
+
+    <!-- RED: copy same 5–10s test scare logic (since rfaSanity < -130) -->
+    <buff name="buffRfaSanityIndicator_Red" icon="ui_game_symbol_intellect" icon_color="255,64,64" show_in_ui="true">
+      <stack_type value="replace"/><duration value="-1"/><update_rate value="1"/>
+
+      <effect_group name="SanityScare_Init">
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".rfaScareTimer" operation="set" value="0"/>
+      </effect_group>
+      <effect_group name="SanityScare_Tick">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaScareTimer" operation="add" value="1"/>
+      </effect_group>
+      <effect_group name="SanityScare_Window">
+        <!-- Active window: t >= 60s; per-second roll; cap at 300s (5 min) -->
+        <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="GTE" value="60"/>
+        <!-- Per-second chance while 60 <= t < 300 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_jumpscare">
+          <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="LT" value="300"/>
+          <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="4"/>
+        </triggered_effect>
+        <!-- Hard cap: guaranteed scare at 300s -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_jumpscare">
+          <requirement name="CVarCompare" cvar=".rfaScareTimer" operation="GTE" value="300"/>
+        </triggered_effect>
+        <!-- Reset timer after any scare once the window is open -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaScareTimer" operation="set" value="0"/>
+      </effect_group>
+			<effect_group name="SanityIndicator_Exclusivity">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_White"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_White"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_LightYellow"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRfaSanityIndicator_Yellow"/>
+			</effect_group>
+
+      <effect_group>
+        <!-- +35% noise -->
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".35"/>
+      </effect_group>
+		</buff>
+
+    <buff name="buffDrPrepper" name_key="buffDrPrepperName" description_key="buffDrPrepperDesc" tooltip_key="buffDrPrepperTooltip" icon="ui_game_symbol_pills">
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".buffDrPrepperDisplay"/>
+      <display_value_format value="time"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrPrepperDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrPrepperDisplay" operation="set" value="@$buffDrPrepperDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrPrepperDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+      <effect_group>
+        <requirement name="CVarCompare" cvar="$buffDrPrepperDuration" operation="LTE" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrPrepperDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrPrepperDuration" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrPrepper"/>
+      </effect_group>
+
+      <effect_group>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+      </effect_group>
+
+      <effect_group>
+        <!-- adds 750 thanks to Drprepper. -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="750">
+          <requirement name="HasBuff" buff="buffDrPrepper"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+  </append>
+
+  <!-- Ensure controller is granted by Stats Monitor -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes-StatsMonitor']">
+    <effect_group name="SanityHUDController">
+      <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRfaSanityIndicatorCtl">
+        <requirement name="!HasBuff" buff="buffRfaSanityIndicatorCtl"/>
+      </triggered_effect>
+    </effect_group>
+  </append>
+  <!-- === /RFA Sanity HUD + Scare === -->
+
+
+	<!-- ===================== RFA: Sanity-driven EXP Multiplier for Concentration Skills (Safe) ===================== -->
+	<!-- Manager buff: computes rfaSanityConcentrationMult from rfaSanity -->
+	<append xpath="/buffs">
+		<buff name="rfaConcentrationMultManager" hidden="true" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<update_rate value="1"/>
+
+			<!-- Default 1.0 each tick -->
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanityConcentrationMult" operation="set" value="1"/>
+			</effect_group>
+
+			<!-- Sanity (21 > 50) → 1.15x -->
+			<effect_group>
+				<requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="21"/>
+        <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanityConcentrationMult" operation="set" value="1.15"/>
+			</effect_group>
+
+      <!-- Sanity (50 > 200) → 1.3x -->
+      <effect_group>
+        <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="50"/>        
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanityConcentrationMult" operation="set" value="1.3"/>
+      </effect_group>
+
+			<!-- Sanity (<= -21) → 0.85x -->
+			<effect_group>
+				<requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-21"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanityConcentrationMult" operation="set" value="0.85"/>
+			</effect_group>
+
+      <!-- Sanity (200 <= -50) → 0.70x -->
+      <effect_group>
+        <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="-200"/>
+        <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-50"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanityConcentrationMult" operation="set" value="0.70"/>
+      </effect_group>
+		</buff>
+	</append>
+
+	<!-- Ensure all players get the manager -->
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaConcentrationMultManager"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaConcentrationMultManager"/>
+	</append>
+
+	<!-- Hook into your Learn-By-Doing checker to add delta EXP based on multiplier -->
+	<!-- Lockpicking -->
+	<append xpath="/buffs/buff[@name='flagLearnByDoingChecks']">
+		<effect_group name="RFA_Concentration_Lockpicking_DeltaExp">
+			<requirement name="CVarCompare" cvar=".pickLockAttempt" operation="Equals" value="1"/>
+			<!-- temp = base -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@.Lockpicking_addExpQuadrupleNormal"/>
+			<!-- temp *= mult -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+			<!-- temp -= base (so this is just the delta to add) -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@.Lockpicking_addExpQuadrupleNormal"/>
+			<!-- add the delta -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$lockpickingExpTotal" operation="add" value="@.rfaTmpExp"/>
+			<!-- clear temp -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".rfaTmpExp"/>
+		</effect_group>
+	</append>
+
+	<!-- Scavenging (Containers) -->
+	<append xpath="/buffs/buff[@name='flagLearnByDoingChecks']">
+		<effect_group name="RFA_Concentration_Scavenging_DeltaExp">
+			<requirement name="CVarCompare" cvar=".lootedContainer" operation="Equals" value="1"/>
+			<!-- temp = base -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@$ScavengingExp"/>
+			<!-- temp *= mult -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+			<!-- temp -= base -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@$ScavengingExp"/>
+			<!-- add delta -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$scavengingExpTotal" operation="add" value="@.rfaTmpExp"/>
+			<!-- clear temp -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".rfaTmpExp"/>
+		</effect_group>
+	</append>
+
+  <!-- Bartering -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes2-Give_EXP']">
+    <effect_group name="RFA_Concentration_Bartering_Sold_DeltaEXP">      
+      <triggered_effect trigger="onSelfItemSold" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@$BarterExp"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfItemSold" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfItemSold" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@$BarterExp"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfItemSold" action="ModifyCVar" cvar="$barterExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfItemSold" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+
+    <effect_group name="RFA_Concentration_Bartering_Bought_DeltaEXP">
+      <triggered_effect trigger="onSelfItemBought" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@$BarterExp"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfItemBought" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfItemBought" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@$BarterExp"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfItemBought" action="ModifyCVar" cvar="$barterExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfItemBought" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+  </append>
+
+  <!-- Foraging -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes2-Give_EXP']">
+    <effect_group name="RFA_Concentration_Foraging_DeltaEXP">
+      <requirement name="TriggerHasTags" tags="foliage"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@$ForagingExp"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@$ForagingExp"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar="$foragingExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+  </append>
+
+  <!-- Stealth -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes2-Give_EXP']">
+    <effect_group name="RFA_Concentration_Stealth_DeltaEXP">
+      <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+      <requirement name="NotHasBuff" buff="playerHunted"/>
+      <requirement name="HasTrackedEntity" tags="perkAT04"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@.Stealth_addExpOnBuffOneSec"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@.Stealth_addExpOnBuffOneSec"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar="$stealthExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+  </append>
+
+  <!-- Automotive -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes2-Give_EXP']">
+    <effect_group name="RFA_Concentration_Automotive_DeltaEXP">
+      <requirement name="TriggerHasTags" tags="automotive"/>
+      <requirement name="HoldingItemHasTags" tags="salvageTool"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@$AutomotiveExp"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@$AutomotiveExp"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar="$automotiveExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+  </append>
+
+  <!-- Wild Plants -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes2-Give_EXP']">
+    <effect_group name="RFA_Concentration_WildPlants_DeltaEXP">
+      <requirement name="TriggerHasTags" tags="wildCropsHarvest"/>
+      <requirement name="ProgressionLevel" progression_name="skillFarming" operation="LTE" value="100"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@.Farming_addExpHalfNormal"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@.Farming_addExpHalfNormal"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar="$farmingExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+  </append>
+
+  <!-- Mining -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes2-Give_EXP']">
+    <effect_group name="RFA_Concentration_Mining_Damage_DeltaEXP">
+      <requirement name="ItemHasTags" tags="miningTool"/>
+      <requirement name="TriggerHasTags" tags="ore,deepOre,surfaceOre"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@$MiningExp"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@$MiningExp"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar="$miningExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+
+    <effect_group name="RFA_Concentration_Mining_Destroyed_DeltaEXP">
+      <requirement name="ItemHasTags" tags="miningTool"/>
+      <requirement name="TriggerHasTags" tags="ore,deepOre,surfaceOre"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@.Mining_addExpDoubleNormal"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@.Mining_addExpDoubleNormal"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar="$miningExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+  </append>
+
+  <!-- Woodcutting -->
+  <append xpath="/buffs/buff[@name='riseFromTheAshes2-Give_EXP']">
+    <effect_group name="RFA_Concentration_Woodcutting_Damage_DeltaEXP">
+      <requirement name="ItemHasTags" tags="axe,chainsaw"/>
+      <requirement name="TriggerHasTags" tags="wood"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@$WoodcuttingExp"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@$WoodcuttingExp"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar="$woodcuttingExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDamagedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+
+    <effect_group name="RFA_Concentration_Woodcutting_Destroyed_DeltaEXP">
+      <requirement name="ItemHasTags" tags="axe,chainsaw"/>
+      <requirement name="TriggerHasTags" tags="wood"/>
+      <!-- temp = base -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="set" value="@.Woodcutting_addExpDoubleNormal"/>
+      <!-- temp *= mult -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="multiply" value="@rfaSanityConcentrationMult"/>
+      <!-- temp -= base -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar=".rfaTmpExp" operation="subtract" value="@.Woodcutting_addExpDoubleNormal"/>
+      <!-- add delta -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="ModifyCVar" cvar="$woodcuttingExpTotal" operation="add" value="@.rfaTmpExp"/>
+      <!-- clear temp -->
+      <triggered_effect trigger="onSelfDestroyedBlock" action="RemoveCVar" cvar=".rfaTmpExp"/>
+    </effect_group>
+  </append>
+
+	<!-- ===================== /RFA: Sanity-driven EXP Multiplier ===================== -->
+
+  <!-- ===============================
+       1) NEW FOOD SANITY BUFFS
+       - Poor meal: small sanity loss
+       - Awful meal: larger sanity loss
+       - Amazing meal: bigger sanity gain
+       Your existing "rfaFoodComfort" stays as the comfort tier.
+       =============================== -->
+
+  <!-- Add new buffs to /buffs -->
+  <append xpath="/buffs">
+    <!-- Poor meal: brief sanity drain -->
+    <buff name="rfaFoodPoor" name_key="rfaFoodPoor_name" description_key="rfaFoodPoor_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+      <duration value="90"/>
+      <stack_type value="replace"/>
+      <update_rate value="1"/>
+      <display_value_key value="Poor Meal"/>
+      <effect_group>
+        <!-- -0.03 sanity per second while below cap -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.03">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!-- Awful meal: stronger sanity drain -->
+    <buff name="rfaFoodAwful" name_key="rfaFoodAwful_name" description_key="rfaFoodAwful_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+      <duration value="120"/>
+      <stack_type value="replace"/>
+      <update_rate value="1"/>
+      <display_value_key value="Awful Meal"/>
+      <effect_group>
+        <!-- -0.06 sanity per second while above floor -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!-- Amazing meal: strong sanity gain -->
+    <buff name="rfaFoodAmazing" name_key="rfaFoodAmazing_name" description_key="rfaFoodAmazing_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+      <duration value="120"/>
+      <stack_type value="replace"/>
+      <update_rate value="1"/>
+      <display_value_key value="Amazing Meal"/>
+      <effect_group>
+        <!-- +0.08 sanity per second while below ceiling -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.08">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+  </append>
+
+  <append xpath="/buffs/buff[@name='riseFromTheAshes-StateUpdate']">
+    <effect_group name="RFA_CVar_Mirror">
+      <!-- Final HUD loot stage -->
+      <triggered_effect trigger="onSelfBuffUpdate" action="SetCVarFromPlayerLootStage, Rise_From_The_Ashes" cvar="LootStage"/>
+
+      <!-- Passive deltas -->
+      <triggered_effect trigger="onSelfBuffUpdate"
+        action="SetCVarFromPassive, Rise_From_The_Ashes"
+        passive="JumpStrength"
+        cvar=".JumpStrength"
+        mode="raw"                   
+        />
+
+      <!-- Noise multiplier passives commonly tag-scoped -->
+      <triggered_effect trigger="onSelfBuffUpdate"
+        action="SetCVarFromPassive, Rise_From_The_Ashes"
+        passive="NoiseMultiplier" cvar=".NoiseMultiplier" mode="raw"
+        tags="noise"/>
+
+      <!-- Loot chance if your passives are tagged for loot context -->
+      <triggered_effect trigger="onSelfBuffUpdate"
+        action="SetCVarFromPassive, Rise_From_The_Ashes"
+        passive="LootProb" cvar=".LootProb" mode="raw"
+        tags="loot,looting" movement="none" base="1" debug="true"/>
+
+      <triggered_effect trigger="onSelfBuffUpdate" action="AutoDrive, Rise_From_The_Ashes"/>
+    </effect_group>        
+  </append>
+
 </configs>

@@ -1,6 +1,6 @@
 <configs>
 	<!-- Add buffs to player when they enter the world -->
-	<append xpath="//entity_class[@name='playerMale']/effect_group/triggered_effect[@trigger='onSelfEnteredGame']/@buff">,riseFromTheAshes-StatsMonitor,riseFromTheAshes2-Give_EXP,riseFromTheAshes-Level_Skills,riseFromTheAshes-StateUpdate,riseFromTheAshes-LearnByHarvesting,flagLearnByDoingChecks</append>
+	<append xpath="//entity_class[@name='playerMale']/effect_group/triggered_effect[@trigger='onSelfEnteredGame']/@buff">,riseFromTheAshes-StatsMonitor,riseFromTheAshes2-Give_EXP,riseFromTheAshes-Level_Skills,riseFromTheAshes-StateUpdate,riseFromTheAshes-LearnByHarvesting,flagLearnByDoingChecks,rfaSanityGrantOnLogin</append>
 	<append xpath="//entity_class[@name='playerMale']/effect_group/passive_effect[@name='HarvestCount' and @tags='allHarvest,oreWoodHarvest,cropHarvest,wildCropsHarvest']/@tags">,skillForaging</append>				
 	
 	<!-- *********** Changes ************ 
@@ -33,7 +33,7 @@
 			<passive_effect name="ExperienceGain" operation="base_add" value="200"/>
 		</effect_group>
 	<effect_group name="Burnt Biome">
-		<requirement name="InBiome" biome="9"/>            
+		<requirement name="InBiome" biome="9"/>			
 	</effect_group>
 	</append>
 
@@ -47,128 +47,128 @@
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieArleneFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirl']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirlRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieJoe']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieJoeFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJoeFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieSteve']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieSteveFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieTomClark']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieTomClarkRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieBusinessMan']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieBurnt']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieBurntFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieBoe']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieBoeFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieMaleHazmatFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMaleHazmatFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieMaleHazmatRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieJanitor']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieJanitorFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJanitorFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieJanitorRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieInmate']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieInmateFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieInmateFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieInmateRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieMoeFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMoeFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieLab']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieLabFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLabFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieYo']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieYoFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieYoFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieYoRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieBiker']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieLumberjack']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieBowler']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieBowlerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBowlerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieBowlerRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarder']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
-	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieWightRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieMutated']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieMutatedRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='Tags']/@value">entity,zombie,walker,boss,perkAT05</set>
 
 	<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']/property[@name='Tags']/@value">entity,zombie,walker,perkAT04,perkAT05</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,per0kAT05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,perkAT04,perkAT05</set>
 
 	<!-- add tracking tags to animals -->
 	<set xpath="/entity_classes/entity_class[@name='animalStag']/property[@name='Tags']/@value">entity,animal,deer,stag,perkAT02,perkAT03,perkAT04,perkAT05</set>
@@ -225,7 +225,1511 @@
 	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITarget-3']/@data">class=EntityPlayer,18,13,EntityBandit,0,-8,EntityAnimalStag,0,0,EntityAnimal,0,0</set>
 	<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITarget-3']/@data">class=EntityPlayer,18,13,EntityBandit,0,-8,EntityAnimalStag,0,0,EntityAnimal,0,0,EntityZombie,0,0</set>
 
+  <!-- Increase player carry capacity and bag size -->
   <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">84</set>
   <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">84</set>
+
+  <append xpath="/entity_classes">
+
+    <entity_class name="zombieTemplateCommonIconic">
+      <property name="Class" value="IconicZombie, Rise_From_The_Ashes"/>
+      <property name="CanClimbLadders" value="false"/>
+      <property name="UserSpawnType" value="None"/>
+      <property name="Tags" value="entity,zombie,walker,perkAT04,perkAT05,iconic"/>
+      <property name="PainResistPerHit" value="1"/>
+      <property name="MoveSpeedAggro" value="0.3, 0.3"/>
+
+      <property name="EntityFlags" value="zombie" />
+      <!-- This decides for scoring -->
+      <property name="EntityType" value="Zombie" />
+      <!-- this property DOES NOT inherit on extends and target_tags cannot be AND connected -->
+      <!-- Mesh and class properties -->
+      <property name="Prefab" value="Z"/>
+      <property name="AvatarController" value="AvatarZombieController" />
+      <property name="ModelType" value="Standard" />
+      <property name="HasRagdoll" value="true" />
+      <property name="RootMotion" value="true" />
+      <property name="Parent" value="Enemies" />
+      <property name="PhysicsBody" value="zombieStandard" />
+      <property name="Mass" value="170" />
+      <property name="Weight" value="70" />
+      <property name="PushFactor" value="5"/>
+      <property name="Faction" value="undead" />
+      <property name="IsEnemyEntity" value="true" />
+      <property name="CrouchType" value="1" />
+      <property name="DanceType" value="1"/>
+      <property name="WalkType" value="7" />
+      <property name="HasDeathAnim" value="true" />
+      <property name="ParticleOnDeath" value="blood_death" />
+      <property name="SurfaceCategory" value="organic" />
+
+      <!-- <property name="MapIcon" value="ui_game_symbol_enemy_dot"/> -->
+      <property name="CompassIcon" value="ui_game_symbol_enemy_dot" />
+      <property name="CompassUpIcon" value="ui_game_symbol_enemy_dot_up" />
+      <property name="CompassDownIcon" value="ui_game_symbol_enemy_dot_down" />
+      <property name="TrackerIcon" value="ui_game_symbol_run"/>
+      <property name="NavObject" value="twitch_spawn,twitch_spawn_other,skillTracking_zombie,clear_sleeper"/>
+
+      <property name="SoundRandomTime" value="30" />
+      <!-- Plays SoundRandom every 30/15 seconds -->
+      <property name="SoundRandom" value="zombiemaleroam" />
+      <property name="SoundAlertTime" value="25" />
+      <!-- Delay sounds after SoundAlert for x/2 to x seconds -->
+      <property name="SoundAlert" value="zombiemalealert" />
+      <property name="SoundSense" value="zombiemalesense" />
+      <property name="SoundHurt" value="zombiemalepain" />
+      <property name="SoundDeath" value="zombiemaledeath" />
+      <property name="SoundAttack" value="zombiemaleattack" />
+      <property name="SoundSleeperSense" value="sleepersense" />
+      <property name="SoundSleeperBackToSleep" value="sleeperbacktosleep" />
+      
+      <property name="AIFeralSense" value="1.5" />
+      <property name="AINoiseSeekDist" value="8" />
+      <property name="AIPathCostScale" value=".15, .4" />
+
+      <!-- ApproachAndAttackTarget class=class,chaseTimeMax (go home) -->
+      <!-- SetNearestEntityAsTarget class=class, hear dist, see dist (checked left to right)(0 dist uses entity default, neg no sense scale) -->
+      <property name="AITask" value="
+      BreakBlocksIconic,Rise_From_The_Ashes|
+      ApproachDistraction|
+      ApproachAndAttackIconic,Rise_From_The_Ashes class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal,0,EntityAnimal|
+      ApproachSpotIconic,Rise_From_The_Ashes|
+      LookIconic,Rise_From_The_Ashes|
+      WanderIconic,Rise_From_The_Ashes|
+      "/>
+      <property name="AITarget" value="
+      SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityEnemyAnimal|
+      BlockingTargetTask|
+      SetNearestCorpseAsTarget flags=edible|
+      SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityBandit,0,0,EntityAnimal,0,0|
+      "/>
+
+      <!-- Must match gore dismemberment tags -->
+      <!-- Override parts in the derived class -->
+      <!-- The first prefab in each list is the default -->
+      <!-- It is a fall back and uses no data but can take a scale -->
+      <!-- <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore;Prefabs/RedSphereTest;Prefabs/BlueSphereTest" data =";scale=1,1,1+type=blunt;scale=1,1,1+rot=1,1,1+type=blade"/> -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore" />
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore" />
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore" />
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore" />
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore" />
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore" />
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore" />
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore" />
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore" />
+      
+      <property name="DismemberMultiplierHead" value="1" />
+      <property name="DismemberMultiplierArms" value="1" />
+      <property name="DismemberMultiplierLegs" value="1" />
+      <property name="LegCrippleScale" value="2" />
+      <!-- Scales chance to cripple (percent of health that a hit does is the chance) -->
+      <property name="LegCrawlerThreshold" value="0" />
+      <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
+      <property name="KnockdownProneDamageThreshold" value="0.5"/>
+      <property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+      <property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+      <property name="KnockdownKneelDamageThreshold" value="0.4"/>
+      <property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+      <property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+      <property name="LegsExplosionDamageMultiplier" value="1" />
+      <property name="ArmsExplosionDamageMultiplier" value="1" />
+      <property name="HeadExplosionDamageMultiplier" value="1" />
+      <property name="ChestExplosionDamageMultiplier" value="1" />
+      
+      <!-- Gameplay zombieTemplateMale -->
+      <property name="Buffs" value="zombieBuffStatusCheck01" />
+      <property name="HandItem" value="meleeHandZombie01" />
+      <property name="HandItemCrawler" value="meleeHandZombie02" />
+      <!-- meleeHandZombie02 is referenced in code but can be overridden -->
+      <property name="Immunity" value="sickness;disease;wellness" />
+      <!-- bleeding; -->
+      <property name="MaxTurnSpeed" value="250" />
+      <property name="MoveSpeed" value="0.3"/>
+      <!-- Just shambling around -->
+      <property name="MoveSpeedRand" value="-.1, .1" />
+      <!-- Rand added to min aggro speed -->
+      <property name="MoveSpeedPanic" value="0.3" />
+      <property name="SwimSpeed" value="1" />
+      <property name="SwimStrokeRate" value="1,1" />
+      <property name="CanClimbLadders" value="false" />
+      <property name="JumpMaxDistance" value="0.1, 0.1" />
+      
+      <property name="MaxViewAngle" value="180"/>
+      <property name="SightRange" value="30" />
+      <!-- distance in m -->
+      <property name="SightLightThreshold" value="-2,150" />
+      <!-- how well lit you have to be for the zombie to see you at min,max range -->
+      <property name="LookAtAngle" value="60" />
+      
+      <property name="AttackTimeoutDay" value="1.5" />
+      <!-- in seconds -->
+      <property name="AttackTimeoutNight" value="1.1" />
+      
+      <property name="ExperienceGain" value="400" />
+      <!-- XP ZOMBIE TEMPLATE -->
+      <property name="LootDropProb" value=".04" />
+      <!-- Whether it drops a loot bag on death or not. -->
+      <!-- <property name="LootListOnDeath" value="45"/> -->
+      <property name="LootDropEntityClass" value="EntityLootContainerRegular" />
+      
+      <!-- <property name="CorpseBlock" value="air"/><property name="CorpseBlockChance" value="0"/> -->
+      <property name="TimeStayAfterDeath" value="30" />
+      <property name="DeadBodyHitPoints" value="1000" />
+      <!-- For harvesting or resisting corpse destruction -->
+
+      <property name="SleeperNoiseToSense" value="3,8" />
+      <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+      <property name="SleeperNoiseToSenseSoundChance" value=".5" />
+      <!-- the chance to play "SoundSleeperSense" -->
+      <property name="SleeperNoiseToWake" value="9,12" />
+      <property name="SleeperSightToSenseMin" value="-10,0" />
+      <!-- same as wake -->
+      <property name="SleeperSightToSenseMax" value="200,300" />
+      <property name="SleeperSightToWakeMin" value="-40,5" />
+      <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
+      <property name="SleeperSightToWakeMax" value="340,480" />
+      <!-- Indiv.Random. "I see you" light value at "SightRange" -->
+
+      <effect_group name="IconicEffects">
+        <passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.9" />
+        <passive_effect name="InternalDamageModifier" operation="perc_add" value="0.9" tags="head" />
+      </effect_group>
+
+      <effect_group name="Iconic Reinforcements">
+        <triggered_effect trigger="onSelfAction2Start" action="MinActionEvent_SpawnEntityAroundPlayer, Rise_From_The_Ashes" SpawnGroup="IconicZombies" />
+      </effect_group>
+
+      <effect_group>
+        <!-- zombieTemplateMale -->
+        <passive_effect name="DistractionResistance" operation="base_set" value="0,0" />
+        <passive_effect name="HealthMax" operation="base_set" value="^healthZombieTemplate" />
+        
+        <!-- *** RANDOM_ZOMBIE_HEALTH -->
+        <passive_effect name="HealthMax" operation="perc_add" value="-.15,.15" />
+        
+        <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal" />
+        
+        <passive_effect name="StaminaMax" operation="base_set" value="100" />
+        <passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffRadiationPool" />
+        
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="0">
+          <requirement name="NotHasBuff" buff="buffBrawlerNoTeeth" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="1">
+          <requirement name="HasBuff" buff="buffBrawlerNoTeeth" />
+        </triggered_effect>
+      </effect_group>
+
+      <effect_group name="IconicEffects">
+        <passive_effect name="InternalDamageModifier" operation="perc_add" value="-.9" />
+        <passive_effect name="InternalDamageModifier" operation="perc_add" value="0.9" tags="head" />
+      </effect_group>
+
+      <!-- Name: any unique string -->
+      <!-- Values Data:
+        anim - Land, LandLow, LandHard, Stumble, Ragdoll
+        height - required (min) or (min-max) range
+        weight - required numeric value for relative proability of choice(among other valid choices)
+        ragePer - optional (min) or (min-max) range rage speed percentage
+        rageTime - optional (min) or (min-max) range rage time value
+        difficulty - optional(min) or (min-max) difficulty this entry is applicable to
+      -->
+      <property class="FallLandBehavior">
+        <property name="1None" data="anim=None;height=0,1;weight=0.4"/>
+        <property name="1Land" data="anim=Land;height=0,1;weight=0.4"/>
+        <property name="1LandLow" data="anim=LandLow;height=0,1;weight=0.15"/>
+        <property name="1Stumble" data="anim=Stumble;height=0,1;weight=0.05"/>
+
+        <property name="LowLand" data="anim=LandLow;height=1,3;weight=0.7"/>
+        <property name="LowStumble" data="anim=Stumble;height=1,3;weight=0.3"/>
+
+        <property name="MidStumble" data="anim=Stumble;height=3,5;weight=0.3"/>
+        <property name="MidStumbleAndRage" data="anim=Stumble;height=3,5;weight=0.3;ragePer=0.0,0.0;rageTime=0.0,0.0"/>
+        <property name="MidLandHard" data="anim=LandHard;height=3,5;weight=0.3"/>
+        <property name="MidLandHardAndRage" data="anim=LandHard;height=3,5;weight=0.3;ragePer=0.0,0.0;rageTime=0.0,0.0"/>
+
+        <property name="HighStumbleAndRage" data="anim=Stumble;height=5,13;weight=0.13;ragePer=0.0,0.0;rageTime=0,0"/>
+        <property name="Ragdoll" data="anim=Ragdoll;height=3;weight=0.4"/>
+      </property>
+
+      <!-- Name: any unique string -->
+      <!-- Values Data:
+        anim - None, Stumble, Ragdoll
+        weight - required numeric value for relative probability of choice(among other valid choices)
+        ragePer - optional (min) or (min-max) range rage speed percentage
+        rageTime - optional (min) or (min-max) range rage time value
+        difficulty - optional(min) or (min-max) difficulty this entry is applicable to
+      -->
+      <property class="DestroyBlockBehavior">
+        <property name="None" data="weight=0.0"/>
+        <property name="Stumble" data="weight=0.0"/>
+        <property name="Ragdoll" data="weight=0.0"/>
+      </property>
+
+      <!-- Must match gore dismemberment tags -->
+      <!-- Override parts in the derived class -->
+      <!-- The first prefab in each list is the default -->
+      <!-- It is a fall back and uses no data but can take a scale -->
+      <!-- <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore;Prefabs/RedSphereTest;Prefabs/BlueSphereTest" data =";scale=1,1,1+type=blunt;scale=1,1,1+rot=1,1,1+type=blade"/> -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore" />
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore" />
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore" />
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore" />
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore" />
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore" />
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore" />
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore" />
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore" />
+      
+      <property name="DismemberMultiplierHead" value="1" />
+      <property name="DismemberMultiplierArms" value="1" />
+      <property name="DismemberMultiplierLegs" value="1" />
+      <property name="LegCrippleScale" value="2" />
+      <!-- Scales chance to cripple (percent of health that a hit does is the chance) -->
+      <property name="LegCrawlerThreshold" value="0" />
+      <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
+      <property name="KnockdownProneDamageThreshold" value="0.5"/>
+      <property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+      <property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+      <property name="KnockdownKneelDamageThreshold" value="0.4"/>
+      <property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+      <property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+      <property name="LegsExplosionDamageMultiplier" value="1" />
+      <property name="ArmsExplosionDamageMultiplier" value="1" />
+      <property name="HeadExplosionDamageMultiplier" value="1" />
+      <property name="ChestExplosionDamageMultiplier" value="1" />
+      
+      <!-- Gameplay zombieTemplateMale -->
+      <property name="Buffs" value="zombieBuffStatusCheck01" />
+      <property name="HandItem" value="meleeHandZombie01" />
+      <property name="HandItemCrawler" value="meleeHandZombie02" />
+      <!-- meleeHandZombie02 is referenced in code but can be overridden -->
+      <property name="Immunity" value="sickness;disease;wellness" />
+      <!-- bleeding; -->
+      <property name="MaxTurnSpeed" value="250" />   
+      <property name="SwimSpeed" value="1" />
+      <property name="SwimStrokeRate" value="1,1.5" />
+      <property name="CanClimbLadders" value="false" />
+      <property name="JumpMaxDistance" value="2.8, 3.9" />
+      
+      <property name="MaxViewAngle" value="180"/>
+      <property name="SightRange" value="30" />
+      <!-- distance in m -->
+      <property name="SightLightThreshold" value="-2,150" />
+      <!-- how well lit you have to be for the zombie to see you at min,max range -->
+      <property name="LookAtAngle" value="60" />
+      
+      <property name="AttackTimeoutDay" value="1.5" />
+      <!-- in seconds -->
+      <property name="AttackTimeoutNight" value="1.1" />
+      
+      <property name="ExperienceGain" value="400" />
+      <!-- XP ZOMBIE TEMPLATE -->
+      <property name="LootDropProb" value=".04" />
+      <!-- Whether it drops a loot bag on death or not. -->
+      <!-- <property name="LootListOnDeath" value="45"/> -->
+      <property name="LootDropEntityClass" value="EntityLootContainerRegular" />
+      
+      <!-- <property name="CorpseBlock" value="air"/><property name="CorpseBlockChance" value="0"/> -->
+      <property name="TimeStayAfterDeath" value="30" />
+      <property name="DeadBodyHitPoints" value="1000" />
+      <!-- For harvesting or resisting corpse destruction -->
+
+      <property name="SleeperNoiseToSense" value="3,8" />
+      <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+      <property name="SleeperNoiseToSenseSoundChance" value=".5" />
+      <!-- the chance to play "SoundSleeperSense" -->
+      <property name="SleeperNoiseToWake" value="9,12" />
+      <property name="SleeperSightToSenseMin" value="-10,0" />
+      <!-- same as wake -->
+      <property name="SleeperSightToSenseMax" value="200,300" />
+      <property name="SleeperSightToWakeMin" value="-40,5" />
+      <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
+      <property name="SleeperSightToWakeMax" value="340,480" />
+      <!-- Indiv.Random. "I see you" light value at "SightRange" -->
+
+      <effect_group>
+        <!-- zombieTemplateMale -->
+        <passive_effect name="DistractionResistance" operation="base_set" value="0,0" />
+        <passive_effect name="HealthMax" operation="base_set" value="^healthZombieTemplate" />
+        
+        <!-- *** RANDOM_ZOMBIE_HEALTH -->
+        <passive_effect name="HealthMax" operation="perc_add" value="-.15,.15" />
+        
+        <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal" />
+        
+        <passive_effect name="StaminaMax" operation="base_set" value="100" />
+        <passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffRadiationPool" />
+        
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="0">
+          <requirement name="NotHasBuff" buff="buffBrawlerNoTeeth" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="1">
+          <requirement name="HasBuff" buff="buffBrawlerNoTeeth" />
+        </triggered_effect>
+      </effect_group>
+
+      <!-- distance in m -->
+      <property name="SightLightThreshold" value="-10,150" />
+      <!-- how well lit you have to be for the zombie to see you at min,max range -->
+      <property name="SleeperNoiseToSense" value="15,30" />
+      <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+      <property name="SleeperNoiseToSenseSoundChance" value=".8" />
+      <!-- the chance to play "SoundSleeperSense" -->
+      <property name="SleeperNoiseToWake" value="15,30" />
+      <property name="SleeperSightToSenseMin" value="-150,0" />
+      <!-- same as wake -->
+      <property name="SleeperSightToSenseMax" value="100,400" />
+      <property name="SleeperSightToWakeMin" value="-80,20" />
+      <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
+      <property name="SleeperSightToWakeMax" value="140,480" />
+      <!-- Indiv.Random. "I see you" light value at "SightRange" -->
+
+
+      <!-- Icons -->
+      <property name="CompassIcon" value="ui_game_symbol_enemy_dot" />
+      <property name="CompassUpIcon" value="ui_game_symbol_enemy_dot_up" />
+      <property name="CompassDownIcon" value="ui_game_symbol_enemy_dot_down" />
+      <property name="TrackerIcon" value="ui_game_symbol_zombie"/>
+      <property name="DanceType" value="1" />
+
+      <!-- Zombie Biome Adjustments -->
+      <effect_group name="Snow Biome">
+        <requirement name="InBiome" biome="1"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="-0.5"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value="-0.5"/>
+        <passive_effect name="ExperienceGain" operation="base_add" value="100"/>
+      </effect_group>
+      <effect_group name="Forest Biome">
+        <requirement name="InBiome" biome="5"/>
+      </effect_group>
+      <effect_group name="Desert Biome">
+        <requirement name="InBiome" biome="5"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="-0.5"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".5"/>
+      </effect_group>
+      <effect_group name="Wasteland Biome">
+        <requirement name="InBiome" biome="8"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="ExperienceGain" operation="base_add" value="200"/>
+      </effect_group>
+
+    </entity_class>
+    
+    <entity_class name="zombieTemplateMaleIconic" extends="zombieTemplateCommonIconic">          
+      <property name="Class" value="IconicZombie, Rise_From_The_Ashes"/>
+      <property name="CanClimbLadders" value="false"/>
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,walker,perkAT04,perkAT05,iconic"/>
+      <property name="PainResistPerHit" value="1"/>
+      <property name="MoveSpeedAggro" value="0.3, 0.3"/>
+      
+      <property name="EntityFlags" value="zombie" />
+      <!-- This decides for scoring -->
+      <property name="EntityType" value="Zombie" />
+      <!-- this property DOES NOT inherit on extends and target_tags cannot be AND connected -->
+      <!-- Mesh and class properties -->
+      <property name="AvatarController" value="AvatarZombieController" />
+      <property name="ModelType" value="Standard" />
+      <property name="HasRagdoll" value="true" />
+      <property name="RootMotion" value="true" />
+      <property name="Parent" value="Enemies" />
+      <property name="PhysicsBody" value="zombieStandard" />
+      <property name="Mass" value="170" />
+      <property name="Weight" value="70" />
+      <property name="PushFactor" value="5"/>
+      <property name="Faction" value="undead" />
+      <property name="IsEnemyEntity" value="true" />
+      <property name="CrouchType" value="1" />
+      <property name="WalkType" value="7" />
+      <property name="HasDeathAnim" value="true" />
+      <property name="ParticleOnDeath" value="blood_death" />
+      <property name="SurfaceCategory" value="organic" />
+
+      <property name="SoundRandomTime" value="30" />
+      <!-- Plays SoundRandom every 30/15 seconds -->
+      <property name="SoundRandom" value="zombiemaleroam" />
+      <property name="SoundAlertTime" value="25" />
+      <!-- Delay sounds after SoundAlert for x/2 to x seconds -->
+      <property name="SoundAlert" value="zombiemalealert" />
+      <property name="SoundSense" value="zombiemalesense" />
+      <property name="SoundHurt" value="zombiemalepain" />
+      <property name="SoundDeath" value="zombiemaledeath" />
+      <property name="SoundAttack" value="zombiemaleattack" />
+      <property name="SoundSleeperSense" value="sleepersense" />
+      <property name="SoundSleeperBackToSleep" value="sleeperbacktosleep" />
+      
+      <property name="AIFeralSense" value="1.5" />
+      <property name="AINoiseSeekDist" value="8" />
+      <property name="AIPathCostScale" value=".15, .4" />
+
+      <!-- Must match gore dismemberment tags -->
+      <!-- Override parts in the derived class -->
+      <!-- The first prefab in each list is the default -->
+      <!-- It is a fall back and uses no data but can take a scale -->
+      <!-- <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore;Prefabs/RedSphereTest;Prefabs/BlueSphereTest" data =";scale=1,1,1+type=blunt;scale=1,1,1+rot=1,1,1+type=blade"/> -->
+      <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore" />
+      <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore" />
+      <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore" />
+      <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore" />
+      <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore" />
+      <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore" />
+      <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore" />
+      <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore" />
+      <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore" />
+      
+      <property name="DismemberMultiplierHead" value="1" />
+      <property name="DismemberMultiplierArms" value="1" />
+      <property name="DismemberMultiplierLegs" value="1" />
+      <property name="LegCrippleScale" value="2" />
+      <!-- Scales chance to cripple (percent of health that a hit does is the chance) -->
+      <property name="LegCrawlerThreshold" value="0" />
+      <!-- Gameplay zombieTemplateMale -->
+      <property name="Buffs" value="zombieBuffStatusCheck01" />
+      <property name="HandItem" value="meleeHandZombie01" />
+      <property name="HandItemCrawler" value="meleeHandZombie02" />
+      <!-- meleeHandZombie02 is referenced in code but can be overridden -->
+      <property name="Immunity" value="sickness;disease;wellness" />
+      <!-- bleeding; -->
+      <property name="MaxTurnSpeed" value="250" />      
+      <!-- Just shambling around -->   
+      <property name="CanClimbLadders" value="false" />      
+      
+      <property name="MaxViewAngle" value="180"/>
+      <property name="SightRange" value="300" />
+      <!-- distance in m -->
+      <property name="LookAtAngle" value="60"/>
+      
+      <property name="KnockdownProneDamageThreshold" value="0.8" />
+      <property name="KnockdownProneStunDuration" value="1,2" />
+      <property name="KnockdownProneRefillRate" value="0.1,0.1" />
+      <property name="KnockdownKneelDamageThreshold" value="0.8" />
+      <property name="KnockdownKneelStunDuration" value="1,2" />
+      <property name="KnockdownKneelRefillRate" value="0.1,0.1" />
+      <property name="LegsExplosionDamageMultiplier" value="1" />
+      <property name="ArmsExplosionDamageMultiplier" value="1" />
+      <property name="HeadExplosionDamageMultiplier" value="1" />
+      <property name="ChestExplosionDamageMultiplier" value="1" />
+
+      <effect_group>
+        <!-- zombieTemplateMale -->
+        <passive_effect name="DistractionResistance" operation="base_set" value="0,0" />
+        <passive_effect name="HealthMax" operation="base_set" value="^healthZombieTemplate" />
+        <!-- *** RANDOM_ZOMBIE_HEALTH -->
+        <passive_effect name="HealthMax" operation="perc_add" value="-.15,.15" />
+        <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal" />
+        <passive_effect name="StaminaMax" operation="base_set" value="100" />
+        <passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffRadiationPool" />
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="0">
+          <requirement name="NotHasBuff" buff="buffBrawlerNoTeeth" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="1">
+          <requirement name="HasBuff" buff="buffBrawlerNoTeeth" />
+        </triggered_effect>
+      </effect_group>
+
+      <!-- distance in m -->
+      <property name="SightLightThreshold" value="-10,150" />
+      <!-- how well lit you have to be for the zombie to see you at min,max range -->
+      <property name="SleeperNoiseToSense" value="15,30" />
+      <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+      <property name="SleeperNoiseToSenseSoundChance" value=".8" />
+      <!-- the chance to play "SoundSleeperSense" -->
+      <property name="SleeperNoiseToWake" value="15,30" />
+      <property name="SleeperSightToSenseMin" value="-150,0" />
+      <!-- same as wake -->
+      <property name="SleeperSightToSenseMax" value="100,400" />
+      <property name="SleeperSightToWakeMin" value="-80,20" />
+      <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
+      <property name="SleeperSightToWakeMax" value="140,480" />
+      <!-- Indiv.Random. "I see you" light value at "SightRange" -->
+
+
+      <!-- Icons -->
+      <property name="CompassIcon" value="ui_game_symbol_enemy_dot" />
+      <property name="CompassUpIcon" value="ui_game_symbol_enemy_dot_up" />
+      <property name="CompassDownIcon" value="ui_game_symbol_enemy_dot_down" />
+      <property name="TrackerIcon" value="ui_game_symbol_zombie"/>
+      <property name="DanceType" value="1" />
+
+      <!-- Zombie Biome Adjustments -->
+      <effect_group name="Snow Biome">
+        <requirement name="InBiome" biome="1"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="-0.5"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value="-0.5"/>
+        <passive_effect name="ExperienceGain" operation="base_add" value="100"/>
+      </effect_group>
+      <effect_group name="Forest Biome">
+        <requirement name="InBiome" biome="5"/>
+      </effect_group>
+      <effect_group name="Desert Biome">
+        <requirement name="InBiome" biome="5"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="-0.5"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".5"/>
+      </effect_group>
+      <effect_group name="Wasteland Biome">
+        <requirement name="InBiome" biome="8"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="ExperienceGain" operation="base_add" value="200"/>
+      </effect_group>
+
+    </entity_class>
+
+    <entity_class name="zombieTemplateMaleIconicFeral" extends="zombieTemplateMaleIconic">
+      <property name="DismemberMultiplierHead" value=".7"/>
+      <property name="DismemberMultiplierArms" value=".7"/>
+      <property name="DismemberMultiplierLegs" value=".7"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="750"/>
+      <property name="LootDropProb" value=".03"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="300"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieTemplateMaleIconicRadiated" extends="zombieTemplateMaleIconic">
+      <property name="DismemberMultiplierHead" value=".4"/>
+      <property name="DismemberMultiplierArms" value=".4"/>
+      <property name="DismemberMultiplierLegs" value=".4"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="1200"/>
+      <property name="LootDropProb" value=".03"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="550"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- Male Iconic Charged/Infernal templates -->
+    <entity_class name="zombieTemplateMaleIconicCharged" extends="zombieTemplateMaleIconic">
+      <property name="DismemberMultiplierHead" value=".4"/>
+      <property name="DismemberMultiplierArms" value=".4"/>
+      <property name="DismemberMultiplierLegs" value=".4"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="1200"/>
+      <property name="LootDropProb" value=".03"/>
+      <property name="MatColor" value="charged"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="1000"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieTemplateMaleIconicInfernal" extends="zombieTemplateMaleIconic">
+      <property name="DismemberMultiplierHead" value=".4"/>
+      <property name="DismemberMultiplierArms" value=".4"/>
+      <property name="DismemberMultiplierLegs" value=".4"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="1200"/>
+      <property name="LootDropProb" value=".03"/>
+      <property name="MatColor" value="infernal"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="1600"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    
+    <!-- ICONIC FEMALE TEMPLATE -->
+    <entity_class name="zombieTemplateSlimFemaleIconic" extends="zombieTemplateCommonIconic">
+      <property name="Class" value="IconicZombie, Rise_From_The_Ashes"/>
+      <property name="CanClimbLadders" value="false"/>
+      <property name="UserSpawnType" value="Menu"/>
+      <property name="Tags" value="entity,zombie,walker,perkAT04,perkAT05,iconic"/>
+      <property name="PainResistPerHit" value="1"/>
+      <property name="MoveSpeedAggro" value="0.3, 0.3"/>
+
+      <property name="MaxViewAngle" value="180"/>
+      <property name="SightRange" value="300" />
+      <!-- distance in m -->      
+      <property name="LookAtAngle" value="60"/>
+
+      <property name="KnockdownProneDamageThreshold" value="0.8" />
+      <property name="KnockdownProneStunDuration" value="1,2" />
+      <property name="KnockdownProneRefillRate" value="0.1,0.1" />
+      <property name="KnockdownKneelDamageThreshold" value="0.8" />
+      <property name="KnockdownKneelStunDuration" value="1,2" />
+      <property name="KnockdownKneelRefillRate" value="0.1,0.1" />
+      <property name="LegsExplosionDamageMultiplier" value="1" />
+      <property name="ArmsExplosionDamageMultiplier" value="1" />
+      <property name="HeadExplosionDamageMultiplier" value="1" />
+      <property name="ChestExplosionDamageMultiplier" value="1" />
+      
+      <!-- distance in m -->
+      <property name="SightLightThreshold" value="-10,150" />
+      <!-- how well lit you have to be for the zombie to see you at min,max range -->
+      <property name="SleeperNoiseToSense" value="15,30" />
+      <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+      <property name="SleeperNoiseToSenseSoundChance" value=".8" />
+      <!-- the chance to play "SoundSleeperSense" -->
+      <property name="SleeperNoiseToWake" value="15,30" />
+      <property name="SleeperSightToSenseMin" value="-150,0" />
+      <!-- same as wake -->
+      <property name="SleeperSightToSenseMax" value="100,400" />
+      <property name="SleeperSightToWakeMin" value="-80,20" />
+      <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
+      <property name="SleeperSightToWakeMax" value="140,480" />
+      <!-- Indiv.Random. "I see you" light value at "SightRange" -->
+
+      <!-- Icons -->
+      <property name="CompassIcon" value="ui_game_symbol_enemy_dot" />
+      <property name="CompassUpIcon" value="ui_game_symbol_enemy_dot_up" />
+      <property name="CompassDownIcon" value="ui_game_symbol_enemy_dot_down" />
+      <property name="TrackerIcon" value="ui_game_symbol_zombie"/>
+      <property name="DanceType" value="1" />
+
+      <!-- Do not do anything after destroying a block.-->
+      <property class="DestroyBlockBehavior">
+        <property name="None" data="weight=0.0"/>
+        <property name="Stumble" data="weight=0.0"/>
+        <property name="Ragdoll" data="weight=0.0"/>
+      </property>
+
+      <!-- Make falling mostly a fall and not rage -->
+      <property class="FallLandBehavior">
+        <property name="1None" data="anim=None;height=0,1;weight=0.4"/>
+        <property name="1Land" data="anim=Land;height=0,1;weight=0.4"/>
+        <property name="1LandLow" data="anim=LandLow;height=0,1;weight=0.15"/>
+        <property name="1Stumble" data="anim=Stumble;height=0,1;weight=0.05"/>
+
+        <property name="LowLand" data="anim=LandLow;height=1,3;weight=0.7"/>
+        <property name="LowStumble" data="anim=Stumble;height=1,3;weight=0.3"/>
+
+        <property name="MidStumble" data="anim=Stumble;height=3,5;weight=0.3"/>
+        <property name="MidStumbleAndRage" data="anim=Stumble;height=3,5;weight=0.3;ragePer=0.0,0.0;rageTime=0.0,0.0"/>
+        <property name="MidLandHard" data="anim=LandHard;height=3,5;weight=0.3"/>
+        <property name="MidLandHardAndRage" data="anim=LandHard;height=3,5;weight=0.3;ragePer=0.0,0.0;rageTime=0.0,0.0"/>
+
+        <property name="HighStumbleAndRage" data="anim=Stumble;height=5,13;weight=0.13;ragePer=0.0,0.0;rageTime=0,0"/>
+        <property name="Ragdoll" data="anim=Ragdoll;height=3;weight=0.4"/>
+      </property>
+
+      <property name="AITask-1" value="BreakBlocksIconic, Rise_From_The_Ashes" />
+      <property name="AITask-2" value="ApproachAndAttackIconic, Rise_From_The_Ashes" />
+      <property name="AITask-3" value="WanderIconic, Rise_From_The_Ashes" />
+      <property name="AITask-4" value="ApproachSpotIconic, Rise_From_The_Ashes" />
+      <property name="AITask-5" value="LookIconic, Rise_From_The_Ashes" />
+      <property name="AITask-6" value="" />
+      <property name="AITask-7" value="" />
+      <property name="AITask-8" value="" />
+
+      <property name="AITarget-1" value="SetAsTargetIfHurt"/>
+      <property name="AITarget-2" value="BlockingTargetTask"/>
+      <property name="AITarget-3" value="SetNearestEntityAsTargetIconic, Rise_From_The_Ashes" data="class=EntityPlayer,0,0,EntityBandit,0,0,EntityAnimal,0,0"/>
+      <property name="AITarget-4" value=""/>
+      <property name="AITarget-5" value=""/>
+      <property name="AITarget-6" value=""/>
+
+      <!-- Zombie Biome Adjustments -->
+      <effect_group name="Snow Biome">
+        <requirement name="InBiome" biome="1"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="-0.5"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value="-0.5"/>
+        <passive_effect name="ExperienceGain" operation="base_add" value="100"/>
+      </effect_group>
+      <effect_group name="Forest Biome">
+        <requirement name="InBiome" biome="5"/>
+      </effect_group>
+      <effect_group name="Desert Biome">
+        <requirement name="InBiome" biome="5"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="-0.5"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".5"/>
+      </effect_group>
+      <effect_group name="Wasteland Biome">
+        <requirement name="InBiome" biome="8"/>
+        <passive_effect name="HealthMax" operation="perc_add" value="2"/>
+        <passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value="1"/>
+        <passive_effect name="ExperienceGain" operation="base_add" value="200"/>
+      </effect_group>
+
+    </entity_class>
+
+    <entity_class name="zombieTemplateSlimFemaleIconicFeral" extends="zombieTemplateSlimFemaleIconic">
+      <property name="DismemberMultiplierHead" value=".7"/>
+      <property name="DismemberMultiplierArms" value=".7"/>
+      <property name="DismemberMultiplierLegs" value=".7"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="750"/>
+      <property name="LootDropProb" value=".03"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieTemplateSlimFemaleIconicRadiated" extends="zombieTemplateSlimFemaleIconic">
+      <property name="DismemberMultiplierHead" value=".4"/>
+      <property name="DismemberMultiplierArms" value=".4"/>
+      <property name="DismemberMultiplierLegs" value=".4"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="1200"/>
+      <property name="LootDropProb" value=".03"/>
+      <property name="MatColor" value="radiated"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieTemplateSlimFemaleIconicCharged" extends="zombieTemplateSlimFemaleIconic">
+      <property name="DismemberMultiplierHead" value=".4"/>
+      <property name="DismemberMultiplierArms" value=".4"/>
+      <property name="DismemberMultiplierLegs" value=".4"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="1200"/>
+      <property name="LootDropProb" value=".03"/>
+      <property name="MatColor" value="charged"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="1000"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieTemplateSlimFemaleIconicInfernal" extends="zombieTemplateSlimFemaleIconic">
+      <property name="DismemberMultiplierHead" value=".4"/>
+      <property name="DismemberMultiplierArms" value=".4"/>
+      <property name="DismemberMultiplierLegs" value=".4"/>
+      <property name="MoveSpeedAggro" value="0.6, 0.6"/>
+      <property name="ExperienceGain" value="1200"/>
+      <property name="LootDropProb" value=".03"/>
+      <property name="MatColor" value="infernal"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="1600"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- Arlene Iconic Variants -->
+    <entity_class name="zombieArleneIconic" extends="zombieTemplateSlimFemaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Arlene/ZArlene.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Arlene/Materials/HD_Arlene2.mat,@:Entities/Zombies/Arlene/Materials/HD_Arlene3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieArleneIconicFeral" extends="zombieArleneIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Arlene/ZArleneFeral.prefab"/>
+    </entity_class>
+
+    <entity_class name="zombieArleneIconicRadiated" extends="zombieTemplateSlimFemaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Arlene/ZArleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Arlene/Materials/HD_Arlene_Radiated2.mat,@:Entities/Zombies/Arlene/Materials/HD_Arlene_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieArleneIconicCharged" extends="zombieTemplateSlimFemaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Arlene/ZArleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Arlene/Materials/HD_Arlene_Radiated2.mat,@:Entities/Zombies/Arlene/Materials/HD_Arlene_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieArleneIconicInfernal" extends="zombieTemplateSlimFemaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Arlene/ZArleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Arlene/Materials/HD_Arlene_Radiated2.mat,@:Entities/Zombies/Arlene/Materials/HD_Arlene_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Darlene Iconic Variants -->
+    <entity_class name="zombieDarleneIconic" extends="zombieTemplateSlimFemaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarlene.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Darlene/Materials/HD_Darlene2.mat,@:Entities/Zombies/Darlene/Materials/HD_Darlene3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieDarleneIconicFeral" extends="zombieTemplateSlimFemaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarleneFeral.prefab"/>
+    </entity_class>
+
+    <entity_class name="zombieDarleneIconicRadiated" extends="zombieTemplateSlimFemaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Darlene/Materials/HD_Darlene_Radiated2.mat,@:Entities/Zombies/Darlene/Materials/HD_Darlene_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieDarleneIconicCharged" extends="zombieTemplateSlimFemaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Darlene/Materials/HD_Darlene_Radiated2.mat,@:Entities/Zombies/Darlene/Materials/HD_Darlene_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieDarleneIconicInfernal" extends="zombieTemplateSlimFemaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Darlene/Materials/HD_Darlene_Radiated2.mat,@:Entities/Zombies/Darlene/Materials/HD_Darlene_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Marlene Version -->
+    <entity_class name="zombieMarleneIconic" extends="zombieTemplateSlimFemaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarlene.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Marlene/Materials/HD_Marlene2.mat,@:Entities/Zombies/Marlene/Materials/HD_Marlene3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieMarleneIconicFeral" extends="zombieTemplateSlimFemaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarleneFeral.prefab"/>
+    </entity_class>
+
+    <entity_class name="zombieMarleneIconicRadiated" extends="zombieTemplateSlimFemaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Marlene/Materials/HD_Marlene_Radiated2.mat,@:Entities/Zombies/Marlene/Materials/HD_Marlene_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieMarleneIconicCharged" extends="zombieTemplateSlimFemaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Marlene/Materials/HD_Marlene_Radiated2.mat,@:Entities/Zombies/Marlene/Materials/HD_Marlene_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieMarleneIconicInfernal" extends="zombieTemplateSlimFemaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Marlene/ZMarleneRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Marlene/Materials/HD_Marlene_Radiated2.mat,@:Entities/Zombies/Marlene/Materials/HD_Marlene_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Party Girl Iconic Variants -->
+    <entity_class name="zombiePartyGirlIconic" extends="zombieTemplateSlimFemaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitress.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/CocktailWaitress/Materials/HD_CocktailWaitress2.mat,@:Entities/Zombies/CocktailWaitress/Materials/HD_CocktailWaitress3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombiePartyGirlIconicFeral" extends="zombieTemplateSlimFemaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitressFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombiePartyGirlIconicRadiated" extends="zombieTemplateSlimFemaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitressRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/CocktailWaitress/Materials/HD_Cocktail_Waitress_Radiated2.mat,@:Entities/Zombies/CocktailWaitress/Materials/HD_Cocktail_Waitress_Radiated3.mat"/>
+
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+
+    </entity_class>
+
+    <entity_class name="zombiePartyGirlIconicCharged" extends="zombieTemplateSlimFemaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitressRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/CocktailWaitress/Materials/HD_Cocktail_Waitress_Radiated2.mat,@:Entities/Zombies/CocktailWaitress/Materials/HD_Cocktail_Waitress_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombiePartyGirlIconicInfernal" extends="zombieTemplateSlimFemaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/CocktailWaitress/ZCocktailWaitressRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/CocktailWaitress/Materials/HD_Cocktail_Waitress_Radiated2.mat,@:Entities/Zombies/CocktailWaitress/Materials/HD_Cocktail_Waitress_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="1600"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- Nurse Iconic Variants  -->
+    <entity_class name="zombieNurseIconic" extends="zombieTemplateSlimFemaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurse.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Nurse/Materials/HD_NurseZ2.mat,@:Entities/Zombies/Nurse/Materials/HD_NurseZ3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieNurseIconicFeral" extends="zombieTemplateSlimFemaleIconicFeral">
+      <property name="Tags" value="entity,zombie,walker,allbiome,feral"/>
+      <property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurseFeral.prefab"/>
+
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieNurseIconicRadiated" extends="zombieTemplateSlimFemaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurseRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Nurse/Materials/HD_NurseZ_Radiated2.mat,@:Entities/Zombies/Nurse/Materials/HD_NurseZ_Radiated3.mat"/>
+
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieNurseIconicCharged" extends="zombieTemplateSlimFemaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurseRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Nurse/Materials/HD_NurseZ_Radiated2.mat,@:Entities/Zombies/Nurse/Materials/HD_NurseZ_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="1000"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieNurseIconicInfernal" extends="zombieTemplateSlimFemaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Nurse/ZNurseRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Nurse/Materials/HD_NurseZ_Radiated2.mat,@:Entities/Zombies/Nurse/Materials/HD_NurseZ_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="1600"/>
+      </effect_group>
+    </entity_class>
+
+    <!-- Joe Iconic -->
+    <entity_class name="zombieJoeIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Joe/ZJoe.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Joe/Materials/HD_Joe2.mat,@:Entities/Zombies/Joe/Materials/HD_Joe3.mat"/>
+    </entity_class>
+    <entity_class name="zombieJoeIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Joe/ZJoeFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    
+    <entity_class name="zombieJoeIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Joe/ZJoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Joe/Materials/HD_Joe_Radiated2.mat,@:Entities/Zombies/Joe/Materials/HD_Joe_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    
+    <entity_class name="zombieJoeIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Joe/ZJoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Joe/Materials/HD_Joe_Radiated2.mat,@:Entities/Zombies/Joe/Materials/HD_Joe_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieJoeIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Joe/ZJoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Joe/Materials/HD_Joe_Radiated2.mat,@:Entities/Zombies/Joe/Materials/HD_Joe_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Boe Iconic Variants -->
+    <entity_class name="zombieBoeIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Boe/ZBoe.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Boe/Materials/HD_Boe2.mat,@:Entities/Zombies/Boe/Materials/HD_Boe3.mat"/>
+    </entity_class>
+    
+    <entity_class name="zombieBoeIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Boe/ZBoeFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieBoeIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Boe/ZBoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Boe/Materials/HD_Boe_Radiated2.mat,@:Entities/Zombies/Boe/Materials/HD_Boe_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieBoeIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Boe/ZBoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Boe/Materials/HD_Boe_Radiated2.mat,@:Entities/Zombies/Boe/Materials/HD_Boe_Radiated3.mat"/>
+    </entity_class>
+
+    <entity_class name="zombieBoeIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Boe/ZBoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Boe/Materials/HD_Boe_Radiated2.mat,@:Entities/Zombies/Boe/Materials/HD_Boe_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- MaleHazmat Iconic Variants -->
+    <entity_class name="zombieMaleHazmatIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmat.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hazmat/Materials/HD_HazmatZ2.mat,@:Entities/Zombies/Hazmat/Materials/HD_HazmatZ3.mat"/>
+    </entity_class>
+    <entity_class name="zombieMaleHazmatIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmatFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieMaleHazmatIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmatRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hazmat/Materials/HD_Hazmat_Radiated2.mat,@:Entities/Zombies/Hazmat/Materials/HD_Hazmat_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieMaleHazmatIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmatRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hazmat/Materials/HD_Hazmat_Radiated2.mat,@:Entities/Zombies/Hazmat/Materials/HD_Hazmat_Radiated3.mat"/>
+    </entity_class>
+    <entity_class name="zombieMaleHazmatIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmatRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hazmat/Materials/HD_Hazmat_Radiated2.mat,@:Entities/Zombies/Hazmat/Materials/HD_Hazmat_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Burnt Iconic Variants -->
+    <entity_class name="zombieBurntIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurnt.prefab"/>
+    </entity_class>
+    <entity_class name="zombieBurntIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurntFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieBurntIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurntRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieBurntIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurntRadiated.prefab"/>
+    </entity_class>
+    <entity_class name="zombieBurntIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurntRadiated.prefab"/>
+    </entity_class>
+
+    <!-- Biker Iconic Variants -->
+    <entity_class name="zombieBikerIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Biker/ZBiker.prefab"/>
+    </entity_class>
+    <entity_class name="zombieBikerIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Biker/ZBikerFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieBikerIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Biker/ZBikerRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieBikerIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Biker/ZBikerRadiated.prefab"/>
+    </entity_class>
+    <entity_class name="zombieBikerIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Biker/ZBikerRadiated.prefab"/>
+    </entity_class>
+
+    <!-- BusinessMan Iconic Variants -->
+    <entity_class name="zombieBusinessManIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Suit/ZSuit.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Suit/Materials/HD_SuitZ2.mat,@:Entities/Zombies/Suit/Materials/HD_SuitZ3.mat"/>
+    </entity_class>
+    <entity_class name="zombieBusinessManIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Suit/ZSuitFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieBusinessManIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Suit/ZSuitRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Suit/Materials/HD_SuitZ_Radiated2.mat,@:Entities/Zombies/Suit/Materials/HD_SuitZ_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieBusinessManIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Suit/ZSuitRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Suit/Materials/HD_SuitZ_Radiated2.mat,@:Entities/Zombies/Suit/Materials/HD_SuitZ_Radiated3.mat"/>
+    </entity_class>
+    <entity_class name="zombieBusinessManIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Suit/ZSuitRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Suit/Materials/HD_SuitZ_Radiated2.mat,@:Entities/Zombies/Suit/Materials/HD_SuitZ_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Lab Iconic Variants -->
+    <entity_class name="zombieLabIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Lab/ZLab.prefab"/>
+    </entity_class>
+    <entity_class name="zombieLabIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Lab/ZLabFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieLabIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Lab/ZLabRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieLabIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Lab/ZLabRadiated.prefab"/>
+    </entity_class>
+    <entity_class name="zombieLabIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Lab/ZLabRadiated.prefab"/>
+    </entity_class>
+
+    <!-- Lumberjack Iconic Variants -->
+    <entity_class name="zombieLumberjackIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjack.prefab"/>
+    </entity_class>
+    <entity_class name="zombieLumberjackIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjackFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieLumberjackIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjackRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieLumberjackIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjackRadiated.prefab"/>
+    </entity_class>
+    <entity_class name="zombieLumberjackIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjackRadiated.prefab"/>
+    </entity_class>
+
+    <!-- Moe Iconic Variants -->
+    <entity_class name="zombieMoeIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Moe/ZMoe.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Moe/Materials/HD_Moe2.mat,@:Entities/Zombies/Moe/Materials/HD_Moe3.mat"/>
+    </entity_class>
+    <entity_class name="zombieMoeIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Moe/ZMoeFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieMoeIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Moe/ZMoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Moe/Materials/HD_Moe_Radiated2.mat,@:Entities/Zombies/Moe/Materials/HD_Moe_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieMoeIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Moe/ZMoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Moe/Materials/HD_Moe_Radiated2.mat,@:Entities/Zombies/Moe/Materials/HD_Moe_Radiated3.mat"/>
+    </entity_class>
+    <entity_class name="zombieMoeIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Moe/ZMoeRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Moe/Materials/HD_Moe_Radiated2.mat,@:Entities/Zombies/Moe/Materials/HD_Moe_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Skateboarder Iconic Variants -->
+    <entity_class name="zombieSkateboarderIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Thug/ZThug.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Thug/Materials/HD_Thug2.mat,@:Entities/Zombies/Thug/Materials/HD_Thug3.mat"/>
+    </entity_class>
+    <entity_class name="zombieSkateboarderIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Thug/ZThugFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSkateboarderIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Thug/ZThugRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Thug/Materials/HD_Thug_Radiated2.mat,@:Entities/Zombies/Thug/Materials/HD_Thug_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSkateboarderIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Thug/ZThugRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Thug/Materials/HD_Thug_Radiated2.mat,@:Entities/Zombies/Thug/Materials/HD_Thug_Radiated3.mat"/>
+    </entity_class>
+    <entity_class name="zombieSkateboarderIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Thug/ZThugRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Thug/Materials/HD_Thug_Radiated2.mat,@:Entities/Zombies/Thug/Materials/HD_Thug_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Steve Iconic Variants -->
+    <entity_class name="zombieSteveIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Steve/ZSteve.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Steve/Materials/HD_Steve2.mat,@:Entities/Zombies/Steve/Materials/HD_Steve3.mat,@:Entities/Zombies/Steve/Materials/HD_Steve4.mat,@:Entities/Zombies/Steve/Materials/HD_Steve5.mat"/>
+    </entity_class>
+    <entity_class name="zombieSteveIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Steve/ZSteveFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSteveIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Steve/ZSteveRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated2.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated3.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated4.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated5.mat"/>
+
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSteveIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Steve/ZSteveRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated2.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated3.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated4.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated5.mat"/>
+
+    </entity_class>
+    <entity_class name="zombieSteveIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Steve/ZSteveRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated2.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated3.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated4.mat,@:Entities/Zombies/Steve/Materials/HD_Steve_Radiated5.mat"/>
+
+    </entity_class>
+
+    <!-- TomClark Iconic Variants -->
+    <entity_class name="zombieTomClarkIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClark.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/TomClark/Materials/HD_TomClark2.mat,@:Entities/Zombies/TomClark/Materials/HD_TomClark3.mat"/>
+    </entity_class>
+    <entity_class name="zombieTomClarkIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClarkFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieTomClarkIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClarkRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/TomClark/Materials/HD_TomClark_Radiated2.mat,@:Entities/Zombies/TomClark/Materials/HD_TomClark_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieTomClarkIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClarkRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/TomClark/Materials/HD_TomClark_Radiated2.mat,@:Entities/Zombies/TomClark/Materials/HD_TomClark_Radiated3.mat"/>
+    </entity_class>
+    <entity_class name="zombieTomClarkIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/TomClark/ZTomClarkRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/TomClark/Materials/HD_TomClark_Radiated2.mat,@:Entities/Zombies/TomClark/Materials/HD_TomClark_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- UtilityWorker Iconic Variants -->
+    <entity_class name="zombieUtilityWorkerIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Worker/ZWorker.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Worker/Materials/HD_Worker2.mat,@:Entities/Zombies/Worker/Materials/HD_Worker3.mat"/>
+    </entity_class>
+    <entity_class name="zombieUtilityWorkerIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Worker/ZWorkerFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieUtilityWorkerIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Worker/ZWorkerRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Worker/Materials/HD_WorkerZ_Radiated2.mat,@:Entities/Zombies/Worker/Materials/HD_WorkerZ_Radiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieUtilityWorkerIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Worker/ZWorkerRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Worker/Materials/HD_WorkerZ_Radiated2.mat,@:Entities/Zombies/Worker/Materials/HD_WorkerZ_Radiated3.mat"/>
+    </entity_class>
+    <entity_class name="zombieUtilityWorkerIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Worker/ZWorkerRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Worker/Materials/HD_WorkerZ_Radiated2.mat,@:Entities/Zombies/Worker/Materials/HD_WorkerZ_Radiated3.mat"/>
+    </entity_class>
+
+    <!-- Wight Iconic Variants --> 
+    <entity_class name="zombieWightIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Wight/ZWightFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieWightIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Wight/ZWightRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieWightIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Wight/ZWightRadiated.prefab"/>
+
+    </entity_class>
+    <entity_class name="zombieWightIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Wight/ZWightRadiated.prefab"/>
+
+    </entity_class>
+
+    <!-- Yo Iconic Variants -->
+    <entity_class name="zombieYoIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Yo/ZYo.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Yo/Materials/HD_Yo2.mat,@:Entities/Zombies/Yo/Materials/HD_Yo3.mat"/>
+    </entity_class>
+    <entity_class name="zombieYoIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Yo/ZYoFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieYoIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Yo/ZYoRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Yo/Materials/HD_YoRadiated2.mat,@:Entities/Zombies/Yo/Materials/HD_YoRadiated3.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieYoIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Yo/ZYoRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Yo/Materials/HD_YoRadiated2.mat,@:Entities/Zombies/Yo/Materials/HD_YoRadiated3.mat"/>
+    </entity_class>
+    <entity_class name="zombieYoIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Yo/ZYoRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Yo/Materials/HD_YoRadiated2.mat,@:Entities/Zombies/Yo/Materials/HD_YoRadiated3.mat"/>
+    </entity_class>
+
+    <!-- FatHawaiian Iconic Variants -->
+    <entity_class name="zombieFatHawaiianIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiian.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie2.mat,@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie4.mat"/>
+    </entity_class>
+    <entity_class name="zombieFatHawaiianIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiianFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieFatHawaiianIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiianRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie_Radiated2.mat,@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie_Radiated4.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieFatHawaiianIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiianRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie_Radiated2.mat,@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie_Radiated4.mat"/>
+    </entity_class>
+    <entity_class name="zombieFatHawaiianIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiianRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie_Radiated2.mat,@:Entities/Zombies/Hawaiian/Materials/HD_Hawaiian_Zombie_Radiated4.mat"/>
+    </entity_class>
+
+    <!-- SteveCrawler Iconic Variants -->
+    <entity_class name="zombieSteveCrawlerIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Lab/ZSteveCrawler.prefab"/>
+    </entity_class>
+    <entity_class name="zombieSteveCrawlerIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Lab/ZSteveCrawlerFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSteveCrawlerIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteveCrawlerRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSteveCrawlerIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteveCrawlerRadiated.prefab"/>
+    </entity_class>
+    <entity_class name="zombieSteveCrawlerIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSteveCrawlerRadiated.prefab"/>
+    </entity_class>
+
+    <!-- Janitor Iconic Variants -->
+    <entity_class name="zombieJanitorIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanic.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Mechanic/Materials/HD_MechanicZ2.mat"/>
+    </entity_class>
+    <entity_class name="zombieJanitorIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanicFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieJanitorIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanicRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Mechanic/Materials/HD_Mechanic_Radiated2.mat"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieJanitorIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanicRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Mechanic/Materials/HD_Mechanic_Radiated2.mat"/>
+    </entity_class>
+    <entity_class name="zombieJanitorIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanicRadiated.prefab"/>
+      <property name="AltMats" value="@:Entities/Zombies/Mechanic/Materials/HD_Mechanic_Radiated2.mat"/>
+    </entity_class>
+
+    <!-- Spider Iconic Variants -->
+    <entity_class name="zombieSpiderIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Spider/ZSpider.prefab"/>
+    </entity_class>
+    <entity_class name="zombieSpiderIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSpiderIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieSpiderIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderRadiated.prefab"/>    </entity_class>
+    <entity_class name="zombieSpiderIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderRadiated.prefab"/>
+    </entity_class>  
+
+    <!-- Fat Cop Iconic Variants -->
+    <entity_class name="zombieFatCopIconic" extends="zombieTemplateMaleIconic">
+      <property name="Mesh" value="@:Entities/Zombies/Cop/ZCop.prefab"/>
+    </entity_class>
+    <entity_class name="zombieFatCopIconicFeral" extends="zombieTemplateMaleIconicFeral">
+      <property name="Mesh" value="@:Entities/Zombies/Cop/ZCopFeral.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieFatCopIconicRadiated" extends="zombieTemplateMaleIconicRadiated">
+      <property name="Mesh" value="@:Entities/Zombies/Cop/ZCopRadiated.prefab"/>
+      <effect_group name="Base Effects">
+        <passive_effect name="HealthMax" operation="base_set" value="800"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+      </effect_group>
+    </entity_class>
+    <entity_class name="zombieFatCopIconicCharged" extends="zombieTemplateMaleIconicCharged">
+      <property name="Mesh" value="@:Entities/Zombies/Cop/ZCopRadiated.prefab"/>
+    </entity_class>
+    <entity_class name="zombieFatCopIconicInfernal" extends="zombieTemplateMaleIconicInfernal">
+      <property name="Mesh" value="@:Entities/Zombies/Cop/ZCopRadiated.prefab"/>
+    </entity_class>
+    
+  </append>
   
 </configs>

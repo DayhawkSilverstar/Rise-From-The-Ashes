@@ -200,6 +200,10 @@
     <item group="skillMagazines" />
   </insertAfter>
 
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='beverages']/item[@name='drinkJarBeer']">
+    <item name="drinkDrPrepper"/>
+  </insertAfter>
+
   <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="groupWorkingStiffsBooks">
 			<item name="harvestingToolsSkillMagazine"/>

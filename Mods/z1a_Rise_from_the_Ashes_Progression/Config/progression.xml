@@ -410,15 +410,22 @@
 					<effect_description level="30" desc_key="statStrengthLevel030" long_desc_key="statStrengthLevel030LongDesc"/>				
 				</effect_group>
 				<effect_group>				
-					<passive_effect name="RunSpeed" operation="perc_add" value="-.25,1.1" tier="1,30"/> <!-- tier bonus -->
-					<passive_effect name="WalkSpeed" operation="perc_add" value="-.25,1.1" tier="1,30"/> <!-- tier bonus -->
-					<passive_effect name="CrouchSpeed" operation="perc_add" value="-.25,1.1" tier="1,30"/> <!-- tier bonus -->
-					<passive_effect name="JumpStrength" operation="perc_add" value="-.25,1" tier="1,30"/> <!-- tier bonus -->
+					<passive_effect name="RunSpeed" operation="perc_add" value="-.25,0" level="1,6"/>
+          <passive_effect name="RunSpeed" operation="perc_add" value="0,1" level="7,30"/>
+          <passive_effect name="JumpStrength" operation="perc_add" value="-.25,0" level="1,6"/>
+          <passive_effect name="JumpStrength" operation="perc_add" value="0,1" level="7,30" tags="running"/>
+          <passive_effect name="WalkSpeed" operation="perc_add" value="-.25,0" level="1,6"/>
+					<passive_effect name="WalkSpeed" operation="perc_add" value="0,1" level="7,30"/>          
+          <passive_effect name="CrouchSpeed" operation="perc_add" value="-.25,0" level="1,6"/>
+					<passive_effect name="CrouchSpeed" operation="perc_add" value="0,1" level="7,30"/>
+					
 					<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
 					<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
-					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>					
+					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
 
-					<!-- Increase MetabolismDuration with each level of the perk -->
+          
+
+          <!-- Increase MetabolismDuration with each level of the perk -->
 					<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value=".5">
 						<requirement name="ProgressionLevel" progression_name="statStrength" operation="GTE" value="1"/>
 						<requirement name="ProgressionLevel" progression_name="statStrength" operation="LT" value="3"/>
@@ -2049,19 +2056,7 @@
 					<effect_description level="4" desc_key="perkAnimalTrackerRank4Desc" long_desc_key="perkAnimalTrackerRank4LongDesc"/>
 					<effect_description level="5" desc_key="perkAnimalTrackerRank5Desc" long_desc_key="perkAnimalTrackerRank5LongDesc"/>
 				</effect_group>
-
-				<effect_group>
-						<!-- Increase the chance to find Hunter's Journal books until each book is read -->
-					<passive_effect name="LootProb" operation="perc_add" level="1,10" value="2,10" tags="huntingProb">
-						<!-- <requirement name="PerksUnlocked" skill_name="skillHuntingJournal" operation="LT" value="7"/> -->
-						<requirement name="ProgressionLevel" progression_name="perkHuntingJournalComplete" operation="LT" value="1"/>
-					</passive_effect>
-
-					<!-- When all Hunter's Journal books have been read, set the probability bonus of finding them to 0 -->
-					<passive_effect name="LootProb" operation="perc_add" level="1,3" value="0,0" tags="huntingProb">
-						<requirement name="ProgressionLevel" progression_name="perkHuntingJournalComplete" operation="Equals" value="1"/>
-					</passive_effect>
-				</effect_group>
+				
 			</perk>
 			<perk name="skillWoodCutting" parent="survivalTab" name_key="skillWoodCuttingName" desc_key="skillWoodCuttingDesc" base_skill_point_cost="0" icon="ui_game_symbol_tree">
 				<effect_group>				
@@ -2864,14 +2859,14 @@
 					<unlock_entry item="drinkJarGoldenRodTea,drinkJarRedTea,foodBoneBroth,foodBoiledMeat,foodEggBoiled" unlock_tier="2" />					
 				</display_entry>
 				<display_entry icon="CookingResearchBundle2" name_key="cookingT2-1" has_quality="false" unlock_level="15,20" >										
-					<unlock_entry item="CookingResearchBundle2,foodBaconAndEggs,drinkJarCoffee,foodMapleSyrup" unlock_tier="1" />
+					<unlock_entry item="CookingResearchBundle2,foodBaconAndEggs,drinkJarCoffee,foodMapleSyrup,foodTwiceBakedPotato" unlock_tier="1" />
 					<unlock_entry item="foodCornMeal" unlock_tier="2" />
 				</display_entry>
 				<display_entry icon="CookingResearchBundle3" name_key="cookingT3-1" has_quality="false" unlock_level="25,30,35,40" >
-					<unlock_entry item="CookingResearchBundle3,foodCornBread,drinkJarBlackStrapCoffee" unlock_tier="1" />
+					<unlock_entry item="CookingResearchBundle3,foodCornBread,drinkJarBlackStrapCoffee,foodTripleBakedPotato" unlock_tier="1" />
 					<unlock_entry item="drinkYuccaJuiceSmoothie" unlock_tier="2" />
 					<unlock_entry item="foodSpaghetti" unlock_tier="3" />
-					<unlock_entry item="foodPumpkinBread,foodFishTacos" unlock_tier="4" />
+					<unlock_entry item="foodPumpkinBread,foodMimisChocyCake,foodFishTacos" unlock_tier="4" />
 				</display_entry>
 				<display_entry icon="CookingResearchBundle4" name_key="cookingT4-1" has_quality="false" unlock_level="45,50,55,60" >
 					<unlock_entry item="CookingResearchBundle4,foodVegetableStew,foodPancakes" unlock_tier="1" />
@@ -2896,12 +2891,12 @@
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="drinkJarBoiledWater,foodCookedGrub,foodCharredMeat,meleeWpnBladeT0BoneKnife"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="CookingResearchBundle1,foodGrilledMeat,drinkJarYuccaJuice,foodBakedPotato,foodCornOnTheCob"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="drinkJarGoldenRodTea,drinkJarRedTea,foodBoneBroth,foodBoiledMeat,foodEggBoiled"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="CookingResearchBundle2,foodBaconAndEggs,drinkJarCoffee,foodMapleSyrup"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="CookingResearchBundle2,foodBaconAndEggs,drinkJarCoffee,foodMapleSyrup,foodTwiceBakedPotato"/>             
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="foodCornMeal"/>							
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="CookingResearchBundle3,foodCornBread,drinkJarBlackStrapCoffee"/>								
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="CookingResearchBundle3,foodCornBread,drinkJarBlackStrapCoffee,foodTripleBakedPotato"/>								
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="drinkYuccaJuiceSmoothie"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="foodSpaghetti"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="foodPumpkinBread,foodFishTacos"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="foodPumpkinBread,foodMimisChocyCake,foodFishTacos"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="CookingResearchBundle4,foodVegetableStew,foodPancakes"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="foodBlueberryPie,foodChiliDog"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="foodPumpkinPie"/>
@@ -3335,4 +3330,6 @@
 			</crafting_skill>															
 		</crafting_skills>
 	</append>
+
+
 </configs>

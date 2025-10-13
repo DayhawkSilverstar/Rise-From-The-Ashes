@@ -1,4 +1,62 @@
-<configs>	
+<configs>
+
+  <!-- =========================
+				 FOODS & ALCOHOL (items.xml)
+				 Add “comfort” buff on eat, and hook alcohol buffers on drink.
+				 ========================= -->
+
+  <!-- Comfort foods (safe list found in items.xml) -->
+  <append xpath="/items/item[@name='foodBaconAndEggs']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodBlueberryPie']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodChiliDog']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodFishTacos']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodGumboStew']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodHoboStew']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodMeatStew']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodPumpkinPie']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodShamChowder']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodShepardsPie']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodSpaghetti']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+  <append xpath="/items/item[@name='foodVegetableStew']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+  </append>
+
+  <!-- Alcohol hooks (items.xml shows these drink items and their drink groups) -->
+  <append xpath="/items/item[@name='drinkJarBeer']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaAlcoholBufferBeer"/>
+  </append>
+  <append xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaAlcoholBufferStrong"/>
+  </append>
+  <append xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaAlcoholBufferBeer"/>
+  </append>
+  <append xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group">
+    <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaAlcoholBufferBeer"/>
+  </append>
+  
 	<append xpath="/items">
     <item name="whisperClipMaster">
       <property name="HoldType" value="45"/>

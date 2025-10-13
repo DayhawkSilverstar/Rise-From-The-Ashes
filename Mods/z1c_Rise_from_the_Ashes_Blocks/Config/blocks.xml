@@ -1521,7 +1521,7 @@
 
 		<set xpath="/blocks/block[@name='plantHydroponicAloe']/property[@class='RepairItems']/property[@name='resourceElectricParts']/@name">resourceElectricPartsT3</set>    
     <set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='EconomicValue']/@value">20</set>
-    <set xpath="/blocks/block[@name='cropsHarvestableMaster']/property[@name='Tags']/@value">foliage</set>
+    <set xpath="/blocks/block[@name='cropsHarvestableMaster']/property[@name='Tags']/@value">challenge_farming,foliage,wildCropsHarvest</set>
     <set xpath="/blocks/block[@name='treeGrassMaster']/property[@name='Tags']/@value">twitchReplace,foliage</set>
     <set xpath="/blocks/block[@name='treeMaster']/property[@name='Tags']/@value">wood</set>
     <set xpath="/blocks/block[@name='treeMasterGrowing']/property[@name='EconomicValue']/@value">24</set>              
@@ -3590,8 +3590,106 @@
   <set xpath="/blocks/block[@name='cntToolBoxOpenWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntShoppingCartEmptyWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
   <set xpath="/blocks/block[@name='cntShoppingCartTippedWhite']/drop[@event='Destroy' and @name='resourceScrapIron']/@name">resourceLowQualityWroughtIron</set>
-  
-  <!-- Update loot containers -->	
+
+  <set xpath="/blocks/block[starts-with(@name,'wineBarrel')]/property[@name='LootList']/@value">groupDrinksLarge01</set>
+  <!-- Update loot containers -->
+
+  <!--  Bedroll: add aura if missing -->
+  <append xpath="/blocks/block[@name='bedroll'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortBedAOE(3)"/>
+  </append>
+  <!-- If another mod already added the property, we could merge explicitly; most packs keep it empty. -->
+
+  <!--  Land-claim keystone: add aura if missing -->
+  <append xpath="/blocks/block[@name='keystoneBlock'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortClaimAOE(7)"/>
+  </append>
+
+  <!--  Campfire already has ActiveRadiusEffects in vanilla; add our light aura token deterministically -->
+  <set xpath="/blocks/block[@name='campfire']/property[@name='ActiveRadiusEffects']/@value">
+    buffCampfireAOE(3),rfaComfortLightAOE(5)
+  </set>
+
+  <!--  Collapsed campfire: add aura if missing -->
+  <append xpath="/blocks/block[@name='cntCollapsedCampfire'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+
+  <!--  Torches: add aura if missing -->
+  <append xpath="/blocks/block[@name='wallTorchLight'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+  <append xpath="/blocks/block[@name='wallTorchLightPlayer'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+  <append xpath="/blocks/block[@name='torchWallHolder'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+
+  <!--  Sample electric lights: add aura if missing (extend as desired) -->
+  <append xpath="/blocks/block[@name='lightPorchWhite'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+  <append xpath="/blocks/block[@name='lightPorchBrown'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+  <append xpath="/blocks/block[@name='lightWallGooseneckWhite'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+  <append xpath="/blocks/block[@name='lightWallGooseneckBrown'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+  </append>
+
+  <!-- =========================
+       DECOR AURAS (blocks.xml)
+       Emit tiered decor auras; effects require claim aura → “home only”.
+       ========================= -->
+
+  <!-- Tier 1: small decor (candles, potted plants) -->
+  <append xpath="/blocks/block[@name='candleTableLight'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(3)"/>
+  </append>
+  <append xpath="/blocks/block[@name='candleTableLight'][property[@name='ActiveRadiusEffects']]">
+    <set xpath="/blocks/block[@name='candleTableLight']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(3)</set>
+  </append>
+
+  <append xpath="/blocks/block[@name='candleWallLight'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(3)"/>
+  </append>
+  <append xpath="/blocks/block[@name='candleWallLight'][property[@name='ActiveRadiusEffects']]">
+    <set xpath="/blocks/block[@name='candleWallLight']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(3)</set>
+  </append>
+
+  <append xpath="/blocks/block[@name='candleWallLightPlayer'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(3)"/>
+  </append>
+  <append xpath="/blocks/block[@name='candleWallLightPlayer'][property[@name='ActiveRadiusEffects']]">
+    <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(3)</set>
+  </append>
+
+  <append xpath="/blocks/block[starts-with(@name,'plantAloePotted')][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(2)"/>
+  </append>
+  <append xpath="/blocks/block[starts-with(@name,'plantAloePotted')][property[@name='ActiveRadiusEffects']]">
+    <set xpath="/blocks/block[starts-with(@name,'plantAloePotted')]/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(2)</set>
+  </append>
+
+  <!-- Tier 2: wall art (example painting safe helper) -->
+  <append xpath="/blocks/block[@name='cntPaintingPictureSafeRandomLootHelper'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T2(3)"/>
+  </append>
+  <append xpath="/blocks/block[@name='cntPaintingPictureSafeRandomLootHelper'][property[@name='ActiveRadiusEffects']]">
+    <set xpath="/blocks/block[@name='cntPaintingPictureSafeRandomLootHelper']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T2(3)</set>
+  </append>
+
+  <!-- Tier 3: (optional) upscale fixtures; extend with more if desired -->
+  <!-- Example stub kept for future upscale pieces; present but inert if absent -->
+  <append xpath="/blocks/block[@name='lightWallGooseneckBlue'][not(property[@name='ActiveRadiusEffects'])]">
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T3(3)"/>
+  </append>
+  <append xpath="/blocks/block[@name='lightWallGooseneckBlue'][property[@name='ActiveRadiusEffects']]">
+    <set xpath="/blocks/block[@name='lightWallGooseneckBlue']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T3(3)</set>
+  </append>
 	
   <append xpath="/blocks" >
 
@@ -7904,6 +8002,129 @@
         <!--Attribute "value" replaced by: "1a_Rise_from_the_Ashes_Blocks_Rise_Update"-->
       </property>
       <property name="FilterTags" value="MC_playerBlocks,SC_electrical" />
+    </block>
+
+    <block name="decoFlamingo">
+      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="Material" value="Mwood"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="AllowPickup" value="1"/>
+      <property name="CanPickUp" value="true"/>
+      <property name="TakeDelay" value="2"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?FlamingoDeco.prefab"/>
+      <property name="ModelOffset" value="0,0,0"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="decoFlamingoDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="CustomIcon" value="Flamingo"/>      
+      <property name="IsTerrainDecoration" value="false"/>
+      <drop event="Destroy" count="0"/>
+      <property name="SortOrder1" value="D100"/>
+      <property name="FilterTags" value="MC_indoor,SC_decor"/>
+    </block>
+
+    <block name="decoCrashDucky">
+      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="Material" value="Mwood"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="AllowPickup" value="1"/>
+      <property name="CanPickUp" value="true"/>
+      <property name="TakeDelay" value="2"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?RubberDuck.prefab"/>
+      <property name="ModelOffset" value="0,0,0"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="decoFlamingoDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="CustomIcon" value="Flamingo"/>
+      <property name="IsTerrainDecoration" value="false"/>
+      <drop event="Destroy" count="0"/>
+      <property name="SortOrder1" value="D100"/>
+      <property name="FilterTags" value="MC_indoor,SC_decor"/>
+    </block>
+
+    <block name="decoHumanSkull">
+      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="Material" value="Mwood"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="AllowPickup" value="1"/>
+      <property name="CanPickUp" value="true"/>
+      <property name="TakeDelay" value="2"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?HumanSkull.prefab"/>
+      <property name="ModelOffset" value="0,0,0"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="decoFlamingoDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="CustomIcon" value="Flamingo"/>
+      <property name="IsTerrainDecoration" value="false"/>
+      <drop event="Destroy" count="0"/>
+      <property name="SortOrder1" value="D100"/>
+      <property name="FilterTags" value="MC_indoor,SC_decor"/>
+    </block>
+
+    <block name="decoBlizzardFridge">
+      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="Material" value="Mwood"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="AllowPickup" value="1"/>
+      <property name="CanPickUp" value="true"/>
+      <property name="TakeDelay" value="2"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?BlizzardMiniFridge.prefab"/>
+      <property name="ModelOffset" value="0,0,0"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="decoFlamingoDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="CustomIcon" value="BlizzardMiniFridge"/>
+      <property name="IsTerrainDecoration" value="false"/>
+      <drop event="Destroy" count="0"/>
+      <property name="SortOrder1" value="D100"/>
+      <property name="FilterTags" value="MC_indoor,SC_decor"/>
+    </block>
+
+    <block name="plantedCranBerryT1-1">
+      <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="PlantGrowing.Next" value="plantedCranBerryT1-2"/>
+      <property name="CustomIcon" value="YuccaT2" />
+      <property name="UnlockedBy" value="skillFarming"/>
+      <property name="Material" value="Mcorn"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Plants.unity3d?CranBerryBush1.prefab"/>
+      <property name="PlaceAsRandomRotation" value="true"/>
+      <drop event="Destroy" name="plantedCranBerryT1-1" count="1"/>
+      <property name="EconomicValue" value="60"/>
+      <property name="SortOrder1" value="B952"/>
+      <property name="SortOrder2" value="0000"/>
+      <property name="Group" value="Food/Cooking"/>
+      <property name="Tags" value="seedSkill"/>
+    </block>
+
+    <block name="plantedCranBerryT1-2">
+      <property name="Extends" value="cropsGrowingMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="PlantGrowing.Next" value="plantedCranBerryHarvestPlayerT1"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Plants.unity3d?CranBerryBush2.prefab"/>
+      <drop event="Destroy" name="plantedCranBerryT1-1" count="1"/>
+      <property name="SortOrder1" value="B952"/>
+      <property name="SortOrder2" value="0001"/>
+      <property name="Tags" value="seedSkill2"/>
+    </block>
+
+    <block name="plantedCranBerryHarvestPlayerT1">
+      <property name="Extends" value="cropsHarvestableMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="DescriptionKey" value="plantedCranBerryHarvestPlayerT1Desc"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Plants.unity3d?CranBerryBush3.prefab"/>
+      <drop event="Harvest" name="foodCropYuccaFruit" count="3" tag="cropHarvest"/>
+      <drop event="Destroy" name="plantedYuccaT2-1" count="1"/>
+      <property name="SortOrder1" value="B952"/>
+      <property name="SortOrder2" value="0004"/>
+      <property name="Tags" value="seedSkill3,plantT2"/>
     </block>
   </append>
 </configs>

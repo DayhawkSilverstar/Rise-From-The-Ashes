@@ -4127,6 +4127,34 @@
       <ingredient name="resourceScrapIron" count="1"/>
     </recipe>
 
+    <recipe name="foodTripleBakedPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable,skillCooking">
+      <ingredient name="foodTwiceBakedPotato" count="1"/>
+      <ingredient name="foodGrilledMeat" count="1"/>
+    </recipe>
+
+    <recipe name="foodTwiceBakedPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable,skillCooking">
+      <ingredient name="foodBakedPotato" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+    </recipe>
+
+    <recipe name="foodMimisChocyCake" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable,skillCooking">
+      <!-- Simple ‘cake’ base to keep dependencies light; tweak to taste -->
+      <ingredient name="foodCornMeal" count="2"/>
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+    
+    <recipe name="decoFlamingo" count="1" craft_area="workbench">
+      <ingredient name="resourceScrapPolymers" count="10"/>
+      <ingredient name="resourceScrapIron" count="5"/>
+    </recipe>
 
   </append>
+
+  <!-- Change any recipe that crafts the old item -->
+  <set xpath="/recipes/recipe[@name='resourceCloth']/@name">resourceClothT1</set>
+
+  <!-- Change all ingredient refs to the old item anywhere in recipes -->
+  <set xpath="/recipes//ingredient[@name='resourceCloth']/@name">resourceClothT1</set>
 </configs>
