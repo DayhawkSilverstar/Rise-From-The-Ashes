@@ -2916,7 +2916,7 @@
 				</display_entry>
 				<display_entry icon="ElectronicsResearchBundle2" name_key="electricalT2-1" has_quality="false" unlock_level="15,20" >				
 					<unlock_entry item="ElectronicsResearchBundle2,resourceElectricPartsT2,tripwirepost,ceilingLight01_player,lanternDecorLightBlockVariantHelper" unlock_tier="1" />
-					<unlock_entry item="electricfencepost,batterybank,generatorbank,industrialLight01_player,industrialLight02_player,BlankProgramT2,endTableLamp" unlock_tier="2" />					
+					<unlock_entry item="electricfencepost,batterybank,generatorbank,industrialLight01_player,industrialLight02_player,BlankProgramT2,endTableLamp,Radio" unlock_tier="2" />					
 				</display_entry>
 				<display_entry icon="ElectronicsResearchBundle3" name_key="electricalT3-1" has_quality="false" unlock_level="25,30" >
 					<unlock_entry item="ElectronicsResearchBundle3,resourceElectricPartsT3,electrictimerrelay,motionsensor,modArmorNightVision,appliancesVariantHelper" unlock_tier="1" />
@@ -2960,7 +2960,7 @@
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="pressureplate,speaker,pressureplateLong,spotlightPlayer,ceilingLight07_player,BlankProgramT1,modGunFlashlight"/>							
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="ElectronicsResearchBundle2,resourceElectricPartsT2,tripwirepost,ceilingLight01_player,lanternDecorLightBlockVariantHelper,motionsensor,modArmorNightVision,appliancesVariantHelper"/>							
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="industrialLight01_player,industrialLight02_player"/>							
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="electricfencepost,batterybank,generatorbank,BlankProgramT2,endTableLamp"/>							
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="electricfencepost,batterybank,generatorbank,BlankProgramT2,endTableLamp,Radio"/>							
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="ElectronicsResearchBundle3,resourceElectricPartsT3,BlankProgram,electrictimerrelay"/>				
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="woodenGarageDoor5x3_PoweredBlockVariantHelper,woodenGarageDoor4x3_PoweredBlockVariantHelper,woodenGarageDoor3x3_PoweredBlockVariantHelper,ironGarageDoor_PoweredBlockVariantHelper,modGunLaserSight,BlankProgramT3,thrownTimedCharge,solarbank"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="solarCell"/>

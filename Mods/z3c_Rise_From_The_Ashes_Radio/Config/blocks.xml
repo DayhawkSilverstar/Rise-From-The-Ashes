@@ -8,7 +8,7 @@
 			<property name="LootList" value="Buddy5"/>			
 			<property name="Shape" value="ModelEntity" />	
 			<property name="Model" value="#@modfolder:Resources/Radio.unity3d?RiseRadio"/>			 
-			<property name="CustomIcon" value="Buddy5" />
+			<property name="CustomIcon" value="RiseRadio" />
 			<property name="CreativeMode" value="Player" />		
 			<property name="UnlockedBy" value="skillMechanicalEngineer"/>	
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>			

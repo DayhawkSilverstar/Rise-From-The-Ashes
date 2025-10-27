@@ -2039,6 +2039,9 @@
     <set xpath="/blocks/block[@name='decoStationaryBike']/property[@name='Tags']/@value">mechanicalSkill</set>
     <set xpath="/blocks/block[@name='decoTreadmill']/property[@name='Tags']/@value">electricianSkill,mechanicalSkill</set>
     <set xpath="/blocks/block[@name='bedroll']/property[@name='EconomicValue']/@value">10</set>
+		<set xpath="/blocks/block[@name='bedroll']/property[@name='Class']/@value">RiseBlockSleepingBag,Rise_From_The_Ashes</set>
+
+  
     <set xpath="/blocks/block[@name='bedrollPOI']/property[@name='EconomicValue']/@value">10</set>
     
 		<append xpath="/blocks/block[@name='bed02']"><property name="UnlockedBy" value="skillCarpentry"/></append>
@@ -3563,6 +3566,8 @@
   <set xpath="/blocks/block[@name='cntGasPumpRandomLootHelper']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>
   <set xpath="/blocks/block[@name='cntGasPumpFull']/property[@name='Class']/@value">RiseBlockCarExplodeLoot, Rise_From_The_Ashes</set>  
   
+  
+  
   <!-- Harvest Block fixes -->
   <set xpath="/blocks/block[@name='brickShapes']/drop[@event='Harvest' and @name='resourceRockSmall']/@name">resourceBrick</set>
   <set xpath="//block/drop[@event='Harvest' and @name='resourceForgedIron']/@name">resourceWroughtIron</set>
@@ -3595,49 +3600,50 @@
   <!-- Update loot containers -->
 
   <!--  Bedroll: add aura if missing -->
-  <append xpath="/blocks/block[@name='bedroll'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortBedAOE(3)"/>
+  <append xpath="/blocks/block[@name='bedroll'][not(property[@name='ActiveBuff'])]">
+    <property name="ActiveBuff" value="rfaComfortBedAOE"/>
+    <property name="BuffRadius" value="2.5"/>    
   </append>
-  <!-- If another mod already added the property, we could merge explicitly; most packs keep it empty. -->
 
+  <set xpath="/blocks/block[@name='keystoneBlock']/property[@name='Class']/@value">RiseBlockLandClaim,Rise_From_The_Ashes</set>
   <!--  Land-claim keystone: add aura if missing -->
-  <append xpath="/blocks/block[@name='keystoneBlock'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortClaimAOE(7)"/>
+  <append xpath="/blocks/block[@name='keystoneBlock'][not(property[@name='ActiveBuff'])]">
+    <property name="ActiveBuff" value="rfaComfortClaimAOE"/>      
   </append>
 
   <!--  Campfire already has ActiveRadiusEffects in vanilla; add our light aura token deterministically -->
   <set xpath="/blocks/block[@name='campfire']/property[@name='ActiveRadiusEffects']/@value">
-    buffCampfireAOE(3),rfaComfortLightAOE(5)
+    buffCampfireAOE,rfaComfortLightAOE
   </set>
 
   <!--  Collapsed campfire: add aura if missing -->
   <append xpath="/blocks/block[@name='cntCollapsedCampfire'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
 
   <!--  Torches: add aura if missing -->
   <append xpath="/blocks/block[@name='wallTorchLight'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
   <append xpath="/blocks/block[@name='wallTorchLightPlayer'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
   <append xpath="/blocks/block[@name='torchWallHolder'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
 
   <!--  Sample electric lights: add aura if missing (extend as desired) -->
   <append xpath="/blocks/block[@name='lightPorchWhite'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
   <append xpath="/blocks/block[@name='lightPorchBrown'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
   <append xpath="/blocks/block[@name='lightWallGooseneckWhite'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
   <append xpath="/blocks/block[@name='lightWallGooseneckBrown'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE(4)"/>
+    <property name="ActiveRadiusEffects" value="rfaComfortLightAOE"/>
   </append>
 
   <!-- =========================
@@ -3647,48 +3653,48 @@
 
   <!-- Tier 1: small decor (candles, potted plants) -->
   <append xpath="/blocks/block[@name='candleTableLight'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(3)"/>
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1"/>
   </append>
   <append xpath="/blocks/block[@name='candleTableLight'][property[@name='ActiveRadiusEffects']]">
-    <set xpath="/blocks/block[@name='candleTableLight']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(3)</set>
+    <set xpath="/blocks/block[@name='candleTableLight']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1</set>
   </append>
 
   <append xpath="/blocks/block[@name='candleWallLight'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(3)"/>
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1"/>
   </append>
   <append xpath="/blocks/block[@name='candleWallLight'][property[@name='ActiveRadiusEffects']]">
-    <set xpath="/blocks/block[@name='candleWallLight']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(3)</set>
+    <set xpath="/blocks/block[@name='candleWallLight']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1</set>
   </append>
 
   <append xpath="/blocks/block[@name='candleWallLightPlayer'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(3)"/>
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1"/>
   </append>
   <append xpath="/blocks/block[@name='candleWallLightPlayer'][property[@name='ActiveRadiusEffects']]">
-    <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(3)</set>
+    <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1</set>
   </append>
 
   <append xpath="/blocks/block[starts-with(@name,'plantAloePotted')][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1(2)"/>
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T1"/>
   </append>
   <append xpath="/blocks/block[starts-with(@name,'plantAloePotted')][property[@name='ActiveRadiusEffects']]">
-    <set xpath="/blocks/block[starts-with(@name,'plantAloePotted')]/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1(2)</set>
+    <set xpath="/blocks/block[starts-with(@name,'plantAloePotted')]/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T1</set>
   </append>
 
   <!-- Tier 2: wall art (example painting safe helper) -->
   <append xpath="/blocks/block[@name='cntPaintingPictureSafeRandomLootHelper'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T2(3)"/>
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T2"/>
   </append>
   <append xpath="/blocks/block[@name='cntPaintingPictureSafeRandomLootHelper'][property[@name='ActiveRadiusEffects']]">
-    <set xpath="/blocks/block[@name='cntPaintingPictureSafeRandomLootHelper']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T2(3)</set>
+    <set xpath="/blocks/block[@name='cntPaintingPictureSafeRandomLootHelper']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T2</set>
   </append>
 
   <!-- Tier 3: (optional) upscale fixtures; extend with more if desired -->
   <!-- Example stub kept for future upscale pieces; present but inert if absent -->
   <append xpath="/blocks/block[@name='lightWallGooseneckBlue'][not(property[@name='ActiveRadiusEffects'])]">
-    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T3(3)"/>
+    <property name="ActiveRadiusEffects" value="rfaDecorAOE_T3"/>
   </append>
   <append xpath="/blocks/block[@name='lightWallGooseneckBlue'][property[@name='ActiveRadiusEffects']]">
-    <set xpath="/blocks/block[@name='lightWallGooseneckBlue']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T3(3)</set>
+    <set xpath="/blocks/block[@name='lightWallGooseneckBlue']/property[@name='ActiveRadiusEffects']/@value">rfaDecorAOE_T3</set>
   </append>
 	
   <append xpath="/blocks" >
@@ -8125,6 +8131,26 @@
       <property name="SortOrder1" value="B952"/>
       <property name="SortOrder2" value="0004"/>
       <property name="Tags" value="seedSkill3,plantT2"/>
+    </block>
+
+    <block name="decoTiaAndTheTurtle">
+      <property name="Class" value="RiseDeco, Rise_From_The_Ashes"/>
+      <property name="Material" value="Mwood"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="AllowPickup" value="1"/>
+      <property name="CanPickUp" value="true"/>
+      <property name="TakeDelay" value="2"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?TiaAndTheTurtle.prefab"/>
+      <property name="ModelOffset" value="0,0,0"/>
+      <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="decoTiaAndTheTurtleDesc"/>
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="CustomIcon" value="BlizzardMiniFridge"/>
+      <property name="IsTerrainDecoration" value="false"/>
+      <drop event="Destroy" count="0"/>
+      <property name="SortOrder1" value="D100"/>
+      <property name="FilterTags" value="MC_indoor,SC_decor"/>
     </block>
   </append>
 </configs>

@@ -4143,11 +4143,23 @@
       <ingredient name="foodEgg" count="1"/>
       <ingredient name="resourceAnimalFat" count="1"/>
       <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="treeSap" count="40"/>
     </recipe>
     
     <recipe name="decoFlamingo" count="1" craft_area="workbench">
       <ingredient name="resourceScrapPolymers" count="10"/>
       <ingredient name="resourceScrapIron" count="5"/>
+    </recipe>
+
+    <recipe name="Radio" count="1" craft_area="workbench" tags="learnable,skillElectricalEngineer">
+      <ingredient name="resourceScrapPolymers" count="10"/>
+      <ingredient name="resourceScrapIron" count="5"/>
+      <ingredient name="resourceMechanicalPartsT3" count="2"/>
+      <ingredient name="resourceElectricPartsT3" count="5"/>
+    </recipe>
+
+    <recipe name="meleeWpnBladeT0PlasticKnife" count="1">
+      <ingredient name="resourceScrapPolymers" count="5"/>      
     </recipe>
 
   </append>

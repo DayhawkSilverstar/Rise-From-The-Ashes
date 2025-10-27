@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\z1c_Rise_from_the_Ashes_Blocks",
-    "\\z1c_Rise_from_the_Ashes_Blocks\\Config",
+    "\\z1a_Rise_from_the_Ashes_Progression\\Config",
+    "\\z1e_Rise_from_the_Ashes_Buffs\\Config",
     "\\z1n_Rise_from_the_Ashes_EntityGroups",
     "\\z1n_Rise_from_the_Ashes_EntityGroups\\Config",
-    "\\z3c_Rise_From_The_Ashes_Radio",
-    "\\z3c_Rise_From_The_Ashes_Radio\\Config",
+    "\\z1_Rise_from_the_Ashes_Loading_Screen",
+    "\\z1_Rise_from_the_Ashes_Loading_Screen\\Config",
+    "\\z1_Rise_from_the_Ashes_Loading_Screen\\Textures",
     "\\z4_Rise_from_the_Ashes_Entityclasses",
     "\\z4_Rise_from_the_Ashes_Entityclasses\\Config"
   ],
-  "SelectedNode": "\\z1c_Rise_from_the_Ashes_Blocks\\Config\\blocks.xml",
+  "SelectedNode": "\\z4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
   "PreviewInSolutionExplorer": false
 }

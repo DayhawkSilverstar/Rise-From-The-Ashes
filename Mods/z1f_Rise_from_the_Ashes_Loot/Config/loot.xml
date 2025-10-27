@@ -32,7 +32,7 @@
   <remove xpath="/lootcontainers/lootgroup[@name='groupSniperBooks']"/>
   <remove xpath="/lootcontainers/lootgroup[@name='groupAutoWeaponsBooks']"/>
   <remove xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahBooks']"/>
-  <remove xpath="/lootcontainers/lootgroup[@name='groupTechJunkieBooks']"/>  
+  <remove xpath="/lootcontainers/lootgroup[@name='groupTechJunkieBooks']"/>	
   <remove xpath="/lootcontainers/lootgroup[@name='groupZpackUtility02']/item[@group='groupSledgeSagaBooks']"/>
   <remove xpath="/lootcontainers/lootgroup[@name='groupZpackUtility02']/item[@group='groupArtOfMiningBooks']"/>
   <remove xpath="/lootcontainers/lootgroup[@name='groupZpackUtility02']/item[@group='groupWasteTreasuresBooks']"/>
@@ -136,7 +136,7 @@
   
   <remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneCargoModSchematic']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneMedicModSchematic']"/>
-	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneArmorPlatingModSchematic']"/>  
+	<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modRoboticDroneArmorPlatingModSchematic']"/>	
 
   <insertAfter xpath="/lootcontainers/lootgroup[@name='skillMagazines']/item[@name='clubsSkillMagazine']">
     <item name="sewWonderfulSkillMagazine" />
@@ -200,7 +200,8 @@
     <item group="skillMagazines" />
   </insertAfter>
 
-  <insertAfter xpath="/lootcontainers/lootgroup[@name='beverages']/item[@name='drinkJarBeer']">
+  <!-- Fix: target any lootgroup that actually contains beer, not a hard-coded group name -->
+  <insertAfter xpath="/lootcontainers/lootgroup[item[@name='drinkJarBeer']]/item[@name='drinkJarBeer']">
     <item name="drinkDrPrepper"/>
   </insertAfter>
 
@@ -211,7 +212,7 @@
 			<item name="salvageToolsSkillMagazine"/>
 			<item name="sledgehammersSkillMagazine"/>
 			<item name="workstationSkillMagazine"/>
-      <item name="carpentrySkillMagazine"/>      
+      <item name="carpentrySkillMagazine"/>			
     </lootgroup>
 
 		<lootgroup name="groupShotgunMessiahBooks">
@@ -433,7 +434,7 @@
   <!-- ELECTRICAL PARTS -->
 	<set xpath="/lootcontainers/lootgroup[@name='groupCraftingUncommon']/item[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='groupElectricalDevices']/item[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
-	<set xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot02']/item[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>  
+	<set xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot02']/item[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>	
 	<set xpath="/lootcontainers/lootgroup[@name='groupMoPower01']/item[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
 	<set xpath="/lootcontainers/lootgroup[@name='twitch_craftresources2']/item[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
 
@@ -557,7 +558,7 @@
 
 		<!-- Point to the new progression file -->
 	<append xpath="/lootcontainers">		
-	
+		
 		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 		<!-- *** LOOT_LISTS -->
 		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->

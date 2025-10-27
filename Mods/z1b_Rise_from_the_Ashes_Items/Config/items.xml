@@ -2613,6 +2613,9 @@
   </append>
   <append xpath="/items/item[@name='foodEgg']">
     <property name="ItemWeight" value="0.15"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowBad"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">8</set>
   <set xpath="/items/item[@name='foodEgg']/property[@name='Tags']/@value">food,foodSkill,repairTool</set>
@@ -2652,7 +2655,7 @@
     <property name="ItemWeight" value="0.5"/>
   </append>
   <append xpath="/items/item[@name='foodHoney']">
-    <property name="ItemWeight" value="0.0625"/>
+    <property name="ItemWeight" value="0.0625"/>    
   </append>
   <set xpath="/items/item[@name='foodHoney']/property[@name='EconomicValue']/@value">80</set>
   <set xpath="/items/item[@name='foodHoney']/property[@name='Tags']/@value">food,medical,medicalSkill</set>
@@ -2669,10 +2672,16 @@
   </append>
   <append xpath="/items/item[@name='foodCanCatfood']">
     <property name="ItemWeight" value="0.44"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowBad"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodCanCatfood']/property[@name='EconomicValue']/@value">20</set>
   <append xpath="/items/item[@name='foodCanDogfood']">
     <property name="ItemWeight" value="0.44"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowBad"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodCanDogfood']/property[@name='EconomicValue']/@value">40</set>
   <append xpath="/items/item[@name='foodCanChili']">
@@ -2724,11 +2733,17 @@
   <set xpath="/items/item[@name='foodCornBread']/property[@name='Tags']/@value">food,foodSkill</set>
   <append xpath="/items/item[@name='foodShamSandwich']">
     <property name="ItemWeight" value="0.555"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidBad"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodShamSandwich']/property[@name='EconomicValue']/@value">5</set>
   <set xpath="/items/item[@name='foodShamSandwich']/property[@name='Tags']/@value">food,foodSkill</set>
   <append xpath="/items/item[@name='foodCharredMeat']">
     <property name="ItemWeight" value="0.35"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowBad"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodCharredMeat']/property[@name='EconomicValue']/@value">20</set>
   <set xpath="/items/item[@name='foodCharredMeat']/property[@name='Tags']/@value">food,foodSkill</set>
@@ -2747,35 +2762,50 @@
   <set xpath="/items/item[@name='foodMeatStew']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodMeatStew']">
     <property name="ItemWeight" value="1"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodMeatStew']/property[@name='EconomicValue']/@value">134</set>
   <set xpath="/items/item[@name='foodMeatStew']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodSteakAndPotato']">
     <property name="ItemWeight" value="1.5"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='EconomicValue']/@value">100</set>
   <set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodShamChowder']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodShamChowder']">
     <property name="ItemWeight" value="1"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodShamChowder']/property[@name='EconomicValue']/@value">126</set>
   <set xpath="/items/item[@name='foodHoboStew']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodHoboStew']">
-    <property name="ItemWeight" value="1"/>
+    <property name="ItemWeight" value="1"/>    
   </append>
   <set xpath="/items/item[@name='foodHoboStew']/property[@name='EconomicValue']/@value">134</set>
   <set xpath="/items/item[@name='foodHoboStew']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodFishTacos']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodFishTacos']">
     <property name="ItemWeight" value=".75"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodHighComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodFishTacos']/property[@name='EconomicValue']/@value">100</set>
   <set xpath="/items/item[@name='foodFishTacos']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodChiliDog']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodChiliDog']">
     <property name="ItemWeight" value="0.4"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodChiliDog']/property[@name='EconomicValue']/@value">106</set>
   <set xpath="/items/item[@name='foodBakedPotato']/property[@name='UnlockedBy']/@value">skillCooking</set>
@@ -2793,42 +2823,63 @@
   <set xpath="/items/item[@name='foodPumpkinPie']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodPumpkinPie']">
     <property name="ItemWeight" value="1.35"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodPumpkinPie']/property[@name='EconomicValue']/@value">124</set>
   <set xpath="/items/item[@name='foodPumpkinPie']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodPumpkinCheesecake']">
     <property name="ItemWeight" value="1.375"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='EconomicValue']/@value">124</set>
   <set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodPumpkinBread']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodPumpkinBread']">
     <property name="ItemWeight" value="0.15"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodPumpkinBread']/property[@name='EconomicValue']/@value">124</set>
   <set xpath="/items/item[@name='foodPumpkinBread']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodGumboStew']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodGumboStew']">
     <property name="ItemWeight" value="1"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodHighComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodGumboStew']/property[@name='EconomicValue']/@value">250</set>
   <set xpath="/items/item[@name='foodGumboStew']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodShepardsPie']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodShepardsPie']">
     <property name="ItemWeight" value="1"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodShepardsPie']/property[@name='EconomicValue']/@value">250</set>
   <set xpath="/items/item[@name='foodShepardsPie']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodSpaghetti']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodSpaghetti']">
     <property name="ItemWeight" value="0.75"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodSpaghetti']/property[@name='EconomicValue']/@value">250</set>
   <set xpath="/items/item[@name='foodSpaghetti']/property[@name='Tags']/@value">food,foodSkill</set>
   <set xpath="/items/item[@name='foodTunaFishGravyToast']/property[@name='UnlockedBy']/@value">skillCooking</set>
   <append xpath="/items/item[@name='foodTunaFishGravyToast']">
     <property name="ItemWeight" value="0.5"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodTunaFishGravyToast']/property[@name='EconomicValue']/@value">250</set>
   <set xpath="/items/item[@name='foodTunaFishGravyToast']/property[@name='Tags']/@value">food,foodSkill</set>
@@ -2854,11 +2905,17 @@
   <set xpath="/items/item[@name='foodVegetableStew']/property[@name='Tags']/@value">food,foodSkill</set>
   <append xpath="/items/item[@name='foodRawMeat']">
     <property name="ItemWeight" value="0.5"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowBad"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodRawMeat']/property[@name='EconomicValue']/@value">10</set>
   <set xpath="/items/item[@name='foodRawMeat']/property[@name='Tags']/@value">food,foodSkill</set>
   <append xpath="/items/item[@name='foodRottingFlesh']">
     <property name="ItemWeight" value="0.5"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodHighBad"/>
+    </effect_group>
   </append>
   <set xpath="/items/item[@name='foodRottingFlesh']/property[@name='EconomicValue']/@value">5</set>
   <set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Tags']/@value">food,foodSkill</set>
@@ -4227,7 +4284,7 @@
         <!-- Stamina bonus (processed by buffProcessConsumables) -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
         <!-- Sanity: reuse your existing comfort buff that increments rfaSanity over time -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodHighComfort"/>
         <!-- Kick the standard consumables processor to apply all CVars/buffs -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
@@ -4270,7 +4327,7 @@
         <!-- Low direct health -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>        
         <!-- Sanity: reuse your existing comfort buff that increments rfaSanity over time -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodComfort"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
         <!-- Kick the standard consumables processor to apply all CVars/buffs -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
@@ -4295,6 +4352,7 @@
         <!-- Dysentery risk (10 %, mitigated by Metabolism) -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="10"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodHighBad"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
           <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
         </triggered_effect>
@@ -4323,6 +4381,7 @@
       <property name="CustomIcon" value="seeds"/>
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowBad"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -4339,6 +4398,7 @@
       <effect_group tiered="false" name="Food Tier 0">
         <!-- Hunger restored -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodLowBad"/>
         <!-- Standard consumable processing -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
         <!-- Tooltip values -->
@@ -4693,6 +4753,38 @@
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="rfaSanity" operation="set" value="-75"/>
       </effect_group>
     </item>
+
+    <item name="SanityApple-160">
+      <!-- Additional properties -->
+      <property name="Extends" value="foodRiseMaster"/>
+      <!-- Moved Extends property to the top -->
+      <!-- Properties for the Apple item -->
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+      <property name="DropScale" value="1"/>
+      <property name="ItemWeight" value="0.15"/>
+      <property name="CustomIcon" value="AppleIcon"/>
+      <property name="Material" value="Morganic"/>
+      <property name="Stacknumber" value="25"/>
+      <property name="Weight" value="1.5"/>
+      <property name="EconomicValue" value="12"/>
+      <property name="EconomicBundleSize" value="10"/>
+      <property name="DisplayType" value="food"/>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+      <!-- Action properties for using or consuming Apple -->
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="0.3"/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="Group" value="Food"/>
+      <effect_group tiered="false" name="Food Tier 0">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$stress" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="rfaSanity" operation="set" value="-160"/>
+      </effect_group>
+    </item>
     
     <item name="Tomato">
       <!-- Additional properties -->
@@ -4798,6 +4890,7 @@
         <!-- Balanced between T1 (10/5) and your T2 dishes (50/25) -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodMidComfort"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthFarmer" operation="set" value="12">
           <requirement name="HasBuff" buff="buffFarmerSetBonus"/>
         </triggered_effect>
@@ -4814,8 +4907,8 @@
       <property name="CustomIcon" value="TripleBakedPotato"/>
       <property name="HoldType" value="31"/>
       <property name="DisplayType" value="food"/>
-      <property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
-      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+      <property name="Meshfile" value="#@modfolder:Resources/Foods.unity3d?XPTripleBakedPotato"/>
+      <property name="DropMeshfile" value="#@modfolder:Resources/Foods.unity3d?XPTripleBakedPotato"/>
       <property name="Material" value="Morganic"/>
       <property name="Stacknumber" value="1000"/>
       <property name="EconomicValue" value="90"/>
@@ -4832,6 +4925,7 @@
         <!-- Strong mid/high dish, below 50/25 stews -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="40"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="rfaFoodHighComfort"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthFarmer" operation="set" value="20">
           <requirement name="HasBuff" buff="buffFarmerSetBonus"/>
         </triggered_effect>
@@ -10544,6 +10638,7 @@
       <property name="DisplayType" value="meleeKnife"/>
       <property name="HoldType" value="36"/>
       <property name="Meshfile" value="#@modfolder:Resources/Tools.unity3d?BluesPlasticShiv"/>
+      <property name="CustomIcon" value="PlasticShiv"/>
       <property name="Material" value="MresourceBone"/>
       <property name="TintColor" value="107, 107, 71"/>
       <property name="ScrapTimeOverride" value="10.0"/>
@@ -10605,21 +10700,21 @@
         <property name="HarvestLength" value="1.6"/>
       </property>
       <effect_group name="meleeWpnBladeT0PlasticKnife">
-        <passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfAgility"/>
-        <passive_effect name="StaminaLoss" operation="base_set" value="7.3" tags="primary"/>
-        <passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6" tags="perkDeepCuts"/>
-        <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
-        <passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkDeepCuts"/>
-        <passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
+        <passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="statDexterity,knife"/>
+        <passive_effect name="StaminaLoss" operation="base_set" value="7" tags="primary"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="150,200" tier="1,6" tags="statDexterity,knife"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="statDexterity,knife"/>
+        <passive_effect name="MaxRange" operation="base_set" value="2.0" tags="statDexterity,knife"/>
+        <passive_effect name="BlockRange" operation="base_set" value="2.5" tags="statDexterity,knife"/>
         <passive_effect name="ModSlots" operation="base_set" value="1,1,1,2,2,3" tier="1,2,3,4,5,6"/>
         <passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
         <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-        <passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDeepCuts,knife"/>
+        <passive_effect name="EntityDamage" operation="base_set" value="10" tags="statDexterity,knife"/>
         <!-- meleeWpnBladeT0BoneKnife -->
-        <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="statDexterity,knife"/>
         <!-- tier bonus -->
-        <passive_effect name="BlockDamage" operation="base_set" value="4" tags="perkDeepCuts"/>
-        <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/>
+        <passive_effect name="BlockDamage" operation="base_set" value="4" tags="statDexterity,knife"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="statDexterity,knife"/>
         <!-- tier bonus -->
         <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
         <passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
@@ -10629,18 +10724,18 @@
         <!--<passive_effect name="BlockDamage" operation="perc_add" value="4" tags="blockButcher"/>-->
       </effect_group>
       <effect_group name="Power Attack">
-        <passive_effect name="EntityDamage" operation="base_add" value="5.1" tags="secondary"/>
+        <passive_effect name="EntityDamage" operation="base_add" value="10.1" tags="secondary"/>
         <passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
         <passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
         <passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
-        <passive_effect name="StaminaLoss" operation="base_set" value="10.9" tags="secondary"/>
+        <passive_effect name="StaminaLoss" operation="base_set" value="10" tags="secondary"/>
         <!-- using perc_add here increases StaminaOT for no obvious reason -->
       </effect_group>
       <effect_group name="sneak damage bonus">
         <requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
         <requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
-        <passive_effect name="DamageBonus" operation="base_add" value="4"/>
-        <passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkDeepCuts"/>
+        <passive_effect name="DamageBonus" operation="base_add" value="8"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value="4" tags="statDexterity,knife"/>
         <display_value name="dEntityDamageSneak" value="4"/>
       </effect_group>
     </item>
@@ -10781,5 +10876,36 @@
       <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="20"/>
       <requirement name="EntityTagCompare" target="other" tags="player,walker"/>
     </triggered_effect>
+  </append>
+
+  <append xpath="/items">
+    <item name="meleeZombieHandsHallucination" extends="meleeHandZombie01">
+      <property name="Tags" value="blunt,melee,light,perkFlurryOfFortitude"/>
+      <property name="CreativeMode" value="None"/>
+      <property name="HoldType" value="9"/>
+      <property name="Material" value="Morganic"/>
+      <property name="Canhold" value="false"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Candrop" value="false"/>
+      <property name="CustomIcon" value="missingIcon"/>
+      <property class="Action0">
+        <!-- AttackAction -->
+        <property name="Class" value="Melee"/>
+        <property name="Delay" value=".8"/>
+        <!-- obsolete if rounds per minute exists -->
+        <property name="Range" value="1.65"/>
+        <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
+        <property name="Sphere" value=".1"/>
+        <property name="Block_range" value="2.5"/>                
+      </property>
+      <effect_group name="meleeHandMaster" tiered="false">
+        <passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
+      </effect_group>
+
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="DamageBonus" value="0"/>
+      <property name="DamageModifier" value="0"/>      
+    </item>
   </append>
 </configs>
