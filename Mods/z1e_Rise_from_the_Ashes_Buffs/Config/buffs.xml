@@ -5496,19 +5496,19 @@
              ========================= -->
 
         <!-- Daytime: gentle regeneration (+0.02 per update), clamp to < 200 -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.04">
           <requirement name="IsDay"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
         </triggered_effect>
 
         <!-- Nighttime: steady drain (-0.03 per update), clamp to > -200 -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.03">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.01">
           <requirement name="IsNight"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
         </triggered_effect>
 
         <!-- Night + Indoors (low-light proxy): extra drain (-0.02) -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.02">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.01">
           <requirement name="IsNight"/>
           <requirement name="IsIndoors"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
@@ -5527,13 +5527,13 @@
         </triggered_effect>
 
         <!-- Burnt Forest: significant drain (-0.04) -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.04">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.02">
           <requirement name="InBiome" biome="9"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
         </triggered_effect>
 
-        <!-- Snow: mild restore (+0.02) -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+        <!-- Snow: significant drain (+0.02) -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.04">
           <requirement name="InBiome" biome="1"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
         </triggered_effect>
@@ -5552,6 +5552,49 @@
     <buff name="rfaSanityPlayerHooks" icon="ui_game_symbol_focus" icon_color="160,200,255" hidden="true" show_in_ui="false" show_on_hud="false">
       <duration value="999999"/>
       <stack_type value="ignore"/>
+
+      <!-- LOW SANITY: < 40  → shakier aim (more random wiggle), looser crosshair -->
+      <effect_group>
+        <requirements compare_type="and">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="-40"/>
+        </requirements>
+
+        <!-- Slow handling = slower crosshair settle (more perceived wiggle) -->
+        <passive_effect name="WeaponHandling" operation="perc_add" value="-.15"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+
+        <!-- Looser while aiming/idle -->
+        <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value=".15"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+        <passive_effect name="SpreadMultiplierIdle" operation="perc_add" value=".10"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+
+        <!-- Successive shots bloom more (extra wiggle under fire) -->
+        <passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".10"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+      </effect_group>
+
+      <!-- HIGHER SANITY: ≥ 40 → steadier aim, tighter crosshair -->
+      <effect_group>
+        <requirements compare_type="and">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GTE" value="40"/>
+        </requirements>
+
+        <!-- Better handling = faster settle (reduced wiggle) -->
+        <passive_effect name="WeaponHandling" operation="perc_add" value=".10"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+
+        <!-- Tighter while aiming/idle -->
+        <passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.10"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+        <passive_effect name="SpreadMultiplierIdle" operation="perc_add" value="-.05"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+
+        <!-- Successive shots bloom less -->
+        <passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value="-.08"
+                        tags="perkGunslinger,perkMachineGunner,perkRifleman,perkArchery,perkTurrets"/>
+      </effect_group>
+
 
       <effect_group>
         <!-- =========================
@@ -5576,6 +5619,26 @@
         <!-- Severe hunger: <=10% -> -0.06 -->
         <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
           <requirement name="StatComparePercCurrentToMax" stat="Food" operation="LTE" value=".10"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.06">
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="LTE" value="1"/>
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="GT" value=".8"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Moderate hunger: 25%..10% -> -0.04 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.04">
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="LTE" value=".8"/>
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="GT" value=".70"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
+        </triggered_effect>
+
+        <!-- Severe hunger: <=10% -> -0.06 -->
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="LTE" value=".70"/>
+          <requirement name="StatComparePercCurrentToMax" stat="Food" operation="GT" value=".50"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
         </triggered_effect>
 
@@ -5611,7 +5674,7 @@
         <!-- =========================
              ON-DAMAGE sanity drop (one-shot with cooldown)
              ========================= -->
-        <triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-1">
+        <triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.25">
           <requirement name="!HasBuff" buff="rfaSanityHitCD"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
         </triggered_effect>
@@ -5717,7 +5780,7 @@
       </effect_group>
     </buff>
 
-    <buff name="rfaFoodLowBad" name_key="rfaFoodLowBad_name" description_key="rfaFoodLowBad_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+    <buff name="rfaFoodLowBad" name_key="rfaFoodLowBad_name" description_key="rfaFoodLowBad_desc" icon="ui_game_symbol_food" icon_color="255,255,153" show_on_hud="false" show_in_ui="false">
       <duration value="90"/>
       <stack_type value="replace"/>
       <display_value_key value="Comfort Food"/>
@@ -5728,7 +5791,7 @@
       </effect_group>
     </buff>
 
-    <buff name="rfaFoodMidBad" name_key="rfaFoodMidBad_name" description_key="rfaFoodMidBad_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+    <buff name="rfaFoodMidBad" name_key="rfaFoodMidBad_name" description_key="rfaFoodMidBad_desc" icon="ui_game_symbol_food" icon_color="255,153,51" show_on_hud="false" show_in_ui="false">
       <duration value="90"/>
       <stack_type value="replace"/>
       <display_value_key value="Comfort Food"/>
@@ -5739,7 +5802,7 @@
       </effect_group>
     </buff>
 
-    <buff name="rfaFoodHighBad" name_key="rfaFoodHighBad_name" description_key="rfaFoodHighBad_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+    <buff name="rfaFoodHighBad" name_key="rfaFoodHighBad_name" description_key="rfaFoodHighBad_desc" icon="ui_game_symbol_food" icon_color="255,0,0" show_on_hud="false" show_in_ui="false">
       <duration value="90"/>
       <stack_type value="replace"/>
       <display_value_key value="Comfort Food"/>
@@ -5751,7 +5814,7 @@
     </buff>
 
     <!--  Comfort food: brief regen on consume -->
-    <buff name="rfaFoodLowComfort" name_key="rfaFoodLowComfort_name" description_key="rfaFoodLowComfort_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+    <buff name="rfaFoodLowComfort" name_key="rfaFoodLowComfort_name" description_key="rfaFoodLowComfort_desc" icon="ui_game_symbol_food" icon_color="204,255,153" show_on_hud="false" show_in_ui="false">
       <duration value="90"/>
       <stack_type value="replace"/>
       <display_value_key value="Comfort Food"/><effect_group>
@@ -5761,7 +5824,7 @@
       </effect_group>
     </buff>
 
-    <buff name="rfaFoodMidComfort" name_key="rfaFoodMidComfort_name" description_key="rfaFoodMidComfort_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+    <buff name="rfaFoodMidComfort" name_key="rfaFoodMidComfort_name" description_key="rfaFoodMidComfort_desc" icon="ui_game_symbol_food" icon_color="51,255,51" show_on_hud="false" show_in_ui="false">
       <duration value="90"/>
       <stack_type value="replace"/>
       <display_value_key value="Comfort Food"/>
@@ -5774,15 +5837,29 @@
       </effect_group>
     </buff>
 
-    <buff name="rfaFoodHighComfort" name_key="rfaFoodHighComfort_name" description_key="rfaFoodHighComfort_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
+    <buff name="rfaFoodHighComfort" name_key="rfaFoodHighComfort_name" description_key="rfaFoodHighComfort_desc" icon="ui_game_symbol_food" icon_color="0,153,0" show_on_hud="false" show_in_ui="false">
       <duration value="90"/>
       <stack_type value="replace"/>
       <display_value_key value="Comfort Food"/>
       <effect_group>
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.1">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.2">
           <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
           <requirement name="!HasBuff" buff="rfaFoodLowComfort"/>
           <requirement name="!HasBuff" buff="rfaFoodMidComfort"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaFoodAmazingComfort" name_key="rfaFoodAmazingComfort_name" description_key="rfaFoodAmazingComfort_desc" icon="ui_game_symbol_food" icon_color="0,153,153" show_on_hud="false" show_in_ui="false">
+      <duration value="90"/>
+      <stack_type value="replace"/>
+      <display_value_key value="Comfort Food"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.3">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
+          <requirement name="!HasBuff" buff="rfaFoodLowComfort"/>
+          <requirement name="!HasBuff" buff="rfaFoodMidComfort"/>
+          <requirement name="!HasBuff" buff="rfaFoodHighComfort"/>
         </triggered_effect>
       </effect_group>
     </buff>
@@ -6508,59 +6585,6 @@
   </append>
 
 	<!-- ===================== /RFA: Sanity-driven EXP Multiplier ===================== -->
-
-  <!-- ===============================
-       1) NEW FOOD SANITY BUFFS
-       - Poor meal: small sanity loss
-       - Awful meal: larger sanity loss
-       - Amazing meal: bigger sanity gain
-       Your existing "rfaFoodComfort" stays as the comfort tier.
-       =============================== -->
-
-  <!-- Add new buffs to /buffs -->
-  <append xpath="/buffs">
-    <!-- Poor meal: brief sanity drain -->
-    <buff name="rfaFoodPoor" name_key="rfaFoodPoor_name" description_key="rfaFoodPoor_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
-      <duration value="90"/>
-      <stack_type value="replace"/>
-      <update_rate value="1"/>
-      <display_value_key value="Poor Meal"/>
-      <effect_group>
-        <!-- -0.03 sanity per second while below cap -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.03">
-          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
-        </triggered_effect>
-      </effect_group>
-    </buff>
-
-    <!-- Awful meal: stronger sanity drain -->
-    <buff name="rfaFoodAwful" name_key="rfaFoodAwful_name" description_key="rfaFoodAwful_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
-      <duration value="120"/>
-      <stack_type value="replace"/>
-      <update_rate value="1"/>
-      <display_value_key value="Awful Meal"/>
-      <effect_group>
-        <!-- -0.06 sanity per second while above floor -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
-          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
-        </triggered_effect>
-      </effect_group>
-    </buff>
-
-    <!-- Amazing meal: strong sanity gain -->
-    <buff name="rfaFoodAmazing" name_key="rfaFoodAmazing_name" description_key="rfaFoodAmazing_desc" icon="ui_game_symbol_food" show_on_hud="false" show_in_ui="false">
-      <duration value="120"/>
-      <stack_type value="replace"/>
-      <update_rate value="1"/>
-      <display_value_key value="Amazing Meal"/>
-      <effect_group>
-        <!-- +0.08 sanity per second while below ceiling -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.08">
-          <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
-        </triggered_effect>
-      </effect_group>
-    </buff>
-  </append>
 
   <append xpath="/buffs/buff[@name='riseFromTheAshes-StateUpdate']">
     <effect_group name="RFA_CVar_Mirror">
