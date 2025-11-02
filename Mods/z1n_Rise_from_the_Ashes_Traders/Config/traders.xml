@@ -19,7 +19,7 @@
   <!-- Trader info -->
   <set xpath="/traders/trader_info[@id='8']/trader_items/item[@name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
 
-  <insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='preparedDrink']/item[@name='drinkJarBoiledWater']">
+  <insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']/item[@name='drinkJarBoiledWater']">
     <item name="drinkDrPrepper" count="1,5"/>
   </insertAfter>
 	

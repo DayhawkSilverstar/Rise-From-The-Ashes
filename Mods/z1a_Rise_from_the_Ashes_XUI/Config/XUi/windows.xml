@@ -114,10 +114,7 @@
 
   <!-- Remove ANY existing coin icons, currency labels, mule icons, encumbrance labels, and percent signs in header -->
   <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@name='costIcon']"/>
-  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@text='{currencyamount}']"/>
-  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@name='muleIcon']"/>
-  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@text='{cvar(.encumbrancePercent:0)}']"/>
-  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@text='%']"/>
+  <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@text='{currencyamount}']"/>  
 
   <!-- Re-add exactly one set at the desired (lower) baseline; positions tuned to align with the title -->
   <append xpath="/windows/window[@name='windowBackpack']/panel[@name='header']">

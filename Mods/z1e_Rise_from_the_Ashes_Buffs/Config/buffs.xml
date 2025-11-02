@@ -5410,7 +5410,7 @@
 
 			<!--  CORE: Sanity (holds/initializes CVars, UI text only in Phase 1) -->  
       <!-- Sanity Core: persistent holder for rfaSanity CVar -->
-      <buff name="rfaSanityCore" name_key="rfaSanity_name" description_key="rfaSanity_desc" icon_color="200,150,255" hidden="true" show_in_ui="false" show_on_hud="false">
+      <buff name="rfaSanityCore" name_key="rfaSanity_name" description_key="rfaSanity_desc" icon_color="200,150,255" hidden="true" show_in_ui="false" show_on_hud="false" remove_on_death="false">
         <!-- Long-running sentinel buff; no automatic expiry -->
         <duration value="999999"/>
         <stack_type value="ignore"/>
@@ -5424,7 +5424,7 @@
       </buff>
 
       <!-- Threshold states (not auto-applied in Phase 1) -->
-      <buff name="rfaSanityLow" name_key="rfaSanityLow_name" description_key="rfaSanityLow_desc" icon_color="255,120,120" hidden="true" show_in_ui="false" show_on_hud="false">
+      <buff name="rfaSanityLow" name_key="rfaSanityLow_name" description_key="rfaSanityLow_desc" icon_color="255,120,120" hidden="true" show_in_ui="false" show_on_hud="false" >
         <duration value="60"/>
         <stack_type value="replace"/>
         <effect_group>
@@ -5450,7 +5450,7 @@
       </buff>
 
       <!--  CORE: Morale (separate, short-lived event buff system) -->
-      <buff name="rfaMoraleCore" name_key="rfaMorale_name" description_key="rfaMorale_desc" icon_color="255,220,120" hidden="true" show_in_ui="false" show_on_hud="false">
+      <buff name="rfaMoraleCore" name_key="rfaMorale_name" description_key="rfaMorale_desc" icon_color="255,220,120" hidden="true" show_in_ui="false" show_on_hud="false" remove_on_death="false">
         <duration value="999999"/>
         <stack_type value="ignore"/>
         <display_value_key value="Morale"/>
@@ -5486,7 +5486,7 @@
         </effect_group>
       </buff>
 
-    <buff name="rfaSanityEnv" icon="ui_game_symbol_focus" icon_color="180,160,255" hidden="true" show_in_ui="false" show_on_hud="false">
+    <buff name="rfaSanityEnv" icon="ui_game_symbol_focus" icon_color="180,160,255" hidden="true" show_in_ui="false" show_on_hud="false" remove_on_death="false">
       <duration value="999999"/>
       <stack_type value="ignore"/>
 
@@ -5496,13 +5496,13 @@
              ========================= -->
 
         <!-- Daytime: gentle regeneration (+0.02 per update), clamp to < 200 -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.04">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="0.02">
           <requirement name="IsDay"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
         </triggered_effect>
 
         <!-- Nighttime: steady drain (-0.03 per update), clamp to > -200 -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.01">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.02">
           <requirement name="IsNight"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
         </triggered_effect>
@@ -5521,19 +5521,19 @@
              ========================= -->
 
         <!-- Wasteland: heavy drain (-0.06) -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.1">
           <requirement name="InBiome" biome="8"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
         </triggered_effect>
 
         <!-- Burnt Forest: significant drain (-0.04) -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.02">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.03">
           <requirement name="InBiome" biome="9"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-200"/>
         </triggered_effect>
 
         <!-- Snow: significant drain (+0.02) -->
-        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.04">
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="rfaSanity" operation="add" value="-0.06">
           <requirement name="InBiome" biome="1"/>
           <requirement name="CVarCompare" cvar="rfaSanity" operation="LT" value="200"/>
         </triggered_effect>
@@ -5542,14 +5542,14 @@
     </buff>
 
     <buff name="rfaSanityHitCD" show_in_ui="false" show_on_hud="false">
-      <duration value="2"/>
+      <duration value="1"/>
       <stack_type value="replace"/>
       <effect_group>
         <!-- purely a timer buff -->
       </effect_group>
     </buff>
 
-    <buff name="rfaSanityPlayerHooks" icon="ui_game_symbol_focus" icon_color="160,200,255" hidden="true" show_in_ui="false" show_on_hud="false">
+    <buff name="rfaSanityPlayerHooks" icon="ui_game_symbol_focus" icon_color="160,200,255" hidden="true" show_in_ui="false" show_on_hud="false" remove_on_death="false">
       <duration value="999999"/>
       <stack_type value="ignore"/>
 
@@ -5992,7 +5992,7 @@
   <!-- === RFA Sanity HUD + Scare (test cadence 5–10s, bands < -51 = Yellow/Red) === -->
   <append xpath="/buffs">
     <!-- Controller selects one visible indicator; persistent, no flicker -->
-    <buff name="buffRfaSanityIndicatorCtl" hidden="true">
+    <buff name="buffRfaSanityIndicatorCtl" hidden="true" remove_on_death="false">
       <stack_type value="ignore"/>
       <duration value="-1"/>
       <update_rate value="1"/>

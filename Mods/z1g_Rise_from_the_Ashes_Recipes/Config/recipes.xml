@@ -4170,8 +4170,6 @@
     
   </append>
 
-  <!-- Change any recipe that crafts the old item -->
-  <set xpath="/recipes/recipe[@name='resourceCloth']/@name">resourceClothT1</set>
 
   <!-- Change all ingredient refs to the old item anywhere in recipes -->
   <set xpath="/recipes//ingredient[@name='resourceCloth']/@name">resourceClothT1</set>
