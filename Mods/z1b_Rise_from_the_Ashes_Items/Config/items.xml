@@ -3408,9 +3408,12 @@
   </append>
   <append xpath="/items/item[@name='resourceScrapPolymers']">
     <property name="ItemWeight" value="0.5"/>
+    <property name="RepairTime" value="1"/>
+	  <property name="RepairAmount" value="400"/>
   </append>
   <set xpath="/items/item[@name='resourceScrapPolymers']/property[@name='EconomicValue']/@value">8</set>
-  <set xpath="/items/item[@name='resourceScrapPolymers']/property[@name='Tags']/@value">junk</set>
+  <set xpath="/items/item[@name='resourceScrapPolymers']/property[@name='Tags']/@value">junk</set>   
+  
   <append xpath="/items/item[@name='resourceOilShale']">
     <property name="UnlockedBy" value="skillChemistry"/>
   </append>
@@ -10567,7 +10570,7 @@
       <property name="SoundJammed" value="ItemNeedsRepair"/>
       <property name="SoundDestroy" value="wooddestroy1"/>
       <property name="ShowQuality" value="true"/>
-      <property name="UnlockedBy" value="skillCarpentry"/> -->
+      <property name="UnlockedBy" value="skillMechanicalEngineer"/> -->
       <property name="Group" value="Tools/Traps,Basics"/>
       <property name="RepairExpMultiplier" value="5.5"/>
       <property name="SoundUnholster" value="weapon_unholster"/>
@@ -10655,10 +10658,10 @@
       <property name="HoldType" value="36"/>
       <property name="Meshfile" value="#@modfolder:Resources/Tools.unity3d?BluesPlasticShiv"/>
       <property name="CustomIcon" value="PlasticShiv"/>
-      <property name="Material" value="MresourceBone"/>
+      <property name="Material" value="Morganic"/>
       <property name="TintColor" value="107, 107, 71"/>
       <property name="ScrapTimeOverride" value="10.0"/>
-      <property name="RepairTools" value="resourceBone"/>
+      <property name="RepairTools" value="resourceScrapPolymers"/>
       <property name="EconomicValue" value="200"/>
       <property name="TraderStageTemplate" value="baseTier0"/>
       <!-- meleeWpnBladeT0BoneKnife -->
@@ -10718,7 +10721,7 @@
       <effect_group name="meleeWpnBladeT0PlasticKnife">
         <passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="statDexterity,knife"/>
         <passive_effect name="StaminaLoss" operation="base_set" value="7" tags="primary"/>
-        <passive_effect name="DegradationMax" operation="base_set" value="150,200" tier="1,6" tags="statDexterity,knife"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6" tags="statDexterity,knife"/>
         <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="statDexterity,knife"/>
         <passive_effect name="MaxRange" operation="base_set" value="2.0" tags="statDexterity,knife"/>
         <passive_effect name="BlockRange" operation="base_set" value="2.5" tags="statDexterity,knife"/>

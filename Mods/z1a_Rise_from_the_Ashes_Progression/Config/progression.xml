@@ -3130,7 +3130,7 @@
 				</display_entry>
 
 				<display_entry icon="gunHandgunT1Pistol" name_key="mechanicalT3-3" has_quality="true" unlock_level="25,28,31,34,37,42" >
-					<unlock_entry item="gunHandgunT1Pistol,gunShotgunT1DoubleBarrel,gunRifleT1HuntingRifle,gunMGT1AK47,meleeToolSalvageT2Ratchet" unlock_tier="1" />					
+					<unlock_entry item="gunHandgunT1Pistol,gunShotgunT1DoubleBarrel,gunRifleT1HuntingRifle,gunMGT1AK47,meleeToolSalvageT2Ratchet,meleeToolRepairT1MultiAxe" unlock_tier="1" />					
 				</display_entry>
 
         <display_entry icon="gunBotT1JunkSledge" name_key="mechanicalT3-2" has_quality="true" unlock_level="30,33,36,39,42,47" >
@@ -3182,7 +3182,7 @@
 				<effect_group>					
 					<passive_effect name="CraftingTier" operation="base_set" level="5,8,11,14,17,22,100" value="1,2,3,4,5,6,6" tags="gunHandgunT0PipePistol,gunShotgunT0PipeShotgun,gunRifleT0PipeRifle,gunMGT0PipeMachineGun,meleeWpnBatonT0PipeBaton"/>
 					<passive_effect name="CraftingTier" operation="base_set" level="20,25,30,35,40,45,100" value="1,2,3,4,5,6,6" tags="meleeToolSalvageT1Wrench"/>
-					<passive_effect name="CraftingTier" operation="base_set" level="25,28,31,34,37,42,100" value="1,2,3,4,5,6,6" tags="gunHandgunT1Pistol,gunShotgunT1DoubleBarrel,gunRifleT1HuntingRifle,gunMGT1AK47,meleeToolSalvageT2Ratchet"/>
+					<passive_effect name="CraftingTier" operation="base_set" level="25,28,31,34,37,42,100" value="1,2,3,4,5,6,6" tags="gunHandgunT1Pistol,gunShotgunT1DoubleBarrel,gunRifleT1HuntingRifle,gunMGT1AK47,meleeToolSalvageT2Ratchet,meleeToolRepairT1MultiAxe"/>
           <passive_effect name="CraftingTier" operation="base_set" level="30,33,36,39,42,47,100" value="1,2,3,4,5,6,6" tags="gunBotT1JunkSledge"/>          
           <passive_effect name="CraftingTier" operation="base_set" level="45,48,51,54,57,62,100" value="1,2,3,4,5,6,6" tags="gunShotgunT2PumpShotgun,gunHandgunT2Magnum44,gunRifleT2LeverActionRifle,gunMGT2TacticalAR,gunBotT2JunkTurret,meleeToolRepairT3Nailgun"/>
 					<passive_effect name="CraftingTier" operation="base_set" level="65,68,71,74,77,82,100" value="1,2,3,4,5,6,6" tags="gunHandgunT3DesertVulture,gunHandgunT3SMG5,gunShotgunT3AutoShotgun,gunRifleT3SniperRifle,gunMGT3M60,gunExplosivesT3RocketLauncher,meleeToolPickT3Auger,meleeToolAxeT3Chainsaw,meleeToolSalvageT3ImpactDriver,meleeToolRepairT3Nailgun,gunBotT3JunkDrone"/>
@@ -3194,7 +3194,7 @@
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleScrapTruckSeat,vehicleScrapTruckParts,vehicleScrapTruckChassis,ScrapTruckPlaceable,modArmorWaterPurifier,cntVendingMachine"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="meleeToolSalvageT1Wrench"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="MechanicalResearchBundle3,resourceMechanicalPartsT3,dartTrap,bladeTrap,tableSaw,modGunSoundSuppressorSilencer,modGunBipod,modGunBowPolymerString"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunHandgunT1Pistol,gunShotgunT1DoubleBarrel,gunRifleT1HuntingRifle,gunMGT1AK47,meleeToolSalvageT2Ratchet"/>					
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunHandgunT1Pistol,gunShotgunT1DoubleBarrel,gunRifleT1HuntingRifle,gunMGT1AK47,meleeToolSalvageT2Ratchet,meleeToolRepairT1MultiAxe"/>					
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="sinksToiletsBlockVariantHelper,modGunBowArrowRest,modGunBarrelExtender,modGunScopeSmall,gunBotRoboticsPartsT3,gunBotT1JunkSledge"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="autoTurret,shotgunTurret,modGunForegrip,modGunMagazineExtender,modArmorMuffledConnectors,modGunTriggerGroupSemi,LargeGenerator"/>					
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="modGunShotgunTubeExtenderMagazine,modMeleeStructuralBrace"/>					

@@ -1,0 +1,50 @@
+<configs>
+
+  <append xpath="/entitygroups">
+    <entitygroup name="HallucinationZombies">
+      <!-- Base Hallucinations (non-feral, non-evolved) -->
+      <entity name="zombieArleneHallucination"/>
+      <entity name="zombieMarleneHallucination"/>
+      <entity name="zombiePartyGirlHallucination"/>
+      <entity name="zombieNurseHallucination"/>
+      <entity name="zombieJoeHallucination"/>
+      <entity name="zombieSteveHallucination"/>
+      <entity name="zombieTomClarkHallucination"/>
+      <entity name="zombieBusinessManHallucination"/>
+      <entity name="zombieBurntHallucination"/>
+      <entity name="zombieSpiderHallucination"/>
+      <entity name="zombieBoeHallucination"/>
+      <entity name="zombieMaleHazmatHallucination"/>
+      <entity name="zombieJanitorHallucination"/>
+
+      <!-- Feral Hallucinations -->
+      <entity name="zombieArleneFeralHallucination"/>
+      <entity name="zombieMarleneFeralHallucination"/>
+      <entity name="zombiePartyGirlFeralHallucination"/>
+      <entity name="zombieNurseFeralHallucination"/>
+      <entity name="zombieJoeFeralHallucination"/>
+      <entity name="zombieSteveFeralHallucination"/>
+      <entity name="zombieTomClarkFeralHallucination"/>
+      <entity name="zombieBusinessManFeralHallucination"/>
+      <entity name="zombieBurntFeralHallucination"/>
+      <entity name="zombieSpiderFeralHallucination"/>
+      <entity name="zombieBoeFeralHallucination"/>
+      <entity name="zombieMaleHazmatFeralHallucination"/>
+
+      <!-- Evolved Hallucinations: grouped Radiated (Charged/Infernal not defined) -->
+      <entity name="zombieArleneRadiatedHallucination"/>
+      <entity name="zombieMarleneRadiatedHallucination"/>
+      <entity name="zombiePartyGirlRadiatedHallucination"/>
+      <entity name="zombieNurseRadiatedHallucination"/>
+      <entity name="zombieJoeRadiatedHallucination"/>
+      <entity name="zombieSteveRadiatedHallucination"/>
+      <entity name="zombieTomClarkRadiatedHallucination"/>
+      <entity name="zombieBusinessManRadiatedHallucination"/>
+      <entity name="zombieBurntRadiatedHallucination"/>
+      <entity name="zombieSpiderRadiatedHallucination"/>
+      <entity name="zombieBoeRadiatedHallucination"/>
+      <entity name="zombieMaleHazmatRadiatedHallucination"/>
+    </entitygroup>
+  </append>
+
+</configs>

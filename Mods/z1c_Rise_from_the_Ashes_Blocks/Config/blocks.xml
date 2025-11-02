@@ -79,6 +79,10 @@
     <set xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">50</set>
     <set xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@name">resourceBrick</set>
 
+		<append xpath="/blocks/block[@name='palletBricksLoose']">
+      <drop event="Harvest" name="resourceBrick" count="50" tag="oreWoodHarvest"/>
+		</append>
+
 		<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Harvest' and @name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
 		<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Destroy' and @name='plantedGraceCorn1']/@name">plantedGraceCornT1-1</set>
   

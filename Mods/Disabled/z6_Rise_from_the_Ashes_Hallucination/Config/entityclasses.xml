@@ -1,0 +1,561 @@
+<configs>
+  <append>
+    <!-- Hallucination Variants - Block 1 -->
+    <entity_class name="zombieArleneHallucination" extends="zombieArlene">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieArleneFeralHallucination" extends="zombieArleneFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+
+    </entity_class>
+
+    <entity_class name="zombieArleneRadiatedHallucination" extends="zombieArleneRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieMarleneHallucination" extends="zombieMarlene">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieMarleneFeralHallucination" extends="zombieMarleneFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieMarleneRadiatedHallucination" extends="zombieMarleneRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombiePartyGirlHallucination" extends="zombiePartyGirl">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombiePartyGirlFeralHallucination" extends="zombiePartyGirlFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombiePartyGirlRadiatedHallucination" extends="zombiePartyGirlRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieNurseHallucination" extends="zombieNurse">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <!-- Hallucination Variants - Block 2 -->
+    <entity_class name="zombieNurseFeralHallucination" extends="zombieNurseFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieNurseRadiatedHallucination" extends="zombieNurseRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieJoeHallucination" extends="zombieJoe">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieJoeFeralHallucination" extends="zombieJoeFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieJoeRadiatedHallucination" extends="zombieJoeRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieSteveHallucination" extends="zombieSteve">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieSteveFeralHallucination" extends="zombieSteveFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieSteveRadiatedHallucination" extends="zombieSteveRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieTomClarkHallucination" extends="zombieTomClark">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <!-- Hallucination Variants - Block 3 -->
+    <entity_class name="zombieTomClarkFeralHallucination" extends="zombieTomClarkFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieTomClarkRadiatedHallucination" extends="zombieTomClarkRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBusinessManHallucination" extends="zombieBusinessMan">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBusinessManFeralHallucination" extends="zombieBusinessManFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBusinessManRadiatedHallucination" extends="zombieBusinessManRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBurntHallucination" extends="zombieBurnt">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBurntFeralHallucination" extends="zombieBurntFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+    </entity_class>
+
+    <entity_class name="zombieBurntRadiatedHallucination" extends="zombieBurntRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieSpiderHallucination" extends="zombieSpider">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <!-- Hallucination Variants - Block 4 -->
+    <entity_class name="zombieSpiderFeralHallucination" extends="zombieSpiderFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieSpiderRadiatedHallucination" extends="zombieSpiderRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBoeHallucination" extends="zombieBoe">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBoeFeralHallucination" extends="zombieBoeFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieBoeRadiatedHallucination" extends="zombieBoeRadiated">
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieMaleHazmatHallucination" extends="zombieMaleHazmat">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieMaleHazmatFeralHallucination" extends="zombieMaleHazmatFeral">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieMaleHazmatRadiatedHallucination" extends="zombieMaleHazmatRadiated">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+
+    <entity_class name="zombieJanitorHallucination" extends="zombieJanitor">
+      <property name="DeadBodyHitPoints" value="0"/>
+      <property name="MaxHealth" value="1"/>
+      <property name="ExperienceValue" value="0"/>
+      <property name="DamageEntity" value="0"/>
+      <property name="DamageBlock" value="0"/>
+      <property name="Tags" value="hallucination"/>
+      <property name="HandItem" value="meleeZombieHandsHallucination"/>
+      <property name="ExperienceGain" value="0"/>
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_set" value="1" />
+      </effect_group>
+      <property name="Buffs" value="buffHallucinationDespawn"/>
+    </entity_class>
+  </append>
+</configs>

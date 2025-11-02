@@ -4162,6 +4162,12 @@
       <ingredient name="resourceScrapPolymers" count="5"/>      
     </recipe>
 
+    <recipe name="meleeToolRepairT1MultiAxe" count="1" craft_time="15" craft_area="workbench" tags="learnable,workbenchCrafting,skillMechanicalEngineer">
+      <ingredient name="WoodenHandle" count="1"/>
+      <ingredient name="IronShovelHead" count="1"/>
+      <ingredient name="IronAxeHead" count="1"/>            
+    </recipe>
+    
   </append>
 
   <!-- Change any recipe that crafts the old item -->

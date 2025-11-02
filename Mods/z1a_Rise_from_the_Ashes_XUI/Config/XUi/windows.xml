@@ -73,15 +73,21 @@
   <!-- === INVENTORY BUTTON REPOSITIONING === -->
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/button[@name='btnToggleLockMode' and @pos='0, -22']/@pos">-80, -22</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/button[@name='btnClearInventory' and @pos='-45, -22']/@pos">-120, -22</set>
-  <set xpath="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnSort' and @pos='194, -22']/@pos">144, -22</set>
+  
+  <!-- Backpack buttons - keep original positions -->
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/button[@name='btnSort' and @pos='50, -22']/@pos">-40, -22</set>
-  <set xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnSort' and @pos='194, -22']/@pos">144, -22</set>
-  <set xpath="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnMoveFillAndSmart' and @pos='234, -22']/@pos">184, -22</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/rect/button[@name='btnMoveFillAndSmart' and @pos='100, -22']/@pos">10, -22</set>
-  <set xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnMoveFillAndSmart' and @pos='234, -22']/@pos">184, -22</set>
-  <set xpath="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnMoveAll' and @pos='274, -22']/@pos">224, -22</set>
   <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/rect/button[@name='btnMoveAll' and @pos='150, -22']/@pos">50, -22</set>
-  <set xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnMoveAll' and @pos='274, -22']/@pos">224, -22</set>
+  
+  <!-- Looting window buttons - moved left -->
+  <set xpath="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnSort' and @pos='194, -22']/@pos">94, -22</set>
+  <set xpath="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnMoveFillAndSmart' and @pos='234, -22']/@pos">134, -22</set>
+  <set xpath="/windows/window[@name='windowLooting']/panel[@name='header']/rect/button[@name='btnMoveAll' and @pos='274, -22']/@pos">174, -22</set>
+  
+  <!-- Vehicle storage buttons - moved left -->
+  <set xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnSort' and @pos='194, -22']/@pos">94, -22</set>
+  <set xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnMoveFillAndSmart' and @pos='234, -22']/@pos">134, -22</set>
+  <set xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect/button[@name='btnMoveAll' and @pos='274, -22']/@pos">174, -22</set>
 
   <!-- === INVENTORY SIZE EXPANSION === -->
   <set xpath="/windows/window[@name='windowBackpack']/@width">604</set>

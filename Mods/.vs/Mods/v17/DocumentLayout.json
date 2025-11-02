@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1b_Rise_from_the_Ashes_Items\\Config\\items.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z1b_Rise_from_the_Ashes_Items\\Config\\items.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\materials.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\items.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\blocks.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Christian\\AppData\\LocalLow\\The Fun Pimps\\7 Days To Die\\Player.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\z4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1n_Rise_from_the_Ashes_EntityGroups\\Config\\entitygroups.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z1n_Rise_from_the_Ashes_EntityGroups\\Config\\entitygroups.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1e_Rise_from_the_Ashes_Buffs\\Config\\buffs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z1e_Rise_from_the_Ashes_Buffs\\Config\\buffs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\Disabled\\z6_Rise_from_the_Ashes_Hallucination\\Config\\buffs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Disabled\\z6_Rise_from_the_Ashes_Hallucination\\Config\\buffs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\Config\\entitygroups.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z6_Rise_from_the_Ashes_Hallucination\\Config\\entitygroups.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\Config\\entityclasses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z6_Rise_from_the_Ashes_Hallucination\\Config\\entityclasses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\ModInfo.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z6_Rise_from_the_Ashes_Hallucination\\ModInfo.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +54,59 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.log",
+              "DocumentMoniker": "C:\\Users\\Christian\\AppData\\LocalLow\\The Fun Pimps\\7 Days To Die\\Player.log",
+              "ToolTip": "C:\\Users\\Christian\\AppData\\LocalLow\\The Fun Pimps\\7 Days To Die\\Player.log",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkMAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-02T00:00:07.844Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "items.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\items.xml",
+              "RelativeDocumentMoniker": "..\\Data\\Config\\items.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\items.xml",
+              "RelativeToolTip": "..\\Data\\Config\\items.xml",
+              "ViewState": "AgIAACNJAAAAAAAAAAAnwENJAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-02T00:21:31.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "blocks.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\blocks.xml",
+              "RelativeDocumentMoniker": "..\\Data\\Config\\blocks.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\blocks.xml",
+              "RelativeToolTip": "..\\Data\\Config\\blocks.xml",
+              "ViewState": "AgIAACtbAAAAAAAAAAAnwPNaAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-02T00:05:51.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "materials.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\materials.xml",
+              "RelativeDocumentMoniker": "..\\Data\\Config\\materials.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Data\\Config\\materials.xml",
+              "RelativeToolTip": "..\\Data\\Config\\materials.xml",
+              "ViewState": "AgIAALQEAAAAAAAAAAAnwM0EAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-02T00:02:49.923Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -22,6 +118,110 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "entitygroups.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1n_Rise_from_the_Ashes_EntityGroups\\Config\\entitygroups.xml",
+              "RelativeDocumentMoniker": "z1n_Rise_from_the_Ashes_EntityGroups\\Config\\entitygroups.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1n_Rise_from_the_Ashes_EntityGroups\\Config\\entitygroups.xml",
+              "RelativeToolTip": "z1n_Rise_from_the_Ashes_EntityGroups\\Config\\entitygroups.xml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-02T00:01:05.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "items.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
+              "RelativeDocumentMoniker": "z1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
+              "RelativeToolTip": "z1b_Rise_from_the_Ashes_Items\\Config\\items.xml",
+              "ViewState": "AgIAAIkpAAAAAAAAAAAnwKcpAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-01T23:49:16.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "buffs.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\Disabled\\z6_Rise_from_the_Ashes_Hallucination\\Config\\buffs.xml",
+              "RelativeDocumentMoniker": "Disabled\\z6_Rise_from_the_Ashes_Hallucination\\Config\\buffs.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\Disabled\\z6_Rise_from_the_Ashes_Hallucination\\Config\\buffs.xml",
+              "RelativeToolTip": "Disabled\\z6_Rise_from_the_Ashes_Hallucination\\Config\\buffs.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-01T19:13:15.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "buffs.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1e_Rise_from_the_Ashes_Buffs\\Config\\buffs.xml",
+              "RelativeDocumentMoniker": "z1e_Rise_from_the_Ashes_Buffs\\Config\\buffs.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z1e_Rise_from_the_Ashes_Buffs\\Config\\buffs.xml",
+              "RelativeToolTip": "z1e_Rise_from_the_Ashes_Buffs\\Config\\buffs.xml",
+              "ViewState": "AgIAAJsCAAAAAAAAAAAnwLQCAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-01T19:12:59.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "entitygroups.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\Config\\entitygroups.xml",
+              "RelativeDocumentMoniker": "z6_Rise_from_the_Ashes_Hallucination\\Config\\entitygroups.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\Config\\entitygroups.xml",
+              "RelativeToolTip": "z6_Rise_from_the_Ashes_Hallucination\\Config\\entitygroups.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-01T19:07:45.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "entityclasses.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\Config\\entityclasses.xml",
+              "RelativeDocumentMoniker": "z6_Rise_from_the_Ashes_Hallucination\\Config\\entityclasses.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\Config\\entityclasses.xml",
+              "RelativeToolTip": "z6_Rise_from_the_Ashes_Hallucination\\Config\\entityclasses.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8CAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-01T19:06:51.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModInfo.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\ModInfo.xml",
+              "RelativeDocumentMoniker": "z6_Rise_from_the_Ashes_Hallucination\\ModInfo.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z6_Rise_from_the_Ashes_Hallucination\\ModInfo.xml",
+              "RelativeToolTip": "z6_Rise_from_the_Ashes_Hallucination\\ModInfo.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-01T19:06:20.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "entityclasses.xml",
+              "DocumentMoniker": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "RelativeDocumentMoniker": "z4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "ToolTip": "F:\\Rise from the ashes\\7 Days To Die\\Mods\\z4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "RelativeToolTip": "z4_Rise_from_the_Ashes_Entityclasses\\Config\\entityclasses.xml",
+              "ViewState": "AgIAAJsGAAAAAAAAAAAAAMcGAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-01T18:52:31.497Z",
+              "EditorCaption": ""
             }
           ]
         },

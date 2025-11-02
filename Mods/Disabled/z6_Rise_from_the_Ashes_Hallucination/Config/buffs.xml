@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configs>
+
+  <!-- Ensure the sanity monitor is granted on login if the grant buff exists -->
+  <append xpath="/buffs/buff[@name='rfaSanityGrantOnLogin']">
+    <effect_group>
+      <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="rfaSanitySpawnMonitor"/>
+      <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaSanitySpawnMonitor"/>
+    </effect_group>
+  </append>
+  
+  <!-- Sanity-based zombie spawns: tiered client-only spawns scaling from -80 to <= -130 -->
+  <append xpath="/buffs">
+    <buff name="rfaSanitySpawnMonitor" hidden="false" remove_on_death="false">
+      <stack_type value="ignore"/>
+      <update_rate value="1"/>
+
+      <!-- Clear all sanity tick buffs if sanity is above -80 -->
+      <effect_group name="Sanity OK">
+        <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-80"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rfaSanitySpawn_T120,rfaSanitySpawn_T60,rfaSanitySpawn_T30,rfaSanitySpawn_T20,rfaSanitySpawn_T15,rfaSanitySpawn_T10"/>
+      </effect_group>
+
+      <!-- -80 to > -90 => every 120s -->
+      <effect_group name="Sanity -80..-89">
+        <requirements compare_type="and">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-80"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-90"/>
+        </requirements>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rfaSanitySpawn_T60,rfaSanitySpawn_T30,rfaSanitySpawn_T20,rfaSanitySpawn_T15,rfaSanitySpawn_T10"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaSanitySpawn_T120">
+          <requirement name="!HasBuff" buff="rfaSanitySpawn_T120"/>
+        </triggered_effect>
+      </effect_group>
+
+      <!-- -90 to > -100 => every 60s -->
+      <effect_group name="Sanity -90..-99">
+        <requirements compare_type="and">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-90"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-100"/>
+        </requirements>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rfaSanitySpawn_T120,rfaSanitySpawn_T30,rfaSanitySpawn_T20,rfaSanitySpawn_T15,rfaSanitySpawn_T10"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaSanitySpawn_T60">
+          <requirement name="!HasBuff" buff="rfaSanitySpawn_T60"/>
+        </triggered_effect>
+      </effect_group>
+
+      <!-- -100 to > -110 => every 30s -->
+      <effect_group name="Sanity -100..-109">
+        <requirements compare_type="and">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-100"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-110"/>
+        </requirements>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rfaSanitySpawn_T120,rfaSanitySpawn_T60,rfaSanitySpawn_T20,rfaSanitySpawn_T15,rfaSanitySpawn_T10"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaSanitySpawn_T30">
+          <requirement name="!HasBuff" buff="rfaSanitySpawn_T30"/>
+        </triggered_effect>
+      </effect_group>
+
+      <!-- -110 to > -120 => every 20s -->
+      <effect_group name="Sanity -110..-119">
+        <requirements compare_type="and">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-110"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-120"/>
+        </requirements>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rfaSanitySpawn_T120,rfaSanitySpawn_T60,rfaSanitySpawn_T30,rfaSanitySpawn_T15,rfaSanitySpawn_T10"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaSanitySpawn_T20">
+          <requirement name="!HasBuff" buff="rfaSanitySpawn_T20"/>
+        </triggered_effect>
+      </effect_group>
+
+      <!-- -120 to > -130 => every 15s -->
+      <effect_group name="Sanity -120..-129">
+        <requirements compare_type="and">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-120"/>
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-130"/>
+        </requirements>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rfaSanitySpawn_T120,rfaSanitySpawn_T60,rfaSanitySpawn_T30,rfaSanitySpawn_T20,rfaSanitySpawn_T10"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaSanitySpawn_T15">
+          <requirement name="!HasBuff" buff="rfaSanitySpawn_T15"/>
+        </triggered_effect>
+      </effect_group>
+
+      <!-- <= -130 => every 10s -->
+      <effect_group name="Sanity">
+        <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-130"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rfaSanitySpawn_T120,rfaSanitySpawn_T60,rfaSanitySpawn_T30,rfaSanitySpawn_T20,rfaSanitySpawn_T15"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="rfaSanitySpawn_T10">
+          <requirement name="!HasBuff" buff="rfaSanitySpawn_T10"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <!-- Tick buffs for each sanity tier. They re-apply themselves on finish if the tier is still valid. -->
+    <buff name="rfaSanitySpawn_T120" hidden="false">
+      <stack_type value="ignore"/>
+      <duration value="120"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffFinish" action="MinEventActionSpawnEntityAroundPlayerClientOnly, Rise_From_The_Ashes" SpawnGroup="HallucinationZombies"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="rfaSanitySpawn_T120">
+          <requirements compare_type="and">
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-80"/>
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-90"/>
+          </requirements>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSanitySpawn_T60" hidden="false">
+      <stack_type value="ignore"/>
+      <duration value="60"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffFinish" action="MinEventActionSpawnEntityAroundPlayerClientOnly, Rise_From_The_Ashes" SpawnGroup="HallucinationZombies"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="rfaSanitySpawn_T60">
+          <requirements compare_type="and">
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-90"/>
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-100"/>
+          </requirements>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSanitySpawn_T30" hidden="false">
+      <stack_type value="ignore"/>
+      <duration value="30"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffFinish" action="MinEventActionSpawnEntityAroundPlayerClientOnly, Rise_From_The_Ashes" SpawnGroup="HallucinationZombies"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="rfaSanitySpawn_T30">
+          <requirements compare_type="and">
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-100"/>
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-110"/>
+          </requirements>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSanitySpawn_T20" hidden="false">
+      <stack_type value="ignore"/>
+      <duration value="20"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffFinish" action="MinEventActionSpawnEntityAroundPlayerClientOnly, Rise_From_The_Ashes" SpawnGroup="HallucinationZombies"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="rfaSanitySpawn_T20">
+          <requirements compare_type="and">
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-110"/>
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-120"/>
+          </requirements>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSanitySpawn_T15" hidden="false">
+      <stack_type value="ignore"/>
+      <duration value="15"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffFinish" action="MinEventActionSpawnEntityAroundPlayerClientOnly, Rise_From_The_Ashes" SpawnGroup="HallucinationZombies"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="rfaSanitySpawn_T15">
+          <requirements compare_type="and">
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-120"/>
+            <requirement name="CVarCompare" cvar="rfaSanity" operation="GT" value="-130"/>
+          </requirements>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+
+    <buff name="rfaSanitySpawn_T10" hidden="false">
+      <stack_type value="ignore"/>
+      <duration value="10"/>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffFinish" action="MinEventActionSpawnEntityAroundPlayerClientOnly, Rise_From_The_Ashes" SpawnGroup="HallucinationZombies"/>
+        <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="rfaSanitySpawn_T10">
+          <requirement name="CVarCompare" cvar="rfaSanity" operation="LTE" value="-130"/>
+        </triggered_effect>
+      </effect_group>
+    </buff>
+  </append>
+
+
+  <append xpath="/buffs">
+    <!-- Hallucination Despawn Buff - Causes entity to despawn after 180 seconds (3 minutes) or on death -->
+    <buff name="buffHallucinationDespawn" hidden="true" remove_on_death="true">
+      <stack_type value="replace"/>
+      <duration value="180"/>
+
+      <effect_group>
+        <!-- Despawn the entity when buff expires (after 3 minutes) -->
+        <triggered_effect trigger="onSelfBuffRemove" action="RemoveEntity"/>
+
+        <!-- Despawn the entity when it dies -->
+        <triggered_effect trigger="onSelfDied" action="RemoveEntity"/>
+      </effect_group>
+    </buff>
+  </append>
+
+</configs>
