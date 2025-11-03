@@ -10,9 +10,9 @@
 			<property name="Model" value="#@modfolder:Resources/Radio.unity3d?RiseRadio"/>			 
 			<property name="CustomIcon" value="RiseRadio" />
 			<property name="CreativeMode" value="Player" />		
-			<property name="UnlockedBy" value="skillMechanicalEngineer"/>	
+			<property name="UnlockedBy" value="skillElectricalEngineer"/>	
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>			
-			<property name="DescriptionKey" value="steelBlockGroupDesc"/>
+			<property name="DescriptionKey" value="RadioDesc"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="Material" value="Mwood_weak"/>
 			<property name="EconomicValue" value="160"/>

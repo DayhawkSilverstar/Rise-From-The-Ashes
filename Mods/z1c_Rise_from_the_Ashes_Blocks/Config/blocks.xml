@@ -3716,7 +3716,7 @@
       <property name="CustomIcon" value="ChickenCoop" />
       <property name="CreativeMode" value="Player" />
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DescriptionKey" value="chickenCoopNoEggsDesc"/>
       <property name="DisplayType" value="blockHardened"/>
       <property name="EconomicValue" value="160"/>
       <property name="DowngradeBlock" value="chickenCoopEmpty"/>
@@ -3755,7 +3755,7 @@
       <property name="CustomIcon" value="ChickenCoop" />
       <property name="CreativeMode" value="Player" />
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DescriptionKey" value="chickenCoopHatchingDesc"/>
       <property name="DisplayType" value="blockHardened"/>
       <property name="EconomicValue" value="160"/>
       <property name="DowngradeBlock" value="chickenCoopEmpty"/>
@@ -3787,7 +3787,7 @@
       <property name="CustomIcon" value="ChickenCoop" />
       <property name="CreativeMode" value="Player" />
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DescriptionKey" value="chickenCoopChicksDesc"/>
       <property name="DisplayType" value="blockHardened"/>
       <property name="EconomicValue" value="160"/>
       <property name="DowngradeBlock" value="chickenCoopEmpty"/>
@@ -3819,7 +3819,7 @@
       <property name="CustomIcon" value="ChickenCoop" />
       <property name="CreativeMode" value="Player" />
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DescriptionKey" value="chickenCoopEmptyDesc"/>
       <property name="DisplayType" value="blockHardened"/>
       <property name="Material" value="Mwood"/>
       <property name="EconomicValue" value="160"/>
@@ -3857,7 +3857,7 @@
       <property name="CustomIcon" value="ChickenCoop" />
       <property name="CreativeMode" value="Player" />
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+      <property name="DescriptionKey" value="chickenCoopNestingDesc"/>
       <property name="DisplayType" value="blockHardened"/>
       <property name="EconomicValue" value="160"/>
       <property class="RepairItems">
@@ -3914,7 +3914,7 @@
 			<property name="AllowPickup" value="1"/>
 			<property name="CanPickUp" value="true"/>
 			<property name="TakeDelay" value="10" /> 
-			<property name="DescriptionKey" value="steelBlockGroupDesc"/>
+			<property name="DescriptionKey" value="GoldIngotStackDesc"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="Material" value="Mbrass"/>
 			<property name="EconomicValue" value="160"/>
@@ -3946,7 +3946,7 @@
 			<property name="CreativeMode" value="Player" />		
 			<property name="UnlockedBy" value="skillMechanicalEngineer"/>	
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>			
-			<property name="DescriptionKey" value="Buddy5ProgramDesc"/>
+			<property name="DescriptionKey" value="Buddy5Desc"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="Material" value="Mbrass"/>
 			<property name="EconomicValue" value="160"/>
@@ -8045,9 +8045,9 @@
       <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?RubberDuck.prefab"/>
       <property name="ModelOffset" value="0,0,0"/>
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="decoFlamingoDesc"/>
+      <property name="DescriptionKey" value="decoCrashDuckyDesc"/>
       <property name="DisplayType" value="blockHardened"/>
-      <property name="CustomIcon" value="Flamingo"/>
+      <property name="CustomIcon" value="CrashDucky"/>
       <property name="IsTerrainDecoration" value="false"/>
       <drop event="Destroy" count="0"/>
       <property name="SortOrder1" value="D100"/>
@@ -8065,9 +8065,9 @@
       <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?HumanSkull.prefab"/>
       <property name="ModelOffset" value="0,0,0"/>
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="decoFlamingoDesc"/>
+      <property name="DescriptionKey" value="decoHumanSkullDesc"/>
       <property name="DisplayType" value="blockHardened"/>
-      <property name="CustomIcon" value="Flamingo"/>
+      <property name="CustomIcon" value="HumanSkull"/>
       <property name="IsTerrainDecoration" value="false"/>
       <drop event="Destroy" count="0"/>
       <property name="SortOrder1" value="D100"/>
@@ -8085,7 +8085,7 @@
       <property name="Model" value="#@modfolder:Resources/Decorations.unity3d?BlizzardMiniFridge.prefab"/>
       <property name="ModelOffset" value="0,0,0"/>
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-      <property name="DescriptionKey" value="decoFlamingoDesc"/>
+      <property name="DescriptionKey" value="decoBlizzardFridgeDesc"/>
       <property name="DisplayType" value="blockHardened"/>
       <property name="CustomIcon" value="BlizzardMiniFridge"/>
       <property name="IsTerrainDecoration" value="false"/>
@@ -8150,7 +8150,7 @@
       <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
       <property name="DescriptionKey" value="decoTiaAndTheTurtleDesc"/>
       <property name="DisplayType" value="blockHardened"/>
-      <property name="CustomIcon" value="BlizzardMiniFridge"/>
+      <property name="CustomIcon" value="SeaTurtleAndFaery"/>
       <property name="IsTerrainDecoration" value="false"/>
       <drop event="Destroy" count="0"/>
       <property name="SortOrder1" value="D100"/>

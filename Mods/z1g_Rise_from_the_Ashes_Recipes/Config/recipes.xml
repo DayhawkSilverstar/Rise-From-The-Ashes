@@ -37,10 +37,13 @@
   <set xpath="/recipes/recipe[@name='EmptyFarmPlot']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
 
   <!-- TailorWorkstation: resourceWood -> resourceWoodT2 -->
-  <set xpath="/recipes/recipe[@name='TailorWorkstation']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
+  <set xpath="/recipes/recipe[@name='TailorWorkstation']/ingredient[@name='resourceLeather']/@name">LeatherSheetT1</set>
+  <set xpath="/recipes/recipe[@name='TailorWorkstation']/ingredient[@name='resourceWood']/@name">resourceWoodT1</set>
+  <set xpath="/recipes/recipe[@name='TailorWorkstation']/ingredient[@name='resourceMechanicalParts']/@name">resourceMechanicalPartsT1</set>
 
   <!-- ComputerStation: resourceWood -> resourceWoodT2 -->
-  <set xpath="/recipes/recipe[@name='ComputerStation']/ingredient[@name='resourceWood']/@name">resourceWoodT2</set>
+  <set xpath="/recipes/recipe[@name='ComputerStation']/ingredient[@name='resourceWood']/@name">resourceWoodT1</set>
+  <set xpath="/recipes/recipe[@name='ComputerStation']/ingredient[@name='resourceElectricParts']/@name">resourceElectricPartsT1</set>
 
   <!-- Pipe Rifle: ".5,2.5" perc_add on MetalPipe/Glue/Wood -> drop Wood -->
   <setattribute
@@ -4166,6 +4169,13 @@
       <ingredient name="WoodenHandle" count="1"/>
       <ingredient name="IronShovelHead" count="1"/>
       <ingredient name="IronAxeHead" count="1"/>            
+    </recipe>
+
+    <recipe name="foodPancakes" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable,skillCooking">
+      <!-- Simple ‘cake’ base to keep dependencies light; tweak to taste -->
+      <ingredient name="foodCornMeal" count="2"/>
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="foodMapleSyrup" count="1"/>
     </recipe>
     
   </append>

@@ -127,7 +127,7 @@
       <!-- UI_Info -->
       <property name="CustomIcon" value="TailorWorkstation" />
       <property name="CreativeMode" value="Player"/>
-      <property name="DescriptionKey" value="forgeDesc"/>
+      <property name="DescriptionKey" value="TailorWorkstationDesc"/>
       <property name="WorkstationIcon" value="ui_game_symbol_tailoring"/>
       <property name="WorkstationJournalTip" value="forgeTip"/>
       <property name="Stacknumber" value="1"/>

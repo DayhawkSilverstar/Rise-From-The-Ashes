@@ -32,7 +32,7 @@
     </recipe>
 
     <recipe name="TailorWorkstation" count="1" craft_time = "90" tags="">      
-      <ingredient name="resourceLeather" count="10"/>
+      <ingredient name="resourceLeather" count="5"/>
       <ingredient name="resourceMechanicalParts" count="10"/>
       <ingredient name="resourceNail" count="300"/>
       <ingredient name="resourceWood" count="150"/>

@@ -1,7 +1,5 @@
 <configs>
-
-  <remove xpath="/entity_classes/entity_class[@name='JunkDrone']" />
-  
+ 
   <append xpath="/entity_classes">		
 
 		<!-- *** JUNK_DRONE -->

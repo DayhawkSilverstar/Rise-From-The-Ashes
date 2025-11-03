@@ -4459,7 +4459,7 @@
       <property name="Extends" value="foodRiseMaster"/>
       <property name="CustomIcon" value="Pancakes"/>
       <property name="UnlockedBy" value="skillCooking"/>
-      <effect_group tiered="false" name="Food Tier 0">
+      <effect_group tiered="false" name="Food Tier 1">
         <!-- Hunger restored -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="12"/>
         <!-- Standard consumable processing -->
@@ -10762,6 +10762,7 @@
     <item name="drinkDrPrepper">
       <property name="Extends" value="drinkJarRedTea" />
       <property name="DisplayType" value="waterMegaCrush" />
+      <property name="DescriptionKey" value="drinkDrPrepperDesc"/>
       <property name="Meshfile" value="#@modfolder:Resources/Foods.unity3d?DrPrepper" />
       <property name="DropMeshfile" value="#@modfolder:Resources/Foods.unity3d?DrPrepper"/>
       <property name="EconomicValue" value="240"/>

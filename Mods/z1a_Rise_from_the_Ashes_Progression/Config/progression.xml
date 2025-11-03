@@ -2860,7 +2860,7 @@
 				</display_entry>
 				<display_entry icon="CookingResearchBundle2" name_key="cookingT2-1" has_quality="false" unlock_level="15,20" >										
 					<unlock_entry item="CookingResearchBundle2,foodBaconAndEggs,drinkJarCoffee,foodMapleSyrup,foodTwiceBakedPotato" unlock_tier="1" />
-					<unlock_entry item="foodCornMeal" unlock_tier="2" />
+					<unlock_entry item="foodCornMeal,foodPancakes" unlock_tier="2" />
 				</display_entry>
 				<display_entry icon="CookingResearchBundle3" name_key="cookingT3-1" has_quality="false" unlock_level="25,30,35,40" >
 					<unlock_entry item="CookingResearchBundle3,foodCornBread,drinkJarBlackStrapCoffee,foodTripleBakedPotato" unlock_tier="1" />
@@ -2869,7 +2869,7 @@
 					<unlock_entry item="foodPumpkinBread,foodMimisChocyCake,foodFishTacos" unlock_tier="4" />
 				</display_entry>
 				<display_entry icon="CookingResearchBundle4" name_key="cookingT4-1" has_quality="false" unlock_level="45,50,55,60" >
-					<unlock_entry item="CookingResearchBundle4,foodVegetableStew,foodPancakes" unlock_tier="1" />
+					<unlock_entry item="CookingResearchBundle4,foodVegetableStew" unlock_tier="1" />
 					<unlock_entry item="foodBlueberryPie,foodChiliDog" unlock_tier="2" />
 					<unlock_entry item="foodPumpkinPie" unlock_tier="3" />
 					<unlock_entry item="foodShepardsPie,foodTunaFishGravyToast" unlock_tier="4" />
@@ -2892,12 +2892,12 @@
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="CookingResearchBundle1,foodGrilledMeat,drinkJarYuccaJuice,foodBakedPotato,foodCornOnTheCob"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="drinkJarGoldenRodTea,drinkJarRedTea,foodBoneBroth,foodBoiledMeat,foodEggBoiled"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="CookingResearchBundle2,foodBaconAndEggs,drinkJarCoffee,foodMapleSyrup,foodTwiceBakedPotato"/>             
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="foodCornMeal"/>							
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="foodCornMeal,foodPancakes"/>							
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="CookingResearchBundle3,foodCornBread,drinkJarBlackStrapCoffee,foodTripleBakedPotato"/>								
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="drinkYuccaJuiceSmoothie"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="foodSpaghetti"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="foodPumpkinBread,foodMimisChocyCake,foodFishTacos"/>
-					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="CookingResearchBundle4,foodVegetableStew,foodPancakes"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="CookingResearchBundle4,foodVegetableStew"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="foodBlueberryPie,foodChiliDog"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="foodPumpkinPie"/>
 					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="foodShepardsPie,foodTunaFishGravyToast"/>
