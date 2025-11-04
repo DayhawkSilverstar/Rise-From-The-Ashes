@@ -44,5 +44,6 @@
       <ingredient name="resourceWood" count="150"/>
       <ingredient name="decoLaptop" count="1"/>
     </recipe>
+
   </append>
 </configs>

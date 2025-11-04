@@ -2149,6 +2149,17 @@
   <append xpath="/recipes">
     <!-- ***************************************** Rise from the Ashes Recipies *********************************************** -->
 
+    <recipe name="modArmorCigar" craft_time="15" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="foodEgg" count="2"/>
+      <ingredient name="foodCropMushrooms" count="10"/>
+      <ingredient name="resourceCropAloeLeaf" count="2"/>
+      <ingredient name="resourceCropCoffeeBeans" count="2"/>
+    </recipe>
+
+
+    
+
     <recipe name="drugVitamins" craft_time="30" craft_area="chemistryStation" tags="learnable,chemStationCrafting,skillChemistry">
       <ingredient name="drinkJarBoiledWater" count="1"/>
       <ingredient name="foodEgg" count="2"/>
@@ -4177,7 +4188,14 @@
       <ingredient name="foodEgg" count="1"/>
       <ingredient name="foodMapleSyrup" count="1"/>
     </recipe>
+
+    <recipe name="chickenCoopEmpty" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,skillCarpentry">
+      <ingredient name="resourceWoodT2" count="25"/>
+      <ingredient name="resourceNail" count="100"/>
+    </recipe>
+
     
+
   </append>
 
 
